@@ -120,8 +120,8 @@ FAM = [
   ("gushi", "古诗 · 文言", "Classical poems and prose", r"古诗|诗词|文言|古文|诗歌"),
  ]),
  ("app", "实用文 · 书面互动", "Functional writing", [
-  ("geshi", "电邮格式（称呼 · 署名 · 主题）", "Format", r"格式|称呼|署名|问候语|结束语|主题栏", "W K=pmail/omail/forum/speech/post/msg"),
-  ("yuqiW", "语气得体", "Tone and register", r"语气|口吻|得体|敬语|措辞|正式的|亲切的", "W K=pmail/omail/forum/speech/post/msg"),
+  ("geshi", "电邮格式（称呼 · 署名 · 主题）", "Format", r"格式|称呼|署名|问候语|结束语|主题栏", "W K=pmail/omail/forum/speech/post/postw/msg"),
+  ("yuqiW", "语气得体", "Tone and register", r"语气|口吻|得体|敬语|措辞|正式的|亲切的", "W K=pmail/omail/forum/speech/post/postw/msg"),
   ("huiying", "回应内容重点", "Answering every point", r"回应|回复|针对.{0,8}(问题|内容|要点|电邮)|要点", "W K=pmail/omail/forum/post/msg"),
   ("jianyi", "提出建议 · 看法", "Making suggestions", r"提出.{0,6}(建议|看法|观点|意见)|建议", "W K=pmail/omail/forum/post/msg"),
   ("wangyou", "回应网友 · 他人的观点", "Responding to others' views", r"网友|论坛|针对他人的观点|针对.{0,6}观点|他人的(观点|看法)"),
@@ -246,9 +246,11 @@ def p2g(c):
 
 COMP["G1"] = [
  {"k": "P1", "zh": "试卷一 书面互动", "en": "Paper 1 Written interaction", "parts": [
-  {"k": "post", "zh": "回应网络贴文", "en": "Responding to an online post", "task": "post", "groups": [
+  {"k": "post", "zh": "回应网络贴文", "en": "Replying to an online post (SEC format)", "task": "post", "groups": [
     ["书面互动要求", "Task requirements", ["huiying", "wangyou", "jianyi", "lichang", "yuqiW"]],
     ["内容", "Content", ["xijie", "jingwu", "buzhou", "lieshuzi", "julizi"]]]},
+  {"k": "postw", "zh": "自拟贴文（课本练习）", "en": "Writing your own post (textbook practice)", "task": "postw", "nx": True, "groups": [
+    ["内容", "Content", ["xijie", "jingwu", "buzhou", "lieshuzi", "julizi", "tedian"]]]},
   {"k": "msg", "zh": "短信 · 电邮（课本练习）", "en": "Messages and emails (textbook practice)", "task": ["msg", "pmail", "omail"], "nx": True, "groups": [
     ["书面互动要求", "Task requirements", ["geshi", "huiying", "yuqiW"]]]},
   {"k": "rec", "zh": "看图叙事（书面互动页）", "en": "Guided recount (textbook practice)", "task": ["rec", "sit"], "nx": True, "groups": [
@@ -457,7 +459,9 @@ def task_kind(x, c="H"):
     if t == "fw" and sub == "Email":
         return "omail" if re.search(r"校长|负责人|经理|主任|部门|公司|机构|理事会|编辑|局|中心|老师", task.split("：")[0] + task[:80]) and not re.search(r"(朋友|同学|表[哥姐弟妹]|堂[哥姐弟妹])[^。]{0,6}(发了|写了)", task[:60]) else "pmail"
     if t == "fw":  # G1 书面互动 forms and the HCL 论坛 (实用文 in K355); reports and postcards sit outside the SEC formats
-        return {"Online post / reply": "post", "Message": "msg", "Forum post": "forum"}.get(sub) or ("rec" if sub.startswith("Guided recount") else None)
+        if sub == "Online post / reply":  # SEAB K120 P1: "请根据网络贴文的内容，写出你的回应" -- only replies are the exam format
+            return "post" if re.search(r"回应|留言|阅读.{0,8}贴文|根据.{0,6}贴文", task) else "postw"
+        return {"Message": "msg", "Forum post": "forum"}.get(sub) or ("rec" if sub.startswith("Guided recount") else None)
     if t == "arg":
         k = {"Forum post": "forum", "Speech": "speech"}.get(sub) or ("mat" if "材料" in task else "arg")
         return "arg" if c != "H" and k == "mat" else k  # 材料作文 is a Higher CL format only
