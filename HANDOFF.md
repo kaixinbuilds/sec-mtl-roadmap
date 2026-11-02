@@ -1,6 +1,6 @@
 # MTL Skills Roadmap: handoff for Claude Code
 
-Updated November 1, 2026 by HOD/MTL Mdm Chun Kai Xin
+Updated November 2, 2026 by HOD/MTL Mdm Chun Kai Xin
 
 Repo: `kaixinbuilds/mtl-skills-roadmap`. Live page: https://kaixinbuilds.github.io/mtl-skills-roadmap/
 One page, no build step: `index.html` (single-file app: CSS, the embedded `const DATA={...}` JSON and the JS views). Open it in a browser.
@@ -10,6 +10,16 @@ One page, no build step: `index.html` (single-file app: CSS, the embedded `const
 A department wall chart of what the CPDD 2021-syllabus teacher guides teach in CL, ML and TL, Sec 1 to 4, G1 to HMT, mapped to SEC 2027 and to two BVSS school approaches from 2027: inquiry-based learning (IBL) and the E21CC priority areas (Adaptive Thinking, Inventive Thinking, Civic Literacy, Communication). From 31 Oct it also carries the department's planning layer: a scheme of work (SOW) for 2027 laid out as four term columns for every language, course and year.
 
 Two comparisons must always be easy: across languages for the same course, and within a language across levels of demand.
+
+## Skills at a glance tab, CL first (2 Nov 2026, thirteenth update)
+
+New Planner tab `skills` (`vSkills()` in `index.html`): rows are skills grouped in families (修辞手法, 说明方法, 议论 · 论证, 记叙, 描写, 表现手法 · 抒情, 阅读策略, 标点符号, 句子 · 词语, 口语 · 互动), columns are Sec 1 to 4 units grouped by term (from `alloc()` and `sow.json` `pacing`). Default layout stacks G1, G2, G3 and Higher CL under each skill; "One course" uses the side-panel course. A "First taught" column gives the earliest focus or objective unit. Built for CL only, at the HOD's request, for structure review; ML and TL show a placeholder note.
+
+- **Data**: `tools/skills.py` reads the 24 CL 教师手册 (G1, G2 修订版, 快华, 高华; drive path is the default argument) with pypdf, caches text in `tools/.tgcache/` (git-ignored) and writes `tools/skills.json` (`fam`, `units[uid][skill] = [tier, evidence, page]`, `src[uid]` = guide file). `enrich.py` copies it to `DATA.skills`.
+- **Tiers**: `f` the skill is named in the unit opener (单元主题与语言技能学习点) or its 学习内容一览表 row (`DATA.recs`); `o` in the 各板块内容简介、教学目标 bullets; `p` only in the lesson notes. Vocabulary lists (掌握字词…) are skipped. Patterns need a context word where the term is an everyday word (比喻 also glosses idioms; 象征意义 is not 象征手法). The `noP` flag drops the notes tier for terms that are too common there.
+- **Unit mapping**: guide units in order, matched to `DATA.themes` sorted by book and unit; all 92 units matched (23 per course).
+- **Not named in any CL guide**: 反复, 借代, 打比方, 分类别, 下定义, 引资料, 场面描写, 正面 · 侧面描写, 五感 · 动静, 托物言志 · 象征, 以小见大, 比较阅读, 冒号, 分号 (keyword search; they may appear under other wording).
+- **Next**: HOD review of the families and rows; then ML (Panduan Guru) and TL (கண்ணோட்டம்) with their own families.
 
 ## Unit numbering checked against the sources (1 Nov 2026, twelfth update)
 

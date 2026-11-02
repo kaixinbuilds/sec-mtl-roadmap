@@ -154,6 +154,15 @@ D["ui"]["t_write"] = {"en":"Writing task bank","zh":"完整写作题库","ms":"B
 D["design"]["about"]["write"] = D["sow"].get("wbankAbout", {"what":"","points":[],"use":""})
 D["ui"]["t_psle"] = {"en":"PSLE to SEC","zh":"小六会考到中学","ms":"PSLE ke SEC","ta":"PSLE முதல் SEC வரை"}
 D["design"]["about"]["psle"] = D["sow"].get("psle", {}).get("about", {"what":"","points":[],"use":""})
+# Skills at a glance (tools/skills.json, built by tools/skills.py from the CL 教师手册)
+D["skills"] = json.loads((ROOT / "tools" / "skills.json").read_text(encoding="utf-8"))
+D["ui"]["t_skills"] = {"en":"Skills at a glance","zh":"技能一览","ms":"Sekilas kemahiran","ta":"திறன்கள் ஒரு பார்வையில்"}
+D["design"]["about"]["skills"] = {"what": "Which reading, writing and language skills each unit teaches, laid out by year, term and unit, so you can see at a glance when a skill such as 比喻 or 列数字 is first taught and when it comes back. Built for Chinese first, all four courses.",
+ "points": ["Source: the 24 CPDD 2021 教师手册 for G1, G2, G3 and Higher CL, Sec 1 to 4, read unit by unit.",
+  "A filled dot is a unit focus: the skill is named in the unit's 单元主题与语言技能学习点 or its row of the 学习内容一览表.",
+  "A half dot means the skill is named in the unit's lesson objectives (各板块内容简介、教学目标); a small dot means it appears only in the lesson notes, such as comprehension questions and model answers.",
+  "Terms follow the scheme-of-work pacing: Sec 1 to 3 over Terms 1 to 3, Sec 4 over Terms 1 and 2."],
+ "use": "Compare the four courses, or pick one course in the side panel. Hover over a dot to see the guide's wording and page; click it to open the unit. Skills were matched by keyword, so check a surprising dot against the page given."}
 D["ui"]["t_sow"] = {"en":"Scheme of work 2027","zh":"2027教学进度表","ms":"Skema Pengajaran 2027","ta":"2027 பாடத்திட்டம்"}
 
 # ---------- 5. CL inquiry wording (recheck of all 44 CL 教师手册 PDFs, 31 Oct 2026) ----------
