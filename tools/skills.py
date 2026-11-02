@@ -246,13 +246,12 @@ def p2g(c):
 
 COMP["G1"] = [
  {"k": "P1", "zh": "试卷一 书面互动", "en": "Paper 1 Written interaction", "parts": [
-  {"k": "post", "zh": "回应网络贴文", "en": "Online posts: own posts build up to the SEC reply", "task": ["postw", "post"], "groups": [
-    ["书面互动要求", "Task requirements", ["huiying", "wangyou", "jianyi", "lichang", "yuqiW"]],
-    ["内容", "Content", ["xijie", "jingwu", "buzhou", "lieshuzi", "julizi"]]]},
-  {"k": "msg", "zh": "短信 · 电邮（课本练习）", "en": "Messages and emails (textbook practice)", "task": ["msg", "pmail", "omail"], "nx": True, "groups": [
-    ["书面互动要求", "Task requirements", ["geshi", "huiying", "yuqiW"]]]},
-  {"k": "rec", "zh": "看图叙事（书面互动页）", "en": "Guided recount (textbook practice)", "task": ["rec", "sit"], "nx": True, "groups": [
-    ["描写", "Description", ["renwu", "dongzuo", "yuyan", "xinli", "jingwu"]], ["写作手法（记叙）", "Narrative techniques", ["yaosu", "shunxu", "kaitou"]]]}]},
+  {"k": "post", "zh": "回应网络贴文", "en": "Online posts, with the other textbook written-interaction tasks in order (grey: not examined)",
+   "task": ["postw", "post", "msg", "pmail", "omail", "rec", "sit", "rep"], "groups": [
+    ["书面互动要求", "Task requirements", ["huiying", "wangyou", "jianyi", "lichang", "yuqiW", "geshi"]],
+    ["内容", "Content", ["xijie", "jingwu", "buzhou", "lieshuzi", "julizi"]],
+    ["描写", "Description", ["renwu", "dongzuo", "yuyan", "xinli"]],
+    ["写作手法（记叙）", "Narrative techniques", ["yaosu", "shunxu", "kaitou"]]]}]},
  {"k": "P2", "zh": "试卷二 选择题", "en": "Paper 2 Multiple choice", "parts": [
   {"k": "yy", "zh": "语文应用", "en": "Language use", "groups": [["词语与句子", "Words and sentences", ["guanlian", "ciyi", "shuyu"]]]},
   {"k": "rc1", "zh": "实用性语料", "en": "Practical text", "groups": [["读懂实用性语料", "Practical texts", ["lietubiao", "lieshuzi", "tuiduan"]]]},
@@ -456,10 +455,10 @@ def task_kind(x, c="H"):
     t, sub, task = x.get("type"), x.get("sub", ""), x.get("task", "")
     if t == "fw" and sub == "Email":
         return "omail" if re.search(r"校长|负责人|经理|主任|部门|公司|机构|理事会|编辑|局|中心|老师", task.split("：")[0] + task[:80]) and not re.search(r"(朋友|同学|表[哥姐弟妹]|堂[哥姐弟妹])[^。]{0,6}(发了|写了)", task[:60]) else "pmail"
-    if t == "fw":  # G1 书面互动 forms and the HCL 论坛 (实用文 in K355); reports and postcards sit outside the SEC formats
+    if t == "fw":  # G1 书面互动 forms and the HCL 论坛 (实用文 in K355); reports and postcards are no SEC format (EXAM leaves them out)
         if sub == "Online post / reply":  # SEAB K120 P1: "请根据网络贴文的内容，写出你的回应" -- only replies are the exam format
             return "post" if re.search(r"回应|留言|阅读.{0,8}贴文|根据.{0,6}贴文", task) else "postw"
-        return {"Message": "msg", "Forum post": "forum"}.get(sub) or ("rec" if sub.startswith("Guided recount") else None)
+        return {"Message": "msg", "Forum post": "forum", "Report": "rep", "Postcard": "card"}.get(sub) or ("rec" if sub.startswith("Guided recount") else None)
     if t == "arg":
         k = {"Forum post": "forum", "Speech": "speech"}.get(sub) or ("mat" if "材料" in task else "arg")
         return "arg" if c != "H" and k == "mat" else k  # 材料作文 is a Higher CL format only
