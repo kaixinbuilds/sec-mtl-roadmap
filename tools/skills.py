@@ -7,7 +7,9 @@ Needs pypdf. Text is cached in tools/.tgcache/ (git-ignored) so reruns are fast.
 Three tiers per unit and skill:
   f  focus      named in the unit's 单元主题与语言技能学习点 (阅读/听说/写作) or in its 学习内容一览表 row (DATA.recs)
   o  objective  named in the unit's 各板块内容简介、教学目标 bullets
-  p  practice   only in the unit's lesson notes (questions, answers, activities)
+  p  practice   in the unit's lesson notes (questions, answers, activities)
+Every instance is kept with its section: 读 reading, 写 writing, 说 listening and speaking, 综 integrated task, 知 language knowledge.
+COMP groups the skills by SEC exam component (Higher CL first); tasks maps units to their Paper 1 writing kind.
 """
 import json, re, sys
 from pathlib import Path
@@ -25,77 +27,107 @@ SEC = {"一上": 1, "一下": 1, "二上": 2, "二下": 2, "中三": 3, "中四"
 # Families and skills. Patterns need a context word where the bare term is an everyday word
 # (比喻 also glosses idioms, 反复 and 夸张 are common words, 举例 also means citing evidence).
 # noP: count only the focus and objective tiers (the term is too common in lesson notes).
+# Each skill: (key, label, English, pattern[, flags]). Patterns need a context word where the bare term
+# is an everyday word (比喻 also glosses idioms, 反复 and 夸张 are common words, 举例 also means citing evidence).
+# Flags: noP = count only the focus and objective tiers (too common in lesson notes);
+#        W   = count only hits in the unit's writing section (写作), e.g. email format.
 FAM = [
  ("rhet", "修辞手法", "Rhetorical devices", [
-  ("biyu", "比喻", "Simile and metaphor", r"比喻(句|的修辞|修辞|手法|的用法|的特点|的作用|的写法)|修辞手法[：:“]?比喻|(运用|使用|用)了?比喻(?!论证)|明喻|暗喻"),
+  ("biyu", "比喻", "Simile and metaphor", r"比喻(句|的修辞|修辞|手法|的用法|的特点|的作用|的写法)|修辞手法[：:“]?比喻|(运用|使用|用)了?比喻(?!论证)|明喻|暗喻|比喻、|、比喻"),
   ("niren", "拟人", "Personification", r"拟人"),
-  ("kuazhang", "夸张", "Hyperbole", r"夸张(句|的修辞|修辞|手法|的用法|的作用|的写法)|(运用|使用|用)了?夸张(的)?(修辞|手法)|修辞手法[^。]{0,8}夸张"),
+  ("kuazhang", "夸张", "Hyperbole", r"夸张(句|的修辞|修辞|手法|的用法|的作用|的写法)|(运用|使用|用)了?夸张(的)?(修辞|手法)|修辞手法[^。]{0,8}夸张|、夸张|夸张、"),
   ("paibi", "排比", "Parallelism", r"排比"),
   ("duiou", "对偶", "Antithesis (对偶)", r"对偶"),
   ("fanfu", "反复", "Repetition", r"反复(的修辞|修辞|手法|句)|修辞手法[^。]{0,8}反复"),
   ("shewen", "设问", "Rhetorical question (设问)", r"设问"),
   ("fanwen", "反问", "Rhetorical question (反问)", r"反问(句|的修辞|修辞|手法|的作用)|(运用|使用|用)了?反问|修辞手法[^。]{0,8}反问"),
   ("jiedai", "借代", "Metonymy", r"借代"),
-  ("chentuo", "衬托 · 对比写法", "Contrast and foil", r"衬托|烘托|反衬|映衬|对比(的修辞|修辞|手法|的写法|写法)"),
  ]),
- ("expo", "说明方法", "Expository methods", [
+ ("expo", "说明文", "Expository texts", [
   ("lieshuzi", "列数字", "Citing figures", r"列数字|列举的?数字|数字和例子"),
   ("julizi", "举例子", "Giving examples", r"举例子|数字和例子|举例说明(?!观点)"),
   ("dabifang", "打比方", "Analogy", r"打比方"),
   ("zuobijiao", "作比较", "Comparison", r"作比较|比较的说明方法"),
   ("fenleibie", "分类别", "Classification", r"分类别|分类说明"),
   ("xiadingyi", "下定义", "Definition", r"下定义"),
-  ("lietubiao", "列图表", "Charts and tables", r"列图表|图表说明"),
+  ("lietubiao", "列图表", "Charts and tables", r"列图表|图表说明|结合图表|图表"),
   ("yinziliao", "引资料", "Citing sources", r"引用?资料|引用说明"),
-  ("shunxu", "说明顺序 · 步骤", "Order and steps", r"说明顺序|空间顺序|逻辑顺序|做事情?的步骤|(说明|说出|写出|理解)[^。]{0,10}步骤"),
+  ("smff", "说明方法（统称）", "Expository methods (general)", r"说明方法"),
+  ("sx_time", "时间顺序", "Time order", r"时间顺序|时间先后|先后顺序|按照.{0,4}时间"),
+  ("sx_space", "空间顺序", "Space order", r"空间顺序|空间的?转换|移步换景|游览(的)?(顺序|经过)"),
+  ("sx_logic", "逻辑顺序", "Logical order", r"逻辑顺序|由主到次|由因到果|由现象到本质"),
+  ("buzhou", "步骤 · 程序", "Steps and procedures", r"做事情?的(步骤|程序)|(说明|说出|写出|理解)[^。]{0,10}(步骤|程序)"),
+  ("tedian", "说明对象 · 事物特点", "Subject and its features", r"说明对象|事物的特点|事物特点|景物特点"),
+  ("shili", "说明事理", "Explaining a principle", r"说明事理|事理说明|分析原因"),
  ]),
  ("arg", "议论 · 论证", "Argument", [
-  ("lundian", "论点 · 论据", "Claim and evidence", r"论点|论据"),
+  ("lundian", "议论文三要素（论点 · 论据 · 论证）", "Claim, evidence, reasoning", r"论点|论据|议论文?的?三要素|议论(文)?的?基本结构"),
   ("julilz", "举例论证", "Argument by example", r"举例论证|事例论证|例证法"),
-  ("daolilz", "道理 · 引用论证", "Argument by reasoning or quotation", r"道理论证|引用论证|引证法"),
-  ("duibilz", "对比论证", "Argument by contrast", r"对比论证|正反对比|正反论证"),
+  ("daolilz", "引用论证 · 道理论证", "Argument by quotation or reasoning", r"道理论证|引用论证|引证法"),
+  ("duibilz", "对比论证", "Argument by contrast", r"对比论证"),
   ("biyulz", "比喻论证", "Argument by analogy", r"比喻论证"),
+  ("duofang", "多方面论证", "Arguing from several angles", r"多方面|多角度|不同角度|不同的论证方法"),
+  ("zhengfan", "正反论证", "Both sides", r"正反对比|正反论证|正反两(个)?方面|正反(两方|观点)|一分为二"),
   ("fanbo", "反驳 · 驳论", "Rebuttal", r"反驳|驳论"),
-  ("zhengfan", "正反两面 · 多角度", "Both sides, several angles", r"正反两(个)?方面|正反(两方|观点)|多角度|不同角度|一分为二"),
+  ("lichang", "表明立场", "Taking a stand", r"立场|赞成或反对|表明.{0,4}(看法|观点)", "W"),
  ]),
  ("narr", "记叙", "Narration", [
   ("yaosu", "记叙要素", "Who, when, where; cause, course, result", r"起因、经过和结果|起因、经过、结果|起因、经过与结果|时间、地点、人物|六要素|记叙文?的?要素"),
+  ("shunxu", "顺叙", "Chronological narration", r"顺叙"),
   ("daoxu", "倒叙 · 插叙", "Flashback and inserted narration", r"倒叙|插叙|补叙"),
   ("xiansuo", "线索", "Narrative thread", r"(文章|事物|情感|叙事|记叙|贯穿|主要)[^。，]{0,4}线索|线索(安排|贯穿)|安排线索|以[^。，]{1,8}为线索"),
   ("xianglue", "详略", "Detail and brevity", r"详略|详写|略写"),
-  ("zhongxin", "围绕中心 · 点题", "Staying on the theme", r"中心思想|围绕中心|突出中心|点题|扣题|切题|围绕主题"),
-  ("kaitou", "开头 · 结尾", "Openings and endings", r"首尾呼应|开头和结尾|开头与结尾|开头的方法|结尾的方法|开头方法|结尾方法|开门见山|总结全文"),
-  ("guodu", "过渡 · 照应", "Transitions and echoes", r"过渡(句|段)|前后照应|照应"),
-  ("qingjie", "情节 · 悬念 · 伏笔", "Plot, suspense, foreshadowing", r"悬念|伏笔|一波三折|情节(的)?(发展|变化|安排)"),
+  ("zhongxin", "主题 · 围绕中心", "Theme; staying on it", r"中心思想|围绕中心|突出中心|点题|扣题|切题|围绕主题|理解文章(的)?主题|突出(文章)?主题"),
+  ("kaitou", "开头 · 结尾", "Openings and endings", r"首尾呼应|开头和结尾|开头与结尾|开头的方法|结尾的方法|开头方法|结尾方法|开门见山|总结全文|根据开头"),
+  ("guodu", "过渡 · 照应", "Transitions and echoes", r"过渡(句|段)|承上启下|前后照应|照应"),
+  ("qingjie", "情节 · 悬念 · 转折", "Plot, suspense, twist", r"悬念|伏笔|一波三折|出人意料|情节|结尾.{0,6}转折"),
+  ("jiayi", "叙中加入议论 · 抒情", "Comment and feeling in a narrative", r"加入议论|夹叙夹议|议论.{0,3}抒情|叙述中加入|加入.{0,4}感想"),
+  ("renxing", "人物形象 · 人物特点", "Character traits", r"人物(的)?特点|人物形象|塑造.{0,6}人物|人物性格"),
   ("renCheng", "人称 · 视角", "Point of view", r"第[一二三]人称|叙述视角|叙事视角"),
+  ("xiaoshuo", "小说三要素 · 微型小说", "Short fiction", r"小说三要素|微型小说|小说"),
  ]),
  ("desc", "描写", "Description", [
   ("renwu", "人物描写", "Character description", r"人物描写|描写人物|描写方法"),
   ("waimao", "外貌描写", "Appearance", r"外貌描写|外貌|肖像描写"),
-  ("yuyan", "语言描写", "Speech", r"语言描写|对话描写"),
-  ("dongzuo", "动作描写", "Action", r"动作描写"),
-  ("xinli", "心理描写", "Thoughts and feelings", r"心理描写|心理活动"),
-  ("shentai", "神态描写", "Expression", r"神态描写|神态"),
-  ("jingwu", "景物 · 环境描写", "Setting and scenery", r"景物描写|环境描写|描写景物|写景"),
+  ("dongzuo", "行动描写 · 动作描写", "Action", r"行动描写|动作描写|(外貌|语言|神态|表情)、(行动|动作)|(行动|动作)、(语言|心理|神态)"),
+  ("yuyan", "语言描写", "Speech", r"语言描写|对话描写|(外貌|行动|动作|神态|表情)、语言|语言、(行动|动作|心理|神态)"),
+  ("xinli", "心理描写", "Thoughts and feelings", r"心理描写|心理活动|、心理"),
+  ("shentai", "神态描写", "Expression", r"神态描写|神态|表情描写|、表情"),
+  ("jingwu", "景物 · 环境描写", "Setting and scenery", r"景物描写|环境描写|描写景物|写景|对景物的描写"),
+  ("dongwu", "动物描写", "Animals", r"对动物的描写|动物描写|描写动物"),
   ("changmian", "场面描写", "Scene", r"场面描写|场景描写"),
   ("xijie", "细节描写", "Detail", r"细节描写"),
-  ("cemian", "正面 · 侧面描写", "Direct and indirect description", r"侧面描写|正面描写"),
+  ("cemian", "正面 · 侧面描写 · 对比衬托", "Direct, indirect, contrast", r"侧面描写|正面描写|衬托|烘托|反衬|映衬|对比(的修辞|修辞|手法|的写法|写法)|通过比较"),
   ("wugan", "五感 · 动静", "Senses, stillness and movement", r"五感|多感官|感官描写|动静结合|动态描写|静态描写"),
  ]),
  ("expr", "表现手法 · 抒情", "Techniques and feeling", [
-  ("jiejing", "借景 · 借物抒情", "Feeling through scene or object", r"借景抒情|借物抒情|情景交融|寓情于景"),
-  ("tuowu", "托物言志 · 象征", "Symbolism", r"托物言志|象征(手法|的手法|的写法)|(运用|使用|用)了?象征"),
+  ("jiejing", "借景 · 借物抒情", "Feeling through scene or object", r"借景抒情|借物抒情|情景交融|寓情于景|表达情感|理解作者(的)?情感"),
+  ("tuowu", "托物言志 · 借物喻理 · 象征", "Symbolism; lesson through an object", r"托物言志|借物喻理|象征(手法|的手法|的写法)|(运用|使用|用)了?象征"),
   ("shuqing", "直接 · 间接抒情", "Direct and indirect feeling", r"直接抒情|间接抒情"),
   ("yiyang", "欲扬先抑", "Praise after blame", r"欲扬先抑|先抑后扬"),
   ("yixiao", "以小见大", "The small shows the large", r"以小见大"),
  ]),
- ("read", "阅读策略", "Reading strategies", [
-  ("gaikuo", "概括 · 归纳", "Summarising", r"概括|归纳", "noP"),
-  ("tuiduan", "推断 · 预测", "Inferring and predicting", r"推断|推测|推理|预测", "noP"),
-  ("shangxia", "联系上下文", "Using context", r"联系上下文|根据上下文|上下文"),
-  ("guandian", "作者观点 · 态度", "Writer's view and attitude", r"作者的?(观点|态度|立场|用意|意图)|写作目的", "noP"),
+ ("read", "阅读理解策略", "Reading strategies", [
+  ("ciyi", "词语理解 · 特定含义", "Word meaning in context", r"联系上下文|根据上下文|推测.{0,4}词义|特定含义|引申义|言外之意|深层含义"),
+  ("juzuo", "句子 · 段落的作用", "Role of a sentence or paragraph", r"(句子|句|段|段落)(在文中)?的作用|有什么作用", "noP"),
+  ("gaikuo", "概括 · 归纳 · 缩写", "Summarising", r"概括|归纳|缩写", "noP"),
+  ("tuiduan", "推断 · 预测", "Inferring and predicting", r"推断|推测(?!.{0,4}词)|推理|预测", "noP"),
+  ("guandian", "作者观点 · 态度 · 写作目的", "Writer's view and purpose", r"作者的?(观点|态度|立场|用意|意图)|写作目的", "noP"),
   ("jiegou", "篇章结构", "Text structure", r"总分总|总分|分总|篇章结构|段落结构|文章结构"),
+  ("pingjia", "评价 · 赏析", "Evaluating and appreciating", r"赏析|欣赏|鉴赏|评价.{0,4}(人物|做法|观点)", "noP"),
   ("bijiaoyd", "比较阅读 · 多文本", "Comparing texts", r"比较阅读|对比阅读|多文本|多篇"),
+  ("gushi", "古诗文", "Classical poems and prose", r"古诗|诗词|文言|古文|诗歌"),
+ ]),
+ ("app", "应用文 · 书面互动", "Functional writing", [
+  ("geshi", "格式（称呼 · 署名 · 主题）", "Format", r"格式|称呼|署名|问候语|结束语|主题栏", "W"),
+  ("yuqiW", "语气 · 口吻 · 得体", "Tone and register", r"语气|口吻|得体|礼貌|正式|亲切|敬语|措辞", "W"),
+  ("huiying", "回应要点", "Answering every point", r"回应|回复|针对.{0,8}(问题|内容|要点|电邮)|要点", "W"),
+  ("jianyi", "提出建议 · 看法", "Making suggestions", r"提出.{0,6}(建议|看法|观点|意见)|建议", "W"),
+  ("wangyou", "回应网友 · 他人观点", "Responding to others' views", r"网友|论坛|针对他人的观点|针对.{0,6}观点|他人的(观点|看法)"),
+  ("chenghu", "演讲：称呼 · 开场白", "Speech: address and opening", r"开场白|称呼|问候", "W"),
+  ("haozhao", "演讲：呼吁 · 感染力", "Speech: call to action", r"呼吁|号召|感染力|鼓动"),
+  ("yanjiang", "演讲词", "Speeches", r"演讲"),
+  ("cailiao", "引述材料 · 审题立意", "Using the given material", r"材料作文|引述材料|紧扣材料|提供的材料|根据.{0,6}材料|审题|立意"),
  ]),
  ("punc", "标点符号", "Punctuation", [
   ("yinhao", "引号", "Quotation marks", r"引号"),
@@ -106,25 +138,80 @@ FAM = [
   ("shuming", "书名号", "Title marks", r"书名号"),
  ]),
  ("gram", "句子 · 词语", "Sentences and words", [
-  ("yuqi", "句子语气", "Sentence mood", r"语气", "noP"),
+  ("yuqi", "句子语气", "Sentence mood", r"句子的?语气|语气词", "noP"),
   ("guanlian", "关联词 · 复句", "Connectives", r"关联词|复句"),
   ("bingju", "病句", "Faulty sentences", r"病句"),
-  ("shuyu", "俗语 · 谚语 · 歇后语", "Sayings and proverbs", r"俗语|谚语|歇后语|惯用语", "noP"),
+  ("jufa", "句子成分（主语 · 谓语等）", "Sentence parts", r"主语|谓语|宾语|句子成分|成分残缺|成分多余"),
+  ("shuyu", "俗语 · 谚语 · 歇后语 · 成语", "Sayings and idioms", r"俗语|谚语|歇后语|惯用语", "noP"),
   ("goucir", "构词", "Word formation", r"构词|偏旁|部首", "noP"),
  ]),
  ("oral", "口语 · 互动", "Speaking and interaction", [
-  ("yanjiang", "演讲", "Speech", r"演讲"),
+  ("koutou", "看视频 · 口头报告", "Video-based presentation", r"口头报告|看(录像|视频|短片)|观看(录像|视频|短片)"),
   ("bianlun", "辩论", "Debate", r"辩论"),
   ("caifang", "采访", "Interview", r"采访"),
   ("zhuanshu", "转述", "Reporting what others said", r"转述"),
-  ("hudong", "口语 · 书面互动", "Spoken and written interaction", r"口语互动|书面互动|[#＃]$"),
+  ("hudong", "口语互动 · 讨论", "Spoken interaction", r"口语互动|书面互动|[#＃]$|讨论.{0,4}(话题|问题)"),
  ]),
 ]
+
+# Exam components for Higher CL (SEC 2027 K355). Each part lists groups of skill keys; a part with "task"
+# also gets a row for the units whose textbook writing task is that kind of text.
+COMP = {"H": [
+ {"k": "P1", "zh": "试卷一 写作", "en": "Paper 1 Writing", "parts": [
+  {"k": "pmail", "zh": "私人电邮", "en": "Personal email", "task": "pmail", "groups": [
+    ["应用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]],
+    ["内容组织", "Content", ["lieshuzi", "julizi", "buzhou", "shili", "tedian"]]]},
+  {"k": "omail", "zh": "公务电邮", "en": "Formal email", "task": "omail", "groups": [
+    ["应用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]],
+    ["内容组织", "Content", ["lietubiao", "shili", "lieshuzi", "julizi"]]]},
+  {"k": "forum", "zh": "论坛", "en": "Forum post", "task": "forum", "groups": [
+    ["回应与立场", "Responding and taking a stand", ["wangyou", "lichang", "huiying"]],
+    ["论证", "Argument", ["lundian", "julilz", "daolilz", "duibilz", "biyulz"]]]},
+  {"k": "sit", "zh": "情境作文", "en": "Situational composition", "task": "sit", "groups": [
+    ["描写", "Description", ["renwu", "waimao", "dongzuo", "yuyan", "xinli", "shentai", "jingwu", "dongwu", "changmian", "xijie", "cemian", "wugan"]],
+    ["修辞手法", "Rhetorical devices", ["biyu", "niren", "kuazhang", "paibi", "duiou", "fanfu", "shewen", "fanwen", "jiedai"]],
+    ["记叙手法", "Narrative techniques", ["yaosu", "shunxu", "daoxu", "xiansuo", "xianglue", "zhongxin", "kaitou", "guodu", "qingjie", "jiayi", "sx_space", "renCheng"]],
+    ["表现手法 · 抒情", "Techniques and feeling", ["jiejing", "tuowu", "shuqing", "yiyang", "yixiao"]]]},
+  {"k": "arg", "zh": "议论文", "en": "Argumentative essay", "task": "arg", "groups": [
+    ["议论文三要素与论证方法", "Elements and methods", ["lundian", "julilz", "daolilz", "duibilz", "biyulz"]],
+    ["论证的展开", "Developing the argument", ["duofang", "zhengfan", "fanbo", "lichang"]]]},
+  {"k": "speech", "zh": "演讲稿", "en": "Speech", "task": "speech", "groups": [
+    ["演讲稿要求", "Speech features", ["yanjiang", "chenghu", "haozhao"]],
+    ["论证", "Argument", ["lundian", "julilz", "daolilz", "duibilz", "biyulz", "paibi", "fanwen"]]]},
+  {"k": "mat", "zh": "材料作文", "en": "Material-based essay", "task": "mat", "groups": [
+    ["审题与引述材料", "Reading and using the material", ["cailiao"]],
+    ["论证", "Argument", ["lundian", "julilz", "daolilz", "duibilz", "biyulz", "duofang"]]]},
+ ]},
+ {"k": "P2", "zh": "试卷二 语文应用与阅读理解", "en": "Paper 2 Language use and comprehension", "parts": [
+  {"k": "cloze", "zh": "短文填充", "en": "Cloze", "groups": [["词语与句子", "Words and sentences", ["guanlian", "shuyu", "goucir", "ciyi"]]]},
+  {"k": "bingju", "zh": "病句改正", "en": "Sentence correction", "groups": [["句子", "Sentences", ["bingju", "jufa", "guanlian"]]]},
+  {"k": "rc", "zh": "阅读理解", "en": "Comprehension", "groups": [
+    ["说明文：说明方法", "Expository: methods", ["lieshuzi", "julizi", "dabifang", "zuobijiao", "fenleibie", "xiadingyi", "lietubiao", "yinziliao", "smff"]],
+    ["说明文：说明顺序与内容", "Expository: order and content", ["sx_time", "sx_space", "sx_logic", "buzhou", "tedian", "shili"]],
+    ["记叙文 · 小说", "Narrative and fiction", ["yaosu", "shunxu", "daoxu", "xiansuo", "xianglue", "zhongxin", "renxing", "renwu", "jingwu", "qingjie", "xiaoshuo", "renCheng"]],
+    ["议论文", "Argumentative", ["lundian", "julilz", "daolilz", "duibilz", "biyulz", "duofang"]],
+    ["修辞手法", "Rhetorical devices", ["biyu", "niren", "kuazhang", "paibi", "duiou", "fanfu", "shewen", "fanwen", "jiedai"]],
+    ["表现手法", "Techniques", ["cemian", "jiejing", "tuowu", "yiyang", "yixiao", "shuqing"]],
+    ["理解策略", "Strategies", ["ciyi", "juzuo", "gaikuo", "tuiduan", "guandian", "jiegou", "guodu", "pingjia", "bijiaoyd", "gushi"]],
+    ["标点符号", "Punctuation", ["yinhao", "pozhe", "shenglue", "maohao", "fenhao", "shuming"]]]},
+  {"k": "sum", "zh": "片段缩写", "en": "Summary", "groups": [["概括", "Summarising", ["gaikuo", "zhongxin", "jiegou"]]]},
+ ]},
+ {"k": "P3", "zh": "试卷三 口试", "en": "Paper 3 Oral", "parts": [
+  {"k": "pres", "zh": "口头报告", "en": "Oral presentation", "groups": [["口头报告", "Presentation", ["koutou", "lichang", "julilz"]]]},
+  {"k": "disc", "zh": "讨论", "en": "Discussion", "groups": [["讨论", "Discussion", ["hudong", "wangyou", "zhuanshu", "bianlun"]]]},
+ ]},
+]}
+
 def bare(zh):
-    return "|".join(re.escape(t) for t in zh.split(" · ") if len(t) >= 2) + "(?!论证)"
+    zh = re.sub(r"（[^）]*）", "", zh)
+    return "|".join(re.escape(t) for t in re.split(r" · |：", zh) if len(t) >= 2) + "(?!论证)"
+
+
 # focus lines are short curated skill statements, so the bare label also counts there
-SK = [(fk, s[0], re.compile(s[3]), re.compile(s[3] + "|" + bare(s[1])), len(s) > 4 and s[4] == "noP") for fk, _, _, ss in FAM for s in ss]
-VOCAB = re.compile(r"^(掌握字词|掌握《[^》]*》的内容及词语|字词[：:])")  # vocabulary lists, not skills
+SK = [(s[0], re.compile(s[3]), re.compile(s[3] + "|" + bare(s[1])), s[4] if len(s) > 4 else "") for _, _, _, ss in FAM for s in ss]
+VOCAB = re.compile(r"^(掌握字词|掌握《[^》]*》的内容及词语|字词[：:]|一、查词典|查词典)")  # vocabulary lists, not skills
+LABS = ("阅读", "听说", "写作", "综合任务", "文化站")
+SECN = {"阅读": "读", "听说": "说", "写作": "写", "综合任务": "综", "文化站": "读", "聆听": "说", "说话": "说", "口语互动": "说", "泛读": "读"}
 CN = dict(zip("一二三四五六七八", range(1, 9)))
 
 
@@ -147,48 +234,86 @@ def pdf_text(p: Path) -> str:
 
 
 def units_of(text: str):
-    """Split a guide into units at each '单元内容概要和教学目标' heading. Yields (opener, objectives, notes) as [(line, page)]."""
+    """Split a guide into units at each '单元内容概要和教学目标' heading.
+    Yields (opener, objectives, notes); each a list of (section, line, page)."""
     L, pg, page = text.split("\n"), [], 0
     for l in L:
         m = re.match(r"=====PAGE (\d+)=====", l)
         if m:
             page = int(m.group(1))
         pg.append(page)
+    # each lesson-plan page carries its section as a side-tab label (阅读, 写作, ...)
+    plab = {}
+    for l, p in zip(L, pg):
+        if l.strip() in LABS:
+            plab.setdefault(p, set()).add(l.strip())
+    plab = {p: next(iter(v)) for p, v in plab.items() if len(v) == 1}
     idx = [i for i, l in enumerate(L) if "单元内容概要和教学目标" in l and i > 400]
     stop = next((i for i, l in enumerate(L) if i > (idx[-1] if idx else 0) and re.match(r"^\s*(附录|作业总复习参考答案|21世纪技能目标及发展阶段|资源文本)", l)), len(L))
     for k, i in enumerate(idx):
         end = idx[k + 1] - 40 if k + 1 < len(idx) else stop
         head = [(L[j].strip(), pg[j]) for j in range(max(0, i - 40), i)]
-        # opener: the 阅读 / 听说 / 写作 points just above the heading
         op, key = [], None
         for l, p in head:
             if l in ("阅读", "听说", "写作", "聆听", "说话", "口语互动"):
                 key = l
-                op.append([key + "：", p])
+                op.append([SECN[key], key + "：", p])
             elif key and "单元内容" not in l:
-                op[-1][0] += l
+                op[-1][1] += l
         body = [(L[j].strip(), pg[j]) for j in range(i, end)]
         a = next((n for n, (l, _) in enumerate(body) if "各板块内容简介" in l), 0)
         b = next((n for n, (l, _) in enumerate(body) if n > a and re.match(r"^(SLS ?资源|表一)", l)), min(len(body), a + 200))
-        yield op, body[a:b], body[b:]
+        obj, cur = [], "读"
+        for l, p in body[a:b]:
+            m = re.match(r"^(阅读|听说|写作|综合任务|文化站|泛读)", l)
+            if m and len(l) < 14:
+                cur = SECN[m.group(1)]
+            obj.append((cur, l, p))
+        notes, cur, ans = [], "读", False
+        for l, p in body[b:]:
+            if "作业参考答案" in l:
+                ans = True
+            m = re.match(r"^\d+\.\s*(生活空间|核心|巩固|进阶|听说|写作)", l)
+            if m:
+                cur = {"听说": "说", "写作": "写"}.get(m.group(1), "读")
+            sec = "读" if ans else SECN.get(plab.get(p), cur)
+            notes.append((sec, l, p))
+        yield op, obj, notes
 
 
 def bullets(lines):
     out, cur = [], None
-    for l, p in lines:
+    for sec, l, p in lines:
         if re.match(r"^[•●]", l):
             if cur:
                 out.append(cur)
-            cur = [re.sub(r"^[•●]\s*", "", l), p]
+            cur = [sec, re.sub(r"^[•●]\s*", "", l), p]
         elif cur is not None:
             if not l or re.match(r"^(=====|单元|板块|阅读|听说|写作|文化站|综合任务|泛读|\d)", l):
                 out.append(cur)
                 cur = None
             else:
-                cur[0] += l
+                cur[1] += l
     if cur:
         out.append(cur)
     return out
+
+
+def task_kind(x):
+    """Paper 1 kind of a textbook writing task (sow.json wbank item), or None."""
+    t, sub, task = x.get("type"), x.get("sub", ""), x.get("task", "")
+    if t == "fw" and sub == "Email":
+        return "omail" if re.search(r"校长|负责人|经理|主任|部门|公司|机构|理事会|编辑|局|中心|老师", task.split("：")[0] + task[:80]) and not re.search(r"(朋友|同学|表[哥姐弟妹]|堂[哥姐弟妹])[^。]{0,6}(发了|写了)", task[:60]) else "pmail"
+    if t == "arg":
+        return {"Forum post": "forum", "Speech": "speech"}.get(sub) or ("mat" if "材料" in task else "arg")
+    if t in ("nar", "des", "lit"):
+        return "sit"
+    if t == "exp":
+        return "exp"
+    return None
+
+
+RSTR = {"read": "读", "lang": "知", "oral": "说"}
 
 
 def main():
@@ -196,7 +321,11 @@ def main():
     i = h.find("const DATA=") + len("const DATA=")
     D = json.JSONDecoder().raw_decode(h[i:])[0]
     bk = lambda t: t.get("book_en") or t.get("book") or ""
-    res, src = {}, {}
+    res, src, tasks = {}, {}, {}
+    for x in D["sow"]["wbank"]["items"]:
+        k = task_kind(x)
+        if x["uid"].startswith("CL|") and k:
+            tasks.setdefault(x["uid"], []).append([k, x.get("gist", ""), x.get("task", "")[:220], x.get("page", "")])
     for c, pat, books in GUIDES:
         seq = {}
         for b in books:
@@ -216,27 +345,36 @@ def main():
                 t = themes[n]
                 uid = "|".join(["CL", c, str(s), t["book"], str(t["unit"])])
                 recs = [r for r in D["recs"] if r["lang"] == "CL" and r["course"] == c and r["sec"] == s and r["book"] == t["book"] and str(r["unit"]) == str(t["unit"])]
-                foc = [(x, p) for x, p in op] + [(r["sub_m"] + ("：" + r["task_m"] if r["task_m"] != r["sub_m"] else ""), None) for r in recs]
-                obl = [(x, p) for x, p in bullets(obj)]
+                foc = [tuple(o) for o in op] + [(RSTR.get(r["strand"], "写"), r["sub_m"] + ("：" + r["task_m"] if r["task_m"] != r["sub_m"] else ""), None) for r in recs]
+                obl = [tuple(o) for o in bullets(obj)]
                 hit = {}
-                for fk, k, rx0, rxf, noP in SK:
-                    for tier, lines in (("f", foc), ("o", obl), ("p", [] if noP else notes)):
+                for k, rx0, rxf, fl in SK:
+                    seen, out = set(), []
+                    for tier, lines in (("f", foc), ("o", obl), ("p", [] if "noP" in fl else notes)):
                         rx = rxf if tier == "f" else rx0
-                        m = next(((x, p) for x, p in lines if x and not VOCAB.match(x) and rx.search(x)), None)
-                        if m:
-                            x, p = m
+                        for sec, x, p in lines:
+                            if not x or VOCAB.match(x) or ("W" in fl and sec != "写"):
+                                continue
+                            m = rx.search(x)
+                            if not m:
+                                continue
                             if tier == "p":
-                                j = rx.search(x).start()
-                                x = x[max(0, j - 30): j + 40]
-                            hit[k] = [tier, x[:160], p]
-                            break
+                                x = x[max(0, m.start() - 30): m.start() + 45]
+                            key = (sec, x[:40])
+                            if key in seen:
+                                continue
+                            seen.add(key)
+                            out.append([tier, sec, x[:160], p])
+                    if out:
+                        hit[k] = out[:12]
                 res[uid] = hit
                 src[uid] = f.name
     fam = [{"k": fk, "zh": zh, "en": en, "skills": [{"k": s[0], "zh": s[1], "en": s[2]} for s in ss]} for fk, zh, en, ss in FAM]
-    out = {"fam": fam, "units": res, "src": src}
-    (ROOT / "tools" / "skills.json").write_text(json.dumps(out, ensure_ascii=False, indent=0), encoding="utf-8")
+    out = {"fam": fam, "comp": COMP, "units": res, "src": src, "tasks": tasks}
+    (ROOT / "tools" / "skills.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     from collections import Counter
-    print("units:", len(res), "tiers:", Counter(v[0] for u in res.values() for v in u.values()))
+    print("units:", len(res), "hits:", Counter(h[0] for u in res.values() for v in u.values() for h in v))
+    print("tasks:", Counter(k[0] for u, v in tasks.items() if "|H|" in u for k in v))
 
 
 if __name__ == "__main__":

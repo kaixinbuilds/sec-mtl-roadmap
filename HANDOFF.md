@@ -11,6 +11,14 @@ A department wall chart of what the CPDD 2021-syllabus teacher guides teach in C
 
 Two comparisons must always be easy: across languages for the same course, and within a language across levels of demand.
 
+## Skills sorted by exam component, Higher CL first (2 Nov 2026, fourteenth update)
+
+The Skills tab now opens on **By exam component** (`vSkComp`), built for Higher CL (K355) only so the HOD can settle the structure: Paper 1 split into 私人电邮, 公务电邮, 论坛, 情境作文, 议论文, 演讲稿, 材料作文; Paper 2 into 短文填充, 病句改正, 阅读理解 (说明方法, 说明顺序 by time, space and logic, 记叙文 and 小说, 议论文, 修辞, 表现手法, strategies, punctuation) and 片段缩写; Paper 3 into 口头报告 and 讨论. The structure is `COMP["H"]` in `tools/skills.py`; G1 to G3 get their own lists once HCL is agreed. **By skill family** (`vSkFam`) is the earlier view.
+
+- Every instance is kept now: `units[uid][skill] = [[tier, section, text, page], ...]` (up to 12). Sections: 读, 写, 说, 综, 知, read from each lesson-plan page's side tab (阅读, 写作, 听说…), the 板块 rows of the objectives table, and the `DATA.recs` strand. Answer keys count as 读.
+- Flag `W` keeps only writing-section hits (email format, tone, suggestions). Paper 1 kinds come from `sow.json` wbank items via `task_kind()`: emails to a friend or classmate are 私人电邮, to a principal or an organisation 公务电邮; `nar`, `des` and `lit` tasks are 情境作文; `arg` with "材料" is 材料作文. HCL 1B U6 报道 is listed as outside Paper 1.
+- Cells show section chips (filled = focus, outlined = objective, dashed = lesson notes); clicking opens `skPop()` with every instance and its page. Filters: lesson notes on or off, section (all, writing, reading, speaking), components to show (`st.kparts`).
+
 ## Skills at a glance tab, CL first (2 Nov 2026, thirteenth update)
 
 New Planner tab `skills` (`vSkills()` in `index.html`): rows are skills grouped in families (修辞手法, 说明方法, 议论 · 论证, 记叙, 描写, 表现手法 · 抒情, 阅读策略, 标点符号, 句子 · 词语, 口语 · 互动), columns are Sec 1 to 4 units grouped by term (from `alloc()` and `sow.json` `pacing`). Default layout stacks G1, G2, G3 and Higher CL under each skill; "One course" uses the side-panel course. A "First taught" column gives the earliest focus or objective unit. Built for CL only, at the HOD's request, for structure review; ML and TL show a placeholder note.
