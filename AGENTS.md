@@ -48,5 +48,5 @@ The script tells the other agent to handle that thread and append its reply. Rul
 ## Git
 
 - Commit your own work with a clear message. Commit the thread file together with the work it is about.
-- Do not push, merge or open PRs unless the HOD asks for it in that conversation. The `HANDOFF.md` and Claude's notes record how pushing works from this Mac.
+- Claude commits and pushes `main` live after every change (HOD's standing instruction, 2 Nov 2026), so the HOD can review on the live page and every step is in git. Codex does not push. Do not merge or open PRs unless the HOD asks. The `HANDOFF.md` and Claude's notes record how pushing works from this Mac.
 - Never rewrite history or discard the other agent's uncommitted work.

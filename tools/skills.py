@@ -30,7 +30,8 @@ SEC = {"一上": 1, "一下": 1, "二上": 2, "二下": 2, "中三": 3, "中四"
 # Each skill: (key, label, English, pattern[, flags]). Patterns need a context word where the bare term
 # is an everyday word (比喻 also glosses idioms, 反复 and 夸张 are common words, 举例 also means citing evidence).
 # Flags: noP = count only the focus and objective tiers (too common in lesson notes);
-#        W   = count only hits in the unit's writing section (写作), e.g. email format.
+#        W   = count only hits in the unit's writing section (写作), e.g. email format;
+#        K=a/b = count only in units whose textbook writing task is one of these Paper 1 kinds.
 FAM = [
  ("rhet", "修辞手法", "Rhetorical devices", [
   ("biyu", "比喻", "Simile and metaphor", r"比喻(句|的修辞|修辞|手法|的用法|的特点|的作用|的写法)|修辞手法[：:“]?比喻|(运用|使用|用)了?比喻(?!论证)|明喻|暗喻|比喻、|、比喻"),
@@ -69,7 +70,7 @@ FAM = [
   ("duofang", "多方面论证", "Arguing from several angles", r"多方面|多角度|不同角度|不同的论证方法"),
   ("zhengfan", "正反论证", "Both sides", r"正反对比|正反论证|正反两(个)?方面|正反(两方|观点)|一分为二"),
   ("fanbo", "反驳 · 驳论", "Rebuttal", r"反驳|驳论"),
-  ("lichang", "表明立场", "Taking a stand", r"立场|赞成或反对|表明.{0,4}(看法|观点)", "W"),
+  ("lichang", "表明立场", "Taking a stand", r"立场|赞成或反对|表明.{0,4}(看法|观点)", "W K=forum/arg/speech/mat/pmail/omail"),
  ]),
  ("narr", "记叙", "Narration", [
   ("yaosu", "记叙要素", "Who, when, where; cause, course, result", r"起因、经过和结果|起因、经过、结果|起因、经过与结果|时间、地点、人物|六要素|记叙文?的?要素"),
@@ -109,7 +110,7 @@ FAM = [
  ]),
  ("read", "阅读理解策略", "Reading strategies", [
   ("ciyi", "词语理解 · 特定含义", "Word meaning in context", r"联系上下文|根据上下文|推测.{0,4}词义|特定含义|引申义|言外之意|深层含义"),
-  ("juzuo", "句子 · 段落的作用", "Role of a sentence or paragraph", r"(句子|句|段|段落)(在文中)?的作用|有什么作用", "noP"),
+  ("juzuo", "句子 · 段落的作用", "Role of a sentence or paragraph", r"(句子|句|段|段落)(在文中)?的作用|(这|此|第.{1,3})(一)?(句|段)(话)?有什么作用"),
   ("gaikuo", "概括 · 归纳 · 缩写", "Summarising", r"概括|归纳|缩写", "noP"),
   ("tuiduan", "推断 · 预测", "Inferring and predicting", r"推断|推测(?!.{0,4}词)|推理|预测", "noP"),
   ("guandian", "作者观点 · 态度 · 写作目的", "Writer's view and purpose", r"作者的?(观点|态度|立场|用意|意图)|写作目的", "noP"),
@@ -119,15 +120,15 @@ FAM = [
   ("gushi", "古诗文", "Classical poems and prose", r"古诗|诗词|文言|古文|诗歌"),
  ]),
  ("app", "应用文 · 书面互动", "Functional writing", [
-  ("geshi", "格式（称呼 · 署名 · 主题）", "Format", r"格式|称呼|署名|问候语|结束语|主题栏", "W"),
-  ("yuqiW", "语气 · 口吻 · 得体", "Tone and register", r"语气|口吻|得体|礼貌|正式|亲切|敬语|措辞", "W"),
-  ("huiying", "回应要点", "Answering every point", r"回应|回复|针对.{0,8}(问题|内容|要点|电邮)|要点", "W"),
-  ("jianyi", "提出建议 · 看法", "Making suggestions", r"提出.{0,6}(建议|看法|观点|意见)|建议", "W"),
+  ("geshi", "格式（称呼 · 署名 · 主题）", "Format", r"格式|称呼|署名|问候语|结束语|主题栏", "W K=pmail/omail/forum/speech"),
+  ("yuqiW", "语气 · 口吻 · 得体", "Tone and register", r"语气|口吻|得体|敬语|措辞|正式的|亲切的", "W K=pmail/omail/forum/speech"),
+  ("huiying", "回应要点", "Answering every point", r"回应|回复|针对.{0,8}(问题|内容|要点|电邮)|要点", "W K=pmail/omail/forum"),
+  ("jianyi", "提出建议 · 看法", "Making suggestions", r"提出.{0,6}(建议|看法|观点|意见)|建议", "W K=pmail/omail/forum"),
   ("wangyou", "回应网友 · 他人观点", "Responding to others' views", r"网友|论坛|针对他人的观点|针对.{0,6}观点|他人的(观点|看法)"),
-  ("chenghu", "演讲：称呼 · 开场白", "Speech: address and opening", r"开场白|称呼|问候", "W"),
-  ("haozhao", "演讲：呼吁 · 感染力", "Speech: call to action", r"呼吁|号召|感染力|鼓动"),
+  ("chenghu", "演讲：称呼 · 开场白", "Speech: address and opening", r"开场白|称呼|问候", "W K=speech"),
+  ("haozhao", "演讲：呼吁 · 感染力", "Speech: call to action", r"呼吁|号召|感染力|鼓动", "K=speech/forum/arg/mat"),
   ("yanjiang", "演讲词", "Speeches", r"演讲"),
-  ("cailiao", "引述材料 · 审题立意", "Using the given material", r"材料作文|引述材料|紧扣材料|提供的材料|根据.{0,6}材料|审题|立意"),
+  ("cailiao", "引述材料 · 审题立意", "Using the given material", r"材料作文|引述材料|紧扣材料|提供的材料|根据所提供的材料"),
  ]),
  ("punc", "标点符号", "Punctuation", [
   ("yinhao", "引号", "Quotation marks", r"引号"),
@@ -289,7 +290,7 @@ def bullets(lines):
                 out.append(cur)
             cur = [sec, re.sub(r"^[•●]\s*", "", l), p]
         elif cur is not None:
-            if not l or re.match(r"^(=====|单元|板块|阅读|听说|写作|文化站|综合任务|泛读|\d)", l):
+            if not l or re.match(r"^(=====|单元|板块|阅读|听说|写作|文化站|综合任务|泛读|进阶|核心|巩固|生活空间|\d)", l) or re.search(r"（\d+节", l):
                 out.append(cur)
                 cur = None
             else:
@@ -297,6 +298,67 @@ def bullets(lines):
     if cur:
         out.append(cur)
     return out
+
+
+PROC = re.compile(r"批改|提供反馈|点击|下载|图标|ITT|SLS|上传|登入|平台|录音|播放|动画")  # teacher logistics, not skills
+NOISE = re.compile(r"^(\d{1,3}|返回目录|\d{1,3}\s*返回目录|返回目录\s*\d{1,3}|单元[一二三四五六七八](\s.*)?|技能技能技能)$")
+START = re.compile(r"^([•*●]|\d+(\.\d+)+\s|\d+[\.、]\s*|[一二三四五六七八九十]+、|（\d+）|\(\d+\))")
+
+
+def sentences(lines):
+    """Rebuild whole sentences from PDF lines (which break mid-sentence) and split at 。？！；"""
+    out, buf, bsec, bp = [], "", None, None
+
+    def flush():
+        for part in re.split(r"(?<=[。？！；])", buf):
+            part = re.sub(r"\s+", " ", part).strip(" *")
+            if len(part) > 1:
+                out.append((bsec, part, bp))
+
+    table = False
+    for sec, l, p in lines:
+        l = l.replace("\t", " ").strip()
+        if not l or l.startswith("=====PAGE") or NOISE.match(l):
+            continue
+        if re.search(r"检查清单|核查项目|核查内容", l):
+            flush()
+            buf, bsec, bp, table, rows = "", sec, p, True, []
+            continue
+        if table:
+            if START.match(l) or re.match(r"^差异性处理|^教学流程", l):
+                # one entry per checklist: table cells wrap at arbitrary points, so join the text as it reads
+                txt = "".join(rows)
+                if txt:
+                    out.append((bsec, "检查清单：" + txt, bp))
+                table = False
+            else:
+                rows.append(re.sub(r"\s*(自评\s*/\s*互评|改进|核查项目|核查内容|检查内容)\s*", "", l).strip())
+                continue
+        if START.match(l) or sec != bsec:
+            flush()
+            buf, bsec, bp = l, sec, p
+        else:
+            buf += l
+        if re.search(r"[。？！]$", l):
+            flush()
+            buf = ""
+    flush()
+    return out
+
+
+def clip(x, m):
+    """Show a whole sentence; trim a long one (or a checklist) around the match at clause or row breaks."""
+    if len(x) <= 120:
+        return x
+    if x.startswith("检查清单："):
+        a, b = max(5, m.start() - 22), min(len(x), m.end() + 30)
+        return "检查清单：" + ("…" if a > 5 else "") + x[a:b] + ("…" if b < len(x) else "")
+    seps = [k.end() for k in re.finditer(r"[，；：]", x)]
+    a = max([e for e in seps if e <= m.start() and m.start() - e <= 60] or [max(0, m.start() - 40)])
+    b = min([e for e in seps if e >= m.end() + 25] or [len(x)])
+    b = min(b, a + 130)
+    head = "检查清单：" if x.startswith("检查清单：") and a > 0 else ""
+    return head + ("…" if a else "") + x[a:b].strip(" ·，；") + ("…" if b < len(x) else "")
 
 
 def task_kind(x):
@@ -347,24 +409,35 @@ def main():
                 recs = [r for r in D["recs"] if r["lang"] == "CL" and r["course"] == c and r["sec"] == s and r["book"] == t["book"] and str(r["unit"]) == str(t["unit"])]
                 foc = [tuple(o) for o in op] + [(RSTR.get(r["strand"], "写"), r["sub_m"] + ("：" + r["task_m"] if r["task_m"] != r["sub_m"] else ""), None) for r in recs]
                 obl = [tuple(o) for o in bullets(obj)]
+                nts = sentences(notes)
+                kinds = {z[0] for z in tasks.get(uid, [])}
                 hit = {}
                 for k, rx0, rxf, fl in SK:
                     seen, out = set(), []
-                    for tier, lines in (("f", foc), ("o", obl), ("p", [] if "noP" in fl else notes)):
+                    kr = re.search(r"K=(\S+)", fl)
+                    if kr and not kinds & set(kr.group(1).split("/")):
+                        continue
+                    for tier, lines in (("f", foc), ("o", obl), ("p", [] if "noP" in fl else nts)):
                         rx = rxf if tier == "f" else rx0
                         for sec, x, p in lines:
-                            if not x or VOCAB.match(x) or ("W" in fl and sec != "写"):
+                            if not x or VOCAB.match(x) or ("W" in fl.split() and sec != "写") or (tier != "f" and PROC.search(x)):
                                 continue
                             m = rx.search(x)
                             if not m:
                                 continue
-                            if tier == "p":
-                                x = x[max(0, m.start() - 30): m.start() + 45]
+                            x = re.sub(r"\s+", " ", x).strip()
+                            parts = re.split(r"(?<=[。？！；])", x)
+                            x = next((q for q in parts if rx.search(q)), x).strip()
+                            x = re.sub(r"^\d+(\.\d+)*\s*", "", x)
+                            m = rx.search(x)
+                            if not m:
+                                continue
+                            x = clip(x, m)
                             key = (sec, x[:40])
                             if key in seen:
                                 continue
                             seen.add(key)
-                            out.append([tier, sec, x[:160], p])
+                            out.append([tier, sec, x, p])
                     if out:
                         hit[k] = out[:12]
                 res[uid] = hit

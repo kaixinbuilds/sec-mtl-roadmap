@@ -11,6 +11,14 @@ A department wall chart of what the CPDD 2021-syllabus teacher guides teach in C
 
 Two comparisons must always be easy: across languages for the same course, and within a language across levels of demand.
 
+## Skills evidence cleaned up (2 Nov 2026, sixteenth update)
+
+HOD review found cut-off sentences and off-topic matches (e.g. 王老师的结束语 counted as email format). Fixes in `tools/skills.py`:
+- `sentences()` rebuilds whole sentences from the PDF lines before matching (page furniture such as page numbers, 返回目录 and unit headers is skipped); each instance shows the sentence that contains the match, step numbers stripped, long ones trimmed at clause breaks (`clip`).
+- 写作任务检查清单 tables are read as one block (their cells wrap at arbitrary points) and shown as a window around the match, prefixed 检查清单：.
+- Flag `K=kinds`: functional-writing skills (格式, 语气, 回应要点, 建议, 称呼, 呼吁, 立场) count only in units whose textbook task is that kind of text. `PROC` drops teacher logistics (批改, SLS, 下载…). 材料作文 no longer counts the generic 审题/立意. 句段作用 now counts comprehension questions.
+- Standing rule from the HOD: commit and push live after every change (`AGENTS.md` updated).
+
 ## Skills table in four year columns; unit dialog in MTL; tapered hero hill (2 Nov 2026, fifteenth update)
 
 - The Skills tables (`skgrid4`) now have one column per year (Sec 1 to 4) and no sideways scroll; each entry gives the unit, its term, the section chips and the guide's wording (`skEntries`), and "First:" sits under the skill name. Below 760 px rows stack year by year.
