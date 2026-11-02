@@ -454,7 +454,12 @@ def task_kind(x, c="H"):
     """Paper 1 kind of a textbook writing task (sow.json wbank item) for course c, or None."""
     t, sub, task = x.get("type"), x.get("sub", ""), x.get("task", "")
     if t == "fw" and sub == "Email":
-        return "omail" if re.search(r"校长|负责人|经理|主任|部门|公司|机构|理事会|编辑|局|中心|老师", task.split("：")[0] + task[:80]) and not re.search(r"(朋友|同学|表[哥姐弟妹]|堂[哥姐弟妹])[^。]{0,6}(发了|写了)", task[:60]) else "pmail"
+        # Formal when the writer acts in an official role, or the email goes to one (read the whole task: some open with a chart)
+        off = r"校长|负责人|经理|主任|部门|公司|机构|理事会|编辑|局|中心|先生|女士|会长|主席"
+        if re.search(r"假设你是[^，。]{0,12}(先生|女士|负责人|经理|主任|主席)", task):
+            return "omail"
+        to = re.findall(r"电邮给([^，。；（]{1,20})|收件人：\s*([^<\s]{1,12})", task)
+        return "omail" if any(re.search(off, a + b) for a, b in to) else "pmail"
     if t == "fw":  # G1 书面互动 forms and the HCL 论坛 (实用文 in K355); reports and postcards are no SEC format (EXAM leaves them out)
         if sub == "Online post / reply":  # SEAB K120 P1: "请根据网络贴文的内容，写出你的回应" -- only replies are the exam format
             return "post" if re.search(r"回应|留言|阅读.{0,8}贴文|根据.{0,6}贴文", task) else "postw"
