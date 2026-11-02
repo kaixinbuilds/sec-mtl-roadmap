@@ -449,8 +449,8 @@ def task_kind(x, c="H"):
     t, sub, task = x.get("type"), x.get("sub", ""), x.get("task", "")
     if t == "fw" and sub == "Email":
         return "omail" if re.search(r"校长|负责人|经理|主任|部门|公司|机构|理事会|编辑|局|中心|老师", task.split("：")[0] + task[:80]) and not re.search(r"(朋友|同学|表[哥姐弟妹]|堂[哥姐弟妹])[^。]{0,6}(发了|写了)", task[:60]) else "pmail"
-    if t == "fw":  # G1 书面互动 forms; reports and postcards sit outside the SEC formats
-        return {"Online post / reply": "post", "Message": "msg"}.get(sub) or ("rec" if sub.startswith("Guided recount") else None)
+    if t == "fw":  # G1 书面互动 forms and the HCL 论坛 (实用文 in K355); reports and postcards sit outside the SEC formats
+        return {"Online post / reply": "post", "Message": "msg", "Forum post": "forum"}.get(sub) or ("rec" if sub.startswith("Guided recount") else None)
     if t == "arg":
         k = {"Forum post": "forum", "Speech": "speech"}.get(sub) or ("mat" if "材料" in task else "arg")
         return "arg" if c != "H" and k == "mat" else k  # 材料作文 is a Higher CL format only
