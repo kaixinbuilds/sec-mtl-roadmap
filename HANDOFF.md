@@ -11,6 +11,13 @@ A department wall chart of what the CPDD 2021-syllabus teacher guides teach in C
 
 Two comparisons must always be easy: across languages for the same course, and within a language across levels of demand.
 
+## Skills table in four year columns; unit dialog in MTL; tapered hero hill (2 Nov 2026, fifteenth update)
+
+- The Skills tables (`skgrid4`) now have one column per year (Sec 1 to 4) and no sideways scroll; each entry gives the unit, its term, the section chips and the guide's wording (`skEntries`), and "First:" sits under the skill name. Below 760 px rows stack year by year.
+- 文学创作: HCL S3 U6 (story with a twist) and S4 U4 (《赠汪伦》 rewritten as a story) are narrative and stay in 情境作文; S4 U5 借物喻理的散文 is outside the Paper 1 formats (`task_kind` drops 散文).
+- The unit dialog (`sowPanel`) shows its headings, table headers, strand names, exam values, domains and notes in the unit's language in MTL mode (`UDX`, `ux()`). Still English: E21CC rationale notes, the school DSO names, the e21moves prompts and assessment descriptions (source data).
+- Hero hills (`.scene .h1/.h2/.h3`) now rise to a summit at S4 and slope to the ground on both sides.
+
 ## Skills sorted by exam component, Higher CL first (2 Nov 2026, fourteenth update)
 
 The Skills tab now opens on **By exam component** (`vSkComp`), built for Higher CL (K355) only so the HOD can settle the structure: Paper 1 split into 私人电邮, 公务电邮, 论坛, 情境作文, 议论文, 演讲稿, 材料作文; Paper 2 into 短文填充, 病句改正, 阅读理解 (说明方法, 说明顺序 by time, space and logic, 记叙文 and 小说, 议论文, 修辞, 表现手法, strategies, punctuation) and 片段缩写; Paper 3 into 口头报告 and 讨论. The structure is `COMP["H"]` in `tools/skills.py`; G1 to G3 get their own lists once HCL is agreed. **By skill family** (`vSkFam`) is the earlier view.

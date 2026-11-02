@@ -306,8 +306,8 @@ def task_kind(x):
         return "omail" if re.search(r"校长|负责人|经理|主任|部门|公司|机构|理事会|编辑|局|中心|老师", task.split("：")[0] + task[:80]) and not re.search(r"(朋友|同学|表[哥姐弟妹]|堂[哥姐弟妹])[^。]{0,6}(发了|写了)", task[:60]) else "pmail"
     if t == "arg":
         return {"Forum post": "forum", "Speech": "speech"}.get(sub) or ("mat" if "材料" in task else "arg")
-    if t in ("nar", "des", "lit"):
-        return "sit"
+    if t in ("nar", "des") or (t == "lit" and "散文" not in sub + task):
+        return "sit"  # 文学创作 stories are narrative; 散文 (e.g. 借物喻理) is outside the Paper 1 formats
     if t == "exp":
         return "exp"
     return None
