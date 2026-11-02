@@ -208,3 +208,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 ## Eighteenth update (2 Nov 2026): not-examined marking
 - `EXAM` in tools/skills.py lists the Paper 1 kinds each SEC 2027 paper sets (H: 电邮, 论坛, 记叙, 说明, 议论 incl. 演讲词 and 材料; G2/G3: 电邮 and the three essays; G1: 回应网络贴文 only).
 - Writing bank: CL tasks of any other kind stay in their row but are grey with a 非考试范围 tag (wbNx). Skills view: parts or groups with `nx` (G1 短信/电邮 and 看图叙事, G3 论坛, 延伸写作 letters) are greyed the same way. HCL 论坛贴文 (3 U5) now sits in 实用文 per K355.
+
+## Nineteenth update (2 Nov 2026): sidebar toggles, E21CC sources, writing bank merged
+- 技能一览 toggles (view, evidence, section, course compare, components) live in the left sidebar (#skV #skP #skS #skL #skC, filled in controls()).
+- The writing task bank is now the third 技能一览 view (st.kv="write" → vWrite); the separate nav tab is gone and old #write-… links redirect.
+- Unit dialog section 5 badges every E21CC link by source: CPDD 标注 / 本校推导 / 本校推断 / 本校建议切入点 (SG21 fallback ideas where nothing maps); reasons are translated (R21, why21).
+- Email kind reads the whole task for the recipient or the writer's role (G2 2上 U3 to the principal is 公务电邮).
