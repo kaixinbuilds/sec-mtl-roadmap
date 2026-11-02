@@ -352,6 +352,9 @@ table.wbgrid thead th.yh{border-top:5px solid var(--yc)}
 .nxk{display:inline-block;font-size:10.5px;font-weight:600;font-family:var(--f-m);line-height:1.2;padding:1px 6px;margin:0 4px;border-radius:4px;color:var(--muted);background:color-mix(in srgb,var(--muted) 10%,var(--paper));border:1px dashed color-mix(in srgb,var(--muted) 55%,transparent);vertical-align:1px;letter-spacing:0;text-transform:none}
 .wbgrid li.wbi.nx summary,.wbgrid li.wbi.nx .full{color:var(--muted)}.wbgrid li.wbi.nx .wbk{color:var(--muted);background:transparent;border-color:color-mix(in srgb,var(--muted) 40%,transparent)}
 table.skgrid4 tr.nx td,table.skgrid4 tr.nx th{background:color-mix(in srgb,var(--muted) 7%,var(--paper));color:var(--muted)}table.skgrid4 tr.nx .ske{filter:grayscale(1);opacity:.7}
+.skctl{position:sticky;top:var(--hh,96px);z-index:12;background:var(--paper);margin:0 -10px;padding:8px 10px 2px;border-bottom:1px solid transparent;transition:box-shadow .15s}
+.skctl.stuck{border-bottom-color:var(--line);box-shadow:0 6px 10px -8px rgba(19,35,63,.25)}.skctl.stuck .rowbar{margin:0 0 6px;gap:6px 10px}.skctl.stuck .seg button{padding:3px 8px;font-size:12px}.skctl.stuck .lab{display:none}
+@media (max-width:760px){.skctl{position:static}}
 table.wbgrid{table-layout:fixed}table.wbgrid col.c0{width:170px}table.wbgrid col.cy{width:calc((100% - 170px)/4)}table.wbgrid td{overflow-wrap:anywhere}
 .wbgrid .wbk{display:inline-block;font-size:11px;font-weight:600;line-height:1.2;padding:1px 6px;margin-right:5px;border-radius:4px;background:color-mix(in srgb,var(--b1) 12%,var(--paper));color:var(--b1);border:1px solid color-mix(in srgb,var(--b1) 30%,transparent);vertical-align:1px}
 .badge.rc{color:var(--p3);background:var(--p3bg);border-color:transparent;margin-left:4px;cursor:help}
@@ -434,7 +437,7 @@ table.tgrid thead th.tm{border-top:4px solid var(--tc)}.tm.t1{--tc:var(--y1)}.tm
 .skgrid .stk{position:sticky;left:9px;display:inline-block}
 .skparts .seg{flex-wrap:wrap}.skparts .sep{width:10px}
 .skgrid4{width:100%;border-collapse:collapse;table-layout:fixed;font-size:13px;background:var(--paper);border:1px solid var(--line)}
-.skgrid4 thead th{position:sticky;top:var(--hh,0);z-index:3;background:var(--acc);color:var(--bg);font-family:var(--f-d);font-size:15px;text-align:left;padding:7px 10px}
+.skgrid4 thead th{position:sticky;top:calc(var(--hh,0px) + var(--ch,0px));z-index:3;background:var(--acc);color:var(--bg);font-family:var(--f-d);font-size:15px;text-align:left;padding:7px 10px}
 .skgrid4 th.rh{width:180px;text-align:left;vertical-align:top;padding:8px 10px;background:var(--soft);font-weight:600;border-bottom:1px solid var(--line)}
 .skgrid4 thead th.rh{background:var(--acc);color:var(--bg)}
 .skgrid4 th.rh small{display:block;font-weight:400;color:var(--muted);font-family:var(--f-m);font-size:10.5px;margin-top:2px;line-height:1.3}
@@ -1031,8 +1034,8 @@ function vSkills(){const L=st.lang,el=isEL();
 function vSkComp(){const L=st.lang,c=st.crs,C=(SKD.comp||{})[c],cn=x=>x==="H"?"Higher CL":DATA.courseEn[x];
  if(!C)return `<section><h2>Skills by exam component · ${esc(cn(c))}</h2><p class="sub">The component view is built for Higher CL first, so the department can settle the structure. G1, G2 and G3 follow their own SEC papers once it is agreed.</p>${skBar()}<div class="rowbar"><div class="seg"><button type="button" data-crs2="H">Show Higher CL</button></div></div></section>`;
  const E=DATA.exam[L][c],parts=C.flatMap(P=>P.parts.map(x=>x.k)),on=(st.kparts||[]).filter(k=>parts.includes(k));
- let h=`<section><h2>Skills by exam component · ${esc(cn(c))} (${esc(E.code)})</h2><p class="sub">Each SEC component with the skills it draws on, and every unit where the teacher guides teach or practise them, year by year. The 写作任务 row lists the units whose textbook writing task is that kind of text.</p>${skBar()}
- <div class="rowbar skparts"><span class="lab">Show</span><div class="seg"><button type="button" data-kpart="__all" aria-pressed="${!on.length}">All components</button>${C.map(P=>P.parts.map(x=>`<button type="button" data-kpart="${x.k}" aria-pressed="${on.includes(x.k)}"><span lang="zh">${hx(x.zh)}</span></button>`).join("")).join(`<span class="sep"></span>`)}</div></div>${skKey()}
+ let h=`<section><h2>Skills by exam component · ${esc(cn(c))} (${esc(E.code)})</h2><p class="sub">Each SEC component with the skills it draws on, and every unit where the teacher guides teach or practise them, year by year. The 写作任务 row lists the units whose textbook writing task is that kind of text.</p><div class="skctl">${skBar()}
+ <div class="rowbar skparts"><span class="lab">Show</span><div class="seg"><button type="button" data-kpart="__all" aria-pressed="${!on.length}">All components</button>${C.map(P=>P.parts.map(x=>`<button type="button" data-kpart="${x.k}" aria-pressed="${on.includes(x.k)}"><span lang="zh">${hx(x.zh)}</span></button>`).join("")).join(`<span class="sep"></span>`)}</div></div></div>${skKey()}
  <table class="skgrid4">${skHead4(L,`<th class="rh">Skill</th>`)}<tbody>`;
  for(const P of C){const ps=P.parts.filter(x=>!on.length||on.includes(x.k));if(!ps.length)continue;
   h+=`<tr class="grp"><th colspan="5"><span lang="zh">${hx(P.zh)}</span> · ${hx(P.en)}</th></tr>`;
@@ -1045,7 +1048,7 @@ function vSkComp(){const L=st.lang,c=st.crs,C=(SKD.comp||{})[c],cn=x=>x==="H"?"H
  h+=`</tbody></table><p class="note">${other.length?`Textbook tasks outside the Paper 1 formats: ${other.map(w=>{const t=DATA.themes.find(z=>uidOf(z)===w.uid);return `<span lang="zh">${hx(w.gist)}</span> (${t?esc(secName(t.sec,L))+" U"+hx(t.unit):""})`}).join("; ")}. `:""}Paper 1 kinds are read from each task: an email to a friend or classmate is 私人电邮, to a principal or an organisation 公务电邮; 记叙 tasks and 文学创作 stories count as ${c==="H"?"情境作文":"记叙文"}, while 散文 does not.${c==="H"?"":" Rows marked 课本练习 are textbook practice that leads into the exam format."} Lesson-note entries are shown as what students do: the teacher's lead-in is cut, and marking and feedback steps are left out. Each entry shows the unit, its term, where it comes up and the guide's wording; click it for every instance and its page.</p></section>`;
  return h}
 function vSkFam(){const L=st.lang,Cs=["G1","G2","G3","H"],cmp=st.klay!=="one",cs=cmp?Cs:[st.crs],cn=c=>c==="H"?"Higher CL":DATA.courseEn[c];const none=[];
- let h=`<section><h2>Skills by family · ${esc(DATA.langName[L])}${cmp?"":" · "+esc(cn(st.crs))}</h2><p class="sub">Every skill family, year by year${cmp?", with G1, G2, G3 and Higher CL under each skill":""}.</p>${skBar()}<div class="rowbar">${skSeg(cmp?"cmp":"one",[["cmp","Compare the 4 courses"],["one","One course"]],"data-klay")}</div>${skKey()}
+ let h=`<section><h2>Skills by family · ${esc(DATA.langName[L])}${cmp?"":" · "+esc(cn(st.crs))}</h2><p class="sub">Every skill family, year by year${cmp?", with G1, G2, G3 and Higher CL under each skill":""}.</p><div class="skctl">${skBar()}<div class="rowbar">${skSeg(cmp?"cmp":"one",[["cmp","Compare the 4 courses"],["one","One course"]],"data-klay")}</div></div>${skKey()}
  <table class="skgrid4">${skHead4(L,`<th class="rh">Skill</th>`)}<tbody>`;
  for(const f of SKD.fam){const sk=f.skills.filter(s=>cs.some(c=>[1,2,3,4].some(y=>skUnits(L,c,y).some(({u})=>skHits(u,s.k).length))));
   f.skills.forEach(s=>{if(!Cs.some(c=>[1,2,3,4].some(y=>skUnits(L,c,y).some(({u})=>((SKD.units[uidOf(u)])||{})[s.k]))))none.push(s.zh)});
@@ -1096,4 +1099,11 @@ function render(){
 const applyHash=parseHash;
 addEventListener("hashchange",()=>{const t=st.tab;applyHash();render();if(st.tab!==t)scrollTo({top:0})});addEventListener("resize",()=>{markScroll();try{document.documentElement.style.setProperty("--hh",document.querySelector("header.site").offsetHeight+"px")}catch(e){}});
 render();
+/* Sticky offsets: --hh is the header's height, --ch the stuck skills bar's height (so table headers sit below both) */
+(()=>{const root=document.documentElement,H=document.querySelector("header.site");
+ const sync=()=>{const hh=H?H.offsetHeight:0;root.style.setProperty("--hh",hh+"px");const c=document.querySelector(".skctl"),on=c&&getComputedStyle(c).position==="sticky";
+  if(c)c.classList.toggle("stuck",!!on&&c.getBoundingClientRect().top<=hh+1);root.style.setProperty("--ch",on?c.offsetHeight+"px":"0px")};
+ if(H&&window.ResizeObserver)new ResizeObserver(sync).observe(H);
+ addEventListener("scroll",()=>requestAnimationFrame(sync),{passive:true});new MutationObserver(()=>requestAnimationFrame(sync)).observe($("#view"),{childList:true});
+ document.fonts&&document.fonts.ready.then(sync);sync()})();
 </script>
