@@ -165,7 +165,7 @@ COMP = {"H": [
   {"k": "pmail", "zh": "私人电邮", "en": "Personal email", "task": "pmail", "groups": [
     ["实用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]],
     ["内容重点", "Content", ["lieshuzi", "julizi", "buzhou", "shili", "tedian"]],
-    ["延伸写作：书信 · 简讯", "Extension: letters and notes", ["shuxin"]]]},
+    ["延伸写作：书信 · 简讯", "Extension: letters and notes", ["shuxin"], "nx"]]},
   {"k": "omail", "zh": "公务电邮", "en": "Formal email", "task": "omail", "groups": [
     ["实用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]],
     ["内容重点", "Content", ["lietubiao", "shili", "lieshuzi", "julizi"]]]},
@@ -230,7 +230,7 @@ def essay(c):
     ["说明方法", "Methods", EXPM], ["说明顺序与内容", "Order and content", EXPO]]},
   {"k": "arg", "zh": "作文：议论文", "en": "Essay: argumentative", "task": "arg", "groups": [
     ["三要素与论证方法", "Elements and methods", ARGM], ["论证结构", "Developing the argument", ["duofang", "zhengfan", "lichang"]]]}] + (
-  [{"k": "forum", "zh": "论坛（课本练习）", "en": "Forum post (textbook practice)", "task": "forum", "groups": [
+  [{"k": "forum", "zh": "论坛（课本练习）", "en": "Forum post (textbook practice)", "task": "forum", "nx": True, "groups": [
     ["回应与立场", "Responding and taking a stand", ["wangyou", "lichang", "huiying"]]]}] if c == "G3" else [])
 
 
@@ -249,9 +249,9 @@ COMP["G1"] = [
   {"k": "post", "zh": "回应网络贴文", "en": "Responding to an online post", "task": "post", "groups": [
     ["书面互动要求", "Task requirements", ["huiying", "wangyou", "jianyi", "lichang", "yuqiW"]],
     ["内容", "Content", ["xijie", "jingwu", "buzhou", "lieshuzi", "julizi"]]]},
-  {"k": "msg", "zh": "短信 · 电邮（课本练习）", "en": "Messages and emails (textbook practice)", "task": ["msg", "pmail", "omail"], "groups": [
+  {"k": "msg", "zh": "短信 · 电邮（课本练习）", "en": "Messages and emails (textbook practice)", "task": ["msg", "pmail", "omail"], "nx": True, "groups": [
     ["书面互动要求", "Task requirements", ["geshi", "huiying", "yuqiW"]]]},
-  {"k": "rec", "zh": "看图叙事（书面互动页）", "en": "Guided recount (textbook practice)", "task": ["rec", "sit"], "groups": [
+  {"k": "rec", "zh": "看图叙事（书面互动页）", "en": "Guided recount (textbook practice)", "task": ["rec", "sit"], "nx": True, "groups": [
     ["描写", "Description", ["renwu", "dongzuo", "yuyan", "xinli", "jingwu"]], ["写作手法（记叙）", "Narrative techniques", ["yaosu", "shunxu", "kaitou"]]]}]},
  {"k": "P2", "zh": "试卷二 选择题", "en": "Paper 2 Multiple choice", "parts": [
   {"k": "yy", "zh": "语文应用", "en": "Language use", "groups": [["词语与句子", "Words and sentences", ["guanlian", "ciyi", "shuyu"]]]},
@@ -262,10 +262,17 @@ for c, n in (("G2", 120), ("G3", 150)):
     COMP[c] = [
  {"k": "P1", "zh": "试卷一 写作", "en": "Paper 1 Writing", "parts": [
   {"k": "pmail", "zh": "实用文：私人电邮", "en": "Functional writing: personal email", "task": "pmail", "groups": [
-    FWREQ, ["内容重点", "Content", ["lieshuzi", "julizi", "buzhou", "tedian"]], ["延伸写作：书信 · 简讯", "Extension: letters and notes", ["shuxin"]]]},
+    FWREQ, ["内容重点", "Content", ["lieshuzi", "julizi", "buzhou", "tedian"]], ["延伸写作：书信 · 简讯", "Extension: letters and notes", ["shuxin"], "nx"]]},
   {"k": "omail", "zh": "实用文：公务电邮", "en": "Functional writing: formal email", "task": "omail", "groups": [
     FWREQ, ["内容重点", "Content", ["lietubiao", "lieshuzi", "julizi"]], ["引述材料", "Using the material", ["cailiao"]]]}] + essay(c)},
  p2g(c), P3G]
+
+
+# Paper 1 kinds each SEC 2027 paper examines; textbook tasks of any other kind are shown but marked not examined.
+EXAM = {"H": ["pmail", "omail", "forum", "sit", "arg", "speech", "mat", "exp"],  # K355: 实用文 电邮 / 论坛; 作文 记叙 · 说明 · 议论（含演讲词）
+        "G3": ["pmail", "omail", "sit", "arg", "exp"],  # K320: 实用文 电邮 only
+        "G2": ["pmail", "omail", "sit", "arg", "exp"],  # K220
+        "G1": ["post"]}  # K120: 回应网络贴文
 
 
 def bare(zh):
@@ -531,7 +538,7 @@ def main():
                 res[uid] = hit
                 src[uid] = f.name
     fam = [{"k": fk, "zh": zh, "en": en, "skills": [{"k": s[0], "zh": s[1], "en": s[2]} for s in ss]} for fk, zh, en, ss in FAM]
-    out = {"fam": fam, "comp": COMP, "units": res, "src": src, "tasks": tasks}
+    out = {"fam": fam, "comp": COMP, "exam": EXAM, "units": res, "src": src, "tasks": tasks}
     (ROOT / "tools" / "skills.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     from collections import Counter
     print("units:", len(res), "hits:", Counter(h[0] for u in res.values() for v in u.values() for h in v))

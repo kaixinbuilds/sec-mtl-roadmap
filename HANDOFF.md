@@ -204,3 +204,7 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - New skills: 书信 · 简讯（延伸写作） (extension letters under 私人电邮), 朗读, 听力理解.
 - COMP now has G1 (K120: 回应网络贴文 + 课本练习 rows, MCQ paper, oral), G2 (K220) and G3 (K320: adds 词语替换 and a 论坛 practice row). A part's `task` may be a list of kinds. task_kind() takes the course; 材料 tasks count as 议论文 outside Higher CL.
 - HCL 私人电邮 sweep: 3 textbook tasks (1A U3, 2B U6, 3 U2) plus extension letters (2A U1, 2B U4, 3 U6, 4 U2). The 作业 workbooks are not on the drive.
+
+## Eighteenth update (2 Nov 2026): not-examined marking
+- `EXAM` in tools/skills.py lists the Paper 1 kinds each SEC 2027 paper sets (H: 电邮, 论坛, 记叙, 说明, 议论 incl. 演讲词 and 材料; G2/G3: 电邮 and the three essays; G1: 回应网络贴文 only).
+- Writing bank: CL tasks of any other kind stay in their row but are grey with a 非考试范围 tag (wbNx). Skills view: parts or groups with `nx` (G1 短信/电邮 and 看图叙事, G3 论坛, 延伸写作 letters) are greyed the same way. HCL 论坛贴文 (3 U5) now sits in 实用文 per K355.
