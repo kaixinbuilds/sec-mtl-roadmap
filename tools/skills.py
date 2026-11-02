@@ -246,11 +246,9 @@ def p2g(c):
 
 COMP["G1"] = [
  {"k": "P1", "zh": "试卷一 书面互动", "en": "Paper 1 Written interaction", "parts": [
-  {"k": "post", "zh": "回应网络贴文", "en": "Replying to an online post (SEC format)", "task": "post", "groups": [
+  {"k": "post", "zh": "回应网络贴文", "en": "Online posts: own posts build up to the SEC reply", "task": ["postw", "post"], "groups": [
     ["书面互动要求", "Task requirements", ["huiying", "wangyou", "jianyi", "lichang", "yuqiW"]],
     ["内容", "Content", ["xijie", "jingwu", "buzhou", "lieshuzi", "julizi"]]]},
-  {"k": "postw", "zh": "自拟贴文（课本练习）", "en": "Writing your own post (textbook practice)", "task": "postw", "nx": True, "groups": [
-    ["内容", "Content", ["xijie", "jingwu", "buzhou", "lieshuzi", "julizi", "tedian"]]]},
   {"k": "msg", "zh": "短信 · 电邮（课本练习）", "en": "Messages and emails (textbook practice)", "task": ["msg", "pmail", "omail"], "nx": True, "groups": [
     ["书面互动要求", "Task requirements", ["geshi", "huiying", "yuqiW"]]]},
   {"k": "rec", "zh": "看图叙事（书面互动页）", "en": "Guided recount (textbook practice)", "task": ["rec", "sit"], "nx": True, "groups": [
@@ -274,7 +272,7 @@ for c, n in (("G2", 120), ("G3", 150)):
 EXAM = {"H": ["pmail", "omail", "forum", "sit", "arg", "speech", "mat", "exp"],  # K355: 实用文 电邮 / 论坛; 作文 记叙 · 说明 · 议论（含演讲词）
         "G3": ["pmail", "omail", "sit", "arg", "exp"],  # K320: 实用文 电邮 only
         "G2": ["pmail", "omail", "sit", "arg", "exp"],  # K220
-        "G1": ["post"]}  # K120: 回应网络贴文
+        "G1": ["post", "postw"]}  # K120: 回应网络贴文; CPDD scaffolds it with 自拟贴文 from 中一
 
 
 def bare(zh):
