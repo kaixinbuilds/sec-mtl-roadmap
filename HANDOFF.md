@@ -197,3 +197,10 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - `03 Assessment and Examiners' Report/School Assessment/2026_BVSS_MTL_Assessment_Overview.md` (WA and EOY pattern, authentic assessments).
 - `01 Admin Matters/MTL Dept Handbook/BVSS MTL Handbook (20260410 Edition).docx` (level coordinator role: common SOW, pacing and WAs; e21CC focus) and the 2026 department meeting minutes.
 - `MTL Skills Roadmap/for GitHub/DESIGN_FEEDBACK.md` (30 Oct review) for the navigation, hero, provenance-count and planning-card changes.
+
+## Seventeenth update (2 Nov 2026): CPDD wording, student outcomes, G1-G3 components
+- Labels follow CPDD/SEAB wording: 实用文 (not 应用文), 书面互动, 议论性篇章, 演讲词.
+- Lesson-note entries are rewritten as student outcomes (`outcome()` in tools/skills.py): teacher lead-ins (教师……, 引导/让/要求学生) are cut; marking, feedback, grouping and "already taught" recaps are dropped. HOD: "focus on student outcomes and not instructions to teachers".
+- New skills: 书信 · 简讯（延伸写作） (extension letters under 私人电邮), 朗读, 听力理解.
+- COMP now has G1 (K120: 回应网络贴文 + 课本练习 rows, MCQ paper, oral), G2 (K220) and G3 (K320: adds 词语替换 and a 论坛 practice row). A part's `task` may be a list of kinds. task_kind() takes the course; 材料 tasks count as 议论文 outside Higher CL.
+- HCL 私人电邮 sweep: 3 textbook tasks (1A U3, 2B U6, 3 U2) plus extension letters (2A U1, 2B U4, 3 U6, 4 U2). The 作业 workbooks are not on the drive.

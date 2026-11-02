@@ -44,7 +44,7 @@ FAM = [
   ("fanwen", "反问", "Rhetorical question (反问)", r"反问(句|的修辞|修辞|手法|的作用)|(运用|使用|用)了?反问|修辞手法[^。]{0,8}反问"),
   ("jiedai", "借代", "Metonymy", r"借代"),
  ]),
- ("expo", "说明文", "Expository texts", [
+ ("expo", "说明性篇章", "Expository texts", [
   ("lieshuzi", "列数字", "Citing figures", r"列数字|列举的?数字|数字和例子"),
   ("julizi", "举例子", "Giving examples", r"举例子|数字和例子|举例说明(?!观点)"),
   ("dabifang", "打比方", "Analogy", r"打比方"),
@@ -57,12 +57,12 @@ FAM = [
   ("sx_time", "时间顺序", "Time order", r"时间顺序|时间先后|先后顺序|按照.{0,4}时间"),
   ("sx_space", "空间顺序", "Space order", r"空间顺序|空间的?转换|移步换景|游览(的)?(顺序|经过)"),
   ("sx_logic", "逻辑顺序", "Logical order", r"逻辑顺序|由主到次|由因到果|由现象到本质"),
-  ("buzhou", "步骤 · 程序", "Steps and procedures", r"做事情?的(步骤|程序)|(说明|说出|写出|理解)[^。]{0,10}(步骤|程序)"),
-  ("tedian", "说明对象 · 事物特点", "Subject and its features", r"说明对象|事物的特点|事物特点|景物特点"),
+  ("buzhou", "做事情的步骤 · 程序", "Steps and procedures", r"做事情?的(步骤|程序)|(说明|说出|写出|理解)[^。]{0,10}(步骤|程序)"),
+  ("tedian", "说明对象 · 事物的特点", "Subject and its features", r"说明对象|事物的特点|事物特点|景物特点"),
   ("shili", "说明事理", "Explaining a principle", r"说明事理|事理说明|分析原因"),
  ]),
- ("arg", "议论 · 论证", "Argument", [
-  ("lundian", "议论文三要素（论点 · 论据 · 论证）", "Claim, evidence, reasoning", r"论点|论据|议论文?的?三要素|议论(文)?的?基本结构"),
+ ("arg", "议论性篇章", "Argument", [
+  ("lundian", "议论性篇章的三要素（论点 · 论据 · 论证）", "Claim, evidence, reasoning", r"论点|论据|议论性篇章的三要素|议论文?的?三要素|议论(文)?的?基本结构"),
   ("julilz", "举例论证", "Argument by example", r"举例论证|事例论证|例证法"),
   ("daolilz", "引用论证 · 道理论证", "Argument by quotation or reasoning", r"道理论证|引用论证|引证法"),
   ("duibilz", "对比论证", "Argument by contrast", r"对比论证"),
@@ -70,19 +70,19 @@ FAM = [
   ("duofang", "多方面论证", "Arguing from several angles", r"多方面|多角度|不同角度|不同的论证方法"),
   ("zhengfan", "正反论证", "Both sides", r"正反对比|正反论证|正反两(个)?方面|正反(两方|观点)|一分为二"),
   ("fanbo", "反驳 · 驳论", "Rebuttal", r"反驳|驳论"),
-  ("lichang", "表明立场", "Taking a stand", r"立场|赞成或反对|表明.{0,4}(看法|观点)", "W K=forum/arg/speech/mat/pmail/omail"),
+  ("lichang", "表明立场", "Taking a stand", r"立场|赞成或反对|表明.{0,4}(看法|观点)", "W K=forum/arg/speech/mat/pmail/omail/post"),
  ]),
- ("narr", "记叙", "Narration", [
-  ("yaosu", "记叙要素", "Who, when, where; cause, course, result", r"起因、经过和结果|起因、经过、结果|起因、经过与结果|时间、地点、人物|六要素|记叙文?的?要素"),
+ ("narr", "记叙性篇章", "Narration", [
+  ("yaosu", "时间、地点、人物 · 起因、经过和结果", "Who, when, where; cause, course, result", r"起因、经过和结果|起因、经过、结果|起因、经过与结果|时间、地点、人物|六要素|记叙文?的?要素"),
   ("shunxu", "顺叙", "Chronological narration", r"顺叙"),
-  ("daoxu", "倒叙 · 插叙", "Flashback and inserted narration", r"倒叙|插叙|补叙"),
+  ("daoxu", "倒叙", "Flashback and inserted narration", r"倒叙|插叙|补叙"),
   ("xiansuo", "线索", "Narrative thread", r"(文章|事物|情感|叙事|记叙|贯穿|主要)[^。，]{0,4}线索|线索(安排|贯穿)|安排线索|以[^。，]{1,8}为线索"),
   ("xianglue", "详略", "Detail and brevity", r"详略|详写|略写"),
-  ("zhongxin", "主题 · 围绕中心", "Theme; staying on it", r"中心思想|围绕中心|突出中心|点题|扣题|切题|围绕主题|理解文章(的)?主题|突出(文章)?主题"),
+  ("zhongxin", "理解文章主题 · 围绕主题", "Theme; staying on it", r"中心思想|围绕中心|突出中心|点题|扣题|切题|围绕主题|理解文章(的)?主题|突出(文章)?主题"),
   ("kaitou", "开头 · 结尾", "Openings and endings", r"首尾呼应|开头和结尾|开头与结尾|开头的方法|结尾的方法|开头方法|结尾方法|开门见山|总结全文|根据开头"),
-  ("guodu", "过渡 · 照应", "Transitions and echoes", r"过渡(句|段)|承上启下|前后照应|照应"),
+  ("guodu", "过渡句 · 承上启下", "Transitions and echoes", r"过渡(句|段)|承上启下|前后照应|照应"),
   ("qingjie", "情节 · 悬念 · 转折", "Plot, suspense, twist", r"悬念|伏笔|一波三折|出人意料|情节|结尾.{0,6}转折"),
-  ("jiayi", "叙中加入议论 · 抒情", "Comment and feeling in a narrative", r"加入议论|夹叙夹议|议论.{0,3}抒情|叙述中加入|加入.{0,4}感想"),
+  ("jiayi", "记叙中加入议论 · 抒情", "Comment and feeling in a narrative", r"加入议论|夹叙夹议|议论.{0,3}抒情|叙述中加入|加入.{0,4}感想"),
   ("renxing", "人物形象 · 人物特点", "Character traits", r"人物(的)?特点|人物形象|塑造.{0,6}人物|人物性格"),
   ("renCheng", "人称 · 视角", "Point of view", r"第[一二三]人称|叙述视角|叙事视角"),
   ("xiaoshuo", "小说三要素 · 微型小说", "Short fiction", r"小说三要素|微型小说|小说"),
@@ -93,42 +93,43 @@ FAM = [
   ("dongzuo", "行动描写 · 动作描写", "Action", r"行动描写|动作描写|(外貌|语言|神态|表情)、(行动|动作)|(行动|动作)、(语言|心理|神态)"),
   ("yuyan", "语言描写", "Speech", r"语言描写|对话描写|(外貌|行动|动作|神态|表情)、语言|语言、(行动|动作|心理|神态)"),
   ("xinli", "心理描写", "Thoughts and feelings", r"心理描写|心理活动|、心理"),
-  ("shentai", "神态描写", "Expression", r"神态描写|神态|表情描写|、表情"),
-  ("jingwu", "景物 · 环境描写", "Setting and scenery", r"景物描写|环境描写|描写景物|写景|对景物的描写"),
+  ("shentai", "神态 · 表情描写", "Expression", r"神态描写|神态|表情描写|、表情"),
+  ("jingwu", "景物描写", "Setting and scenery", r"景物描写|环境描写|描写景物|写景|对景物的描写"),
   ("dongwu", "动物描写", "Animals", r"对动物的描写|动物描写|描写动物"),
   ("changmian", "场面描写", "Scene", r"场面描写|场景描写"),
   ("xijie", "细节描写", "Detail", r"细节描写"),
-  ("cemian", "正面 · 侧面描写 · 对比衬托", "Direct, indirect, contrast", r"侧面描写|正面描写|衬托|烘托|反衬|映衬|对比(的修辞|修辞|手法|的写法|写法)|通过比较"),
+  ("cemian", "通过比较突出特点 · 衬托", "Direct, indirect, contrast", r"侧面描写|正面描写|衬托|烘托|反衬|映衬|对比(的修辞|修辞|手法|的写法|写法)|通过比较"),
   ("wugan", "五感 · 动静", "Senses, stillness and movement", r"五感|多感官|感官描写|动静结合|动态描写|静态描写"),
  ]),
- ("expr", "表现手法 · 抒情", "Techniques and feeling", [
-  ("jiejing", "借景 · 借物抒情", "Feeling through scene or object", r"借景抒情|借物抒情|情景交融|寓情于景|表达情感|理解作者(的)?情感"),
-  ("tuowu", "托物言志 · 借物喻理 · 象征", "Symbolism; lesson through an object", r"托物言志|借物喻理|象征(手法|的手法|的写法)|(运用|使用|用)了?象征"),
+ ("expr", "表现手法", "Techniques and feeling", [
+  ("jiejing", "通过景物表达情感", "Feeling through scene or object", r"借景抒情|借物抒情|情景交融|寓情于景|表达情感|理解作者(的)?情感"),
+  ("tuowu", "借物喻理 · 象征", "Symbolism; lesson through an object", r"托物言志|借物喻理|象征(手法|的手法|的写法)|(运用|使用|用)了?象征"),
   ("shuqing", "直接 · 间接抒情", "Direct and indirect feeling", r"直接抒情|间接抒情"),
   ("yiyang", "欲扬先抑", "Praise after blame", r"欲扬先抑|先抑后扬"),
   ("yixiao", "以小见大", "The small shows the large", r"以小见大"),
  ]),
- ("read", "阅读理解策略", "Reading strategies", [
-  ("ciyi", "词语理解 · 特定含义", "Word meaning in context", r"联系上下文|根据上下文|推测.{0,4}词义|特定含义|引申义|言外之意|深层含义"),
+ ("read", "阅读技能", "Reading skills", [
+  ("ciyi", "推测词义 · 词语的特定含义", "Word meaning in context", r"联系上下文|根据上下文|推测.{0,4}词义|特定含义|引申义|言外之意|深层含义"),
   ("juzuo", "句子 · 段落的作用", "Role of a sentence or paragraph", r"(句子|句|段|段落)(在文中)?的作用|(这|此|第.{1,3})(一)?(句|段)(话)?有什么作用"),
   ("gaikuo", "概括 · 归纳 · 缩写", "Summarising", r"概括|归纳|缩写", "noP"),
   ("tuiduan", "推断 · 预测", "Inferring and predicting", r"推断|推测(?!.{0,4}词)|推理|预测", "noP"),
-  ("guandian", "作者观点 · 态度 · 写作目的", "Writer's view and purpose", r"作者的?(观点|态度|立场|用意|意图)|写作目的", "noP"),
+  ("guandian", "作者的观点 · 态度", "Writer's view and purpose", r"作者的?(观点|态度|立场|用意|意图)|写作目的", "noP"),
   ("jiegou", "篇章结构", "Text structure", r"总分总|总分|分总|篇章结构|段落结构|文章结构"),
   ("pingjia", "评价 · 赏析", "Evaluating and appreciating", r"赏析|欣赏|鉴赏|评价.{0,4}(人物|做法|观点)", "noP"),
   ("bijiaoyd", "比较阅读 · 多文本", "Comparing texts", r"比较阅读|对比阅读|多文本|多篇"),
-  ("gushi", "古诗文", "Classical poems and prose", r"古诗|诗词|文言|古文|诗歌"),
+  ("gushi", "古诗 · 文言", "Classical poems and prose", r"古诗|诗词|文言|古文|诗歌"),
  ]),
- ("app", "应用文 · 书面互动", "Functional writing", [
-  ("geshi", "格式（称呼 · 署名 · 主题）", "Format", r"格式|称呼|署名|问候语|结束语|主题栏", "W K=pmail/omail/forum/speech"),
-  ("yuqiW", "语气 · 口吻 · 得体", "Tone and register", r"语气|口吻|得体|敬语|措辞|正式的|亲切的", "W K=pmail/omail/forum/speech"),
-  ("huiying", "回应要点", "Answering every point", r"回应|回复|针对.{0,8}(问题|内容|要点|电邮)|要点", "W K=pmail/omail/forum"),
-  ("jianyi", "提出建议 · 看法", "Making suggestions", r"提出.{0,6}(建议|看法|观点|意见)|建议", "W K=pmail/omail/forum"),
-  ("wangyou", "回应网友 · 他人观点", "Responding to others' views", r"网友|论坛|针对他人的观点|针对.{0,6}观点|他人的(观点|看法)"),
-  ("chenghu", "演讲：称呼 · 开场白", "Speech: address and opening", r"开场白|称呼|问候", "W K=speech"),
-  ("haozhao", "演讲：呼吁 · 感染力", "Speech: call to action", r"呼吁|号召|感染力|鼓动", "K=speech/forum/arg/mat"),
+ ("app", "实用文 · 书面互动", "Functional writing", [
+  ("geshi", "电邮格式（称呼 · 署名 · 主题）", "Format", r"格式|称呼|署名|问候语|结束语|主题栏", "W K=pmail/omail/forum/speech/post/msg"),
+  ("yuqiW", "语气得体", "Tone and register", r"语气|口吻|得体|敬语|措辞|正式的|亲切的", "W K=pmail/omail/forum/speech/post/msg"),
+  ("huiying", "回应内容重点", "Answering every point", r"回应|回复|针对.{0,8}(问题|内容|要点|电邮)|要点", "W K=pmail/omail/forum/post/msg"),
+  ("jianyi", "提出建议 · 看法", "Making suggestions", r"提出.{0,6}(建议|看法|观点|意见)|建议", "W K=pmail/omail/forum/post/msg"),
+  ("wangyou", "回应网友 · 他人的观点", "Responding to others' views", r"网友|论坛|针对他人的观点|针对.{0,6}观点|他人的(观点|看法)"),
+  ("chenghu", "演讲词：称呼 · 开场白", "Speech: address and opening", r"开场白|称呼|问候", "W K=speech"),
+  ("haozhao", "演讲词：感染力 · 呼吁", "Speech: call to action", r"呼吁|号召|感染力|鼓动", "K=speech/forum/arg/mat"),
   ("yanjiang", "演讲词", "Speeches", r"演讲"),
-  ("cailiao", "引述材料 · 审题立意", "Using the given material", r"材料作文|引述材料|紧扣材料|提供的材料|根据所提供的材料"),
+  ("shuxin", "书信 · 简讯（延伸写作）", "Letters and notes (extension writing)", r"写一?封.{0,10}信|写一则简讯"),
+  ("cailiao", "引述材料", "Using the given material", r"材料作文|引述材料|紧扣材料|提供的材料|根据所提供的材料"),
  ]),
  ("punc", "标点符号", "Punctuation", [
   ("yinhao", "引号", "Quotation marks", r"引号"),
@@ -139,15 +140,17 @@ FAM = [
   ("shuming", "书名号", "Title marks", r"书名号"),
  ]),
  ("gram", "句子 · 词语", "Sentences and words", [
-  ("yuqi", "句子语气", "Sentence mood", r"句子的?语气|语气词", "noP"),
+  ("yuqi", "句子的语气", "Sentence mood", r"句子的?语气|语气词", "noP"),
   ("guanlian", "关联词 · 复句", "Connectives", r"关联词|复句"),
   ("bingju", "病句", "Faulty sentences", r"病句"),
-  ("jufa", "句子成分（主语 · 谓语等）", "Sentence parts", r"主语|谓语|宾语|句子成分|成分残缺|成分多余"),
+  ("jufa", "主语 · 谓语（句子成分）", "Sentence parts", r"主语|谓语|宾语|句子成分|成分残缺|成分多余"),
   ("shuyu", "俗语 · 谚语 · 歇后语 · 成语", "Sayings and idioms", r"俗语|谚语|歇后语|惯用语", "noP"),
   ("goucir", "构词", "Word formation", r"构词|偏旁|部首", "noP"),
  ]),
  ("oral", "口语 · 互动", "Speaking and interaction", [
-  ("koutou", "看视频 · 口头报告", "Video-based presentation", r"口头报告|看(录像|视频|短片)|观看(录像|视频|短片)"),
+  ("langdu", "朗读", "Reading aloud", r"朗读|朗诵"),
+  ("tingli", "听力理解", "Listening comprehension", r"听力|聆听|听后(说|回答)|听一听"),
+  ("koutou", "口头报告（看录像）", "Video-based presentation", r"口头报告|看(录像|视频|短片)|观看(录像|视频|短片)"),
   ("bianlun", "辩论", "Debate", r"辩论"),
   ("caifang", "采访", "Interview", r"采访"),
   ("zhuanshu", "转述", "Reporting what others said", r"转述"),
@@ -160,40 +163,41 @@ FAM = [
 COMP = {"H": [
  {"k": "P1", "zh": "试卷一 写作", "en": "Paper 1 Writing", "parts": [
   {"k": "pmail", "zh": "私人电邮", "en": "Personal email", "task": "pmail", "groups": [
-    ["应用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]],
-    ["内容组织", "Content", ["lieshuzi", "julizi", "buzhou", "shili", "tedian"]]]},
+    ["实用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]],
+    ["内容重点", "Content", ["lieshuzi", "julizi", "buzhou", "shili", "tedian"]],
+    ["延伸写作：书信 · 简讯", "Extension: letters and notes", ["shuxin"]]]},
   {"k": "omail", "zh": "公务电邮", "en": "Formal email", "task": "omail", "groups": [
-    ["应用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]],
-    ["内容组织", "Content", ["lietubiao", "shili", "lieshuzi", "julizi"]]]},
+    ["实用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]],
+    ["内容重点", "Content", ["lietubiao", "shili", "lieshuzi", "julizi"]]]},
   {"k": "forum", "zh": "论坛", "en": "Forum post", "task": "forum", "groups": [
     ["回应与立场", "Responding and taking a stand", ["wangyou", "lichang", "huiying"]],
     ["论证", "Argument", ["lundian", "julilz", "daolilz", "duibilz", "biyulz"]]]},
   {"k": "sit", "zh": "情境作文", "en": "Situational composition", "task": "sit", "groups": [
     ["描写", "Description", ["renwu", "waimao", "dongzuo", "yuyan", "xinli", "shentai", "jingwu", "dongwu", "changmian", "xijie", "cemian", "wugan"]],
     ["修辞手法", "Rhetorical devices", ["biyu", "niren", "kuazhang", "paibi", "duiou", "fanfu", "shewen", "fanwen", "jiedai"]],
-    ["记叙手法", "Narrative techniques", ["yaosu", "shunxu", "daoxu", "xiansuo", "xianglue", "zhongxin", "kaitou", "guodu", "qingjie", "jiayi", "sx_space", "renCheng"]],
-    ["表现手法 · 抒情", "Techniques and feeling", ["jiejing", "tuowu", "shuqing", "yiyang", "yixiao"]]]},
+    ["写作手法（记叙）", "Narrative techniques", ["yaosu", "shunxu", "daoxu", "xiansuo", "xianglue", "zhongxin", "kaitou", "guodu", "qingjie", "jiayi", "sx_space", "renCheng"]],
+    ["表现手法", "Techniques", ["jiejing", "tuowu", "shuqing", "yiyang", "yixiao"]]]},
   {"k": "arg", "zh": "议论文", "en": "Argumentative essay", "task": "arg", "groups": [
-    ["议论文三要素与论证方法", "Elements and methods", ["lundian", "julilz", "daolilz", "duibilz", "biyulz"]],
-    ["论证的展开", "Developing the argument", ["duofang", "zhengfan", "fanbo", "lichang"]]]},
-  {"k": "speech", "zh": "演讲稿", "en": "Speech", "task": "speech", "groups": [
-    ["演讲稿要求", "Speech features", ["yanjiang", "chenghu", "haozhao"]],
+    ["三要素与论证方法", "Elements and methods", ["lundian", "julilz", "daolilz", "duibilz", "biyulz"]],
+    ["论证结构 · 多方面论证", "Developing the argument", ["duofang", "zhengfan", "fanbo", "lichang"]]]},
+  {"k": "speech", "zh": "演讲词", "en": "Speech", "task": "speech", "groups": [
+    ["演讲词要求", "Speech features", ["yanjiang", "chenghu", "haozhao"]],
     ["论证", "Argument", ["lundian", "julilz", "daolilz", "duibilz", "biyulz", "paibi", "fanwen"]]]},
   {"k": "mat", "zh": "材料作文", "en": "Material-based essay", "task": "mat", "groups": [
-    ["审题与引述材料", "Reading and using the material", ["cailiao"]],
+    ["引述材料", "Using the material", ["cailiao"]],
     ["论证", "Argument", ["lundian", "julilz", "daolilz", "duibilz", "biyulz", "duofang"]]]},
  ]},
  {"k": "P2", "zh": "试卷二 语文应用与阅读理解", "en": "Paper 2 Language use and comprehension", "parts": [
   {"k": "cloze", "zh": "短文填充", "en": "Cloze", "groups": [["词语与句子", "Words and sentences", ["guanlian", "shuyu", "goucir", "ciyi"]]]},
   {"k": "bingju", "zh": "病句改正", "en": "Sentence correction", "groups": [["句子", "Sentences", ["bingju", "jufa", "guanlian"]]]},
   {"k": "rc", "zh": "阅读理解", "en": "Comprehension", "groups": [
-    ["说明文：说明方法", "Expository: methods", ["lieshuzi", "julizi", "dabifang", "zuobijiao", "fenleibie", "xiadingyi", "lietubiao", "yinziliao", "smff"]],
-    ["说明文：说明顺序与内容", "Expository: order and content", ["sx_time", "sx_space", "sx_logic", "buzhou", "tedian", "shili"]],
-    ["记叙文 · 小说", "Narrative and fiction", ["yaosu", "shunxu", "daoxu", "xiansuo", "xianglue", "zhongxin", "renxing", "renwu", "jingwu", "qingjie", "xiaoshuo", "renCheng"]],
-    ["议论文", "Argumentative", ["lundian", "julilz", "daolilz", "duibilz", "biyulz", "duofang"]],
+    ["说明性篇章：说明方法", "Expository: methods", ["lieshuzi", "julizi", "dabifang", "zuobijiao", "fenleibie", "xiadingyi", "lietubiao", "yinziliao", "smff"]],
+    ["说明性篇章：说明顺序与内容", "Expository: order and content", ["sx_time", "sx_space", "sx_logic", "buzhou", "tedian", "shili"]],
+    ["记叙性篇章 · 微型小说", "Narrative and fiction", ["yaosu", "shunxu", "daoxu", "xiansuo", "xianglue", "zhongxin", "renxing", "renwu", "jingwu", "qingjie", "xiaoshuo", "renCheng"]],
+    ["议论性篇章", "Argumentative", ["lundian", "julilz", "daolilz", "duibilz", "biyulz", "duofang"]],
     ["修辞手法", "Rhetorical devices", ["biyu", "niren", "kuazhang", "paibi", "duiou", "fanfu", "shewen", "fanwen", "jiedai"]],
     ["表现手法", "Techniques", ["cemian", "jiejing", "tuowu", "yiyang", "yixiao", "shuqing"]],
-    ["理解策略", "Strategies", ["ciyi", "juzuo", "gaikuo", "tuiduan", "guandian", "jiegou", "guodu", "pingjia", "bijiaoyd", "gushi"]],
+    ["阅读技能", "Reading skills", ["ciyi", "juzuo", "gaikuo", "tuiduan", "guandian", "jiegou", "guodu", "pingjia", "bijiaoyd", "gushi"]],
     ["标点符号", "Punctuation", ["yinhao", "pozhe", "shenglue", "maohao", "fenhao", "shuming"]]]},
   {"k": "sum", "zh": "片段缩写", "en": "Summary", "groups": [["概括", "Summarising", ["gaikuo", "zhongxin", "jiegou"]]]},
  ]},
@@ -202,6 +206,67 @@ COMP = {"H": [
   {"k": "disc", "zh": "讨论", "en": "Discussion", "groups": [["讨论", "Discussion", ["hudong", "wangyou", "zhuanshu", "bianlun"]]]},
  ]},
 ]}
+
+# G1-G3 (SEC 2027 K120 / K220 / K320, from DATA.exam): same skill groups, cut to each paper's parts.
+DESC = ["renwu", "waimao", "dongzuo", "yuyan", "xinli", "jingwu", "changmian", "xijie", "wugan"]
+RHET = ["biyu", "niren", "kuazhang", "paibi", "fanwen", "shewen"]
+NARR = ["yaosu", "shunxu", "daoxu", "xiansuo", "xianglue", "zhongxin", "kaitou", "guodu", "qingjie", "jiayi"]
+EXPM = ["lieshuzi", "julizi", "dabifang", "zuobijiao", "fenleibie", "xiadingyi", "lietubiao", "yinziliao", "smff"]
+EXPO = ["sx_time", "sx_space", "sx_logic", "buzhou", "tedian", "shili"]
+ARGM = ["lundian", "julilz", "daolilz", "duibilz", "biyulz"]
+READ = ["ciyi", "juzuo", "gaikuo", "tuiduan", "guandian", "jiegou", "pingjia"]
+FWREQ = ["实用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]]
+P3G = {"k": "P3", "zh": "试卷三 口试", "en": "Paper 3 Oral", "parts": [
+  {"k": "ld", "zh": "朗读短文", "en": "Reading aloud", "groups": [["朗读", "Reading aloud", ["langdu"]]]},
+  {"k": "hh", "zh": "看录像短片后会话", "en": "Conversation after a video clip", "groups": [["会话", "Conversation", ["koutou", "hudong", "lichang", "zhuanshu"]]]},
+  {"k": "tl", "zh": "听力理解", "en": "Listening comprehension", "groups": [["听力", "Listening", ["tingli", "gaikuo", "tuiduan"]]]}]}
+
+
+def essay(c):
+    return [
+  {"k": "sit", "zh": "作文：记叙文", "en": "Essay: narrative", "task": "sit", "groups": [
+    ["描写", "Description", DESC], ["修辞手法", "Rhetorical devices", RHET], ["写作手法（记叙）", "Narrative techniques", NARR]]},
+  {"k": "exp", "zh": "作文：说明文", "en": "Essay: expository", "task": "exp", "groups": [
+    ["说明方法", "Methods", EXPM], ["说明顺序与内容", "Order and content", EXPO]]},
+  {"k": "arg", "zh": "作文：议论文", "en": "Essay: argumentative", "task": "arg", "groups": [
+    ["三要素与论证方法", "Elements and methods", ARGM], ["论证结构", "Developing the argument", ["duofang", "zhengfan", "lichang"]]]}] + (
+  [{"k": "forum", "zh": "论坛（课本练习）", "en": "Forum post (textbook practice)", "task": "forum", "groups": [
+    ["回应与立场", "Responding and taking a stand", ["wangyou", "lichang", "huiying"]]]}] if c == "G3" else [])
+
+
+def p2g(c):
+    return {"k": "P2", "zh": "试卷二 语文应用与阅读理解", "en": "Paper 2 Language use and comprehension", "parts": [
+  {"k": "cloze", "zh": "综合填空", "en": "Cloze", "groups": [["词语与句子", "Words and sentences", ["guanlian", "shuyu", "ciyi", "bingju"]]]}] + (
+  [{"k": "tihuan", "zh": "词语替换", "en": "Word replacement", "groups": [["词语", "Words", ["ciyi", "tuiduan", "shuyu"]]]}] if c == "G3" else []) + [
+  {"k": "rc1", "zh": "阅读理解一：实用性语料", "en": "Reading 1: practical texts", "groups": [["读懂实用性语料", "Practical texts", ["lietubiao", "lieshuzi", "gaikuo", "tuiduan", "ciyi"]]]},
+  {"k": "rc2", "zh": "阅读理解二：两篇短文", "en": "Reading 2: two passages", "groups": [
+    ["记叙性篇章", "Narrative", NARR[:6] + ["renwu", "jingwu"]], ["说明性篇章", "Expository", EXPM + EXPO],
+    ["议论性篇章", "Argumentative", ARGM], ["修辞手法", "Rhetorical devices", RHET], ["阅读技能", "Reading skills", READ]]}]}
+
+
+COMP["G1"] = [
+ {"k": "P1", "zh": "试卷一 书面互动", "en": "Paper 1 Written interaction", "parts": [
+  {"k": "post", "zh": "回应网络贴文", "en": "Responding to an online post", "task": "post", "groups": [
+    ["书面互动要求", "Task requirements", ["huiying", "wangyou", "jianyi", "lichang", "yuqiW"]],
+    ["内容", "Content", ["xijie", "jingwu", "buzhou", "lieshuzi", "julizi"]]]},
+  {"k": "msg", "zh": "短信 · 电邮（课本练习）", "en": "Messages and emails (textbook practice)", "task": ["msg", "pmail", "omail"], "groups": [
+    ["书面互动要求", "Task requirements", ["geshi", "huiying", "yuqiW"]]]},
+  {"k": "rec", "zh": "看图叙事（书面互动页）", "en": "Guided recount (textbook practice)", "task": ["rec", "sit"], "groups": [
+    ["描写", "Description", ["renwu", "dongzuo", "yuyan", "xinli", "jingwu"]], ["写作手法（记叙）", "Narrative techniques", ["yaosu", "shunxu", "kaitou"]]]}]},
+ {"k": "P2", "zh": "试卷二 选择题", "en": "Paper 2 Multiple choice", "parts": [
+  {"k": "yy", "zh": "语文应用", "en": "Language use", "groups": [["词语与句子", "Words and sentences", ["guanlian", "ciyi", "shuyu"]]]},
+  {"k": "rc1", "zh": "实用性语料", "en": "Practical text", "groups": [["读懂实用性语料", "Practical texts", ["lietubiao", "lieshuzi", "tuiduan"]]]},
+  {"k": "rc2", "zh": "两篇短文", "en": "Two short passages", "groups": [["阅读技能", "Reading skills", ["yaosu", "gaikuo", "tuiduan", "ciyi", "zhongxin", "renwu"]]]}]},
+ P3G]
+for c, n in (("G2", 120), ("G3", 150)):
+    COMP[c] = [
+ {"k": "P1", "zh": "试卷一 写作", "en": "Paper 1 Writing", "parts": [
+  {"k": "pmail", "zh": "实用文：私人电邮", "en": "Functional writing: personal email", "task": "pmail", "groups": [
+    FWREQ, ["内容重点", "Content", ["lieshuzi", "julizi", "buzhou", "tedian"]], ["延伸写作：书信 · 简讯", "Extension: letters and notes", ["shuxin"]]]},
+  {"k": "omail", "zh": "实用文：公务电邮", "en": "Functional writing: formal email", "task": "omail", "groups": [
+    FWREQ, ["内容重点", "Content", ["lietubiao", "lieshuzi", "julizi"]], ["引述材料", "Using the material", ["cailiao"]]]}] + essay(c)},
+ p2g(c), P3G]
+
 
 def bare(zh):
     zh = re.sub(r"（[^）]*）", "", zh)
@@ -300,7 +365,25 @@ def bullets(lines):
     return out
 
 
-PROC = re.compile(r"批改|提供反馈|点击|下载|图标|ITT|SLS|上传|登入|平台|录音|播放|动画")  # teacher logistics, not skills
+PROC = re.compile(r"批改|评改|评分|反馈|评估表|点击|下载|图标|ITT|SLS|上传|登入|平台|录音|播放|动画|分组|扮演|搬演|示范")  # teacher logistics and marking, not skills
+# Student outcomes, not teacher moves: drop the teacher's lead-in ("教师……，引导学生") and keep what the student does.
+TEACH = re.compile(r"^.*?(?:引导|让|帮助|辅助|要求|指导|提醒|鼓励|带领|请|协助|启发|训练|组织|培养)学生们?")
+TCL = re.compile(r"^(?:[^，。；：]*?(?:教师|老师(?:可以|要|应|需|引导|带领|讲解|结合))[^，。；：]*[，：；])+")
+
+
+TCHK = re.compile(r"了解学生|借此|引起学生|学过类似|已处理|已学过|简单回顾|我们学习了|提供以下|学生之前")  # checking or recalling, a teacher's note
+
+
+def outcome(x):
+    x = re.sub(r"^[•·.\-\s]+", "", x)
+    x = re.sub(r"^差异性处理及其他建议(教学流程与提示)?|^(生活写作|创意写作)(学生)?|^(听说|阅读|写作|完成任务)[^（。]{0,12}（[^）]*）|^完成任务", "", x).strip()
+    if TCHK.search(x):
+        return ""
+    x = TEACH.sub("", x, count=1)
+    x = re.sub(r"(?:引导|让|帮助|辅助|要求|指导|提醒|鼓励|带领|请|协助|启发|训练|组织|培养)学生们?", "", x)
+    x = TCL.sub("", x)
+    x = re.sub(r"^学生们?(可以|应该|还应该|先|只要)?", "", x.strip("，、；： "))
+    return "" if "教师" in x or len(x) < 6 else x
 NOISE = re.compile(r"^(\d{1,3}|返回目录|\d{1,3}\s*返回目录|返回目录\s*\d{1,3}|单元[一二三四五六七八](\s.*)?|技能技能技能)$")
 START = re.compile(r"^([•*●]|\d+(\.\d+)+\s|\d+[\.、]\s*|[一二三四五六七八九十]+、|（\d+）|\(\d+\))")
 
@@ -361,13 +444,16 @@ def clip(x, m):
     return head + ("…" if a else "") + x[a:b].strip(" ·，；") + ("…" if b < len(x) else "")
 
 
-def task_kind(x):
-    """Paper 1 kind of a textbook writing task (sow.json wbank item), or None."""
+def task_kind(x, c="H"):
+    """Paper 1 kind of a textbook writing task (sow.json wbank item) for course c, or None."""
     t, sub, task = x.get("type"), x.get("sub", ""), x.get("task", "")
     if t == "fw" and sub == "Email":
         return "omail" if re.search(r"校长|负责人|经理|主任|部门|公司|机构|理事会|编辑|局|中心|老师", task.split("：")[0] + task[:80]) and not re.search(r"(朋友|同学|表[哥姐弟妹]|堂[哥姐弟妹])[^。]{0,6}(发了|写了)", task[:60]) else "pmail"
+    if t == "fw":  # G1 书面互动 forms; reports and postcards sit outside the SEC formats
+        return {"Online post / reply": "post", "Message": "msg"}.get(sub) or ("rec" if sub.startswith("Guided recount") else None)
     if t == "arg":
-        return {"Forum post": "forum", "Speech": "speech"}.get(sub) or ("mat" if "材料" in task else "arg")
+        k = {"Forum post": "forum", "Speech": "speech"}.get(sub) or ("mat" if "材料" in task else "arg")
+        return "arg" if c != "H" and k == "mat" else k  # 材料作文 is a Higher CL format only
     if t in ("nar", "des") or (t == "lit" and "散文" not in sub + task):
         return "sit"  # 文学创作 stories are narrative; 散文 (e.g. 借物喻理) is outside the Paper 1 formats
     if t == "exp":
@@ -385,7 +471,7 @@ def main():
     bk = lambda t: t.get("book_en") or t.get("book") or ""
     res, src, tasks = {}, {}, {}
     for x in D["sow"]["wbank"]["items"]:
-        k = task_kind(x)
+        k = task_kind(x, x["uid"].split("|")[1])
         if x["uid"].startswith("CL|") and k:
             tasks.setdefault(x["uid"], []).append([k, x.get("gist", ""), x.get("task", "")[:220], x.get("page", "")])
     for c, pat, books in GUIDES:
@@ -429,6 +515,8 @@ def main():
                             parts = re.split(r"(?<=[。？！；])", x)
                             x = next((q for q in parts if rx.search(q)), x).strip()
                             x = re.sub(r"^\d+(\.\d+)*\s*", "", x)
+                            if tier != "f":
+                                x = outcome(x)
                             m = rx.search(x)
                             if not m:
                                 continue
