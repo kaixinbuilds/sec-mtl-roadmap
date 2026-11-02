@@ -352,6 +352,8 @@ table.wbgrid thead th.yh{border-top:5px solid var(--yc)}
 .nxk{display:inline-block;font-size:10.5px;font-weight:600;font-family:var(--f-m);line-height:1.2;padding:1px 6px;margin:0 4px;border-radius:4px;color:var(--muted);background:color-mix(in srgb,var(--muted) 10%,var(--paper));border:1px dashed color-mix(in srgb,var(--muted) 55%,transparent);vertical-align:1px;letter-spacing:0;text-transform:none}
 .wbgrid li.wbi.nx summary,.wbgrid li.wbi.nx .full{color:var(--muted)}.wbgrid li.wbi.nx .wbk{color:var(--muted);background:transparent;border-color:color-mix(in srgb,var(--muted) 40%,transparent)}
 table.skgrid4 tr.nx td,table.skgrid4 tr.nx th{background:color-mix(in srgb,var(--muted) 7%,var(--paper));color:var(--muted)}table.skgrid4 tr.nx .ske,table.skgrid4 .ske.skw.nx{filter:grayscale(1);opacity:.6}table.skgrid4 .ske.skw.nx{background:color-mix(in srgb,var(--muted) 8%,var(--paper))}
+@media (min-width:761px){.side #skS{flex-flow:row wrap}.side #skS .lab{flex-basis:100%}.side #skS button{flex:1 0 auto;text-align:center}}
+.side .seg .sub{font-family:var(--f-m);font-size:10px;color:var(--muted);margin:6px 0 1px}.side .seg.skcomp button{font-size:12.5px}
 .skctl{position:sticky;top:var(--hh,96px);z-index:12;background:var(--paper);margin:0 -10px;padding:8px 10px 2px;border-bottom:1px solid transparent;transition:box-shadow .15s}
 .skctl.stuck{border-bottom-color:var(--line);box-shadow:0 6px 10px -8px rgba(19,35,63,.25)}.skctl.stuck .rowbar{margin:0 0 6px;gap:6px 10px}.skctl.stuck .seg button{padding:3px 8px;font-size:12px}.skctl.stuck .lab{display:none}
 @media (max-width:760px){.skctl{position:static}}
@@ -496,7 +498,7 @@ table.tgrid thead th.tm{border-top:4px solid var(--tc)}.tm.t1{--tc:var(--y1)}.tm
  <div class="eyebrow" id="heroEye"></div><h1 id="heroT"></h1><p class="lead" id="heroLead"></p>
  <div class="kp" id="heroPts"></div><p class="use" id="heroUse"></p>
 </div></section>
-<div class="inner shell"><aside class="side" id="side" aria-label="Filters"><div class="seg" id="langSeg"></div><div class="seg" id="crsSeg"></div><div class="seg" id="yearSeg"></div><div class="seg" id="fl"></div><div class="seg" id="fc"></div><div class="seg" id="fs"></div><div class="seg" id="fsrc"></div><div class="key" id="key"></div></aside><main id="view"></main></div>
+<div class="inner shell"><aside class="side" id="side" aria-label="Filters"><div class="seg" id="langSeg"></div><div class="seg" id="crsSeg"></div><div class="seg" id="skV"></div><div class="seg" id="skP"></div><div class="seg" id="skS"></div><div class="seg" id="skL"></div><div class="seg skcomp" id="skC"></div><div class="seg" id="yearSeg"></div><div class="seg" id="fl"></div><div class="seg" id="fc"></div><div class="seg" id="fs"></div><div class="seg" id="fsrc"></div><div class="key" id="key"></div></aside><main id="view"></main></div>
 <footer class="site"><div class="inner" id="foot"></div></footer>
 
 <script>
@@ -541,6 +543,14 @@ function controls(){
  const roads=["c21","ibl","pri"].includes(st.tab),cnm=c=>c==="H"?"HMT":DATA.courseEn[c];
  sseg("#fl",Tm("language"),st.sL,[["All",Tm("allx")],["CL","CL"],["ML","ML"],["TL","TL"]],"data-sl");sseg("#fc",Tm("course"),st.sC,[["All",Tm("allx")],...["G1","G2","G3","H"].map(c=>[c,cnm(c)])],"data-sc");sseg("#fs",Tm("year"),String(st.sS),[["All",Tm("allx")],...[1,2,3,4].map(n=>[String(n),secName(n,st.lang)])],"data-ss");const SX=UX().src||{};sseg("#fsrc",SX.label||"Source",st.src,(st.tab==="pri"?SX.pri:SX.other)||[["all","CPDD + inferred"],["cpdd","CPDD-tagged only"],["infer","Inferred only"]],"data-src");
  ["#fl","#fc","#fs","#fsrc"].forEach(id=>$(id).hidden=!roads);
+ /* Skills at a glance: its toggles live in the sidebar so they stay in reach while scrolling the table */
+ const sk=st.tab==="skills"&&st.lang==="CL",el=isEL(),fam=st.kv==="fam",Cc=(SKD.comp||{})[st.crs];
+ sseg("#skV",el?"View":"视图",fam?"fam":"comp",[["comp",el?"By exam component":"按考试部分"],["fam",el?"By skill family":"按技能类别"]],"data-kv");
+ sseg("#skP",el?"Evidence":"依据",st.kp!==false?1:0,[[1,el?"Include lesson notes":"含教学说明"],[0,el?"Focus and objectives only":"只看重点与目标"]],"data-kp");
+ sseg("#skS",el?"Section":"板块",st.ks||"all",[["all",el?"All sections":"全部"],["写",el?"Writing only":"写作"],["读",el?"Reading only":"阅读"],["说",el?"Speaking only":"听说"]],"data-ks");
+ sseg("#skL",el?"Courses":"课程比较",st.klay!=="one"?"cmp":"one",[["cmp",el?"Compare the 4 courses":"四个课程对照"],["one",el?"One course":"单一课程"]],"data-klay");
+ if(sk&&!fam&&Cc){const on=(st.kparts||[]).filter(k=>Cc.some(P=>P.parts.some(x=>x.k===k)));$("#skC").innerHTML=`<span class="lab">${el?"Show":"显示部分"}</span><button data-kpart="__all" aria-pressed="${!on.length}">${el?"All components":"全部"}</button>`+Cc.map(P=>`<span class="sub">${esc(el?P.en:P.zh)}</span>`+P.parts.map(x=>`<button data-kpart="${x.k}" aria-pressed="${on.includes(x.k)}" lang="zh">${hx(x.zh)}</button>`).join("")).join("")}else $("#skC").innerHTML="";
+ $("#skV").hidden=$("#skP").hidden=$("#skS").hidden=!sk;$("#skL").hidden=!(sk&&fam);$("#skC").hidden=!(sk&&!fam&&Cc);
  const MX=UX().mode||{};$("#modeSeg").innerHTML=`<span class="lab">${esc(MX.label||Tm("display"))}</span>`+[["mtl",MX.mtl||"MTL",MX.mtlTip],["el",MX.el||"EL",MX.elTip]].map(([m,l,t])=>`<button data-mode="${m}" aria-pressed="${st.mode===m}"${t?` title="${esc(t)}"`:""}>${esc(l)}</button>`).join("");
  $("#key").hidden=!["over","lang","map","syl"].includes(st.tab);
  $("#side").classList.toggle("empty",!document.querySelector("#side .seg:not([hidden]) button, #side .key:not([hidden]) .pill"));$("#key").innerHTML=["P1","P2","P3"].map(p=>`<span class="pill ${p}">${esc(pname(p))}</span>`).join("");
@@ -1034,8 +1044,7 @@ function vSkills(){const L=st.lang,el=isEL();
 function vSkComp(){const L=st.lang,c=st.crs,C=(SKD.comp||{})[c],cn=x=>x==="H"?"Higher CL":DATA.courseEn[x];
  if(!C)return `<section><h2>Skills by exam component · ${esc(cn(c))}</h2><p class="sub">The component view is built for Higher CL first, so the department can settle the structure. G1, G2 and G3 follow their own SEC papers once it is agreed.</p>${skBar()}<div class="rowbar"><div class="seg"><button type="button" data-crs2="H">Show Higher CL</button></div></div></section>`;
  let hid=0;const E=DATA.exam[L][c],parts=C.flatMap(P=>P.parts.map(x=>x.k)),on=(st.kparts||[]).filter(k=>parts.includes(k));
- let h=`<section><h2>Skills by exam component · ${esc(cn(c))} (${esc(E.code)})</h2><p class="sub">Each SEC component with the skills it draws on, and every unit where the teacher guides teach or practise them, year by year. The 写作任务 row lists the units whose textbook writing task is that kind of text.</p><div class="skctl">${skBar()}
- <div class="rowbar skparts"><span class="lab">Show</span><div class="seg"><button type="button" data-kpart="__all" aria-pressed="${!on.length}">All components</button>${C.map(P=>P.parts.map(x=>`<button type="button" data-kpart="${x.k}" aria-pressed="${on.includes(x.k)}"><span lang="zh">${hx(x.zh)}</span></button>`).join("")).join(`<span class="sep"></span>`)}</div></div></div>${skKey()}
+ let h=`<section><h2>Skills by exam component · ${esc(cn(c))} (${esc(E.code)})</h2><p class="sub">Each SEC component with the skills it draws on, and every unit where the teacher guides teach or practise them, year by year. The 写作任务 row lists the units whose textbook writing task is that kind of text.</p>${skKey()}
  <table class="skgrid4">${skHead4(L,`<th class="rh">Skill</th>`)}<tbody>`;
  for(const P of C){const ps=P.parts.filter(x=>!on.length||on.includes(x.k));if(!ps.length)continue;
   h+=`<tr class="grp"><th colspan="5"><span lang="zh">${hx(P.zh)}</span> · ${hx(P.en)}</th></tr>`;
@@ -1051,7 +1060,7 @@ function vSkComp(){const L=st.lang,c=st.crs,C=(SKD.comp||{})[c],cn=x=>x==="H"?"H
  h+=`</tbody></table><p class="note">${other.length?`Textbook tasks outside the Paper 1 formats: ${other.map(w=>{const t=DATA.themes.find(z=>uidOf(z)===w.uid);return `<span lang="zh">${hx(w.gist)}</span> (${t?esc(secName(t.sec,L))+" U"+hx(t.unit):""})`}).join("; ")}. `:""}Paper 1 kinds are read from each task: an email to a friend or classmate is 私人电邮, to a principal or an organisation 公务电邮; 记叙 tasks and 文学创作 stories count as ${c==="H"?"情境作文":"记叙文"}, while 散文 does not.${c==="H"?"":" Rows marked 课本练习 are textbook practice that leads into the exam format."} Lesson-note entries are shown as what students do: the teacher's lead-in is cut, and marking and feedback steps are left out. Each entry shows the unit, its term, where it comes up and the guide's wording; click it for every instance and its page.${hid?` Skill rows with no entry in this course at any level are hidden (${hid}); switch to <b>By skill family</b> to see every skill.`:""}</p></section>`;
  return h}
 function vSkFam(){const L=st.lang,Cs=["G1","G2","G3","H"],cmp=st.klay!=="one",cs=cmp?Cs:[st.crs],cn=c=>c==="H"?"Higher CL":DATA.courseEn[c];const none=[];
- let h=`<section><h2>Skills by family · ${esc(DATA.langName[L])}${cmp?"":" · "+esc(cn(st.crs))}</h2><p class="sub">Every skill family, year by year${cmp?", with G1, G2, G3 and Higher CL under each skill":""}.</p><div class="skctl">${skBar()}<div class="rowbar">${skSeg(cmp?"cmp":"one",[["cmp","Compare the 4 courses"],["one","One course"]],"data-klay")}</div></div>${skKey()}
+ let h=`<section><h2>Skills by family · ${esc(DATA.langName[L])}${cmp?"":" · "+esc(cn(st.crs))}</h2><p class="sub">Every skill family, year by year${cmp?", with G1, G2, G3 and Higher CL under each skill":""}.</p>${skKey()}
  <table class="skgrid4">${skHead4(L,`<th class="rh">Skill</th>`)}<tbody>`;
  for(const f of SKD.fam){const sk=f.skills.filter(s=>cs.some(c=>[1,2,3,4].some(y=>skUnits(L,c,y).some(({u})=>skHits(u,s.k).length))));
   f.skills.forEach(s=>{if(!Cs.some(c=>[1,2,3,4].some(y=>skUnits(L,c,y).some(({u})=>((SKD.units[uidOf(u)])||{})[s.k]))))none.push(s.zh)});
