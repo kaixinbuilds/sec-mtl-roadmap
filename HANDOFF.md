@@ -265,3 +265,13 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - Films draw each unit as a span across all its domains; Reach and Topic filters match any domain or topic a unit carries. G3 summaries in `glanceG3` were rewritten from the new codes.
 - Known judgement calls to review with the language teams: nation coded unevenly across courses for the same TL unit (e.g. 1A U2, 2A U4, 3 U1); CL 关爱动物 world vs nation; CL G3/HCL Sec 3 U2 coded from its texts (tea, street dance) rather than its stated theme 健康生活.
 - Teacher guides as Markdown live on the drive (`CPDD resources (2021 Syllabus)/_Markdown/`, offline only); the Tamil PDFs were repaired by learning AnjalInaiMathi glyph codes from Word/PDF pairs.
+
+## Home page, multi-select SOW, side-panel rows (3 Nov 2026, evening)
+- **Home** (`home` tab, `vHome`): the bare site URL and the brand mark open it. Big hero (moved from Overview) plus cards for the Plan and Reference pages. Overview is now an ordinary Reference page.
+- **SOW selection is multi-select**: `st.sowL`, `st.sowC`, `st.sowS` (arrays). Compact toggles in the side panel (CL ML TL · G1 G2 G3 HMT · S1–S4); a click adds or removes, the last one can't be removed. "All four years" is gone (pick S1–S4). One grid per language × course, years stacked inside. CSV has Language and Course columns.
+- **Short SOW links**: `#sow?l=CL,ML&c=G2&s=1,2`, plus `&lens=core|ibl|e21` or `&rows=…` only when the rows are not Everything. Old `#sow-CL-G3?s=0&rows=…` links still work.
+- **Lens and every row toggle live in the side panel** (`sowRowsSide`); the in-page bar (`plannerBar`) is gone. The side panel is 236 px wide on the SOW tab.
+- **Approaches pared down to four rows** at HOD request: E21CC (`e21`: BVSS focus areas with the MOE learning-goal codes), IBL (`act`), BVSS DSOs (`dso`: "I" statement and the term's units per DSO), BVSS school values (`sval`: Grit, Empathy, Moral Courage with the GEM question). The `c21` and `moe` rows and the `vmv` toggle were removed; the full VMV cards open from a collapsed "BVSS vision, mission, DSOs and values in full" when one year is chosen. Saved row sets with the old keys are migrated in `PROWS()`. "Values and domains" is now "Culture and domains" to avoid a clash with school values.
+- **Row source labels show the grid's own language only** (`SRCL`, `srcFor(src,L,k)`); a CL grid no longer shows TL and ML document names.
+- **Language tints**: every CL grid is light yellow, ML light green, TL light blue (`--tint-CL/ML/TL`, dark-mode variants), matching the side-panel language buttons.
+- **Time constraints**: no longer dimmed for years not chosen (the HOD found the faded Sec 4 box confusing).
