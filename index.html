@@ -508,6 +508,60 @@ tr.ln[data-ln]>th.rh::after{content:attr(data-ln);display:block;margin-top:3px;f
 .psec.ps-ibl>summary{color:#c0392b}.psec.ps-e21>summary{color:#6a4fb0}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .psec.ps-ibl>summary{color:#f08273}:root:not([data-theme="light"]) .psec.ps-e21>summary{color:#a994ec}}
 :root[data-theme="dark"] .psec.ps-ibl>summary{color:#f08273}:root[data-theme="dark"] .psec.ps-e21>summary{color:#a994ec}
+
+/* 3 Nov 2026: pedagogical-design films (always a dark "screen", in light and dark themes) */
+.pvid{--pv-CL:#ef7d63;--pv-ML:#5cc49b;--pv-TL:#a497f2;margin:0 0 24px}
+.pvid .d-self{--d:#b5bfd3}.pvid .d-family{--d:#ef8f74}.pvid .d-school{--d:#f2cc8f}.pvid .d-community{--d:#8fd0ae}.pvid .d-nation{--d:#ff7b7b}.pvid .d-world{--d:#a9b4ff}
+.pvs{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:10px;align-items:center;background:radial-gradient(120% 90% at 30% 40%,#1a2b50,#0b1222);color:#e8edf7;border-radius:14px 14px 0 0;padding:14px;overflow:hidden;min-height:320px}
+.pvid[data-pv="TL"] .pvs{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
+@media (max-width:760px){.pvs,.pvid[data-pv="TL"] .pvs{grid-template-columns:1fr;padding:10px}.pvm b{display:none}}
+.pvsvg{width:100%;height:auto;display:block}
+.pvrings circle{fill:none;stroke:rgba(255,255,255,.15)}
+.pvrings text{fill:rgba(232,237,247,.5);font:10.5px var(--f-m);letter-spacing:.03em}
+.pvth{fill:rgba(232,237,247,.62);font:12px var(--f-m)}
+.pvsec{fill:rgba(232,237,247,.42);font:600 12px var(--f-m);transition:fill .3s}
+.pvrings .pvsec{font-size:10.5px}
+.pvsec.on{fill:var(--lc)}
+.pvdiv{stroke:rgba(255,255,255,.09);stroke-dasharray:3 4}
+.pvseg{stroke:var(--lc);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1 1;stroke-dashoffset:1;fill:none;transition:opacity .3s}
+.pvseg.yr{stroke-width:1.5}
+.pvdot{transition:opacity .25s}
+.pvdot circle{fill:var(--d);stroke:#0b1222;stroke-width:2}
+.pvdot text{fill:#0b1222;font:700 9.5px var(--f-m)}
+.pvhalo{fill:none;stroke:var(--lc);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:pvpulse 1.2s ease-out infinite}
+@keyframes pvpulse{from{transform:scale(.75);stroke-opacity:1}to{transform:scale(1.5);stroke-opacity:0}}
+@media (prefers-reduced-motion:reduce){.pvhalo{animation:none}.pvl li{transition:none}}
+.pvp{align-self:stretch;display:flex;flex-direction:column;gap:8px;min-width:0;padding:4px 2px}
+.pvh b{display:block;font-size:26px;line-height:1.1;color:#fff}
+.pvh span{display:block;font:10.5px var(--f-m);color:rgba(232,237,247,.6);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+.pvl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.pvl li{display:grid;grid-template-columns:10px auto 1fr;column-gap:8px;align-items:baseline;padding:5px 8px;border-radius:8px;opacity:0;transform:translateX(10px);transition:opacity .35s,transform .35s,background .3s;font-size:13.5px;line-height:1.3}
+.pvl li.in{opacity:.72;transform:none}
+.pvl li.cur{opacity:1;background:rgba(255,255,255,.09);box-shadow:inset 3px 0 0 var(--lc)}
+.pvl li i{width:10px;height:10px;border-radius:50%;background:var(--d);align-self:center}
+.pvl li b{font:600 11px var(--f-m);color:rgba(232,237,247,.7);white-space:nowrap}
+.pvl li small{grid-column:3;font-size:11px;color:rgba(232,237,247,.55)}
+.pvkey{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:auto;font-size:10.5px;color:rgba(232,237,247,.6)}
+.pvkey span{display:inline-flex;align-items:center;gap:4px}.pvkey i{width:8px;height:8px;border-radius:50%;background:var(--d)}
+.pvo{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;gap:8px;background:rgba(8,14,28,.9)}
+.pvt{cursor:pointer}
+.pve{opacity:0;pointer-events:none}
+.pvo .eye{font:11px var(--f-m);letter-spacing:.1em;text-transform:uppercase;color:var(--lc)}
+.pvo h3{margin:0;font-size:34px;color:#fff}
+.pvo p{margin:0;max-width:640px;font-size:18px;color:#e8edf7}
+.pve p{font-size:15px;line-height:1.55}
+.pvo small{color:rgba(232,237,247,.6)}
+.pvr2{font:inherit;font-size:13px;margin-top:6px;border:1px solid var(--lc);background:transparent;color:#fff;border-radius:999px;padding:6px 14px;cursor:pointer}
+.pvc{display:flex;align-items:center;gap:12px;padding:10px 14px 24px;background:#0b1222;color:#e8edf7;border-radius:0 0 14px 14px}
+.pvb{width:36px;height:36px;flex:none;border-radius:50%;border:0;background:var(--lc);color:#0b1222;font-size:13px;cursor:pointer}
+.pvbar{position:relative;flex:1;height:26px}
+.pvtrk{position:absolute;left:0;right:0;top:6px;height:6px;border-radius:3px;background:rgba(255,255,255,.18);cursor:pointer}
+.pvtrk i{display:block;height:100%;width:0;border-radius:3px;background:var(--lc)}
+.pvm b{font-weight:400}
+.pvm{position:absolute;top:14px;border:0;border-left:1px solid rgba(255,255,255,.35);background:none;color:rgba(232,237,247,.7);font:10px var(--f-m);padding:1px 0 0 3px;cursor:pointer;white-space:nowrap}
+.pvtm{font:11px var(--f-m);color:rgba(232,237,247,.7);white-space:nowrap}
+.pvid figcaption{margin-top:6px}
+@media (max-width:760px){.pvo h3{font-size:26px}.pvo p{font-size:15px}.pve p{font-size:13.5px}.pvc{gap:8px;padding:10px 10px 22px}}
 </style>
 
 <header class="site">
@@ -642,12 +696,71 @@ function item(r,k){
  return `<div class="it${also?" also":""}" style="--c:var(--${p.toLowerCase()})"><div class="meta"><span class="u">${esc(bk(r))} U${esc(r.unit)}</span>${r.exam==="Direct"&&!also?`<span class="badge ex">${esc(Tm("direct"))}</span>`:""}${r.ibl?`<span class="badge ibl">${esc(Tm("ibl"))}</span>`:""}${r.c21?`<span class="badge c21" title="${esc(X(r.c21,r.c21_en))}">21CC</span>`:""}</div><div>${chips.join(" ")}</div><div>${two(r.task_m,r.task_en,r.lang)}</div><div class="th">${two(r.theme_m,r.theme_en,r.lang)} · ${esc(st.mode==="el"?r.syl_en:r.syl)}</div></div>`;
 }
 
+/* Pedagogical design as a short animated film per language, using the G3 units Sec 1 to 4 (3 Nov 2026).
+   CL and ML: rings by topic reach (self → world), units in teaching order around the circle, so the path shows a spiral (CL) or a widening (ML).
+   TL: a wheel of the fixed theme set, one ring per year, so the path shows the yearly rotation. */
+const PVR={self:0,family:1,school:1,community:2,nation:3,world:4},PVRL=["Self","Family/school","Community","Nation","World"];
+const PVTS={"Nature":"Nature & environment"},PVSH={"Heritage & culture":"Heritage","Nature & environment":"Nature","Science & technology":"Sci & tech","The world and us":"World and us","Society & nation":"Society & nation","Leisure & arts":"Leisure & arts","Life skills":"Life skills","Relationships":"Relationships","Health":"Health","Change":"Change"};
+const pvTh=t=>{const x=(t.theme_en||"").split(" / ")[0].trim();return PVTS[x]||x};
+const pvTop=t=>(t.dom||[]).reduce((a,d)=>PVR[d]>PVR[a]?d:a,(t.dom||["self"])[0]||"self");
+const PVTIME={title:2.4,unit:1.45,gap:0.7,end:5};
+let PVS=[];
+function pvBuild(L){const us=[1,2,3,4].flatMap(s=>unitsOf(L,"G3",s));let t=PVTIME.title,prev=0;
+ const sched=us.map(u=>{if(prev&&u.sec!==prev)t+=PVTIME.gap;prev=u.sec;const x={u,t0:t};t+=PVTIME.unit;return x});
+ return {us:sched,endAt:t+0.4,T:t+0.4+PVTIME.end}}
+function pvGeom(L,sched){const N=sched.length,wheel=L==="TL";
+ if(!wheel){const G=0.8,GW=3.6,tot=N+3*G+GW,cx=250,cy=250,rk=k=>66+k*39;let alt=0,pk=-1;
+  sched.forEach((x,i)=>{const slot=i+(x.u.sec-1)*G+GW/2,a=(-90+360*slot/tot)*Math.PI/180,k=PVR[pvTop(x.u)];alt=k===pk?alt+1:0;pk=k;const r=rk(k)+(alt%2?8:0);x.x=cx+r*Math.cos(a);x.y=cy+r*Math.sin(a);x.a=a});
+  let g=`<g class="pvrings">${[0,1,2,3,4].map(k=>`<circle cx="${cx}" cy="${cy}" r="${rk(k)}"/><text x="${cx}" y="${cy-rk(k)-5}" text-anchor="middle">${PVRL[k]}</text>`).join("")}</g>`;
+  g+=[1,2,3,4].map(s=>{const xs=sched.filter(x=>x.u.sec===s);if(!xs.length)return "";const i0=sched.indexOf(xs[0]),a0=(-90+360*(i0+(s-1)*G+GW/2-0.5-G/2)/tot)*Math.PI/180,am=(xs[0].a+xs[xs.length-1].a)/2;
+   return `${s>1?`<line class="pvdiv" x1="${cx+20*Math.cos(a0)}" y1="${cy+20*Math.sin(a0)}" x2="${cx+232*Math.cos(a0)}" y2="${cy+232*Math.sin(a0)}"/>`:""}<text class="pvsec" data-s="${s}" x="${cx+241*Math.cos(am)}" y="${cy+241*Math.sin(am)+4}" text-anchor="middle">Sec ${s}</text>`}).join("");
+  return {vb:"0 0 500 500",g}}
+ const th=[];sched.forEach(x=>{const k=pvTh(x.u);if(!th.includes(k))th.push(k)});const cx=320,cy=250,rs=s=>50+s*38,M=th.length,seen={};
+ sched.forEach(x=>{const k=pvTh(x.u),j=th.indexOf(k),key=x.u.sec+"|"+k,n=seen[key]=(seen[key]||0)+1,a=(-90+360*(j+0.5)/M+(n-1)*9)*Math.PI/180,r=rs(x.u.sec);x.x=cx+r*Math.cos(a);x.y=cy+r*Math.sin(a)});
+ let g=`<g class="pvrings">${[1,2,3,4].map(s=>`<circle cx="${cx}" cy="${cy}" r="${rs(s)}"/><text class="pvsec" data-s="${s}" x="${cx}" y="${cy-rs(s)+13}" text-anchor="middle">Sec ${s}</text>`).join("")}</g>`;
+ g+=th.map((k,j)=>{const a=(-90+360*j/M)*Math.PI/180,am=(-90+360*(j+0.5)/M)*Math.PI/180,c=Math.cos(am),tx=cx+222*c,ty=cy+222*Math.sin(am)+4;
+  return `<line class="pvdiv" x1="${cx+40*Math.cos(a)}" y1="${cy+40*Math.sin(a)}" x2="${cx+206*Math.cos(a)}" y2="${cy+206*Math.sin(a)}"/><text class="pvth" x="${tx}" y="${ty}" text-anchor="${c>0.25?"start":c<-0.25?"end":"middle"}">${esc(PVSH[k]||k)}</text>`}).join("");
+ return {vb:"-50 0 740 500",g}}
+function pvFig(L){const P=pvBuild(L),G=pvGeom(L,P.us),N=P.us.length,DS=DATA.design||{},gl=(DS.glance||{})[L]||"",tag=gl.split(/(?<=\.)\s|\s\(/)[0].replace(/\.$/,"");
+ const src=P.us.every(x=>x.u.domSrc==="cpdd")?"Reach of each unit: CPDD's own Domain tag.":"Reach of each unit: inferred by the department from the theme wording (CPDD does not tag domains here).";
+ const segs=P.us.slice(1).map((x,i)=>{const p=P.us[i];return `<line class="pvseg${p.u.sec!==x.u.sec?" yr":""}" pathLength="1" x1="${p.x.toFixed(1)}" y1="${p.y.toFixed(1)}" x2="${x.x.toFixed(1)}" y2="${x.y.toFixed(1)}"/>`}).join("");
+ const dots=P.us.map(x=>`<g class="pvdot d-${pvTop(x.u)}" transform="translate(${x.x.toFixed(1)} ${x.y.toFixed(1)})"><circle r="9"/><text y="3.5" text-anchor="middle">${esc(String(x.u.unit))}</text></g>`).join("");
+ const marks=[1,2,3,4].map(s=>{const x=P.us.find(y=>y.u.sec===s);return x?`<button type="button" class="pvm" data-t="${x.t0}" style="left:${(100*x.t0/P.T).toFixed(2)}%" aria-label="Jump to Sec ${s}"><b>Sec </b>${s}</button>`:""}).join("");
+ return `<figure class="pvid" data-pv="${L}" style="--lc:var(--pv-${L})"><div class="pvs"><svg class="pvsvg" viewBox="${G.vb}" role="img" aria-label="${esc(DATA.langName[L])} G3 units Sec 1 to 4: ${esc(tag)}">${G.g}<g class="pvsegs">${segs}</g><circle class="pvhalo" r="17"/><g class="pvdots">${dots}</g></svg>
+ <div class="pvp"><div class="pvh"><b class="pvy">Sec 1</b><span class="pvn"></span></div><ol class="pvl"></ol><div class="pvkey">${DATA.domains.keys.map(d=>`<span class="d-${d}"><i></i>${esc(DATA.domains.en[d])}</span>`).join("")}</div></div>
+ <div class="pvo pvt"><span class="eye">Pedagogical design · G3 · Sec 1 to 4</span><h3>${esc(DATA.langName[L])}</h3><p>${esc(tag)}</p><small>${N} units in teaching order</small></div>
+ <div class="pvo pve"><span class="eye">${esc(DATA.langName[L])} · G3</span><p>${esc(gl)}</p><button type="button" class="pvr2">↺ Watch again</button></div></div>
+ <div class="pvc"><button type="button" class="pvb" aria-label="Play">▶</button><div class="pvbar"><div class="pvtrk"><i></i></div>${marks}</div><span class="pvtm">0:00</span></div>
+ <figcaption class="note">${L==="TL"?"Rings are the years; each slice is one theme of the fixed set, so every year's path goes round the same wheel.":"Rings show how far a unit's topic reaches, from the self at the centre to the world at the edge; units run clockwise in teaching order."} Dot colour = reach; number = unit. ${src} Units and order: CPDD G3 teacher guides.</figcaption></figure>`}
+function initPV(){PVS.forEach(p=>{cancelAnimationFrame(p.raf);p.io&&p.io.disconnect()});PVS=[];
+ const red=matchMedia("(prefers-reduced-motion: reduce)").matches;
+ document.querySelectorAll("figure.pvid").forEach(f=>{const L=f.dataset.pv,P=pvBuild(L);pvGeom(L,P.us);const p={f,P,t:0,play:false,raf:0,last:0,sec:0,auto:false};PVS.push(p);
+  const dots=[...f.querySelectorAll(".pvdot")],segs=[...f.querySelectorAll(".pvseg")],halo=f.querySelector(".pvhalo"),bar=f.querySelector(".pvtrk i"),btn=f.querySelector(".pvb"),tm=f.querySelector(".pvtm"),tt=f.querySelector(".pvt"),te=f.querySelector(".pve"),list=f.querySelector(".pvl"),yr=f.querySelector(".pvy"),yn=f.querySelector(".pvn"),secT=[...f.querySelectorAll(".pvsec")];
+  const fmt=x=>`${Math.floor(x/60)}:${String(Math.floor(x%60)).padStart(2,"0")}`,cl=x=>Math.max(0,Math.min(1,x));
+  const draw=t=>{const us=P.us,end=t>=P.endAt;let cur=-1;us.forEach((x,i)=>{if(x.t0<=t)cur=i});const sec=cur<0?1:us[cur].u.sec;
+   us.forEach((x,i)=>{const k=cl((t-x.t0)/0.45);dots[i].style.opacity=k?(end||x.u.sec===sec?1:0.4):0;dots[i].style.setProperty("--k",k);if(i)segs[i-1].style.strokeDashoffset=1-k;if(i)segs[i-1].style.opacity=end||x.u.sec===sec?1:0.35});
+   if(cur>=0&&!end){halo.style.opacity=1;halo.setAttribute("cx",us[cur].x);halo.setAttribute("cy",us[cur].y)}else halo.style.opacity=0;
+   secT.forEach(e=>e.classList.toggle("on",!end&&+e.dataset.s===sec));
+   if(sec!==p.sec){p.sec=sec;const xs=us.filter(x=>x.u.sec===sec);yr.textContent=secName(sec,L);yn.textContent=`${xs.length} units`;
+    list.innerHTML=xs.map(x=>`<li class="d-${pvTop(x.u)}" data-i="${us.indexOf(x)}"><i></i><b>${uLab(x.u)}</b>${two(x.u.theme_m,x.u.theme_en,L)}<small>${L==="TL"?esc(pvTh(x.u))+" · ":""}${esc((x.u.dom||[]).map(d=>DATA.domains.en[d]).join(", "))}</small></li>`).join("")}
+   list.querySelectorAll("li").forEach(li=>{const i=+li.dataset.i;li.classList.toggle("in",us[i].t0<=t);li.classList.toggle("cur",i===cur&&!end)});
+   tt.style.opacity=cl(1-(t-PVTIME.title+0.5)/0.5);tt.style.pointerEvents=t<PVTIME.title?"auto":"none";te.style.opacity=cl((t-P.endAt-0.6)/0.6);te.style.pointerEvents=t>P.endAt+0.6?"auto":"none";
+   bar.style.width=(100*t/P.T)+"%";tm.textContent=`${fmt(t)} / ${fmt(P.T)}`};
+  const tick=now=>{if(!p.play)return;p.t+=Math.min(0.1,(now-p.last)/1000);p.last=now;if(p.t>=P.T){p.t=P.T;setPlay(false)}draw(p.t);if(p.play)p.raf=requestAnimationFrame(tick)};
+  const setPlay=on=>{p.play=on;btn.textContent=on?"❚❚":"▶";btn.setAttribute("aria-label",on?"Pause":"Play");if(on){if(p.t>=P.T)p.t=0;p.last=performance.now();p.raf=requestAnimationFrame(tick)}else cancelAnimationFrame(p.raf)};
+  btn.onclick=()=>{p.auto=false;setPlay(!p.play)};f.querySelector(".pvr2").onclick=()=>{p.t=0;setPlay(true)};tt.onclick=()=>{p.t=PVTIME.title;draw(p.t);setPlay(true)};
+  f.querySelectorAll(".pvm").forEach(b=>b.onclick=()=>{p.t=+b.dataset.t;draw(p.t);setPlay(true)});
+  f.querySelector(".pvtrk").onclick=e=>{const r=e.currentTarget.getBoundingClientRect();p.t=P.T*cl((e.clientX-r.left)/r.width);draw(p.t)};
+  draw(red?P.T:0);if(red)p.t=P.T;
+  if(!red&&window.IntersectionObserver){p.io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&e.intersectionRatio>=0.6){if(!p.started){p.started=true;p.auto=true;setPlay(true)}else if(p.auto&&!p.play&&p.t<P.T)setPlay(true)}else if(p.play&&p.auto)setPlay(false)}),{threshold:[0,0.6]});p.io.observe(f)}})}
+
 function vDesign(){
  const DS=DATA.design, DM=DATA.domains, C=["G1","G2","G3","H"], Ls=["CL","ML","TL"];
  const cn=c=>c==="H"?"HMT":DATA.courseEn[c];
  const el=st.mode==="el",CE=el&&DS.cellsEn||DS.cells,EV=el&&DS.evEn||DS.ev;
  const seg=(lab,cur,opts,attr)=>`<div class="seg"><span class="lab">${esc(lab)}</span>${opts.map(([v,l])=>`<button ${attr}="${v}" aria-pressed="${cur===v}">${esc(l)}</button>`).join("")}</div>`;
  let h=`<section><h2>Progression at a glance</h2><p class="sub">How each curriculum widens its topics across Sec 1 to 4, read from the CPDD teacher guides. ${el?"EL mode gives the comparison text in plain English; MTL mode keeps the guides' own CL, ML and TL terms.":"MTL mode keeps the guides' own CL, ML and TL terms; switch to EL for plain English."}</p><div class="grid2">${Ls.map(L=>`<div class="card glance" style="--c:var(--${L.toLowerCase()})"><h3 class="lc ${L}">${esc(DATA.langName[L])}</h3><p style="margin:0;font-size:13.5px">${esc(DS.glance[L])}</p><p class="ev" style="margin:8px 0 0">Evidence: ${esc(EV[L])}</p></div>`).join("")}</div></section>`;
+ h+=`<section><h2>Watch the design: G3, Sec 1 to 4</h2><p class="sub">Three short animations, one per language, built from the G3 unit list. Each traces the units in teaching order so you can see how the curriculum moves through its topics: Chinese spirals out and back every book, Malay widens, Tamil goes round a fixed set of themes each year. Use the Sec marks to jump to a year.</p>${["CL","ML","TL"].map(pvFig).join("")}</section>`;
  // scope ladder
  const dot=(t)=>`<span class="dot ${t.domSrc==="cpdd"?"":"inf"}" title="${esc(bk(t))} U${esc(t.unit)} · ${esc(st.mode==="el"?t.theme_en:(t.theme_m||t.theme_en))} · ${t.dom.map(d=>DM.en[d]).join(", ")} (${t.domSrc==="cpdd"?"CPDD domain":"inferred from theme"})">${t.dom.map(d=>`<i class="d-${d}"></i>`).join("")}<span>U${esc(t.unit)}</span></span>`;
  const cell=(L,c,s)=>{const ts=DATA.themes.filter(t=>t.lang===L&&t.course===c&&t.sec===s);return ts.length?`<div class="dots">${ts.map(dot).join("")}</div>`:`<span class="empty">—</span>`};
@@ -1199,7 +1312,7 @@ function render(){
  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{const k=b.dataset.cat;if(k==="__clear")st.cats=[];else st.cats=st.cats.includes(k)?st.cats.filter(x=>x!==k):[...st.cats,k];render()});
  try{localStorage.setItem("mtlrm2",JSON.stringify(st))}catch(e){}
  const hs=`#${st.tab}-${st.lang}-${st.crs}`+(st.tab==="prog"?`?lens=${st.lens}&l=${st.sL}&c=${st.sC}&s=${st.sS}&src=${st.src}${st.cats.length?"&cats="+st.cats.join(","):""}`:st.tab==="sow"?`?s=${st.ssec}&rows=${PROWS().join(",")}${st.pa.length<4?"&pa="+st.pa.join(","):""}${st.psrc!=="all"?"&psrc="+st.psrc:""}`:"");try{if(location.hash!==hs)history.replaceState(null,"",hs)}catch(e){}
-  markScroll();
+  markScroll();if(st.tab==="design")initPV();
 }
 const applyHash=parseHash;
 addEventListener("hashchange",()=>{const t=st.tab;applyHash();render();if(st.tab!==t)scrollTo({top:0})});addEventListener("resize",()=>{markScroll();try{document.documentElement.style.setProperty("--hh",document.querySelector("header.site").offsetHeight+"px")}catch(e){}});
