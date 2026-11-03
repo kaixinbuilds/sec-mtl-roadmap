@@ -643,6 +643,12 @@ table.tgrid li:has(>.tsk){list-style:none;margin-left:-16px}
 #tp h3{font-family:var(--f-d);font-size:21px;margin:6px 0 8px}#tp .full{font-size:14.5px;line-height:1.6;background:var(--soft);border-radius:8px;padding:10px 12px;margin:8px 0}
 #tp .x{position:sticky;top:0;float:right;border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:3px 10px;cursor:pointer;font:inherit;color:inherit}
 #tp .tsk-sk{font-size:13.5px;margin:4px 0}.lnkb{font:inherit;font-size:13.5px;border:0;background:none;color:var(--b1);cursor:pointer;padding:0;font-weight:600}
+/* 3 Nov 2026: page toggles moved into the side panel */
+.pagectl{display:flex;flex-direction:column;gap:14px}.pagectl:empty{display:none}
+.shell:has(#pageCtl:not(:empty)){grid-template-columns:236px minmax(0,1fr)}
+.pagectl .seg:has(.catbtn){flex-direction:row;flex-wrap:wrap}.pagectl .seg:has(.catbtn) .lab{flex-basis:100%}.pagectl .catbtn{font-size:12px;padding:3px 8px}
+@media (max-width:900px){.shell:has(#pageCtl:not(:empty)){grid-template-columns:minmax(0,1fr)}}
+.dthm{margin:24px 0}.dthm>summary{cursor:pointer;font-family:var(--f-d);font-size:20px;font-weight:650;padding:10px 0}
 </style>
 
 <header class="site">
@@ -670,7 +676,7 @@ table.tgrid li:has(>.tsk){list-style:none;margin-left:-16px}
  <div class="eyebrow" id="heroEye"></div><h1 id="heroT"></h1><p class="lead" id="heroLead"></p>
  <div class="kp" id="heroPts"></div><p class="use" id="heroUse"></p>
 </div></section>
-<div class="inner shell"><aside class="side" id="side" aria-label="Filters"><div class="seg tg2" id="sowLens"></div><div class="seg tg" id="langSeg"></div><div class="seg tg" id="crsSeg"></div><div class="seg" id="skV"></div><div class="seg" id="skP"></div><div class="seg" id="skS"></div><div class="seg" id="skL"></div><div class="seg skcomp" id="skC"></div><div class="seg tg" id="yearSeg"></div><div class="srows" id="sowRows"></div><div class="seg" id="fl"></div><div class="seg" id="fc"></div><div class="seg" id="fs"></div><div class="seg" id="fsrc"></div><div class="key" id="key"></div></aside><main id="view"></main></div>
+<div class="inner shell"><aside class="side" id="side" aria-label="Filters"><div class="pagectl" id="pageCtl"></div><div class="seg tg2" id="sowLens"></div><div class="seg tg" id="langSeg"></div><div class="seg tg" id="crsSeg"></div><div class="seg" id="skV"></div><div class="seg" id="skP"></div><div class="seg" id="skS"></div><div class="seg" id="skL"></div><div class="seg skcomp" id="skC"></div><div class="seg tg" id="yearSeg"></div><div class="srows" id="sowRows"></div><div class="seg" id="fl"></div><div class="seg" id="fc"></div><div class="seg" id="fs"></div><div class="seg" id="fsrc"></div><div class="key" id="key"></div></aside><main id="view"></main></div>
 <footer class="site"><div class="inner" id="foot"></div></footer>
 
 <script>
@@ -685,11 +691,11 @@ let st={tab:"sow",rows:null,pa:["PA_AT","PA_IT","PA_CL","PA_CM"],psrc:"all",lang
 const TABS=["home","over","lang","design","map","theme","syl","psle","prog","sow","skills","write"];
 try{Object.assign(st,JSON.parse(localStorage.getItem("mtlrm2")||"{}"))}catch(e){}
 if(st.mode!=="mtl"&&st.mode!=="el")st.mode="el";if(["c21","pri"].includes(st.lens))st.lens="e21";if(!["all","ibl","e21"].includes(st.lens))st.lens="all";if(["roads","c21","ibl","pri"].includes(st.tab)){st.lens=st.tab==="ibl"?"ibl":"e21";st.tab="prog"}/* the three 2027 roadmaps are now one Sec 1-4 progression tab (3 Nov 2026) */if(!TABS.includes(st.tab))st.tab="over";if(![0,1,2,3,4].includes(st.ssec))st.ssec=1;if(!Array.isArray(st.rows))st.rows=null;if(!Array.isArray(st.pa))st.pa=["PA_AT","PA_IT","PA_CL","PA_CM"];if(!["all","cpdd","infer"].includes(st.psrc))st.psrc="all";if(!location.hash)st.tab="home";if(!["All","CL","ML","TL"].includes(st.sL))st.sL="All";if(!["All","G1","G2","G3","H"].includes(st.sC))st.sC="All";if(!Array.isArray(st.cats))st.cats=[];if(!["grid","side"].includes(st.lay))st.lay="grid";if(!["grid","side"].includes(st.tlay))st.tlay="grid";if(!["grid","side"].includes(st.mlay))st.mlay="grid";if(!["sum","full"].includes(st.mdet))st.mdet="sum";if(!["All",1,2,3,4].includes(st.sS))st.sS="All";
-function parseHash(){const raw=location.hash.slice(1);if(!raw){st.tab="home";return}const [path,q]=raw.split("?");const h=path.split("-");if(TABS.includes(h[0]))st.tab=h[0];if(["roads","c21","ibl","pri"].includes(h[0])){st.tab="prog";st.lens=h[0]==="ibl"?"ibl":"e21"}if(st.tab==="write"){st.tab="skills";st.kv="write"}/* the writing task bank now lives in 技能一览 */if(["CL","ML","TL"].includes(h[1]))st.lang=h[1];if(["G1","G2","G3","H"].includes(h[2]))st.crs=h[2];
+function parseHash(){const raw=location.hash.slice(1);if(!raw){st.tab="home";return}const [path,q]=raw.split("?");const h=path.split("-");if(TABS.includes(h[0]))st.tab=h[0];if(["roads","c21","ibl","pri"].includes(h[0])){st.tab="prog";st.lens=h[0]==="ibl"?"ibl":"e21"}if(st.tab==="write"){st.tab="skills";st.kv="write"}if(st.tab==="theme"){st.tab="design";st.dthm=1;st.dthmGo=1}/* Unit themes now lives inside Pedagogical design (3 Nov 2026) *//* the writing task bank now lives in 技能一览 */if(["CL","ML","TL"].includes(h[1]))st.lang=h[1];if(["G1","G2","G3","H"].includes(h[2]))st.crs=h[2];
  if(q){const p=new URLSearchParams(q);const l=p.get("l"),c=p.get("c"),s=p.get("s"),src=p.get("src"),cats=p.get("cats");if(st.tab!=="sow"){if(["All","CL","ML","TL"].includes(l))st.sL=l;if(["All","G1","G2","G3","H"].includes(c))st.sC=c}if(s==="All")st.sS="All";else if(["1","2","3","4"].includes(s)){st.sS=+s;st.ssec=+s}if(["all","cpdd","infer"].includes(src))st.src=src;if(cats!==null)st.cats=cats?cats.split(","):[];const ln=p.get("lens");if(st.tab!=="sow"&&["all","ibl","e21"].includes(ln))st.lens=ln;if(s==="0")st.ssec=0;const rw=p.get("rows"),pa=p.get("pa"),ps=p.get("psrc");if(rw!==null)st.rows=rw?rw.split(","):[];if(pa!==null)st.pa=pa?pa.split(","):[];if(["all","cpdd","infer"].includes(ps))st.psrc=ps}
  /* SOW links (3 Nov 2026): #sow?l=CL,ML&c=G2&s=1,2, plus lens= or rows= only when not Everything */
  if(st.tab==="sow"){const p=new URLSearchParams(q||""),pk=(v,ok)=>(v||"").split(",").map(x=>x==="HMT"?"H":x).filter(x=>ok.includes(x));const l=pk(p.get("l")||h[1],["CL","ML","TL"]),c=pk(p.get("c")||h[2],["G1","G2","G3","H"]),s=p.get("s")==="0"?[1,2,3,4]:pk(p.get("s"),["1","2","3","4"]).map(Number);if(l.length)st.sowL=l;if(c.length)st.sowC=c;if(s.length)st.sowS=s;const v=p.get("lens");if(p.get("rows")===null)st.rowsLens=["core","ibl","e21","all"].includes(v)?v:"all"}}
-parseHash();
+parseHash();if(st.tab==="theme")st.tab="design";
 /* The SOW selection is multi-select (3 Nov 2026): any mix of languages, courses and years */
 {const ok=(a,xs)=>Array.isArray(a)?a.filter(x=>xs.includes(x)):[];st.sowL=ok(st.sowL,["CL","ML","TL"]);if(!st.sowL.length)st.sowL=[st.lang];st.sowC=ok(st.sowC,["G1","G2","G3","H"]);if(!st.sowC.length)st.sowC=[st.crs];st.sowS=ok(st.sowS,[1,2,3,4]);if(!st.sowS.length)st.sowS=st.ssec?[st.ssec]:[1,2,3,4]}
 const lc=()=>st.mode==="el"?"en":ML_[st.lang];
@@ -709,7 +715,7 @@ const UX=()=>(DATA.design&&DATA.design.ux)||{};
 DATA.ui.t_home={en:"Home",zh:"首页",ms:"Laman utama",ta:"முகப்பு"};
 DATA.ui.t_prog=DATA.ui.t_prog||{en:"Sec 1–4 progression",zh:"中一至中四进程",ms:"Perkembangan Menengah 1 hingga 4",ta:"உயர்நிலை 1 முதல் 4 வரை"};
 /* Three places (3 Nov 2026): plan a year, see Sec 1-4 progression, look things up. The third group is a drop-down menu. */
-const NAV=[["Plan",[["sow","t_sow"],["prog","t_prog"],["skills","t_skills"]]],["Reference",[["over","t_over"],["lang","t_lang"],["map","t_map"],["theme","t_theme"],["syl","t_syl"],["psle","t_psle"],["design","t_design"]],1]];
+const NAV=[["Plan",[["sow","t_sow"],["prog","t_prog"],["skills","t_skills"]]],["Reference",[["over","t_over"],["lang","t_lang"],["map","t_map"],["syl","t_syl"],["psle","t_psle"],["design","t_design"]],1]];
 function controls(){
  const tb=([k,l,u])=>u?`<a class="lnk" href="${esc(u)}">${esc(Tm(l))} ↗</a>`:`<button data-tab="${k}" aria-pressed="${st.tab===k}">${esc(Tm(l))}</button>`;
  $("#tabs").innerHTML=NAV.map(([g,ts,menu])=>{const cur=ts.find(([k])=>k===st.tab);return `<span class="grp"><span class="gl">${esc(g)}</span><span class="btns">${menu?`<details class="refm"><summary aria-pressed="${!!cur}">${esc(cur?Tm(cur[1]):isEL()?"Look things up":g)} ▾</summary><div class="menu">${ts.map(tb).join("")}</div></details>`:ts.map(tb).join("")}</span></span>`}).join("");
@@ -930,8 +936,9 @@ function vMap(){
  h+=`</tbody></table></div><p class="note">${esc(T("excel"))}</p></section>`;
  return h;
 }
-function vTheme(){
- const side=st.tlay==="side";const C=st.sC==="All"?["G1","G2","G3","H"]:[st.sC];const Ss=st.sS==="All"?[1,2,3,4]:[st.sS];const Ls=["CL","ML","TL"];
+/* emb: shown inside Pedagogical design (3 Nov 2026), all three languages side by side for the side panel's course, Sec 1 to 4 */
+function vTheme(emb){
+ const side=emb||st.tlay==="side";const C=emb?[st.crs]:st.sC==="All"?["G1","G2","G3","H"]:[st.sC];const Ss=emb?[1,2,3,4]:st.sS==="All"?[1,2,3,4]:[st.sS];const Ls=["CL","ML","TL"];
  const cn=c=>c==="H"?"HMT":(st.mode==="el"?DATA.courseEn[c]:c);
  const seg=(lab,cur,opts,attr)=>`<div class="seg"><span class="lab">${esc(lab)}</span>${opts.map(([v,l])=>`<button ${attr}="${v}" aria-pressed="${cur===v}">${esc(l)}</button>`).join("")}</div>`;
  const DM=DATA.domains||{en:{}};const TT=(DATA.design&&DATA.design.themeThread)||{};const TC=(DATA.design&&DATA.design.themeCourse)||{};
@@ -940,7 +947,7 @@ function vTheme(){
  const tc=(t,diff)=>`<div class="thm${diff?" diff":""}"><span class="note">${esc(bk(t))} U${esc(t.unit)}</span> ${two(t.theme_m,t.theme_en,t.lang)}${t.dom?` <span class="dot ${t.domSrc==="infer"?"inf":""}" title="${esc(t.dom.map(d=>DM.en[d]).join(", "))} (${t.domSrc==="cpdd"?"CPDD domain":"inferred"})">${t.dom.map(d=>`<i class="d-${d}"></i>`).join("")}</span>`:""}${t.big?`<div class="note">${esc(t.big)}</div>`:""}</div>`;
  const key=`<div class="key">${DM.keys.map(d=>`<span class="dot d-${d}"><i></i>${esc(DM.en[d])}</span>`).join("")}<span class="dot">solid = CPDD domain or read from the guide</span><span class="dot inf">dashed = inferred</span></div>`;
  let h=`<section><h2>${side?esc(T("t_theme")):esc(X(DATA.langNameM[st.lang],DATA.langName[st.lang]))+": "+esc(T("t_theme"))}</h2><p class="sub">${esc(side?(TT.note||""):(TC.note||""))}</p>`;
- h+=`<div class="slicer">`+seg(Tm("layout"),st.tlay,[["grid",Tm("lay_lang")],["side",Tm("lay_side")]],"data-tlay")+seg(Tm("course"),st.sC,[["All",Tm("allx")],...["G1","G2","G3","H"].map(c=>[c,cn(c)])],"data-sc")+seg(Tm("year"),String(st.sS),[["All",Tm("allx")],...[1,2,3,4].map(n=>[String(n),secName(n)])],"data-ss")+key+`</div>`;
+ h+=emb?key:`<div class="slicer">`+seg(Tm("layout"),st.tlay,[["grid",Tm("lay_lang")],["side",Tm("lay_side")]],"data-tlay")+seg(Tm("course"),st.sC,[["All",Tm("allx")],...["G1","G2","G3","H"].map(c=>[c,cn(c)])],"data-sc")+seg(Tm("year"),String(st.sS),[["All",Tm("allx")],...[1,2,3,4].map(n=>[String(n),secName(n)])],"data-ss")+key+`</div>`;
  if(side){
   h+=`<div class="scroll"><table class="themes" style="min-width:980px;table-layout:fixed"><thead><tr><th style="width:120px"></th>${Ls.map(L=>`<th class="lc ${L}">${esc(X(DATA.langNameM[L],DATA.langName[L]))}</th>`).join("")}</tr></thead><tbody>`;
   for(const s of Ss){
@@ -1449,12 +1456,18 @@ function vSkFam(){const L=st.lang,Cs=["G1","G2","G3","H"],cmp=st.klay!=="one",cs
 const HOMEC={sow:"Plan a class's year term by term: units, skills, writing, inquiry, E21CC and assessment. Compare any mix of languages, courses and years.",prog:"How inquiry and the E21CC competencies build from Sec 1 to Sec 4, unit by unit.",skills:"CL skills by exam component or skill family, with the full writing task bank.",psle:"What SEAB expects at PSLE and in the SEC 2027 papers, and what the course must teach in between."};
 function vHome(){const A=(DATA.design&&DATA.design.about)||{},d=k=>HOMEC[k]||(A[k]||{}).what||"",card=([k,l],i,big)=>`<button type="button" class="hcard${big?" big y"+(i+1):""}" data-tab="${k}"><b>${esc(Tm(l))}</b><p>${esc(d(k))}</p><span class="go">Open →</span></button>`;
  return `<section class="home"><h2>Plan</h2><div class="hgrid plan">${NAV[0][1].map((x,i)=>card(x,i,1)).join("")}</div><h2>Look things up</h2><div class="hgrid ref">${NAV[1][1].map((x,i)=>card(x,i)).join("")}</div></section>`}
+/* Every page's toggles sit in the side panel (3 Nov 2026), so they stay in reach at any point of reading. The page builds them as usual; this moves them (their click handlers move with them). */
+function sideCtl(){const pc=$("#pageCtl");pc.innerHTML="";const an=b=>[...b.attributes].map(x=>x.name).find(n=>n.startsWith("data-")),seen=new Set([...document.querySelectorAll("#side .seg:not([hidden]) button")].map(an).filter(Boolean));
+ document.querySelectorAll("#view .lensbar").forEach(b=>{const bs=b.querySelectorAll("button[data-lens]");if(!bs.length)return;const s=document.createElement("div");s.className="seg tg2";s.innerHTML=`<span class="lab">Lens</span>`;bs.forEach(x=>s.appendChild(x));b.querySelector(".lh")?.remove();pc.appendChild(s)});
+ document.querySelectorAll("#view .seg").forEach(s=>{if(s.closest("figure,dialog,table"))return;const bs=[...s.querySelectorAll("button")];const a=bs.length&&an(bs[0]);if(!a||!bs.some(b=>b.hasAttribute("aria-pressed")))return;const sl=s.parentElement.classList.contains("slicer")?s.parentElement:null;
+  if(seen.has(a))s.remove();else{seen.add(a);if(bs.every(b=>b.textContent.trim().length<=5))s.classList.add("tg");pc.appendChild(s)}if(sl&&!sl.children.length)sl.remove()});
+ $("#side").classList.toggle("empty",!document.querySelector("#side .seg:not([hidden]) button, #side .key:not([hidden]) .pill"))}
 function render(){
  try{document.documentElement.style.setProperty("--hh",document.querySelector("header.site").offsetHeight+"px")}catch(e){}
  document.documentElement.lang=st.mode==="el"?"en":ML_[st.lang];
  $("#h1").textContent=st.mode==="el"?DATA.ui.title.en:DATA.ui.title[ML_[st.lang]];
  controls();hero();
- $("#view").innerHTML=({home:vHome,over:vOverview,lang:vLang,design:vDesign,map:vMap,theme:vTheme,prog:vRoads,syl:vSyl,psle:vPsle,sow:vSow,skills:vSkills,write:vWrite}[st.tab])();
+ $("#view").innerHTML=({home:vHome,over:vOverview,lang:vLang,design:()=>vDesign()+`<details class="dthm" id="dthemes"${st.dthm?" open":""}><summary>Unit themes, year by year · ${esc(st.crs==="H"?"HMT":DATA.courseEn[st.crs])}</summary>${vTheme(1)}</details>`,map:vMap,theme:vTheme,prog:vRoads,syl:vSyl,psle:vPsle,sow:vSow,skills:vSkills,write:vWrite}[st.tab])();
  $("#foot").innerHTML=`<div class="fgrid"><div><div class="fb"><span class="mark" aria-hidden="true"><svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#1a4fa3"/><circle cx="28" cy="13" r="8" fill="#f5c400" opacity=".35"/><circle cx="28" cy="13" r="5" fill="#f5c400"/><path d="M0 31 C8 21 15 21 22 27 S34 24 40 20 V40 H0Z" fill="#1f9d55"/><path d="M0 35 C10 29 20 33 40 29 V40 H0Z" fill="#7fd09a"/></svg></span><b>MTL Skills Roadmap</b></div><p>${esc(st.mode==="el"?DATA.ui.sub.en:DATA.ui.sub[ML_[st.lang]])}</p><p class="fine">Maintained by the BVSS MTL Department · updated 31 October 2026</p></div>
  <div><h4>Sources</h4><p>CPDD teacher guides for the 2021 syllabus: ${st.mode==="el"?"CL Teacher's Guides; ML JATi Teacher's Guides (OPAL2); TL Teacher's Guides":"CL 《华文伴我行》教师手册; ML JATi Panduan Guru (OPAL2); TL தமிழருவி ஆசிரியர் கையேடு"}. MTL, CL, ML and TL Secondary Syllabuses 2021. SEAB SEC 2027 syllabuses (<a href="https://www.seab.gov.sg/secondary-education-certificate-sec/g3-syllabuses-for-school-candidates-2027/" target="_blank" rel="noopener">seab.gov.sg</a>).</p></div>
  <div><h4>References</h4><ul>${[["https://go.gov.sg/stp-kb3-chapter14","STP Knowledge Base: Inquiry-based Learning"],["https://file.go.gov.sg/stp-learning-orientations.pdf","STP Learning Orientations (PDF)"],["https://www.moe.gov.sg/education-in-sg/21st-century-competencies","MOE 21st Century Competencies"],["https://github.com/kaixinbuilds/mtl-skills-roadmap","Page source and update notes"]].map(([u,t])=>`<li>${ext(u,t)}</li>`).join("")}</ul></div></div><p class="fine">${esc(DATA.caveat)}</p>`;
@@ -1487,7 +1500,7 @@ function render(){
  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{const k=b.dataset.cat;if(k==="__clear")st.cats=[];else st.cats=st.cats.includes(k)?st.cats.filter(x=>x!==k):[...st.cats,k];render()});
  try{localStorage.setItem("mtlrm2",JSON.stringify(st))}catch(e){}
  const hs=st.tab==="home"?"":st.tab==="sow"?sowHash():`#${st.tab}-${st.lang}-${st.crs}`+(st.tab==="prog"?`?lens=${st.lens}&l=${st.sL}&c=${st.sC}&s=${st.sS}&src=${st.src}${st.cats.length?"&cats="+st.cats.join(","):""}`:"");try{if(location.hash!==hs)history.replaceState(null,"",hs||location.pathname+location.search)}catch(e){}
-  markScroll();if(st.tab==="design")initPV();linkE21($("#view"));linkE21(document.querySelector(".hero"));
+  sideCtl();markScroll();if(st.tab==="design"){initPV();const d=$("#dthemes");if(d){d.ontoggle=()=>{st.dthm=d.open?1:0};if(st.dthmGo){delete st.dthmGo;setTimeout(()=>d.scrollIntoView(),50)}}}linkE21($("#view"));linkE21(document.querySelector(".hero"));
 }
 const applyHash=parseHash;
 addEventListener("hashchange",()=>{const t=st.tab;applyHash();render();if(st.tab!==t)scrollTo({top:0})});addEventListener("resize",()=>{markScroll();try{document.documentElement.style.setProperty("--hh",document.querySelector("header.site").offsetHeight+"px")}catch(e){}});
