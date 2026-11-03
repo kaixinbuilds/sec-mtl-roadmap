@@ -11,6 +11,14 @@ A department wall chart of what the CPDD 2021-syllabus teacher guides teach in C
 
 Two comparisons must always be easy: across languages for the same course, and within a language across levels of demand.
 
+## IBL and E21CC through the VMV; milestone codes on every inquiry sketch (3 Nov 2026, eighteenth update)
+
+- **VMV band** (SOW grid row "vmv"): `tools/sow.json` `vmv.dso` now carries the HOD's new "I" statements (Adaptive: "different situations"; Caring: adds "collaborate effectively"), Collaboration on Caring Leaders (CCI 3 and 4 beside 1 and 2), and per DSO the inquiry phase that builds it (`phase`), evidence teachers look for (`evidence`) and the closing GEM reflection (`reflect`). `vmv.thread` and `vmv.motto_routine` render under the three cards. Source for the proposal: the Claude Doc "MTL: IBL and E21CC through our VMV".
+- **Milestone descriptors**: `sow.json` `e21ms` holds all 18 learning goals and 72 milestone descriptors (levels 1 to 4) transcribed from MOE, *Learning Goals and Developmental Milestones for Emerging 21CC* (20 Oct 2023). Level 3 = Lower Sec, level 4 = Upper Sec.
+- **Every inquiry sketch** in `design.json` `iblx` (87) has `lead` (PA_AT Adaptive Learners, PA_CM Caring Leaders, PA_CL Ethical Changemakers) and `ms` (four lists of milestone codes, one per phase, x.3 for Sec 1-2 and x.4 for Sec 3-4). Spread: 40 Ethical, 28 Caring, 19 Adaptive. These are the department's reading, drafted from the phase wording with rules and then hand-corrected; the lead follows the Conclusion (a proposal, design or community act leads with Ethical), else interviews in Investigation (Caring), else Adaptive. Chip colours: CAIT 1-4 Adaptive, CCI Caring, CGC and CAIT 5-6 Ethical (Inventive Thinking counts under Ethical Changemakers, as the proposal says).
+- Shown in the unit dialog and SOW panel (lead line, chips after each phase, a fold-out list of the milestone descriptors), on the inquiry roadmap cards and in the SOW activities row.
+- NEEDS HOD: the leads and codes are a proposal; MT wording of the "I" statements and GEM values is still to be agreed by each language team.
+
 ## CL inquiry mapped from the 综合任务 (3 Nov 2026, seventeenth update)
 
 CL looked thin on the Inquiry roadmap (3 of 92 units, against ML 17 and TL 13) because CL records hold only the reading and writing tasks; the 综合任务 that ends every CL unit was never read for inquiry. The department read all 92.
