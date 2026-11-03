@@ -275,3 +275,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - **Row source labels show the grid's own language only** (`SRCL`, `srcFor(src,L,k)`); a CL grid no longer shows TL and ML document names.
 - **Language tints**: every CL grid is light yellow, ML light green, TL light blue (`--tint-CL/ML/TL`, dark-mode variants), matching the side-panel language buttons.
 - **Time constraints**: no longer dimmed for years not chosen (the HOD found the faded Sec 4 box confusing).
+
+## Task summaries, equal columns, trimmed unit pop-up, radial films (3 Nov 2026, late)
+- **CL textbook tasks show a short summary** in the SOW grid (functional writing, composition and the IBL row's integrated tasks): `sow.json` `cltasks[uid][i].sum` = `{en, zh}`, all 179 written from the task text. The button (`tskBtn`) opens `taskPop` (dialog `#tp`): summary, skill, full task (English in EL mode, with the original Chinese under a fold), page, and "Open the whole unit". The unit pop-up's task list uses the summary as its heading.
+- **Term columns are always the same width** (`table.tgrid{table-layout:fixed}`, long strings wrap); content grows downwards.
+- **Unit pop-up sections**: Skills and tasks · E21CC (the focus areas with MOE goal codes and milestones) · IBL · BVSS DSOs (I statement, whether the unit builds it, In MTL, evidence) · BVSS school values (GEM question) · Assessment. The "21CC tags, milestones and why" and "CPDD 21CC tags" rows are gone.
+- **Films**: no path between units any more. Each unit (chapter) is a straight line from the centre to its widest reach that fades in over `PVRAY` (0.6 s) one after another, overlapping so the film never pauses. The halo shows only on a tapped unit at the end.
