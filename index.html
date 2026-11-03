@@ -561,6 +561,7 @@ tr.ln[data-ln]>th.rh::after{content:attr(data-ln);display:block;margin-top:3px;f
 .pvm{position:absolute;top:14px;border:0;border-left:1px solid rgba(255,255,255,.35);background:none;color:rgba(232,237,247,.7);font:10px var(--f-m);padding:1px 0 0 3px;cursor:pointer;white-space:nowrap}
 .pvtm{font:11px var(--f-m);color:rgba(232,237,247,.7);white-space:nowrap}
 .pvid figcaption{margin-top:6px}
+.pvhd{margin:0 0 10px}
 @media (max-width:760px){.pvo h3{font-size:26px}.pvo p{font-size:15px}.pve p{font-size:13.5px}.pvc{gap:8px;padding:10px 10px 22px}}
 </style>
 
@@ -703,8 +704,8 @@ const PVR={self:0,family:1,school:1,community:2,nation:3,world:4},PVRL=["Self","
 const PVTS={"Nature":"Nature & environment"},PVSH={"Heritage & culture":"Heritage","Nature & environment":"Nature","Science & technology":"Sci & tech","The world and us":"World and us","Society & nation":"Society & nation","Leisure & arts":"Leisure & arts","Life skills":"Life skills","Relationships":"Relationships","Health":"Health","Change":"Change"};
 const pvTh=t=>{const x=(t.theme_en||"").split(" / ")[0].trim();return PVTS[x]||x};
 const pvTop=t=>(t.dom||[]).reduce((a,d)=>PVR[d]>PVR[a]?d:a,(t.dom||["self"])[0]||"self");
-const PVTIME={title:2.4,unit:1.45,gap:0.7,end:5};
-let PVS=[];
+const PVTIME={title:1.6,unit:0.75,gap:0.45,end:3.5};
+let PVS=[];const pvEase=x=>x<=0?0:x>=1?1:0.5-0.5*Math.cos(Math.PI*x);
 function pvBuild(L){const us=[1,2,3,4].flatMap(s=>unitsOf(L,"G3",s));let t=PVTIME.title,prev=0;
  const sched=us.map(u=>{if(prev&&u.sec!==prev)t+=PVTIME.gap;prev=u.sec;const x={u,t0:t};t+=PVTIME.unit;return x});
  return {us:sched,endAt:t+0.4,T:t+0.4+PVTIME.end}}
@@ -722,14 +723,14 @@ function pvGeom(L,sched){const N=sched.length,wheel=L==="TL";
   return `<line class="pvdiv" x1="${cx+40*Math.cos(a)}" y1="${cy+40*Math.sin(a)}" x2="${cx+206*Math.cos(a)}" y2="${cy+206*Math.sin(a)}"/><text class="pvth" x="${tx}" y="${ty}" text-anchor="${c>0.25?"start":c<-0.25?"end":"middle"}">${esc(PVSH[k]||k)}</text>`}).join("");
  return {vb:"-50 0 740 500",g}}
 function pvFig(L){const P=pvBuild(L),G=pvGeom(L,P.us),N=P.us.length,DS=DATA.design||{},gl=(DS.glance||{})[L]||"",tag=gl.split(/(?<=\.)\s|\s\(/)[0].replace(/\.$/,"");
- const src=P.us.every(x=>x.u.domSrc==="cpdd")?"Reach of each unit: CPDD's own Domain tag.":"Reach of each unit: inferred by the department from the theme wording (CPDD does not tag domains here).";
+ const EV=(isEL()&&DS.evEn)||DS.ev||{};const src=P.us.every(x=>x.u.domSrc==="cpdd")?"Reach of each unit: CPDD's own Domain tag.":"Reach of each unit: inferred by the department from the theme wording (CPDD does not tag domains here).";
  const segs=P.us.slice(1).map((x,i)=>{const p=P.us[i];return `<line class="pvseg${p.u.sec!==x.u.sec?" yr":""}" pathLength="1" x1="${p.x.toFixed(1)}" y1="${p.y.toFixed(1)}" x2="${x.x.toFixed(1)}" y2="${x.y.toFixed(1)}"/>`}).join("");
  const dots=P.us.map(x=>`<g class="pvdot d-${pvTop(x.u)}" transform="translate(${x.x.toFixed(1)} ${x.y.toFixed(1)})"><circle r="9"/><text y="3.5" text-anchor="middle">${esc(String(x.u.unit))}</text></g>`).join("");
  const marks=[1,2,3,4].map(s=>{const x=P.us.find(y=>y.u.sec===s);return x?`<button type="button" class="pvm" data-t="${x.t0}" style="left:${(100*x.t0/P.T).toFixed(2)}%" aria-label="Jump to Sec ${s}"><b>Sec </b>${s}</button>`:""}).join("");
- return `<figure class="pvid" data-pv="${L}" style="--lc:var(--pv-${L})"><div class="pvs"><svg class="pvsvg" viewBox="${G.vb}" role="img" aria-label="${esc(DATA.langName[L])} G3 units Sec 1 to 4: ${esc(tag)}">${G.g}<g class="pvsegs">${segs}</g><circle class="pvhalo" r="17"/><g class="pvdots">${dots}</g></svg>
+ return `<figure class="pvid" data-pv="${L}" style="--lc:var(--pv-${L})"><div class="card glance pvhd" style="--c:var(--${L.toLowerCase()})"><h3 class="lc ${L}">${esc(DATA.langName[L])}</h3><p style="margin:0;font-size:13.5px">${esc(gl)}</p>${EV[L]?`<p class="ev" style="margin:8px 0 0">Evidence: ${esc(EV[L])}</p>`:""}</div><div class="pvs"><svg class="pvsvg" viewBox="${G.vb}" role="img" aria-label="${esc(DATA.langName[L])} G3 units Sec 1 to 4: ${esc(tag)}">${G.g}<g class="pvsegs">${segs}</g><circle class="pvhalo" r="17"/><g class="pvdots">${dots}</g></svg>
  <div class="pvp"><div class="pvh"><b class="pvy">Sec 1</b><span class="pvn"></span></div><ol class="pvl"></ol><div class="pvkey">${DATA.domains.keys.map(d=>`<span class="d-${d}"><i></i>${esc(DATA.domains.en[d])}</span>`).join("")}</div></div>
  <div class="pvo pvt"><span class="eye">Pedagogical design · G3 · Sec 1 to 4</span><h3>${esc(DATA.langName[L])}</h3><p>${esc(tag)}</p><small>${N} units in teaching order</small></div>
- <div class="pvo pve"><span class="eye">${esc(DATA.langName[L])} · G3</span><p>${esc(gl)}</p><button type="button" class="pvr2">↺ Watch again</button></div></div>
+ <div class="pvo pve"><span class="eye">${esc(DATA.langName[L])} · G3</span><p>${esc(tag)}</p><button type="button" class="pvr2">↺ Watch again</button></div></div>
  <div class="pvc"><button type="button" class="pvb" aria-label="Play">▶</button><div class="pvbar"><div class="pvtrk"><i></i></div>${marks}</div><span class="pvtm">0:00</span></div>
  <figcaption class="note">${L==="TL"?"Rings are the years; each slice is one theme of the fixed set, so every year's path goes round the same wheel.":"Rings show how far a unit's topic reaches, from the self at the centre to the world at the edge; units run clockwise in teaching order."} Dot colour = reach; number = unit. ${src} Units and order: CPDD G3 teacher guides.</figcaption></figure>`}
 function initPV(){PVS.forEach(p=>{cancelAnimationFrame(p.raf);p.io&&p.io.disconnect()});PVS=[];
@@ -738,8 +739,11 @@ function initPV(){PVS.forEach(p=>{cancelAnimationFrame(p.raf);p.io&&p.io.disconn
   const dots=[...f.querySelectorAll(".pvdot")],segs=[...f.querySelectorAll(".pvseg")],halo=f.querySelector(".pvhalo"),bar=f.querySelector(".pvtrk i"),btn=f.querySelector(".pvb"),tm=f.querySelector(".pvtm"),tt=f.querySelector(".pvt"),te=f.querySelector(".pve"),list=f.querySelector(".pvl"),yr=f.querySelector(".pvy"),yn=f.querySelector(".pvn"),secT=[...f.querySelectorAll(".pvsec")];
   const fmt=x=>`${Math.floor(x/60)}:${String(Math.floor(x%60)).padStart(2,"0")}`,cl=x=>Math.max(0,Math.min(1,x));
   const draw=t=>{const us=P.us,end=t>=P.endAt;let cur=-1;us.forEach((x,i)=>{if(x.t0<=t)cur=i});const sec=cur<0?1:us[cur].u.sec;
-   us.forEach((x,i)=>{const k=cl((t-x.t0)/0.45);dots[i].style.opacity=k?(end||x.u.sec===sec?1:0.4):0;dots[i].style.setProperty("--k",k);if(i)segs[i-1].style.strokeDashoffset=1-k;if(i)segs[i-1].style.opacity=end||x.u.sec===sec?1:0.35});
-   if(cur>=0&&!end){halo.style.opacity=1;halo.setAttribute("cx",us[cur].x);halo.setAttribute("cy",us[cur].y)}else halo.style.opacity=0;
+   /* the line runs continuously from one unit to the next (eased), with the halo as its pen tip */
+   let hx=null,hy=null;us.forEach((x,i)=>{const k=cl((t-x.t0)/0.2);dots[i].style.opacity=k?(end||x.u.sec===sec?1:0.4):0;
+    if(i){const p=us[i-1],e=pvEase((t-p.t0)/(x.t0-p.t0)),mv=e>0&&e<1;segs[i-1].style.strokeDashoffset=1-e;segs[i-1].style.opacity=end||x.u.sec===sec||mv?1:0.35;if(mv){hx=p.x+(x.x-p.x)*e;hy=p.y+(x.y-p.y)*e}}});
+   if(hx==null&&cur>=0){hx=us[cur].x;hy=us[cur].y}
+   if(hx!=null&&!end){halo.style.opacity=1;halo.setAttribute("cx",hx);halo.setAttribute("cy",hy)}else halo.style.opacity=0;
    secT.forEach(e=>e.classList.toggle("on",!end&&+e.dataset.s===sec));
    if(sec!==p.sec){p.sec=sec;const xs=us.filter(x=>x.u.sec===sec);yr.textContent=secName(sec,L);yn.textContent=`${xs.length} units`;
     list.innerHTML=xs.map(x=>`<li class="d-${pvTop(x.u)}" data-i="${us.indexOf(x)}"><i></i><b>${uLab(x.u)}</b>${two(x.u.theme_m,x.u.theme_en,L)}<small>${L==="TL"?esc(pvTh(x.u))+" · ":""}${esc((x.u.dom||[]).map(d=>DATA.domains.en[d]).join(", "))}</small></li>`).join("")}
@@ -759,8 +763,7 @@ function vDesign(){
  const cn=c=>c==="H"?"HMT":DATA.courseEn[c];
  const el=st.mode==="el",CE=el&&DS.cellsEn||DS.cells,EV=el&&DS.evEn||DS.ev;
  const seg=(lab,cur,opts,attr)=>`<div class="seg"><span class="lab">${esc(lab)}</span>${opts.map(([v,l])=>`<button ${attr}="${v}" aria-pressed="${cur===v}">${esc(l)}</button>`).join("")}</div>`;
- let h=`<section><h2>Progression at a glance</h2><p class="sub">How each curriculum widens its topics across Sec 1 to 4, read from the CPDD teacher guides. ${el?"EL mode gives the comparison text in plain English; MTL mode keeps the guides' own CL, ML and TL terms.":"MTL mode keeps the guides' own CL, ML and TL terms; switch to EL for plain English."}</p><div class="grid2">${Ls.map(L=>`<div class="card glance" style="--c:var(--${L.toLowerCase()})"><h3 class="lc ${L}">${esc(DATA.langName[L])}</h3><p style="margin:0;font-size:13.5px">${esc(DS.glance[L])}</p><p class="ev" style="margin:8px 0 0">Evidence: ${esc(EV[L])}</p></div>`).join("")}</div></section>`;
- h+=`<section><h2>Watch the design: G3, Sec 1 to 4</h2><p class="sub">Three short animations, one per language, built from the G3 unit list. Each traces the units in teaching order so you can see how the curriculum moves through its topics: Chinese spirals out and back every book, Malay widens, Tamil goes round a fixed set of themes each year. Use the Sec marks to jump to a year.</p>${["CL","ML","TL"].map(pvFig).join("")}</section>`;
+ let h=`<section><h2>Progression at a glance</h2><p class="sub">How each curriculum widens its topics across Sec 1 to 4, read from the CPDD teacher guides. ${el?"EL mode gives the comparison text in plain English; MTL mode keeps the guides' own CL, ML and TL terms.":"MTL mode keeps the guides' own CL, ML and TL terms; switch to EL for plain English."} Each summary sits above a short G3 animation (about 20 seconds) that traces the units in teaching order: Chinese spirals out and back every book, Malay widens, Tamil goes round a fixed set of themes each year. Read the summary for the gist, or play the film; the Sec marks jump to a year.</p>${["CL","ML","TL"].map(pvFig).join("")}</section>`;
  // scope ladder
  const dot=(t)=>`<span class="dot ${t.domSrc==="cpdd"?"":"inf"}" title="${esc(bk(t))} U${esc(t.unit)} · ${esc(st.mode==="el"?t.theme_en:(t.theme_m||t.theme_en))} · ${t.dom.map(d=>DM.en[d]).join(", ")} (${t.domSrc==="cpdd"?"CPDD domain":"inferred from theme"})">${t.dom.map(d=>`<i class="d-${d}"></i>`).join("")}<span>U${esc(t.unit)}</span></span>`;
  const cell=(L,c,s)=>{const ts=DATA.themes.filter(t=>t.lang===L&&t.course===c&&t.sec===s);return ts.length?`<div class="dots">${ts.map(dot).join("")}</div>`:`<span class="empty">—</span>`};
