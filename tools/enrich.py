@@ -147,6 +147,69 @@ for r in D["recs"]:
     x = CLINQ.get(ukey(r))
     if not x or first_of.get(ukey(r)) != id(r) or any(t["k"] == "INQ" for t in r["tags"]): continue
     r["tags"].append({"k":"INQ","src":"infer","rule":f"R8 综合任务 ({KIND_EN[x['kind']]}, textbook p.{x['page']}): {x['why']}"})
+
+# ---------- E21CC learning goals behind each domain tag (3 Nov 2026) ----------
+# A domain tag (CAIT, CCIS, CGC) becomes one or more MOE learning goals (CAIT 1-6, CCI 1-6, CGC 1-6).
+# The page adds the level: 3 for Sec 1-2 (Lower Sec), 4 for Sec 3-4 (Upper Sec), with MOE's descriptor.
+GOAL_NAMED = [  # words the CPDD guides use for a sub-competency -> its two MOE learning goals
+ (r"நுண்ணாய்வு|critical", "CAIT 1", "CAIT 2", "Critical Thinking"), (r"புதிய, பலதரப்பட்ட|adaptive|தகவமை", "CAIT 3", "CAIT 4", "Adaptive Thinking"),
+ (r"புத்தாக்க|inventive|creative", "CAIT 5", "CAIT 6", "Inventive Thinking"), (r"கருத்துப் ?பரிமாற்ற|communicat", "CCI 1", "CCI 2", "Communication"),
+ (r"உடனிணைந்து|collaborat", "CCI 3", "CCI 4", "Collaboration"), (r"தகவல்|information", "CCI 5", "CCI 6", "Information Skills"),
+ (r"குடியிய|நிதிசார்|Sivik|civic", "CGC 1", "CGC 2", "Civic Literacy"), (r"உலகளாவிய|global", "CGC 3", "CGC 4", "Global Literacy"),
+ (r"பல்லின|பண்பாட்டு|Silang Budaya|cross-cultural", "CGC 5", "CGC 6", "Cross-Cultural Literacy")]
+DOM = {"CAIT": "CAIT", "CCIS": "CCI", "CGC": "CGC"}
+def civic_goals(t):
+    g = []
+    if re.search(r"cultur|tradition|heritage|dialect|harmony|festival|custom|race|ethnic|文化|传统|习俗|节日|方言", t, re.I): g.append("CGC 5")
+    if re.search(r"world|global|environment|earth|green|climate|planet|countr|世界|环境|地球|全球", t, re.I): g.append("CGC 3")
+    if re.search(r"volunteer|serve|help (the|others|our)|contribut|campaign|义工|服务|帮助", t, re.I): g.append("CGC 2")
+    if re.search(r"singapore|lion city|nation|citizen|red dot|communit|society|neighbour|新加坡|社区|社会|国家|狮城", t, re.I) or not g: g.insert(0, "CGC 1")
+    return g
+def read_goals(k, r):
+    t = " ".join(str(r.get(f) or "") for f in ("theme_en", "task_en", "sub_en", "task_m", "sub_m", "theme_m"))
+    if k == "CAIT":
+        g = ["CAIT 1"] if (r["purpose"] in PURP_VIEW or re.search(r"view|opinion|reason|evidence|fact|judge|evaluat|看法|理由", t, re.I)) else []
+        if re.search(r"reflect|self-assess|journal|diary|反思|日记|自评", t, re.I): g.append("CAIT 2")
+        if _adapt(r): g += ["CAIT 3", "CAIT 4"]
+        if _invent(r): g += ["CAIT 5", "CAIT 6"]
+        return g or ["CAIT 1"]
+    if k == "CCIS":
+        g = ["CCI 1", "CCI 2"] if re.search(r"respond|discuss|interact|listen|reader|audience|reply|回应|讨论", t, re.I) else ["CCI 1"]
+        if re.search(r"group|team|together|pair|小组|合作", t, re.I): g.append("CCI 3")
+        if re.search(r"research|search|source|online|internet|information|data|survey|interview|资料|上网|调查|采访", t, re.I): g.append("CCI 5")
+        if re.search(r"post|blog|social media|online|forum|网上|帖子", t, re.I): g.append("CCI 6")
+        return g
+    return civic_goals(t)
+PA_GOALS = {"PA_AT": ["CAIT 3", "CAIT 4"], "PA_IT": ["CAIT 5", "CAIT 6"]}
+MS21 = {}
+for r in D["recs"]:
+    u = MS21.setdefault(ukey(r), {})
+    for t in r["tags"]:
+        k = t["k"]; rule = t.get("rule", "")
+        if k in PA_GOALS:
+            pairs = [(g, t["src"] if t["src"] != "derived" else "derived", f"{D['cat'][k]['en']} move in the task") for g in PA_GOALS[k]]; k = "CAIT"
+        elif k in DOM:
+            codes = sorted(set(re.findall(rf"{DOM[k]} (\d)\.\d", rule)))
+            gtxt = rule + " " + " ".join(C21.get(ukey(r), {}).get(k, {}).get("src", []))
+            named = [x for x in GOAL_NAMED if x[1].startswith(DOM[k]) and re.search(x[0], gtxt, re.I)] if not codes else []
+            if codes: pairs = [(f"{DOM[k]} {c}", "cpdd", "the guide's worked example gives this code") for c in codes]
+            elif named and t["src"] == "cpdd":
+                rg = read_goals(k, r); pairs = []
+                for _, ga, gb, lab in named:
+                    pick = [g for g in (ga, gb) if g in rg] or [ga]
+                    pairs += [(g, "cpdd", f"the guide names {lab} ({ga}-{gb.split()[1]}); goal read from the task") for g in pick]
+            else:
+                why = rule.split(":", 1)[0] if t["src"] == "infer" else "CPDD domain tag"
+                pairs = [(g, "infer", f"read from the task ({why})") for g in read_goals(k, r)]
+        else: continue
+        lst = u.setdefault(k, [])
+        for g, src, b in pairs:
+            old = next((x for x in lst if x["g"] == g), None)
+            if not old: lst.append({"g": g, "s": src, "b": b})
+            elif old["s"] == "infer" and src != "infer": old.update(s=src, b=b)
+for u in MS21.values():
+    for lst in u.values(): lst.sort(key=lambda x: (int(x["g"].split()[1])))
+D["ms21"] = {k: v for k, v in MS21.items() if v}
 D["prov"] = {"cpdd":"CPDD-tagged","derived":"Derived from a CPDD tag","infer":"Inferred by rule"}
 D["rules"] = [{"id": rid, "cats": cats + pris, "why": why} for rid, _, cats, pris, why in RULES] + [{"id":"R8 综合任务","cats":["INQ"],"why":"CL only: the textbook integrated task (综合任务) at the end of the unit has students find out for themselves (research, interview, survey, field work or tracking their own data) and then make or present something. Read task by task for all 92 CL units (tools/clinq.json); discussion, ranking, choosing from a given list or a personal letter does not count"},{"id":"DERIVE","cats":["PA_CM","PA_CL","PA_IT","PA_AT"],"why":"CPDD 21CC domain tags mapped to BVSS E21CC priority areas: CCIS → Communication; CGC → Civic Literacy; CAIT → Inventive Thinking only where the task shows an inventive move (CAIT 5-6) and Adaptive Thinking only where it shows an adaptive move (CAIT 3-4); SEC no longer maps to a priority area (tightened 31 Oct 2026 against MOE's LG&M for E21CC)"}]
 D["priNote"] = "BVSS E21CC priority areas (school approach from 2027): Adaptive Thinking, Inventive Thinking, Civic Literacy, Communication. No CPDD guide tags these, so every priority-area tag is either derived from a CPDD 21CC tag or inferred from the task by rule, using the definitions and learning goals in MOE's Learning Goals and Developmental Milestones for Emerging 21CC (20 Oct 2023): Adaptive Thinking = CAIT 3-4, Inventive Thinking = CAIT 5-6, Communication = CCI 1-2, Civic Literacy = CGC 1-2. Tightened 31 Oct 2026: a narrative or creative text no longer counts as Inventive Thinking, and a theme about change no longer counts as Adaptive Thinking; the task must show the move. Treat inferred tags as proposals to confirm in SOW planning."

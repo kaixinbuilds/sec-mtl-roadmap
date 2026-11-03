@@ -11,6 +11,11 @@ A department wall chart of what the CPDD 2021-syllabus teacher guides teach in C
 
 Two comparisons must always be easy: across languages for the same course, and within a language across levels of demand.
 
+## Developmental milestones on the E21CC roadmap (3 Nov 2026, nineteenth update)
+
+- `tools/enrich.py` builds `DATA.ms21`: for each unit and each domain tag (CAIT, CCIS, CGC), the MOE learning goals behind it (CAIT 1-6, CCI 1-6, CGC 1-6) with a source and a reason. Order of evidence: a code printed in the CPDD guide (CL 附录三 worked examples) > a sub-competency the guide names (TL activity rows, ML Panduan Guru boxes), with the goal of the pair read from the task > the department's reading of the task (rules R1-R5 plus text cues).
+- The page adds the level: Sec 1-2 show Level 3 (Lower Sec), Sec 3-4 Level 4 (Upper Sec). Cards show the codes under each tag; the unit pop-up shows MOE's descriptor at that level, all four levels in a fold-out, and where the goal came from. The E21CC roadmap ends with a Level 3 / Level 4 reference table for all 18 goals (`sow.json` `e21ms`).
+
 ## IBL and E21CC through the VMV; milestone codes on every inquiry sketch (3 Nov 2026, eighteenth update)
 
 - **VMV band** (SOW grid row "vmv"): `tools/sow.json` `vmv.dso` now carries the HOD's new "I" statements (Adaptive: "different situations"; Caring: adds "collaborate effectively"), Collaboration on Caring Leaders (CCI 3 and 4 beside 1 and 2), and per DSO the inquiry phase that builds it (`phase`), evidence teachers look for (`evidence`) and the closing GEM reflection (`reflect`). `vmv.thread` and `vmv.motto_routine` render under the three cards. Source for the proposal: the Claude Doc "MTL: IBL and E21CC through our VMV".
