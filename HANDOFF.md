@@ -1,6 +1,6 @@
 # MTL Skills Roadmap: handoff for Claude Code
 
-Updated November 2, 2026 by HOD/MTL Mdm Chun Kai Xin
+Updated November 3, 2026 by HOD/MTL Mdm Chun Kai Xin
 
 Repo: `kaixinbuilds/mtl-skills-roadmap`. Live page: https://kaixinbuilds.github.io/mtl-skills-roadmap/
 One page, no build step: `index.html` (single-file app: CSS, the embedded `const DATA={...}` JSON and the JS views). Open it in a browser.
@@ -10,6 +10,16 @@ One page, no build step: `index.html` (single-file app: CSS, the embedded `const
 A department wall chart of what the CPDD 2021-syllabus teacher guides teach in CL, ML and TL, Sec 1 to 4, G1 to HMT, mapped to SEC 2027 and to two BVSS school approaches from 2027: inquiry-based learning (IBL) and the E21CC priority areas (Adaptive Thinking, Inventive Thinking, Civic Literacy, Communication). From 31 Oct it also carries the department's planning layer: a scheme of work (SOW) for 2027 laid out as four term columns for every language, course and year.
 
 Two comparisons must always be easy: across languages for the same course, and within a language across levels of demand.
+
+## CL inquiry mapped from the 综合任务 (3 Nov 2026, seventeenth update)
+
+CL looked thin on the Inquiry roadmap (3 of 92 units, against ML 17 and TL 13) because CL records hold only the reading and writing tasks; the 综合任务 that ends every CL unit was never read for inquiry. The department read all 92.
+
+- `tools/clinq.json`: the 57 units whose 综合任务 has students find out for themselves (research, interview, survey, field work or tracking their own data) and then make or present something, each with the kind, textbook page and a one-line English gist. Left out: tasks that only discuss, rank, choose from a given list, or write a personal letter or reflection (e.g. 有你做伴 song choice, 成长的足迹 time capsule, 发现真善美 photo). The HCL S4 U2 positive-energy journal and the 21-day habit challenge are counted as tracking their own data.
+- `enrich.py` rule **R8 综合任务** tags each listed unit's first record INQ, source inferred. The unit dialog shows it under 综合任务 with the gist. The SOW activity row now says "Inquiry-shaped integrated task (综合任务)" instead of "CPDD inquiry task tagged" for untagged units.
+- CL units on the Inquiry roadmap: Sec 1 19, Sec 2 16, Sec 3 10, Sec 4 12 (57 in all). None is a CPDD tag.
+- 13 new department sketches in `design.json` `iblx` (CL now 16, one per course per year): G1 S1 U6 unsung hero, S2 U6 where my T-shirt has been, S3 U3 our neighbourhood; G2 S1 U5 invention, S2 U3 household bills, S3 U2 health diary, S4 U5 inclusive neighbourhood; G3 S1 U2 reunion dinner, S2 U2 living with wildlife, S3 U5 how work changes, S4 U1 infographic on a group in need; HCL S2 U5 a town for everyone, S3 U3 community bingo.
+- IBL text updated: `iblTg`/`iblTgEn` CL, `about.ibl.points[1]`, `stp.bridge[4]`, the plan card finding.
 
 ## Skills evidence cleaned up (2 Nov 2026, sixteenth update)
 

@@ -173,7 +173,7 @@
    "ML STAR Team Inquiry (Scenario Analysis, Team Inquiry, Application, Reflection) is closest to Issue Investigation and Problem-based Learning: teams work a real scenario, then apply and reflect.",
    "ML Sec 3 Unit 4 (G1 and G2): plan a business or social enterprise that helps the community. This is the clearest problem-based task in the guides, and the guide says it can be a weighted assessment.",
    "TL G3 Book 2A Units 2 and 3 carry an e-pedagogy inquiry tag (newspaper report, formal email).",
-   "CL guides name 引导——探究 as one of two teaching modes (示范——模仿 or 引导——探究) in the differentiated-instruction section of every book (checked across all 44 CL 教师手册 PDFs on the drive, 31 Oct 2026), and every unit ends with a 文化探索 extension (look something up online and share) and a 综合任务 (integrated task with 展示、交流和反思). None is tagged per unit, and the integrated tasks are not yet records in this dataset (HANDOFF.md, next step 2)."
+   "CL guides name 引导——探究 as one of two teaching modes (示范——模仿 or 引导——探究) in the differentiated-instruction section of every book (checked across all 44 CL 教师手册 PDFs on the drive, 31 Oct 2026), and every unit ends with a 文化探索 extension and a 综合任务 (integrated task with 展示、交流和反思). None is tagged per unit. On 3 Nov 2026 the department read all 92 综合任务: 57 have students find out for themselves (research, interview, survey, field work or tracking their own data) and then make or present something, and are marked as inferred inquiry."
   ],
   "others": [
    [
@@ -257,7 +257,7 @@
    "what": "Where inquiry-based learning, a BVSS school approach from 2027, already sits in the MTL units, and where it could go.",
    "points": [
     "The essence section sets out what MOE's Singapore Teaching Practice means by inquiry: five key elements, the inquiry cycle, the 5E model, structured to open approaches, and what makes it work.",
-    "CPDD flags inquiry mainly in ML (STAR Team Inquiry in about a dozen units, and a community business plan in Sec 3 Unit 4), plus two TL G3 Sec 2 units. The CL guides name 引导——探究 (guided inquiry) as a teaching mode in every book's differentiated-instruction notes, and every CL unit ends with a 文化探索 extension and a 综合任务, but no CL unit is tagged, so CL inquiry on this page is inferred.",
+    "CPDD flags inquiry mainly in ML (STAR Team Inquiry in about a dozen units, and a community business plan in Sec 3 Unit 4), plus two TL G3 Sec 2 units. CL guides tag no unit, but every CL unit ends with a 综合任务; the department read all 92 and marks the 57 where students find out for themselves (interview, research, survey, field work) and then make or present something. These are inferred, not CPDD tags.",
     "Amber tags mark tasks that look inquiry-shaped (find out, plan, make or present) but are not tagged. The STP card under the roadmap gives the student behaviours to look for."
    ],
    "use": "Click a unit card to see the task, the guide's note and the STP look-fors."
@@ -809,6 +809,136 @@
     "Interview people from two generations.",
     "Write the opinion-expository essay using the interviews."
    ]
+  },
+  "CL|G1|1|1下|6": {
+   "q": "Who keeps our school and neighbourhood running without being noticed, and what does their work take?",
+   "approach": "Guided",
+   "phases": [
+    "Show a photo set of one school day behind the scenes (cleaner, security officer, canteen vendor); students guess who does what, and when.",
+    "Groups choose one unsung hero, list what they want to find out and draft interview questions using the unit's language for describing people.",
+    "Interview the person, film short clips of the work and note specific details (hours, tasks, what they are proud of).",
+    "Edit a 2–3 minute thank-you video, screen it to the class and give peer feedback on whether the details show the person's contribution."
+   ]
+  },
+  "CL|G1|2|2下|6": {
+   "q": "Where has the T-shirt I am wearing been before it reached me?",
+   "approach": "Guided",
+   "phases": [
+    "Show a clothing label and a world map; students guess how many countries one T-shirt passes through.",
+    "Each student picks one everyday item (T-shirt, shoes, bag) and predicts its route from raw material to shop.",
+    "Check labels, brand websites and news reports to trace the materials, the factory and the shop; mark each stop on a map.",
+    "Present the route map, compare predictions with findings and say what the journey shows about how Singapore connects to the world; peer questions."
+   ]
+  },
+  "CL|G1|3||3": {
+   "q": "What makes our neighbourhood ours?",
+   "approach": "Guided",
+   "phases": [
+    "Show old and new photos of the school's neighbourhood; students say what has changed and what has stayed.",
+    "Students choose three bingo tasks (a street-name origin, a traditional shop, a place of worship, residents of different ages and races) and write the question each will answer.",
+    "Do the field tasks with photos, ask residents short questions and look up street-name origins.",
+    "Share a photo story of one task and answer the class's questions; peer feedback on how vivid the details are."
+   ]
+  },
+  "CL|G2|1|1下|5": {
+   "q": "What small problem in our school day could a new product solve?",
+   "approach": "Guided",
+   "phases": [
+    "Show a few inventions that began as everyday annoyances (the zip, the sticky note); students say what problem each solved.",
+    "Groups list inconveniences in their school day, choose one and name the user it affects.",
+    "Ask three classmates about the problem, sketch a product and test the idea with them.",
+    "Present the plan (problem, user, design, how it helps), take questions and revise one feature from the feedback."
+   ]
+  },
+  "CL|G2|2|2上|3": {
+   "q": "Does our household use more water and electricity than it needs?",
+   "approach": "Guided",
+   "phases": [
+    "Watch the PUB clip and look up World Water Day; students guess how much water a household uses a month.",
+    "Read the parts of a utilities bill together and decide what to compare: own bill, the textbook family and the national average.",
+    "Collect a few months of the family's bills (amounts only) and compare usage in a table.",
+    "Propose two changes for the family and report back after two weeks; class discussion on which changes worked."
+   ]
+  },
+  "CL|G2|3||2": {
+   "q": "How healthy is my week, really?",
+   "approach": "Guided",
+   "phases": [
+    "Students rate their own health out of ten, then see the textbook's health-diary categories (meals, sleep, exercise, water, mood).",
+    "Each student predicts which area is weakest and sets one question to check.",
+    "Keep the diary for a week and mark the pattern in each area.",
+    "Compare the result with the prediction, plan one change and explain it to a partner, who gives advice."
+   ]
+  },
+  "CL|G2|4||5": {
+   "q": "How inclusive is our neighbourhood, and what is still missing?",
+   "approach": "Guided",
+   "phases": [
+    "Show a ramp, a dementia-friendly sign and a community event; ask who each one helps.",
+    "Groups decide whom to look out for (seniors, wheelchair users, new residents, migrant workers) and what counts as inclusive.",
+    "Walk the neighbourhood, photograph facilities, activities and schemes, and note who they serve.",
+    "Share the photos, then propose one facility, activity or scheme to add and say who it would help; peer feedback on the reasons."
+   ]
+  },
+  "CL|G3|1|1A|2": {
+   "q": "Must we go home for reunion dinner?",
+   "approach": "Guided",
+   "phases": [
+    "Read the news about people who travel far for reunion dinner and others who go abroad over Chinese New Year.",
+    "Groups draft interview questions and predict how each generation will answer.",
+    "Interview a classmate, a teacher, a parent and a grandparent, and record their views and reasons.",
+    "Make slides comparing the views across generations, present them and give their own view with reasons."
+   ]
+  },
+  "CL|G3|2|2A|2": {
+   "q": "How should Singaporeans live alongside wild animals?",
+   "approach": "Guided",
+   "phases": [
+    "Show news photos of otters, monkeys or wild boars in housing estates; students say how residents might feel.",
+    "Groups choose two common wild animals and list what the public needs to know.",
+    "Find out from NParks and news sources about each animal, what to do and not do, and which agencies to call.",
+    "Produce the six-page booklet, share it with another class and revise from their questions."
+   ]
+  },
+  "CL|G3|3||5": {
+   "q": "How has work changed, and what will my future job ask of me?",
+   "approach": "Guided",
+   "phases": [
+    "Share the forecast in the task that many workers will need to change jobs; students guess which jobs will change most.",
+    "Students choose someone with five or more years in a job and plan their interview questions.",
+    "Interview the person on how the work has changed since they started and how they see its future.",
+    "Report the interview to the class and compare what different jobs share; each student writes one thing they will prepare for."
+   ]
+  },
+  "CL|G3|4||1": {
+   "q": "What does a group that needs help in our society actually need?",
+   "approach": "Guided",
+   "phases": [
+    "Show a short story about one person in need (a senior living alone, a caregiver); ask what help they get.",
+    "Groups pick one group in need and decide which questions the infographic must answer (difficulties, needs, help available).",
+    "Search reliable sources for facts and figures, and note each source.",
+    "Design the infographic, present it and take questions; peer feedback on clarity and the accuracy of the data."
+   ]
+  },
+  "CL|H|2|2B|5": {
+   "q": "What makes a town good to live in for everyone?",
+   "approach": "Guided",
+   "phases": [
+    "Show a map of the school's town; students say what they would add or remove.",
+    "Groups decide whom the town must serve (children, seniors, workers, people with disabilities) and what each group needs.",
+    "Plan the town in the online game, check each facility against the needs and look up a real planned town for ideas.",
+    "Present the town and defend the choices when classmates challenge them."
+   ]
+  },
+  "CL|H|3||3": {
+   "q": "What do the places and people around us say about our community?",
+   "approach": "Guided",
+   "phases": [
+    "Students recreate a childhood photo taken in the neighbourhood and compare then and now.",
+    "Choose three bingo tasks and write the question each will answer.",
+    "Do the field tasks: talk to a resident, visit a traditional shop, find out a street-name origin, record each in photos.",
+    "Write a social-media post with photos sharing what they found and felt; classmates comment."
+   ]
   }
  },
  "themeThread": {
@@ -983,7 +1113,7 @@
     ],
     "ibl": [
      {
-      "find": "ML carries almost every CPDD inquiry tag and TL two. The CL guides name guided inquiry (引导——探究) as a teaching mode and give every unit a 文化探索 extension and a 综合任务, but tag no unit, so CL looks thin here for documentary reasons.",
+      "find": "ML carries almost every CPDD inquiry tag and TL two. CL guides tag no unit, but 57 of the 92 CL 综合任务 are inquiry-shaped (interview, research, survey, field work, then make or present), so CL has the most inquiry openings of the three once the integrated tasks are counted. Every CL course has a department sketch in every year.",
       "impl": "Choose one guided inquiry per term per level department-wide, starting from the sketches on the cards, and record it in the Redesigned SOW's inquiry column.",
       "next": "Open a unit card for its inquiry sketch, then the Redesigned SOW tab to see where it falls in the year."
      }

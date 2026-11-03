@@ -1,0 +1,347 @@
+{
+ "_readme": "CL textbook integrated tasks (综合任务) read for inquiry, 3 Nov 2026. A unit is listed when its 综合任务 has students find out for themselves (research, interview, survey, field work or tracking their own data) and then make or present something. Tasks that only discuss, rank, choose from a given list or write a personal letter are left out. Department reading, not a CPDD tag.",
+ "units": {
+  "CL|G1|1|1下|4": {
+   "kind": "self",
+   "why": "21-day habit challenge: track one habit daily, then report what helped and what got in the way",
+   "page": "18",
+   "title": "习惯的力量"
+  },
+  "CL|G1|1|1下|5": {
+   "kind": "design",
+   "why": "group invention plan: name an everyday inconvenience, design a product for a user, present it",
+   "page": "36",
+   "title": "创新与改变"
+  },
+  "CL|G1|1|1下|6": {
+   "kind": "interview",
+   "why": "interview an unsung hero and make a 2–3 minute video about their work",
+   "page": "55",
+   "title": "小人物 大贡献"
+  },
+  "CL|G1|2|2上|2": {
+   "kind": "research",
+   "why": "find out what to do when meeting wildlife and which agencies to call, then make a public flyer",
+   "page": "36",
+   "title": "关爱动物"
+  },
+  "CL|G1|2|2上|3": {
+   "kind": "research",
+   "why": "look up World Water Day, read the family's water and electricity bills and compare them with the national average",
+   "page": "54",
+   "title": "绿色生活"
+  },
+  "CL|G1|2|2下|5": {
+   "kind": "design",
+   "why": "plan an ideal town in the online game, justify each facility and present the town",
+   "page": "36",
+   "title": "心系家园"
+  },
+  "CL|G1|2|2下|6": {
+   "kind": "research",
+   "why": "trace one everyday item: where its materials come from, where it is made and sold; share the findings",
+   "page": "54",
+   "title": "与世界相连"
+  },
+  "CL|G1|3||2": {
+   "kind": "self",
+   "why": "keep a health diary for a week, then plan changes from what it shows",
+   "page": "32",
+   "title": "我的健康我做主"
+  },
+  "CL|G1|3||3": {
+   "kind": "field",
+   "why": "community bingo: field tasks in the neighbourhood (street-name origins, a traditional shop, residents of different ages and races), recorded in photos",
+   "page": "48",
+   "title": "走进社区"
+  },
+  "CL|G1|4||2": {
+   "kind": "design",
+   "why": "pool four years of challenges and turn them into a survival guide for Sec 1 students",
+   "page": "30",
+   "title": "面对挑战"
+  },
+  "CL|G1|4||4": {
+   "kind": "design",
+   "why": "design a 'Made in Singapore' product that blends a Chinese food or object with another community's features",
+   "page": "64",
+   "title": "文化调色板"
+  },
+  "CL|G1|4||5": {
+   "kind": "research",
+   "why": "search images and words for a dream board and a plan to reach the dreams",
+   "page": "79",
+   "title": "勇于追梦"
+  },
+  "CL|G2|1|1上|1": {
+   "kind": "survey",
+   "why": "compare orientation activities in the news with our school's, then submit group suggestions for next year",
+   "page": "15",
+   "title": "新同学 新鲜事"
+  },
+  "CL|G2|1|1下|4": {
+   "kind": "self",
+   "why": "21-day habit challenge: track one habit daily, then report what helped and what got in the way",
+   "page": "17",
+   "title": "习惯的力量"
+  },
+  "CL|G2|1|1下|5": {
+   "kind": "design",
+   "why": "group invention plan: name an everyday inconvenience, design a product for a user, present it",
+   "page": "37",
+   "title": "创新与改变"
+  },
+  "CL|G2|1|1下|6": {
+   "kind": "interview",
+   "why": "interview an unsung hero and make a 2–3 minute video about their work",
+   "page": "54",
+   "title": "小人物 大贡献"
+  },
+  "CL|G2|2|2上|2": {
+   "kind": "research",
+   "why": "find out what to do when meeting wildlife and which agencies to call, then make a public flyer",
+   "page": "35",
+   "title": "关爱动物"
+  },
+  "CL|G2|2|2上|3": {
+   "kind": "research",
+   "why": "look up World Water Day, read the family's water and electricity bills and compare them with the national average",
+   "page": "52",
+   "title": "绿色生活"
+  },
+  "CL|G2|2|2下|5": {
+   "kind": "design",
+   "why": "plan an ideal town in the online game, justify each facility and present the town",
+   "page": "39",
+   "title": "心系家园"
+  },
+  "CL|G2|2|2下|6": {
+   "kind": "research",
+   "why": "trace one everyday item: where its materials come from, where it is made and sold; share the findings",
+   "page": "57",
+   "title": "与世界相连"
+  },
+  "CL|G2|3||2": {
+   "kind": "self",
+   "why": "keep a health diary for a week, then plan changes from what it shows",
+   "page": "41",
+   "title": "健康生活"
+  },
+  "CL|G2|3||3": {
+   "kind": "field",
+   "why": "community bingo: field tasks in the neighbourhood (street-name origins, a traditional shop, residents of different ages and races), recorded in photos",
+   "page": "61",
+   "title": "走进社区"
+  },
+  "CL|G2|4||3": {
+   "kind": "design",
+   "why": "design a 'Made in Singapore' product that blends a Chinese food or object with another community's features",
+   "page": "65",
+   "title": "南洋华彩"
+  },
+  "CL|G2|4||4": {
+   "kind": "interview",
+   "why": "interview someone with five or more years in a job about how the work has changed and where it is going",
+   "page": "85",
+   "title": "学无止境"
+  },
+  "CL|G2|4||5": {
+   "kind": "field",
+   "why": "walk the neighbourhood, photograph the facilities and schemes that build inclusion, then propose what to add",
+   "page": "108",
+   "title": "关爱与包容"
+  },
+  "CL|G3|1|1A|1": {
+   "kind": "survey",
+   "why": "compare orientation activities in the news with our school's, then submit group suggestions for next year",
+   "page": "20",
+   "title": "新同学新鲜事"
+  },
+  "CL|G3|1|1A|2": {
+   "kind": "interview",
+   "why": "interview classmates, teachers, parents and grandparents on 'must we go home for reunion dinner?' and present the views in slides",
+   "page": "44",
+   "title": "团圆"
+  },
+  "CL|G3|1|1A|3": {
+   "kind": "research",
+   "why": "research online to plan a three-day itinerary that shows what is distinctive about Singapore",
+   "page": "67",
+   "title": "相约狮城"
+  },
+  "CL|G3|1|1B|4": {
+   "kind": "self",
+   "why": "21-day habit challenge: track one habit daily, then report what helped and what got in the way",
+   "page": "20",
+   "title": "习惯的力量"
+  },
+  "CL|G3|1|1B|5": {
+   "kind": "design",
+   "why": "group invention plan: name an everyday inconvenience, design a product for a user, present it",
+   "page": "42",
+   "title": "创新与改变"
+  },
+  "CL|G3|1|1B|6": {
+   "kind": "interview",
+   "why": "interview an unsung hero and make a 2–3 minute video about their work",
+   "page": "62",
+   "title": "小人物大贡献"
+  },
+  "CL|G3|2|2A|2": {
+   "kind": "research",
+   "why": "group booklet: research Singapore's common wildlife, what to do and not do, and which agencies to contact",
+   "page": "45",
+   "title": "关爱动物"
+  },
+  "CL|G3|2|2A|3": {
+   "kind": "research",
+   "why": "read the family's water and electricity bills against the national average, then make a short video on saving",
+   "page": "69",
+   "title": "绿色生活"
+  },
+  "CL|G3|2|2B|5": {
+   "kind": "design",
+   "why": "plan an ideal town in the online game, justify each facility and present the town",
+   "page": "43",
+   "title": "心系家园"
+  },
+  "CL|G3|2|2B|6": {
+   "kind": "research",
+   "why": "trace one everyday item: where its materials come from, where it is made and sold; share the findings",
+   "page": "67",
+   "title": "与世界相连"
+  },
+  "CL|G3|3||2": {
+   "kind": "self",
+   "why": "keep a health diary for a week, reflect on what to adjust, then swap diaries and advise each other",
+   "page": "44",
+   "title": "健康生活"
+  },
+  "CL|G3|3||3": {
+   "kind": "field",
+   "why": "community bingo: three field tasks in the neighbourhood recorded in photos, then a social-media post on the experience",
+   "page": "68",
+   "title": "走进社区"
+  },
+  "CL|G3|3||5": {
+   "kind": "interview",
+   "why": "interview someone with five or more years in a job about how the work has changed and where it is going",
+   "page": "112",
+   "title": "学无止境"
+  },
+  "CL|G3|4||1": {
+   "kind": "research",
+   "why": "research one group in need and make an infographic: their difficulties, needs and the help available",
+   "page": "20",
+   "title": "心手相连"
+  },
+  "CL|G3|4||3": {
+   "kind": "research",
+   "why": "find news on wildlife in the city and the public's views, then make a news-report video",
+   "page": "64",
+   "title": "平衡之道"
+  },
+  "CL|G3|4||4": {
+   "kind": "research",
+   "why": "research one of Singapore's achievements and give an oral report on how it reflects a clear reading of our constraints and the world",
+   "page": "86",
+   "title": "知己知彼"
+  },
+  "CL|H|1|1A|1": {
+   "kind": "survey",
+   "why": "compare orientation activities in the news with our school's, then submit group suggestions for next year",
+   "page": "28",
+   "title": "新同学 新鲜事"
+  },
+  "CL|H|1|1A|2": {
+   "kind": "interview",
+   "why": "interview classmates, teachers, parents and grandparents on 'must we go home for reunion dinner?' and present the views in slides",
+   "page": "58",
+   "title": "团圆"
+  },
+  "CL|H|1|1A|3": {
+   "kind": "research",
+   "why": "research online to plan a three-day itinerary that shows what is distinctive about Singapore",
+   "page": "90",
+   "title": "相约狮城"
+  },
+  "CL|H|1|1B|4": {
+   "kind": "self",
+   "why": "21-day habit challenge: track one habit daily, then report what helped and what got in the way",
+   "page": "27",
+   "title": "习惯的力量"
+  },
+  "CL|H|1|1B|5": {
+   "kind": "design",
+   "why": "group invention plan: name an everyday inconvenience, design a product for a user, present it",
+   "page": "58",
+   "title": "创新与改变"
+  },
+  "CL|H|1|1B|6": {
+   "kind": "interview",
+   "why": "interview an unsung hero and make a 2–3 minute video about their work",
+   "page": "89",
+   "title": "小人物 大贡献"
+  },
+  "CL|H|2|2A|2": {
+   "kind": "research",
+   "why": "group booklet: research Singapore's common wildlife, what to do and not do, and which agencies to contact",
+   "page": "60",
+   "title": "关爱动物"
+  },
+  "CL|H|2|2A|3": {
+   "kind": "research",
+   "why": "read the family's water and electricity bills against the national average, then make a short video on saving",
+   "page": "91",
+   "title": "绿色生活"
+  },
+  "CL|H|2|2B|5": {
+   "kind": "design",
+   "why": "plan an ideal town in the online game, justify each facility and present the town",
+   "page": "59",
+   "title": "心系家园"
+  },
+  "CL|H|2|2B|6": {
+   "kind": "research",
+   "why": "trace one everyday item: where its materials come from, where it is made and sold; share the findings",
+   "page": "89",
+   "title": "与世界相连"
+  },
+  "CL|H|3||2": {
+   "kind": "self",
+   "why": "keep a health diary for a week, reflect on what to adjust, then swap diaries and advise each other",
+   "page": "63",
+   "title": "健康生活"
+  },
+  "CL|H|3||3": {
+   "kind": "field",
+   "why": "community bingo: three field tasks in the neighbourhood recorded in photos",
+   "page": "96",
+   "title": "走进社区"
+  },
+  "CL|H|3||5": {
+   "kind": "interview",
+   "why": "interview someone with five or more years in a job about how the work has changed and where it is going",
+   "page": "161",
+   "title": "学无止境"
+  },
+  "CL|H|4||1": {
+   "kind": "research",
+   "why": "research life on another planet or adapting to a warmer Earth, propose a solution and present it in slides",
+   "page": "26",
+   "title": "适应的力量"
+  },
+  "CL|H|4||2": {
+   "kind": "self",
+   "why": "keep a week's record of proud moments and good things, then reflect on building a positive attitude",
+   "page": "56",
+   "title": "积极的态度"
+  },
+  "CL|H|4||3": {
+   "kind": "research",
+   "why": "search online for at least three people the student counts as successful and design a 'Successful People' magazine",
+   "page": "88",
+   "title": "成功的要素"
+  }
+ }
+}

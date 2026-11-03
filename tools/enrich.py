@@ -139,8 +139,16 @@ for r in D["recs"]:
         if not ok: continue
         for k in cats + pris: add(k, "infer", f"{rid}: {why}")
     r["tags"] = tags
+# CL integrated tasks (综合任务) read for inquiry (tools/clinq.json, 3 Nov 2026). CL recs hold the reading and writing
+# tasks only, so R7 rarely sees the 综合任务 that ends every CL unit; this tags the unit's first record from that reading.
+CLINQ = json.loads((ROOT / "tools" / "clinq.json").read_text(encoding="utf-8"))["units"]
+KIND_EN = {"research":"research","interview":"interview","survey":"survey","field":"field work","design":"design brief","self":"tracking their own data"}
+for r in D["recs"]:
+    x = CLINQ.get(ukey(r))
+    if not x or first_of.get(ukey(r)) != id(r) or any(t["k"] == "INQ" for t in r["tags"]): continue
+    r["tags"].append({"k":"INQ","src":"infer","rule":f"R8 综合任务 ({KIND_EN[x['kind']]}, textbook p.{x['page']}): {x['why']}"})
 D["prov"] = {"cpdd":"CPDD-tagged","derived":"Derived from a CPDD tag","infer":"Inferred by rule"}
-D["rules"] = [{"id": rid, "cats": cats + pris, "why": why} for rid, _, cats, pris, why in RULES] + [{"id":"DERIVE","cats":["PA_CM","PA_CL","PA_IT","PA_AT"],"why":"CPDD 21CC domain tags mapped to BVSS E21CC priority areas: CCIS → Communication; CGC → Civic Literacy; CAIT → Inventive Thinking only where the task shows an inventive move (CAIT 5-6) and Adaptive Thinking only where it shows an adaptive move (CAIT 3-4); SEC no longer maps to a priority area (tightened 31 Oct 2026 against MOE's LG&M for E21CC)"}]
+D["rules"] = [{"id": rid, "cats": cats + pris, "why": why} for rid, _, cats, pris, why in RULES] + [{"id":"R8 综合任务","cats":["INQ"],"why":"CL only: the textbook integrated task (综合任务) at the end of the unit has students find out for themselves (research, interview, survey, field work or tracking their own data) and then make or present something. Read task by task for all 92 CL units (tools/clinq.json); discussion, ranking, choosing from a given list or a personal letter does not count"},{"id":"DERIVE","cats":["PA_CM","PA_CL","PA_IT","PA_AT"],"why":"CPDD 21CC domain tags mapped to BVSS E21CC priority areas: CCIS → Communication; CGC → Civic Literacy; CAIT → Inventive Thinking only where the task shows an inventive move (CAIT 5-6) and Adaptive Thinking only where it shows an adaptive move (CAIT 3-4); SEC no longer maps to a priority area (tightened 31 Oct 2026 against MOE's LG&M for E21CC)"}]
 D["priNote"] = "BVSS E21CC priority areas (school approach from 2027): Adaptive Thinking, Inventive Thinking, Civic Literacy, Communication. No CPDD guide tags these, so every priority-area tag is either derived from a CPDD 21CC tag or inferred from the task by rule, using the definitions and learning goals in MOE's Learning Goals and Developmental Milestones for Emerging 21CC (20 Oct 2023): Adaptive Thinking = CAIT 3-4, Inventive Thinking = CAIT 5-6, Communication = CCI 1-2, Civic Literacy = CGC 1-2. Tightened 31 Oct 2026: a narrative or creative text no longer counts as Inventive Thinking, and a theme about change no longer counts as Adaptive Thinking; the task must show the move. Treat inferred tags as proposals to confirm in SOW planning."
 
 # ---------- 3. Pedagogical design facts ----------
@@ -167,8 +175,8 @@ D["design"]["about"]["skills"] = {"what": "Which skills each unit teaches, sorte
 D["ui"]["t_sow"] = {"en":"Scheme of work 2027","zh":"2027教学进度表","ms":"Skema Pengajaran 2027","ta":"2027 பாடத்திட்டம்"}
 
 # ---------- 5. CL inquiry wording (recheck of all 44 CL 教师手册 PDFs, 31 Oct 2026) ----------
-D["iblTg"]["CL"] = "《华文伴我行》教师手册 do not tag units for inquiry. Every book's 差异教学 notes name 引导——探究 (guided inquiry) as one of two teaching modes, and every unit ends with 文化探索 (look it up and share) and a 综合任务 (integrated task: 展示、交流、反思). 探究 itself appears once or twice per book; 综合任务 about twenty times."
-D["iblTgEn"]["CL"] = "The CL guides don't tag units for inquiry. Every book's differentiated-instruction notes name guided inquiry (引导——探究) as one of two teaching modes, and every unit ends with a culture-exploration extension (look it up online and share) and an integrated task (make, present, reflect). The word inquiry appears once or twice per book; the integrated task about twenty times."
+D["iblTg"]["CL"] = "《华文伴我行》教师手册 do not tag units for inquiry. Every book's 差异教学 notes name 引导——探究 (guided inquiry) as one of two teaching modes, and every unit ends with 文化探索 (look it up and share) and a 综合任务 (integrated task: 展示、交流、反思). 部门逐一阅读全部92个综合任务：其中57个要求学生自己探究（上网查找、采访、调查、实地考察或记录自己的数据），再制作或展示成果，标为推断的探究任务。"
+D["iblTgEn"]["CL"] = "The CL guides don't tag units for inquiry. Every book's differentiated-instruction notes name guided inquiry (引导——探究) as one of two teaching modes, and every unit ends with a culture-exploration extension and an integrated task (综合任务: make, present, reflect). The department read all 92 integrated tasks: 57 have students find out for themselves (research, interview, survey, field work or tracking their own data) and then make or present something, and are tagged as inferred inquiry (rule R8). With these, CL has more inquiry openings than ML or TL, though none is a CPDD tag."
 
 # ---------- 5b. What each language's guides tag for 21CC (recheck of every guide, 31 Oct 2026) ----------
 D["c21En"]["CL"] = "Not tagged on unit pages. Every guide ends with the 21CC goals and stages; the Sec 1 and Sec 3 guides add one worked example each with MOE codes: Sec 1 Unit 3 《相约狮城》 (CCI 1.3, CCI 5.3, CGC 1.3) and Sec 3 Unit 6 《发现真善美》 (CAIT 3.4, CAIT 5.4, CCI 2.4). Teachers are asked to set 2-3 21CC unit goals themselves for the other units."
