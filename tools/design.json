@@ -86,12 +86,12 @@
   "scope": {
    "CL": "Spiral each semester; no CPDD domain tags. Domains on this page are inferred from theme wording.",
    "ML": "Widens by design; every unit carries a CPDD Domain tag (Diri, Keluarga, Sekolah, Masyarakat, Rantau, Dunia). The guide states that learning starts near the self before moving to society, nation and the world.",
-   "TL": "Theme rotation; the same theme and sub-theme in every course each year. Domains here are inferred from the theme wording."
+   "TL": "Each unit has a CPDD theme and sub-theme, and some theme names recur year after year (relationships, heritage and culture, life skills in all four years); the guides do not call this a rotation. Courses share nearly all of them: of the 27 G3 units, 4 differ in theme or sub-theme in another course. Domains here are inferred from the theme wording."
   },
   "lod": {
    "CL": "G1 keeps the same routines but adds 图文 picture-text and 打写加油站 scaffolds in Sec 1 to 2 and sits one short online post in the exam. G2, G3 and HCL add essays (记叙, 说明, 议论) with 材料作文 in Sec 4; HCL adds 缩写 and 病句 from Sec 3. G2, G3 and HCL share Sec 1 to 2 themes; G1 shares most; themes split by course in Sec 3 to 4.",
    "ML": "Same JATi structure at every level; the difference is domain reach and function mix. G1 starts at Sekolah and Diri and reaches Rantau only in Sec 3 Unit 5; G2 reaches Dunia in Sec 4 Unit 3; G3 in 2B Unit 7; Higher Malay is Diri-Masyarakat-Dunia from 1A Unit 1. Higher Malay unit titles are proverbs.",
-   "TL": "Same themes and cycle at every level. G1 writing is guided and multimodal; G3 and HTL practise summary from Sec 1 and add an argumentative essay and debate in Sec 3; HTL alone sits summary and word-joining in the exam."
+   "TL": "Nearly the same themes at every level (4 units differ in theme or sub-theme). G1 writing is guided and multimodal; G3 and HTL practise summary from Sec 1 and add an argumentative essay and debate in Sec 3; HTL alone sits summary and word-joining in the exam."
   }
  },
  "evEn": {
@@ -138,12 +138,12 @@
   "scope": {
    "CL": "Spiral each semester; no CPDD domain tags. Domains on this page are inferred from theme wording.",
    "ML": "Widens by design; every unit carries a CPDD Domain tag (self, family, school, society, region, world). The guide states that learning starts near the self before moving to society, nation and the world.",
-   "TL": "Theme rotation; the same theme and sub-theme in every course each year. Domains here are inferred from the theme wording."
+   "TL": "Each unit has a CPDD theme and sub-theme, and some theme names recur year after year (relationships, heritage and culture, life skills in all four years); the guides do not call this a rotation. Courses share nearly all of them: of the 27 G3 units, 4 differ in theme or sub-theme in another course. Domains here are inferred from the theme wording."
   },
   "lod": {
    "CL": "G1 keeps the same routines but adds picture-and-text and typing-support scaffolds in Sec 1 to 2, and sits one short online post in the exam. G2, G3 and HCL add essays (narrative, expository, argumentative) with stimulus-based composition in Sec 4; HCL adds summary writing and sentence correction from Sec 3. G2, G3 and HCL share Sec 1 to 2 themes; G1 shares most; themes split by course in Sec 3 to 4.",
    "ML": "Same JATi structure at every level; the difference is domain reach and function mix. G1 starts at school and self and reaches the region only in Sec 3 Unit 5; G2 reaches the world in Sec 4 Unit 3; G3 in 2B Unit 7; Higher Malay is self-society-world from 1A Unit 1. Higher Malay unit titles are proverbs.",
-   "TL": "Same themes and cycle at every level. G1 writing is guided and multimodal; G3 and HTL practise summary from Sec 1 and add an argumentative essay and debate in Sec 3; HTL alone sits summary and word-joining in the exam."
+   "TL": "Nearly the same themes at every level (4 units differ in theme or sub-theme). G1 writing is guided and multimodal; G3 and HTL practise summary from Sec 1 and add an argumentative essay and debate in Sec 3; HTL alone sits summary and word-joining in the exam."
   }
  },
  "stp": {
@@ -3076,6 +3076,21 @@
      }
     ]
    }
+  }
+ },
+ "glanceG3": {
+  "note": "Hand-checked against the G3 unit list Sec 1 to 4 and each unit's topic domain (ML: CPDD Domain tags; CL and TL: inferred by the department from the theme wording), 3 Nov 2026. It replaces, for G3, the general summary drawn from the G1 guides.",
+  "CL": {
+   "tag": "A spiral that stays close to home",
+   "text": "Not a clean self-to-world spiral. Only two books run near to far: 1A (school, then family, then Singapore) and 2B (self, then Singapore and family, then the world). 1B and 2A stay between the self and the community, Sec 3 never goes beyond the community, and Sec 4 reaches the world once (U2, World of literature) before returning to the self. 14 of the 23 units sit at self, family or school. Progression is carried less by how far the topic reaches than by the communicative move (narrate, describe, explain, give a view, respond), as the G1 guides suggest."
+  },
+  "ML": {
+   "tag": "Widens year by year, but zig-zags within each year",
+   "text": "The outer edge widens, but the path is not linear. All but one unit (Sec 3 U5) keep the self in their CPDD Domain tag, with wider domains added on top, and units drop back to self only within a year. Sec 1: self throughout; community is added in 3 of 8 units, all in 1B. Sec 2: 3 of 8 units are self only again; school, family and community come and go, and one unit already reaches the world (2B U7). Sec 3: every unit reaches the community and two reach the world (U3, U6). Sec 4: the three content units all go beyond the self, two of them to the world, then three self-only skills units."
+  },
+  "TL": {
+   "tag": "Close to the self, each year ending further out",
+   "text": "Most units stay at the self (17 of 27; reach inferred from the theme wording). Each year's last unit reaches further than the year before: Sec 1 ends in the community (1B U3, water management), Sec 2 with society and nation (2B U3, youth and society), and Sec 3 and Sec 4 with the world and us (Sec 3 U7, Sec 4 U6). CPDD names a theme and sub-theme for every unit (கருப்பொருள், துணைக் கருப்பொருள்), and some theme names come back year after year: relationships, heritage and culture, and life skills in all four years, nature and science and technology in three. The guides do not describe these as a set to be repeated; that is the department's reading of the labels."
   }
  }
 }
