@@ -294,3 +294,5 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - Lens is now Core skills / Inquiry / E21CC / All rows. The Writing, Assessment and Every row presets are gone (Every row = All rows).
 - Rows folded: Culture and domains into Themes and culture; Language functions into Skills and functions; Writing types into Composition (dashed sub-section in the cell); BVSS school values into DSOs and values; SEAB syllabus line now shows with the Exam and SEAB toggle. Old row keys in saved state or `rows=` links map to their new home (`FO` in `PROWS`).
 - The unit pop-up still lists DSOs and school values as separate sections.
+- Rows header has a "Clear all" link: keeps only Units, then the HOD switches on what she needs (`data-rowclr`).
+- Source is now two multi-select chips, CPDD and Inferred (both on = `psrc` all; the last one on cannot be switched off). The "CPDD + inferred" button is gone.

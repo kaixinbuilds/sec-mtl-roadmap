@@ -401,6 +401,7 @@ table.pcmp td.none{color:var(--muted);font-style:italic}
 .lchip i{width:22px;height:12px;border-radius:999px;background:var(--line);position:relative;transition:background .15s}.lchip i::after{content:"";position:absolute;top:2px;left:2px;width:8px;height:8px;border-radius:50%;background:#fff;transition:transform .15s}
 .lchip[aria-pressed="true"]{color:var(--ink);border-color:color-mix(in srgb,var(--g1) 55%,var(--line));background:color-mix(in srgb,var(--g1) 8%,var(--paper))}
 .lchip[aria-pressed="true"] i{background:var(--g1)}.lchip[aria-pressed="true"] i::after{transform:translateX(10px)}
+.side .lab .clr{float:right;font:inherit;font-size:11px;letter-spacing:0;text-transform:none;border:0;background:none;color:var(--b1);text-decoration:underline;cursor:pointer;padding:0}
 .fold{margin-top:8px;padding-top:6px;border-top:1px dashed var(--line)}.fold .fl{display:block;font-family:var(--f-m);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
 .layers .tag.pa{border:0;border-left:4px solid var(--k);padding:3px 9px;border-radius:6px;font-size:12px}
 .layers .tag.pa[aria-pressed="true"]{background:color-mix(in srgb,var(--k) 18%,var(--paper));color:var(--ink);font-weight:600}
@@ -1188,8 +1189,8 @@ const sowLens=()=>{const on=PROWS(),m=SLENS.find(p=>p[2].length===on.length&&p[2
 const LANE={act:["ibl","INQ","Inquiry"],e21:["e21","CAIT","E21CC"],dso:["e21","CAIT","E21CC"],sval:["e21","CAIT","E21CC"]};
 /* Row toggles live in the side panel (3 Nov 2026) so they stay in reach while scrolling the grid */
 function sowRowsSide(){const on=PROWS(),GS={"BVSS 2027 approaches":"BVSS 2027","Assessment and calendar":"Assessment"},PS={PA_AT:"Adaptive",PA_IT:"Inventive",PA_CL:"Civic",PA_CM:"Communication"};
- let h=`<span class="lab">Rows</span>`+PLAYERS.map(([g,xs])=>`<div class="lgrp"><span class="gl">${esc(GS[g]||g)}</span>${xs.map(([k,l])=>`<button class="lchip" data-row="${k}" aria-pressed="${on.includes(k)}">${esc(l)}</button>`).join("")}</div>`).join("");
- h+=`<div class="lgrp${["e21","dso"].some(k=>on.includes(k))?"":" off"}"><span class="gl">E21CC</span>${PA.map(k=>`<button class="tag cat-${k} pa${st.pa.includes(k)?"":" off"}" data-pa="${k}" aria-pressed="${st.pa.includes(k)}" title="${esc(DATA.cat[k].en)}">${esc(PS[k])}</button>`).join("")}<span class="gl">Source</span>${[["all","CPDD + inferred"],["cpdd","CPDD only"],["infer","Inferred"]].map(([v,l])=>`<button class="psrc" data-psrc="${v}" aria-pressed="${st.psrc===v}">${esc(l)}</button>`).join("")}</div>`;
+ let h=`<span class="lab">Rows <button class="clr" data-rowclr title="Keep only the Units row, then switch on what you need">Clear all</button></span>`+PLAYERS.map(([g,xs])=>`<div class="lgrp"><span class="gl">${esc(GS[g]||g)}</span>${xs.map(([k,l])=>`<button class="lchip" data-row="${k}" aria-pressed="${on.includes(k)}">${esc(l)}</button>`).join("")}</div>`).join("");
+ h+=`<div class="lgrp${["e21","dso"].some(k=>on.includes(k))?"":" off"}"><span class="gl">E21CC</span>${PA.map(k=>`<button class="tag cat-${k} pa${st.pa.includes(k)?"":" off"}" data-pa="${k}" aria-pressed="${st.pa.includes(k)}" title="${esc(DATA.cat[k].en)}">${esc(PS[k])}</button>`).join("")}<span class="gl">Source</span>${[["cpdd","CPDD"],["infer","Inferred"]].map(([v,l])=>`<button class="psrc" data-psrc="${v}" aria-pressed="${st.psrc==="all"||st.psrc===v}">${esc(l)}</button>`).join("")}</div>`;
  return h}
 /* Row source notes name each language's own document ("TL … / ML …"); a grid shows only its own language's (3 Nov 2026) */
 const SRCL={units:{TL:"தொகுதி · பாட வேளை",ML:"Unit dan Komponen"},theme:{TL:"கருப்பொருள் · துணைக்கருப்பொருள்"},values:{ML:"Nilai Budaya / Arif Budiman · topic domain",CL:"topic domain",TL:"topic domain"},skills:{TL:"மொழித்திறன்கள்"},func:{ML:"Fungsi Bahasa"},lo:{TL:"கற்பித்தல் நோக்கங்கள்",ML:"Hasil Pembelajaran"},fw:{CL:"教师手册",ML:"Panduan Guru",TL:"ஆசிரியர் கையேடு"},oral:{CL:"听说",ML:"Bertutur / Interaksi Lisan",TL:"பேசுதல்"},listen:{CL:"听力理解",ML:"Mendengar dan Melihat",TL:"கேட்டல் கருத்தறிதல்"},act:{TL:"கற்பித்தல் நடவடிக்கைகள்",ML:"Pengalaman Pembelajaran"},res:{TL:"துணைக்கருவிகள்",ML:"Bahan Pengajaran"},assess:{ML:"Alat Penilaian dan Kriteria Kejayaan · 2026 standardisation",CL:"2026 standardisation",TL:"2026 standardisation"}};
@@ -1505,7 +1506,8 @@ function render(){normTab();
  document.querySelectorAll("[data-row]").forEach(b=>b.onclick=()=>{const k=b.dataset.row,on=PROWS();st.rows=on.includes(k)?on.filter(x=>x!==k):[...on,k];render()});
  document.querySelectorAll("[data-slens]").forEach(b=>b.onclick=()=>{st.rows=[...SLENS.find(p=>p[0]===b.dataset.slens)[2]];render()});
  document.querySelectorAll("[data-pa]").forEach(b=>b.onclick=()=>{const k=b.dataset.pa;st.pa=st.pa.includes(k)?st.pa.filter(x=>x!==k):PA.filter(x=>x===k||st.pa.includes(x));render()});
- document.querySelectorAll("[data-psrc]").forEach(b=>b.onclick=()=>{st.psrc=b.dataset.psrc;render()});
+ document.querySelectorAll("[data-psrc]").forEach(b=>b.onclick=()=>{const v=b.dataset.psrc,o=v==="cpdd"?"infer":"cpdd";/* two multi-select chips; both on = all, the last one on stays (4 Nov 2026) */if(st.psrc==="all")st.psrc=o;else if(st.psrc===o)st.psrc="all";render()});
+document.querySelectorAll("[data-rowclr]").forEach(b=>b.onclick=()=>{st.rows=["units"];render()});
  document.querySelectorAll("[data-csv]").forEach(b=>b.onclick=()=>{b.dataset.csv==="sow"?sowCSV():b.dataset.csv==="wb"?wbCSV():roadsCSV()});
  document.querySelectorAll("[data-sl]").forEach(b=>b.onclick=()=>{st.sL=b.dataset.sl;if(st.sL!=="All")st.lang=st.sL;render()});
  document.querySelectorAll("[data-mlay]").forEach(b=>b.onclick=()=>{st.mlay=b.dataset.mlay;render()});
