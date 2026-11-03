@@ -590,6 +590,10 @@ tr.ln[data-ln]>th.rh::after{content:attr(data-ln);display:block;margin-top:3px;f
 #e21pop blockquote{margin:4px 0;padding:6px 10px;border-left:3px solid var(--b1);background:var(--soft);border-radius:4px}
 .e21h{display:flex;justify-content:space-between;align-items:center;font-family:var(--f-m)}
 .e21c{border:0;background:none;color:var(--muted);font-size:16px;cursor:pointer}
+
+.pvspan line{stroke:var(--d);stroke-width:7;stroke-linecap:round;opacity:.38}
+.pvspan circle{fill:var(--d);stroke:#0b1222;stroke-width:1.5}
+.pvspan{transition:opacity .25s;pointer-events:none}
 </style>
 
 <header class="site">
@@ -729,6 +733,7 @@ function item(r,k){
    TL: a wheel of the fixed theme set, one ring per year, so the path shows the yearly rotation. */
 const PVR={self:0,family:1,school:1,community:2,nation:3,world:4},PVRL=["Self","Family/school","Community","Nation","World"];
 const PVTS={"Nature":"Nature & environment"},PVSH={"Heritage & culture":"Heritage","Nature & environment":"Nature","Science & technology":"Sci & tech","The world and us":"World and us","Society & nation":"Society & nation","Leisure & arts":"Leisure & arts","Life skills":"Life skills","Relationships":"Relationships","Health":"Health","Change":"Change"};
+const PVTP={relationships:"Relationships",character:"Character and values",wellbeing:"Well-being",nature:"Nature",scitech:"Science and tech",heritage:"Culture and heritage",arts:"Literature and arts",society:"Society and work",global:"Global issues"};
 const pvTh=t=>{const x=(t.theme_en||"").split(" / ")[0].trim();return PVTS[x]||x};
 const pvTop=t=>(t.dom||[]).reduce((a,d)=>PVR[d]>PVR[a]?d:a,(t.dom||["self"])[0]||"self");
 const PVTIME={title:1.6,unit:0.75,gap:0.45,end:0.3};
@@ -738,7 +743,7 @@ function pvBuild(L,c){const us=[1,2,3,4].flatMap(s=>unitsOf(L,c,s));let t=PVTIME
  return {us:sched,endAt:t+0.4,T:t+0.4+PVTIME.end}}
 function pvGeom(L,sched){const N=sched.length;
  {const G=0.8,GW=3.6,tot=N+3*G+GW,cx=250,cy=250,rk=k=>66+k*39;let alt=0,pk=-1;
-  sched.forEach((x,i)=>{const slot=i+(x.u.sec-1)*G+GW/2,a=(-90+360*slot/tot)*Math.PI/180,k=PVR[pvTop(x.u)];alt=k===pk?alt+1:0;pk=k;const r=rk(k)+(alt%2?8:0);x.x=cx+r*Math.cos(a);x.y=cy+r*Math.sin(a);x.a=a});
+  sched.forEach((x,i)=>{const slot=i+(x.u.sec-1)*G+GW/2,a=(-90+360*slot/tot)*Math.PI/180,k=PVR[pvTop(x.u)];alt=k===pk?alt+1:0;pk=k;const r=rk(k)+(alt%2?8:0);x.x=cx+r*Math.cos(a);x.y=cy+r*Math.sin(a);x.a=a;const ks=[...new Set((x.u.dom||[]).map(d=>PVR[d]))].sort();x.rings=ks.map(q=>rk(q)+(q===k&&alt%2?8:0));x.sp=[cx+x.rings[0]*Math.cos(a),cy+x.rings[0]*Math.sin(a)];x.ticks=x.rings.slice(0,-1).map((q,j)=>[cx+q*Math.cos(a),cy+q*Math.sin(a),(x.u.dom||[]).find(d=>PVR[d]===ks[j])||"self"])});
   let g=`<g class="pvrings">${[0,1,2,3,4].map(k=>`<circle cx="${cx}" cy="${cy}" r="${rk(k)}"/><text class="pvlv" data-lv="${k}" x="${cx}" y="${cy-rk(k)-5}" text-anchor="middle">${PVRL[k]}</text>`).join("")}</g>`;
   g+=[1,2,3,4].map(s=>{const xs=sched.filter(x=>x.u.sec===s);if(!xs.length)return "";const i0=sched.indexOf(xs[0]),a0=(-90+360*(i0+(s-1)*G+GW/2-0.5-G/2)/tot)*Math.PI/180,am=(xs[0].a+xs[xs.length-1].a)/2;
    return `${s>1?`<line class="pvdiv" x1="${cx+20*Math.cos(a0)}" y1="${cy+20*Math.sin(a0)}" x2="${cx+232*Math.cos(a0)}" y2="${cy+232*Math.sin(a0)}"/>`:""}<text class="pvsec" data-s="${s}" x="${cx+241*Math.cos(am)}" y="${cy+241*Math.sin(am)+4}" text-anchor="middle">Sec ${s}</text>`}).join("");
@@ -752,11 +757,12 @@ function pvRead(L,us){const rk=x=>PVR[pvTop(x.u)],N=us.length,near=us.filter(x=>
 function pvFig(L,c){c=c||"G3";const P=pvBuild(L,c),N=P.us.length;if(!N)return "";const G=pvGeom(L,P.us),DS=DATA.design||{},gl=(DS.glance||{})[L]||"",G3=c==="G3"?((DS.glanceG3||{})[L]||{}):{},RD=pvRead(L,P.us),CN=pvCn(L,c),tag=G3.tag||RD.line.split(". ")[0];
  const EV=(isEL()&&DS.evEn)||DS.ev||{};const src=P.us.every(x=>x.u.domSrc==="cpdd")?"Reach of each unit: CPDD's own Domain tag.":"Reach of each unit: inferred by the department from the theme wording (CPDD does not tag domains here).";
  const segs=P.us.slice(1).map((x,i)=>{const p=P.us[i];return `<line class="pvseg${p.u.sec!==x.u.sec?" yr":""}" pathLength="1" x1="${p.x.toFixed(1)}" y1="${p.y.toFixed(1)}" x2="${x.x.toFixed(1)}" y2="${x.y.toFixed(1)}"/>`}).join("");
+ const spans=P.us.map(x=>`<g class="pvspan d-${pvTop(x.u)}">${x.rings.length>1?`<line x1="${x.sp[0].toFixed(1)}" y1="${x.sp[1].toFixed(1)}" x2="${x.x.toFixed(1)}" y2="${x.y.toFixed(1)}"/>`:""}${x.ticks.map(([a,b,d])=>`<circle class="d-${d}" cx="${a.toFixed(1)}" cy="${b.toFixed(1)}" r="4.5"/>`).join("")}</g>`).join("");
  const dots=P.us.map(x=>`<g class="pvdot d-${pvTop(x.u)}" role="button" aria-label="${esc(uLab(x.u)+" "+(x.u.theme_en||""))}" transform="translate(${x.x.toFixed(1)} ${x.y.toFixed(1)})"><circle r="9"/><text y="3.5" text-anchor="middle">${esc(String(x.u.unit))}</text></g>`).join("");
  const marks=[1,2,3,4].map(s=>{const x=P.us.find(y=>y.u.sec===s);return x?`<button type="button" class="pvm" data-t="${x.t0}" style="left:${(100*x.t0/P.T).toFixed(2)}%" aria-label="Jump to Sec ${s}"><b>Sec </b>${s}</button>`:""}).join("");
  return `<figure class="pvid" data-pv="${L}" data-pc="${c}" style="--lc:var(--pv-${L})"><div class="card glance pvhd" style="--c:var(--${L.toLowerCase()})"><h3 class="lc ${L}">${esc(DATA.langName[L])} · ${esc(CN)}${G3.tag?": "+esc(G3.tag):""}</h3><p style="margin:0;font-size:13.5px">${G3.text?esc(G3.text):RD.line}</p>
  <details class="pvg1"><summary>Year by year, from the ${esc(CN)} unit list</summary><ul class="pvyrs">${RD.yrs}</ul></details>
- <details class="pvg1"><summary>The earlier summary, from the G1 guides</summary><p style="margin:4px 0 0;font-size:13px">${esc(gl)}</p>${EV[L]?`<p class="ev" style="margin:6px 0 0">Evidence: ${esc(EV[L])}</p>`:""}</details>${G3.text?`<p class="ev" style="margin:6px 0 0">${esc((DS.glanceG3||{}).note||"")}</p>`:`<p class="ev" style="margin:6px 0 0">Computed from the ${esc(CN)} unit list; only G3 has a hand-checked reading so far.</p>`}</div><div class="pvs"><svg class="pvsvg" viewBox="${G.vb}" role="img" aria-label="${esc(DATA.langName[L])} ${esc(CN)} units Sec 1 to 4">${G.g}<g class="pvsegs">${segs}</g><circle class="pvhalo" r="17"/><g class="pvdots">${dots}</g></svg>
+ <details class="pvg1"><summary>The earlier summary, from the G1 guides</summary><p style="margin:4px 0 0;font-size:13px">${esc(gl)}</p>${EV[L]?`<p class="ev" style="margin:6px 0 0">Evidence: ${esc(EV[L])}</p>`:""}</details>${G3.text?`<p class="ev" style="margin:6px 0 0">${esc((DS.glanceG3||{}).note||"")}</p>`:`<p class="ev" style="margin:6px 0 0">Computed from the ${esc(CN)} unit list; only G3 has a hand-checked reading so far.</p>`}</div><div class="pvs"><svg class="pvsvg" viewBox="${G.vb}" role="img" aria-label="${esc(DATA.langName[L])} ${esc(CN)} units Sec 1 to 4">${G.g}<g class="pvspans">${spans}</g><g class="pvsegs">${segs}</g><circle class="pvhalo" r="17"/><g class="pvdots">${dots}</g></svg>
  <div class="pvp"><div class="pvh"><b class="pvy">Sec 1</b><span class="pvn"></span></div><ol class="pvl"></ol><div class="pvkey">${DATA.domains.keys.map(d=>`<span class="d-${d}"><i></i>${esc(DATA.domains.en[d])}</span>`).join("")}</div></div>
  <div class="pvo pvt"><span class="eye">Pedagogical design · ${esc(CN)} · Sec 1 to 4</span><h3>${esc(DATA.langName[L])}</h3><p>${esc(tag)}</p><small>${N} units in teaching order</small></div></div>
  <div class="pvc"><button type="button" class="pvb" aria-label="Play">▶</button><div class="pvbar"><div class="pvtrk"><i></i></div>${marks}</div><span class="pvtm">0:00</span></div>
@@ -766,22 +772,22 @@ function pvFig(L,c){c=c||"G3";const P=pvBuild(L,c),N=P.us.length;if(!N)return ""
 function initPV(){PVS.forEach(p=>{cancelAnimationFrame(p.raf);p.io&&p.io.disconnect()});PVS=[];
  const red=matchMedia("(prefers-reduced-motion: reduce)").matches;
  document.querySelectorAll("figure.pvid").forEach(f=>{const L=f.dataset.pv,P=pvBuild(L,f.dataset.pc);pvGeom(L,P.us);const p={f,P,t:0,play:false,raf:0,last:0,sec:0,auto:false,sel:null,key:""};PVS.push(p);
-  const dots=[...f.querySelectorAll(".pvdot")],segs=[...f.querySelectorAll(".pvseg")],halo=f.querySelector(".pvhalo"),bar=f.querySelector(".pvtrk i"),btn=f.querySelector(".pvb"),tm=f.querySelector(".pvtm"),tt=f.querySelector(".pvt"),list=f.querySelector(".pvl"),yr=f.querySelector(".pvy"),yn=f.querySelector(".pvn"),secT=[...f.querySelectorAll(".pvsec")],pnl=f.querySelector(".pvp");
+  const dots=[...f.querySelectorAll(".pvdot")],spn=[...f.querySelectorAll(".pvspan")],segs=[...f.querySelectorAll(".pvseg")],halo=f.querySelector(".pvhalo"),bar=f.querySelector(".pvtrk i"),btn=f.querySelector(".pvb"),tm=f.querySelector(".pvtm"),tt=f.querySelector(".pvt"),list=f.querySelector(".pvl"),yr=f.querySelector(".pvy"),yn=f.querySelector(".pvn"),secT=[...f.querySelectorAll(".pvsec")],pnl=f.querySelector(".pvp");
   const fmt=x=>`${Math.floor(x/60)}:${String(Math.floor(x%60)).padStart(2,"0")}`,cl=x=>Math.max(0,Math.min(1,x)),us=P.us;
-  const hit=(x,i,s=p.sel)=>!s||(s.k==="sec"?x.u.sec===s.v:s.k==="lv"?PVR[pvTop(x.u)]===s.v:s.k==="th"?pvTh(x.u)===s.v:i===s.v);
+  const hit=(x,i,s=p.sel)=>!s||(s.k==="sec"?x.u.sec===s.v:s.k==="lv"?(x.u.dom||[]).some(d=>PVR[d]===s.v):s.k==="tp"?(x.u.topic||[]).includes(s.v):s.k==="th"?pvTh(x.u)===s.v:i===s.v);
   const row=(x,i)=>`<li class="d-${pvTop(x.u)} in" data-i="${i}" role="button" tabindex="0"><i></i><b>${p.sel?esc(secName(x.u.sec,L).replace(/^Sec /,"S"))+" ":""}${uLab(x.u)}</b>${two(x.u.theme_m,x.u.theme_en,L)}<small>${L==="TL"?esc(pvTh(x.u))+" · ":""}${esc((x.u.dom||[]).map(d=>DATA.domains.en[d]).join(", "))}</small></li>`;
-  const chips=()=>{const ths=[...new Set(us.map(x=>pvTh(x.u)))];return `<div class="pvf"><span>Year</span>${[1,2,3,4].filter(s=>us.some(x=>x.u.sec===s)).map(s=>`<button type="button" data-ps="${s}" aria-pressed="${p.sel&&p.sel.k==="sec"&&p.sel.v===s}">${esc(secName(s,L))}</button>`).join("")}</div><div class="pvf"><span>Reach</span>${[0,1,2,3,4].filter(k=>us.some(x=>PVR[pvTop(x.u)]===k)).map(k=>`<button type="button" data-plv="${k}" aria-pressed="${p.sel&&p.sel.k==="lv"&&p.sel.v===k}">${esc(PVRL[k])}</button>`).join("")}</div>${L==="TL"?`<div class="pvf"><span>CPDD theme</span>${ths.map(k=>`<button type="button" data-pth="${esc(k)}" aria-pressed="${p.sel&&p.sel.k==="th"&&p.sel.v===k}">${esc(PVSH[k]||k)}</button>`).join("")}</div>`:""}`};
+  const chips=()=>{const ths=[...new Set(us.map(x=>pvTh(x.u)))];return `<div class="pvf"><span>Year</span>${[1,2,3,4].filter(s=>us.some(x=>x.u.sec===s)).map(s=>`<button type="button" data-ps="${s}" aria-pressed="${p.sel&&p.sel.k==="sec"&&p.sel.v===s}">${esc(secName(s,L))}</button>`).join("")}</div><div class="pvf"><span>Reach</span>${[0,1,2,3,4].filter(k=>us.some(x=>(x.u.dom||[]).some(d=>PVR[d]===k))).map(k=>`<button type="button" data-plv="${k}" aria-pressed="${p.sel&&p.sel.k==="lv"&&p.sel.v===k}">${esc(PVRL[k])}</button>`).join("")}</div>${us.some(x=>(x.u.topic||[]).length)?`<div class="pvf"><span>Topic</span>${Object.keys(PVTP).filter(k=>us.some(x=>(x.u.topic||[]).includes(k))).map(k=>`<button type="button" data-ptp="${k}" aria-pressed="${p.sel&&p.sel.k==="tp"&&p.sel.v===k}">${esc(PVTP[k])}</button>`).join("")}</div>`:""}${L==="TL"?`<div class="pvf"><span>CPDD theme</span>${ths.map(k=>`<button type="button" data-pth="${esc(k)}" aria-pressed="${p.sel&&p.sel.k==="th"&&p.sel.v===k}">${esc(PVSH[k]||k)}</button>`).join("")}</div>`:""}`};
   const overview=()=>{const s=p.sel;pnl.classList.add("ov");
    if(s&&s.k==="u"){const x=us[s.v],sk=IXS[uidOf(x.u)];yr.textContent=`${secName(x.u.sec,L)} · ${uLab(x.u)}`;yn.textContent=L==="TL"?pvTh(x.u):"Unit";
-    list.innerHTML=`<li class="d-${pvTop(x.u)} in cur pvu"><i></i><span class="pvut">${two(x.u.theme_m,x.u.theme_en,L)}</span><small>Reach: ${esc((x.u.dom||[]).map(d=>DATA.domains.en[d]).join(", "))}${(x.u.domSrc||"")==="cpdd"?" (CPDD Domain tag)":" (inferred from the theme)"}</small>${sk?`<small class="pviq"><b>Inquiry question</b> ${esc(sk.q)}</small>`:""}</li>`+
+    list.innerHTML=`<li class="d-${pvTop(x.u)} in cur pvu"><i></i><span class="pvut">${two(x.u.theme_m,x.u.theme_en,L)}</span><small>Reach: ${esc((x.u.dom||[]).map(d=>DATA.domains.en[d]).join(", "))} ${esc(({cpdd:"(CPDD Domain tag)",guide:"(read from the guide's unit overview)",infer:"(inferred from the theme)"})[x.u.domSrc||"infer"]||"")}</small>${(x.u.topic||[]).length?`<small>Topic: ${esc(x.u.topic.map(k=>PVTP[k]).join(", "))}</small>`:""}${x.u.domWhy?`<small class="pviq"><b>From the guide</b> ${esc(x.u.domWhy)}</small>`:""}${sk?`<small class="pviq"><b>Inquiry question</b> ${esc(sk.q)}</small>`:""}</li>`+
      `<li class="pva"><button type="button" class="pvopen" data-sowu="${esc(uidOf(x.u))}">Open the full unit ›</button><button type="button" class="pvback">← Overview</button>${s.v>0?`<button type="button" class="pvnav" data-go="${s.v-1}">‹ Previous</button>`:""}${s.v<us.length-1?`<button type="button" class="pvnav" data-go="${s.v+1}">Next ›</button>`:""}</li>`;return}
    const xs=us.map((x,i)=>[x,i]).filter(([x,i])=>hit(x,i));
-   yr.textContent=!s?"Overview":s.k==="sec"?secName(s.v,L):s.k==="lv"?PVRL[s.v]:(PVSH[s.v]||s.v);
+   yr.textContent=!s?"Overview":s.k==="sec"?secName(s.v,L):s.k==="lv"?PVRL[s.v]:s.k==="tp"?PVTP[s.v]:(PVSH[s.v]||s.v);
    yn.textContent=!s?`${us.length} units · tap a dot, a year or a ring`:`${xs.length} unit${xs.length>1?"s":""}`;
    list.innerHTML=`<li class="pvfl">${chips()}</li>`+(s?xs.map(([x,i])=>row(x,i)).join("")+`<li class="pva"><button type="button" class="pvback">← Show all</button></li>`:"")};
   const draw=t=>{const end=t>=P.endAt;let cur=-1;us.forEach((x,i)=>{if(x.t0<=t)cur=i});const sec=cur<0?1:us[cur].u.sec;
    /* the line runs continuously from one unit to the next (eased), with the halo as its pen tip */
-   let hx=null,hy=null;us.forEach((x,i)=>{const k=cl((t-x.t0)/0.2),on=hit(x,i);dots[i].style.opacity=k?(end?(on?1:0.18):x.u.sec===sec?1:0.4):0;dots[i].classList.toggle("pick",end&&!!p.sel&&on);
+   let hx=null,hy=null;us.forEach((x,i)=>{const k=cl((t-x.t0)/0.2),on=hit(x,i);dots[i].style.opacity=k?(end?(on?1:0.18):x.u.sec===sec?1:0.4):0;spn[i].style.opacity=dots[i].style.opacity;dots[i].classList.toggle("pick",end&&!!p.sel&&on);
     if(i){const q=us[i-1],e=pvEase((t-q.t0)/(x.t0-q.t0)),mv=e>0&&e<1;segs[i-1].style.strokeDashoffset=1-e;segs[i-1].style.opacity=end?(!p.sel||(p.sel.k!=="u"&&on&&hit(q,i-1))?1:0.12):x.u.sec===sec||mv?1:0.35;if(mv){hx=q.x+(x.x-q.x)*e;hy=q.y+(x.y-q.y)*e}}});
    if(hx==null&&cur>=0){hx=us[cur].x;hy=us[cur].y}
    if(end&&p.sel&&p.sel.k==="u"){hx=us[p.sel.v].x;hy=us[p.sel.v].y}else if(end)hx=null;
@@ -805,7 +811,7 @@ function initPV(){PVS.forEach(p=>{cancelAnimationFrame(p.raf);p.io&&p.io.disconn
   f.querySelector(".pvsvg").addEventListener("click",e=>{const d=e.target.closest(".pvdot"),s=e.target.closest(".pvsec"),v=e.target.closest("[data-lv]"),h=e.target.closest("[data-th]");
    if(d)pick({k:"u",v:dots.indexOf(d)});else if(s)pick({k:"sec",v:+s.dataset.s});else if(v)pick({k:"lv",v:+v.dataset.lv});else if(h)pick({k:"th",v:h.dataset.th})});
   pnl.addEventListener("click",e=>{const b=e.target.closest("button,li[data-i]");if(!b)return;
-   if(b.dataset.ps)pick({k:"sec",v:+b.dataset.ps});else if(b.dataset.plv)pick({k:"lv",v:+b.dataset.plv});else if(b.dataset.pth)pick({k:"th",v:b.dataset.pth});
+   if(b.dataset.ps)pick({k:"sec",v:+b.dataset.ps});else if(b.dataset.plv)pick({k:"lv",v:+b.dataset.plv});else if(b.dataset.pth)pick({k:"th",v:b.dataset.pth});else if(b.dataset.ptp)pick({k:"tp",v:b.dataset.ptp});
    else if(b.dataset.go)pick({k:"u",v:+b.dataset.go});else if(b.classList.contains("pvback")){p.sel=null;pick(null)}else if(b.dataset.sowu)sowPanel(b.dataset.sowu,"all");else if(b.dataset.i!=null)pick({k:"u",v:+b.dataset.i})});
   pnl.addEventListener("keydown",e=>{const li=e.target.closest("li[data-i]");if(li&&(e.key==="Enter"||e.key===" ")){e.preventDefault();pick({k:"u",v:+li.dataset.i})}});
   if(red)p.t=P.T;draw(p.t);
