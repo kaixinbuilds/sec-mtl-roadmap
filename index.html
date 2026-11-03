@@ -580,6 +580,16 @@ tr.ln[data-ln]>th.rh::after{content:attr(data-ln);display:block;margin-top:3px;f
 .pva .pvopen{background:var(--lc);border-color:var(--lc);color:#0b1222;font-weight:600}
 .pvl li.pvu{display:block}.pvu .pvut{display:block;font-size:17px;font-weight:600;margin:2px 0 4px}
 .pvu small{display:block;margin-top:4px}.pviq b{display:block;font:10px var(--f-m);letter-spacing:.08em;text-transform:uppercase;color:var(--lc);margin-top:6px}
+
+/* E21CC code buttons and their explainer card */
+.e21x{font:inherit;font-family:var(--f-m);font-size:.92em;color:inherit;background:none;border:0;border-bottom:1px dotted currentColor;padding:0;margin:0;cursor:pointer;white-space:nowrap}
+.e21x:hover,.e21x:focus-visible{color:var(--b1);outline:none}
+.ms .e21x{border-bottom:0}
+#e21pop{position:fixed;z-index:200;max-height:70vh;overflow:auto;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px -14px rgba(0,0,0,.45);padding:12px 14px;font-size:13.5px;line-height:1.45}
+#e21pop p{margin:6px 0}#e21pop ol{margin:4px 0 4px 18px;padding:0}#e21pop li{margin:3px 0}
+#e21pop blockquote{margin:4px 0;padding:6px 10px;border-left:3px solid var(--b1);background:var(--soft);border-radius:4px}
+.e21h{display:flex;justify-content:space-between;align-items:center;font-family:var(--f-m)}
+.e21c{border:0;background:none;color:var(--muted);font-size:16px;cursor:pointer}
 </style>
 
 <header class="site">
@@ -977,6 +987,34 @@ const ms21Block=(id,k,sec)=>{const a=ms21Of(id,k),M=MSD(),lv=lvOf(sec);if(!a.len
 const ms21Table=()=>{const M=MSD();if(!M.goals)return "";const gs=Object.keys(M.goals);return `<details class="msref" style="margin-top:14px"><summary><b>E21CC developmental milestones, Level 3 and Level 4</b> <span class="note">(MOE, Learning Goals and Developmental Milestones for Emerging 21CC, 20 Oct 2023)</span></summary><div class="scroll"><table class="mst"><thead><tr><th>Competency</th><th>Learning goal</th><th>Level 3 · Lower Secondary</th><th>Level 4 · Upper Secondary to Pre-U</th></tr></thead><tbody>${gs.map(g=>`<tr class="cat-${g.startsWith("CCI")?"CCIS":g.split(" ")[0]}"><td>${esc(compOf(g))}</td><td><b>${esc(g)}</b> ${esc(M.goals[g])}</td><td>${msChips([g+".3"])} ${esc(M.ms[g+".3"]||"")}</td><td>${msChips([g+".4"])} ${esc(M.ms[g+".4"]||"")}</td></tr>`).join("")}</tbody></table></div><p class="note">Units in Sec 1 and 2 show Level 3 codes, Sec 3 and 4 show Level 4. Open a unit to see all four levels for each goal.</p></details>`};
 const leadLine=sk=>{const d=sk&&sk.lead&&vmvFor(sk.lead);return d?`<div class="lead21">Leads with <span class="tag cat-${d.k}">${esc(d.dso)}</span> <span class="note">${esc(d.value)} · reflect: ${esc(d.reflect||"")}</span></div>`:""};
 const msList=sk=>{const cs=[...new Set((sk&&sk.ms||[]).flat())].sort();if(!cs.length)return "";const M=MSD();return `<details class="msl"><summary>E21CC milestones in this inquiry (${cs.length})</summary><ul>${cs.map(c=>`<li>${msChips([c])} ${esc((M.goals||{})[c.replace(/\.\d$/,"")]||"")}: ${esc((M.ms||{})[c]||"")}</li>`).join("")}</ul><p class="why" style="margin:4px 0 0">Department reading of each phase against ${esc(M.source||"")}</p></details>`};
+/* E21CC codes explain themselves (3 Nov 2026): every CAIT/CCI/CGC code in the page becomes a button; tap it for a plain-English card.
+   "CAIT 3.3" = domain CAIT, learning goal 3, Level 3 (Lower Secondary). Lists like "CCI 1.3, 2.3" or "CAIT 3.3/4.3" carry the prefix on. */
+const E21D={CAIT:"Critical, Adaptive and Inventive Thinking",CCI:"Communication, Collaboration and Information Skills",CGC:"Civic Literacy, Global Awareness and Cross-Cultural Skills"};
+const E21RX=/\b(CAIT|CCIS?|CGC)\s?(\d)(?:\.(\d))?((?:\s*(?:,|\/|and|to)\s*\d\.\d)*)(?![\d.])/g;
+function e21Card(code){const M=MSD(),m=code.match(/^(CAIT|CCI|CGC)(?:\s(\d)(?:\.(\d))?)?$/);if(!m)return "";const [,d,g,l]=m;const G=g?`${d} ${g}`:null;
+ let h=`<div class="e21h"><b>${esc(code)}</b><button type="button" class="e21c" aria-label="Close">✕</button></div><p><b>${esc(d)}</b> = ${esc(E21D[d])}, one of MOE's three domains of the emerging 21st Century Competencies (E21CC).</p>`;
+ if(G){h+=`<p><b>Goal ${esc(g)}</b> (${esc(compOf(G))}): ${esc((M.goals||{})[G]||"")}</p>`;
+  if(l)h+=`<p><b>.${esc(l)}</b> = Level ${esc(l)}, ${esc(LVN[l]||"")}${l==="3"?" (Sec 1–2)":l==="4"?" (Sec 3–4)":""}. What it looks like:</p><blockquote>${esc((M.ms||{})[`${G}.${l}`]||"")}</blockquote>`;
+  else h+=`<p>The four levels of this goal:</p><ol>${[1,2,3,4].map(n=>`<li><b>${esc(G)}.${n}</b> ${esc(LVN[n])}: ${esc((M.ms||{})[`${G}.${n}`]||"")}</li>`).join("")}</ol>`}
+ else h+=`<p>Its six learning goals:</p><ol>${[1,2,3,4,5,6].map(n=>`<li><b>${d} ${n}</b> ${esc(compOf(d+" "+n))}: ${esc((M.goals||{})[`${d} ${n}`]||"")}</li>`).join("")}</ol>`;
+ return h+`<p class="note">How to read a code: domain, then goal number, then level after the dot. Source: ${esc(M.source||"MOE, Learning Goals and Developmental Milestones for Emerging 21CC")}.</p>`}
+function linkE21(root){if(!root)return;const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>{const p=n.parentElement;if(!p||p.closest("button,a,select,option,textarea,script,style,svg,.e21x,#e21pop,title"))return NodeFilter.FILTER_REJECT;E21RX.lastIndex=0;return E21RX.test(n.nodeValue)?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}});
+ const ns=[];while(w.nextNode())ns.push(w.currentNode);
+ for(const n of ns){const t=n.nodeValue,frag=document.createDocumentFragment();let last=0;E21RX.lastIndex=0;let m;
+  while((m=E21RX.exec(t))){const d=m[1].replace("CCIS","CCI");frag.append(t.slice(last,m.index));
+   const b=c=>{const x=document.createElement("button");x.type="button";x.className="e21x";x.dataset.e21=c;x.textContent=c;x.title="What does "+c+" mean?";return x};
+   frag.append(b(m[3]?`${d} ${m[2]}.${m[3]}`:m[1]==="CCIS"?d:`${d} ${m[2]}`));
+   if(m[4]){let r=m[4],k=0;r.replace(/(\s*(?:,|\/|and|to)\s*)(\d)\.(\d)/g,(all,sep,g,l)=>{frag.append(sep);frag.append(b(`${d} ${g}.${l}`));return all})}
+   last=m.index+m[0].length}
+  frag.append(t.slice(last));n.replaceWith(frag)}}
+document.addEventListener("click",e=>{const b=e.target.closest(".e21x");const pop=document.getElementById("e21pop");
+ if(!b){if(pop&&!e.target.closest("#e21pop")||e.target.closest(".e21c"))pop&&pop.remove();return}
+ e.preventDefault();e.stopPropagation();pop&&pop.remove();const p=document.createElement("div");p.id="e21pop";p.setAttribute("role","dialog");p.innerHTML=e21Card(b.dataset.e21);
+ (b.closest("dialog")||document.body).appendChild(p);const r=b.getBoundingClientRect(),W=Math.min(360,innerWidth-24);p.style.width=W+"px";
+ p.style.left=Math.max(12,Math.min(r.left,innerWidth-W-12))+"px";const below=r.bottom+8,h=p.offsetHeight;p.style.top=(below+h<innerHeight?below:Math.max(12,r.top-h-8))+"px"},true);
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.getElementById("e21pop")?.remove()});
+addEventListener("scroll",()=>document.getElementById("e21pop")?.remove(),{passive:true});
+new MutationObserver(ms=>{for(const m of ms)for(const n of m.addedNodes){if(n.nodeType===1&&!n.closest?.(".e21x,#e21pop"))linkE21(n)}}).observe(document.body,{childList:true,subtree:true});
 /* unit chip badges follow the rows on show: Inquiry when the inquiry row is on, E21CC priority dots when an E21CC row is on */
 function chip(u){const t=tlU(u),on=PROWS(),id=uidOf(u);let bd="";
  if(on.includes("act")){if(IXS[id])bd+=`<span class="ub cat-INQ" title="Department inquiry sketch">Inquiry</span>`;else if(unitTags(unitRecs(u)).inq)bd+=`<span class="ub cat-INQ off" title="Inquiry-shaped task; no department sketch yet">Inquiry task</span>`}
@@ -1358,7 +1396,7 @@ function render(){
  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{const k=b.dataset.cat;if(k==="__clear")st.cats=[];else st.cats=st.cats.includes(k)?st.cats.filter(x=>x!==k):[...st.cats,k];render()});
  try{localStorage.setItem("mtlrm2",JSON.stringify(st))}catch(e){}
  const hs=`#${st.tab}-${st.lang}-${st.crs}`+(st.tab==="prog"?`?lens=${st.lens}&l=${st.sL}&c=${st.sC}&s=${st.sS}&src=${st.src}${st.cats.length?"&cats="+st.cats.join(","):""}`:st.tab==="sow"?`?s=${st.ssec}&rows=${PROWS().join(",")}${st.pa.length<4?"&pa="+st.pa.join(","):""}${st.psrc!=="all"?"&psrc="+st.psrc:""}`:"");try{if(location.hash!==hs)history.replaceState(null,"",hs)}catch(e){}
-  markScroll();if(st.tab==="design")initPV();
+  markScroll();if(st.tab==="design")initPV();linkE21($("#view"));linkE21(document.querySelector(".hero"));
 }
 const applyHash=parseHash;
 addEventListener("hashchange",()=>{const t=st.tab;applyHash();render();if(st.tab!==t)scrollTo({top:0})});addEventListener("resize",()=>{markScroll();try{document.documentElement.style.setProperty("--hh",document.querySelector("header.site").offsetHeight+"px")}catch(e){}});
