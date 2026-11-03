@@ -55,8 +55,26 @@ for t in D["themes"]:
         t["dom"] = MLD.get(k, ["self"]); t["domSrc"] = "cpdd" if k in MLD else "infer"
     else:
         t["dom"] = infer_dom(t["theme_en"], t["theme_m"]); t["domSrc"] = "infer"
+# Unit codes read from each guide's unit overview (3 Nov 2026): CL and TL reach and topic replace the title-keyword guess;
+# ML keeps CPDD's Domain row and adds topic, plus any scope the department's reading adds (domAdd). Evidence quotes come with file and page.
+_UC = ROOT / "tools" / "unitcodes.json"
+UC = json.loads(_UC.read_text(encoding="utf-8")) if _UC.exists() else {}
+for t in D["themes"]:
+    c = UC.get("|".join(str(x) for x in [t["lang"], t["course"], t["sec"], t["book"], t["unit"]]))
+    if not c:
+        continue
+    t["topic"] = c.get("topic", [])
+    if c.get("ev"):
+        t["domWhy"] = c["ev"] + (f" ({c['where']})" if c.get("where") else "")
+    if t["lang"] == "ML":
+        extra = [d for d in DOM if d in c.get("read", []) and d not in t["dom"]]
+        if extra:
+            t["domAdd"] = extra
+    elif c.get("reach"):
+        t["dom"] = [d for d in DOM if d in c["reach"]]
+        t["domSrc"] = "guide"
 D["domains"] = {"keys": DOM, "en": {"self":"Self","family":"Family","school":"School","community":"Community & culture","nation":"Nation (Singapore)","world":"World & region"},
- "note": "ML domains are the Domain row of each JATi Panduan Guru (CPDD). CL and TL domains are inferred from the unit theme wording by keyword rules in tools/enrich.py; a unit can carry more than one."}
+ "note": "ML domains are the Domain row of each JATi Panduan Guru (CPDD); where the department's reading of the unit adds a scope (often Singapore as a nation, which CPDD's ML scheme has no domain for) it is shown separately. CL and TL domains are read from each unit's overview in the teacher guide (CL 单元内容概要, TL கண்ணோட்டம்), with the quote and page kept in tools/unitcodes.json. The TL Syllabus 2021 (p. 17) names the same six domains: self, family, school, community, nation, world. A unit can carry several."}
 
 # ---------- 2. Provenance-tagged 21CC / IBL / E21CC priority tags ----------
 D["cat"].update({

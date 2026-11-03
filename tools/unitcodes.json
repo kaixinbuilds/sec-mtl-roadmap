@@ -1,0 +1,3756 @@
+{
+"CL|G1|1|1上|1": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "内容围绕学生进入中学后的新环境",
+"where": "G1/G1华文教师手册（一上）.pdf.md, Page 34",
+"reach": [
+"school",
+"community"
+]
+},
+"CL|G1|1|1上|2": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "内容围绕农历新年的传统和习俗而展开",
+"where": "G1/G1华文教师手册（一上）.pdf.md, Page 59",
+"reach": [
+"family",
+"community"
+]
+},
+"CL|G1|1|1上|3": {
+"topic": [
+"heritage"
+],
+"ev": "通过介绍新加坡的景点、美食和文化",
+"where": "G1/G1华文教师手册（一上）.pdf.md, Page 82",
+"reach": [
+"nation"
+]
+},
+"CL|G1|1|1下|4": {
+"topic": [
+"character"
+],
+"ev": "让我们看到习惯的力量，以及它对我们的影响",
+"where": "G1/G1华文教师手册（一下）.pdf.md, Page 34",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"CL|G1|1|1下|5": {
+"topic": [
+"scitech",
+"heritage"
+],
+"ev": "探讨创新与改变对人类和世界的影响",
+"where": "G1/G1华文教师手册（一下）.pdf.md, Page 60",
+"reach": [
+"self",
+"world"
+]
+},
+"CL|G1|1|1下|6": {
+"topic": [
+"society",
+"character"
+],
+"ev": "探讨他们为社会做出的巨大贡献",
+"where": "G1/G1华文教师手册（一下）.pdf.md, Page 89",
+"reach": [
+"school",
+"community"
+]
+},
+"CL|G1|2|2上|1": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "探讨亲人之间的相处方式与爱的表现",
+"where": "G1/G1华文教师手册（二上）.pdf.md, Page 34",
+"reach": [
+"self",
+"family"
+]
+},
+"CL|G1|2|2上|2": {
+"topic": [
+"nature",
+"heritage"
+],
+"ev": "探讨人类与动物应有的关系",
+"where": "G1/G1华文教师手册（二上）.pdf.md, Page 62",
+"reach": [
+"self",
+"community",
+"world"
+]
+},
+"CL|G1|2|2上|3": {
+"topic": [
+"nature"
+],
+"ev": "内容围绕人类和环境的相互影响及环保课题展开",
+"where": "G1/G1华文教师手册（二上）.pdf.md, Page 87",
+"reach": [
+"school",
+"nation",
+"world"
+]
+},
+"CL|G1|2|2下|4": {
+"topic": [
+"wellbeing",
+"relationships"
+],
+"ev": "探讨了青少年应该如何应对身心方面的问题与挑战",
+"where": "G1/G1华文教师手册（二下）.pdf.md, Page 34",
+"reach": [
+"self",
+"family",
+"community",
+"world"
+]
+},
+"CL|G1|2|2下|5": {
+"topic": [
+"nature",
+"society"
+],
+"ev": "通过生活中发生的故事和居住环境中的景物",
+"where": "G1/G1华文教师手册（二下）.pdf.md, Page 59",
+"reach": [
+"community",
+"nation"
+]
+},
+"CL|G1|2|2下|6": {
+"topic": [
+"global",
+"scitech"
+],
+"ev": "通过新加坡与世界相连的方式，及其发展与变化",
+"where": "G1/G1华文教师手册（二下）.pdf.md, Page 85",
+"reach": [
+"nation",
+"world"
+]
+},
+"CL|G1|3||1": {
+"topic": [
+"relationships",
+"arts"
+],
+"ev": "探讨如何与人建立良好的人际关系",
+"where": "G1/G1华文教师手册（中三）.pdf.md, Page 35",
+"reach": [
+"school",
+"community",
+"world"
+]
+},
+"CL|G1|3||2": {
+"topic": [
+"wellbeing",
+"heritage"
+],
+"ev": "鼓励学生为自己的身心健康负责",
+"where": "G1/G1华文教师手册（中三）.pdf.md, Page 57",
+"reach": [
+"self",
+"school"
+]
+},
+"CL|G1|3||3": {
+"topic": [
+"relationships",
+"society"
+],
+"ev": "深入了解邻里生活，感受温馨的邻里之情",
+"where": "G1/G1华文教师手册（中三）.pdf.md, Page 81",
+"reach": [
+"community"
+]
+},
+"CL|G1|3||4": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "探讨沟通的意义，学习如何有效地沟通",
+"where": "G1/G1华文教师手册（中三）.pdf.md, Page 104",
+"reach": [
+"school",
+"community"
+]
+},
+"CL|G1|3||5": {
+"topic": [
+"character"
+],
+"ev": "探讨学习的意义，以及对学习应该持有什么样的态度",
+"where": "G1/G1华文教师手册（中三）.pdf.md, Page 125",
+"reach": [
+"self",
+"family",
+"community",
+"nation"
+]
+},
+"CL|G1|3||6": {
+"topic": [
+"relationships",
+"character",
+"arts"
+],
+"ev": "刻画人与人之间的真诚、善良与美好",
+"where": "G1/G1华文教师手册（中三）.pdf.md, Page 148",
+"reach": [
+"family",
+"community"
+]
+},
+"CL|G1|4||1": {
+"topic": [
+"character",
+"society"
+],
+"ev": "探讨人生是一个不断发现自我的过程",
+"where": "G1/G1华文教师手册（中四）.pdf.md, Page 34",
+"reach": [
+"self",
+"school"
+]
+},
+"CL|G1|4||2": {
+"topic": [
+"character"
+],
+"ev": "探讨我们该如何迎接挑战",
+"where": "G1/G1华文教师手册（中四）.pdf.md, Page 58",
+"reach": [
+"self",
+"family",
+"school",
+"community"
+]
+},
+"CL|G1|4||3": {
+"topic": [
+"society",
+"heritage"
+],
+"ev": "新加坡作为我们的家园有什么人、事、物值得我们怀念",
+"where": "G1/G1华文教师手册（中四）.pdf.md, Page 80",
+"reach": [
+"family",
+"nation",
+"world"
+]
+},
+"CL|G1|4||4": {
+"topic": [
+"heritage"
+],
+"ev": "通过介绍能体现新加坡华族文化的事物",
+"where": "G1/G1华文教师手册（中四）.pdf.md, Page 106",
+"reach": [
+"community",
+"nation"
+]
+},
+"CL|G1|4||5": {
+"topic": [
+"character"
+],
+"ev": "通过一些人物追梦的故事，探索如何勇敢追梦",
+"where": "G1/G1华文教师手册（中四）.pdf.md, Page 129",
+"reach": [
+"self",
+"nation",
+"world"
+]
+},
+"CL|G2|1|1上|1": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "学生进入中学后所认识的新同学和所遇到的新鲜事",
+"where": "G2/G2华文教师手册（一上）修订版（附资源文本）_010125.pdf.md, Page 28",
+"reach": [
+"self",
+"school",
+"community"
+]
+},
+"CL|G2|1|1上|2": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "内容围绕农历新年的传统和习俗而展开",
+"where": "G2/G2华文教师手册（一上）修订版（附资源文本）_010125.pdf.md, Page 54",
+"reach": [
+"family",
+"community"
+]
+},
+"CL|G2|1|1上|3": {
+"topic": [
+"heritage",
+"arts"
+],
+"ev": "通过介绍新加坡的美景、美食和文化",
+"where": "G2/G2华文教师手册（一上）修订版（附资源文本）_010125.pdf.md, Page 80",
+"reach": [
+"nation"
+]
+},
+"CL|G2|1|1下|4": {
+"topic": [
+"character"
+],
+"ev": "让我们看到习惯的力量，以及它对我们的影响",
+"where": "G2/G2华文教师手册（一下）修订版（附资源文本）_010125.pdf.md, Page 28",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"CL|G2|1|1下|5": {
+"topic": [
+"scitech",
+"heritage"
+],
+"ev": "探讨创新与改变对人类和世界的影响",
+"where": "G2/G2华文教师手册（一下）修订版（附资源文本）_010125.pdf.md, Page 56",
+"reach": [
+"self",
+"world"
+]
+},
+"CL|G2|1|1下|6": {
+"topic": [
+"society",
+"character"
+],
+"ev": "探讨他们为社会做出的巨大贡献",
+"where": "G2/G2华文教师手册（一下）修订版（附资源文本）_010125.pdf.md, Page 80",
+"reach": [
+"school",
+"community"
+]
+},
+"CL|G2|2|2上|1": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "探讨亲人之间的相处方式与爱的表现",
+"where": "G2/G2华文教师手册（二上）修订版（附资源文本）_010125.pdf.md, Page 28",
+"reach": [
+"self",
+"family"
+]
+},
+"CL|G2|2|2上|2": {
+"topic": [
+"nature",
+"heritage"
+],
+"ev": "探讨人类与动物应有的关系",
+"where": "G2/G2华文教师手册（二上）修订版（附资源文本）_010125.pdf.md, Page 55",
+"reach": [
+"self",
+"community",
+"world"
+]
+},
+"CL|G2|2|2上|3": {
+"topic": [
+"nature"
+],
+"ev": "内容围绕人类和环境的相互影响及环保课题展开",
+"where": "G2/G2华文教师手册（二上）修订版（附资源文本）_010125.pdf.md, Page 79",
+"reach": [
+"school",
+"nation",
+"world"
+]
+},
+"CL|G2|2|2下|4": {
+"topic": [
+"wellbeing",
+"relationships",
+"character"
+],
+"ev": "探讨了青少年应该如何应对身心方面的问题与挑战",
+"where": "G2/G2华文教师手册（二下）修订版（附资源文本）_010125.pdf.md, Page 28",
+"reach": [
+"self",
+"school",
+"community",
+"world"
+]
+},
+"CL|G2|2|2下|5": {
+"topic": [
+"nature",
+"relationships",
+"society"
+],
+"ev": "通过生活中发生的故事和居住环境中的景物",
+"where": "G2/G2华文教师手册（二下）修订版（附资源文本）_010125.pdf.md, Page 50",
+"reach": [
+"family",
+"community",
+"nation"
+]
+},
+"CL|G2|2|2下|6": {
+"topic": [
+"global",
+"scitech"
+],
+"ev": "通过新加坡与世界相连的方式，及其发展与变化",
+"where": "G2/G2华文教师手册（二下）修订版（附资源文本）_010125.pdf.md, Page 74",
+"reach": [
+"nation",
+"world"
+]
+},
+"CL|G2|3||1": {
+"topic": [
+"relationships",
+"arts"
+],
+"ev": "探讨如何建立良好的人际关系，收获真诚美好的友谊",
+"where": "G2/G2华文教师手册（中三）.pdf.md, Page 29",
+"reach": [
+"school",
+"community",
+"world"
+]
+},
+"CL|G2|3||2": {
+"topic": [
+"wellbeing",
+"heritage"
+],
+"ev": "探索如何培养良好的生活习惯和积极的生活态度",
+"where": "G2/G2华文教师手册（中三）.pdf.md, Page 53",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"CL|G2|3||3": {
+"topic": [
+"relationships",
+"society"
+],
+"ev": "引导学生思考社区团结和互助的重要性",
+"where": "G2/G2华文教师手册（中三）.pdf.md, Page 77",
+"reach": [
+"community"
+]
+},
+"CL|G2|3||4": {
+"topic": [
+"relationships",
+"scitech"
+],
+"ev": "论述了沟通的意义，以及社交媒体在沟通中的作用",
+"where": "G2/G2华文教师手册（中三）.pdf.md, Page 100",
+"reach": [
+"family",
+"community"
+]
+},
+"CL|G2|3||5": {
+"topic": [
+"character",
+"wellbeing"
+],
+"ev": "探讨学习的意义，以及对学习应该持有什么样的态度",
+"where": "G2/G2华文教师手册（中三）.pdf.md, Page 121",
+"reach": [
+"self",
+"family",
+"community",
+"nation"
+]
+},
+"CL|G2|3||6": {
+"topic": [
+"relationships",
+"character",
+"arts"
+],
+"ev": "刻画人与人之间的真诚、善良与美好",
+"where": "G2/G2华文教师手册（中三）.pdf.md, Page 142",
+"reach": [
+"self",
+"family",
+"community"
+]
+},
+"CL|G2|4||1": {
+"topic": [
+"character",
+"heritage"
+],
+"ev": "让我们探讨玩游戏的利与弊",
+"where": "G2/G2华文教师手册（中四）修订版（附资源文本）_010125.pdf.md, Page 28",
+"reach": [
+"self",
+"school",
+"community"
+]
+},
+"CL|G2|4||2": {
+"topic": [
+"character",
+"arts"
+],
+"ev": "思考怎样的人生才是充实而有意义的",
+"where": "G2/G2华文教师手册（中四）修订版（附资源文本）_010125.pdf.md, Page 53",
+"reach": [
+"self",
+"family",
+"nation"
+]
+},
+"CL|G2|4||3": {
+"topic": [
+"heritage"
+],
+"ev": "不同文化的交流和融合如何赋予新加坡华人丰富的内涵",
+"where": "G2/G2华文教师手册（中四）修订版（附资源文本）_010125.pdf.md, Page 78",
+"reach": [
+"community",
+"nation"
+]
+},
+"CL|G2|4||4": {
+"topic": [
+"character",
+"society"
+],
+"ev": "探讨何谓学习与学习的意义",
+"where": "G2/G2华文教师手册（中四）修订版（附资源文本）_010125.pdf.md, Page 102",
+"reach": [
+"self",
+"nation",
+"world"
+]
+},
+"CL|G2|4||5": {
+"topic": [
+"society",
+"character"
+],
+"ev": "学习如何打造一个更具包容性的社会",
+"where": "G2/G2华文教师手册（中四）修订版（附资源文本）_010125.pdf.md, Page 124",
+"reach": [
+"community"
+]
+},
+"CL|G3|1|1A|1": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "学生进入中学后所认识的新同学和所遇到的新鲜事",
+"where": "G3/2021-1A快华教师手册.pdf.md, Page 28",
+"reach": [
+"school",
+"community"
+]
+},
+"CL|G3|1|1A|2": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "内容围绕传统节日与习俗而展开，探讨团圆的意义",
+"where": "G3/2021-1A快华教师手册.pdf.md, Page 60",
+"reach": [
+"family",
+"community",
+"world"
+]
+},
+"CL|G3|1|1A|3": {
+"topic": [
+"heritage",
+"arts"
+],
+"ev": "通过介绍新加坡的美景、美食和文化",
+"where": "G3/2021-1A快华教师手册.pdf.md, Page 85",
+"reach": [
+"nation"
+]
+},
+"CL|G3|1|1B|4": {
+"topic": [
+"character"
+],
+"ev": "让我们看到习惯的力量，以及它对我们的影响",
+"where": "G3/2021-1B快华教师手册.pdf.md, Page 28",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"CL|G3|1|1B|5": {
+"topic": [
+"scitech",
+"heritage"
+],
+"ev": "探讨创新与改变对人类和世界的影响",
+"where": "G3/2021-1B快华教师手册.pdf.md, Page 58",
+"reach": [
+"self",
+"world"
+]
+},
+"CL|G3|1|1B|6": {
+"topic": [
+"society",
+"character",
+"arts"
+],
+"ev": "探讨他们为社会做出的巨大贡献",
+"where": "G3/2021-1B快华教师手册.pdf.md, Page 86",
+"reach": [
+"school",
+"community"
+]
+},
+"CL|G3|2|2A|1": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "探讨亲人之间的相处方式与爱的表现",
+"where": "G3/2021-2A快华教师手册.pdf.md, Page 28",
+"reach": [
+"self",
+"family"
+]
+},
+"CL|G3|2|2A|2": {
+"topic": [
+"nature",
+"heritage"
+],
+"ev": "探讨人类与动物应有的关系",
+"where": "G3/2021-2A快华教师手册.pdf.md, Page 59",
+"reach": [
+"self",
+"community",
+"world"
+]
+},
+"CL|G3|2|2A|3": {
+"topic": [
+"nature"
+],
+"ev": "内容围绕人类和环境的相互影响及环保课题展开",
+"where": "G3/2021-2A快华教师手册.pdf.md, Page 90",
+"reach": [
+"school",
+"nation",
+"world"
+]
+},
+"CL|G3|2|2B|4": {
+"topic": [
+"wellbeing",
+"relationships",
+"character"
+],
+"ev": "探讨了青少年应该如何应对身心方面的问题与挑战",
+"where": "G3/2021-2B快华教师手册.pdf.md, Page 28",
+"reach": [
+"self",
+"school",
+"community",
+"world"
+]
+},
+"CL|G3|2|2B|5": {
+"topic": [
+"nature",
+"relationships",
+"society"
+],
+"ev": "通过生活中发生的故事和居住环境中的景物",
+"where": "G3/2021-2B快华教师手册.pdf.md, Page 52",
+"reach": [
+"family",
+"community",
+"nation"
+]
+},
+"CL|G3|2|2B|6": {
+"topic": [
+"global",
+"scitech"
+],
+"ev": "通过新加坡与世界相连的方式，及其发展与变化",
+"where": "G3/2021-2B快华教师手册.pdf.md, Page 80",
+"reach": [
+"nation",
+"world"
+]
+},
+"CL|G3|3||1": {
+"topic": [
+"relationships",
+"arts"
+],
+"ev": "探讨如何与人建立良好的人际关系",
+"where": "G3/2021-3快华教师手册.pdf.md, Page 30",
+"reach": [
+"school",
+"community",
+"world"
+]
+},
+"CL|G3|3||2": {
+"topic": [
+"wellbeing",
+"heritage",
+"arts"
+],
+"ev": "探索如何培养良好的生活习惯和积极的生活态度",
+"where": "G3/2021-3快华教师手册.pdf.md, Page 57",
+"reach": [
+"self",
+"world"
+]
+},
+"CL|G3|3||3": {
+"topic": [
+"relationships",
+"society"
+],
+"ev": "引导学生思考社区团结和互助的重要性",
+"where": "G3/2021-3快华教师手册.pdf.md, Page 85",
+"reach": [
+"community"
+]
+},
+"CL|G3|3||4": {
+"topic": [
+"relationships",
+"scitech"
+],
+"ev": "论述了沟通的意义，以及社交媒体在沟通中的作用",
+"where": "G3/2021-3快华教师手册.pdf.md, Page 116",
+"reach": [
+"family",
+"community"
+]
+},
+"CL|G3|3||5": {
+"topic": [
+"character",
+"society"
+],
+"ev": "探讨何谓学习与学习的意义",
+"where": "G3/2021-3快华教师手册.pdf.md, Page 144",
+"reach": [
+"self",
+"school",
+"nation",
+"world"
+]
+},
+"CL|G3|3||6": {
+"topic": [
+"relationships",
+"character",
+"arts"
+],
+"ev": "刻画人与人之间的真诚、善良与美好",
+"where": "G3/2021-3快华教师手册.pdf.md, Page 165",
+"reach": [
+"self",
+"family",
+"community"
+]
+},
+"CL|G3|4||1": {
+"topic": [
+"society",
+"character"
+],
+"ev": "思考如何让这个社会充满关怀",
+"where": "G3/2021-4快华教师手册.pdf.md, Page 28",
+"reach": [
+"community"
+]
+},
+"CL|G3|4||2": {
+"topic": [
+"arts"
+],
+"ev": "让我们走入文学的世界",
+"where": "G3/2021-4快华教师手册.pdf.md, Page 54",
+"reach": [
+"self",
+"nation",
+"world"
+]
+},
+"CL|G3|4||3": {
+"topic": [
+"nature",
+"heritage"
+],
+"ev": "思考人类行为对自然生态造成的影响",
+"where": "G3/2021-4快华教师手册.pdf.md, Page 77",
+"reach": [
+"nation",
+"world"
+]
+},
+"CL|G3|4||4": {
+"topic": [
+"character",
+"society",
+"global"
+],
+"ev": "深入思考为什么要“知彼”，更要“知己”",
+"where": "G3/2021-4快华教师手册.pdf.md, Page 102",
+"reach": [
+"self",
+"nation",
+"world"
+]
+},
+"CL|G3|4||5": {
+"topic": [
+"character",
+"arts"
+],
+"ev": "古今诗歌中表现出的对梦想的追求",
+"where": "G3/2021-4快华教师手册.pdf.md, Page 125",
+"reach": [
+"self",
+"world"
+]
+},
+"CL|H|1|1A|1": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "学生进入中学后所认识的新同学和所遇到的新鲜事",
+"where": "G3 HCL/2021-1A高华教师手册.pdf.md, Page 28",
+"reach": [
+"school",
+"community"
+]
+},
+"CL|H|1|1A|2": {
+"topic": [
+"relationships",
+"heritage",
+"arts"
+],
+"ev": "内容围绕传统节日与习俗而展开，探讨团圆的意义",
+"where": "G3 HCL/2021-1A高华教师手册.pdf.md, Page 61",
+"reach": [
+"family",
+"community",
+"world"
+]
+},
+"CL|H|1|1A|3": {
+"topic": [
+"heritage",
+"arts"
+],
+"ev": "通过介绍新加坡的美景、美食和文化",
+"where": "G3 HCL/2021-1A高华教师手册.pdf.md, Page 92",
+"reach": [
+"nation"
+]
+},
+"CL|H|1|1B|4": {
+"topic": [
+"character",
+"arts"
+],
+"ev": "让我们看到习惯的力量，以及它对我们的影响",
+"where": "G3 HCL/2021-1B高华教师手册.pdf.md, Page 28",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"CL|H|1|1B|5": {
+"topic": [
+"scitech",
+"heritage"
+],
+"ev": "探讨创新与改变对人类和世界的影响",
+"where": "G3 HCL/2021-1B高华教师手册.pdf.md, Page 62",
+"reach": [
+"self",
+"world"
+]
+},
+"CL|H|1|1B|6": {
+"topic": [
+"society",
+"character",
+"arts"
+],
+"ev": "探讨他们为社会做出的巨大贡献",
+"where": "G3 HCL/2021-1B高华教师手册.pdf.md, Page 96",
+"reach": [
+"school",
+"community",
+"world"
+]
+},
+"CL|H|2|2A|1": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "探讨亲人之间的相处方式与爱的表现",
+"where": "G3 HCL/2021-2A高华教师手册.pdf.md, Page 28",
+"reach": [
+"self",
+"family"
+]
+},
+"CL|H|2|2A|2": {
+"topic": [
+"nature",
+"heritage"
+],
+"ev": "探讨人类与动物应有的关系",
+"where": "G3 HCL/2021-2A高华教师手册.pdf.md, Page 64",
+"reach": [
+"self",
+"community",
+"world"
+]
+},
+"CL|H|2|2A|3": {
+"topic": [
+"nature"
+],
+"ev": "内容围绕人类和环境相互影响的环保课题展开",
+"where": "G3 HCL/2021-2A高华教师手册.pdf.md, Page 102",
+"reach": [
+"school",
+"nation",
+"world"
+]
+},
+"CL|H|2|2B|4": {
+"topic": [
+"wellbeing",
+"relationships",
+"character"
+],
+"ev": "探讨了青少年应该如何应对身心方面的问题与挑战",
+"where": "G3 HCL/2021-2B高华教师手册.pdf.md, Page 28",
+"reach": [
+"self",
+"family",
+"school",
+"community",
+"world"
+]
+},
+"CL|H|2|2B|5": {
+"topic": [
+"nature",
+"relationships",
+"society"
+],
+"ev": "通过生活中发生的故事和居住环境中的景物",
+"where": "G3 HCL/2021-2B高华教师手册.pdf.md, Page 59",
+"reach": [
+"family",
+"community",
+"nation"
+]
+},
+"CL|H|2|2B|6": {
+"topic": [
+"global",
+"scitech"
+],
+"ev": "通过新加坡与世界相连的方式，及其发展与变化",
+"where": "G3 HCL/2021-2B高华教师手册.pdf.md, Page 93",
+"reach": [
+"nation",
+"world"
+]
+},
+"CL|H|3||1": {
+"topic": [
+"relationships",
+"arts"
+],
+"ev": "探讨如何与人建立良好的人际关系",
+"where": "G3 HCL/2021-3高华教师手册.pdf.md, Page 30",
+"reach": [
+"school",
+"community",
+"world"
+]
+},
+"CL|H|3||2": {
+"topic": [
+"wellbeing",
+"heritage",
+"arts"
+],
+"ev": "探索如何培养良好的生活习惯和积极的生活态度",
+"where": "G3 HCL/2021-3高华教师手册.pdf.md, Page 63",
+"reach": [
+"self",
+"world"
+]
+},
+"CL|H|3||3": {
+"topic": [
+"relationships",
+"society"
+],
+"ev": "引导学生思考社区团结和互助的重要性",
+"where": "G3 HCL/2021-3高华教师手册.pdf.md, Page 95",
+"reach": [
+"family",
+"community"
+]
+},
+"CL|H|3||4": {
+"topic": [
+"relationships",
+"scitech"
+],
+"ev": "以及如何在沟通与交往中做到轻重有度",
+"where": "G3 HCL/2021-3高华教师手册.pdf.md, Page 130",
+"reach": [
+"family",
+"community"
+]
+},
+"CL|H|3||5": {
+"topic": [
+"character",
+"society"
+],
+"ev": "探讨何谓学习与学习的意义",
+"where": "G3 HCL/2021-3高华教师手册.pdf.md, Page 165",
+"reach": [
+"self",
+"school",
+"nation",
+"world"
+]
+},
+"CL|H|3||6": {
+"topic": [
+"relationships",
+"character",
+"arts"
+],
+"ev": "刻画人与人之间的真诚、善良与美好",
+"where": "G3 HCL/2021-3高华教师手册.pdf.md, Page 196",
+"reach": [
+"self",
+"family",
+"community"
+]
+},
+"CL|H|4||1": {
+"topic": [
+"nature",
+"global"
+],
+"ev": "深入了解人类和其他生物如何适应环境",
+"where": "G3 HCL/2021-4高华教师手册.pdf.md, Page 28",
+"reach": [
+"nation",
+"world"
+]
+},
+"CL|H|4||2": {
+"topic": [
+"character",
+"society"
+],
+"ev": "阐释不同的心态对生活产生的影响",
+"where": "G3 HCL/2021-4高华教师手册.pdf.md, Page 52",
+"reach": [
+"self",
+"school",
+"world"
+]
+},
+"CL|H|4||3": {
+"topic": [
+"character",
+"arts"
+],
+"ev": "通过古今中外几位著名的艺术家、政治家、企业家的例子",
+"where": "G3 HCL/2021-4高华教师手册.pdf.md, Page 80",
+"reach": [
+"self",
+"nation",
+"world"
+]
+},
+"CL|H|4||4": {
+"topic": [
+"relationships",
+"arts"
+],
+"ev": "探索古人和现代人对离别的态度",
+"where": "G3 HCL/2021-4高华教师手册.pdf.md, Page 107",
+"reach": [
+"self",
+"school",
+"community",
+"world"
+]
+},
+"CL|H|4||5": {
+"topic": [
+"character",
+"arts"
+],
+"ev": "探索如何在有限的生命里，珍惜及利用宝贵的时间",
+"where": "G3 HCL/2021-4高华教师手册.pdf.md, Page 133",
+"reach": [
+"self",
+"world"
+]
+},
+"ML|G1|1|1A|1": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "Semangat bekerjasama dan bersatu padu mengukuhkan hubungan sesebuah kelas.",
+"where": "M1_Panduan Guru JATi 1A_NT_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"school",
+"community"
+]
+},
+"ML|G1|1|1A|2": {
+"topic": [
+"character",
+"heritage"
+],
+"ev": "Keupayaan untuk menyesuaikan penampilan diri mengikut keperluan konteks meningkatkan kesedaran sosial.",
+"where": "M1_Panduan Guru JATi 1A_NT_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 34",
+"read": [
+"self",
+"school",
+"community"
+]
+},
+"ML|G1|1|1A|3": {
+"topic": [
+"character"
+],
+"ev": "Sikap bertanggungjawab atas keputusan meningkatkan kewibawaan.",
+"where": "M1_Panduan Guru JATi 1A_NT_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 52",
+"read": [
+"self",
+"school"
+]
+},
+"ML|G1|1|1A|4": {
+"topic": [
+"arts",
+"heritage",
+"relationships"
+],
+"ev": "Kita harus menerima perbezaan minat dan citarasa orang lain.",
+"where": "M1_Panduan Guru JATi 1A_NT_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 70",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G1|1|1B|5": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "Makanan merapatkan hubungan sesama manusia.",
+"where": "M1_Panduan Guru NT_1B_110621.docx.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 14",
+"read": [
+"family",
+"community"
+]
+},
+"ML|G1|1|1B|6": {
+"topic": [
+"society",
+"heritage"
+],
+"ev": "Identiti penting untuk setiap warga Singapura.",
+"where": "M1_Panduan Guru NT_1B_110621.docx.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 30",
+"read": [
+"community",
+"nation"
+]
+},
+"ML|G1|1|1B|7": {
+"topic": [
+"character",
+"wellbeing"
+],
+"ev": "Setiap cabaran yang dihadapi ada jalan keluarnya.",
+"where": "M1_Panduan Guru NT_1B_110621.docx.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 44",
+"read": [
+"self"
+]
+},
+"ML|G1|1|1B|8": {
+"topic": [
+"nature",
+"character"
+],
+"ev": "Setiap individu bertanggungjawab menjaga alam sekitar.",
+"where": "M1_Panduan Guru NT_1B_110621.docx.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 57",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|G1|2|2A|1": {
+"topic": [
+"character",
+"wellbeing"
+],
+"ev": "Masa senggang yang digunakan dengan baik dapat memberikan manfaat",
+"where": "M2_Panduan Guru JATi 2A_Normal Teknikal_211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 14",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G1|2|2A|2": {
+"topic": [
+"wellbeing"
+],
+"ev": "Penjagaan kesihatan penting bagi kesejahteraan diri",
+"where": "M2_Panduan Guru JATi 2A_Normal Teknikal_211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 25",
+"read": [
+"self",
+"family"
+]
+},
+"ML|G1|2|2A|3": {
+"topic": [
+"character"
+],
+"ev": "Kita perlu bersedia memikul tanggungjawab.",
+"where": "M2_Panduan Guru JATi 2A_Normal Teknikal_211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 37",
+"read": [
+"self",
+"family"
+]
+},
+"ML|G1|2|2A|4": {
+"topic": [
+"global",
+"heritage"
+],
+"ev": "Pengembaraan akan menambah pengetahuan dan pengalaman kita.",
+"where": "M2_Panduan Guru JATi 2A_Normal Teknikal_211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 50",
+"read": [
+"self",
+"world"
+]
+},
+"ML|G1|2|2B|5": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Trend boleh mempengaruhi kehidupan kita.",
+"where": "M2_JATi 2B NT_Panduan Guru_240622.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 14",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G1|2|2B|6": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "Cinta memerlukan tanggungjawab",
+"where": "M2_JATi 2B NT_Panduan Guru_240622.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 27",
+"read": [
+"self",
+"family",
+"community"
+]
+},
+"ML|G1|2|2B|7": {
+"topic": [
+"society",
+"character"
+],
+"ev": "Kemahiran penting untuk membina masa hadapan yang cerah.",
+"where": "M2_JATi 2B NT_Panduan Guru_240622.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 41",
+"read": [
+"self",
+"school",
+"community"
+]
+},
+"ML|G1|2|2B|8": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Kejayaan tidak akan dicapai tanpa usaha.",
+"where": "M2_JATi 2B NT_Panduan Guru_240622.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 53",
+"read": [
+"self",
+"family",
+"school",
+"community"
+]
+},
+"ML|G1|3||1": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Hak perlu dipenuhi dengan sikap bertanggungjawab.",
+"where": "M3_JATi 3 Normal (Teknikal) Panduan Guru 27122022.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"family",
+"community"
+]
+},
+"ML|G1|3||2": {
+"topic": [
+"arts",
+"character"
+],
+"ev": "Ada kepelbagaian dalam mengekspresikan diri.",
+"where": "M3_JATi 3 Normal (Teknikal) Panduan Guru 27122022.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 37",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G1|3||3": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Jadilah insan yang lebih baik dengan mencontohi orang lain.",
+"where": "M3_JATi 3 Normal (Teknikal) Panduan Guru 27122022.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 58",
+"read": [
+"self",
+"community",
+"nation"
+]
+},
+"ML|G1|3||4": {
+"topic": [
+"society",
+"character"
+],
+"ev": "Perniagaan sosial dapat membantu masyarakat.",
+"where": "M3_JATi 3 Normal (Teknikal) Panduan Guru 27122022.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 76",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G1|3||5": {
+"topic": [
+"character",
+"arts"
+],
+"ev": "Misteri dapat membuat kita berfikir.",
+"where": "M3_JATi 3 Normal (Teknikal) Panduan Guru 27122022.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 98",
+"read": [
+"community",
+"world"
+]
+},
+"ML|G1|3||6": {
+"topic": [
+"global",
+"character"
+],
+"ev": "Sikap peduli terhadap isu-isu global penting.",
+"where": "M3_JATi 3 Normal (Teknikal) Panduan Guru 27122022.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 116",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|G1|4||1": {
+"topic": [
+"scitech",
+"character"
+],
+"ev": "Kita boleh menggunakan teknologi baharu dengan bijak dan bertanggungjawab.",
+"where": "M4_NT JATi 4 Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G1|4||2": {
+"topic": [
+"society"
+],
+"ev": "Masa depan negara bergantung kepada kepimpinan yang cekap dan sumbangan setiap individu.",
+"where": "M4_NT JATi 4 Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 31",
+"read": [
+"self",
+"community",
+"nation"
+]
+},
+"ML|G1|4||3": {
+"topic": [
+"heritage"
+],
+"ev": "Ciri-ciri identiti kita menunjukkan kaitan dengan warisan sesebuah masyarakat.",
+"where": "M4_NT JATi 4 Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 47",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|G1|4||4": {
+"topic": [
+"arts"
+],
+"ev": "Strategi-strategi tertentu untuk mengukuhkan kemahiran mendengar dan melihat serta kemahiran bertutur",
+"where": "M4_NT JATi 4 Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table)",
+"read": [
+"self"
+]
+},
+"ML|G1|4||5": {
+"topic": [
+"arts"
+],
+"ev": "Strategi-strategi membaca dapat diaplikasikan untuk mengukuhkan kemahiran membaca",
+"where": "M4_NT JATi 4 Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table)",
+"read": [
+"self"
+]
+},
+"ML|G1|4||6": {
+"topic": [
+"arts"
+],
+"ev": "Strategi-strategi penulisan fungsional dapat diaplikasikan untuk mengukuhkan kemahiran menulis",
+"where": "M4_NT JATi 4 Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table)",
+"read": [
+"self"
+]
+},
+"ML|G2|1|1A|1": {
+"topic": [
+"character"
+],
+"ev": "Perlunya membuat pertimbangan sebelum membuat keputusan",
+"where": "M1_Panduan Guru JATi 1A_NA_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"school"
+]
+},
+"ML|G2|1|1A|2": {
+"topic": [
+"character"
+],
+"ev": "Bijak membezakan antara keperluan dan kemahuan",
+"where": "M1_Panduan Guru JATi 1A_NA_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 34",
+"read": [
+"self"
+]
+},
+"ML|G2|1|1A|3": {
+"topic": [
+"character",
+"relationships"
+],
+"ev": "Perlunya berfikir sebelum mengeluarkan kata-kata terhadap seseorang",
+"where": "M1_Panduan Guru JATi 1A_NA_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 52",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G2|1|1A|4": {
+"topic": [
+"arts",
+"heritage"
+],
+"ev": "Muzik salah satu pengaruh dalam pembinaan keperibadian seseorang",
+"where": "M1_Panduan Guru JATi 1A_NA_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 75",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G2|1|1B|5": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "Perkongsian kisah keluarga dapat merapatkan hubungan kekeluargaan.",
+"where": "M1_Panduan Guru NA 1B_110621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"family"
+]
+},
+"ML|G2|1|1B|6": {
+"topic": [
+"heritage"
+],
+"ev": "Pilihan makanan dapat menunjukkan budaya seseorang",
+"where": "M1_Panduan Guru NA 1B_110621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 26",
+"read": [
+"self",
+"family",
+"community"
+]
+},
+"ML|G2|1|1B|7": {
+"topic": [
+"character",
+"wellbeing"
+],
+"ev": "Kita dapat mengatasi cabaran dengan bersikap proaktif.",
+"where": "M1_Panduan Guru NA 1B_110621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 39",
+"read": [
+"self"
+]
+},
+"ML|G2|1|1B|8": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Sumbangan kita, tidak kira kecil atau besar, tetap bermakna.",
+"where": "M1_Panduan Guru NA 1B_110621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 53",
+"read": [
+"self",
+"school",
+"community"
+]
+},
+"ML|G2|2|2A|1": {
+"topic": [
+"character",
+"relationships"
+],
+"ev": "Masa lapang membuka banyak peluang.",
+"where": "M2_Panduan Guru JATi 2A_Normal Akademik_140121.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"school",
+"community"
+]
+},
+"ML|G2|2|2A|2": {
+"topic": [
+"wellbeing",
+"character"
+],
+"ev": "Minda yang positif dan kepercayaan diri membantu kita untuk menjalani kehidupan.",
+"where": "M2_Panduan Guru JATi 2A_Normal Akademik_140121.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 38",
+"read": [
+"self",
+"school"
+]
+},
+"ML|G2|2|2A|3": {
+"topic": [
+"character",
+"heritage"
+],
+"ev": "Pendewasaan ialah proses yang memerlukan pengalaman yang mempersiap seseorang untuk alam dewasa.",
+"where": "M2_Panduan Guru JATi 2A_Normal Akademik_140121.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 55",
+"read": [
+"self",
+"family",
+"community",
+"world"
+]
+},
+"ML|G2|2|2A|4": {
+"topic": [
+"heritage",
+"character"
+],
+"ev": "pelajar akan mengenal pasti tempat-tempat yang ingin dikunjungi di Singapura",
+"where": "M2_Panduan Guru JATi 2A_Normal Akademik_140121.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 75",
+"read": [
+"self",
+"family",
+"school",
+"community",
+"nation"
+]
+},
+"ML|G2|2|2B|5": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Budaya popular boleh mempengaruhi kehidupan seseorang.",
+"where": "M2_JATi 2BNA_Panduan Guru_240622.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"school",
+"community"
+]
+},
+"ML|G2|2|2B|6": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "Erti cinta dalam kehidupan kita.",
+"where": "M2_JATi 2BNA_Panduan Guru_240622.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 34",
+"read": [
+"self",
+"family",
+"school",
+"community"
+]
+},
+"ML|G2|2|2B|7": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Perkara yang mendorong kita untuk terus belajar dan menimba ilmu.",
+"where": "M2_JATi 2BNA_Panduan Guru_240622.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 51",
+"read": [
+"self",
+"family",
+"community"
+]
+},
+"ML|G2|2|2B|8": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Ada pelbagai cara untuk kita mencapai aspirasi.",
+"where": "M2_JATi 2BNA_Panduan Guru_240622.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 68",
+"read": [
+"self",
+"family",
+"community"
+]
+},
+"ML|G2|3||1": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Hak perlu dipenuhi dengan sikap bertanggungjawab.",
+"where": "M3_JATi 3 Normal (Akademik) Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"family",
+"community"
+]
+},
+"ML|G2|3||2": {
+"topic": [
+"arts",
+"character"
+],
+"ev": "Ada kepelbagaian dalam mengekspresikan diri.",
+"where": "M3_JATi 3 Normal (Akademik) Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 40",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G2|3||3": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Unit ini mengetengahkan beberapa tokoh tempatan dan dunia yang mempunyai ciri-ciri yang boleh dijadikan contoh.",
+"where": "M3_JATi 3 Normal (Akademik) Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 65",
+"read": [
+"family",
+"community",
+"nation",
+"world"
+]
+},
+"ML|G2|3||4": {
+"topic": [
+"society",
+"character"
+],
+"ev": "Perniagaan sosial dapat membantu masyarakat.",
+"where": "M3_JATi 3 Normal (Akademik) Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 88",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G2|3||5": {
+"topic": [
+"character",
+"arts"
+],
+"ev": "Misteri dapat membuat kita berfikir.",
+"where": "M3_JATi 3 Normal (Akademik) Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 113",
+"read": [
+"community",
+"world"
+]
+},
+"ML|G2|3||6": {
+"topic": [
+"global",
+"character"
+],
+"ev": "Sikap peduli terhadap isu-isu global penting.",
+"where": "M3_JATi 3 Normal (Akademik) Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 134",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|G2|4||1": {
+"topic": [
+"scitech",
+"character"
+],
+"ev": "Pelajar faham bahawa perlu mempunyai sikap-sikap yang positif untuk menghadapi dunia yang semakin canggih.",
+"where": "M4_JATi 4NA U1_U3 Panduan Guru_160124.pdf.md, Page 17 (Gambaran Keseluruhan table); Sinopsis Unit Page 19",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G2|4||2": {
+"topic": [
+"society"
+],
+"ev": "dengan mengetahui sejarah dan sumbangan pemimpin terdahulu akan mengukuhkan rasa cinta terhadap negara.",
+"where": "M4_JATi 4NA U1_U3 Panduan Guru_160124.pdf.md, Page 17 (Gambaran Keseluruhan table); Sinopsis Unit Page 38",
+"read": [
+"self",
+"school",
+"community",
+"nation"
+]
+},
+"ML|G2|4||3": {
+"topic": [
+"heritage"
+],
+"ev": "keistimewaan orang Melayu terletak pada nilai, makanan, pakaian, bahasa dan amalannya.",
+"where": "M4_JATi 4NA U1_U3 Panduan Guru_160124.pdf.md, Page 17 (Gambaran Keseluruhan table); Sinopsis Unit Page 56",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|G2|4||4": {
+"topic": [
+"arts"
+],
+"ev": "",
+"where": "M4_JATi 4NA U1_U3 Panduan Guru_160124.pdf.md (not found)",
+"read": [
+"self"
+]
+},
+"ML|G2|4||5": {
+"topic": [
+"arts"
+],
+"ev": "",
+"where": "M4_JATi 4NA U1_U3 Panduan Guru_160124.pdf.md (not found)",
+"read": [
+"self"
+]
+},
+"ML|G2|4||6": {
+"topic": [
+"arts"
+],
+"ev": "",
+"where": "M4_JATi 4NA U1_U3 Panduan Guru_160124.pdf.md (not found)",
+"read": [
+"self"
+]
+},
+"ML|G3|1|1A|1": {
+"topic": [
+"character",
+"heritage"
+],
+"ev": "Membuat pertimbangan sebelum membuat keputusan dalam membeli sesuatu",
+"where": "M1_Panduan Guru JATi 1A_Ekspres_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self"
+]
+},
+"ML|G3|1|1A|2": {
+"topic": [
+"character",
+"relationships"
+],
+"ev": "Prihatin ketika membuat hantaran di media sosial",
+"where": "M1_Panduan Guru JATi 1A_Ekspres_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 36",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G3|1|1A|3": {
+"topic": [
+"character"
+],
+"ev": "Cabaran dalam CCA ada manfaatnya dan boleh membentuk keperibadian diri",
+"where": "M1_Panduan Guru JATi 1A_Ekspres_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 56",
+"read": [
+"self",
+"school"
+]
+},
+"ML|G3|1|1A|4": {
+"topic": [
+"arts",
+"character"
+],
+"ev": "Terdapat banyak cara untuk mengekspresi diri dan cara kita berbeza-beza",
+"where": "M1_Panduan Guru JATi 1A_Ekspres_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 74",
+"read": [
+"self"
+]
+},
+"ML|G3|1|1B|5": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "Berkomunikasi dengan berkesan membolehkan kita mengutarakan makna yang jelas serta mendapat respons yang sewajarnya.",
+"where": "M1_Panduan Guru Ekspres 1B_110621.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 14",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G3|1|1B|6": {
+"topic": [
+"heritage"
+],
+"ev": "Makanan sebahagian daripada identiti orang Melayu.",
+"where": "M1_Panduan Guru Ekspres 1B_110621.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 27",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G3|1|1B|7": {
+"topic": [
+"character",
+"wellbeing"
+],
+"ev": "Cabaran merupakan sebahagian dalam kehidupan kita yang boleh diatasi dengan bijak.",
+"where": "M1_Panduan Guru Ekspres 1B_110621.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 40",
+"read": [
+"self"
+]
+},
+"ML|G3|1|1B|8": {
+"topic": [
+"society",
+"character"
+],
+"ev": "Sumbangan kepada masyarakat boleh diberikan dalam pelbagai bentuk.",
+"where": "M1_Panduan Guru Ekspres 1B_110621.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 53",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G3|2|2A|1": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Masa senggang boleh memanfaatkan diri sendiri dan orang lain.",
+"where": "M2_Panduan Guru JATi 2A_Ekspres 211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 14",
+"read": [
+"self",
+"school",
+"community"
+]
+},
+"ML|G3|2|2A|2": {
+"topic": [
+"wellbeing",
+"heritage"
+],
+"ev": "Penjagaan diri merupakan sesuatu yang perlu diutamakan untuk kesejahteraan diri kita.",
+"where": "M2_Panduan Guru JATi 2A_Ekspres 211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 28",
+"read": [
+"self"
+]
+},
+"ML|G3|2|2A|3": {
+"topic": [
+"character"
+],
+"ev": "Perubahan perlu untuk terus membangun.",
+"where": "M2_Panduan Guru JATi 2A_Ekspres 211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 43",
+"read": [
+"self",
+"family",
+"school"
+]
+},
+"ML|G3|2|2A|4": {
+"topic": [
+"global",
+"heritage"
+],
+"ev": "Penting untuk mengembara demi kemajuan diri",
+"where": "M2_Panduan Guru JATi 2A_Ekspres 211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 61",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|G3|2|2B|5": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Pembentukan identiti seseorang itu boleh dipengaruhi trend dan subbudaya.",
+"where": "M2_JATi 2B Ekspres_Panduan Guru_240622.pdf.md, Page 12 (Gambaran Keseluruhan table); Sinopsis Unit Page 13",
+"read": [
+"self",
+"school",
+"community"
+]
+},
+"ML|G3|2|2B|6": {
+"topic": [
+"relationships"
+],
+"ev": "Cinta dapat menjadikan kehidupan kita lebih bermakna",
+"where": "M2_JATi 2B Ekspres_Panduan Guru_240622.pdf.md, Page 12 (Gambaran Keseluruhan table); Sinopsis Unit Page 27",
+"read": [
+"self",
+"family"
+]
+},
+"ML|G3|2|2B|7": {
+"topic": [
+"character"
+],
+"ev": "Belajar itu sepanjang hayat.",
+"where": "M2_JATi 2B Ekspres_Panduan Guru_240622.pdf.md, Page 12 (Gambaran Keseluruhan table); Sinopsis Unit Page 40",
+"read": [
+"self",
+"family",
+"community",
+"world"
+]
+},
+"ML|G3|2|2B|8": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Aspirasi dapat mencorak masa hadapan kita.",
+"where": "M2_JATi 2B Ekspres_Panduan Guru_240622.pdf.md, Page 12 (Gambaran Keseluruhan table); Sinopsis Unit Page 56",
+"read": [
+"self"
+]
+},
+"ML|G3|3||1": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Memahami perspektif penting untuk mencapai satu pemahaman agar dunia lebih harmoni",
+"where": "M3_JATi 3 Ekspres_Panduan Guru_Final 181222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G3|3||2": {
+"topic": [
+"arts",
+"character"
+],
+"ev": "Penting untuk mengekspresikan diri dengan bertanggungjawab",
+"where": "M3_JATi 3 Ekspres_Panduan Guru_Final 181222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 45",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G3|3||3": {
+"topic": [
+"character"
+],
+"ev": "Ciri kepedulian dalam diri seseorang boleh membawa kesan positif kepada orang lain",
+"where": "M3_JATi 3 Ekspres_Panduan Guru_Final 181222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 64",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|G3|3||4": {
+"topic": [
+"society"
+],
+"ev": "Perusahaan sosial dapat membantu untuk mengatasi isu sosial",
+"where": "M3_JATi 3 Ekspres_Panduan Guru_Final 181222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 82",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G3|3||5": {
+"topic": [
+"character"
+],
+"ev": "Keterkaitan penting untuk memahami dunia sekeliling dengan lebih baik",
+"where": "M3_JATi 3 Ekspres_Panduan Guru_Final 181222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 104",
+"read": [
+"self",
+"community"
+]
+},
+"ML|G3|3||6": {
+"topic": [
+"global",
+"relationships"
+],
+"ev": "Saling memerlukan dan kecerdasan budaya dapat menguatkan ikatan kebersamaan",
+"where": "M3_JATi 3 Ekspres_Panduan Guru_Final 181222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 126",
+"read": [
+"self",
+"community",
+"nation",
+"world"
+]
+},
+"ML|G3|4||1": {
+"topic": [
+"scitech"
+],
+"ev": "Kita perlu bersedia untuk mengemudi gelombang teknologi baharu untuk menyesuaikan diri dalam dunia yang berkembang pesat.",
+"where": "M4_EXP JATi 4 _Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"world"
+]
+},
+"ML|G3|4||2": {
+"topic": [
+"society",
+"heritage"
+],
+"ev": "Unit ini membawa pelajar menelusuri fasa yang berbeza-beza dalam sejarah Singapura.",
+"where": "M4_EXP JATi 4 _Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 34",
+"read": [
+"self",
+"community",
+"nation"
+]
+},
+"ML|G3|4||3": {
+"topic": [
+"heritage"
+],
+"ev": "Ciri-ciri khusus pada diri seseorang membentuk identiti dan keterkaitan dengan warisan sesebuah komuniti.",
+"where": "M4_EXP JATi 4 _Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 53",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|G3|4||4": {
+"topic": [
+"arts"
+],
+"ev": "Kemahiran mendengar dan melihat serta kemahiran bertutur penting untuk mencapai komunikasi yang berkesan",
+"where": "M4_EXP JATi 4 _Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table)",
+"read": [
+"self"
+]
+},
+"ML|G3|4||5": {
+"topic": [
+"arts"
+],
+"ev": "Menguasai kemahiran membaca yang merupakan kemahiran asas dalam pembelajaran penting",
+"where": "M4_EXP JATi 4 _Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table)",
+"read": [
+"self"
+]
+},
+"ML|G3|4||6": {
+"topic": [
+"arts"
+],
+"ev": "Menguasai kemahiran menulis penting agar dapat menghasilkan teks yang berkesan mengikut konteks yang berbeza-beza.",
+"where": "M4_EXP JATi 4 _Panduan Guru_Unit 1-3_OPAL.pdf.md, Page 13 (Gambaran Keseluruhan table)",
+"read": [
+"self"
+]
+},
+"ML|H|1|1A|1": {
+"topic": [
+"arts",
+"heritage"
+],
+"ev": "Peranan bahasa Melayu dalam membentuk identiti kita sebagai orang Melayu",
+"where": "M1_Panduan Guru JATi 1A_BML_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|1|1A|2": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Kepentingan membuat pertimbangan apabila membuat hantaran dalam talian",
+"where": "M1_Panduan Guru JATi 1A_BML_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 33",
+"read": [
+"self",
+"community"
+]
+},
+"ML|H|1|1A|3": {
+"topic": [
+"character"
+],
+"ev": "Setiap individu mempunyai kekuatan masing-masing",
+"where": "M1_Panduan Guru JATi 1A_BML_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 55",
+"read": [
+"self",
+"school"
+]
+},
+"ML|H|1|1A|4": {
+"topic": [
+"arts",
+"heritage"
+],
+"ev": "Muzik mempunyai pelbagai kesan dalam kehidupan",
+"where": "M1_Panduan Guru JATi 1A_BML_180621.pdf.md, Page 14 (Gambaran Keseluruhan table); Sinopsis Unit Page 78",
+"read": [
+"self",
+"community"
+]
+},
+"ML|H|1|1B|5": {
+"topic": [
+"heritage",
+"global"
+],
+"ev": "Makanan memaparkan identiti masyarakat",
+"where": "M1_Panduan Guru BML 1B_110621.pdf.md, Page 12 (Gambaran Keseluruhan table); Sinopsis Unit Page 13",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|1|1B|6": {
+"topic": [
+"relationships",
+"heritage"
+],
+"ev": "Hubungan yang baik memerlukan usaha untuk dijalin",
+"where": "M1_Panduan Guru BML 1B_110621.pdf.md, Page 12 (Gambaran Keseluruhan table); Sinopsis Unit Page 26",
+"read": [
+"self",
+"community"
+]
+},
+"ML|H|1|1B|7": {
+"topic": [
+"nature",
+"character"
+],
+"ev": "Sumbangan sekecil manapun mampu menyumbang kepada sesuatu yang lebih besar.",
+"where": "M1_Panduan Guru BML 1B_110621.pdf.md, Page 12 (Gambaran Keseluruhan table); Sinopsis Unit Page 38",
+"read": [
+"self",
+"family",
+"community",
+"world"
+]
+},
+"ML|H|1|1B|8": {
+"topic": [
+"character",
+"wellbeing"
+],
+"ev": "Cabaran dalam hidup kita dapat ditangani dengan bijak.",
+"where": "M1_Panduan Guru BML 1B_110621.pdf.md, Page 12 (Gambaran Keseluruhan table); Sinopsis Unit Page 53",
+"read": [
+"self",
+"community"
+]
+},
+"ML|H|2|2A|1": {
+"topic": [
+"character",
+"wellbeing"
+],
+"ev": "Masa senggang itu penting dan boleh digunakan secara bermakna.",
+"where": "M2_Panduan Guru JATi 2A_HML_211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 14",
+"read": [
+"self",
+"school",
+"community"
+]
+},
+"ML|H|2|2A|2": {
+"topic": [
+"wellbeing"
+],
+"ev": "Setiap individu mempunyai peranan dalam mengamalkan kesejahteraan dirinya.",
+"where": "M2_Panduan Guru JATi 2A_HML_211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 26",
+"read": [
+"self",
+"family",
+"community"
+]
+},
+"ML|H|2|2A|3": {
+"topic": [
+"character",
+"arts"
+],
+"ev": "Setiap perubahan yang dilalui dalam fasa kehidupan seseorang dapat memperkasa dirinya.",
+"where": "M2_Panduan Guru JATi 2A_HML_211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 39",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|2|2A|4": {
+"topic": [
+"heritage",
+"global"
+],
+"ev": "Manfaat sesuatu perjalanan merantau masih dalam keadaan yang berubah-ubah.",
+"where": "M2_Panduan Guru JATi 2A_HML_211221.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 54",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|2|2B|5": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Pembentukan identiti boleh bersifat individu atau berkumpulan.",
+"where": "M2_JATi 2B BML_Panduan Guru_240622.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 14",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|2|2B|6": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "Minat/Ghairah melakukan sesuatu akan menjadikan sesuatu yang dilakukan itu lebih bermakna",
+"where": "M2_JATi 2B BML_Panduan Guru_240622.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 28",
+"read": [
+"self",
+"family",
+"community",
+"world"
+]
+},
+"ML|H|2|2B|7": {
+"topic": [
+"character"
+],
+"ev": "Belajar itu sepanjang hayat.",
+"where": "M2_JATi 2B BML_Panduan Guru_240622.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 39",
+"read": [
+"self",
+"school",
+"community",
+"world"
+]
+},
+"ML|H|2|2B|8": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Memanifestasikan aspirasi penting untuk menentukan hala tuju seseorang.",
+"where": "M2_JATi 2B BML_Panduan Guru_240622.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 54",
+"read": [
+"self",
+"school",
+"community"
+]
+},
+"ML|H|3||1": {
+"topic": [
+"character",
+"society"
+],
+"ev": "Keadilan perlu dilaksanakan dengan saksama dan bertanggungjawab dengan mengambil kira pandangan semua pihak.",
+"where": "M3_JATi 3 BML Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 15",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|3||2": {
+"topic": [
+"arts",
+"character"
+],
+"ev": "Ekspresi diri mengandungi mesej atau suara yang ingin disampaikan.",
+"where": "M3_JATi 3 BML Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 36",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|3||3": {
+"topic": [
+"character"
+],
+"ev": "Sikap peduli menjadi pemangkin untuk mengusahakan kemajuan.",
+"where": "M3_JATi 3 BML Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 56",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|3||4": {
+"topic": [
+"society"
+],
+"ev": "Keusahawanan sosial dapat mempengaruhi perubahan sosial dalam masyarakat.",
+"where": "M3_JATi 3 BML Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 77",
+"read": [
+"self",
+"community"
+]
+},
+"ML|H|3||5": {
+"topic": [
+"character",
+"arts"
+],
+"ev": "Membuat kaitan penting untuk memahami keadaan di sekeliling kita",
+"where": "M3_JATi 3 BML Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 99",
+"read": [
+"community"
+]
+},
+"ML|H|3||6": {
+"topic": [
+"global"
+],
+"ev": "Menjadi warga dunia yang menyumbang menuntut manusia supaya lebih peka dan prihatin.",
+"where": "M3_JATi 3 BML Panduan Guru_211222.pdf.md, Page 13 (Gambaran Keseluruhan table); Sinopsis Unit Page 122",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|4||1": {
+"topic": [
+"scitech",
+"character"
+],
+"ev": "persediaan diri itu penting untuk menghadapi dunia yang tidak menentu.",
+"where": "M4_HML JATi 4 Panduan Guru_Unit 1-Unit 3_OPAL_0501123.pdf.md, Page 17 (Gambaran Keseluruhan table); Sinopsis Unit Page 19",
+"read": [
+"self",
+"community"
+]
+},
+"ML|H|4||2": {
+"topic": [
+"society"
+],
+"ev": "setiap individu bertanggungjawab untuk memilih pemimpin yang dapat memimpin generasi Singapura yang akan datang.",
+"where": "M4_HML JATi 4 Panduan Guru_Unit 1-Unit 3_OPAL_0501123.pdf.md, Page 17 (Gambaran Keseluruhan table); Sinopsis Unit Page 41",
+"read": [
+"self",
+"community",
+"nation"
+]
+},
+"ML|H|4||3": {
+"topic": [
+"heritage"
+],
+"ev": "penting untuk orang Melayu mengenali dan mengekalkan identiti sebagai orang Melayu walau di manapun kita berada.",
+"where": "M4_HML JATi 4 Panduan Guru_Unit 1-Unit 3_OPAL_0501123.pdf.md, Page 17 (Gambaran Keseluruhan table); Sinopsis Unit Page 71",
+"read": [
+"self",
+"community",
+"world"
+]
+},
+"ML|H|4||4": {
+"topic": [
+"arts"
+],
+"ev": "",
+"where": "M4_HML JATi 4 Panduan Guru_Unit 1-Unit 3_OPAL_0501123.pdf.md (not found)",
+"read": [
+"self"
+]
+},
+"ML|H|4||5": {
+"topic": [
+"arts"
+],
+"ev": "",
+"where": "M4_HML JATi 4 Panduan Guru_Unit 1-Unit 3_OPAL_0501123.pdf.md (not found)",
+"read": [
+"self"
+]
+},
+"ML|H|4||6": {
+"topic": [
+"arts"
+],
+"ev": "",
+"where": "M4_HML JATi 4 Panduan Guru_Unit 1-Unit 3_OPAL_0501123.pdf.md (not found)",
+"read": [
+"self"
+]
+},
+"TL|G1|1|1A|1": {
+"topic": [
+"character",
+"relationships"
+],
+"ev": "நடந்து முடிந்த பள்ளி அறிமுக நடவடிக்கைகள்பற்றி மாணவர்களுக்கும் அவர்தம் பெற்றோருக்கும் இடையே நிகழ்ந்த உரையாடலைப்பற்றிக் — students' talk with parents about school orientation",
+"where": "அடிப்படைத் தமிழ் 1A - தொகுதி 1 - 4 - பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"TL|G1|1|1A|2": {
+"topic": [
+"heritage"
+],
+"ev": "சிங்கப்பூரில் பொங்கல் விழா எப்படிக் கொண்டாடப்படுகிறது? — how Pongal is celebrated in Singapore",
+"where": "அடிப்படைத் தமிழ் 1A - தொகுதி 1 - 4 - பாடத்தயாரிப்பு.pdf.md p.32",
+"reach": [
+"community",
+"nation"
+]
+},
+"TL|G1|1|1A|3": {
+"topic": [
+"heritage",
+"character"
+],
+"ev": "சிங்கப்பூரில் தமிழ்மொழியின் புழக்கத்தைப்பற்றி மாணவர்களுடன் கலந்துரையாடவும். — discuss use of Tamil in Singapore",
+"where": "அடிப்படைத் தமிழ் 1A - தொகுதி 1 - 4 - பாடத்தயாரிப்பு.pdf.md p.62",
+"reach": [
+"self",
+"community",
+"nation"
+]
+},
+"TL|G1|1|1A|4": {
+"topic": [
+"character"
+],
+"ev": "தாங்கள் வளர்த்துக்கொள்ள விரும்பும் பண்புகளையும் திறன்களையும் கண்டறிந்து கலந்துரையாடுவர். — identify qualities and skills they want to develop",
+"where": "அடிப்படைத் தமிழ் 1A - தொகுதி 1 - 4 - கண்ணோட்டம் (Word).docx.md, activity 4.9",
+"reach": [
+"self"
+]
+},
+"TL|G1|1|1B|1": {
+"topic": [
+"wellbeing"
+],
+"ev": "அம்மா - குகன் ஆகிய இரு கதைமாந்தர்களின் பாத்திரங்களை ஏற்று — role-play mother and son Kugan (food-habits passage)",
+"where": "அடிப்படைத் தமிழ் 1B - தொகுதி 1- 3 - பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"self",
+"family"
+]
+},
+"TL|G1|1|1B|2": {
+"topic": [
+"scitech",
+"society"
+],
+"ev": "இணைய வசதியின் உதவியுடன் வியாபாரத்தைத் தொடர வேண்டிய நிலையைப்பற்றியும் — shops having to continue business online",
+"where": "அடிப்படைத் தமிழ் 1B - தொகுதி 1- 3 - பாடத்தயாரிப்பு.pdf.md p.32",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G1|1|1B|3": {
+"topic": [
+"nature",
+"society"
+],
+"ev": "சிங்கப்பூரின் நான்கு தேசியக் குழாய்களைப்பற்றி அறிந்துகொள்வர். — learn about Singapore's Four National Taps",
+"where": "அடிப்படைத் தமிழ் 1B - தொகுதி 1- 3 - பாடத்தயாரிப்பு.pdf.md p.51",
+"reach": [
+"nation"
+]
+},
+"TL|G1|2|2A|1": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "இரு நண்பர்கள் ஒருவருக்கொருவர் உதவி செய்துகொண்டு விளையாடும் இணையவழிச் சவால் — two friends helping each other in an online challenge (lesson setting)",
+"where": "அடிப்படைத் தமிழ் 2A - தொகுதி 1 - 4 - பாடத்தயாரிப்பு.pdf.md p.5",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G1|2|2A|2": {
+"topic": [
+"wellbeing",
+"arts",
+"heritage"
+],
+"ev": "மாணவர்கள் தங்கள் குடும்பத்தார் சிறுவயதில் ஈடுபட்டுவந்த பொழுதுபோக்குகளைப்பற்றி அறிந்து வரச்சொல்லவும் — students find out the hobbies their family members had as children",
+"where": "அடிப்படைத் தமிழ் 2A - தொகுதி 1 - 4 - பாடத்தயாரிப்பு.pdf.md p.25",
+"reach": [
+"self",
+"family"
+]
+},
+"TL|G1|2|2A|3": {
+"topic": [
+"nature"
+],
+"ev": "இயற்கை சூழ்ந்த நகரம் என்ற சிங்கப்பூரின் பசுமைத்திட்டத்தின் சில தகவல்களை அறிவர். — learn about Singapore's 'City in Nature' green plan",
+"where": "அடிப்படைத் தமிழ் 2A - தொகுதி 1 - 4 - கண்ணோட்டம் (Word).docx.md activity 3.2",
+"reach": [
+"self",
+"nation",
+"world"
+]
+},
+"TL|G1|2|2A|4": {
+"topic": [
+"heritage"
+],
+"ev": "மூவேந்தர்களைப்பற்றி அறிந்துகொள்வர். — learn about the three Tamil dynasties (Chera, Chola, Pandya)",
+"where": "அடிப்படைத் தமிழ் 2A - தொகுதி 1 - 4 - கண்ணோட்டம் (Word).docx.md activity 4.1",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|G1|2|2B|1": {
+"topic": [
+"scitech"
+],
+"ev": "நாளைய உலகம் என்னும் கருப்பொருளையொட்டி அமைந்த நடப்புச் செய்தியைப் படித்து — read a current-affairs item on the theme 'tomorrow's world'",
+"where": "அடிப்படைத் தமிழ் - 2B - தொகுதி 1 - 3 - பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"self",
+"world"
+]
+},
+"TL|G1|2|2B|2": {
+"topic": [
+"society",
+"character"
+],
+"ev": "சிங்கப்பூர்ப் பணத்தாள் தொடர்வரிசை குறித்த தகவல்களை அறிவர். — learn about the series of Singapore currency notes",
+"where": "அடிப்படைத் தமிழ் - 2B - தொகுதி 1 - 3 - பாடத்தயாரிப்பு.pdf.md p.22",
+"reach": [
+"self",
+"nation"
+]
+},
+"TL|G1|2|2B|3": {
+"topic": [
+"society",
+"character"
+],
+"ev": "சமுதாயத்தில் இளைஞர்களின் பங்கைப்பற்றிச் சிந்திப்பர். — think about the role of youth in society",
+"where": "அடிப்படைத் தமிழ் - 2B - தொகுதி 1 - 3 - பாடத்தயாரிப்பு.pdf.md p.38",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G1|3||1": {
+"topic": [
+"arts",
+"heritage"
+],
+"ev": "சிலம்பாட்டம், சீலாட் ஆகிய தற்காப்புக் கலைகளைப்பற்றி அறிந்துகொள்வர். — students learn about silambam and silat martial arts",
+"where": "உயர்நிலை 3 - அடிப்படைத் தமிழ் - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"community",
+"nation"
+]
+},
+"TL|G1|3||2": {
+"topic": [
+"relationships"
+],
+"ev": "குடும்பப் பிணைப்பை அதிகரிக்க, குடும்பத்தினர் ஒன்றாக நேரம் செலவிடுவது முக்கியம் — news: family members spending time together strengthens family bonds",
+"where": "உயர்நிலை 3 - அடிப்படைத் தமிழ் - தொகுதி 2 - பாடத்தயாரிப்பு.pdf.md p.7",
+"reach": [
+"family"
+]
+},
+"TL|G1|3||3": {
+"topic": [
+"character"
+],
+"ev": "பள்ளியில் தலைமைத்துவப் பண்புகளை வளர்க்கும் நடவடிக்கைகள் — activities that build leadership qualities in school",
+"where": "உயர்நிலை 3 - அடிப்படைத் தமிழ் - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.11",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"TL|G1|3||4": {
+"topic": [
+"nature",
+"scitech"
+],
+"ev": "சிங்கப்பூரில் இயற்கையோடு இயைந்த வாழ்க்கையைப் பற்றிய செய்திகளைப் படித்துப் — read news about living in harmony with nature in Singapore",
+"where": "உயர்நிலை 3 - அடிப்படைத் தமிழ் - தொகுதி 4 - பாடத்தயாரிப்பு.pdf.md p.10",
+"reach": [
+"community",
+"nation"
+]
+},
+"TL|G1|3||5": {
+"topic": [
+"heritage",
+"character"
+],
+"ev": "தமிழர் வாழ்வியலில் விருந்தோம்பலின் முக்கியத்துவத்தை அறிந்துகொண்டு — learn the importance of hospitality in Tamil life",
+"where": "உயர்நிலை 3 - அடிப்படைத் தமிழ் - தொகுதி 5 - பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"community"
+]
+},
+"TL|G1|3||6": {
+"topic": [
+"wellbeing"
+],
+"ev": "மன உளைச்சலைக் குறைப்பதற்குரிய வழிகள் குறித்து அறிந்துகொள்வார்கள். — learn ways to reduce stress",
+"where": "உயர்நிலை 3 - அடிப்படைத் தமிழ் - தொகுதி 1 - 7 - கண்ணோட்டம் (Word) (1).docx.md, activity 6.2",
+"reach": [
+"self"
+]
+},
+"TL|G1|3||7": {
+"topic": [
+"global",
+"heritage"
+],
+"ev": "உலகமெங்கும் இயங்கும் தமிழ் வானொலி அலைவரிசையைப் பற்றிய செய்திகளைப் படித்துப் — read news about Tamil radio channels around the world",
+"where": "உயர்நிலை 3 - அடிப்படைத் தமிழ் - தொகுதி 7 - பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|G1|4||1": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "(எ-டு:) குடும்ப உறுப்பினர்களின் கடமைகள் யாவை? — intro to main dialogue 'வரம்': what are family members' duties? (Singapore Parents'/Mother's/Father's Day slides)",
+"where": "உயர்நிலை 4 – அடிப்படைத் தமிழ் – தொகுதி 1 – பாடத்தயாரிப்பு.pdf.md p.7",
+"reach": [
+"self",
+"family"
+]
+},
+"TL|G1|4||2": {
+"topic": [
+"heritage",
+"wellbeing"
+],
+"ev": "தமிழர் பாரம்பரிய உணவான சிறுதானியங்களைப்பற்றிய வினாவுக்குப் பொருத்தமான முறையில் பதிலுரைத்துக் கலந்துரையாடலில் ஈடுபடுவர். — discuss millets, a traditional Tamil food (main passage 'சிறுதானியங்கள்')",
+"where": "உயர்நிலை 4 – அடிப்படைத் தமிழ் – தொகுதி 2 – பாடத்தயாரிப்பு.pdf.md p.11",
+"reach": [
+"community"
+]
+},
+"TL|G1|4||3": {
+"topic": [
+"society"
+],
+"ev": "அன்றும் இன்றும் சிங்கப்பூரிலுள்ள போக்குவரத்துச் சேவை குறித்தும், தேசிய சேவை குறித்தும் கலந்துரையாடவும். — discuss Singapore's transport services then and now, and National Service",
+"where": "உயர்நிலை 4 – அடிப்படைத் தமிழ் – தொகுதி 3 – பாடத்தயாரிப்பு.pdf.md p.7",
+"reach": [
+"nation"
+]
+},
+"TL|G1|4||4": {
+"topic": [
+"society",
+"character"
+],
+"ev": "மாணவர் கற்றல் தளத்தில் பதிவேற்றப்பட்ட தொழில்முனைப்புடன் செயற்பட்ட மாணவர்களைப்பற்றிய நடப்புச் செய்தியை வாசிக்கவும். — read the news item on students who acted entrepreneurially",
+"where": "உயர்நிலை 4 – அடிப்படைத் தமிழ் – தொகுதி 4 – பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G1|4||5": {
+"topic": [
+"scitech"
+],
+"ev": "அறிவியல் அறிஞர் ஜி .டி .நாயிடு என்னும் பகுதியின் தொடர்பில் உள்ள வினாக்களையொட்டிக் கலந்துரையாடிக் கருத்துகளைப் பகிர்ந்துகொள்வர். — discuss the main passage on scientist G.D. Naidu",
+"where": "உயர்நிலை 4 – அடிப்படைத் தமிழ் – தொகுதி 5 – பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|G1|4||6": {
+"topic": [
+"global",
+"character"
+],
+"ev": "உலக அமைதிக்காக பாடுபட்டவர்களைப் பற்றி மாணவர்கள் அறிந்துகொள்வர். — learn about people who worked for world peace (with ASEAN fact-file)",
+"where": "உயர்நிலை 4 – அடிப்படைத் தமிழ் – தொகுதி 1 - 6 – கண்ணோட்டம் (Word).docx.md, activity 6.3",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|G2|1|1A|1": {
+"topic": [
+"character",
+"relationships"
+],
+"ev": "பள்ளி அனுபவங்களைப்பற்றி மாணவர்களுக்கும் அவர்தம் பெற்றோருக்கும் இடையே நடைபெறும் — school experiences discussed between students and parents",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 1A - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.7",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"TL|G2|1|1A|2": {
+"topic": [
+"heritage",
+"global"
+],
+"ev": "அந்த நாடுகளில் அறுவடைத் திருநாள் கொண்டாடப்படும் முறையைக் கண்டறியச் சொல்லவும். — find how harvest festivals are celebrated in those countries",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 1A - தொகுதி 2 - பாடத்தயாரிப்பு.pdf.md p.15",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|G2|1|1A|3": {
+"topic": [
+"heritage",
+"society"
+],
+"ev": "தமிழ் சம்மந்தப்பட்ட வேலைகளைப்பற்றி மாணவர்களிடம் ஆசிரியர் கேட்டல். — teacher asks about Tamil-related jobs",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 1A - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"self",
+"family",
+"community"
+]
+},
+"TL|G2|1|1A|4": {
+"topic": [
+"character"
+],
+"ev": "மாணவர்கள் தாங்கள் வளர்த்துக்கொள்ள விரும்பும் ஐந்து திறன்களையோ பண்புகளையோ உறுதிமொழிகளாக எழுதிக்கொள்வர். — students write five skills or qualities as pledges",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 1A - தொகுதி 4 - பாடத்தயாரிப்பு.pdf.md p.16",
+"reach": [
+"self"
+]
+},
+"TL|G2|1|1B|1": {
+"topic": [
+"wellbeing"
+],
+"ev": "திருமதி கோமதி தன் குடும்பத்தினர் அனைவருக்கும் நல்ல உணவு பழக்கத்தையே மேற்கொள்கிறார். — Mrs Gomathi keeps her whole family on good eating habits",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 1B - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.16",
+"reach": [
+"self",
+"family"
+]
+},
+"TL|G2|1|1B|2": {
+"topic": [
+"scitech",
+"society"
+],
+"ev": "அப்பா, தாத்தா இருவரும் பாலனை எண்ணிப் பெருமை அடைவது ஏன்? — why father and grandfather are proud of Balan",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 1B - தொகுதி 2 - பாடத்தயாரிப்பு.pdf.md p.7",
+"reach": [
+"self",
+"family"
+]
+},
+"TL|G2|1|1B|3": {
+"topic": [
+"nature",
+"society"
+],
+"ev": "நீரைச் சேமிப்பதில் சிங்கப்பூர் கடந்து வந்த பாதை என்ன ? — what path Singapore has taken in saving water",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 1B - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"community",
+"nation"
+]
+},
+"TL|G2|2|2A|1": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "நட்பு பலவிதம் என்னும் படித்தல் பகுதி உணர்த்தும் கருத்துகளைப் படித்துப் புரிந்துகொள்வர். — read and understand the passage 'Friendship takes many forms'",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 2A - தொகுதி 1 - 4 - கண்ணோட்டம் (Word) (1).docx.md activity 1.2",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G2|2|2A|2": {
+"topic": [
+"wellbeing",
+"character"
+],
+"ev": "1980 -களில் சிங்கப்பூரில் இல்லாத பொழுதுபோக்குகள் யாவை என்பதை இணையவழிக் கண்டறி யச் சொல்லவும். — students research online which hobbies did not exist in 1980s Singapore",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 2A - தொகுதி 2 - பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"self",
+"nation"
+]
+},
+"TL|G2|2|2A|3": {
+"topic": [
+"nature"
+],
+"ev": "சிங்கப்பூர் இயற்கை நகரமாக மாறுவது அவசியம் என்று நினைக்கிறாயா? — do you think it is necessary for Singapore to become a City in Nature?",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 2A - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.16",
+"reach": [
+"self",
+"nation"
+]
+},
+"TL|G2|2|2A|4": {
+"topic": [
+"heritage"
+],
+"ev": "இந்த நடவடிக்கையின்வழித் தொடக்கப்பள்ளியில் கற்ற மூவேந்தர்கள் பற்றிய செய்திகளை நினைவுகூர்வர். — recall what was learnt in primary school about the three Tamil dynasties",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) 2A - தொகுதி 1 - 4 - கண்ணோட்டம் (Word) (1).docx.md activity 4.1",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|G2|2|2B|1": {
+"topic": [
+"scitech"
+],
+"ev": "அறிவியல் கண்டுபிடிப்புகளின் வளர்ச்சியையும் இனிவரும் காலங்களில் உருவாகவிருக்கும் கண்டுபிடிப்புகள் குறித்தும் தெரிந்துகொள்வர். — learn how inventions developed and what future inventions may come",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - 2B - தொகுதி 1 - 3 - கண்ணோட்டம் (Word).docx.md activity 1.1",
+"reach": [
+"self",
+"world"
+]
+},
+"TL|G2|2|2B|2": {
+"topic": [
+"society",
+"character"
+],
+"ev": "‘சேமிப்போம், சிக்கனமாகச் செலவழிப்போம்!’ என்னும் பகுதியைப் படித்துப் பனுவலின் கருத்தைப் புரிந்துகொள்வர். — read the passage 'Let us save and spend thriftily!'",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - 2B - தொகுதி 1 - 3 - கண்ணோட்டம் (Word).docx.md activity 2.2",
+"reach": [
+"self"
+]
+},
+"TL|G2|2|2B|3": {
+"topic": [
+"society",
+"character"
+],
+"ev": "‘இளைஞர்களும் அமைப்புகளும்’ என்னும் வாசிப்புப் பகுதியில் உள்ள கருத்துகளைப் படித்துப் புரிந்துகொள்வர். — read the passage 'Youth and organisations'",
+"where": "தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - 2B - தொகுதி 1 - 3 - கண்ணோட்டம் (Word).docx.md activity 3.2",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G2|3||1": {
+"topic": [
+"arts",
+"heritage"
+],
+"ev": "சிங்கப்பூர்ப் பல்லின மக்களின் தற்காப்புக் கலைகளான சிலம்பம், வூஷூ, சிலாட் — martial arts of Singapore's multiracial peoples: silambam, wushu, silat",
+"where": "உயர்நிலை 3 - தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 1.1",
+"reach": [
+"community",
+"nation",
+"world"
+]
+},
+"TL|G2|3||2": {
+"topic": [
+"relationships",
+"society"
+],
+"ev": "‘கடல் கடந்து வந்த ஊழியர்கள்’ என்னும் பகுதியைப் படித்துப் புரிந்துகொண்டு — read the passage on workers who came from overseas",
+"where": "உயர்நிலை 3 - தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 2.7",
+"reach": [
+"family",
+"community"
+]
+},
+"TL|G2|3||3": {
+"topic": [
+"character"
+],
+"ev": "அவர்களின் இணைப்பாட நடவடிக்கையைப்பற்றியும் அந்நடவடிக்கையில் மாணவர்கள் கற்றுக்கொள்ளும் தலைமைத்துவப் பண்புகள் — their CCA and the leadership qualities they learn in it",
+"where": "உயர்நிலை 3 - தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"self",
+"school"
+]
+},
+"TL|G2|3||4": {
+"topic": [
+"nature"
+],
+"ev": "சிங்கப்பூரிலுள்ள இயற்கைச் சூழல் நிறைந்த இடங்கள் குறித்துத் தகவல் திரட்டி — gather information on nature-rich places in Singapore",
+"where": "உயர்நிலை 3 - தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 4.2",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|G2|3||5": {
+"topic": [
+"heritage",
+"character"
+],
+"ev": "தமிழரின் சிறந்த பண்பாடான விருந்தோம்பலைப்பற்றி அறிந்துகொள்வர். — learn about hospitality, a fine Tamil cultural trait",
+"where": "உயர்நிலை 3 - தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 5.1",
+"reach": [
+"community"
+]
+},
+"TL|G2|3||6": {
+"topic": [
+"wellbeing"
+],
+"ev": "மனநல மேம்பாட்டிற்காகச் சிங்கப்பூரில் மேற்கொள்ளப்படும் நடவடிக்கைகள்பற்றி அறிந்துகொள்வர். — learn about mental-health initiatives in Singapore",
+"where": "உயர்நிலை 3 - தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 6.3",
+"reach": [
+"self",
+"school",
+"community"
+]
+},
+"TL|G2|3||7": {
+"topic": [
+"global",
+"heritage",
+"arts"
+],
+"ev": "உலக நாடுகளில் தமிழ் வானொலி என்னும் பகுதியைப் படித்துப் புரிந்துகொண்டு — read the passage on Tamil radio in countries of the world",
+"where": "உயர்நிலை 3 - தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 7.6",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|G2|4||1": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "கலந்துரையாடலின்போது குடும்பத்தில் உள்ளவர்களின் உரிமைகள் , கடமைகள் குறித்துக் கலந்துரையாட மாணவர்களை வழிநடத்தவும். — guide discussion of family members' rights and duties (main passage 'பொறுப்புணர்வு')",
+"where": "உயர்நிலை 4 – தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) – தொகுதி 1 – பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"self",
+"family"
+]
+},
+"TL|G2|4||2": {
+"topic": [
+"heritage",
+"arts"
+],
+"ev": "‘தமிழர்களின் உணவுமுறை’ என்னும் பனுவலைப் படித்துப் பனுவலின் கருத்தைப் புரிந்துகொள்வர். — read the main passage 'Tamils' food customs'",
+"where": "உயர்நிலை 4 – தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) – தொகுதி 2 – பாடத்தயாரிப்பு.pdf.md p.2",
+"reach": [
+"community"
+]
+},
+"TL|G2|4||3": {
+"topic": [
+"society"
+],
+"ev": "அன்றைய சிங்கப்பூர், இன்றைய சிங்கப்பூர் என்ற தலைப்பிலான படங்களைப்பற்றித் தங்கள் கருத்துகளைக் கூறிக் கலந்துரையாடுவர். — discuss pictures of Singapore then and now",
+"where": "உயர்நிலை 4 – தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) – தொகுதி 3 – பாடத்தயாரிப்பு.pdf.md p.2",
+"reach": [
+"community",
+"nation"
+]
+},
+"TL|G2|4||4": {
+"topic": [
+"society",
+"character"
+],
+"ev": "Think (சிந்தித்தல்) - சிங்கப்பூரில் பெண் தொழில்முனைவர்களுக்குக் கிடைக்கும் ஊக்கம் — news task: support available to women entrepreneurs in Singapore",
+"where": "உயர்நிலை 4 – தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) – தொகுதி 4 – பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G2|4||5": {
+"topic": [
+"scitech"
+],
+"ev": "நம் சமூகத்தில் செயற்கை நுண்ணறிவுக் கருவிகள் எப்படிப் பயன்படுகின்றன என்பதைப்பற்றி மாணவர்கள் தெரிந்துகொண்டு — learn how AI tools are used in our society",
+"where": "உயர்நிலை 4 – தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) – தொகுதி 5 – பாடத்தயாரிப்பு.pdf.md p.2",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|G2|4||6": {
+"topic": [
+"nature",
+"global"
+],
+"ev": "‘மாசில்லா உலகை உருவாக்குவோம்’ என்னும் சிற்றுரையைப் படித்துப் பனுவல் உணர்த்தும் கருத்துகளைப் புரிந்துகொள்வர். — read the speech 'Let us create a pollution-free world'",
+"where": "உயர்நிலை 4 – தமிழ் (வழக்கநிலை ஏட்டுக்கல்வி) – தொகுதி 6 – பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|G3|1|1A|1": {
+"topic": [
+"character",
+"relationships"
+],
+"ev": "கயல் தன் பெற்றோரிடம் என்ன கூறியிருப்பாள் என்று நினைக்கிறீர்கள்? — what Kayal might have told her parents",
+"where": "தமிழ் (விரைவுநிலை) 1A - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"TL|G3|1|1A|2": {
+"topic": [
+"heritage",
+"global"
+],
+"ev": "உலக நாடுகளில் அறுவடைத் திருநாள் என்னும் பகுதியைப் பின்வருமாறு மாணவர்களைப் படிக்கச்சொல்லவும். — read the passage on harvest festivals in world countries",
+"where": "தமிழ் (விரைவுநிலை) 1A - தொகுதி 2 - பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|G3|1|1A|3": {
+"topic": [
+"heritage",
+"arts"
+],
+"ev": "சிங்கப்பூரில் நான்கு அதிகாரத்துவ மொழிகளுள் தமிழும் ஒன்று என்பதையும் — Tamil is one of Singapore's four official languages",
+"where": "தமிழ் (விரைவுநிலை) 1A - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.16",
+"reach": [
+"self",
+"family",
+"community",
+"nation"
+]
+},
+"TL|G3|1|1A|4": {
+"topic": [
+"character"
+],
+"ev": "இந்த ஆண்டுக்கான தங்களது குறிக்கோளைத் தீர்மானித்து எழுதுவர். — decide and write their goal for this year",
+"where": "தமிழ் (விரைவுநிலை) 1A - தொகுதி 4 - பாடத்தயாரிப்பு.pdf.md p.5",
+"reach": [
+"self",
+"school"
+]
+},
+"TL|G3|1|1B|1": {
+"topic": [
+"wellbeing"
+],
+"ev": "உணவில் கவனம் என்னும் கட்டுரையை மாணவர்கள் வாய்விட்டுப் படிப்பர் — students read aloud the essay 'Care with food'",
+"where": "தமிழ் (விரைவுநிலை) 1B - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"self"
+]
+},
+"TL|G3|1|1B|2": {
+"topic": [
+"scitech",
+"society"
+],
+"ev": "அப்பாவையும் தாத்தாவையும் ஏன் அழகரசி அக்கறையுடன் நோக்கினாள்? — why Alagarasi watched father and grandfather closely",
+"where": "தமிழ் (விரைவுநிலை) 1B - தொகுதி 2 - பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"TL|G3|1|1B|3": {
+"topic": [
+"nature",
+"heritage"
+],
+"ev": "பண்டைத் தமிழர்கள் மேற்கொண்ட நீர் மேலாண்மைத் திட்டங்களைச் சிங்கப்பூர் மேற்கொள்ளும் நீர்ச் சேமிப்புத் திட்டங்களோடு ஒப்பிடவும். — compare ancient Tamil water schemes with Singapore's",
+"where": "தமிழ் (விரைவுநிலை) 1B - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.11",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|G3|2|2A|1": {
+"topic": [
+"relationships",
+"character"
+],
+"ev": "எது நட்பு என்னும் பனுவலிலுள்ள கருத்துகளை அறியும் நடவடிக்கையில் மாணவர்களை ஈடுபடுத்தவும். — engage students in finding the ideas in the passage 'What is friendship'",
+"where": "தமிழ் (விரைவுநிலை) 2A - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G3|2|2A|2": {
+"topic": [
+"wellbeing",
+"heritage"
+],
+"ev": "அன்றைய சிங்கப்பூரில் கிராமத்துச் சூழலில் விளையாடப் பெற்ற விளையாட்டுகள் தொடர்பான செய்திகளைத் திரட்டி — gather information on games played in kampong-era Singapore",
+"where": "தமிழ் (விரைவுநிலை) 2A - தொகுதி 2 - பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"self",
+"family",
+"nation"
+]
+},
+"TL|G3|2|2A|3": {
+"topic": [
+"nature"
+],
+"ev": "சிங்கப்பூரின் சாங்கி விமான நிலையம் பசுமையைப் பேணும் விமான நிலையமாக விளங்குகிறது — Singapore's Changi Airport stands as a green airport",
+"where": "தமிழ் (விரைவுநிலை) 2A - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.7",
+"reach": [
+"self",
+"nation"
+]
+},
+"TL|G3|2|2A|4": {
+"topic": [
+"heritage"
+],
+"ev": "மன்னர்களும் மக்கள் நலனும் என்னும் பனுவலின் கருத்தை அறியும் நடவடிக்கையில் — activity to understand the passage 'Kings and the people's welfare'",
+"where": "தமிழ் (விரைவுநிலை) 2A - தொகுதி 4 - பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"world"
+]
+},
+"TL|G3|2|2B|1": {
+"topic": [
+"scitech"
+],
+"ev": "படிப்போம் பகுதியிலுள்ள புதியதொரு வாழ்விடத்தை உருவாக்குவோம் என்னும் கட்டுரைப் பனுவலையும் — the reading essay 'Let us create a new habitat'",
+"where": "தமிழ் (விரைவுநிலை) - 2B - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"self",
+"world"
+]
+},
+"TL|G3|2|2B|2": {
+"topic": [
+"society",
+"character"
+],
+"ev": "இன்றைய சேமிப்பு, நாளைய பாதுகாப்பு என்னும் பனுவலிலுள்ள சொற்களின் பொருளை அறிந்துகொள்வர். — learn word meanings in the passage 'Today's savings, tomorrow's security'",
+"where": "தமிழ் (விரைவுநிலை) - 2B - தொகுதி 1 - 3 - கண்ணோட்டம் (Word).docx.md activity 2.2",
+"reach": [
+"self"
+]
+},
+"TL|G3|2|2B|3": {
+"topic": [
+"society",
+"heritage"
+],
+"ev": "சிங்கப்பூரில் தமிழ் ச் சமூகம் செழிக்க மேற்கொள்ளப்படும் நடவடிக்கைகள் — efforts made for the Tamil community in Singapore to flourish",
+"where": "தமிழ் (விரைவுநிலை) - 2B - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.5",
+"reach": [
+"self",
+"school",
+"community",
+"world"
+]
+},
+"TL|G3|3||1": {
+"topic": [
+"arts",
+"heritage"
+],
+"ev": "மாணவர்கள் சிங்கப்பூர் இளையர் விழா , கூத்துக் கலை , கட்டியக்காரர் முதலியவற்றைப்பற்றிக் — students discuss the Singapore Youth Festival, koothu and the kattiyakkarar",
+"where": "உயர்நிலை 3 - தமிழ் (விரைவுநிலை) - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"community",
+"nation"
+]
+},
+"TL|G3|3||2": {
+"topic": [
+"relationships"
+],
+"ev": "குடும்பச் சூழல்களைக் குறித்து அறிந்துகொள்வர். — learn about family settings",
+"where": "உயர்நிலை 3 - தமிழ் (விரைவுநிலை) - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 2.2",
+"reach": [
+"family"
+]
+},
+"TL|G3|3||3": {
+"topic": [
+"character"
+],
+"ev": "பள்ளி மாணவர் தலைவர் பதவிக்குப் போட்டியிடும் திலகவதி , ஆதவன் ஆகியோரைப் போல — like Thilagavathi and Aathavan, who are standing for school student leader",
+"where": "உயர்நிலை 3 - தமிழ் (விரைவுநிலை) - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"self",
+"school"
+]
+},
+"TL|G3|3||4": {
+"topic": [
+"nature"
+],
+"ev": "மாணவர்கள் சிங்கப்பூரில் பசுமை நகரை உருவாக்குவோம் என்பது குறித்துக் கலந்துரையாடுவர். — students discuss building a green city in Singapore",
+"where": "உயர்நிலை 3 - தமிழ் (விரைவுநிலை) - தொகுதி 4 - பாடத்தயாரிப்பு.pdf.md p.5",
+"reach": [
+"nation"
+]
+},
+"TL|G3|3||5": {
+"topic": [
+"heritage"
+],
+"ev": "கீழடி காட்டும் தமிழர் வாழ்வியல் என்னும் தகவல் பனுவலைச் — the information text 'Tamil life as revealed by Keezhadi'",
+"where": "உயர்நிலை 3 - தமிழ் (விரைவுநிலை) - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 5.2",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|G3|3||6": {
+"topic": [
+"wellbeing"
+],
+"ev": "சமூக வலைத்தளங்களும் இளைஞர் மனநலமும் என்னும் ஒலிப்பகுதியைக் கவனமாகக் கேட்டுக் — listen to the audio on social media and youth mental health",
+"where": "உயர்நிலை 3 - தமிழ் (விரைவுநிலை) - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 6.8",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G3|3||7": {
+"topic": [
+"global",
+"heritage"
+],
+"ev": "மாணவர்கள் கடல் கடந்த தமிழ் என்னும் கட்டுரைப் பனுவலை மௌனமாகப் படிப்பர். — students read the essay 'Tamil across the seas'",
+"where": "உயர்நிலை 3 - தமிழ் (விரைவுநிலை) - தொகுதி 7 - பாடத்தயாரிப்பு.pdf.md p.5",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|G3|4||1": {
+"topic": [
+"relationships",
+"arts"
+],
+"ev": "- முதலாவது வட்டம் பெற்றோர்கள், மனைவி, குழந்தை. — answer key: the first circle of duty is parents, spouse, child (text 'மகனே! உன் கடமையைச் செய்!')",
+"where": "உயர்நிலை 4 – தமிழ் (விரைவுநிலை) – தொகுதி 1 – பாடத்தயாரிப்பு.pdf.md p.10",
+"reach": [
+"family"
+]
+},
+"TL|G3|4||2": {
+"topic": [
+"heritage"
+],
+"ev": "மாணவர்கள் பண்டைத் தமிழர் உணவு முறை என்னும் பனுவலைச் சரியாகவும் தெளிவாகவும் பொருள் விளங்குமாறும் — read aloud the main passage 'ancient Tamil food customs'",
+"where": "உயர்நிலை 4 – தமிழ் (விரைவுநிலை) – தொகுதி 2 – பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"community"
+]
+},
+"TL|G3|4||3": {
+"topic": [
+"society"
+],
+"ev": "மாணவர்கள் சிங்கப்பூர் வரலாற்றை நினைவுகூரும் கவிதையைப் படித்து நாட்டின் வளர்ச்சி குறித்துக் கலந்துரையாடுவர். — read a poem recalling Singapore's history and discuss national development",
+"where": "உயர்நிலை 4 – தமிழ் (விரைவுநிலை) – தொகுதி 3 – பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"nation"
+]
+},
+"TL|G3|4||4": {
+"topic": [
+"society",
+"character"
+],
+"ev": "மாணவர்கள் இளம் தொழில்முனைவர்கள் என்னும் பனுவலை மெௌனமாகப் படிப்பர்; — students read the main passage 'Young entrepreneurs'",
+"where": "உயர்நிலை 4 – தமிழ் (விரைவுநிலை) – தொகுதி 4 – பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|G3|4||5": {
+"topic": [
+"scitech"
+],
+"ev": "மாணவர்கள் சிங்கப்பூரில் ஓட்டுநர் இல்லாமல் தானாக இயங்கும் வாகனங்கள் குறித்த செய்தியைப் படித்துக் கலந்துரையாடுவர். — discuss news on driverless vehicles in Singapore",
+"where": "உயர்நிலை 4 – தமிழ் (விரைவுநிலை) – தொகுதி 5 – பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|G3|4||6": {
+"topic": [
+"global",
+"nature"
+],
+"ev": "சிங்கப்பூரில் பருவநிலை மாற்றத்தைச் சமாளிக்க க் கூட்டு முயற்சி அவசியம் என்னும் நடப்புச் செய்தியை மாணவர்கள் படிப்பர். — read the news that Singapore needs joint effort to tackle climate change",
+"where": "உயர்நிலை 4 – தமிழ் (விரைவுநிலை) – தொகுதி 6 – பாடத்தயாரிப்பு.pdf.md p.6",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|H|1|1A|1": {
+"topic": [
+"character",
+"relationships"
+],
+"ev": "படிப்போம் என்னும் பகுதியில் கயலுக்கும் அவளது அம்மாவுக்கும் நிகழும் உரையாடல் — the reading is a Kayal-Amma dialogue",
+"where": "உயர்தமிழ் 1A - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.10",
+"reach": [
+"self",
+"family",
+"school"
+]
+},
+"TL|H|1|1A|2": {
+"topic": [
+"heritage",
+"global"
+],
+"ev": "அவற்றுள் தமிழகம் அல்லாத, இரண்டு நாடுகளைத் தேர்ந்தெடுக்க வேண்டும். — choose two countries other than Tamil Nadu",
+"where": "உயர்தமிழ் 1A - தொகுதி 2 - பாடத்தயாரிப்பு.pdf.md p.13",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|H|1|1A|3": {
+"topic": [
+"heritage",
+"arts"
+],
+"ev": "சிங்கப்பூரில் தமிழ் அதிகாரித்துவ மொழிகளுள் ஒன்றாக விளங்குவதன் முக்கியத்துவத்தை — importance of Tamil as an official language in Singapore",
+"where": "உயர்தமிழ் 1A - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.16",
+"reach": [
+"self",
+"community",
+"nation"
+]
+},
+"TL|H|1|1A|4": {
+"topic": [
+"character",
+"scitech"
+],
+"ev": "காலத்திற்கேற்ப மாற்றுவழிகளை யோசிக்கும் திறன் முக்கியம் என்பதையும் — the skill of thinking of alternatives with the times matters",
+"where": "உயர்தமிழ் 1A - தொகுதி 4 - பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"self",
+"nation"
+]
+},
+"TL|H|1|1B|1": {
+"topic": [
+"wellbeing"
+],
+"ev": "ஆரோக்கிய சமையற்குறிப்பு ஒன்றைத் தயாரித்து, அதனைப் பகிர்ந்துகொள்வர். — prepare and share a healthy recipe",
+"where": "உயர்தமிழ் 1B - தொகுதி 1 - பாடத்தயாரிப்பு.pdf.md p.10",
+"reach": [
+"self"
+]
+},
+"TL|H|1|1B|2": {
+"topic": [
+"scitech",
+"society"
+],
+"ev": "பாடப்பகுதியில் தாத்தா, தந்தை, மகன் ஆகியோருக்கிடையே நடைபெற்ற உரையாடலைக் குழுநிலையில் பாத்திரமேற்று நடித்துக்காட்டுவர். — role-play the grandfather-father-son dialogue",
+"where": "உயர்தமிழ் 1B - தொகுதி 2 - பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"self",
+"family"
+]
+},
+"TL|H|1|1B|3": {
+"topic": [
+"nature",
+"heritage",
+"global"
+],
+"ev": "மரினா அணைக்கட்டு , கல்லணை ஆகிய இரண்டு படங்களையும் காட்டி — show pictures of Marina Barrage and Kallanai",
+"where": "உயர்தமிழ் 1B - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.12",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|H|2|2A|1": {
+"topic": [
+"relationships",
+"character",
+"arts"
+],
+"ev": "திருக்குறளிலுள்ள நட்பு தொடர்பான ஐந்து அதிகாரங்களைப் பற்றி அறிந்துகொள்வர். — learn the five Thirukkural chapters on friendship",
+"where": "உயர்தமிழ் 2A - தொகுதி 1 - 4 - கண்ணோட்டம் (Word).docx.md activity 1.5",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|H|2|2A|2": {
+"topic": [
+"wellbeing",
+"heritage"
+],
+"ev": "கீழடியில் கிடைத்துள்ள பழந்தமிழரது விளையாட்டுப் பொருள்கள் குறித்த தகவல்களை அறிந்துகொள்வர். — learn about ancient Tamil play objects found at Keezhadi",
+"where": "உயர்தமிழ் 2A - தொகுதி 1 - 4 - கண்ணோட்டம் (Word).docx.md activity 2.9",
+"reach": [
+"self",
+"community",
+"world"
+]
+},
+"TL|H|2|2A|3": {
+"topic": [
+"nature"
+],
+"ev": "நாட்டு வளமும் உலகின் நலமும் — the nation's resources and the world's wellbeing (workbook 3.3 title)",
+"where": "உயர்தமிழ் 2A - தொகுதி 1 - 4 - கண்ணோட்டம் (Word).docx.md activity 3.6",
+"reach": [
+"self",
+"nation",
+"world"
+]
+},
+"TL|H|2|2A|4": {
+"topic": [
+"heritage",
+"society"
+],
+"ev": "மன்னருக்கு இருக்க வேண்டிய தகுதிகளும் அவர் ஆற்றவேண்டிய கடமைகளும் என்ன என்பதுபற்றிக் கலந்துரையாடித் — discuss the qualities a king must have and the duties he must do",
+"where": "உயர்தமிழ் 2A - தொகுதி 1 - 4 - கண்ணோட்டம் (Word).docx.md activity 4.3",
+"reach": [
+"world"
+]
+},
+"TL|H|2|2B|1": {
+"topic": [
+"scitech"
+],
+"ev": "குடும்பப் படங்கள் வருங்காலத்தில் எப்படி இருக்கும் என்பதைப்பற்றிக் கலந்துரையாடுவர். — discuss what family photos will look like in the future",
+"where": "உயர்தமிழ் - 2B - தொகுதி 1 - 3 - கண்ணோட்டம் (Word).docx.md activity 1.1",
+"reach": [
+"self",
+"family",
+"world"
+]
+},
+"TL|H|2|2B|2": {
+"topic": [
+"society",
+"character"
+],
+"ev": "பணத்தின் அருமையைப் பிள்ளைகளுக்குப் பெற்றோர் வலியுறுத்த வேண்டும். — parents must stress the value of money to their children",
+"where": "உயர்தமிழ் - 2B - தொகுதி 1 - 3 - கண்ணோட்டம் (Word).docx.md activity 2.9",
+"reach": [
+"self",
+"family",
+"nation"
+]
+},
+"TL|H|2|2B|3": {
+"topic": [
+"society",
+"character"
+],
+"ev": "நம் சமுதாயத்தில் இளைஞர்கள் எத்தகைய நற்செயல்களில் தங்களை ஈடுபடுத்திக்கொள்கிறார்கள் — what good deeds youths in our society take part in",
+"where": "உயர்தமிழ் - 2B - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"self",
+"community",
+"world"
+]
+},
+"TL|H|3||1": {
+"topic": [
+"arts",
+"heritage"
+],
+"ev": "தமிழர் நாட்டுப்புறக் கலைகளைப்பற்றிக் கலந்துரையாடுவர். — discuss Tamil folk arts",
+"where": "உயர்நிலை 3 - உயர்தமிழ் - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 1.1",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|H|3||2": {
+"topic": [
+"relationships",
+"arts"
+],
+"ev": "கண்ணதாசனின் பாடலில் இடம்பெற்றிருக்கும் குடும்ப ஒற்றுமைபற்றி அறிந்துகொள்வர். — learn about family unity in Kannadasan's song",
+"where": "உயர்நிலை 3 - உயர்தமிழ் - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 2.2",
+"reach": [
+"family"
+]
+},
+"TL|H|3||3": {
+"topic": [
+"character"
+],
+"ev": "கல்வியின் நோக்கம் , இணைப்பாடத்தின் நோக்கம்  ஆகிய இரண்டு  மன வரைபடங்களை — two mind maps: the purpose of education and of CCA",
+"where": "உயர்நிலை 3 - உயர்தமிழ் - தொகுதி 3 - பாடத்தயாரிப்பு.pdf.md p.8",
+"reach": [
+"self",
+"school"
+]
+},
+"TL|H|3||4": {
+"topic": [
+"nature",
+"heritage"
+],
+"ev": "சிங்கப்பூர் அரசாங்கம் இயற்கையைப் பாதுகாக்க மேற்கொள்ளும் முயற்சிகள்பற்றி அறிந்துகொள்வர். — learn about the Singapore government's efforts to protect nature",
+"where": "உயர்நிலை 3 - உயர்தமிழ் - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 4.1",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|H|3||5": {
+"topic": [
+"heritage"
+],
+"ev": "கீழடி காட்டும் தமிழர் வாழ்வியல் — Tamil life as revealed by Keezhadi (main textbook passage)",
+"where": "உயர்நிலை 3 - உயர்தமிழ் - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 5.2",
+"reach": [
+"community",
+"world"
+]
+},
+"TL|H|3||6": {
+"topic": [
+"wellbeing"
+],
+"ev": "அன்றாட வாழ்வில் மனிதர்க்கு ஏற்படும் மனவுணர்வுகள்பற்றிக் கலந்துரையாடுவர். — discuss the emotions people feel in daily life",
+"where": "உயர்நிலை 3 - உயர்தமிழ் - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 6.1",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|H|3||7": {
+"topic": [
+"global",
+"heritage"
+],
+"ev": "தமிழ் அதிகாரத்துவ மொழியாக விளங்கும் நாடுகளையும் மாநிலங்களையும்பற்றி அறிந்துகொள்வர். — learn about the countries and states where Tamil is an official language",
+"where": "உயர்நிலை 3 - உயர்தமிழ் - தொகுதி 1 - 7 - கண்ணோட்டம் (Word).docx.md, activity 7.5",
+"reach": [
+"world"
+]
+},
+"TL|H|4||1": {
+"topic": [
+"society",
+"character"
+],
+"ev": "தமிழகத்தின் முதல் பெண் மருத்துவர் குறித்து அறிமுகம் செய்தல். — introduce Tamil Nadu's first woman doctor (main passage)",
+"where": "உயர்நிலை 4 – உயர்தமிழ் – தொகுதி 1 – பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"family",
+"world"
+]
+},
+"TL|H|4||2": {
+"topic": [
+"heritage",
+"arts"
+],
+"ev": "செய்தியின் தலைப்பு – ‘உறவுக்குக் கம்பத்துப் பொங்கல் ; ஒற்றுமைக்குத் தமிழர் திருநாள்’ — news headline: kampong Pongal for ties, Tamil festival for unity",
+"where": "உயர்நிலை 4 – உயர்தமிழ் – தொகுதி 2 – பாடத்தயாரிப்பு.pdf.md p.15",
+"reach": [
+"community"
+]
+},
+"TL|H|4||3": {
+"topic": [
+"society"
+],
+"ev": "நாட்டுருவாக்கத்தில் சிங்கப்பூர் அரசாங்கம் மேற்கொண்ட முயற்சிகளைப்பற்றியும் அறிந்துகொள்வர். — learn about the Singapore government's nation-building efforts",
+"where": "உயர்நிலை 4 – உயர்தமிழ் – தொகுதி 3 – பாடத்தயாரிப்பு.pdf.md p.9",
+"reach": [
+"nation"
+]
+},
+"TL|H|4||4": {
+"topic": [
+"society",
+"arts"
+],
+"ev": "இன்றைய உலகில் தமிழ்மொழி சார்ந்து ஏற்பட்டுள்ள பல வேலை வாய்ப்புகளை நினைவூட்டும் வகையிலும் — main passage (forum format) on today's job opportunities linked to Tamil",
+"where": "உயர்நிலை 4 – உயர்தமிழ் – தொகுதி 4 – பாடத்தயாரிப்பு.pdf.md p.10",
+"reach": [
+"self",
+"community"
+]
+},
+"TL|H|4||5": {
+"topic": [
+"scitech"
+],
+"ev": "ஆல்பர்ட் ஐன்ஸ்டைன் குறித்த தகவல்களை அறிந்துகொள்வர். — learn about Albert Einstein (with the main passage on inventions for humanity)",
+"where": "உயர்நிலை 4 – உயர்தமிழ் – தொகுதி 5 – பாடத்தயாரிப்பு.pdf.md p.10",
+"reach": [
+"nation",
+"world"
+]
+},
+"TL|H|4||6": {
+"topic": [
+"global",
+"society"
+],
+"ev": "சிங்கப்பூரை வாழ்வதற்கு ஏற்ற சிறந்த நாடாக வைத்திருக்கவும் பாதுகாக்கவும் அரசாங்கம் மேற்கொள்ளும் திட்டங்களையும் — government plans to keep Singapore a good place to live (main passage 'சிறந்த நாடும் சீரிய திட்டங்களும்')",
+"where": "உயர்நிலை 4 – உயர்தமிழ் – தொகுதி 6 – பாடத்தயாரிப்பு.pdf.md p.10",
+"reach": [
+"nation",
+"world"
+]
+}
+}

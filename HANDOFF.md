@@ -258,3 +258,10 @@ The HOD found the first planning layer too much to digest. It was replaced:
 
 ### E21CC codes explain themselves (3 Nov 2026)
 - `linkE21(root)` turns every CAIT/CCI/CGC code in page text into a `.e21x` button (a MutationObserver runs it on everything added, dialogs included; lists such as "CCI 1.3, 2.3" or "CAIT 3.3/4.3" carry the prefix on). Tapping opens `#e21pop` from `e21Card(code)`: the domain in full, the goal and its title, the level (Level 3 = Lower Sec, Level 4 = Upper Sec) and the MOE milestone text from `sow.e21ms`; a bare "CAIT 5" shows all four levels, a bare "CAIT" its six goals.
+
+### Unit reach and topic read from the guides (3 Nov 2026)
+- `tools/unitcodes.json` (312 units): for CL and TL, `reach` (every domain the unit's texts and tasks engage) read from each unit's overview in the teacher guide (CL 单元内容概要 and 板块内容; TL கண்ணோட்டம் and பாடத்தயாரிப்பு); for ML, CPDD's Domain row stays and `read` lists the department's reading, any extra scope showing as `domAdd` (hollow marks). Every unit has `topic` (relationships, character, wellbeing, nature, scitech, heritage, arts, society, global) and an evidence quote with file and `## Page` of the Markdown transcription. `enrich.py` applies it (`domSrc` "guide" for CL and TL).
+- The TL Syllabus 2021 (p. 17) names six domains for choosing themes: நான், குடும்பம், பள்ளி, சமூகம், நாடு, உலகம்.
+- Films draw each unit as a span across all its domains; Reach and Topic filters match any domain or topic a unit carries. G3 summaries in `glanceG3` were rewritten from the new codes.
+- Known judgement calls to review with the language teams: nation coded unevenly across courses for the same TL unit (e.g. 1A U2, 2A U4, 3 U1); CL 关爱动物 world vs nation; CL G3/HCL Sec 3 U2 coded from its texts (tea, street dance) rather than its stated theme 健康生活.
+- Teacher guides as Markdown live on the drive (`CPDD resources (2021 Syllabus)/_Markdown/`, offline only); the Tamil PDFs were repaired by learning AnjalInaiMathi glyph codes from Word/PDF pairs.
