@@ -649,6 +649,23 @@ table.tgrid li:has(>.tsk){list-style:none;margin-left:-16px}
 .pagectl .seg:has(.catbtn){flex-direction:row;flex-wrap:wrap}.pagectl .seg:has(.catbtn) .lab{flex-basis:100%}.pagectl .catbtn{font-size:12px;padding:3px 8px}
 @media (max-width:900px){.shell:has(#pageCtl:not(:empty)){grid-template-columns:minmax(0,1fr)}}
 .dthm{margin:24px 0}.dthm>summary{cursor:pointer;font-family:var(--f-d);font-size:20px;font-weight:650;padding:10px 0}
+/* 3 Nov 2026: one steady side panel on every page: fixed width, chip rows, no scroll bar, unused groups greyed */
+.shell,.shell:has(#sowLens:not([hidden])),.shell:has(#pageCtl:not(:empty)){grid-template-columns:264px minmax(0,1fr)}
+.side{scrollbar-width:none}.side::-webkit-scrollbar{display:none}
+.side .seg{flex-direction:row;flex-wrap:wrap;align-items:flex-start;gap:4px}.side .seg .lab,.side .seg .sub,.side .seg .hint{flex-basis:100%}
+.side .seg button{text-align:center;padding:5px 10px;font-size:12.5px;line-height:1.3}
+.side .seg.off{opacity:.38}.side .seg.off button{pointer-events:none}.side .seg button:disabled{opacity:.4;cursor:not-allowed}
+.side .seg.skcomp button{font-size:12px;padding:4px 8px}
+@media (max-width:900px){.shell,.shell:has(#sowLens:not([hidden])),.shell:has(#pageCtl:not(:empty)){grid-template-columns:minmax(0,1fr)}}
+/* tighter, wider panel so every page's toggles fit without scrolling (3 Nov 2026) */
+.shell,.shell:has(#sowLens:not([hidden])),.shell:has(#pageCtl:not(:empty)){grid-template-columns:300px minmax(0,1fr)}
+.side{gap:10px;padding:10px 12px}.side .seg{gap:3px}.side .seg .lab{margin:0 0 1px}
+.side .seg button{padding:3px 8px;font-size:12px}.side .seg.tg button{padding:4px 2px}.side .seg.skcomp button{font-size:11.5px;padding:2px 6px}.side .seg .sub{margin:3px 0 0}
+.side .hint{display:none}.srows{gap:5px;padding-top:8px}.srows .lgrp{padding:5px 6px;gap:3px}.srows .lchip{padding:2px 7px 2px 4px}.srows button{font-size:11.5px}
+@media (max-width:900px){.shell,.shell:has(#sowLens:not([hidden])),.shell:has(#pageCtl:not(:empty)){grid-template-columns:minmax(0,1fr)}}
+.srows .lgrp{align-items:center}.srows .gl{width:auto;flex-basis:auto;margin:0 3px 0 0}.srows .gl:not(:first-child){margin-top:0}
+.srows .lchip{padding:2px 8px}.srows .lgrp.off{opacity:.38}.srows .lgrp.off button{pointer-events:none}
+.side #sowLens button.pre{flex:1 1 calc(33% - 3px);font-weight:500;font-size:11.5px}
 </style>
 
 <header class="site">
@@ -676,7 +693,7 @@ table.tgrid li:has(>.tsk){list-style:none;margin-left:-16px}
  <div class="eyebrow" id="heroEye"></div><h1 id="heroT"></h1><p class="lead" id="heroLead"></p>
  <div class="kp" id="heroPts"></div><p class="use" id="heroUse"></p>
 </div></section>
-<div class="inner shell"><aside class="side" id="side" aria-label="Filters"><div class="pagectl" id="pageCtl"></div><div class="seg tg2" id="sowLens"></div><div class="seg tg" id="langSeg"></div><div class="seg tg" id="crsSeg"></div><div class="seg" id="skV"></div><div class="seg" id="skP"></div><div class="seg" id="skS"></div><div class="seg" id="skL"></div><div class="seg skcomp" id="skC"></div><div class="seg tg" id="yearSeg"></div><div class="srows" id="sowRows"></div><div class="seg" id="fl"></div><div class="seg" id="fc"></div><div class="seg" id="fs"></div><div class="seg" id="fsrc"></div><div class="key" id="key"></div></aside><main id="view"></main></div>
+<div class="inner shell"><aside class="side" id="side" aria-label="Filters"><div class="seg tg2" id="sowLens"></div><div class="seg tg" id="langSeg"></div><div class="seg tg" id="crsSeg"></div><div class="seg" id="skV"></div><div class="seg" id="skP"></div><div class="seg" id="skS"></div><div class="seg" id="skL"></div><div class="seg skcomp" id="skC"></div><div class="seg tg" id="yearSeg"></div><div class="srows" id="sowRows"></div><div class="seg" id="fl"></div><div class="seg" id="fc"></div><div class="seg" id="fs"></div><div class="seg" id="fsrc"></div><div class="pagectl" id="pageCtl"></div><div class="key" id="key"></div></aside><main id="view"></main></div>
 <footer class="site"><div class="inner" id="foot"></div></footer>
 
 <script>
@@ -715,7 +732,12 @@ const UX=()=>(DATA.design&&DATA.design.ux)||{};
 DATA.ui.t_home={en:"Home",zh:"首页",ms:"Laman utama",ta:"முகப்பு"};
 DATA.ui.t_prog=DATA.ui.t_prog||{en:"Sec 1–4 progression",zh:"中一至中四进程",ms:"Perkembangan Menengah 1 hingga 4",ta:"உயர்நிலை 1 முதல் 4 வரை"};
 /* Three places (3 Nov 2026): plan a year, see Sec 1-4 progression, look things up. The third group is a drop-down menu. */
-const NAV=[["Plan",[["sow","t_sow"],["prog","t_prog"],["skills","t_skills"]]],["Reference",[["over","t_over"],["lang","t_lang"],["map","t_map"],["syl","t_syl"],["psle","t_psle"],["design","t_design"]],1]];
+const NAV=[["Plan",[["sow","t_sow"],["prog","t_prog"],["skills","t_skills"]]],["Reference",[["lang","t_lang"],["syl","t_syl"],["design","t_design"]],1]];
+/* Reference merged (3 Nov 2026): Overview + By language = Languages; Syllabus map + PSLE to SEC = Syllabus and exams; Course map is a view of Skills at a glance; Unit themes is in Pedagogical design */
+DATA.ui.t_lang.en="Languages";DATA.ui.t_syl.en="Syllabus and exams";
+{const A=(DATA.design||{}).about||{};if(A.lang&&A.over)A.lang={what:"The common frame first: under SEC 2027, CL, ML and TL share the same three papers and weights, so the department can plan once. Then one language in depth: its papers for each course, which strands its units teach and when, and how its guides work.",points:[...(A.over.points||[]),...(A.lang.points||[])],use:A.lang.use||A.over.use||""};if(A.syl)A.syl={...A.syl,what:"How each strand lines up with the MTL Syllabus 2021 and each language's syllabus outcomes, then what SEAB asks at PSLE and in the SEC 2027 papers, course by course, so you can see the gap each course closes."}}
+const TABMAP={over:"lang",psle:"syl",theme:"design"};
+function normTab(){if(st.tab==="map"){st.tab="skills";st.kv="map"}if(TABMAP[st.tab]){if(st.tab==="theme")st.dthm=1;st.tab=TABMAP[st.tab]}if(st.tab==="skills"&&st.lang!=="CL"&&!["write","map"].includes(st.kv))st.kv="map"}
 function controls(){
  const tb=([k,l,u])=>u?`<a class="lnk" href="${esc(u)}">${esc(Tm(l))} ↗</a>`:`<button data-tab="${k}" aria-pressed="${st.tab===k}">${esc(Tm(l))}</button>`;
  $("#tabs").innerHTML=NAV.map(([g,ts,menu])=>{const cur=ts.find(([k])=>k===st.tab);return `<span class="grp"><span class="gl">${esc(g)}</span><span class="btns">${menu?`<details class="refm"><summary aria-pressed="${!!cur}">${esc(cur?Tm(cur[1]):isEL()?"Look things up":g)} ▾</summary><div class="menu">${ts.map(tb).join("")}</div></details>`:ts.map(tb).join("")}</span></span>`}).join("");
@@ -725,23 +747,25 @@ function controls(){
  const sw_=st.tab==="sow";/* compact toggles (3 Nov 2026); multi-select on the SOW tab */
  $("#langSeg").innerHTML=`<span class="lab">${esc(Tm("language"))}</span>`+["CL","ML","TL"].map(L=>`<button class="lgb ${L}" ${sw_?"data-sowl":"data-lang"}="${L}" aria-pressed="${sw_?st.sowL.includes(L):st.lang===L}" title="${esc(DATA.langName[L])}">${L}</button>`).join("");
  $("#crsSeg").innerHTML=`<span class="lab">${esc(Tm("course"))}</span>`+["G1","G2","G3","H"].map(c=>`<button ${sw_?"data-sowc":"data-crs"}="${c}" aria-pressed="${sw_?st.sowC.includes(c):st.crs===c}" title="${esc(c==="H"?"Higher MTL":DATA.courseEn[c])}">${c==="H"?"HMT":c}</button>`).join("");
- $("#crsSeg").hidden=!["map","sow","write","skills"].includes(st.tab)||(st.tab==="map"&&st.mlay==="side")||(st.tab==="skills"&&st.kv==="fam"&&st.klay!=="one");$("#langSeg").hidden=["prog","design","home"].includes(st.tab)||(st.tab==="theme"&&st.tlay==="side")||(st.tab==="map"&&st.mlay==="side");
+ /* steady panel (3 Nov 2026): a page's groups stay put; one that doesn't apply to the current view is greyed out, not removed */
+ const off=(id,c)=>{$(id).classList.toggle("off",!!c);$(id).setAttribute("aria-disabled",c?"true":"false")},mside=st.tab==="skills"&&st.kv==="map"&&st.mlay==="side";
+ $("#crsSeg").hidden=!["sow","skills"].includes(st.tab);off("#crsSeg",mside||(st.tab==="skills"&&st.kv==="fam"&&st.klay!=="one"));$("#langSeg").hidden=["prog","design","home"].includes(st.tab);off("#langSeg",mside);
  const sseg=(id,lab,cur,opts,attr)=>{$(id).innerHTML=`<span class="lab">${esc(lab)}</span>`+opts.map(([v,l])=>`<button ${attr}="${esc(v)}" aria-pressed="${String(cur)===String(v)}">${esc(l)}</button>`).join("")};
  $("#yearSeg").innerHTML=`<span class="lab">${esc(Tm("year"))}</span>`+[1,2,3,4].map(s=>`<button data-sows="${s}" aria-pressed="${st.sowS.includes(s)}" title="${esc(secName(s,st.lang))}">S${s}</button>`).join("")+`<span class="hint">Click to add or remove. Any mix of languages, courses and years works.</span>`;$("#yearSeg").hidden=!sw_;
- $("#sowLens").hidden=$("#sowRows").hidden=!sw_;if(sw_){const cur=sowLens(),cl=SLENS.find(x=>x[0]===cur);$("#sowLens").innerHTML=`<span class="lab">Lens</span>`+SLENS.map(([k,l])=>`<button data-slens="${k}" aria-pressed="${cur===k}">${esc(l)}</button>`).join("")+`<span class="hint">${esc(cl?cl[3]:"Your own choice of rows.")}</span>`;$("#sowRows").innerHTML=sowRowsSide()}else $("#sowLens").innerHTML=$("#sowRows").innerHTML="";
+ $("#sowLens").hidden=$("#sowRows").hidden=!sw_;if(sw_){const cur=sowLens(),cl=SLENS.find(x=>x[0]===cur);const on_=PROWS(),pre=PPRESET.find(p=>p[2].length===on_.length&&p[2].every(k=>on_.includes(k)));$("#sowLens").innerHTML=`<span class="lab">Lens</span>`+SLENS.map(([k,l])=>`<button data-slens="${k}" aria-pressed="${cur===k}">${esc(l)}</button>`).join("")+PPRESET.map(([k,l])=>`<button class="pre" data-preset="${k}" aria-pressed="${!!(pre&&pre[0]===k)}">${esc(k==="assess"?"Assessment":l)}</button>`).join("")+`<span class="hint">${esc(cl?cl[3]:"Your own choice of rows.")}</span>`;$("#sowRows").innerHTML=sowRowsSide()}else $("#sowLens").innerHTML=$("#sowRows").innerHTML="";
  const roads=st.tab==="prog",cnm=c=>c==="H"?"HMT":DATA.courseEn[c];
  sseg("#fl",Tm("language"),st.sL,[["All",Tm("allx")],["CL","CL"],["ML","ML"],["TL","TL"]],"data-sl");sseg("#fc",Tm("course"),st.sC,[["All",Tm("allx")],...["G1","G2","G3","H"].map(c=>[c,cnm(c)])],"data-sc");sseg("#fs",Tm("year"),String(st.sS),[["All",Tm("allx")],...[1,2,3,4].map(n=>[String(n),secName(n,st.lang)])],"data-ss");const SX=UX().src||{};sseg("#fsrc",SX.label||"Source",st.src,[["all","CPDD + inferred"],["cpdd",st.lens==="ibl"?"CPDD-tagged only":"CPDD-tagged or derived"],["infer","Inferred only"]],"data-src");
  ["#fl","#fc","#fs","#fsrc"].forEach(id=>$(id).hidden=!roads);
  /* Skills at a glance: its toggles live in the sidebar so they stay in reach while scrolling the table */
- const sk=st.tab==="skills"&&st.lang==="CL",el=isEL(),fam=st.kv==="fam",Cc=(SKD.comp||{})[st.crs];
- sseg("#skV",el?"View":"视图",st.kv==="write"?"write":fam?"fam":"comp",[["comp",el?"By exam component":"按考试部分"],["fam",el?"By skill family":"按技能类别"],["write",el?"Writing task bank":"完整写作题库"]],"data-kv");
- sseg("#skP",el?"Evidence":"依据",st.kp!==false?1:0,[[1,el?"Include lesson notes":"含教学说明"],[0,el?"Focus and objectives only":"只看重点与目标"]],"data-kp");
- sseg("#skS",el?"Section":"板块",st.ks||"all",[["all",el?"All sections":"全部"],["写",el?"Writing only":"写作"],["读",el?"Reading only":"阅读"],["说",el?"Speaking only":"听说"]],"data-ks");
+ const sk=st.tab==="skills"&&st.lang==="CL",cmp_=!["write","fam","map"].includes(st.kv),el=isEL(),fam=st.kv==="fam",Cc=(SKD.comp||{})[st.crs];
+ sseg("#skV",el?"View":"视图",["write","map"].includes(st.kv)?st.kv:fam?"fam":"comp",[["comp",el?"By exam component":"按考试部分"],["fam",el?"By skill family":"按技能类别"],["write",el?"Writing task bank":"完整写作题库"],["map",el?"Course map (CL, ML, TL)":"课程地图"]],"data-kv");if(st.lang!=="CL")$("#skV").querySelectorAll('[data-kv="comp"],[data-kv="fam"]').forEach(b=>{b.disabled=true;b.title="Chinese only for now"});
+ sseg("#skP",el?"Evidence":"依据",st.kp!==false?1:0,[[1,el?"With lesson notes":"含教学说明"],[0,el?"Focus and objectives":"只看重点与目标"]],"data-kp");
+ sseg("#skS",el?"Section":"板块",st.ks||"all",[["all",el?"All":"全部"],["写",el?"Writing":"写作"],["读",el?"Reading":"阅读"],["说",el?"Speaking":"听说"]],"data-ks");
  sseg("#skL",el?"Courses":"课程比较",st.klay!=="one"?"cmp":"one",[["cmp",el?"Compare the 4 courses":"四个课程对照"],["one",el?"One course":"单一课程"]],"data-klay");
- if(sk&&st.kv!=="write"&&!fam&&Cc){const on=(st.kparts||[]).filter(k=>Cc.some(P=>P.parts.some(x=>x.k===k)));$("#skC").innerHTML=`<span class="lab">${el?"Show":"显示部分"}</span><button data-kpart="__all" aria-pressed="${!on.length}">${el?"All components":"全部"}</button>`+Cc.map(P=>`<span class="sub">${esc(el?P.en:P.zh)}</span>`+P.parts.map(x=>`<button data-kpart="${x.k}" aria-pressed="${on.includes(x.k)}" lang="zh">${hx(x.zh)}</button>`).join("")).join("")}else $("#skC").innerHTML="";
- $("#skV").hidden=st.tab!=="skills";$("#skP").hidden=$("#skS").hidden=!sk||st.kv==="write";$("#skL").hidden=!(sk&&fam);$("#skC").hidden=!(sk&&st.kv!=="write"&&!fam&&Cc);
+ if(st.tab==="skills"&&Cc){const on=(st.kparts||[]).filter(k=>Cc.some(P=>P.parts.some(x=>x.k===k)));$("#skC").innerHTML=`<span class="lab">${el?"Show":"显示部分"}</span><button data-kpart="__all" aria-pressed="${!on.length}">${el?"All components":"全部"}</button>`+Cc.map(P=>`<span class="sub">${esc(el?P.en:P.zh)}</span>`+P.parts.map(x=>`<button data-kpart="${x.k}" aria-pressed="${on.includes(x.k)}" lang="zh">${hx(x.zh)}</button>`).join("")).join("")}else $("#skC").innerHTML="";
+ const skt=st.tab!=="skills";$("#skV").hidden=$("#skP").hidden=$("#skS").hidden=$("#skL").hidden=skt;$("#skC").hidden=skt||!Cc;off("#skP",!sk||["write","map"].includes(st.kv));off("#skS",!sk||["write","map"].includes(st.kv));off("#skL",!sk||!fam);off("#skC",!sk||!cmp_);
  const MX=UX().mode||{};$("#modeSeg").innerHTML=`<span class="lab">${esc(MX.label||Tm("display"))}</span>`+[["mtl",MX.mtl||"MTL",MX.mtlTip],["el",MX.el||"EL",MX.elTip]].map(([m,l,t])=>`<button data-mode="${m}" aria-pressed="${st.mode===m}"${t?` title="${esc(t)}"`:""}>${esc(l)}</button>`).join("");
- $("#key").hidden=!["over","lang","map","syl"].includes(st.tab);
+ $("#key").hidden=!["lang","syl"].includes(st.tab);
  $("#side").classList.toggle("empty",!document.querySelector("#side .seg:not([hidden]) button, #side .key:not([hidden]) .pill"));$("#key").innerHTML=["P1","P2","P3"].map(p=>`<span class="pill ${p}">${esc(pname(p))}</span>`).join("");
  document.querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>{st.lang=b.dataset.lang;render()});
  document.querySelectorAll("[data-crs]").forEach(b=>b.onclick=()=>{st.crs=b.dataset.crs;render()});
@@ -784,7 +808,7 @@ function vLang(){
  let lastP="";for(const s of SN){if(s.p!==lastP){h+=`<tr><td colspan="5" class="${s.p}" style="font-weight:600;font-size:12.5px">${esc(pname(s.p))}</td></tr>`;lastP=s.p}
   h+=`<tr><td><b>${esc(sname(s.k))}</b></td>${C.map(c=>`<td style="--c:var(--${s.p.toLowerCase()})">${ladderCell(L,c,s.k)}</td>`).join("")}</tr>`}
  h+=`</tbody></table></div></section>`;
- h+=`<section><h2>${esc(T("diff"))}</h2><div class="grid2">${(st.mode==="el"?DATA.diffEn:DATA.diff).map(d=>`<div class="card"><h3>${esc(d[0])}</h3><p style="margin:0;font-size:13.5px">${esc(d[{CL:1,ML:2,TL:3}[L]])}</p></div>`).join("")}</div></section>`;
+
  return h;
 }
 function item(r,k){
@@ -1159,10 +1183,9 @@ const PROWS=()=>{if(st.rowsLens){const m=SLENS.find(p=>p[0]===st.rowsLens);st.ro
 const sowLens=()=>{const on=PROWS(),m=SLENS.find(p=>p[2].length===on.length&&p[2].every(k=>on.includes(k)));return m?m[0]:"custom"};
 const LANE={act:["ibl","INQ","Inquiry"],e21:["e21","CAIT","E21CC"],dso:["e21","CAIT","E21CC"],sval:["e21","CAIT","E21CC"]};
 /* Row toggles live in the side panel (3 Nov 2026) so they stay in reach while scrolling the grid */
-function sowRowsSide(){const on=PROWS(),pre=PPRESET.find(p=>p[2].length===on.length&&p[2].every(k=>on.includes(k)));
- let h=`<span class="lab">Rows</span><div class="lgrp"><span class="gl">Presets</span>${PPRESET.map(([k,l])=>`<button class="psrc" data-preset="${k}" aria-pressed="${!!(pre&&pre[0]===k)}">${esc(l)}</button>`).join("")}</div>`;
- h+=PLAYERS.map(([g,xs])=>`<div class="lgrp"><span class="gl">${esc(g)}</span>${xs.map(([k,l])=>`<button class="lchip" data-row="${k}" aria-pressed="${on.includes(k)}"><i></i>${esc(l)}</button>`).join("")}</div>`).join("");
- if(["e21","dso","sval"].some(k=>on.includes(k)))h+=`<div class="lgrp"><span class="gl">E21CC focus</span>${PA.map(k=>`<button class="tag cat-${k} pa${st.pa.includes(k)?"":" off"}" data-pa="${k}" aria-pressed="${st.pa.includes(k)}">${esc(DATA.cat[k].en)}</button>`).join("")}<span class="gl">Tags</span>${[["all","CPDD + inferred"],["cpdd","CPDD only"],["infer","Inferred only"]].map(([v,l])=>`<button class="psrc" data-psrc="${v}" aria-pressed="${st.psrc===v}">${esc(l)}</button>`).join("")}</div>`;
+function sowRowsSide(){const on=PROWS(),GS={"BVSS 2027 approaches":"BVSS 2027","Assessment and calendar":"Assessment"},PS={PA_AT:"Adaptive",PA_IT:"Inventive",PA_CL:"Civic",PA_CM:"Communication"};
+ let h=`<span class="lab">Rows</span>`+PLAYERS.map(([g,xs])=>`<div class="lgrp"><span class="gl">${esc(GS[g]||g)}</span>${xs.map(([k,l])=>`<button class="lchip" data-row="${k}" aria-pressed="${on.includes(k)}">${esc(l)}</button>`).join("")}</div>`).join("");
+ h+=`<div class="lgrp${["e21","dso","sval"].some(k=>on.includes(k))?"":" off"}"><span class="gl">E21CC</span>${PA.map(k=>`<button class="tag cat-${k} pa${st.pa.includes(k)?"":" off"}" data-pa="${k}" aria-pressed="${st.pa.includes(k)}" title="${esc(DATA.cat[k].en)}">${esc(PS[k])}</button>`).join("")}<span class="gl">Tags</span>${[["all","CPDD + inferred"],["cpdd","CPDD only"],["infer","Inferred"]].map(([v,l])=>`<button class="psrc" data-psrc="${v}" aria-pressed="${st.psrc===v}">${esc(l)}</button>`).join("")}</div>`;
  return h}
 /* Row source notes name each language's own document ("TL … / ML …"); a grid shows only its own language's (3 Nov 2026) */
 const SRCL={units:{TL:"தொகுதி · பாட வேளை",ML:"Unit dan Komponen"},theme:{TL:"கருப்பொருள் · துணைக்கருப்பொருள்"},values:{ML:"Nilai Budaya / Arif Budiman · topic domain",CL:"topic domain",TL:"topic domain"},skills:{TL:"மொழித்திறன்கள்"},func:{ML:"Fungsi Bahasa"},lo:{TL:"கற்பித்தல் நோக்கங்கள்",ML:"Hasil Pembelajaran"},fw:{CL:"教师手册",ML:"Panduan Guru",TL:"ஆசிரியர் கையேடு"},oral:{CL:"听说",ML:"Bertutur / Interaksi Lisan",TL:"பேசுதல்"},listen:{CL:"听力理解",ML:"Mendengar dan Melihat",TL:"கேட்டல் கருத்தறிதல்"},act:{TL:"கற்பித்தல் நடவடிக்கைகள்",ML:"Pengalaman Pembelajaran"},res:{TL:"துணைக்கருவிகள்",ML:"Bahan Pengajaran"},assess:{ML:"Alat Penilaian dan Kriteria Kejayaan · 2026 standardisation",CL:"2026 standardisation",TL:"2026 standardisation"}};
@@ -1421,7 +1444,7 @@ function skPop(v){const [uid,k]=[v.slice(0,v.lastIndexOf("|")),v.slice(v.lastInd
 document.addEventListener("click",e=>{const b=e.target.closest("[data-skp]");if(b)skPop(b.dataset.skp)});
 function skKey(){const kp=st.kp!==false;return `<div class="skkey"><span><i class="skc1 t-f">写</i>Unit focus</span><span><i class="skc1 t-o">写</i>Lesson objective</span>${kp?`<span><i class="skc1 t-p">写</i>Lesson notes (questions, answers, teaching steps)</span>`:""}<span class="note">读 reading · 写 writing · 说 listening and speaking · 综 integrated task · 知 language knowledge. Hover for the guide's wording; click for every instance and its page.</span></div>`}
 function skBar(){const ks=st.ks||"all";return `<div class="rowbar">${skSeg(st.kv==="fam"?"fam":"comp",[["comp","By exam component"],["fam","By skill family"]],"data-kv")}${skSeg(st.kp!==false?1:0,[[1,"Include lesson notes"],[0,"Focus and objectives only"]],"data-kp")}${skSeg(ks,[["all","All sections"],["写","Writing only"],["读","Reading only"],["说","Speaking only"]],"data-ks")}</div>`}
-function vSkills(){const L=st.lang,el=isEL();if(st.kv==="write")return vWrite();
+function vSkills(){const L=st.lang,el=isEL();if(st.kv==="write")return vWrite();if(st.kv==="map")return vMap();
  if(L!=="CL")return `<section><h2>Skills at a glance</h2><p class="sub">Built for Chinese first, from the CPDD 教师手册. Malay and Tamil follow once the department has reviewed the Chinese layout. The <b>Writing task bank</b> view (left sidebar) already covers all three languages.</p><div class="rowbar"><div class="seg"><button type="button" data-lang2="CL">Show Chinese</button></div></div></section>`;
  return st.kv==="fam"?vSkFam():vSkComp()}
 function vSkComp(){const L=st.lang,c=st.crs,C=(SKD.comp||{})[c],cn=x=>x==="H"?"Higher CL":DATA.courseEn[x];
@@ -1462,12 +1485,12 @@ function sideCtl(){const pc=$("#pageCtl");pc.innerHTML="";const an=b=>[...b.attr
  document.querySelectorAll("#view .seg").forEach(s=>{if(s.closest("figure,dialog,table"))return;const bs=[...s.querySelectorAll("button")];const a=bs.length&&an(bs[0]);if(!a||!bs.some(b=>b.hasAttribute("aria-pressed")))return;const sl=s.parentElement.classList.contains("slicer")?s.parentElement:null;
   if(seen.has(a))s.remove();else{seen.add(a);if(bs.every(b=>b.textContent.trim().length<=5))s.classList.add("tg");pc.appendChild(s)}if(sl&&!sl.children.length)sl.remove()});
  $("#side").classList.toggle("empty",!document.querySelector("#side .seg:not([hidden]) button, #side .key:not([hidden]) .pill"))}
-function render(){
+function render(){normTab();
  try{document.documentElement.style.setProperty("--hh",document.querySelector("header.site").offsetHeight+"px")}catch(e){}
  document.documentElement.lang=st.mode==="el"?"en":ML_[st.lang];
  $("#h1").textContent=st.mode==="el"?DATA.ui.title.en:DATA.ui.title[ML_[st.lang]];
  controls();hero();
- $("#view").innerHTML=({home:vHome,over:vOverview,lang:vLang,design:()=>vDesign()+`<details class="dthm" id="dthemes"${st.dthm?" open":""}><summary>Unit themes, year by year · ${esc(st.crs==="H"?"HMT":DATA.courseEn[st.crs])}</summary>${vTheme(1)}</details>`,map:vMap,theme:vTheme,prog:vRoads,syl:vSyl,psle:vPsle,sow:vSow,skills:vSkills,write:vWrite}[st.tab])();
+ $("#view").innerHTML=({home:vHome,over:vOverview,lang:()=>vOverview()+vLang(),design:()=>vDesign()+`<details class="dthm" id="dthemes"${st.dthm?" open":""}><summary>Unit themes, year by year · ${esc(st.crs==="H"?"HMT":DATA.courseEn[st.crs])}</summary>${vTheme(1)}</details>`,map:vMap,theme:vTheme,prog:vRoads,syl:()=>vSyl()+vPsle(),psle:vPsle,sow:vSow,skills:vSkills,write:vWrite}[st.tab])();
  $("#foot").innerHTML=`<div class="fgrid"><div><div class="fb"><span class="mark" aria-hidden="true"><svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#1a4fa3"/><circle cx="28" cy="13" r="8" fill="#f5c400" opacity=".35"/><circle cx="28" cy="13" r="5" fill="#f5c400"/><path d="M0 31 C8 21 15 21 22 27 S34 24 40 20 V40 H0Z" fill="#1f9d55"/><path d="M0 35 C10 29 20 33 40 29 V40 H0Z" fill="#7fd09a"/></svg></span><b>MTL Skills Roadmap</b></div><p>${esc(st.mode==="el"?DATA.ui.sub.en:DATA.ui.sub[ML_[st.lang]])}</p><p class="fine">Maintained by the BVSS MTL Department · updated 31 October 2026</p></div>
  <div><h4>Sources</h4><p>CPDD teacher guides for the 2021 syllabus: ${st.mode==="el"?"CL Teacher's Guides; ML JATi Teacher's Guides (OPAL2); TL Teacher's Guides":"CL 《华文伴我行》教师手册; ML JATi Panduan Guru (OPAL2); TL தமிழருவி ஆசிரியர் கையேடு"}. MTL, CL, ML and TL Secondary Syllabuses 2021. SEAB SEC 2027 syllabuses (<a href="https://www.seab.gov.sg/secondary-education-certificate-sec/g3-syllabuses-for-school-candidates-2027/" target="_blank" rel="noopener">seab.gov.sg</a>).</p></div>
  <div><h4>References</h4><ul>${[["https://go.gov.sg/stp-kb3-chapter14","STP Knowledge Base: Inquiry-based Learning"],["https://file.go.gov.sg/stp-learning-orientations.pdf","STP Learning Orientations (PDF)"],["https://www.moe.gov.sg/education-in-sg/21st-century-competencies","MOE 21st Century Competencies"],["https://github.com/kaixinbuilds/mtl-skills-roadmap","Page source and update notes"]].map(([u,t])=>`<li>${ext(u,t)}</li>`).join("")}</ul></div></div><p class="fine">${esc(DATA.caveat)}</p>`;
