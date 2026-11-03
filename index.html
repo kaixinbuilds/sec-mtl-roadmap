@@ -475,6 +475,39 @@ table.tgrid thead th.tm{border-top:4px solid var(--tc)}.tm.t1{--tc:var(--y1)}.tm
 .skl .skc1{margin-right:8px}
 .skkey{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;margin:0 0 10px;font-size:13px}
 @media (max-width:640px){table.skgrid th.rh{width:78px;min-width:78px;padding:4px 6px}.skgrid th.rh small{display:none}.skgrid th.ch{padding:2px 4px}}
+
+/* 3 Nov 2026: lens switch, Reference menu, unit-chip badges, colour lanes, one unit pop-up */
+.lensbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.lensbar .lh{font-family:var(--f-m);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--b1);font-weight:600;margin-right:4px}
+.lensbar button{font:inherit;font-size:13.5px;font-weight:600;cursor:pointer;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:6px 14px;border-radius:999px}
+.lensbar button[aria-pressed="true"]{background:var(--b1);border-color:var(--b1);color:#fff}
+.lensbar .note{flex-basis:100%;margin:2px 0 0}
+section>.lensbar,#view>.lensbar{margin:0 0 14px;padding:10px 14px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.lcust>summary{cursor:pointer;font-size:12.5px;color:var(--muted)}
+.lcust[open]>summary{margin-bottom:8px}
+.lcust .lt{margin-bottom:8px}
+.refm{position:relative}
+.refm>summary{list-style:none;cursor:pointer;padding:10px 8px 9px;color:var(--muted);font-size:14px;font-weight:500;border-bottom:2px solid transparent;white-space:nowrap}
+.refm>summary::-webkit-details-marker{display:none}
+.refm>summary[aria-pressed="true"]{color:var(--b1);font-weight:600;border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--b1),var(--g1),var(--yl)) 1}
+.refm>summary:hover{color:var(--b1)}
+.refm .menu{position:fixed;z-index:60;min-width:200px;display:flex;flex-direction:column;padding:6px;background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 28px -12px rgba(0,0,0,.3)}
+.tabs .refm .menu button{text-align:left;border-bottom:0!important;border-image:none!important;padding:7px 10px!important;border-radius:6px!important}
+.tabs .refm .menu button[aria-pressed="true"]{background:var(--soft)!important}
+.ubs{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-top:4px}
+.ub{font-family:var(--f-m);font-size:9.5px;letter-spacing:.04em;text-transform:uppercase;padding:1px 6px;border-radius:4px;background:color-mix(in srgb,var(--k) 16%,transparent);color:var(--ink);border-left:3px solid var(--k)}
+.ub.off{background:transparent;border:1px dashed var(--k);border-left-width:3px}
+.ud{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--k)}
+tr.ln>th.rh{border-left:4px solid var(--k)}
+tr.ln[data-ln]>th.rh::after{content:attr(data-ln);display:block;margin-top:3px;font-family:var(--f-m);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--k);font-weight:600}
+.pnav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px;position:sticky;top:-1px;z-index:2;background:var(--paper);padding:6px 0}
+.pnav button{font:inherit;font-size:12.5px;cursor:pointer;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:4px 11px;border-radius:999px}
+.pnav .pj-ibl{border-left:4px solid #c0392b}.pnav .pj-e21{border-left:4px solid #6a4fb0}
+.psec{border-top:1px solid var(--line);padding:4px 0}
+.psec>summary{cursor:pointer;font-weight:700;font-size:15px;padding:8px 0}
+.psec.ps-ibl>summary{color:#c0392b}.psec.ps-e21>summary{color:#6a4fb0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .psec.ps-ibl>summary{color:#f08273}:root:not([data-theme="light"]) .psec.ps-e21>summary{color:#a994ec}}
+:root[data-theme="dark"] .psec.ps-ibl>summary{color:#f08273}:root[data-theme="dark"] .psec.ps-e21>summary{color:#a994ec}
 </style>
 
 <header class="site">
@@ -513,12 +546,12 @@ const NONEN=/[\u3400-\u9fff\u0b80-\u0bff]/;window.__miss=new Set();
 const enOf=s=>{const e=(DATA.en||{})[s];if(e!=null)return e;if(!/^(CL|ML|TL)\|/.test(s)&&(NONEN.test(s)||(window.__MSR&&window.__MSR.test(s))))window.__miss.add(s);return null};
 const esc=s=>{s=String(s??"");if(typeof st!=="undefined"&&st.mode==="el"&&s){const e=enOf(s);if(e!=null)s=e}return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));}
 const ML_={CL:"zh",ML:"ms",TL:"ta"};
-let st={tab:"sow",rows:null,pa:["PA_AT","PA_IT","PA_CL","PA_CM"],psrc:"all",lang:"CL",crs:"G3",mode:"el",mdet:"sum",lens:"c21",sL:"All",sC:"All",cats:[],src:"all",dlay:"lang",dsec:"All",ssec:1};
-const TABS=["over","lang","design","map","theme","syl","psle","c21","ibl","pri","sow","skills","write"];
+let st={tab:"sow",rows:null,pa:["PA_AT","PA_IT","PA_CL","PA_CM"],psrc:"all",lang:"CL",crs:"G3",mode:"el",mdet:"sum",lens:"all",sL:"All",sC:"All",cats:[],src:"all",dlay:"lang",dsec:"All",ssec:1};
+const TABS=["over","lang","design","map","theme","syl","psle","prog","sow","skills","write"];
 try{Object.assign(st,JSON.parse(localStorage.getItem("mtlrm2")||"{}"))}catch(e){}
-if(st.mode!=="mtl"&&st.mode!=="el")st.mode="el";if(!["c21","ibl"].includes(st.lens))st.lens="c21";if(st.tab==="roads")st.tab="c21";if(!TABS.includes(st.tab))st.tab="over";if(![0,1,2,3,4].includes(st.ssec))st.ssec=1;if(!Array.isArray(st.rows))st.rows=null;if(!Array.isArray(st.pa))st.pa=["PA_AT","PA_IT","PA_CL","PA_CM"];if(!["all","cpdd","infer"].includes(st.psrc))st.psrc="all";if(!location.hash)st.tab="sow";if(!["All","CL","ML","TL"].includes(st.sL))st.sL="All";if(!["All","G1","G2","G3","H"].includes(st.sC))st.sC="All";if(!Array.isArray(st.cats))st.cats=[];if(!["grid","side"].includes(st.lay))st.lay="grid";if(!["grid","side"].includes(st.tlay))st.tlay="grid";if(!["grid","side"].includes(st.mlay))st.mlay="grid";if(!["sum","full"].includes(st.mdet))st.mdet="sum";if(!["All",1,2,3,4].includes(st.sS))st.sS="All";
-function parseHash(){const raw=location.hash.slice(1);if(!raw)return;const [path,q]=raw.split("?");const h=path.split("-");if(TABS.includes(h[0]))st.tab=h[0];if(st.tab==="write"){st.tab="skills";st.kv="write"}/* the writing task bank now lives in 技能一览 */if(["CL","ML","TL"].includes(h[1]))st.lang=h[1];if(["G1","G2","G3","H"].includes(h[2]))st.crs=h[2];
- if(q){const p=new URLSearchParams(q);const l=p.get("l"),c=p.get("c"),s=p.get("s"),src=p.get("src"),cats=p.get("cats");if(["All","CL","ML","TL"].includes(l))st.sL=l;if(["All","G1","G2","G3","H"].includes(c))st.sC=c;if(s==="All")st.sS="All";else if(["1","2","3","4"].includes(s)){st.sS=+s;st.ssec=+s}if(["all","cpdd","infer"].includes(src))st.src=src;if(cats!==null)st.cats=cats?cats.split(","):[];if(s==="0")st.ssec=0;const rw=p.get("rows"),pa=p.get("pa"),ps=p.get("psrc");if(rw!==null)st.rows=rw?rw.split(","):[];if(pa!==null)st.pa=pa?pa.split(","):[];if(["all","cpdd","infer"].includes(ps))st.psrc=ps}}
+if(st.mode!=="mtl"&&st.mode!=="el")st.mode="el";if(["c21","pri"].includes(st.lens))st.lens="e21";if(!["all","ibl","e21"].includes(st.lens))st.lens="all";if(["roads","c21","ibl","pri"].includes(st.tab)){st.lens=st.tab==="ibl"?"ibl":"e21";st.tab="prog"}/* the three 2027 roadmaps are now one Sec 1-4 progression tab (3 Nov 2026) */if(!TABS.includes(st.tab))st.tab="over";if(![0,1,2,3,4].includes(st.ssec))st.ssec=1;if(!Array.isArray(st.rows))st.rows=null;if(!Array.isArray(st.pa))st.pa=["PA_AT","PA_IT","PA_CL","PA_CM"];if(!["all","cpdd","infer"].includes(st.psrc))st.psrc="all";if(!location.hash)st.tab="sow";if(!["All","CL","ML","TL"].includes(st.sL))st.sL="All";if(!["All","G1","G2","G3","H"].includes(st.sC))st.sC="All";if(!Array.isArray(st.cats))st.cats=[];if(!["grid","side"].includes(st.lay))st.lay="grid";if(!["grid","side"].includes(st.tlay))st.tlay="grid";if(!["grid","side"].includes(st.mlay))st.mlay="grid";if(!["sum","full"].includes(st.mdet))st.mdet="sum";if(!["All",1,2,3,4].includes(st.sS))st.sS="All";
+function parseHash(){const raw=location.hash.slice(1);if(!raw)return;const [path,q]=raw.split("?");const h=path.split("-");if(TABS.includes(h[0]))st.tab=h[0];if(["roads","c21","ibl","pri"].includes(h[0])){st.tab="prog";st.lens=h[0]==="ibl"?"ibl":"e21"}if(st.tab==="write"){st.tab="skills";st.kv="write"}/* the writing task bank now lives in 技能一览 */if(["CL","ML","TL"].includes(h[1]))st.lang=h[1];if(["G1","G2","G3","H"].includes(h[2]))st.crs=h[2];
+ if(q){const p=new URLSearchParams(q);const l=p.get("l"),c=p.get("c"),s=p.get("s"),src=p.get("src"),cats=p.get("cats");if(["All","CL","ML","TL"].includes(l))st.sL=l;if(["All","G1","G2","G3","H"].includes(c))st.sC=c;if(s==="All")st.sS="All";else if(["1","2","3","4"].includes(s)){st.sS=+s;st.ssec=+s}if(["all","cpdd","infer"].includes(src))st.src=src;if(cats!==null)st.cats=cats?cats.split(","):[];const ln=p.get("lens");if(["all","ibl","e21"].includes(ln))st.lens=ln;if(s==="0")st.ssec=0;const rw=p.get("rows"),pa=p.get("pa"),ps=p.get("psrc");if(rw!==null)st.rows=rw?rw.split(","):[];if(pa!==null)st.pa=pa?pa.split(","):[];if(["all","cpdd","infer"].includes(ps))st.psrc=ps}}
 parseHash();
 const lc=()=>st.mode==="el"?"en":ML_[st.lang];
 const T=k=>{const u=DATA.ui[k];if(!u)return k;return st.mode==="el"?u.en:u[ML_[st.lang]]};
@@ -534,18 +567,22 @@ const two=(m,e,L)=>{const la=ML_[L||st.lang];if(st.mode==="el")return `<span>${e
 const pur=(p,L)=>{if(!p)return"";const d=DATA.purpose[p];if(st.mode==="el"||!d)return p;return d[ML_[L||st.lang]]||p};
 
 const UX=()=>(DATA.design&&DATA.design.ux)||{};
-const NAV=[["Planner",[["sow","t_sow"],["skills","t_skills"]]],["Curriculum & exam",[["over","t_over"],["lang","t_lang"],["map","t_map"],["theme","t_theme"],["syl","t_syl"],["psle","t_psle"]]],["Pedagogy",[["design","t_design"]]],["2027 school approaches",[["c21","t_c21r"],["ibl","t_iblr"],["pri","t_pri"]]]];
+DATA.ui.t_prog=DATA.ui.t_prog||{en:"Sec 1–4 progression",zh:"中一至中四进程",ms:"Perkembangan Menengah 1 hingga 4",ta:"உயர்நிலை 1 முதல் 4 வரை"};
+/* Three places (3 Nov 2026): plan a year, see Sec 1-4 progression, look things up. The third group is a drop-down menu. */
+const NAV=[["Plan",[["sow","t_sow"],["prog","t_prog"],["skills","t_skills"]]],["Reference",[["over","t_over"],["lang","t_lang"],["map","t_map"],["theme","t_theme"],["syl","t_syl"],["psle","t_psle"],["design","t_design"]],1]];
 function controls(){
- $("#tabs").innerHTML=NAV.map(([g,ts])=>`<span class="grp"><span class="gl">${esc(g)}</span><span class="btns">${ts.map(([k,l,u])=>u?`<a class="lnk" href="${esc(u)}">${esc(Tm(l))} ↗</a>`:`<button data-tab="${k}" aria-pressed="${st.tab===k}">${esc(Tm(l))}</button>`).join("")}</span></span>`).join("");
+ const tb=([k,l,u])=>u?`<a class="lnk" href="${esc(u)}">${esc(Tm(l))} ↗</a>`:`<button data-tab="${k}" aria-pressed="${st.tab===k}">${esc(Tm(l))}</button>`;
+ $("#tabs").innerHTML=NAV.map(([g,ts,menu])=>{const cur=ts.find(([k])=>k===st.tab);return `<span class="grp"><span class="gl">${esc(g)}</span><span class="btns">${menu?`<details class="refm"><summary aria-pressed="${!!cur}">${esc(cur?Tm(cur[1]):isEL()?"Look things up":g)} ▾</summary><div class="menu">${ts.map(tb).join("")}</div></details>`:ts.map(tb).join("")}</span></span>`}).join("");
+ document.querySelectorAll("details.refm").forEach(m=>m.ontoggle=()=>{if(m.open){const r=m.querySelector("summary").getBoundingClientRect(),x=m.querySelector(".menu");x.style.top=r.bottom+"px";x.style.left=Math.max(8,Math.min(r.left,innerWidth-230))+"px"}});/* the nav scrolls sideways, so the menu is fixed, placed under its summary */
  $("#navSel").innerHTML=NAV.map(([g,ts])=>`<optgroup label="${esc(g)}">${ts.map(([k,l,u])=>`<option value="${u?"url:"+esc(u):k}"${st.tab===k?" selected":""}>${esc(Tm(l))}${u?" ↗":""}</option>`).join("")}</optgroup>`).join("");
  $("#navSel").onchange=e=>{const v=e.target.value;if(v.startsWith("url:"))location.href=v.slice(4);else{st.tab=v;render();scrollTo({top:0})}};
  $("#langSeg").innerHTML=`<span class="lab">${esc(Tm("language"))}</span>`+["CL","ML","TL"].map(L=>`<button data-lang="${L}" aria-pressed="${st.lang===L}">${st.mode==="el"?{CL:"Chinese · CL",ML:"Malay · ML",TL:"Tamil · TL"}[L]:{CL:"华文 CL",ML:"Melayu ML",TL:"தமிழ் TL"}[L]}</button>`).join("");
  $("#crsSeg").innerHTML=`<span class="lab">${esc(Tm("course"))}</span>`+["G1","G2","G3","H"].map(c=>`<button data-crs="${c}" aria-pressed="${st.crs===c}">${esc(c==="H"?"HMT":DATA.courseEn[c])}</button>`).join("");
- $("#crsSeg").hidden=!["map","sow","write","skills"].includes(st.tab)||(st.tab==="map"&&st.mlay==="side")||(st.tab==="skills"&&st.kv==="fam"&&st.klay!=="one");$("#langSeg").hidden=["c21","ibl","pri","design"].includes(st.tab)||(st.tab==="theme"&&st.tlay==="side")||(st.tab==="map"&&st.mlay==="side");
+ $("#crsSeg").hidden=!["map","sow","write","skills"].includes(st.tab)||(st.tab==="map"&&st.mlay==="side")||(st.tab==="skills"&&st.kv==="fam"&&st.klay!=="one");$("#langSeg").hidden=["prog","design"].includes(st.tab)||(st.tab==="theme"&&st.tlay==="side")||(st.tab==="map"&&st.mlay==="side");
  const sseg=(id,lab,cur,opts,attr)=>{$(id).innerHTML=`<span class="lab">${esc(lab)}</span>`+opts.map(([v,l])=>`<button ${attr}="${esc(v)}" aria-pressed="${String(cur)===String(v)}">${esc(l)}</button>`).join("")};
  sseg("#yearSeg",Tm("year"),st.ssec,[...[1,2,3,4].map(s=>[s,secName(s,st.lang)]),[0,isEL()?"All four years":Tm("allx")]],"data-ssec");$("#yearSeg").hidden=st.tab!=="sow";
- const roads=["c21","ibl","pri"].includes(st.tab),cnm=c=>c==="H"?"HMT":DATA.courseEn[c];
- sseg("#fl",Tm("language"),st.sL,[["All",Tm("allx")],["CL","CL"],["ML","ML"],["TL","TL"]],"data-sl");sseg("#fc",Tm("course"),st.sC,[["All",Tm("allx")],...["G1","G2","G3","H"].map(c=>[c,cnm(c)])],"data-sc");sseg("#fs",Tm("year"),String(st.sS),[["All",Tm("allx")],...[1,2,3,4].map(n=>[String(n),secName(n,st.lang)])],"data-ss");const SX=UX().src||{};sseg("#fsrc",SX.label||"Source",st.src,(st.tab==="pri"?SX.pri:SX.other)||[["all","CPDD + inferred"],["cpdd","CPDD-tagged only"],["infer","Inferred only"]],"data-src");
+ const roads=st.tab==="prog",cnm=c=>c==="H"?"HMT":DATA.courseEn[c];
+ sseg("#fl",Tm("language"),st.sL,[["All",Tm("allx")],["CL","CL"],["ML","ML"],["TL","TL"]],"data-sl");sseg("#fc",Tm("course"),st.sC,[["All",Tm("allx")],...["G1","G2","G3","H"].map(c=>[c,cnm(c)])],"data-sc");sseg("#fs",Tm("year"),String(st.sS),[["All",Tm("allx")],...[1,2,3,4].map(n=>[String(n),secName(n,st.lang)])],"data-ss");const SX=UX().src||{};sseg("#fsrc",SX.label||"Source",st.src,[["all","CPDD + inferred"],["cpdd",st.lens==="ibl"?"CPDD-tagged only":"CPDD-tagged or derived"],["infer","Inferred only"]],"data-src");
  ["#fl","#fc","#fs","#fsrc"].forEach(id=>$(id).hidden=!roads);
  /* Skills at a glance: its toggles live in the sidebar so they stay in reach while scrolling the table */
  const sk=st.tab==="skills"&&st.lang==="CL",el=isEL(),fam=st.kv==="fam",Cc=(SKD.comp||{})[st.crs];
@@ -558,7 +595,6 @@ function controls(){
  const MX=UX().mode||{};$("#modeSeg").innerHTML=`<span class="lab">${esc(MX.label||Tm("display"))}</span>`+[["mtl",MX.mtl||"MTL",MX.mtlTip],["el",MX.el||"EL",MX.elTip]].map(([m,l,t])=>`<button data-mode="${m}" aria-pressed="${st.mode===m}"${t?` title="${esc(t)}"`:""}>${esc(l)}</button>`).join("");
  $("#key").hidden=!["over","lang","map","syl"].includes(st.tab);
  $("#side").classList.toggle("empty",!document.querySelector("#side .seg:not([hidden]) button, #side .key:not([hidden]) .pill"));$("#key").innerHTML=["P1","P2","P3"].map(p=>`<span class="pill ${p}">${esc(pname(p))}</span>`).join("");
- document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=e=>{e.preventDefault();st.tab=b.dataset.tab;render();scrollTo({top:0})});
  document.querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>{st.lang=b.dataset.lang;render()});
  document.querySelectorAll("[data-crs]").forEach(b=>b.onclick=()=>{st.crs=b.dataset.crs;render()});
  document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{st.mode=b.dataset.mode;render()});
@@ -697,10 +733,17 @@ function vSyl(){
  h+=`<section><h2>${esc(st.mode==="el"?DATA.ui.clgoals.en:DATA.ui.clgoals[ML_[st.lang]])}</h2><div class="scroll"><table style="min-width:980px"><thead><tr><th style="width:170px">${esc(Tm("strand"))}</th>${["G1","G2","G3","H"].map(c=>`<th>${esc(crsName(c,"CL"))}</th>`).join("")}</tr></thead><tbody>`+Object.keys(DATA.clGoals).map(k=>`<tr><td><b>${esc(sname(k,"CL"))}</b></td>${["G1","G2","G3","H"].map(c=>`<td>${st.mode==="el"?esc(DATA.clGoalsEn[k][c]):`<span lang="${LG("zh")}">${esc(DATA.clGoals[k][c])}</span>`}</td>`).join("")}</tr>`).join("")+`</tbody></table></div></section>`;
  return h;
 }
+document.addEventListener("click",e=>{const b=e.target.closest("[data-tab]");if(!b)return;e.preventDefault();const d=b.closest("dialog");if(d)d.close();st.tab=b.dataset.tab;if(b.dataset.lensto){st.lens=b.dataset.lensto;st.cats=[]}render();scrollTo({top:0})});
+document.addEventListener("click",e=>{document.querySelectorAll("details.refm[open]").forEach(m=>{if(!m.contains(e.target))m.open=false})});
 function catName(k){const c=DATA.cat[k];if(st.mode==="el")return c.en;const L=st.sL==="All"?st.lang:st.sL;return c[ML_[L]]||c.en}
+/* Sec 1-4 progression: the former 21CC, Inquiry and E21CC-priority roadmaps in one tab with a lens (3 Nov 2026).
+   Everything = all three tag sets; Inquiry = ibl tags; E21CC = MOE 21CC tags + BVSS priority areas. */
+const LENS=[["all","Everything","Inquiry and E21CC together"],["ibl","Inquiry","Inquiry (IBL) tags and sketches"],["e21","E21CC","MOE 21CC tags, milestones and BVSS priority areas"]];
+const hasL=(x,l=st.lens)=>l==="all"||(x==="ibl"?l==="ibl":l==="e21");
+const lensKeys=(l=st.lens)=>Object.keys(DATA.cat).filter(k=>hasL(DATA.cat[k].lens,l));
+const lensFocus=()=>st.tab==="prog"?st.lens:st.tab==="sow"?sowLens():"core";
 function vRoads(){
- st.lens=st.tab;
- const keys=Object.keys(DATA.cat).filter(k=>DATA.cat[k].lens===st.lens);
+ const keys=lensKeys();
  const sel=st.cats.filter(k=>keys.includes(k));const act=sel.length?sel:keys;
  const Ls=st.sL==="All"?["CL","ML","TL"]:[st.sL];const Ss=st.sS==="All"?[1,2,3,4]:[st.sS];const Cs=st.sC==="All"?["G1","G2","G3","H"]:[st.sC];
  const cn=c=>c==="H"?"HMT":(st.mode==="el"?DATA.courseEn[c]:c);
@@ -711,9 +754,11 @@ function vRoads(){
   const t=st.mode==="el"?r.task_en:(r.task_m||r.task_en);if(t&&!u.tasks.some(x=>x[0]===t))u.tasks.push([t,r.lang]);}
  const units=[...U.values()];
  const seg=(lab,cur,opts,attr)=>`<div class="seg"><span class="lab">${esc(lab)}</span>${opts.map(([v,l])=>`<button ${attr}="${v}" aria-pressed="${cur===v}">${esc(l)}</button>`).join("")}</div>`;
- let h=`<section><h2>${esc(T(st.lens==="c21"?"t_c21r":st.lens==="ibl"?"t_iblr":"t_pri"))}</h2><p class="sub">${st.mode==="el"?(st.lens==="c21"?"Blue tags come from the CPDD teacher guides; amber tags are mapped from the task by the rules listed below. Slice by language, course, year, competency and source.":st.lens==="ibl"?"Blue tags are the inquiry tags in the CPDD teacher guides; amber tags mark tasks that are inquiry-shaped (students find out, plan, make or present) but not tagged by CPDD. Inquiry-based learning becomes a BVSS school approach from 2027.":DATA.priNote):""}</p>`;
+ const subs={ibl:"Blue tags are the inquiry tags in the CPDD teacher guides; amber tags mark tasks that are inquiry-shaped (students find out, plan, make or present) but not tagged by CPDD. Inquiry-based learning becomes a BVSS school approach from 2027.",c21:"Blue tags come from the CPDD teacher guides; amber tags are mapped from the task by the rules listed below. Under each 21CC tag are the E21CC developmental milestones (Level 3 for Sec 1 and 2, Level 4 for Sec 3 and 4).",pri:DATA.priNote};
+ let h=`<section><h2>${esc(Tm("t_prog"))} · ${esc((LENS.find(x=>x[0]===st.lens)||LENS[0])[1])}</h2><p class="sub">${st.mode==="el"?(st.lens==="all"?"Every unit where inquiry or the E21CC competencies have a place, Sec 1 to 4. Inquiry tags and E21CC tags keep their own colours, so the two approaches stay distinct on each card. Slice by language, course, year, tag and source.":["ibl","c21","pri"].filter(x=>hasL(x)).map(x=>subs[x]).join(" ")):""}</p>`;
  if(st.lens==="ibl")h=iblEssence()+h+stpCard();
- h+=`<div class="srckey"><b>Colour key</b><span class="sw src-cpdd"><i></i>Written into the CPDD teacher guide</span>${st.lens==="pri"?`<span class="sw src-derived"><i></i>Derived from a CPDD 21CC tag</span>`:""}<span class="sw src-infer"><i></i>Mapped by the department through reasoning</span>${st.lens==="ibl"?`<span class="note">Each card shows a sketch inquiry question; click for the full inquiry phases.</span>`:""}</div>`;
+ h=`<div class="lensbar" role="group" aria-label="Lens"><span class="lh">Lens</span>${LENS.map(([k,l,d])=>`<button data-lens="${k}" aria-pressed="${st.lens===k}" title="${esc(d)}">${esc(l)}</button>`).join("")}<span class="note">Core skills from Sec 1 to 4: <a href="#skills" data-tab="skills">Skills at a glance</a> · <a href="#map" data-tab="map">Course map</a>. One course and year, term by term: <a href="#sow" data-tab="sow">Scheme of work</a>.</span></div>`+h;
+ h+=`<div class="srckey"><b>Colour key</b><span class="sw src-cpdd"><i></i>Written into the CPDD teacher guide</span>${hasL("pri")?`<span class="sw src-derived"><i></i>Derived from a CPDD 21CC tag</span>`:""}<span class="sw src-infer"><i></i>Mapped by the department through reasoning</span>${hasL("ibl")?`<span class="note">Cards with an inquiry question have a department sketch; click any card for the whole unit.</span>`:""}</div>`;
  h+=`<div class="slicer">`
   +`<div class="seg"><span class="lab">${esc(Tm("tags"))}</span>${keys.map(k=>`<button class="catbtn cat-${k}" data-cat="${k}" aria-pressed="${sel.includes(k)}" title="${esc(DATA.cat[k].desc||"")}">${esc(catName(k))}</button>`).join("")}${sel.length?`<button data-cat="__clear">${esc(Tm("clear"))}</button>`:""}</div></div>`;
  // heat table: tag x (year x language)
@@ -723,7 +768,7 @@ function vRoads(){
   +act.map(k=>`<tr class="cat-${k}"><td><span class="tag">${esc(catName(k))}</span></td>${Ss.map(s=>Ls.map((L,i)=>{const n=cnt(k,s,L),c=cntC(k,s,L);return `<td class="num" title="${c} CPDD/derived + ${n-c} inferred" style="--a:${n/mx};${i===0?"border-left:1px solid var(--line)":""}"><span>${n?(st.src==="all"&&n!==c?`<b>${c}</b><small>+${n-c} inferred</small>`:n):"·"}</span></td>`}).join("")).join("")}</tr>`).join("")+`</tbody></table></div>`;
  // roadmap grid: rows = year x course, columns = languages
  const pvl={cpdd:"CPDD",derived:"derived",infer:"inferred"};const sbl={cpdd:"In CPDD guide",derived:"From a CPDD tag",infer:"Mapped by us"};const best=u=>{const v=Object.values(u.pv);return v.includes("cpdd")?"cpdd":v.includes("derived")?"derived":"infer"};const IX=(DATA.design&&DATA.design.iblx)||{};
- const card=u=>{const id=[u.r.lang,u.r.course,u.r.sec,u.r.book,u.r.unit].join("|"),b=best(u),sk=st.lens==="ibl"&&IX[id];return `<div class="ucard src-${b}" data-u="${esc(id)}" role="button" tabindex="0" aria-label="Show how this unit teaches it"><span class="sb">${sbl[b]}</span><span class="u">${esc(bk(u.r))} U${esc(u.r.unit)}</span><div>${[...u.cats].map(k=>`<span class="tag cat-${k} src-${u.pv[k]}${u.pv[k]==="cpdd"?"":" inf"}" title="${esc([...(u.why[k]||[])].join("; "))}">${esc(catName(k))}<span class="pv">${pvl[u.pv[k]]}</span></span>${["CAIT","CCIS","CGC"].includes(k)?ms21Chips(id,k,u.r.sec):""}`).join("")}</div><div><b>${two(u.r.theme_m,u.r.theme_en,u.r.lang)}</b></div>${u.tasks.slice(0,3).map(t=>`<div class="note">${st.mode==="el"?esc(t[0]):`<span lang="${LG(ML_[t[1]])}">${esc(t[0])}</span>`}</div>`).join("")}${sk?`<div class="iq"><b>Inquiry question</b>${esc(sk.q)}</div>${sk.lead?`<div class="note">Leads with ${esc((((DATA.sow||{}).vmv||{}).dso||[]).find(d=>d.k===sk.lead)?.dso||"")}</div>`:""}`:""}<div class="more">${sk?"Inquiry phases and details ›":"Details: how it is taught ›"}</div></div>`};
+ const card=u=>{const id=[u.r.lang,u.r.course,u.r.sec,u.r.book,u.r.unit].join("|"),b=best(u),sk=hasL("ibl")&&IX[id];return `<div class="ucard src-${b}" data-u="${esc(id)}" role="button" tabindex="0" aria-label="Show how this unit teaches it"><span class="sb">${sbl[b]}</span><span class="u">${esc(bk(u.r))} U${esc(u.r.unit)}</span><div>${[...u.cats].map(k=>`<span class="tag cat-${k} src-${u.pv[k]}${u.pv[k]==="cpdd"?"":" inf"}" title="${esc([...(u.why[k]||[])].join("; "))}">${esc(catName(k))}<span class="pv">${pvl[u.pv[k]]}</span></span>${["CAIT","CCIS","CGC"].includes(k)?ms21Chips(id,k,u.r.sec):""}`).join("")}</div><div><b>${two(u.r.theme_m,u.r.theme_en,u.r.lang)}</b></div>${u.tasks.slice(0,3).map(t=>`<div class="note">${st.mode==="el"?esc(t[0]):`<span lang="${LG(ML_[t[1]])}">${esc(t[0])}</span>`}</div>`).join("")}${sk?`<div class="iq"><b>Inquiry question</b>${esc(sk.q)}</div>${sk.lead?`<div class="note">Leads with ${esc((((DATA.sow||{}).vmv||{}).dso||[]).find(d=>d.k===sk.lead)?.dso||"")}</div>`:""}`:""}<div class="more">${sk?"Inquiry phases and the whole unit ›":"The whole unit ›"}</div></div>`};
  if(!units.length){h+=`<p class="note">${esc(Tm("none"))}</p>`}else{
  h+=`<div class="scroll"><table class="road"><thead><tr><th class="s"></th>${Ls.map(L=>`<th class="lc ${L}">${esc(X(DATA.langNameM[L],DATA.langName[L]))}</th>`).join("")}</tr></thead><tbody>`;
  for(const s of Ss){h+=`<tr class="band"><td colspan="${Ls.length+1}" style="background:var(--soft);font-weight:600;font-size:12.5px">${esc(secName(s,st.lang))}</td></tr>`;
@@ -731,9 +776,9 @@ function vRoads(){
   h+=`<tr><th class="s" scope="row">${esc(secName(s,st.lang))} · ${esc(cn(c))}</th>${Ls.map(L=>{const cell=row.filter(u=>u.r.lang===L);return `<td>${cell.length?cell.map(card).join(""):`<span class="empty">—</span>`}</td>`}).join("")}</tr>`}}
  h+=`</tbody></table></div>`}
  if(st.src!=="cpdd"){const rs=DATA.rules.filter(x=>x.cats.some(k=>keys.includes(k)));h+=`<details style="margin-top:12px"><summary class="note" style="cursor:pointer">How the inferred tags are assigned (${rs.length} rules; a heat cell shows the guide-tagged or derived count, then +n inferred)</summary><ul style="font-size:12.5px;margin:6px 0 0 18px">${rs.map(x=>`<li><b>${esc(x.id)}</b>: ${esc(x.why)} → ${x.cats.filter(k=>keys.includes(k)).map(k=>`<span class="tag cat-${k}">${esc(catName(k))}</span>`).join("")}</li>`).join("")}</ul><p class="note">Rules live in tools/enrich.py in the repo; edit a rule and rerun it to re-tag every unit.</p></details>`}
- h+=`<div class="grid2" style="margin-top:14px">`+Ls.map(L=>`<div class="card"><h3 class="lc ${L}">${L}</h3><p style="margin:0;font-size:13.5px">${esc(st.lens==="c21"?X(DATA.c21[L],DATA.c21En[L]):st.lens==="ibl"?X(DATA.iblTg[L],DATA.iblTgEn[L]):(DATA.c21En[L]+" Priority-area tags are therefore derived or inferred."))}</p></div>`).join("")+`</div><div class="rowbar" style="margin-top:14px"><button class="csvb" data-csv="roads">Download the current filter as CSV</button><span class="note">Tag counts describe the available documentation and the mapping; they do not measure teaching quality or competency attainment.</span></div></section>`;
- if(st.lens==="c21")h+=ms21Table();
- h+=planOf(st.lens);
+ h+=`<div class="grid2" style="margin-top:14px">`+Ls.map(L=>`<div class="card"><h3 class="lc ${L}">${L}</h3><p style="margin:0;font-size:13.5px">${[hasL("ibl")?esc(X(DATA.iblTg[L],DATA.iblTgEn[L])):"",hasL("c21")?esc(X(DATA.c21[L],DATA.c21En[L]))+(hasL("pri")?" Priority-area tags are derived from these or inferred.":""):""].filter(Boolean).join("<br><br>")}</p></div>`).join("")+`</div><div class="rowbar" style="margin-top:14px"><button class="csvb" data-csv="roads">Download the current filter as CSV</button><span class="note">Tag counts describe the available documentation and the mapping; they do not measure teaching quality or competency attainment.</span></div></section>`;
+ if(hasL("c21"))h+=ms21Table();
+ h+=planCards(["ibl","c21","pri"].filter(x=>hasL(x)).flatMap(k=>((UX().plan||{}).cards||{})[k]||[]));
  return h;
 }
 
@@ -756,7 +801,7 @@ const isEL=()=>st.mode==="el";
 const LG=l=>isEL()?"en":l;
 const tx=r=>isEL()?esc(r.task_en||r.sub_en):`<span lang="${LG(ML_[r.lang])}">${esc(r.task_m||r.sub_m||r.task_en)}</span>`;
 const lo=r=>isEL()?esc(r.sub_en):`<span lang="${LG(ML_[r.lang])}">${esc(r.sub_m||r.sub_en)}</span>`;
-const uLab=u=>`${bkE(u)?esc(bkE(u))+" ":""}U${esc(u.unit)}`;
+const uLab=u=>u.unit==="all"?"All units":`${bkE(u)?esc(bkE(u))+" ":""}U${esc(u.unit)}`;
 const lisKey=u=>u.lang==="TL"?`TL|${u.course}|${u.sec}|${(bkE(u)||"").slice(-1)}|${u.unit}`:uidOf(u);
 const tlU=u=>((SOW.tlUnits||{})[lisKey(u)])||null;
 const listenOf=u=>(((SOW.listen||{})[u.lang])||{})[lisKey(u)]||[];
@@ -773,7 +818,11 @@ const ms21Block=(id,k,sec)=>{const a=ms21Of(id,k),M=MSD(),lv=lvOf(sec);if(!a.len
 const ms21Table=()=>{const M=MSD();if(!M.goals)return "";const gs=Object.keys(M.goals);return `<details class="msref" style="margin-top:14px"><summary><b>E21CC developmental milestones, Level 3 and Level 4</b> <span class="note">(MOE, Learning Goals and Developmental Milestones for Emerging 21CC, 20 Oct 2023)</span></summary><div class="scroll"><table class="mst"><thead><tr><th>Competency</th><th>Learning goal</th><th>Level 3 · Lower Secondary</th><th>Level 4 · Upper Secondary to Pre-U</th></tr></thead><tbody>${gs.map(g=>`<tr class="cat-${g.startsWith("CCI")?"CCIS":g.split(" ")[0]}"><td>${esc(compOf(g))}</td><td><b>${esc(g)}</b> ${esc(M.goals[g])}</td><td>${msChips([g+".3"])} ${esc(M.ms[g+".3"]||"")}</td><td>${msChips([g+".4"])} ${esc(M.ms[g+".4"]||"")}</td></tr>`).join("")}</tbody></table></div><p class="note">Units in Sec 1 and 2 show Level 3 codes, Sec 3 and 4 show Level 4. Open a unit to see all four levels for each goal.</p></details>`};
 const leadLine=sk=>{const d=sk&&sk.lead&&vmvFor(sk.lead);return d?`<div class="lead21">Leads with <span class="tag cat-${d.k}">${esc(d.dso)}</span> <span class="note">${esc(d.value)} · reflect: ${esc(d.reflect||"")}</span></div>`:""};
 const msList=sk=>{const cs=[...new Set((sk&&sk.ms||[]).flat())].sort();if(!cs.length)return "";const M=MSD();return `<details class="msl"><summary>E21CC milestones in this inquiry (${cs.length})</summary><ul>${cs.map(c=>`<li>${msChips([c])} ${esc((M.goals||{})[c.replace(/\.\d$/,"")]||"")}: ${esc((M.ms||{})[c]||"")}</li>`).join("")}</ul><p class="why" style="margin:4px 0 0">Department reading of each phase against ${esc(M.source||"")}</p></details>`};
-function chip(u){const t=tlU(u);return `<button type="button" class="uchip" data-sow="${esc(uidOf(u))}"><b>${uLab(u)}</b>${two(u.theme_m,u.theme_en,u.lang)}${t&&t.periods?`<small>${esc(t.periods)} periods (CPDD)</small>`:""}</button>`}
+/* unit chip badges follow the rows on show: Inquiry when the inquiry row is on, E21CC priority dots when an E21CC row is on */
+function chip(u){const t=tlU(u),on=PROWS(),id=uidOf(u);let bd="";
+ if(on.includes("act")){if(IXS[id])bd+=`<span class="ub cat-INQ" title="Department inquiry sketch">Inquiry</span>`;else if(unitTags(unitRecs(u)).inq)bd+=`<span class="ub cat-INQ off" title="Inquiry-shaped task; no department sketch yet">Inquiry task</span>`}
+ if(["vmv","c21","e21"].some(k=>on.includes(k))){const {pv}=unitTags(unitRecs(u));bd+=PA.filter(k=>pv[k]&&st.pa.includes(k)&&(st.psrc==="all"||(st.psrc==="cpdd"?pv[k]!=="infer":pv[k]==="infer"))).map(k=>`<i class="ud cat-${k}" title="E21CC: ${esc(DATA.cat[k].en)} (${esc(pv[k])})"></i>`).join("")}
+ return `<button type="button" class="uchip" data-sow="${esc(id)}"><b>${uLab(u)}</b>${two(u.theme_m,u.theme_en,u.lang)}${t&&t.periods?`<small>${esc(t.periods)} periods (CPDD)</small>`:""}${bd?`<span class="ubs">${bd}</span>`:""}</button>`}
 function sowSlicers(){const seg=(lab,cur,opts,attr)=>`<div class="seg"><span class="lab">${esc(lab)}</span>${opts.map(([v,l])=>`<button type="button" class="${String(cur)===String(v)?"on":""}" ${attr}="${esc(v)}">${esc(l)}</button>`).join("")}</div>`;
  return `<div class="slicer">${seg(Tm("language"),st.lang,["CL","ML","TL"].map(L=>[L,DATA.langName[L]]),"data-lang2")}${seg(Tm("course"),st.crs,["G1","G2","G3","H"].map(c=>[c,c==="H"?"HMT":DATA.courseEn[c]]),"data-crs2")}${seg(Tm("year"),st.ssec,[1,2,3,4].map(s=>[s,secName(s,st.lang)]),"data-ssec")}</div>`}
 function vmvBand(L,c,s){const V=SOW.vmv||{};const us=unitsOf(L,c,s);const cnt={};us.forEach(u=>{const {pv}=unitTags(unitRecs(u));PA.forEach(k=>{if(pv[k])cnt[k]=(cnt[k]||0)+1})});const lv=s<=2?"lower":"upper";const ld={};us.forEach(u=>{const k=(IXS[uidOf(u)]||{}).lead;if(k)ld[k]=(ld[k]||0)+1});
@@ -819,21 +868,26 @@ function gridRows(L,c,s,T){const cal=(SOW.calendar||{}).terms||[];const E=DATA.e
 /* Planner (home): the SOW term grid with layer toggles, presets and E21CC slicers (31 Oct 2026) */
 const PLAYERS=[["Topics",[["units","Units"],["theme","Themes"],["values","Values and domains"]]],["Skills",[["skills","Language skills"],["lo","Learning outcomes"],["func","Language functions"],["oral","Oral"],["listen","Listening"]]],["Writing",[["fw","Functional writing"],["comp","Composition"],["wtypes","Writing types"]]],["2027 approaches",[["vmv","School vision and E21CC goals"],["act","Inquiry (IBL) and activities"],["c21","21CC tags"],["moe","21CC guide text"],["e21","BVSS E21CC"]]],["Assessment and calendar",[["assess","Assessment"],["align","Exam alignment"],["seab","SEAB syllabus"],["events","Events"],["res","Resources"]]]];
 const PALL=PLAYERS.flatMap(g=>g[1].map(x=>x[0]));
-const PPRESET=[["core","Planning core",["units","theme","values","skills","lo","fw","comp","wtypes","oral","listen","act","e21","assess"]],["topics","Topics and skills",["units","theme","values","skills","lo","oral","listen"]],["write","Writing",["units","fw","comp","wtypes","assess"]],["e21","IBL and E21CC",["units","theme","vmv","act","c21","e21"]],["assess","Assessment",["units","skills","assess","align","seab","events"]],["all","Everything",PALL]];
-const PROWS=()=>st.rows?PALL.filter(k=>st.rows.includes(k)):PPRESET[0][2];
-function plannerBar(){const on=PROWS(),pre=PPRESET.find(p=>p[2].length===on.length&&p[2].every(k=>on.includes(k)));const SX=UX().src||{};
- let h=`<div class="layers" role="group" aria-label="Show or hide rows"><div class="lt"><span class="lh">Show</span><div class="pre">${PPRESET.map(([k,l])=>`<button data-preset="${k}" aria-pressed="${pre&&pre[0]===k}">${esc(l)}</button>`).join("")}</div></div><div class="lg">`;
- h+=PLAYERS.map(([g,xs])=>`<div class="lgrp"><span class="gl">${esc(g)}</span>${xs.map(([k,l])=>`<button class="lchip" data-row="${k}" aria-pressed="${on.includes(k)}"><i></i>${esc(l)}</button>`).join("")}</div>`).join("")+`</div>`;
+/* The lens (3 Nov 2026): one switch for what the grid is about. Inquiry rows and E21CC rows keep their own colour lanes. */
+const SLENS=[["core","Core skills",["units","theme","values","skills","lo","fw","comp","wtypes","oral","listen","assess"],"Units, themes, language skills, writing, oral, listening and assessment."],["ibl","Inquiry",["units","theme","values","act"],"Where inquiry fits each unit: department sketches, CPDD inquiry tasks and the openings still free."],["e21","E21CC",["units","theme","vmv","c21","e21"],"The school vision and DSOs, the MOE 21CC tags in the guides and the BVSS E21CC focus, term by term."],["all","Everything",["units","theme","values","skills","lo","fw","comp","wtypes","oral","listen","act","vmv","c21","e21","assess"],"Core skills, inquiry and E21CC on one page, each in its own colour lane."]];
+const PPRESET=[["write","Writing",["units","fw","comp","wtypes","assess"]],["assess","Assessment and exam",["units","skills","assess","align","seab","events"]],["every","Every row",PALL]];
+const PROWS=()=>st.rows?PALL.filter(k=>st.rows.includes(k)):SLENS[3][2];
+const sowLens=()=>{const on=PROWS(),m=SLENS.find(p=>p[2].length===on.length&&p[2].every(k=>on.includes(k)));return m?m[0]:"custom"};
+const LANE={act:["ibl","INQ","Inquiry"],vmv:["e21","CAIT","E21CC"],c21:["e21","CAIT","E21CC"],moe:["e21","CAIT","E21CC"],e21:["e21","CAIT","E21CC"]};
+function plannerBar(){const on=PROWS(),pre=PPRESET.find(p=>p[2].length===on.length&&p[2].every(k=>on.includes(k))),cur=sowLens(),cl=SLENS.find(x=>x[0]===cur);
+ let h=`<div class="layers" role="group" aria-label="Show or hide rows"><div class="lensbar"><span class="lh">Lens</span>${SLENS.map(([k,l])=>`<button data-slens="${k}" aria-pressed="${cur===k}">${esc(l)}</button>`).join("")}<span class="note">${esc(cl?cl[3]:pre?pre[1]+" rows.":"Your own choice of rows.")} Click a unit for its skills, inquiry, E21CC and assessment.</span></div>`;
+ h+=`<details class="lcust"${cur==="custom"?" open":""}><summary>Choose rows${cur==="custom"?" · custom":""}</summary><div class="lt"><span class="lh">More presets</span><div class="pre">${PPRESET.map(([k,l])=>`<button data-preset="${k}" aria-pressed="${!!(pre&&pre[0]===k)}">${esc(l)}</button>`).join("")}</div></div><div class="lg">`;
+ h+=PLAYERS.map(([g,xs])=>`<div class="lgrp"><span class="gl">${esc(g)}</span>${xs.map(([k,l])=>`<button class="lchip" data-row="${k}" aria-pressed="${on.includes(k)}"><i></i>${esc(l)}</button>`).join("")}</div>`).join("")+`</div></details>`;
  if(on.includes("e21")||on.includes("c21")||on.includes("vmv"))h+=`<div class="lt sl"><span class="lh">E21CC</span>${PA.map(k=>`<button class="tag cat-${k} pa${st.pa.includes(k)?"":" off"}" data-pa="${k}" aria-pressed="${st.pa.includes(k)}">${esc(DATA.cat[k].en)}</button>`).join("")}<span class="lh" style="margin-left:10px">Tags</span>${[["all","CPDD + inferred"],["cpdd","CPDD only"],["infer","Inferred only"]].map(([v,l])=>`<button class="psrc" data-psrc="${v}" aria-pressed="${st.psrc===v}">${esc(l)}</button>`).join("")}</div>`;
  return h+`</div>`}
 function plannerBody(L,c,ys){const on=PROWS(),cal=(SOW.calendar||{}).terms||[];let h="";
  for(const s of ys){const T=alloc(L,c,s);if(ys.length>1)h+=`<tr class="yr y${s}"><th colspan="5"><span class="yd"></span>${esc(secName(s,L))}<small>${T.flat().length} units</small></th></tr>`;let grp=null;
-  for(const r of gridRows(L,c,s,T)){if(r[0]==="grp"){grp=r[1];continue}const [k,lab,src,cells]=r;if(!on.includes(k))continue;if(grp){h+=`<tr class="grp"><th colspan="5">${esc(grp)}</th></tr>`;grp=null}h+=`<tr class="r-${k}"><th class="rh" scope="row">${lab}${src&&ys.length===1?`<small>${esc(src)}</small>`:""}</th>${cells.length===1?`<td colspan="4">${cells[0]}</td>`:cells.map(x=>`<td>${x}</td>`).join("")}</tr>`}}
+  for(const r of gridRows(L,c,s,T)){if(r[0]==="grp"){grp=r[1];continue}const [k,lab,src,cells]=r;if(!on.includes(k))continue;if(grp){h+=`<tr class="grp"><th colspan="5">${esc(grp)}</th></tr>`;grp=null}const ln=LANE[k];h+=`<tr class="r-${k}${ln?` ln ln-${ln[0]} cat-${ln[1]}`:""}"${ln?` data-ln="${ln[2]}"`:""}><th class="rh" scope="row">${lab}${src&&ys.length===1?`<small>${esc(src)}</small>`:""}</th>${cells.length===1?`<td colspan="4">${cells[0]}</td>`:cells.map(x=>`<td>${x}</td>`).join("")}</tr>`}}
  return h}
 function consBand(s){const C=SOW.constraints;if(!C)return "";
  return `<details class="cons" open><summary>${esc(C.title)}</summary><p class="note">${esc(C.intro)}</p><div class="cg">${C.groups.map(g=>`<div class="cc${s&&!g.sec.includes(s)?" dim":""}"><h4>${esc(g.who)}</h4><ul>${g.items.map(x=>`<li><b>${esc(x.rule)}</b> <span>${esc(x.why)}</span></li>`).join("")}</ul></div>`).join("")}</div>${C.discuss?`<div class="cd"><h4>${esc(C.discuss.title)}</h4><ul>${C.discuss.items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}</details>`}
 function vSow(){const L=st.lang,c=st.crs,s=st.ssec,E=DATA.exam[L][c],cal=(SOW.calendar||{}).terms||[];const ys=s?[s]:[1,2,3,4];
- let h=`<section class="planner"><div class="eyebrow">${esc(DATA.langName[L])} · ${esc(c==="H"?"HMT":DATA.courseEn[c])} · ${s?esc(secName(s,L)):"Sec 1 to 4"} · ${esc(E.code)} ${prov(L,c)}</div><h2>Scheme of work 2027 · ${esc(SOW.version||"")}</h2><p class="sub">Four terms across, one row per planning layer. Switch layers on and off below, or pick a preset. Choose language, course and year in the side panel; "All four years" stacks Sec 1 to 4. Click a unit for its full detail.</p>`;
+ let h=`<section class="planner"><div class="eyebrow">${esc(DATA.langName[L])} · ${esc(c==="H"?"HMT":DATA.courseEn[c])} · ${s?esc(secName(s,L)):"Sec 1 to 4"} · ${esc(E.code)} ${prov(L,c)}</div><h2>Scheme of work 2027 · ${esc(SOW.version||"")}</h2><p class="sub">Four terms across, one row per planning layer. Pick a lens below (Core skills, Inquiry, E21CC or Everything), or choose your own rows. Choose language, course and year in the side panel; "All four years" stacks Sec 1 to 4. Click a unit for its full detail.</p>`;
  h+=consBand(s);
  h+=plannerBar();
  if(s&&PROWS().includes("vmv"))h+=vmvBand(L,c,s);
@@ -883,24 +937,51 @@ function why21(s,L){let m;if((m=s.match(/^(R\d) /))&&R21[m[1]])return r21(m[1],L
  if(/^derived: the guide names/.test(s))return r21("name",L);if(/^derived: CAIT tag/.test(s))return r21("der",L).replace("$","CAIT")+" · "+r21(/inventive/.test(s)?"R5":"R6",L);if((m=s.match(/^CPDD guide: (.*)/)))return r21("guide",L)+m[1];return s}
 const ux=(k,L)=>{const v=UDX[k];if(!v)return k;return isEL()?v[0]:v[{CL:1,ML:2,TL:3}[L]]};
 const uxTerm=(n,L)=>{const v=ux("term",L);return v.includes("$")?v.replace("$","一二三四"[n-1]):v+n};
-function sowPanel(id){const u=DATA.themes.find(t=>uidOf(t)===id);if(!u)return;const rs=unitRecs(u),{pv,why,inq}=unitTags(rs),sk=IXS[id],L=u.lang,c=u.course,s=u.sec;const DM=DMEN();const T=alloc(L,c,s);let ti=T.findIndex(a=>a.some(x=>uidOf(x)===id));if(ti<0)ti=0;const cal=((SOW.calendar||{}).terms||[])[ti]||{};const as=termAssess(s,ti+1);const t=tlU(u);const lis=listenOf(u);
+function sowPanel(id,focus){focus=focus||lensFocus();let u=DATA.themes.find(t=>uidOf(t)===id);if(!u){/* course-wide records (TL unit "all") have no unit entry */const r0=DATA.recs.find(r=>uidOf(r)===id);if(!r0)return;u={lang:r0.lang,course:r0.course,sec:r0.sec,book:r0.book,book_en:r0.book_en,unit:r0.unit,theme_m:r0.theme_m,theme_en:r0.theme_en,dom:[]}}const rs=unitRecs(u),{pv,why,inq}=unitTags(rs),sk=IXS[id],L=u.lang,c=u.course,s=u.sec;const DM=DMEN();const T=alloc(L,c,s);let ti=T.findIndex(a=>a.some(x=>uidOf(x)===id));if(ti<0)ti=0;const cal=((SOW.calendar||{}).terms||[])[ti]||{};const as=termAssess(s,ti+1);const t=tlU(u);const lis=listenOf(u);
  let h=`<button class="x" data-close>${esc(ux("close",L))}</button><div class="eyebrow">${isEL()?esc(DATA.langName[L])+" · "+esc(c==="H"?"HMT":c):esc(DATA.courseName[L][c])} · ${esc(secName(s,L))} · ${esc(isEL()?(cal.label||"Term "+(ti+1)):uxTerm(ti+1,L))}</div><h3 style="margin:4px 0 10px">${uLab(u)} · ${two(u.theme_m,u.theme_en,L)}</h3>`;
- const row=(n,tl,body)=>`<div class="frow"><div class="fn"><span>${n}</span>${esc(tl)}</div><div class="fb">${body}</div></div>`;
+ let rn=0;const row=(n,tl,body)=>`<div class="frow"><div class="fn"><span>${++rn}</span>${esc(tl)}</div><div class="fb">${body}</div></div>`;
+ const PS=[["core","Skills and tasks"],["ibl","Inquiry"],["e21","E21CC"],["assess","Assessment"]],isOpen=k=>focus==="all"||focus==="custom"||k===focus||(focus==="core"&&k==="assess");
+ const part={core:"",ibl:"",e21:"",assess:""};let top=h;h="";
  h+=row(1,ux("r1",L),`${(u.dom||[]).map(d=>`<span class="tag">${esc(UDX[d]?ux(d,L):(DM[d]||d))}</span>`).join(" ")}${t&&t.theme?`<div lang="${LG("ta")}" style="margin-top:4px">${esc(t.theme)}</div>`:""}${t&&t.periods?`<div class="note">${esc(t.periods)}${esc(ux("per",L))}</div>`:""}`);
  h+=row(2,ux("r2",L),`<table><thead><tr><th>${esc(ux("hs",L))}</th><th>${esc(ux("hl",L))}</th><th>${esc(ux("ht",L))}</th><th>${esc(ux("he",L))}</th></tr></thead><tbody>${rs.map(r=>`<tr><td>${isEL()?esc(SKL[r.strand]||r.strand):esc(SK[r.strand]?sname(r.strand,L):(SKL[r.strand]||r.strand))}</td><td>${lo(r)}</td><td>${tx(r)}${r.purpose?` <span class="note">(${esc(pur(r.purpose,L))})</span>`:""}</td><td>${esc(r.exam?ux(r.exam,L):"")}</td></tr>`).join("")}</tbody></table>`);
  if(lis.length)h+=row(3,ux(L==="TL"?"r3tl":"r3",L),`<ul>${lis.map(x=>typeof x==="string"?`<li lang="${LG("ms")}">${esc(x)}</li>`:`<li lang="${LG("ta")}"><b>${esc(x.act)}</b> ${esc(x.name)}${x.obj&&x.obj!==x.name?": "+esc(x.obj):""}${x.res?` <span class="note">(${esc(x.res)})</span>`:""}</li>`).join("")}</ul>`);
+ const ctl=(SOW.cltasks||{})[id]||[];if(ctl.length)h+=row(6.5,ux("r65",L),`<ul>${ctl.map(x=>`<li><b>${esc({fw:"书面互动 / 实用文",comp:"作文",integrated:"综合任务"}[x.kind]||x.kind)}</b>${x.skill?` · ${esc(x.skill)}`:""}<div class="full" lang="${LG("zh")}">${esc(x.task)}</div>${x.page?`<span class="note">${isEL()?"Textbook p. "+esc(x.page):"课本第"+esc(x.page)+"页"}</span>`:""}</li>`).join("")}</ul>`);
+ const DG=DATA.design;if(DG&&DG.cells){const C=isEL()&&DG.cellsEn||DG.cells;if(C.routines&&C.routines[L])h+=row(0,isEL()?"How "+DATA.langName[L]+" lessons usually run":DATA.langName[L],`<p style="margin:0">${esc(C.routines[L])}</p><p class="why" style="margin:4px 0 0">This describes the language's G1 package as a whole (Pedagogical design page), not this unit's lesson steps.</p>`)}
+ part.core=h;h="";
  const c21=[...new Set(rs.map(r=>(isEL()?r.c21_en:r.c21)||"").filter(Boolean))];
+ const th21=lensKeys("e21").filter(k=>DATA.cat[k].lens==="c21").map(k=>tagHits(id,rs,k,L)).join("");if(th21)h+=row(0,isEL()?"21CC tags, milestones and why":"21CC",th21);
  h+=row(4,ux("r4",L),c21.length?`<ul>${c21.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:`<span class="note">${esc(ux("none21",L))}</span>`);
  const SRC21={cpdd:"s_cpdd",derived:"s_derived",infer:"s_infer"};
  h+=row(5,ux("r5",L),`<p class="note leg21">${esc(ux("leg21",L))}</p><div class="stack">`+PA.map(k=>{const d=vmvFor(k),m=(SOW.e21moves||{})[k]||{},src=pv[k],ws=[...new Set([...(why[k]||[])].map(w=>why21(w,L)))];
   return `<div class="pa21${src?"":" sugg"}"><span class="tag cat-${k}${src?"":" off"}">${esc(isEL()?DATA.cat[k].en:DATA.cat[k][ML_[L]]||DATA.cat[k].en)}</span> <span class="src21 s-${src||"sugg"}">${esc(ux(src?SRC21[src]:"s_sugg",L))}</span>
    <div class="note">${src?esc(ws.join("；")):esc(SG21[k][isEL()?0:{CL:1,ML:2,TL:3}[L]])}</div>${d?`<div class="note">→ ${esc(d.dso)} (${esc(d.value)}) · ${esc(s<=2?d.lower:d.upper)}</div>`:""}${src&&m.prompt&&isEL()?`<div class="note">${esc(ux("ask",L))}${esc(m.prompt)}</div>`:""}</div>`}).join("")+`</div>`);
- h+=row(6,ux("r6",L),sk?`<div class="sk"><div class="eyebrow">${esc(ux("sk",L))} · ${esc(sk.approach||"")}</div><div class="q">${esc(sk.q)}</div>${leadLine(sk)}<ol>${(sk.phases||[]).map((p,i)=>`<li>${esc(p)} ${msChips((sk.ms||[])[i])}</li>`).join("")}</ol>${msList(sk)}</div>`:inq?`<span class="note">CPDD tags a${inq.k==="STAR"?" star":"n inquiry"} task here (${esc(inq.src)}); write the department sketch on the Inquiry roadmap.</span>`:`<span class="note">${esc(ux("noinq",L))}</span>`);
- const ctl=(SOW.cltasks||{})[id]||[];if(ctl.length)h+=row(6.5,ux("r65",L),`<ul>${ctl.map(x=>`<li><b>${esc({fw:"书面互动 / 实用文",comp:"作文",integrated:"综合任务"}[x.kind]||x.kind)}</b>${x.skill?` · ${esc(x.skill)}`:""}<div class="full" lang="${LG("zh")}">${esc(x.task)}</div>${x.page?`<span class="note">${isEL()?"Textbook p. "+esc(x.page):"课本第"+esc(x.page)+"页"}</span>`:""}</li>`).join("")}</ul>`);
+ h+=msList(sk);part.e21=h;h="";
+ const IG=(DATA.design||{}).iblsg||{},PH=["Orientation","Conceptualisation","Investigation","Conclusion"],isStar=rs.some(r=>(r.tags||[]).some(t=>t.k==="STAR"));
+ h+=row(6,ux("r6",L),sk?`<div class="sk"><div class="eyebrow">${esc(ux("sk",L))} · ${esc(sk.approach||"")}</div><div class="q">${esc(sk.q)}</div>${leadLine(sk)}<ol>${(sk.phases||[]).map((p,i)=>`<li>${isEL()&&PH[i]?`<b>${PH[i]}:</b> `:""}${esc(p)}</li>`).join("")}</ol>${isStar&&IG.starNote?`<p class="why" style="margin:8px 0 0">${esc(IG.starNote)}</p>`:""}${IG.sketchNote?`<p class="why" style="margin:6px 0 0">${esc(IG.sketchNote)}</p>`:""}</div>`:inq?`<span class="note">CPDD tags a${inq.k==="STAR"?" star":"n inquiry"} task here (${esc(inq.src)}); write the department sketch on the Inquiry roadmap.</span>`:`<span class="note">${esc(ux("noinq",L))}</span>`);
+ const thI=lensKeys("ibl").map(k=>tagHits(id,rs,k,L)).join("");if(thI)h+=row(0,isEL()?"Inquiry tags and why":"IBL",thI);
+ const SP=(DATA.design||{}).stp;if(SP&&(sk||inq)&&isEL())h+=`<details class="fmt"><summary>STP look-fors if you run this as inquiry</summary><p style="font-size:13px;margin:4px 0 0">Frame the task around a driving question. The STP expects students to:</p><ul>${SP.ibl.behaviours.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><p class="why">${ext(SP.ibl.kb,"STP Knowledge Base: Inquiry-based Learning")} · ${ext(SP.pdf,"Learning Orientations overview (PDF)")}</p></details>`;
+ part.ibl=h;h="";
  h+=row(7,ux("r7",L),as.length?as.map(a=>`<div class="asr">${asPill(a)} <b>${esc(a.wk||"")}</b> <span class="note">${esc(a.what)} · ${esc(a.wt)}</span></div>`).join(""):`<span class="note">${esc(ux("nonea",L))}</span>`);
- h+=`<p class="ev" style="margin-top:14px">${esc(ux("open",L))}<a href="#map-${L}-${c}" data-tab="map" data-close>${esc(ux("map",L))}</a>${esc(ux("open2",L))}</p>`;
+ part.assess=h;
+ h=top+`<nav class="pnav" aria-label="Sections">${PS.map(([k,l])=>`<button type="button" data-pj="${k}" class="pj-${k}">${esc(l)}</button>`).join("")}</nav>`+PS.map(([k,l])=>`<details class="psec ps-${k}" id="ps-${k}"${isOpen(k)?" open":""}><summary>${esc(l)}</summary>${part[k]}</details>`).join("");
+ h+=`<p class="ev" style="margin-top:14px">${esc(ux("open",L))}<a href="#map-${L}-${c}" data-tab="map" data-close>${esc(ux("map",L))}</a>${esc(ux("open2",L))} <a href="#prog" data-tab="prog" data-lensto="all">See this unit's year group on the Sec 1–4 progression</a>.</p>`;
  let d=$("#ud");if(!d){d=document.createElement("dialog");d.id="ud";document.body.appendChild(d);d.addEventListener("click",e=>{if(e.target===d||e.target.closest("[data-close]"))d.close()})}
- d.innerHTML=`<div class="in sowd">${h}</div>`;d.showModal();d.querySelector(".in").scrollTop=0}
+ d.innerHTML=`<div class="in sowd">${h}</div>`;d.showModal();d.querySelector(".in").scrollTop=0;
+ d.querySelectorAll("[data-pj]").forEach(b=>b.onclick=()=>{const x=d.querySelector("#ps-"+b.dataset.pj);x.open=true;x.scrollIntoView({behavior:"smooth",block:"start"})});
+ if(focus!=="all"&&focus!=="custom"){const x=d.querySelector("#ps-"+(focus==="core"?"core":focus));if(x&&focus!=="core")setTimeout(()=>x.scrollIntoView({block:"start"}),0)}}
+/* one 21CC or inquiry tag on a unit: which tasks carry it and why (from the former roadmap pop-up) */
+function tagHits(id,rs,k,L){const el=isEL(),hits=rs.map(r=>[r,(r.tags||[]).find(t=>t.k===k)]).filter(x=>x[1]);if(!hits.length)return "";
+ const best=hits.some(x=>x[1].src==="cpdd")?"cpdd":hits.some(x=>x[1].src==="derived")?"derived":"infer",ibl=DATA.cat[k].lens==="ibl";
+ const pvl={cpdd:"from the CPDD guide",derived:"derived from a CPDD tag",infer:"inferred by rule"},sn=x=>x&&SK[x]?sname(x,L):(x||"");
+ const task=r=>el?esc(r.task_en):`<span lang="${LG(ML_[L])}">${esc(r.task_m||r.task_en)}</span>`;
+ let h=`<div class="tg"><span class="tag cat-${k} src-${best}${best==="cpdd"?"":" inf"}">${esc(catName(k))}<span class="pv">${pvl[best]}</span></span>`;
+ if(DATA.cat[k].desc)h+=`<p class="why">${esc(DATA.cat[k].desc)}</p>`;
+ if(["CAIT","CCIS","CGC"].includes(k))h+=ms21Block(id,k,rs[0].sec);
+ h+=`<ul>${hits.map(([r,t])=>{const note=ibl?(el?r.ibl_en:(r.ibl||r.ibl_en)):(r.c21_en||"");
+  if(t.rule.startsWith("R8 "))return `<li><b>${el?"Integrated task (综合任务)":"综合任务"}:</b> ${esc(t.rule.replace(/^R8 综合任务 /,""))}<div class="why">Why tagged: R8, the textbook integrated task has students find out for themselves and then make or present something (department reading, not a CPDD tag).</div></li>`;
+  return `<li><b>${esc(sn(r.strand))}${r.also?` + ${esc(sn(r.also))}`:""}:</b> ${task(r)}<div class="why">${t.src==="cpdd"?`Guide says: ${esc(note||"tagged in the CPDD guide")}`:t.src==="derived"?`${esc(t.rule)}${note?` (guide says: ${esc(note)})`:""}`:`Why tagged: ${esc(t.rule)}`}</div></li>`}).join("")}</ul>`;
+ if(best==="infer")h+=`<p class="why">Inferred: the guide does not name this here. The task gives an opening for it; how far to bring it out is the department's call.</p>`;
+ return h+`</div>`}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-sow]");if(b&&!e.target.closest("dialog")){if(b.closest("summary"))e.preventDefault();sowPanel(b.dataset.sow)}});
 function dl(name,text){const b=new Blob(["﻿"+text],{type:"text/csv;charset=utf-8"});const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}
 const csvq=v=>`"${String(v??"").replace(/"/g,'""')}"`;
@@ -964,24 +1045,25 @@ function wbCSV(){const L=st.lang,c=st.crs;const rows=[["Language","Course","Sec"
 // "From the data" (what the documents show) is kept visibly apart from the "Department suggestion" (what we propose); copy in DATA.design.ux.plan
 function planCards(arr){if(!arr||!arr.length)return"";const P=UX().plan||{};return `<section class="planbox"><h2>${esc(P.title||"What this means for planning")}</h2><div class="plan">${arr.map(p=>`<div class="card"><div class="pd"><b class="l">${esc(P.data||"From the data")}</b><p>${esc(p.find)}</p></div><div class="ps"><b class="l">${esc(P.sugg||"Department suggestion")}</b><p>${esc(p.impl)}</p><p class="note"><b>${esc(P.next||"Next step")}:</b> ${esc(p.next)}</p></div></div>`).join("")}</div></section>`}
 const planOf=k=>planCards(((UX().plan||{}).cards||{})[k]);
-function roadsCSV(){const lens=st.tab,keys=Object.keys(DATA.cat).filter(k=>DATA.cat[k].lens===lens);const Ls=st.sL==="All"?["CL","ML","TL"]:[st.sL],Ss=st.sS==="All"?[1,2,3,4]:[st.sS],Cs=st.sC==="All"?["G1","G2","G3","H"]:[st.sC];
+function roadsCSV(){const lens=st.lens,keys=lensKeys();const Ls=st.sL==="All"?["CL","ML","TL"]:[st.sL],Ss=st.sS==="All"?[1,2,3,4]:[st.sS],Cs=st.sC==="All"?["G1","G2","G3","H"]:[st.sC];
  const rows=[["Language","Course","Sec","Book","Unit","Theme (MTL)","Theme (EN)","Skill","Task (MTL)","Task (EN)","Tag","Provenance","Rule"]];
  for(const r of DATA.recs){if(!Ls.includes(r.lang)||!Cs.includes(r.course)||!Ss.includes(r.sec))continue;for(const t of(r.tags||[])){if(!keys.includes(t.k))continue;if(st.cats.length&&!st.cats.includes(t.k))continue;if(st.src==="cpdd"&&t.src==="infer")continue;if(st.src==="infer"&&t.src!=="infer")continue;rows.push([r.lang,r.course,r.sec,r.book_en||r.book,r.unit,r.theme_m,r.theme_en,SK[r.strand]?SK[r.strand].en:r.strand,r.task_m,r.task_en,DATA.cat[t.k].en,t.src,t.rule])}}
- dl(`BVSS_${lens}_roadmap_${st.sL}_${st.sC}_${st.sS}.csv`,rows.map(r=>r.map(csvq).join(",")).join("\n"))}
+ dl(`BVSS_progression_${lens}_${st.sL}_${st.sC}_${st.sS}.csv`,rows.map(r=>r.map(csvq).join(",")).join("\n"))}
 
-function hero(){const a=(DATA.design&&DATA.design.about||{})[st.tab]||{what:"",points:[],use:""};const g=NAV.find(([,ts])=>ts.some(([k])=>k===st.tab));const t=g[1].find(([k])=>k===st.tab);const el=st.mode==="el";
+const progAbout=()=>{const A=(DATA.design&&DATA.design.about)||{},ks=["ibl","c21","pri"].filter(x=>hasL(x));return {what:st.lens==="all"?"How inquiry and the E21CC competencies show up across Sec 1 to 4, in every language and course. Switch the lens to see inquiry or E21CC on its own; open any unit for its skills, inquiry, E21CC and assessment in one place.":ks.map(k=>(A[k]||{}).what).filter(Boolean).join(" "),points:ks.flatMap(k=>(A[k]||{}).points||[]),use:(A[ks[0]]||{}).use||""}};
+function hero(){const a=st.tab==="prog"?progAbout():(DATA.design&&DATA.design.about||{})[st.tab]||{what:"",points:[],use:""};const g=NAV.find(([,ts])=>ts.some(([k])=>k===st.tab));const t=g[1].find(([k])=>k===st.tab);const el=st.mode==="el";
  const H=document.querySelector(".hero");H.classList.toggle("compact",st.tab!=="over");
  $("#heroEye").textContent=g[0];
  if(st.tab==="over"){const nIx=Object.keys((DATA.design&&DATA.design.iblx)||{}).length;
   $("#heroT").textContent=el?"Plan the four-year MTL learning journey":Tm(t[1]);
   $("#heroLead").textContent=el?"See how the CPDD skills build towards SEC 2027 in Chinese, Malay and Tamil, and where inquiry and the E21CC priority areas already have a place in the units.":a.what;
-  $("#heroPts").innerHTML=`<div class="paths"><span class="lab">Start here:</span><button data-tab="map">I teach a class → Course map</button><button data-tab="sow">I am writing a SOW → Scheme of work 2027</button><button data-tab="ibl">The 2027 approaches → Inquiry roadmap</button></div><div class="take">
+  $("#heroPts").innerHTML=`<div class="paths"><span class="lab">Start here:</span><button data-tab="map">I teach a class → Course map</button><button data-tab="sow">I am writing a SOW → Scheme of work 2027</button><button data-tab="prog">Inquiry and E21CC → Sec 1–4 progression</button></div><div class="take">
    <div class="card"><div class="t">Shared exam structure</div><div class="big">3 papers</div><p>CL, ML and TL sit the same three papers with the same weights for each course under SEC 2027.</p><p class="imp">Plan once as a department, then adapt per language.</p></div>
    <div class="card"><div class="t">Different course priorities</div><div class="big">65%</div><p>of a G1 student's marks are Paper 3, oral and listening. At Higher MT, 40% is Paper 1 writing.</p><p class="imp">Match each course's teaching time to where its marks are.</p></div>
    <div class="card"><div class="t">Inquiry already in the guides</div><div class="big">${nIx} units</div><p>carry a department inquiry sketch, and ML's guides tag inquiry tasks that can double as a weighted assessment.</p><p class="imp">Build 2027's inquiry from tasks the guides already set.</p></div>
   </div>`;
   $("#heroUse").hidden=true;$("#heroUse").innerHTML="";
- }else{$("#heroT").textContent=st.tab==="sow"&&el?"MTL planner 2027":Tm(t[1]);$("#heroLead").textContent=st.tab==="sow"?(el?"One page for the year: units, skills, writing, inquiry, E21CC and assessment term by term. Turn layers on and off to see only what you need.":a.what):a.what;
+ }else{$("#heroT").textContent=st.tab==="sow"&&el?"MTL planner 2027":Tm(t[1]);$("#heroLead").textContent=st.tab==="sow"?(el?"One page for the year: units, skills, writing, inquiry, E21CC and assessment term by term. Pick a lens: core skills, inquiry, E21CC, or everything at once.":a.what):a.what;
   $("#heroPts").innerHTML=a.points.length?`<details class="more"><summary>What is on this page</summary><ol>${a.points.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>${a.use?`<p><b>How to use:</b> ${esc(a.use)}</p>`:""}</details>`:"";
   $("#heroUse").hidden=true;$("#heroUse").innerHTML="";}
  document.title=`${Tm(t[1])} · MTL Skills Roadmap`}
@@ -1006,38 +1088,8 @@ function stpCard(){const S=DATA.design&&DATA.design.stp;if(!S)return"";const I=S
  <h4>How the MTL guides line up (closest match)</h4>${li(S.bridge)}
  <details style="margin-top:10px"><summary class="note" style="cursor:pointer">The other four STP learning orientations</summary><ul>${S.others.map(([n,d,u])=>`<li><b>${esc(n)}</b>: ${esc(d)} ${ext(u,"KB chapter")}</li>`).join("")}</ul></details>
  <div class="links">${ext(S.pdf,"STP Learning Orientations overview (PDF)")}${ext(I.kb,"STP Knowledge Base: Inquiry-based Learning chapter")}</div></div>`}
-function unitPanel(id){
- const [L,c,sec,book,unit]=id.split("|");const rs=DATA.recs.filter(r=>r.lang===L&&r.course===c&&String(r.sec)===sec&&r.book===book&&String(r.unit)===unit);if(!rs.length)return;
- const r0=rs[0],el=st.mode==="el",lens=st.tab,keys=Object.keys(DATA.cat).filter(k=>DATA.cat[k].lens===lens);
- const task=r=>el?esc(r.task_en):`<span lang="${LG(ML_[L])}">${esc(r.task_m||r.task_en)}</span>${r.task_m&&r.task_m!==r.task_en?` <span class="why">(${esc(r.task_en)})</span>`:""}`;
- const sn=k=>k&&SK[k]?sname(k,L):(k||"");
- const pvl={cpdd:"from the CPDD guide",derived:"derived from a CPDD tag",infer:"inferred by rule"};
- const lensName={c21:"21CC roadmap",ibl:"Inquiry (IBL) roadmap",pri:"E21CC priorities"}[lens];
- let h=`<button class="x" data-close>Close</button><div class="eyebrow">${esc(DATA.langName[L])} · ${esc(c==="H"?"HMT":DATA.courseEn[c])} · ${esc(secName(+sec,L))} · ${esc(bk(r0))} Unit ${esc(unit)}</div><h3>${two(r0.theme_m,r0.theme_en,L)}</h3>`;
- h+=`<h4>Why this unit is on the ${lensName}</h4>`;
- const ks=keys.filter(k=>rs.some(r=>(r.tags||[]).some(t=>t.k===k)));
- for(const k of ks){const hits=rs.map(r=>[r,(r.tags||[]).find(t=>t.k===k)]).filter(x=>x[1]);
-  const best=hits.some(x=>x[1].src==="cpdd")?"cpdd":hits.some(x=>x[1].src==="derived")?"derived":"infer";
-  h+=`<div class="tg"><span class="tag cat-${k} src-${best}${best==="cpdd"?"":" inf"}">${esc(catName(k))}<span class="pv">${pvl[best]}</span></span>`;
-  if(DATA.cat[k].desc)h+=`<p class="why">${esc(DATA.cat[k].desc)}</p>`;
-  if(["CAIT","CCIS","CGC"].includes(k))h+=ms21Block(id,k,sec);
-  h+=`<ul>${hits.map(([r,t])=>{const note=lens==="ibl"?(el?r.ibl_en:(r.ibl||r.ibl_en)):(r.c21_en||"");
-   if(t.rule.startsWith("R8 "))return `<li><b>${el?"Integrated task (综合任务)":"综合任务"}:</b> ${esc(t.rule.replace(/^R8 综合任务 /,""))}<div class="why">Why tagged: R8, the textbook integrated task has students find out for themselves and then make or present something (department reading, not a CPDD tag).</div></li>`;
-   return `<li><b>${esc(sn(r.strand))}${r.also?` + ${esc(sn(r.also))}`:""}:</b> ${task(r)}${r.purpose?` <span class="why">· purpose: ${esc(pur(r.purpose,L))}</span>`:""}<div class="why">${t.src==="cpdd"?`Guide says: ${esc(note||"tagged in the CPDD guide")}`:t.src==="derived"?`${esc(t.rule)}${note?` (guide says: ${esc(note)})`:""}`:`Why tagged: ${esc(t.rule)}`}</div></li>`}).join("")}</ul>`;
-  if(best==="infer")h+=`<p class="why">Inferred: the guide does not name this here. The task gives an opening for it; how far to bring it out is the department's call. To confirm or drop it, see HANDOFF.md, next step 3.</p>`;
-  else if(best==="derived")h+=`<p class="why">Derived: CPDD tags a 21CC domain on this task, and the school's mapping (CAIT → Adaptive + Inventive Thinking, CCIS → Communication, CGC → Civic Literacy, SEC → Adaptive Thinking) turns it into this priority area.</p>`;
-  h+=`</div>`}
- h+=`<h4>Everything this unit teaches</h4><table><thead><tr><th>Strand</th><th>Task</th><th>Syllabus area</th><th>Exam</th></tr></thead><tbody>${rs.map(r=>`<tr><td>${esc(sn(r.strand))}${r.also?` + ${esc(sn(r.also))}`:""}</td><td>${task(r)}</td><td>${esc(el?(r.syl_en||r.syl):(r.syl||r.syl_en))}</td><td>${esc(r.exam||"")}</td></tr>`).join("")}</tbody></table>`;
- const IG=DATA.design&&DATA.design.iblsg,SKU=lens==="ibl"&&DATA.design&&DATA.design.iblx&&DATA.design.iblx[id];
- if(SKU){const isStar=rs.some(r=>(r.tags||[]).some(t=>t.k==="STAR"));h+=`<h4>What the inquiry could look like</h4><div class="sk"><div class="eyebrow">Inquiry question</div><div class="q">${esc(SKU.q)}</div><span class="ap">${esc(SKU.approach)} inquiry</span>${leadLine(SKU)}<ol>${["Orientation","Conceptualisation","Investigation","Conclusion"].map((n,i)=>`<li><b>${n}:</b> ${esc(SKU.phases[i])}</li>`).join("")}</ol>${isStar?`<p class="why" style="margin:8px 0 0">${esc(IG.starNote)}</p>`:""}<p class="why" style="margin:6px 0 0">${esc(IG.sketchNote)}</p></div>`}
- const SP=DATA.design&&DATA.design.stp;if(lens==="ibl"&&SP)h+=`<h4>STP look-fors if you run this as inquiry</h4><p style="font-size:13px;margin:0">Frame the task around a driving question. The STP expects students to:</p><ul>${SP.ibl.behaviours.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><p class="why" style="margin-top:4px">${ext(SP.ibl.kb,"STP Knowledge Base: Inquiry-based Learning")} · ${ext(SP.pdf,"Learning Orientations overview (PDF)")}</p>`;
- const D=DATA.design;if(D){const C=el&&D.cellsEn||D.cells;h+=`<h4>How ${esc(DATA.langName[L])} lessons are usually run</h4><p style="font-size:13px;margin:0">${esc(C.routines[L])}</p><p class="why" style="margin-top:6px">This describes the language's G1 package as a whole (Pedagogical design tab), not this unit's lesson steps.</p>`}
- h+=`<p class="ev" style="margin-top:14px">Lesson-by-lesson steps are not in this dataset yet. For those, open ${esc(bk(r0))} Unit ${esc(unit)} in the CPDD teacher guide.</p>`;
- let d=$("#ud");if(!d){d=document.createElement("dialog");d.id="ud";document.body.appendChild(d);d.addEventListener("click",e=>{if(e.target===d||e.target.closest("[data-close]"))d.close()})}
- d.innerHTML=`<div class="in">${h}</div>`;d.showModal();d.querySelector(".in").scrollTop=0;
-}
-document.addEventListener("click",e=>{const c=e.target.closest(".ucard[data-u]");if(c&&!e.target.closest("dialog"))unitPanel(c.dataset.u)});
-document.addEventListener("keydown",e=>{const c=e.target.closest&&e.target.closest(".ucard[data-u]");if(c&&(e.key==="Enter"||e.key===" ")){e.preventDefault();unitPanel(c.dataset.u)}});
+document.addEventListener("click",e=>{const c=e.target.closest(".ucard[data-u]");if(c&&!e.target.closest("dialog"))sowPanel(c.dataset.u)});
+document.addEventListener("keydown",e=>{const c=e.target.closest&&e.target.closest(".ucard[data-u]");if(c&&(e.key==="Enter"||e.key===" ")){e.preventDefault();sowPanel(c.dataset.u)}});
 function mapPanel(id,k){const rs=DATA.recs.filter(r=>uidOf(r)===id);if(!rs.length)return;const r0=rs[0],L=r0.lang,c=r0.course,MD=UX().mapDetail||{};
  const sn=x=>x&&SK[x]?sname(x,L):(x||"");
  let h=`<button class="x" data-close>Close</button><div class="eyebrow">${esc(DATA.langName[L])} · ${esc(c==="H"?"HMT":DATA.courseEn[c])} · ${esc(secName(r0.sec,L))} · ${esc(bk(r0))} Unit ${esc(r0.unit)}</div><h3>${two(r0.theme_m,r0.theme_en,L)}</h3>`;
@@ -1114,7 +1166,7 @@ function render(){
  document.documentElement.lang=st.mode==="el"?"en":ML_[st.lang];
  $("#h1").textContent=st.mode==="el"?DATA.ui.title.en:DATA.ui.title[ML_[st.lang]];
  controls();hero();
- $("#view").innerHTML=({over:vOverview,lang:vLang,design:vDesign,map:vMap,theme:vTheme,c21:vRoads,ibl:vRoads,pri:vRoads,syl:vSyl,psle:vPsle,sow:vSow,skills:vSkills,write:vWrite}[st.tab])();
+ $("#view").innerHTML=({over:vOverview,lang:vLang,design:vDesign,map:vMap,theme:vTheme,prog:vRoads,syl:vSyl,psle:vPsle,sow:vSow,skills:vSkills,write:vWrite}[st.tab])();
  $("#foot").innerHTML=`<div class="fgrid"><div><div class="fb"><span class="mark" aria-hidden="true"><svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#1a4fa3"/><circle cx="28" cy="13" r="8" fill="#f5c400" opacity=".35"/><circle cx="28" cy="13" r="5" fill="#f5c400"/><path d="M0 31 C8 21 15 21 22 27 S34 24 40 20 V40 H0Z" fill="#1f9d55"/><path d="M0 35 C10 29 20 33 40 29 V40 H0Z" fill="#7fd09a"/></svg></span><b>MTL Skills Roadmap</b></div><p>${esc(st.mode==="el"?DATA.ui.sub.en:DATA.ui.sub[ML_[st.lang]])}</p><p class="fine">Maintained by the BVSS MTL Department · updated 31 October 2026</p></div>
  <div><h4>Sources</h4><p>CPDD teacher guides for the 2021 syllabus: ${st.mode==="el"?"CL Teacher's Guides; ML JATi Teacher's Guides (OPAL2); TL Teacher's Guides":"CL 《华文伴我行》教师手册; ML JATi Panduan Guru (OPAL2); TL தமிழருவி ஆசிரியர் கையேடு"}. MTL, CL, ML and TL Secondary Syllabuses 2021. SEAB SEC 2027 syllabuses (<a href="https://www.seab.gov.sg/secondary-education-certificate-sec/g3-syllabuses-for-school-candidates-2027/" target="_blank" rel="noopener">seab.gov.sg</a>).</p></div>
  <div><h4>References</h4><ul>${[["https://go.gov.sg/stp-kb3-chapter14","STP Knowledge Base: Inquiry-based Learning"],["https://file.go.gov.sg/stp-learning-orientations.pdf","STP Learning Orientations (PDF)"],["https://www.moe.gov.sg/education-in-sg/21st-century-competencies","MOE 21st Century Competencies"],["https://github.com/kaixinbuilds/mtl-skills-roadmap","Page source and update notes"]].map(([u,t])=>`<li>${ext(u,t)}</li>`).join("")}</ul></div></div><p class="fine">${esc(DATA.caveat)}</p>`;
@@ -1123,6 +1175,7 @@ function render(){
  document.querySelectorAll("[data-crs2]").forEach(b=>b.onclick=()=>{st.crs=b.dataset.crs2;render()});
  document.querySelectorAll("[data-ssec]").forEach(b=>b.onclick=()=>{st.ssec=+b.dataset.ssec;render()});
  document.querySelectorAll("[data-row]").forEach(b=>b.onclick=()=>{const k=b.dataset.row,on=PROWS();st.rows=on.includes(k)?on.filter(x=>x!==k):[...on,k];render()});
+ document.querySelectorAll("[data-slens]").forEach(b=>b.onclick=()=>{st.rows=[...SLENS.find(p=>p[0]===b.dataset.slens)[2]];render()});
  document.querySelectorAll("[data-preset]").forEach(b=>b.onclick=()=>{st.rows=[...PPRESET.find(p=>p[0]===b.dataset.preset)[2]];render()});
  document.querySelectorAll("[data-pa]").forEach(b=>b.onclick=()=>{const k=b.dataset.pa;st.pa=st.pa.includes(k)?st.pa.filter(x=>x!==k):PA.filter(x=>x===k||st.pa.includes(x));render()});
  document.querySelectorAll("[data-psrc]").forEach(b=>b.onclick=()=>{st.psrc=b.dataset.psrc;render()});
@@ -1145,7 +1198,7 @@ function render(){
  document.querySelectorAll("[data-dlay]").forEach(b=>b.onclick=()=>{st.dlay=b.dataset.dlay;render()});
  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{const k=b.dataset.cat;if(k==="__clear")st.cats=[];else st.cats=st.cats.includes(k)?st.cats.filter(x=>x!==k):[...st.cats,k];render()});
  try{localStorage.setItem("mtlrm2",JSON.stringify(st))}catch(e){}
- const hs=`#${st.tab}-${st.lang}-${st.crs}`+(["c21","ibl","pri"].includes(st.tab)?`?l=${st.sL}&c=${st.sC}&s=${st.sS}&src=${st.src}${st.cats.length?"&cats="+st.cats.join(","):""}`:st.tab==="sow"?`?s=${st.ssec}&rows=${PROWS().join(",")}${st.pa.length<4?"&pa="+st.pa.join(","):""}${st.psrc!=="all"?"&psrc="+st.psrc:""}`:"");try{if(location.hash!==hs)history.replaceState(null,"",hs)}catch(e){}
+ const hs=`#${st.tab}-${st.lang}-${st.crs}`+(st.tab==="prog"?`?lens=${st.lens}&l=${st.sL}&c=${st.sC}&s=${st.sS}&src=${st.src}${st.cats.length?"&cats="+st.cats.join(","):""}`:st.tab==="sow"?`?s=${st.ssec}&rows=${PROWS().join(",")}${st.pa.length<4?"&pa="+st.pa.join(","):""}${st.psrc!=="all"?"&psrc="+st.psrc:""}`:"");try{if(location.hash!==hs)history.replaceState(null,"",hs)}catch(e){}
   markScroll();
 }
 const applyHash=parseHash;
