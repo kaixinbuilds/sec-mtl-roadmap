@@ -47,6 +47,7 @@
   "PM",
   "PM27",
   "PUB",
+  "SCT",
   "SKD",
   "TAJUK",
   "TBC",
@@ -494,13 +495,6 @@
    "f": "Sports Enrichment Programme",
    "g": "School calendar",
    "n": "In the 2027 calendar for Sec 3, 7 to 8 Jan."
-  },
-  {
-   "t": "SCT",
-   "f": "SCT: meaning to confirm",
-   "g": "School calendar",
-   "n": "Named as the audience of the Envisioning VMV updates, 14 Sep 2026.",
-   "c": 1
   },
   {
    "t": "GEM",

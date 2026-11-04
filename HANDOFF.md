@@ -329,7 +329,7 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - After adding content run `python3 tools/checkgloss.py`. It lists acronym-like words in `DATA` that are in neither `terms` nor `ignore`. It reads data only, so also scan rendered text when UI strings change.
 - Glossary scope (HOD decision, 4 Nov 2026): only acronyms relevant to MTL, BVSS and MOE work. General words (HDB, PDF, TBC and so on) go under `ignore`. HOD confirmed ACE Week, ApLM, CCM, SEP and TP.
 - HOD approved spelling out the Malay heading `ui.mtlskill.ms` as "Kemahiran sukatan Bahasa Ibunda" (it read "BI"), so BI left the glossary. The label lives in `DATA` in `index.html`.
-- NEEDS HOD: SCT is still marked To confirm. AA was removed from the glossary: it sits in `sow.oralfw.prep`, which no page displays.
+- SCT is school contact time (HOD, 4 Nov 2026) and is left out of the glossary as not relevant. No glossary terms await confirmation now. AA was removed from the glossary: it sits in `sow.oralfw.prep`, which no page displays.
 
 ## 4 Nov 2026 · E21CC to DSO page
 
