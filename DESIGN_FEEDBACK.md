@@ -1,8 +1,8 @@
 # Visual design and communication brief for Claude
 
 Review date: 30 October 2026 (Singapore)
-Site: https://kaixinbuilds.github.io/mtl-skills-roadmap/
-Repository: kaixinbuilds/mtl-skills-roadmap
+Site: https://kaixinbuilds.github.io/mtl-curriculum-roadmap-2021-syllabus/
+Repository: kaixinbuilds/mtl-curriculum-roadmap-2021-syllabus
 
 ## Purpose and scope
 

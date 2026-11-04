@@ -21,7 +21,7 @@
     "start": "4 Jan",
     "end": "12 Mar",
     "weeks": 10,
-    "teach": 9,
+    "teach": 7.8,
     "events": [
      {
       "w": 1,
@@ -75,7 +75,15 @@
       "what": "Hari Raya Puasa public holiday",
       "k": "ph"
      }
-    ]
+    ],
+    "teachBy": {
+     "1": 38,
+     "2": 39,
+     "3": 37,
+     "4": 39,
+     "3G12": 37
+    },
+    "hblDays": 3
    },
    {
     "t": 2,
@@ -83,7 +91,7 @@
     "start": "22 Mar",
     "end": "28 May",
     "weeks": 10,
-    "teach": 9,
+    "teach": 8.2,
     "events": [
      {
       "w": 1,
@@ -171,7 +179,15 @@
       "what": "STAR meeting (student-teacher-parent conversation): no lessons",
       "k": "nol"
      }
-    ]
+    ],
+    "teachBy": {
+     "1": 41,
+     "2": 41,
+     "3": 41,
+     "4": 41,
+     "3G12": 41
+    },
+    "hblDays": 4
    },
    {
     "t": 3,
@@ -179,7 +195,7 @@
     "start": "28 Jun",
     "end": "3 Sep",
     "weeks": 10,
-    "teach": 9,
+    "teach": 8.0,
     "events": [
      {
       "w": 1,
@@ -274,7 +290,15 @@
       "what": "Teachers' Day school holiday (concert 2 Sep)",
       "k": "ph"
      }
-    ]
+    ],
+    "teachBy": {
+     "1": 40,
+     "2": 40,
+     "3": 40,
+     "4": 40,
+     "3G12": 37
+    },
+    "hblDays": 6
    },
    {
     "t": 4,
@@ -351,7 +375,9 @@
       "what": "STAR meeting and last day of school",
       "k": "nol"
      }
-    ]
+    ],
+    "teachBy": {},
+    "hblDays": 0
    }
   ],
   "breaks": [
@@ -11066,7 +11092,7 @@
  },
  "constraints": {
   "title": "Time constraints for 2027",
-  "intro": "Rules every SOW must respect. Read these before placing units. Dates come from the (Students) Bukit View Secondary 2026 calendar, checked 1 Nov 2026.",
+  "intro": "Rules every SOW must respect. Read these before placing units. Dates come from the (Students) Bukit View Secondary 2026 calendar, checked 4 Nov 2026.",
   "groups": [
    {
     "who": "All levels",
@@ -11077,6 +11103,11 @@
      4
     ],
     "items": [
+     {
+      "key": "teachweeks",
+      "rule": "Plan on about 24 teaching weeks in Terms 1 to 3, not 27. Sec 4 has 16 weeks in Terms 1 and 2 to finish the syllabus.",
+      "why": "Counted from the 2027 calendars with public and school holidays, ACE Week (25 to 29 Jan), HBL days and whole-day no-lesson days taken out. Lesson days in Terms 1, 2 and 3: Sec 1 38, 41, 40; Sec 2 39, 41, 40; Sec 3 37, 41, 40 (G1 and G2 37 in Term 3 if the ApLM is confirmed); Sec 4 39, 41. The 13 HBL days are counted apart, and five of them are also MT oral or prelim days for one level. Part days are still counted: Cross Country (21 Apr), Last Day of School Activities (27 May), National Day Celebrations (6 Aug) and the Teachers' Day Concert (2 Sep)."
+     },
      {
       "rule": "No new content in Term 4.",
       "why": "Term 4 has about two school weeks before the exams: SEC MTL written papers from 15 Sep, Sec 1 to 3 EOY from 27 Sep."
@@ -11129,7 +11160,7 @@
      },
      {
       "rule": "Term 3 is for the SEC oral, the prelim and revision.",
-      "why": "The S4/5 National Exam Study Programme also runs from 21 Jul."
+      "why": "The S4/5 National Exam Study Programme also runs from 7 Jul."
      },
      {
       "rule": "Term 4 is the SEC.",
