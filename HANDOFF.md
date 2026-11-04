@@ -312,3 +312,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - "Compare" in the Pedagogical design panel is now "Topic-scope ladder: compare".
 - Chart translations: `PVI` and `pT()` cover axis labels, year and reach chips, panel headings, buttons and tooltips in Original mode. Figure captions and the ladder section stay English, like other explanatory text. **The Chinese, Malay and Tamil chart strings were written by Claude and need checking by the language teams.**
 - Morphing icons: `vendor/morphicons/` is the unmodified morphicons 2.0.2 build (see `NOTICE.md`), loaded by a module script at the end of `index.html`. It sets `html.mic-on`, then `pvIc()` swaps the player symbols and `dec()` adds a chevron to every `<summary>`. All icons use `reduced-motion="user"`. If the module fails, text symbols stay. Do not name the root class `mi`: `.mi` is already a unit-chip style.
+
+## 4 Nov 2026 · Learn across languages page
+
+- New Reference page `#share` (`vShare()`, `st.shl`), with its content in `tools/share.json`, embedded by `enrich.py` as `DATA.design.share`. Twelve practices, each with a status per language (Throughout, In places, Not found), guide locations and a department suggestion.
+- Evidence comes from text searches of `CPDD resources (2021 Syllabus)/_Markdown` on 4 Nov 2026. Text is paraphrased. TL gaps are least certain because most lesson-preparation PDFs are garbled.
+- **NEEDS HOD:** the site tags 6 ML units as STAR with source "cpdd" (G1 Sec 3 Units 2 and 5; G2 Sec 3 Units 1, 2 and 5; HML Sec 3 Unit 1), but the guide text search finds no STAR in them. The new page counts only the 5 confirmed units. A few pages in those guides are images only. The tags are unchanged.

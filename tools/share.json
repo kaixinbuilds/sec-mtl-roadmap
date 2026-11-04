@@ -1,0 +1,409 @@
+{
+ "share": {
+  "_readme": "Cross-language practices, checked against the CPDD guides and syllabuses by text search on 4 Nov 2026. Paraphrased: MOE text is not reproduced. The 'try' lines are department suggestions, not CPDD advice.",
+  "lead": "All three languages share one syllabus framework, but CPDD built each package differently. Some strong practices sit in one language's guides and have not reached the other two. This page sets out what each language could borrow.",
+  "split": {
+   "title": "The clearest gap: 21CC",
+   "items": [
+    [
+     "CL has the method",
+     "Its guides explain how to set a unit's 21CC goal and give four developmental levels, but work through only one unit."
+    ],
+    [
+     "TL has the map",
+     "Its overviews tag 21CC activity by activity across the courses, but name the competency without a level or a way to set goals."
+    ],
+    [
+     "ML has neither yet",
+     "Only five teacher notes in G1 Sec 4 Units 1 to 3 name a 21CC. ML is strong on inquiry and thinking routines instead."
+    ]
+   ],
+   "note": "Put together, CL's method and TL's map would give all three languages a shared way to plan the 2027 E21CC priorities."
+  },
+  "groups": [
+   {
+    "k": "Inquiry",
+    "items": [
+     {
+      "id": "star",
+      "name": "STAR inquiry activity",
+      "from": "ML",
+      "to": [
+       "CL",
+       "TL"
+      ],
+      "line": "Scenario Analysis, Team Inquiry, Application, Reflection.",
+      "what": "Students unpack a real situation, investigate it in teams, apply what they found, then reflect. It gives teachers a short inquiry they can run inside a normal unit.",
+      "where": "Listed in the ML syllabus (Appendix E, under Singapore Teaching Practice). Used in the ML guides for G2 1B Unit 7, G3 1B Units 7 and 8, G3 2B Unit 5 and G3 Sec 3 Unit 1. G3 Sec 3 Unit 1 (pp. 24 to 26) is the fullest model, with all four stages written out.",
+      "gap": "It appears in no CL or TL guide or syllabus. It has also not spread within ML: the text search found it in neither the G1 nor the HML guides.",
+      "why": "The ML syllabus files it under Singapore Teaching Practice, which applies to all three languages, so it is not specific to Malay.",
+      "try": "CL: G3 Sec 3 Unit 3, Into the community. TL: G3 2B Unit 3, Youth and society.",
+      "c": {
+       "CL": {
+        "s": "n",
+        "t": "Not in guides or syllabus"
+       },
+       "ML": {
+        "s": "p",
+        "t": "Syllabus and 5 units, G2 and G3 only"
+       },
+       "TL": {
+        "s": "n",
+        "t": "Not in guides or syllabus"
+       }
+      }
+     },
+     {
+      "id": "iblwa",
+      "name": "Inquiry tasks flagged for weighted assessment",
+      "from": "ML",
+      "to": [
+       "CL",
+       "TL"
+      ],
+      "line": "A teacher note says the task is inquiry and can count as a WA.",
+      "what": "The guide tells teachers outright that a task is inquiry-based, explains what that means for the unit, and says it can serve as a weighted assessment.",
+      "where": "ML G1 Sec 3 Unit 4 and G2 Sec 3 Unit 4, both planning a social business.",
+      "gap": "CL has inquiry-like integrated tasks, but they carry no such label: the department's own reading found 57 across the four courses. The TL tagged inquiry activities are not linked to assessment in the files that could be read.",
+      "why": "Teachers can see at once which tasks can carry both inquiry and assessment, which saves planning time.",
+      "try": "CL: mark up the 57 integrated tasks already identified on the Sec 1–4 progression page, and agree which could count as a WA.",
+      "c": {
+       "CL": {
+        "s": "p",
+        "t": "57 inquiry-like tasks, unlabelled"
+       },
+       "ML": {
+        "s": "p",
+        "t": "2 units with the note"
+       },
+       "TL": {
+        "s": "p",
+        "t": "Inquiry tagged, not linked to WA"
+       }
+      }
+     },
+     {
+      "id": "fivee",
+      "name": "5E inquiry sequence",
+      "from": "TL",
+      "to": [
+       "CL",
+       "ML"
+      ],
+      "line": "Engage, Explore, then onward through the 5E steps, in a group reading task.",
+      "what": "A group works on a text through the named 5E stages instead of answering set comprehension questions.",
+      "where": "TL G3 2B lesson preparation, Units 1 and 2. Separately, an e-pedagogy tag marks inquiry experiences in TL G3 2A Units 2 and 3.",
+      "gap": "The term 5E does not appear in any CL or ML guide. Within TL it was found only in G3, though most TL lesson-preparation PDFs are garbled, so other uses cannot be ruled out.",
+      "why": "It applies inquiry to reading, whereas the ML examples above are mostly discussion or project tasks.",
+      "try": "ML: a reading part in G3 Sec 3. CL: the second reading of a core text in G3 Sec 3.",
+      "c": {
+       "CL": {
+        "s": "n",
+        "t": "Term not in guides"
+       },
+       "ML": {
+        "s": "n",
+        "t": "Term not in guides"
+       },
+       "TL": {
+        "s": "p",
+        "t": "G3 2B Units 1 and 2"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "k": "E21CC",
+    "items": [
+     {
+      "id": "tlmap",
+      "name": "21CC mapped activity by activity",
+      "from": "TL",
+      "to": [
+       "CL",
+       "ML"
+      ],
+      "line": "A column in each unit overview names the competency each activity builds.",
+      "what": "Each TL unit overview has an MOE-initiatives column. Many activity rows name a 21CC domain there, so teachers can see where a competency is meant to be built.",
+      "where": "About 480 of about 1,200 activity rows in the 23 TL Word overviews (G1, G2 and G3 Sec 1 to 4, HTL Sec 1 to 3).",
+      "gap": "CL maps one worked example in detail. ML has five teacher notes in G1 Sec 4 Units 1 to 3. So this roadmap's E21CC tags for CL and ML are mostly inferred rather than taken from CPDD.",
+      "why": "E21CC is a 2027 school priority, and a map shows where each competency is taught and where the gaps are.",
+      "try": "ML and CL: add one competency column to one Sec 1 unit plan, using TL's overview format as the model.",
+      "c": {
+       "CL": {
+        "s": "p",
+        "t": "One worked example"
+       },
+       "ML": {
+        "s": "p",
+        "t": "5 notes, G1 Sec 4"
+       },
+       "TL": {
+        "s": "y",
+        "t": "About 480 activity rows"
+       }
+      }
+     },
+     {
+      "id": "clgoal",
+      "name": "Method for setting a 21CC unit goal",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "Choose 2 to 3 competencies a unit can really build, then write one combined goal.",
+      "what": "CL's appendix sets out 21CC goals across four developmental levels, then shows how to choose 2 to 3 that suit a unit and combine them with the language goal.",
+      "where": "The Sec 1A, 1B and Sec 3 CL guides for G1, G2, G3 and HCL (12 guides). The worked example is Sec 1A Unit 3, Meet in the Lion City.",
+      "gap": "ML's guides have no equivalent. TL's Word overviews name competencies with no level or goal-setting method; TL's garbled PDFs cannot be searched for one.",
+      "why": "A tag says a competency is present. A levelled goal says what progress looks like, which is closer to MOE's developmental milestones.",
+      "try": "TL: add a level to the tags in one G3 unit. ML: write one combined goal for a unit that already uses STAR.",
+      "c": {
+       "CL": {
+        "s": "y",
+        "t": "12 guides, one worked unit"
+       },
+       "ML": {
+        "s": "n",
+        "t": "No equivalent found"
+       },
+       "TL": {
+        "s": "n",
+        "t": "Not in Word overviews"
+       }
+      }
+     },
+     {
+      "id": "sec",
+      "name": "Social-emotional competencies named in activities",
+      "from": "TL",
+      "to": [
+       "CL",
+       "ML"
+      ],
+      "line": "Activities name skills such as self-management, social awareness and responsible decisions.",
+      "what": "TL overviews name the social-emotional competency an activity builds, alongside 21CC, so that it is planned and not left to chance.",
+      "where": "About 200 of about 1,200 activity rows in the TL Word overviews: G2 about 110, HTL about 60, G1 about 20 and G3 under 10. So it has not spread evenly within TL either.",
+      "gap": "In CL guides the words appear only inside the 21CC framework appendix, not against lessons. No ML guide names them.",
+      "why": "Themes such as relationships and well-being already run through all three languages, so the tags fit existing units.",
+      "try": "CL: G3 Sec 3 Unit 1, Friends by your side. ML: G3 Sec 3 Unit 6, One for all, all for one.",
+      "c": {
+       "CL": {
+        "s": "n",
+        "t": "Framework appendix only"
+       },
+       "ML": {
+        "s": "n",
+        "t": "Not named"
+       },
+       "TL": {
+        "s": "p",
+        "t": "About 200 rows, few in G3"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "k": "Assessment",
+    "items": [
+     {
+      "id": "anec",
+      "name": "Anecdotal assessment written into lessons",
+      "from": "ML",
+      "to": [
+       "CL",
+       "TL"
+      ],
+      "line": "Lesson plans tell the teacher what to observe and check, and when.",
+      "what": "ML lesson plans prompt quick checks through questioning, discussion or observation, so that teachers can judge readiness before moving to the next part of the unit.",
+      "where": "All 32 ML teacher guides and SOW samples, across every course and year.",
+      "gap": "CL mentions classroom observation in some places, without a named routine in the lesson plan. TL tags some activities as holistic assessment (about 30 overview rows), without saying what to look for.",
+      "why": "It gives every lesson a low-stakes check on learning without adding marking.",
+      "try": "CL: add one observation prompt to each block of one unit. TL: expand the existing holistic assessment tags into look-fors.",
+      "c": {
+       "CL": {
+        "s": "p",
+        "t": "Occasional, no routine"
+       },
+       "ML": {
+        "s": "y",
+        "t": "All 32 files"
+       },
+       "TL": {
+        "s": "p",
+        "t": "About 30 tagged rows"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "k": "Teaching routines",
+    "items": [
+     {
+      "id": "under",
+      "name": "Intended understanding and essential questions",
+      "from": "ML",
+      "to": [
+       "CL",
+       "TL"
+      ],
+      "line": "Each unit starts from what students should understand and what question drives it.",
+      "what": "ML frames units around an intended understanding, and many guides add essential questions (Soalan Penting). The lessons then work toward them.",
+      "where": "Intended understandings appear in 23 ML guides across all four courses. Essential questions are named in 12 ML files.",
+      "gap": "CL sets skill goals and teaches its goal method in the appendix. TL lists learning outcomes per activity. Neither frames units this way in the files read.",
+      "why": "Essential questions are the natural starting point for inquiry, so this supports the department's 2027 inquiry work directly.",
+      "try": "CL and TL: write one essential question for the units chosen for STAR above.",
+      "c": {
+       "CL": {
+        "s": "n",
+        "t": "Skill goals instead"
+       },
+       "ML": {
+        "s": "y",
+        "t": "23 guides"
+       },
+       "TL": {
+        "s": "n",
+        "t": "Learning outcomes instead"
+       }
+      }
+     },
+     {
+      "id": "think",
+      "name": "Named thinking routines",
+      "from": "ML",
+      "to": [
+       "CL",
+       "TL"
+      ],
+      "line": "Think-Pair-Share and See-Think-Wonder are written into the lesson steps.",
+      "what": "ML lesson plans name the routine to use at each step, and the same routines recur, so students come to know them.",
+      "where": "Think-Pair-Share appears in all 32 ML guide and SOW files. Other thinking routines are named in 27.",
+      "gap": "TL uses Think-Pair-Share and KWL in a few lessons. CL uses thinking maps (思维图) but does not name these routines.",
+      "why": "Students taking two languages could meet the same routines in both, which reduces how much has to be taught twice.",
+      "try": "All three: agree two or three shared routines for Sec 1.",
+      "c": {
+       "CL": {
+        "s": "p",
+        "t": "Thinking maps only"
+       },
+       "ML": {
+        "s": "y",
+        "t": "All 32 files"
+       },
+       "TL": {
+        "s": "p",
+        "t": "A few lessons"
+       }
+      }
+     },
+     {
+      "id": "swc",
+      "name": "Say it, write it, check it",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "Oral rehearsal before writing, then a peer check against a checklist.",
+      "what": "Students talk through their ideas using word and sentence scaffolds, write, then read to a partner and check against a checklist. The same routine runs for four years, and only the scaffolds thin out.",
+      "where": "The CL teacher guides, through the writing blocks of each unit, supported by SLS writing packages.",
+      "gap": "ML discusses a model text and then writes, with no fixed check step. TL has self and peer sheets in the appendices, without a set routine.",
+      "why": "It supports weaker writers, and all three languages share the same SEC paper structure.",
+      "try": "ML: the response-text tasks in Sec 3. TL: one production task in Sec 1.",
+      "c": {
+       "CL": {
+        "s": "y",
+        "t": "Runs all four years"
+       },
+       "ML": {
+        "s": "n",
+        "t": "No fixed check step"
+       },
+       "TL": {
+        "s": "p",
+        "t": "Sheets in appendices"
+       }
+      }
+     },
+     {
+      "id": "diff",
+      "name": "Differentiation advice in each guide",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "Suggestions for adjusting a lesson up or down for different learners.",
+      "what": "CL guides include a section of differentiation suggestions (差异性处理) for teaching points, not only general advice.",
+      "where": "All 60 CL guide files.",
+      "gap": "ML guides offer some enrichment (Pengayaan) and scaffolding notes, about 30 mentions in all. It was not found in TL's Word overviews; the garbled PDFs cannot be searched.",
+      "why": "Every language teaches a range of learners, and teachers should not have to work out the adjustments alone each time.",
+      "try": "ML: add support and stretch notes to one G2 unit. TL: do the same for one G1 unit.",
+      "c": {
+       "CL": {
+        "s": "y",
+        "t": "All 60 files"
+       },
+       "ML": {
+        "s": "p",
+        "t": "About 30 mentions"
+       },
+       "TL": {
+        "s": "n",
+        "t": "Not in Word overviews"
+       }
+      }
+     },
+     {
+      "id": "read",
+      "name": "One named reading skill per unit",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "Each unit teaches one reading skill by name, tied to the theme.",
+      "what": "Each CL unit names the reading skill it teaches and anchors it in the text, so the skills build across the year.",
+      "where": "The CL teacher guides, in each unit's learning-content table and reading block.",
+      "gap": "ML reading sits inside each part with no skill named per unit, apart from the Sec 4 Unit 5 critical-reading toolkit. TL has comprehension every unit, with no skill named in the overviews.",
+      "why": "Students and teachers can see which reading skill they are building, and every language is examined on reading comprehension.",
+      "try": "ML: bring the Sec 4 Unit 5 toolkit forward into a Sec 3 unit. TL: name one skill per unit in Sec 3.",
+      "c": {
+       "CL": {
+        "s": "y",
+        "t": "Every unit"
+       },
+       "ML": {
+        "s": "p",
+        "t": "Sec 4 Unit 5 toolkit"
+       },
+       "TL": {
+        "s": "n",
+        "t": "Not named in overviews"
+       }
+      }
+     }
+    ]
+   }
+  ],
+  "method": [
+   "What counts as found: the term or practice appears in the guide text, searched on 4 Nov 2026 across every CL, ML and TL guide and syllabus on the department's drive. Counts are from that search and are approximate.",
+   "Limits: most TL lesson-preparation PDFs are garbled, so Tamil text in them could not be searched and TL gaps are the least certain. English terms such as STAR and 5E could still be found. A few guide pages are images only.",
+   "Not found means not named in the guides. Teachers may well be doing this in class already.",
+   "The “First place to try” lines are department suggestions, not CPDD advice. They still need the language teams' judgement."
+  ]
+ },
+ "about": {
+  "what": "What each language's CPDD package does well that has not reached the other two, such as ML's STAR inquiry activity and TL's activity-by-activity 21CC map.",
+  "points": [
+   "The clearest gap: how CL, ML and TL each handle 21CC.",
+   "Twelve practices, each showing how far it has spread across the three languages.",
+   "Where to find each one in the guides, and a first place to try it."
+  ],
+  "use": "Pick a language in the panel to see only what it could borrow. Tap a practice for the evidence."
+ }
+}

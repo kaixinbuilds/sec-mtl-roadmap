@@ -234,6 +234,10 @@ D["priNote"] = "BVSS E21CC priority areas (school approach from 2027): Adaptive 
 
 # ---------- 3. Pedagogical design facts ----------
 D["design"] = json.loads((ROOT / "tools" / "design.json").read_text(encoding="utf-8"))
+_sh = json.loads((ROOT / "tools" / "share.json").read_text(encoding="utf-8"))  # cross-language practices page
+D["design"]["share"] = _sh["share"]
+D["design"].setdefault("about", {})["share"] = _sh["about"]
+D["ui"]["t_share"] = {"en":"Learn across languages","zh":"三语互鉴","ms":"Belajar merentas bahasa","ta":"மொழிகளிடையே கற்றல்"}
 
 # ---------- 4. Redesigned SOW frame (tools/sow.json) ----------
 D["sow"] = json.loads((ROOT / "tools" / "sow.json").read_text(encoding="utf-8"))
