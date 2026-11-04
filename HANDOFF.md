@@ -296,3 +296,4 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - The unit pop-up still lists DSOs and school values as separate sections.
 - Rows header has a "Clear all" link: keeps only Units, then the HOD switches on what she needs (`data-rowclr`).
 - Source is now two multi-select chips, CPDD and Inferred (both on = `psrc` all; the last one on cannot be switched off). The "CPDD + inferred" button is gone.
+- Sec 1–4 progression side panel: Source is one row (All / CPDD tagged / Inferred; CPDD tagged still includes tags derived from a CPDD tag) and Lens is one row (All / IBL / E21CC).

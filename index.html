@@ -695,7 +695,7 @@ table.tgrid li:has(>.tsk){list-style:none;margin-left:-16px}
  <div class="eyebrow" id="heroEye"></div><h1 id="heroT"></h1><p class="lead" id="heroLead"></p>
  <div class="kp" id="heroPts"></div><p class="use" id="heroUse"></p>
 </div></section>
-<div class="inner shell"><aside class="side" id="side" aria-label="Filters"><div class="seg tg2" id="sowLens"></div><div class="seg tg" id="langSeg"></div><div class="seg tg" id="crsSeg"></div><div class="seg" id="skV"></div><div class="seg" id="skP"></div><div class="seg" id="skS"></div><div class="seg" id="skL"></div><div class="seg skcomp" id="skC"></div><div class="seg tg" id="yearSeg"></div><div class="srows" id="sowRows"></div><div class="seg" id="fl"></div><div class="seg" id="fc"></div><div class="seg" id="fs"></div><div class="seg" id="fsrc"></div><div class="pagectl" id="pageCtl"></div><div class="key" id="key"></div></aside><main id="view"></main></div>
+<div class="inner shell"><aside class="side" id="side" aria-label="Filters"><div class="seg tg2" id="sowLens"></div><div class="seg tg" id="langSeg"></div><div class="seg tg" id="crsSeg"></div><div class="seg" id="skV"></div><div class="seg" id="skP"></div><div class="seg" id="skS"></div><div class="seg" id="skL"></div><div class="seg skcomp" id="skC"></div><div class="seg tg" id="yearSeg"></div><div class="srows" id="sowRows"></div><div class="seg" id="fl"></div><div class="seg" id="fc"></div><div class="seg" id="fs"></div><div class="seg tg" id="fsrc"></div><div class="pagectl" id="pageCtl"></div><div class="key" id="key"></div></aside><main id="view"></main></div>
 <footer class="site"><div class="inner" id="foot"></div></footer>
 
 <script>
@@ -756,7 +756,7 @@ function controls(){
  $("#yearSeg").innerHTML=`<span class="lab">${esc(Tm("year"))}</span>`+[1,2,3,4].map(s=>`<button data-sows="${s}" aria-pressed="${st.sowS.includes(s)}" title="${esc(secName(s,st.lang))}">S${s}</button>`).join("")+`<span class="hint">Click to add or remove. Any mix of languages, courses and years works.</span>`;$("#yearSeg").hidden=!sw_;
  $("#sowLens").hidden=$("#sowRows").hidden=!sw_;if(sw_){const cur=sowLens(),cl=SLENS.find(x=>x[0]===cur);$("#sowLens").innerHTML=`<span class="lab">Lens</span>`+SLENS.map(([k,l])=>`<button data-slens="${k}" aria-pressed="${cur===k}">${esc(l)}</button>`).join("")+`<span class="hint">${esc(cl?cl[3]:"Your own choice of rows.")}</span>`;$("#sowRows").innerHTML=sowRowsSide()}else $("#sowLens").innerHTML=$("#sowRows").innerHTML="";
  const roads=st.tab==="prog",cnm=c=>c==="H"?"HMT":DATA.courseEn[c];
- sseg("#fl",Tm("language"),st.sL,[["All",Tm("allx")],["CL","CL"],["ML","ML"],["TL","TL"]],"data-sl");sseg("#fc",Tm("course"),st.sC,[["All",Tm("allx")],...["G1","G2","G3","H"].map(c=>[c,cnm(c)])],"data-sc");sseg("#fs",Tm("year"),String(st.sS),[["All",Tm("allx")],...[1,2,3,4].map(n=>[String(n),secName(n,st.lang)])],"data-ss");const SX=UX().src||{};sseg("#fsrc",SX.label||"Source",st.src,[["all","CPDD + inferred"],["cpdd",st.lens==="ibl"?"CPDD-tagged only":"CPDD-tagged or derived"],["infer","Inferred only"]],"data-src");
+ sseg("#fl",Tm("language"),st.sL,[["All",Tm("allx")],["CL","CL"],["ML","ML"],["TL","TL"]],"data-sl");sseg("#fc",Tm("course"),st.sC,[["All",Tm("allx")],...["G1","G2","G3","H"].map(c=>[c,cnm(c)])],"data-sc");sseg("#fs",Tm("year"),String(st.sS),[["All",Tm("allx")],...[1,2,3,4].map(n=>[String(n),secName(n,st.lang)])],"data-ss");const SX=UX().src||{};sseg("#fsrc",SX.label||"Source",st.src,[["all","All"],["cpdd","CPDD tagged"],["infer","Inferred"]]/* one row (4 Nov 2026); CPDD tagged includes tags derived from a CPDD tag */,"data-src");
  ["#fl","#fc","#fs","#fsrc"].forEach(id=>$(id).hidden=!roads);
  /* Skills at a glance: its toggles live in the sidebar so they stay in reach while scrolling the table */
  const sk=st.tab==="skills"&&st.lang==="CL",cmp_=!["write","fam","map"].includes(st.kv),el=isEL(),fam=st.kv==="fam",Cc=(SKD.comp||{})[st.crs];
@@ -1009,7 +1009,7 @@ document.addEventListener("click",e=>{document.querySelectorAll("details.refm[op
 function catName(k){const c=DATA.cat[k];if(st.mode==="el")return c.en;const L=st.sL==="All"?st.lang:st.sL;return c[ML_[L]]||c.en}
 /* Sec 1-4 progression: the former 21CC, Inquiry and E21CC-priority roadmaps in one tab with a lens (3 Nov 2026).
    Everything = all three tag sets; Inquiry = ibl tags; E21CC = MOE 21CC tags + BVSS priority areas. */
-const LENS=[["all","Everything","Inquiry and E21CC together"],["ibl","Inquiry","Inquiry (IBL) tags and sketches"],["e21","E21CC","MOE 21CC tags, milestones and BVSS priority areas"]];
+const LENS=[["all","All","Inquiry and E21CC together"],["ibl","IBL","Inquiry (IBL) tags and sketches"],["e21","E21CC","MOE 21CC tags, milestones and BVSS priority areas"]];
 const hasL=(x,l=st.lens)=>l==="all"||(x==="ibl"?l==="ibl":l==="e21");
 const lensKeys=(l=st.lens)=>Object.keys(DATA.cat).filter(k=>hasL(DATA.cat[k].lens,l));
 const lensFocus=()=>st.tab==="prog"?st.lens:st.tab==="sow"?sowLens():"core";
@@ -1486,7 +1486,7 @@ function vHome(){const A=(DATA.design&&DATA.design.about)||{},d=k=>HOMEC[k]||(A[
  return `<section class="home"><h2>Plan</h2><div class="hgrid plan">${NAV[0][1].map((x,i)=>card(x,i,1)).join("")}</div><h2>Look things up</h2><div class="hgrid ref">${NAV[1][1].map((x,i)=>card(x,i)).join("")}</div></section>`}
 /* Every page's toggles sit in the side panel (3 Nov 2026), so they stay in reach at any point of reading. The page builds them as usual; this moves them (their click handlers move with them). */
 function sideCtl(){const pc=$("#pageCtl");pc.innerHTML="";const an=b=>[...b.attributes].map(x=>x.name).find(n=>n.startsWith("data-")),seen=new Set([...document.querySelectorAll("#side .seg:not([hidden]) button")].map(an).filter(Boolean));
- document.querySelectorAll("#view .lensbar").forEach(b=>{const bs=b.querySelectorAll("button[data-lens]");if(!bs.length)return;const s=document.createElement("div");s.className="seg tg2";s.innerHTML=`<span class="lab">Lens</span>`;bs.forEach(x=>s.appendChild(x));b.querySelector(".lh")?.remove();pc.appendChild(s)});
+ document.querySelectorAll("#view .lensbar").forEach(b=>{const bs=b.querySelectorAll("button[data-lens]");if(!bs.length)return;const s=document.createElement("div");s.className="seg tg";s.innerHTML=`<span class="lab">Lens</span>`;bs.forEach(x=>s.appendChild(x));b.querySelector(".lh")?.remove();pc.appendChild(s)});
  document.querySelectorAll("#view .seg").forEach(s=>{if(s.closest("figure,dialog,table"))return;const bs=[...s.querySelectorAll("button")];const a=bs.length&&an(bs[0]);if(!a||!bs.some(b=>b.hasAttribute("aria-pressed")))return;const sl=s.parentElement.classList.contains("slicer")?s.parentElement:null;
   if(seen.has(a))s.remove();else{seen.add(a);if(bs.every(b=>b.textContent.trim().length<=5))s.classList.add("tg");pc.appendChild(s)}if(sl&&!sl.children.length)sl.remove()});
  $("#side").classList.toggle("empty",!document.querySelector("#side .seg:not([hidden]) button, #side .key:not([hidden]) .pill"))}
