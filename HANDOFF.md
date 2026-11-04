@@ -328,3 +328,11 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - Quick search: `#qs` in the nav row (own row at 761 to 960px, beside the page menu on phones). The index covers pages, Progression lenses, schemes of work, units from `DATA.themes`, practices and glossary terms. Keys: / to focus, arrows, Enter, Esc.
 - After adding content run `python3 tools/checkgloss.py`. It lists acronym-like words in `DATA` that are in neither `terms` nor `ignore`. It reads data only, so also scan rendered text when UI strings change.
 - NEEDS HOD: confirm the eight "To confirm" terms: ACE Week, ApLM, CCM, SEP, SCT, AA, TP, BI. GEM is settled by the Strategic Plan draft. The draft also labels the vision ACE, but that does not confirm the meaning of ACE Week.
+
+## 4 Nov 2026 · E21CC to DSO page
+
+- New Plan page `#dso` (`vDso()`, `st.dsok`, `st.dsol`), with its text in `tools/dso.json`, embedded by `enrich.py` as `DATA.design.dso`. Sections: pathway (curriculum, E21CC, GEM, DSO), one inquiry grows all three, the plan's 16 milestones as bars, what this means, each outcome's climb with a unit traced in CL, ML and TL, what makes it intentional, how far to trust this.
+- Counts are computed in the browser from `DATA.ms21` (CPDD printed, or department reading) and `design.iblx` (sketches that add a goal), so they follow any TL refresh. Gap sentences use tokens such as `{CGC 2.w}`.
+- Left out on purpose: the Strategic Plan strategy map (SO and SI statements), marked for school leaders' vetting, and comments in the draft. The site is public.
+- Learn across languages: the two summaries are always CL, ML, TL, in yellow, green and blue blocks (`.shl-CL`, `.shl-ML`, `.shl-TL`).
+- NEEDS HOD: the moments, moves and short wording are the department's proposal; the TL counts wait for the SLS read.

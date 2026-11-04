@@ -1,0 +1,55 @@
+{
+ "_readme": "Page 'E21CC to DSO'. Counts are computed in the browser from DATA.ms21 and design.iblx, so they update when the TL data is refreshed. {CGC 2.w} = units as written, both levels; .lo and .up = as written at Sec 1-2 and Sec 3-4; .s = units a department sketch adds. Lanes and I-statements come from sow.json vmv (BVSS Strategic Plan 2027 to 2031 draft). Gaps, moments, moves and short 'in short' wording are the department's reading, not MOE or school text.",
+ "about": {
+  "what": "How the existing curriculum, taught with intent, builds Adaptive Learners, Caring Leaders and Ethical Changemakers through E21CC and GEM.",
+  "points": ["The pathway from what we teach to who students become.", "Where the guides already build the plan's 16 milestones, and where they do not.", "What each outcome looks like from Sec 1 to Sec 4, with a unit traced in CL, ML and TL."],
+  "use": "Start with the pathway. Then pick an outcome to see its climb and a unit traced in each language."
+ },
+ "title": "How E21CC leads to our Desired Student Outcomes",
+ "lead": "The Desired Student Outcomes (DSOs) are where we are heading. The curriculum gives the occasions, E21CC names what students practise, and GEM is the value each occasion calls on. The curriculum does not get there by itself: the gaps below show where teachers have to plan for it.",
+ "cols": ["What the curriculum gives", "What students practise (E21CC)", "The value it calls on (GEM)", "Who they become (DSO)"],
+ "lanes": [
+  {"k": "PA_AT", "cat": "CAIT", "goals": ["CAIT 3", "CAIT 4"], "gives": "Tasks that change the reader, the context or the view: role-play, debate, functional writing to a new reader, oral Q2 and Q3.", "short": ["See how a new context changes my view", "Adjust when my approach stops working"], "moment": "The plan fails. The student works out why, changes approach and keeps going.",
+   "gap": "Sec 1 and 2 is the thin part. As written, Sec 1–2 has {CAIT 3.lo} units for CAIT 3 and {CAIT 4.lo} for CAIT 4, against {CAIT 3.up} and {CAIT 4.up} at Sec 3–4. Left alone, students meet this outcome late.",
+   "move": "Plan one moment each semester at Sec 1–2 where the context changes or the plan fails, and ask students how they adjusted."},
+  {"k": "PA_CM", "cat": "CCIS", "goals": ["CCI 1", "CCI 2", "CCI 3", "CCI 4"], "gives": "Spoken interaction and functional writing for a real audience, group discussion, presentations, authentic assessments, oral Q1.", "short": ["Communicate and build meaning with others", "Respond with empathy", "Work through disagreement", "Take a role the group needs"], "moment": "Someone sees it differently. The student listens first, responds with respect and carries their share of the work.",
+   "gap": "Communication is well covered: CCI 1 in {CCI 1.w} units and CCI 2 in {CCI 2.w}. Collaboration is not: CCI 3 in {CCI 3.w} and CCI 4 in {CCI 4.w}. Students are often put in groups, but the guides rarely make working as a team the thing being learnt.",
+   "move": "In group tasks, have students choose roles and handle a disagreement, and give feedback on that as well as on the product."},
+  {"k": "PA_CL", "cat": "CGC", "goals": ["CGC 1", "CGC 2"], "gives": "Units on community, Singapore, culture and the world; proposals and reports on a real issue; MT Fortnight, festivals and the 40 Stories project.", "short": ["Understand issues from many perspectives", "Act to improve school and community"], "moment": "The finding is unpopular or challenged. The student stands by the evidence and acts on it.",
+   "gap": "This is the widest gap. Students learn about issues far more than they act on them: CGC 1 in {CGC 1.w} units, CGC 2 in {CGC 2.w}. Knowing about an issue does not make a changemaker.",
+   "move": "End some inquiries with a proposal or action that reaches someone outside the class, then ask what the student will stand up for."}
+ ],
+ "phases": [
+  {"name": "Orientation and Conceptualisation", "k": "PA_AT", "t": "Meet an open question, notice how the context differs, plan how to find out."},
+  {"name": "Investigation", "k": "PA_CM", "t": "Find out with and from people unlike us. Share the work. When a plan fails, adjust."},
+  {"name": "Conclusion", "k": "PA_CL", "t": "Take a position, propose or act on a change, stand by the evidence."}
+ ],
+ "climb": {
+  "CAIT 3": ["See how a different context changes my view or approach", "Use those differences to draw new insights"],
+  "CAIT 4": ["Adjust my approach and use what I learnt in an unfamiliar context", "Adapt what I learnt to solve complex, unexpected problems"],
+  "CCI 1": ["Build ideas with others, clearly, for a purpose and context", "Weigh ideas critically and build complex ones persuasively"],
+  "CCI 2": ["Respond with respect and empathy, aware of different backgrounds", "Do the same, aware of how backgrounds shape the whole exchange"],
+  "CCI 3": ["Manage disagreement and take in suggestions to finish the task", "Mediate conflict and reach a decision the group can share"],
+  "CCI 4": ["Choose my role by reading how the group works", "Reflect on working relationships and adapt to the shared goals"],
+  "CGC 1": ["Explain issues that affect Singapore, from several perspectives", "Evaluate those issues and manage tensions towards a common good"],
+  "CGC 2": ["Plan programmes with others for school and community, with support", "Identify the steps and start programmes myself, with others"]
+ },
+ "traced": {
+  "PA_AT": {"CL": "CL|G3|1|1B|4", "ML": "ML|G2|1|1B|7", "TL": "TL|G1|1|1A|4"},
+  "PA_CM": {"CL": "CL|G3|1|1B|6", "ML": "ML|G3|2|2B|5", "TL": "TL|G3|2|2A|1"},
+  "PA_CL": {"CL": "CL|G3|2|2B|5", "ML": "ML|G2|3||4", "TL": "TL|G3|2|2A|3"}
+ },
+ "loop": [
+  ["Plan", "Pick the unit's lead outcome and one or two goals. Ask where students have to do it, not what the theme is."],
+  ["Teach", "Set a task that makes the student make the move. One inquiry can grow all three outcomes, led by one."],
+  ["Give feedback", "Use the milestone wording as feedback language, not a weighted mark. Improve the product once before it is final."],
+  ["Reflect", "Close with the GEM question. Share findings with an audience beyond the class."]
+ ],
+ "caveats": [
+  "This shows the chance to learn, not what students have achieved. The draft Strategic Plan names the goals but sets no E21CC measures or targets yet.",
+  "Orange bars are department inquiry sketches. They are proposals: they only count once a teacher runs them.",
+  "Counts come from the 2021 guides as the department has read them. A goal that a guide tags only by competency name has been read to one goal, so some goals may be undercounted. TL is being re-read from SLS because its PDFs cannot be searched, and these numbers will change.",
+  "The 16 milestones, I-statements and GEM pairings are from the Strategic Plan draft, which may still change. Lead outcomes, moments and moves are the department's proposal, to be agreed with the language teams.",
+  "Inventive Thinking (CAIT 5 and 6) is not a school focus area in the plan. The department counts it under Ethical Changemakers, so it is not in the chart."
+ ]
+}

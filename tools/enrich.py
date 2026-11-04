@@ -248,6 +248,9 @@ D["design"] = json.loads((ROOT / "tools" / "design.json").read_text(encoding="ut
 _sh = json.loads((ROOT / "tools" / "share.json").read_text(encoding="utf-8"))  # cross-language practices page
 D["design"]["share"] = _sh["share"]
 D["design"].setdefault("about", {})["share"] = _sh["about"]
+_dso = json.loads((ROOT / "tools" / "dso.json").read_text(encoding="utf-8"))  # E21CC to DSO page
+D["design"]["dso"] = {k: v for k, v in _dso.items() if k not in ("_readme", "about")}
+D["design"]["about"]["dso"] = _dso["about"]
 _gl = json.loads((ROOT / "tools" / "glossary.json").read_text(encoding="utf-8"))
 D["design"]["glossary"] = _gl["terms"]
 D["design"]["about"]["gloss"] = {"what":"What every acronym on this site stands for, including E21CC (Emerging 21st Century Competencies) and IBL (inquiry-based learning).","points":["Search or scroll the list. Terms are in alphabetical order.","Some letters have two meanings, such as SEC and STAR. Each meaning has its own entry.","Terms marked \"To confirm\" are not spelled out in the sources on hand."],"use":"Tap a dotted-underlined acronym anywhere on the site to come to its entry here."}
