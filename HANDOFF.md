@@ -337,4 +337,10 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - Counts are computed in the browser from `DATA.ms21` (CPDD printed, or department reading) and `design.iblx` (sketches that add a goal), so they follow any TL refresh. Gap sentences use tokens such as `{CGC 2.w}`.
 - Left out on purpose: the Strategic Plan strategy map (SO and SI statements), marked for school leaders' vetting, and comments in the draft. The site is public.
 - Learn across languages: the two summaries are always CL, ML, TL, in yellow, green and blue blocks (`.shl-CL`, `.shl-ML`, `.shl-TL`).
-- NEEDS HOD: the moments, moves and short wording are the department's proposal; the TL counts wait for the SLS read.
+- NEEDS HOD: the moments, moves and short wording are the department's proposal.
+
+## 4 Nov 2026 · Tamil SLS read
+
+- Read through the SLS lesson, question and media-metadata APIs: 282 hub unit-card lessons, 125 other lessons, a sample of 10 series. Output stays offline: `CPDD resources (2021 Syllabus)/_SLS_TL_Catalogue/TL_SLS_Catalogue.xlsx`, with per-group `.jsonl` and `_summary.md`. Media and packages were not opened.
+- Result: no TL claim on Learn across languages was overturned. Added: `S.tlsls` (fold-out `shTl()`), a sentence on five practices' gaps, and the TL lines in both summaries. No E21CC count changed: the only lesson printing codes (bf5ee313) has no unit and its goals are outside the 16 milestones.
+- The real gap remains the garbled TL lesson-preparation PDFs.
