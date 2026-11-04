@@ -2,7 +2,6 @@
  "_readme": "Acronyms relevant to MTL, BVSS and MOE work (HOD decision, 4 Nov 2026). General words such as HDB or PDF stay out: list them under `ignore`. c=1 means the sources on hand do not spell it out, so the meaning needs the HOD's confirmation. tools/checkgloss.py lists acronym-like words in the page that are in neither `terms` nor `ignore`; run it after adding content.",
  "ignore": [
   "4NA",
-  "AA",
   "ABC",
   "AI",
   "AM",
@@ -53,7 +52,16 @@
   "TBC",
   "USA",
   "WRITING",
-  "XX"
+  "XX",
+  "NEWater",
+  "ST1",
+  "ST2",
+  "ST3",
+  "MOTHER",
+  "TONGUE",
+  "LANGUAGES",
+  "AUTHENTIC",
+  "ASSESSMENT"
  ],
  "terms": [
   {
@@ -501,6 +509,18 @@
    "f": "Grit, Empathy, Moral Courage",
    "g": "School calendar",
    "n": "The BVSS school values, from the Strategic Plan 2027 to 2031 draft. The site's inquiry sketches close with a GEM reflection."
+  },
+  {
+   "t": "AA",
+   "f": "Authentic assessment",
+   "g": "Exams and assessment",
+   "n": "Marked AA on the E21CC dashboard."
+  },
+  {
+   "t": "4P",
+   "f": "Experience, Feelings, Opinion, Lesson",
+   "g": "Teaching and learning",
+   "n": "A way to organise a story or script, used in the Malay Sec 1 G3 authentic assessment."
   }
  ]
 }

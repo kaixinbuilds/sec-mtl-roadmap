@@ -356,3 +356,10 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - Share practice TL lines were re-tested against 97 lesson files. diff and read moved from n to p. iblwa, fivee, clgoal, anec, think and swc were reworded. star and under stayed n.
 - Lesson-file E21CC tally: `tools/cpdd21.py` now also reads the repaired Markdown, for the 9 units the Word overviews leave untagged (G3 1A Units 2-4, HTL Sec 4 Units 1-6): 30 new unit-domain tags. It changed no existing unit. Other mismatches were false unit numbers from flattened overview PDFs and were not added.
 - DSO page has a year view (`dyView` in `vDso`): terms across, milestones down, DSOs on the right, for any language, course and year. Mapping is by unit from `DATA.ms21`. Exam-term links are not mapped; the SPMC template on 1G3 CL does that from checked 2026 papers.
+
+## 5 Nov 2026 · E21CC dashboard tab
+
+- New tab `#e21d` in the Plan group, after E21CC to DSO: the HOD's "E21CC Dashboard Template (Sec 1 G3 MTL).html" in her format (colours and layout kept, `.edx` classes). Data is copied unchanged into `tools/e21dash.json`; `vE21d` renders it. The two pages link to each other: E21CC to DSO covers every course by unit, the dashboard covers Sec 1 G3 by task with why each task maps.
+- Callouts take full forms from the site glossary, so an acronym means one thing across the site. Her file's PEEL and CGC full forms differ from the glossary (PEEL: "Point, Elaborate, Example, Link" against "Point, Evidence, Explanation, Link"). PEEL is waiting on her confirmation.
+- Terms and dates are 2026's. CL (2, 1, 3 units across Terms 1 to 3) and ML (3, 2, 3) differ from the default 2027 pacing (2, 2, 2 and 3, 3, 2); TL matches. The page says so.
+- Glossary: AA and 4P added. Nav now wraps below 1160px to fit the extra tab.

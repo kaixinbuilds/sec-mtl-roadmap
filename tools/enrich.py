@@ -254,6 +254,10 @@ D["design"]["about"]["dso"] = _dso["about"]
 _gl = json.loads((ROOT / "tools" / "glossary.json").read_text(encoding="utf-8"))
 D["design"]["glossary"] = _gl["terms"]
 D["design"]["about"]["gloss"] = {"what":"What the MTL, BVSS and MOE acronyms on this site stand for, including E21CC (Emerging 21st Century Competencies) and IBL (inquiry-based learning).","points":["Search or scroll the list. Terms are in alphabetical order.","Some letters have two meanings, such as SEC and STAR. Each meaning has its own entry."],"use":"Tap a dotted-underlined acronym anywhere on the site to come to its entry here."}
+_ed = json.loads((ROOT / "tools" / "e21dash.json").read_text(encoding="utf-8"))  # E21CC dashboard page
+D["design"]["e21dash"] = {k: v for k, v in _ed.items() if k != "_readme"}
+D["design"]["about"]["e21d"] = {"what":"How one course's year develops the Emerging 21st Century Competencies (E21CC) and realises the BVSS Desired Student Outcomes, task by task. Sec 1 G3 for now, in Chinese, Malay and Tamil.","points":["One grid per language: terms across, E21CC milestones and DSOs down. Each cell names the task.","Select a cell to see why the task maps.","The Authentic Assessment tab reads each language's authentic assessment against the same milestones."],"use":""}
+D["ui"]["t_e21d"] = {"en":"E21CC dashboard","zh":"E21CC dashboard","ms":"E21CC dashboard","ta":"E21CC dashboard"}
 D["ui"]["t_gloss"] = {"en":"Glossary","zh":"词汇表","ms":"Glosari","ta":"சொற்களஞ்சியம்"}
 D["ui"]["t_share"] = {"en":"Learn across languages","zh":"三语互鉴","ms":"Belajar merentas bahasa","ta":"மொழிகளிடையே கற்றல்"}
 

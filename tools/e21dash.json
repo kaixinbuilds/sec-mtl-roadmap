@@ -1,0 +1,693 @@
+{
+ "_readme": "Sec 1 G3 E21CC dashboard, copied unchanged from the HOD's file 'E21CC Dashboard Template (Sec 1 G3 MTL).html' (5 Nov 2026). Rendered by vE21d in index.html. Edit here, then run tools/enrich.py.",
+ "ms": {
+  "CAIT 3": [
+   "Adaptive Thinking",
+   "Understands how similarities and differences between contexts affect their perspective or approach."
+  ],
+  "CAIT 4": [
+   "Adaptive Thinking",
+   "Adjusts their approach using different perspectives and strategies, applying learning in unfamiliar contexts."
+  ],
+  "CCI 1": [
+   "Communication",
+   "Conveys and evaluates knowledge to co-construct ideas, considering purpose and context."
+  ],
+  "CCI 2": [
+   "Communication",
+   "Responds with respect and empathy, sensitive to diverse backgrounds."
+  ],
+  "CCI 3": [
+   "Collaboration",
+   "Manages disagreements, takes in suggestions and contributes to shared goals."
+  ],
+  "CCI 4": [
+   "Collaboration",
+   "Determines and assumes their role by considering group dynamics."
+  ],
+  "CGC 1": [
+   "Civic Literacy",
+   "Describes and explains issues affecting Singapore, understanding multiple perspectives."
+  ],
+  "CGC 2": [
+   "Civic Literacy",
+   "Plans and organises programmes with others, with support; differentiates civic roles."
+  ]
+ },
+ "st": [
+  {
+   "k": "ST1",
+   "n": "Adaptive Learners",
+   "q": "“I adapt to different situations and adopt a growth mindset.”",
+   "v": "Grit",
+   "f": "Adaptive Thinking",
+   "ms": [
+    "CAIT 3",
+    "CAIT 4"
+   ]
+  },
+  {
+   "k": "ST2",
+   "n": "Caring Leaders",
+   "q": "“I communicate with empathy, collaborate effectively and lead by serving others.”",
+   "v": "Empathy",
+   "f": "Communication and Collaboration",
+   "ms": [
+    "CCI 1",
+    "CCI 2",
+    "CCI 3",
+    "CCI 4"
+   ]
+  },
+  {
+   "k": "ST3",
+   "n": "Ethical Changemakers",
+   "q": "“I act with courage and integrity to make a positive change.”",
+   "v": "Moral Courage",
+   "f": "Civic Literacy",
+   "ms": [
+    "CGC 1",
+    "CGC 2"
+   ]
+  }
+ ],
+ "meta": {
+  "start": "CL",
+  "year": {
+   "eyebrow": "SEC 1 G3 MOTHER TONGUE LANGUAGES",
+   "h1": "How the year develops E21CC and realises our DSOs",
+   "sub": "Each cell names the task that maps to the milestone."
+  },
+  "aa": {
+   "label": "Authentic Assessment",
+   "eyebrow": "SEC 1 G3 MOTHER TONGUE LANGUAGES · AUTHENTIC ASSESSMENT",
+   "h1": "How our authentic assessments develop E21CC and realise our DSOs"
+  }
+ },
+ "subjects": {
+  "CL": {
+   "label": "Chinese (CL)",
+   "terms": {
+    "1": "Unit 1: New classmates, new experiences · Unit 2: Reunion · Compositions 1–2 · Listening and speaking · WA1",
+    "2": "Unit 3: Meet in Singapore · Emails 1–2 · Oral · WA2",
+    "3": "AA · Unit 4: The power of habit · Unit 5: Innovation and change · Unit 6: Ordinary people, big contributions · Composition 3 · Email 3",
+    "4": "End-of-year preparation (first 2 weeks) · End-of-year exam"
+   },
+   "map": {
+    "CAIT 3": {
+     "1": [
+      {
+       "t": "Unit 2: Comparing Eastern and Western New Year customs",
+       "w": "W5",
+       "y": "Students compare how Eastern and Western cultures mark the New Year."
+      }
+     ],
+     "2": [
+      {
+       "t": "Unit 3: Comparing tourist route maps",
+       "w": "W1",
+       "y": "Groups compare two local tourist route maps on choice of sites, theme, audience and presentation, then share what they find."
+      }
+     ],
+     "3": [
+      {
+       "t": "Unit 5: Comparing two competition posters",
+       "w": "W6",
+       "y": "Students find the similarities and differences between two competition posters."
+      }
+     ]
+    },
+    "CAIT 4": {
+     "2": [
+      {
+       "t": "Unit 3: Designing a three-day itinerary for a foreign friend",
+       "w": "W4",
+       "y": "Students design an itinerary to suit a foreign friend’s needs, using what they have learnt about Singapore."
+      }
+     ],
+     "3": [
+      {
+       "t": "Unit 5: Weighing views on changing animal genes",
+       "w": "W7",
+       "y": "Students weigh views for and against, give their own, record it on SLS and comment on each other’s."
+      },
+      {
+       "t": "Unit 5: Inventing a product for an everyday problem",
+       "w": "W7",
+       "y": "Groups conceive a product that solves an everyday problem, write a plan and present it."
+      }
+     ]
+    },
+    "CCI 1": {
+     "1": [
+      {
+       "t": "Composition 1: Describing a character",
+       "w": "W4",
+       "y": "Students convey a character through description."
+      },
+      {
+       "t": "Listening and speaking: Views on keeping traditional customs",
+       "w": "W7",
+       "y": "Students give a view on whether traditional customs should be kept."
+      },
+      {
+       "t": "Composition 2: Narrative around a theme",
+       "w": "W10",
+       "y": "Students organise a narrative around a theme."
+      }
+     ],
+     "2": [
+      {
+       "t": "Unit 3: Emails 1–2 to a named reader",
+       "w": "W4–5",
+       "y": "Students write to a named reader for a stated purpose. The CPDD guide names CCI 1.3 as a goal of Unit 3."
+      },
+      {
+       "t": "Oral practice: Sharing experiences, giving suggestions",
+       "w": "W6–7",
+       "y": "Students share experiences and give suggestions in conversation."
+      },
+      {
+       "t": "Oral exam Q2: Suggesting how parents can build teens’ sleep habits",
+       "w": "11 May",
+       "y": "After a video on sleep habits, students suggest how parents can help teens build good habits, and say how this helps."
+      },
+      {
+       "t": "WA2: Email paper",
+       "w": "W8",
+       "y": "The email paper assesses writing for a reader and purpose."
+      }
+     ],
+     "3": [
+      {
+       "t": "Interview video: Student leader role",
+       "w": "W2–6",
+       "y": "Students script and record a mock interview for a student leader role, using PEEL, and say how they would help teachers and classmates.",
+       "aa": true
+      },
+      {
+       "t": "Email 3: Sharing an experience and a view",
+       "w": "W9",
+       "y": "Students share an experience and give a view."
+      },
+      {
+       "t": "Email 4: Practice under exam conditions",
+       "w": "W10",
+       "y": "Students practise email writing under exam conditions."
+      }
+     ],
+     "4": [
+      {
+       "t": "End-of-year email: Reply to a friend",
+       "y": "Students reply to a friend for a set purpose, choosing 1 of 2: using a learning device in class, or thanking class committee members."
+      },
+      {
+       "t": "End-of-year composition: Narrative on a change of view",
+       "y": "Students organise a narrative of at least 250 words around a change of view, and convey their feelings."
+      },
+      {
+       "t": "End-of-year comprehension: Giving a view, with an example",
+       "y": "Students read for meaning, then say whether they agree with a stated view and back it with a real-life example."
+      }
+     ]
+    },
+    "CCI 2": {
+     "1": [
+      {
+       "t": "Listening and speaking: Responding to views on customs",
+       "w": "W7",
+       "y": "Students respond to classmates’ views on traditional customs."
+      }
+     ],
+     "2": [
+      {
+       "t": "Conversation: Taking another person’s position",
+       "w": "W7",
+       "y": "Students take another person’s position in conversation."
+      },
+      {
+       "t": "Oral exam Q1: Imagining how the girl in the video feels",
+       "w": "11 May",
+       "y": "Students imagine being the girl in the video, and say how she feels and why."
+      }
+     ],
+     "3": [
+      {
+       "t": "Unit 6: Role-playing unsung heroes",
+       "w": "W8",
+       "y": "Students appreciate the work of people who are often overlooked, and role-play them."
+      }
+     ],
+     "4": [
+      {
+       "t": "End-of-year composition: How an event changed their view of someone",
+       "y": "Students tell how an event changed their view of a classmate they disliked, or of parents they thought did not understand them. They choose 1 of 2."
+      },
+      {
+       "t": "End-of-year email, option 2: Thanking class committee members",
+       "y": "Students say how they would thank and support class committee members who quietly help others. Not all students choose this option."
+      }
+     ]
+    },
+    "CCI 3": {
+     "1": [
+      {
+       "t": "Unit 2: Comparing views on reunion dinner as a group",
+       "w": "W9",
+       "y": "Groups compare the views each member collected, sum them up and make a slide deck."
+      }
+     ],
+     "3": [
+      {
+       "t": "Unit 5: Agreeing on and presenting a product plan as a group",
+       "w": "W7",
+       "y": "Groups discuss and agree on one product, then complete and present a plan together."
+      }
+     ]
+    },
+    "CGC 1": {
+     "1": [
+      {
+       "t": "Unit 2: Why people differ on going home for reunion dinner",
+       "w": "W9",
+       "y": "Students use news reports to learn why people differ on whether one must go home for reunion dinner."
+      }
+     ],
+     "2": [
+      {
+       "t": "Unit 3: Singapore’s places, food and cultures",
+       "w": "W1–2, W10",
+       "y": "Students learn about Singapore’s places, food and cultures. The CPDD guide names CGC 1.3 as a goal of Unit 3."
+      }
+     ],
+     "3": [
+      {
+       "t": "Unit 6: Local workers’ contribution; fact and opinion in the news",
+       "w": "W8",
+       "y": "Students examine the contribution of local workers and separate fact from opinion in a Singapore news report."
+      },
+      {
+       "t": "Email 3: Writing about unsung heroes",
+       "w": "W9",
+       "y": "Students write about unsung heroes such as the school attendant."
+      }
+     ]
+    }
+   }
+  },
+  "ML": {
+   "label": "Malay (ML)",
+   "terms": {
+    "1": "Unit 1: Need or want · Unit 2: We must be sensitive · Unit 3: Overcoming challenge",
+    "2": "Unit 4: Inspiration · Unit 5: Courtesy · Oral exam",
+    "3": "AA · Unit 6: Come and eat · Unit 7: Facing challenges · Unit 8: Giving back",
+    "4": "End-of-year preparation (first 2 weeks) · End-of-year exam"
+   },
+   "map": {
+    "CAIT 3": {
+     "2": [
+      {
+       "t": "Unit 5: How we talk and act with different groups",
+       "y": "Students compare how they talk and act with different groups, and give reasons."
+      }
+     ],
+     "3": [
+      {
+       "t": "Oral presentation: Favourite food, traditional or fusion",
+       "w": "T3W6",
+       "y": "Students link a favourite dish to its traditional or fusion form.",
+       "aa": true
+      }
+     ]
+    },
+    "CAIT 4": {
+     "1": [
+      {
+       "t": "Unit 3: Weighing the best step in a challenge",
+       "y": "Students weigh the steps open to them in a challenge and identify the best one."
+      }
+     ],
+     "3": [
+      {
+       "t": "Unit 7: Explaining a decision in a Fishbowl discussion",
+       "y": "In a Fishbowl on scenario cards, students explain a decision and their reasons, weighing its pros and cons."
+      }
+     ]
+    },
+    "CCI 1": {
+     "1": [
+      {
+       "t": "Unit 1: Analysing a dilemma and justifying actions",
+       "y": "Groups analyse a dilemma on a whiteboard, then present and justify possible actions."
+      },
+      {
+       "t": "Unit 2: Writing a motivational message to a character",
+       "y": "Students write a motivational message to a character, with suitable words and register."
+      },
+      {
+       "t": "Unit 3: Writing a message of advice",
+       "y": "Students write a message of advice and check it against a checklist."
+      }
+     ],
+     "2": [
+      {
+       "t": "Unit 4: Explaining song choices to the class",
+       "y": "Students explain their song choices and present the group’s discussion to the class."
+      },
+      {
+       "t": "Oral exam: Sharing an experience of bringing own bags when shopping",
+       "w": "11 May",
+       "y": "After a video on reducing plastic, students tell of bringing their own bag or container when shopping, say how it felt, and share what they know about recycling."
+      }
+     ],
+     "3": [
+      {
+       "t": "Oral presentation: My favourite food, using 4P",
+       "w": "T3W6",
+       "y": "Students organise a script with 4P, then present it to an audience.",
+       "aa": true
+      },
+      {
+       "t": "Unit 6: Group debate on food culture",
+       "y": "In a group debate, students sum up both sides and give a view based on evidence."
+      },
+      {
+       "t": "Unit 8: Presenting an infographic",
+       "y": "Students present an infographic clearly and with confidence."
+      }
+     ],
+     "4": [
+      {
+       "t": "End-of-year response: Forum reply on choosing songs",
+       "y": "Students reply on a student forum, advising how to choose songs for morning assembly and giving reasons."
+      },
+      {
+       "t": "End-of-year essay: Describing an experience or telling a story",
+       "y": "Students write at least 240 words, describing an experience or telling a story."
+      },
+      {
+       "t": "End-of-year comprehension: Open-ended questions",
+       "y": "Students read for meaning and answer open-ended questions, such as how people’s attitudes to reuse differ."
+      }
+     ]
+    },
+    "CCI 2": {
+     "1": [
+      {
+       "t": "Unit 2: Telling teasing from mockery on social media",
+       "y": "Students read a character’s feelings and tell teasing from mockery in social media posts."
+      },
+      {
+       "t": "Unit 2: Words of support for a friend who is hurting",
+       "y": "Students use words of support and hope for a friend who is hurting."
+      }
+     ],
+     "2": [
+      {
+       "t": "Unit 4: Respecting different choices of music",
+       "y": "Students discuss why it matters to respect each person’s different choice of music."
+      },
+      {
+       "t": "Unit 5: Why polite, indirect wording matters",
+       "y": "Students discuss why indirect, polite wording protects courtesy."
+      },
+      {
+       "t": "Unit 5: How polite and impolite posts affect relationships",
+       "y": "Students examine how polite and impolite posts affect relationships and image."
+      }
+     ],
+     "3": [
+      {
+       "t": "Unit 8: Sincerity and appreciation in giving and receiving",
+       "y": "Students discuss sincerity, appreciation and taking advantage in giving and receiving."
+      }
+     ]
+    },
+    "CCI 3": {
+     "2": [
+      {
+       "t": "Unit 4: Reworking and performing a song as a group",
+       "y": "Groups rework the song ‘Orang Singapura’ and agree how to perform it. Students also take peer feedback on their story drafts."
+      }
+     ]
+    },
+    "CGC 1": {
+     "1": [
+      {
+       "t": "Unit 2: Social media problems in the news",
+       "y": "Students research news on common social media problems and discuss ways to address them."
+      }
+     ],
+     "2": [
+      {
+       "t": "Unit 4: Current issues on songs and youth",
+       "y": "Students discuss current issues on songs and youth, and traditional songs and students."
+      }
+     ],
+     "3": [
+      {
+       "t": "Unit 6: Debating whether innovation keeps Malay food relevant",
+       "y": "Students gather public comments, then debate whether innovation keeps Malay food relevant."
+      },
+      {
+       "t": "Unit 8: Forms of contribution in Singapore society",
+       "y": "Students identify forms of contribution in Singapore society and discuss community work through social media."
+      },
+      {
+       "t": "Unit 8: Comparing forms of contribution",
+       "y": "Students compare the many forms contribution can take."
+      }
+     ]
+    }
+   }
+  },
+  "TL": {
+   "label": "Tamil (TL)",
+   "terms": {
+    "1": "1A Modules: New beginnings · Harvest festival · Tamil and me",
+    "2": "1A Module: Goals · 1B Module: Keeping healthy · Oral exam",
+    "3": "AA · 1B Modules: The Internet · Water management",
+    "4": "End-of-year preparation (first 2 weeks) · End-of-year exam"
+   },
+   "map": {
+    "CAIT 3": {
+     "1": [
+      {
+       "t": "Tamil and me: How written and spoken Tamil differ",
+       "w": "Activity 1.3",
+       "y": "Students discuss how words change between written and spoken Tamil, then rework a dialogue for speech."
+      }
+     ],
+     "3": [
+      {
+       "t": "Water management: Comparing ancient Tamil and Singapore water plans",
+       "w": "Activity 3.3",
+       "y": "Students compare water management plans of the ancient Tamils with Singapore’s water-saving plans, and say what the ancient plans teach us."
+      }
+     ]
+    },
+    "CAIT 4": {
+     "2": [
+      {
+       "t": "Goals: Deciding what to do in everyday situations",
+       "w": "Activity 1.1",
+       "y": "Students work through situations such as a schoolmate short of money for food, and think through how to solve the problem. The guide tags responsible decision-making."
+      }
+     ]
+    },
+    "CCI 1": {
+     "1": [
+      {
+       "t": "New beginnings: Recording views on a CCA",
+       "w": "Activity 1.4",
+       "y": "Students record their views in spoken Tamil, using words that suit the situation."
+      },
+      {
+       "t": "Harvest festival: Designing and presenting a brochure",
+       "w": "Activity 1.11",
+       "y": "Students design and present a brochure for a given situation."
+      },
+      {
+       "t": "Tamil and me: Exchanging views orally",
+       "w": "Activity 1.4",
+       "y": "Students exchange views orally in response to set questions."
+      }
+     ],
+     "2": [
+      {
+       "t": "Goals: Email to a friend on thoughts and feelings",
+       "w": "Activity 1.10",
+       "y": "Students express thoughts and feelings in a fitting style."
+      },
+      {
+       "t": "Oral exam: Giving and justifying views on sport and health",
+       "w": "11 May",
+       "y": "After a video on sports, students say which they would like to play and why, then say whether they agree that sport benefits body and mind."
+      }
+     ],
+     "3": [
+      {
+       "t": "Oral presentation: The CCA I like, recorded with slides",
+       "w": "T3W6",
+       "y": "Students build slides with examples, then record their presentation.",
+       "aa": true
+      },
+      {
+       "t": "The Internet: Making a poster on Internet use",
+       "w": "Activity 2.10",
+       "y": "Students gather information and make a poster on Internet use."
+      },
+      {
+       "t": "Water management: Writing an event article",
+       "w": "Activity 3.11",
+       "y": "Students write an article that suits a given situation."
+      }
+     ],
+     "4": [
+      {
+       "t": "End-of-year email: Reply to a friend",
+       "y": "Students reply to a friend for a set purpose, sharing useful holiday activities or advising on healthy living. They choose 1 of 2."
+      },
+      {
+       "t": "End-of-year essay: An incident and the lesson learnt",
+       "y": "Students write at least 180 words, such as on an unexpected incident and the lesson learnt."
+      },
+      {
+       "t": "End-of-year comprehension: Explaining ideas in own words",
+       "y": "Students read for meaning and explain in their own words, such as why thrift matters."
+      }
+     ]
+    },
+    "CCI 2": {
+     "1": [
+      {
+       "t": "Harvest festival: Conversation on Pongal",
+       "w": "Activity 1.1",
+       "y": "Students keep a conversation going by explaining and asking questions. The guide tags cross-cultural understanding."
+      }
+     ],
+     "2": [
+      {
+       "t": "Goals: Expressing ideas to suit different situations",
+       "w": "Activity 1.1",
+       "y": "Students express ideas and feelings to suit different situations. The guide tags social awareness."
+      },
+      {
+       "t": "Oral exam: Encouraging a friend to take up sport",
+       "w": "11 May",
+       "y": "Students say how they would encourage a friend who has no interest in sport."
+      }
+     ],
+     "4": [
+      {
+       "t": "End-of-year email, option 2: Advising a friend on health",
+       "y": "Students write to a close friend whose health is suffering, advising on healthy living. Not all students choose this option."
+      }
+     ]
+    },
+    "CCI 3": {
+     "3": [
+      {
+       "t": "Water management: Building on other groups’ ideas at learning corners",
+       "w": "Activity 3.3",
+       "y": "Groups discuss a question and write their ideas at a learning corner, then move on, read what others wrote and add their own, before returning to sum up."
+      }
+     ]
+    },
+    "CGC 1": {
+     "1": [
+      {
+       "t": "Harvest festival: Pongal and cultural understanding",
+       "w": "Activity 1.1",
+       "y": "Students watch a video on Pongal and talk about the festival. The guide tags civic literacy, global awareness and cross-cultural understanding."
+      },
+      {
+       "t": "Tamil and me: The role of Tamils in Singapore",
+       "w": "Activity 1.11",
+       "y": "Students discuss how Tamils helped Singapore progress, then watch a video on their role, Tamil as one of four official languages, and Tamil place names."
+      }
+     ],
+     "3": [
+      {
+       "t": "Water management: Discussing water saving",
+       "w": "Activity 3.1",
+       "y": "Students watch a video and discuss water saving in class. The guide tags civic literacy and global awareness."
+      },
+      {
+       "t": "Water management: Water rationing and water saving in Singapore",
+       "w": "Activity 3.3",
+       "y": "Groups discuss whether Singapore uses water rationing and why, and what Singapore does to save water."
+      },
+      {
+       "t": "Water management: Singapore’s reservoirs, plants and NEWater",
+       "w": "Activity 3.5",
+       "y": "Students discuss how Singapore meets its water needs through reservoirs, treatment plants and NEWater."
+      },
+      {
+       "t": "Water management: How countries manage water",
+       "w": "Activity 3.7",
+       "y": "Students read how different countries manage water and answer questions. The guide tags civic literacy and global awareness."
+      }
+     ]
+    }
+   }
+  }
+ },
+ "aas": {
+  "CL": {
+   "label": "Chinese (CL)",
+   "title": "Interview 101: student leader interview",
+   "format": "Recorded interview video, about 3 minutes, with a written draft. Individual.",
+   "when": "Term 3, W2 to W6. Submitted 4 Aug 2026.",
+   "builds": "Builds on Term 2 oral practice: sharing experiences and giving suggestions.",
+   "map": {
+    "CCI 1": [
+     {
+      "t": "Make a PEEL case for the role, with real examples",
+      "y": "The rubric rewards clear organisation, PEEL and concrete examples. It is framed as a real interview, so purpose and context are clear. One way only: students do not build ideas with others."
+     },
+     {
+      "t": "Show understanding of a student leader’s duties",
+      "y": "The top band asks for understanding of the duties of a student leader, and the draft asks how students would help teachers and classmates."
+     }
+    ]
+   }
+  },
+  "ML": {
+   "label": "Malay (ML)",
+   "title": "Makanan Kegemaran: my favourite food",
+   "format": "Oral presentation, 2 minutes, with a written script. Individual.",
+   "when": "Term 3, submitted 4 Aug 2026.",
+   "builds": "Builds on Unit 6: Come and eat (the food unit in the CPDD sample scheme).",
+   "map": {
+    "CAIT 3": [
+     {
+      "t": "Link the dish to its traditional or fusion form",
+      "y": "The prompt asks what fusion dish could be created from a traditional one, or which tradition lies behind a fusion dish. No rubric line rewards this."
+     }
+    ],
+    "CCI 1": [
+     {
+      "t": "Organise and present the story with 4P",
+      "y": "Students organise experience, feeling, opinion and lesson into a script, then present to an audience. The rubric rewards well-developed ideas with examples. One way only."
+     }
+    ]
+   }
+  },
+  "TL": {
+   "label": "Tamil (TL)",
+   "title": "The CCA I Like",
+   "format": "Recorded slide presentation, 4–5 slides, 2–3 minutes, uploaded to SLS. Individual.",
+   "when": "Term 3, submitted 4 Aug 2026.",
+   "builds": "Builds on the “The CCA I like” recording in 1A Module 1 (activity 1.4).",
+   "map": {
+    "CCI 1": [
+     {
+      "t": "Explain a CCA clearly, with examples, on slides",
+      "y": "The rubric rewards clear, connected ideas with examples, fitting images and engaged delivery. The prompts are descriptive (what, why, benefits, an experience) and one way only."
+     }
+    ]
+   }
+  }
+ }
+}
