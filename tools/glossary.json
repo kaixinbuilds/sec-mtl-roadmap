@@ -375,7 +375,7 @@
   },
   {
    "t": "PEEL",
-   "f": "Point, Evidence, Explanation, Link",
+   "f": "Point, Elaborate, Example, Link",
    "g": "Exams and assessment",
    "n": "A way to structure an extended answer."
   },
