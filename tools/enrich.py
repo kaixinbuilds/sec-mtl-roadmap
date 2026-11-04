@@ -123,6 +123,17 @@ RULES = [  # (id, test(rec)->bool, cats, priority areas, explanation)
 # Attached once per unit (to its first record), so counts mean "units the guide tags", plus the E21CC area where the guide names the competency.
 C21 = json.loads((ROOT / "tools" / "cpdd21.json").read_text(encoding="utf-8"))["units"]
 ukey = lambda r: f'{r["lang"]}|{r["course"]}|{r["sec"]}|{r.get("book","")}|{r["unit"]}'
+# STAR tags checked against the guides, 4 Nov 2026. CPDD names STAR only in G2 1B U7, G3 1B U7 and U8, G3 2B U5 and G3 Sec 3 U1.
+# The inherited tags on these six units have no support in the guide text or the image-only pages, so they are removed.
+for r in D["recs"]:
+    if r["lang"] == "ML" and (r["course"], r["sec"], str(r["unit"])) in {("G1",3,"2"),("G1",3,"5"),("G2",3,"1"),("G2",3,"2"),("G2",3,"5"),("H",3,"1")} and "STAR" in r.get("cats", []):
+        r["cats"] = [k for k in r["cats"] if k != "STAR"]
+        r["ibl"] = r["ibl_en"] = ""
+_star = lambda x: x.replace("STAR Team Inquiry in about a dozen units", "STAR Team Inquiry in 5 units").replace("STAR in many units", "STAR in 5 units (G2 and G3)")
+for _k in ("iblTg", "iblTgEn"):
+    D[_k]["ML"] = _star(D[_k]["ML"])
+for _k in ("diff", "diffEn"):
+    D[_k] = json.loads(_star(json.dumps(D[_k], ensure_ascii=False)))
 first_of, unit_cats = {}, {}
 for r in D["recs"]:
     first_of.setdefault(ukey(r), id(r)); unit_cats.setdefault(ukey(r), set()).update(r.get("cats", []))
@@ -237,6 +248,10 @@ D["design"] = json.loads((ROOT / "tools" / "design.json").read_text(encoding="ut
 _sh = json.loads((ROOT / "tools" / "share.json").read_text(encoding="utf-8"))  # cross-language practices page
 D["design"]["share"] = _sh["share"]
 D["design"].setdefault("about", {})["share"] = _sh["about"]
+_gl = json.loads((ROOT / "tools" / "glossary.json").read_text(encoding="utf-8"))
+D["design"]["glossary"] = _gl["terms"]
+D["design"]["about"]["gloss"] = {"what":"What every acronym on this site stands for, including E21CC (Emerging 21st Century Competencies) and IBL (inquiry-based learning).","points":["Search or scroll the list. Terms are in alphabetical order.","Some letters have two meanings, such as SEC and STAR. Each meaning has its own entry.","Terms marked \"To confirm\" are not spelled out in the sources on hand."],"use":"Tap a dotted-underlined acronym anywhere on the site to come to its entry here."}
+D["ui"]["t_gloss"] = {"en":"Glossary","zh":"词汇表","ms":"Glosari","ta":"சொற்களஞ்சியம்"}
 D["ui"]["t_share"] = {"en":"Learn across languages","zh":"三语互鉴","ms":"Belajar merentas bahasa","ta":"மொழிகளிடையே கற்றல்"}
 
 # ---------- 4. Redesigned SOW frame (tools/sow.json) ----------

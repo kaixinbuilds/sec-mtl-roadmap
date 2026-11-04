@@ -2,24 +2,6 @@
  "share": {
   "_readme": "Cross-language practices, checked against the CPDD guides and syllabuses by text search on 4 Nov 2026. Paraphrased: MOE text is not reproduced. The 'try' lines are department suggestions, not CPDD advice.",
   "lead": "All three languages share one syllabus framework, but CPDD built each package differently. Some strong practices sit in one language's guides and have not reached the other two. This page sets out what each language could borrow.",
-  "split": {
-   "title": "The clearest gap: 21CC",
-   "items": [
-    [
-     "CL has the method",
-     "Its guides explain how to set a unit's 21CC goal and give four developmental levels, but work through only one unit."
-    ],
-    [
-     "TL has the map",
-     "Its overviews tag 21CC activity by activity across the courses, but name the competency without a level or a way to set goals."
-    ],
-    [
-     "ML has neither yet",
-     "Only five teacher notes in G1 Sec 4 Units 1 to 3 name a 21CC. ML is strong on inquiry and thinking routines instead."
-    ]
-   ],
-   "note": "Put together, CL's method and TL's map would give all three languages a shared way to plan the 2027 E21CC priorities."
-  },
   "groups": [
    {
     "k": "Inquiry",
@@ -395,6 +377,54 @@
    "Limits: most TL lesson-preparation PDFs are garbled, so Tamil text in them could not be searched and TL gaps are the least certain. English terms such as STAR and 5E could still be found. A few guide pages are images only.",
    "Not found means not named in the guides. Teachers may well be doing this in class already.",
    "The “First place to try” lines are department suggestions, not CPDD advice. They still need the language teams' judgement."
+  ],
+  "summaries": [
+   {
+    "k": "e21",
+    "tab": "E21CC",
+    "long": "Emerging 21st Century Competencies",
+    "lens": "e21",
+    "title": "The clearest gap: E21CC (Emerging 21st Century Competencies)",
+    "intro": "The 2021 CPDD guides say 21CC. MOE's 2023 milestones document and the BVSS 2027 focus areas say E21CC.",
+    "items": [
+     [
+      "CL has the method",
+      "Its guides explain how to set a unit's 21CC goal and give four developmental levels, but work through only one unit."
+     ],
+     [
+      "TL has the map",
+      "Its overviews tag 21CC activity by activity across the courses, but name the competency without a level or a way to set goals."
+     ],
+     [
+      "ML has neither yet",
+      "Only five teacher notes in G1 Sec 4 Units 1 to 3 name a 21CC. ML is stronger on inquiry and thinking routines."
+     ]
+    ],
+    "note": "Put together, CL's method and TL's map would give all three languages a shared way to plan the 2027 E21CC priorities."
+   },
+   {
+    "k": "ibl",
+    "tab": "IBL",
+    "long": "Inquiry-based learning",
+    "lens": "ibl",
+    "title": "Inquiry across the three languages: IBL (inquiry-based learning)",
+    "intro": "IBL becomes a BVSS approach from 2027. The shared MTL syllabus does not name it as an approach, so each language got there differently.",
+    "items": [
+     [
+      "CL has the openings",
+      "Its syllabus names inquiry four times, and 57 of its 92 integrated tasks have students find out for themselves. No guide tags any of them as inquiry (department reading)."
+     ],
+     [
+      "ML has the named methods",
+      "Its syllabus lists STAR, used in 5 G2 and G3 units. G1 and G2 Sec 3 Unit 4 are flagged as inquiry and usable as a WA, and units are built around essential questions."
+     ],
+     [
+      "TL has the theory and a few examples",
+      "Syllabus section 4.9 sets out inquiry. The guides tag it in G3 2A Units 2 and 3 and use the 5E steps in G3 2B Units 1 and 2. Most TL lesson PDFs cannot be searched, so there may be more."
+     ]
+    ],
+    "note": "Put together, CL's tasks give the occasions, ML's STAR gives the steps and flags tasks for WA, and TL's 5E shows inquiry applied to reading."
+   }
   ]
  },
  "about": {

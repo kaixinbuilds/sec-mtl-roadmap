@@ -317,4 +317,14 @@ The HOD found the first planning layer too much to digest. It was replaced:
 
 - New Reference page `#share` (`vShare()`, `st.shl`), with its content in `tools/share.json`, embedded by `enrich.py` as `DATA.design.share`. Twelve practices, each with a status per language (Throughout, In places, Not found), guide locations and a department suggestion.
 - Evidence comes from text searches of `CPDD resources (2021 Syllabus)/_Markdown` on 4 Nov 2026. Text is paraphrased. TL gaps are least certain because most lesson-preparation PDFs are garbled.
-- **NEEDS HOD:** the site tags 6 ML units as STAR with source "cpdd" (G1 Sec 3 Units 2 and 5; G2 Sec 3 Units 1, 2 and 5; HML Sec 3 Unit 1), but the guide text search finds no STAR in them. The new page counts only the 5 confirmed units. A few pages in those guides are images only. The tags are unchanged.
+- STAR tags corrected (HOD decision, 4 Nov 2026): six inherited tags were removed in `enrich.py` (G1 Sec 3 Units 2 and 5; G2 Sec 3 Units 1, 2 and 5; HML Sec 3 Unit 1). Their source guides have no STAR in the text, and the image-only pages are covers, blank pages or an answer-key picture. Their department inquiry sketches stay, relabelled as borrowing STAR's stages. Confirmed STAR units: G2 1B U7; G3 1B U7, U8; G3 2B U5; G3 Sec 3 U1.
+
+## 4 Nov 2026 · IBL summary, E21CC spelled out, glossary, quick search
+
+- Learn across languages: `S.split` is replaced by `S.summaries` in `tools/share.json`, shown as two tabs (`shSum()`, `st.shsum`): E21CC and IBL. The buttons are not `.seg`, so `sideCtl()` does not hoist them to the side panel.
+- E21CC spelled out: a key-terms strip (`.kterms`) sits at the top of `#view` on every page except the glossary. Sentences that said "the E21CC competencies" now say "the Emerging 21st Century Competencies (E21CC)".
+- Glossary: new tab `gloss` (`vGloss()`, `glFilter()`, `st.glq`), content in `tools/glossary.json`, embedded by `enrich.py` as `DATA.design.glossary`. Letters with two meanings (SEC, STAR) have one entry per meaning. `c:1` marks a term the sources do not spell out; it shows "To confirm" and is not auto-underlined.
+- Auto-underline: `abbrs()` wraps the first use of each glossary term per section of `#view` in `abbr.glt`. Tapping one opens the glossary filtered to it. Leaving the glossary clears the filter. Add a term to the exclusion list inside `abbrs()` if it is too common to underline.
+- Quick search: `#qs` in the nav row (own row at 761 to 960px, beside the page menu on phones). The index covers pages, Progression lenses, schemes of work, units from `DATA.themes`, practices and glossary terms. Keys: / to focus, arrows, Enter, Esc.
+- After adding content run `python3 tools/checkgloss.py`. It lists acronym-like words in `DATA` that are in neither `terms` nor `ignore`. It reads data only, so also scan rendered text when UI strings change.
+- NEEDS HOD: confirm the nine "To confirm" terms: ACE, ApLM, CCM, SEP, SCT, GEM, AA, TP, BI.

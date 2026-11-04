@@ -1,0 +1,594 @@
+{
+ "_readme": "Every acronym a reader can meet on the site. c=1 means the sources on hand do not spell it out, so the meaning needs the HOD's confirmation. tools/checkgloss.py lists acronym-like words in the page that are in neither `terms` nor `ignore`; run it after adding content.",
+ "ignore": [
+  "DATA",
+  "PAPER",
+  "COMPREHENSION",
+  "LANGUAGE",
+  "APPLICATION",
+  "ORAL",
+  "WRITING",
+  "LISTENING",
+  "ONE",
+  "HIGHER",
+  "MALAY",
+  "BAHASA",
+  "TAJUK",
+  "MAHIR",
+  "PENULISAN",
+  "DERIVE",
+  "HANDOFF",
+  "MrLee",
+  "OK",
+  "PM27",
+  "AM11",
+  "PDFKit",
+  "NEEDS",
+  "FM867",
+  "4NA",
+  "K356",
+  "K120",
+  "K129",
+  "K130",
+  "K131",
+  "K355",
+  "K357",
+  "JSON",
+  "SKD",
+  "II",
+  "XX"
+ ],
+ "terms": [
+  {
+   "t": "E21CC",
+   "f": "Emerging 21st Century Competencies",
+   "g": "E21CC and inquiry",
+   "n": "MOE's term in its Learning Goals and Developmental Milestones (20 Oct 2023). The BVSS 2027 focus areas are Adaptive Thinking, Inventive Thinking, Civic Literacy and Communication."
+  },
+  {
+   "t": "21CC",
+   "f": "21st Century Competencies",
+   "g": "E21CC and inquiry",
+   "n": "MOE's competency framework. The 2021 CPDD teacher guides use this term."
+  },
+  {
+   "t": "IBL",
+   "f": "Inquiry-based learning",
+   "g": "E21CC and inquiry",
+   "n": "Students explore a problem, issue or idea by working to resolve an inquiry question, with the teacher as facilitator. A BVSS approach from 2027."
+  },
+  {
+   "t": "STAR",
+   "f": "Scenario Analysis, Team Inquiry, Application, Reflection",
+   "g": "E21CC and inquiry",
+   "n": "A four-stage teaching activity listed in the ML syllabus under Singapore Teaching Practice."
+  },
+  {
+   "t": "STAR meeting",
+   "f": "Student-Teacher-Parent conversation",
+   "g": "School calendar",
+   "n": "A school calendar event with no lessons. It has nothing to do with the STAR inquiry activity."
+  },
+  {
+   "t": "5E",
+   "f": "Engage, Explore, Explain, Elaborate, Evaluate",
+   "g": "E21CC and inquiry",
+   "n": "An inquiry sequence. TL G3 2B Units 1 and 2 use it."
+  },
+  {
+   "t": "CAIT",
+   "f": "Critical, Adaptive and Inventive Thinking",
+   "g": "E21CC and inquiry",
+   "n": "An MOE 21CC domain. Codes such as CAIT 3.4 point to a learning goal and developmental level."
+  },
+  {
+   "t": "CCI",
+   "f": "Communication, Collaboration and Information",
+   "g": "E21CC and inquiry",
+   "n": "An MOE 21CC domain, also written CCIS. Codes such as CCI 1.3 point to a learning goal and level."
+  },
+  {
+   "t": "CCIS",
+   "f": "Communication, Collaboration and Information Skills",
+   "g": "E21CC and inquiry",
+   "n": "An MOE 21CC domain, also written CCI."
+  },
+  {
+   "t": "CGC",
+   "f": "Civic Literacy, Global Awareness and Cross-Cultural Skills",
+   "g": "E21CC and inquiry",
+   "n": "An MOE 21CC domain."
+  },
+  {
+   "t": "SEC",
+   "f": "Social-emotional competencies",
+   "g": "E21CC and inquiry",
+   "n": "As a tag on this site. For the exam with the same letters, see the other SEC entry."
+  },
+  {
+   "t": "LG&M",
+   "f": "Learning Goals and Developmental Milestones",
+   "g": "E21CC and inquiry",
+   "n": "MOE's E21CC document, dated 20 Oct 2023. The site tags against it."
+  },
+  {
+   "t": "KAK21",
+   "f": "Kecekapan Abad ke-21",
+   "g": "E21CC and inquiry",
+   "n": "Malay for 21st Century Competencies."
+  },
+  {
+   "t": "INQ",
+   "f": "Inquiry",
+   "g": "Site tags",
+   "n": "Site tag for a task where students find out, plan, make or present."
+  },
+  {
+   "t": "UG",
+   "f": "Unit goal",
+   "g": "Site tags",
+   "n": "Site tag for the CL guide's worked example of a 21CC unit goal."
+  },
+  {
+   "t": "DIG",
+   "f": "Digital literacy",
+   "g": "Site tags",
+   "n": "Site tag for a guide's teacher note on digital literacy."
+  },
+  {
+   "t": "EPED",
+   "f": "e-Pedagogy",
+   "g": "Site tags",
+   "n": "Site tag for TL's e-pedagogy tag on an inquiry experience."
+  },
+  {
+   "t": "R1 to R8",
+   "f": "Rule 1 to Rule 8",
+   "g": "Site tags",
+   "n": "The site's own rules for inferring a tag. The Sec 1–4 progression page lists them."
+  },
+  {
+   "t": "CL",
+   "f": "Chinese Language",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "ML",
+   "f": "Malay Language",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "TL",
+   "f": "Tamil Language",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "EL",
+   "f": "English Language",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "MT",
+   "f": "Mother Tongue",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "MTL",
+   "f": "Mother Tongue Languages",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "HMT",
+   "f": "Higher Mother Tongue",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "HMTL",
+   "f": "Higher Mother Tongue Languages",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "HCL",
+   "f": "Higher Chinese Language",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "HML",
+   "f": "Higher Malay Language",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "HTL",
+   "f": "Higher Tamil Language",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "BML",
+   "f": "Bahasa Melayu Lanjutan",
+   "g": "Languages and courses",
+   "n": "Malay for Higher Malay Language. It appears in ML guide file names."
+  },
+  {
+   "t": "BC, BM, BT",
+   "f": "Bahasa Cina, Bahasa Melayu, Bahasa Tamil",
+   "g": "Languages and courses",
+   "n": "Malay names for CL, ML and TL, used on the chart in Malay."
+  },
+  {
+   "t": "G1, G2, G3",
+   "f": "Subject levels 1, 2 and 3",
+   "g": "Languages and courses",
+   "n": "Subject levels under Full Subject-Based Banding."
+  },
+  {
+   "t": "NA",
+   "f": "Normal (Academic)",
+   "g": "Languages and courses",
+   "n": "Older course name. It appears in guide file names."
+  },
+  {
+   "t": "NT",
+   "f": "Normal (Technical)",
+   "g": "Languages and courses",
+   "n": "Older course name. It appears in guide file names."
+  },
+  {
+   "t": "S1 to S4",
+   "f": "Secondary 1 to Secondary 4",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "T1 to T4",
+   "f": "Term 1 to Term 4",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "U1, U2 and so on",
+   "f": "Unit 1, Unit 2 and so on",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "W1, W2 and so on",
+   "f": "Week 1, Week 2 and so on",
+   "g": "Languages and courses"
+  },
+  {
+   "t": "MOE",
+   "f": "Ministry of Education",
+   "g": "Organisations"
+  },
+  {
+   "t": "CPDD",
+   "f": "Curriculum Planning and Development Division",
+   "g": "Organisations",
+   "n": "The MOE division that wrote the 2021 syllabuses and teacher guides."
+  },
+  {
+   "t": "SEAB",
+   "f": "Singapore Examinations and Assessment Board",
+   "g": "Organisations"
+  },
+  {
+   "t": "BVSS",
+   "f": "Bukit View Secondary School",
+   "g": "Organisations"
+  },
+  {
+   "t": "HOD",
+   "f": "Head of Department",
+   "g": "Organisations"
+  },
+  {
+   "t": "OBS",
+   "f": "Outward Bound Singapore",
+   "g": "Organisations"
+  },
+  {
+   "t": "ASEAN",
+   "f": "Association of Southeast Asian Nations",
+   "g": "Organisations"
+  },
+  {
+   "t": "HDB",
+   "f": "Housing & Development Board",
+   "g": "Organisations"
+  },
+  {
+   "t": "NParks",
+   "f": "National Parks Board",
+   "g": "Organisations"
+  },
+  {
+   "t": "PUB",
+   "f": "Public Utilities Board",
+   "g": "Organisations",
+   "n": "Singapore's national water agency."
+  },
+  {
+   "t": "SCCC",
+   "f": "Singapore Chinese Cultural Centre",
+   "g": "Organisations"
+  },
+  {
+   "t": "ABC",
+   "f": "American Broadcasting Company",
+   "g": "Organisations",
+   "n": "Named in a source note in a CL guide."
+  },
+  {
+   "t": "PSLE",
+   "f": "Primary School Leaving Examination",
+   "g": "Exams and assessment"
+  },
+  {
+   "t": "SEC",
+   "f": "Singapore-Cambridge Secondary Education Certificate",
+   "g": "Exams and assessment",
+   "n": "The national exam from 2027. For the tag with the same letters, see the other SEC entry."
+  },
+  {
+   "t": "WA",
+   "f": "Weighted assessment",
+   "g": "Exams and assessment",
+   "n": "WA1, WA2 and WA3 are the Term 1, 2 and 3 weighted assessments."
+  },
+  {
+   "t": "NWA",
+   "f": "Non-weighted assessment",
+   "g": "Exams and assessment"
+  },
+  {
+   "t": "EOY",
+   "f": "End-of-year",
+   "g": "Exams and assessment"
+  },
+  {
+   "t": "P1, P2, P3",
+   "f": "Paper 1, Paper 2, Paper 3",
+   "g": "Exams and assessment"
+  },
+  {
+   "t": "Q1, Q2, Q3",
+   "f": "Question 1, Question 2, Question 3",
+   "g": "Exams and assessment"
+  },
+  {
+   "t": "MCQ",
+   "f": "Multiple-choice question",
+   "g": "Exams and assessment"
+  },
+  {
+   "t": "LO",
+   "f": "Learning outcome",
+   "g": "Exams and assessment",
+   "n": "LO1, LO2 and LO3 are numbered learning outcomes."
+  },
+  {
+   "t": "K120, K356 and similar",
+   "f": "SEAB syllabus codes",
+   "g": "Exams and assessment",
+   "n": "The code of a 2027 SEC syllabus document, not an abbreviation."
+  },
+  {
+   "t": "AA",
+   "f": "Access arrangements",
+   "g": "Exams and assessment",
+   "n": "Inferred from \"Prep 8 min (AA +2 min)\" in the oral format.",
+   "c": 1
+  },
+  {
+   "t": "TP",
+   "f": "Timed practice",
+   "g": "Exams and assessment",
+   "n": "Inferred from a department assessment note.",
+   "c": 1
+  },
+  {
+   "t": "PEEL",
+   "f": "Point, Evidence, Explanation, Link",
+   "g": "Exams and assessment",
+   "n": "A way to structure an extended answer."
+  },
+  {
+   "t": "OREO",
+   "f": "Opinion, Reason, Example, Opinion",
+   "g": "Exams and assessment",
+   "n": "A way to structure an opinion answer."
+  },
+  {
+   "t": "STP",
+   "f": "Singapore Teaching Practice",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "T&L",
+   "f": "Teaching and learning",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "SOW",
+   "f": "Scheme of work",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "TG",
+   "f": "Teacher's guide",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "SLS",
+   "f": "Student Learning Space",
+   "g": "Teaching and learning",
+   "n": "MOE's online learning platform."
+  },
+  {
+   "t": "OPAL2",
+   "f": "One Portal All Learners 2.0",
+   "g": "Teaching and learning",
+   "n": "MOE's staff portal, where the ML JATi guides are held."
+  },
+  {
+   "t": "JATi",
+   "f": "The title of the ML textbook package",
+   "g": "Teaching and learning",
+   "n": "Written as a name on the guides' covers, and not spelled out in them."
+  },
+  {
+   "t": "KWL",
+   "f": "Know, Want to know, Learned",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "IRF",
+   "f": "Initiation, Response, Feedback",
+   "g": "Teaching and learning",
+   "n": "A questioning pattern."
+  },
+  {
+   "t": "POE",
+   "f": "Predict, Observe, Explain",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "RCU",
+   "f": "Repeat, Clarify, Understand",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "AI",
+   "f": "Artificial intelligence",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "IT",
+   "f": "Information technology",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "PDF",
+   "f": "Portable Document Format",
+   "g": "Teaching and learning"
+  },
+  {
+   "t": "CSV",
+   "f": "Comma-separated values",
+   "g": "Teaching and learning",
+   "n": "A spreadsheet-friendly download format."
+  },
+  {
+   "t": "DSO",
+   "f": "Desired Student Outcomes",
+   "g": "School calendar",
+   "n": "From the BVSS Strategic Plan 2027 to 2031."
+  },
+  {
+   "t": "VMV",
+   "f": "Vision, Mission, Values",
+   "g": "School calendar"
+  },
+  {
+   "t": "HBL",
+   "f": "Home-based learning",
+   "g": "School calendar"
+  },
+  {
+   "t": "CCA",
+   "f": "Co-curricular activity",
+   "g": "School calendar"
+  },
+  {
+   "t": "VIA",
+   "f": "Values in Action",
+   "g": "School calendar"
+  },
+  {
+   "t": "CNY",
+   "f": "Chinese New Year",
+   "g": "School calendar"
+  },
+  {
+   "t": "MTF",
+   "f": "Mother Tongue Fortnight",
+   "g": "School calendar"
+  },
+  {
+   "t": "PM",
+   "f": "Afternoon (post meridiem)",
+   "g": "School calendar"
+  },
+  {
+   "t": "TBC",
+   "f": "To be confirmed",
+   "g": "School calendar"
+  },
+  {
+   "t": "KIV",
+   "f": "Keep in view",
+   "g": "School calendar"
+  },
+  {
+   "t": "NIL",
+   "f": "Nothing (nil)",
+   "g": "School calendar"
+  },
+  {
+   "t": "ACE",
+   "f": "ACE Week: meaning to confirm",
+   "g": "School calendar",
+   "n": "Calendar week of 25 to 29 Jan with camps and challenges. The calendars do not spell it out.",
+   "c": 1
+  },
+  {
+   "t": "ApLM",
+   "f": "Applied Learning Module",
+   "g": "School calendar",
+   "n": "Best reading of a calendar entry beside Sec 4 job shadowing.",
+   "c": 1
+  },
+  {
+   "t": "CCM",
+   "f": "CCM: meaning to confirm",
+   "g": "School calendar",
+   "n": "Calendar entry \"Sec 1 MT CCM level 1\" in October.",
+   "c": 1
+  },
+  {
+   "t": "SEP",
+   "f": "SEP: meaning to confirm",
+   "g": "School calendar",
+   "n": "Calendar entry for Sec 3, 7 to 8 Jan, beside team building.",
+   "c": 1
+  },
+  {
+   "t": "SCT",
+   "f": "SCT: meaning to confirm",
+   "g": "School calendar",
+   "n": "Named as the audience of the Envisioning VMV updates, 14 Sep 2026.",
+   "c": 1
+  },
+  {
+   "t": "GEM",
+   "f": "GEM: meaning to confirm",
+   "g": "School calendar",
+   "n": "Used for the closing reflection in the site's inquiry sketches.",
+   "c": 1
+  },
+  {
+   "t": "BI",
+   "f": "BI: meaning to confirm",
+   "g": "Languages and courses",
+   "n": "Appears in the Malay label \"Kemahiran sukatan BI\".",
+   "c": 1
+  },
+  {
+   "t": "USA",
+   "f": "United States of America",
+   "g": "Organisations"
+  },
+  {
+   "t": "AM",
+   "f": "Morning (ante meridiem)",
+   "g": "School calendar"
+  }
+ ]
+}

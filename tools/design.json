@@ -257,7 +257,7 @@
    "what": "Where inquiry-based learning, a BVSS school approach from 2027, already sits in the MTL units, and where it could go.",
    "points": [
     "The essence section sets out what MOE's Singapore Teaching Practice means by inquiry: five key elements, the inquiry cycle, the 5E model, structured to open approaches, and what makes it work.",
-    "CPDD flags inquiry mainly in ML (STAR Team Inquiry in about a dozen units, and a community business plan in Sec 3 Unit 4), plus two TL G3 Sec 2 units. CL guides tag no unit, but every CL unit ends with a 综合任务; the department read all 92 and marks the 57 where students find out for themselves (interview, research, survey, field work) and then make or present something. These are inferred, not CPDD tags.",
+    "CPDD flags inquiry mainly in ML (STAR Team Inquiry in 5 units, and a community business plan in Sec 3 Unit 4), plus two TL G3 Sec 2 units. CL guides tag no unit, but every CL unit ends with a 综合任务; the department read all 92 and marks the 57 where students find out for themselves (interview, research, survey, field work) and then make or present something. These are inferred, not CPDD tags.",
     "Amber tags mark tasks that look inquiry-shaped (find out, plan, make or present) but are not tagged. The STP card under the roadmap gives the student behaviours to look for."
    ],
    "use": "Click a unit card to see the task, the guide's note and the STP look-fors."
@@ -536,7 +536,7 @@
   },
   "ML|G1|3||2": {
    "q": "What makes a message really lift someone up?",
-   "approach": "Guided (STAR)",
+   "approach": "Guided, borrowing STAR's stages (not in this CPDD guide)",
    "phases": [
     "Scenario analysis: a classmate is discouraged before the exams. What do they need to hear?",
     "Students suggest what makes a message motivating and guess which words carry the feeling (interjections).",
@@ -623,7 +623,7 @@
   },
   "ML|G1|3||5": {
    "q": "How do we decide whether a strange story online is true?",
-   "approach": "Guided (STAR)",
+   "approach": "Guided, borrowing STAR's stages (not in this CPDD guide)",
    "phases": [
     "Scenario analysis: share a viral 'mystery' post.",
     "Students list what makes it believable or doubtful and propose other explanations.",
@@ -813,7 +813,7 @@
   },
   "ML|G2|3||1": {
    "q": "Can we claim a right without taking on a responsibility?",
-   "approach": "Guided (STAR)",
+   "approach": "Guided, borrowing STAR's stages (not in this CPDD guide)",
    "phases": [
     "Scenario analysis: a social-media case of someone claiming free speech.",
     "Students take a position and raise questions.",
@@ -844,7 +844,7 @@
   },
   "ML|G2|3||2": {
    "q": "How do artists express who they are, and how should we respond to their work?",
-   "approach": "Guided (STAR)",
+   "approach": "Guided, borrowing STAR's stages (not in this CPDD guide)",
    "phases": [
     "Scenario analysis: watch a short local dance performance.",
     "Students ask what the choreographer wanted to say.",
@@ -901,7 +901,7 @@
   },
   "ML|G2|3||5": {
    "q": "How do we decide whether a strange story online is true?",
-   "approach": "Guided (STAR)",
+   "approach": "Guided, borrowing STAR's stages (not in this CPDD guide)",
    "phases": [
     "Scenario analysis: share a viral 'mystery' post.",
     "Students list what makes it believable or doubtful and propose explanations.",
@@ -1286,7 +1286,7 @@
   },
   "ML|H|3||1": {
    "q": "What does sharing fairly look like in our community today?",
-   "approach": "Guided (STAR)",
+   "approach": "Guided, borrowing STAR's stages (not in this CPDD guide)",
    "phases": [
     "Scenario analysis: two neighbours, one with plenty and one in need.",
     "Students raise questions about what fair sharing means.",
