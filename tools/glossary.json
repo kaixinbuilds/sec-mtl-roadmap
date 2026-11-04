@@ -532,10 +532,10 @@
    "g": "School calendar"
   },
   {
-   "t": "ACE",
+   "t": "ACE Week",
    "f": "ACE Week: meaning to confirm",
    "g": "School calendar",
-   "n": "Calendar week of 25 to 29 Jan with camps and challenges. The calendars do not spell it out.",
+   "n": "Calendar week of 25 to 29 Jan with camps and challenges. The Strategic Plan draft uses ACE for the vision (Adaptive Learners, Caring Leaders, Ethical Changemakers), but nothing on hand confirms the week takes its name from it.",
    "c": 1
   },
   {
@@ -568,10 +568,9 @@
   },
   {
    "t": "GEM",
-   "f": "GEM: meaning to confirm",
+   "f": "Grit, Empathy, Moral Courage",
    "g": "School calendar",
-   "n": "Used for the closing reflection in the site's inquiry sketches.",
-   "c": 1
+   "n": "The BVSS school values, from the Strategic Plan 2027 to 2031 draft. The site's inquiry sketches close with a GEM reflection."
   },
   {
    "t": "BI",
