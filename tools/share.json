@@ -46,7 +46,7 @@
       "line": "A teacher note says the task is inquiry and can count as a WA.",
       "what": "The guide tells teachers outright that a task is inquiry-based, explains what that means for the unit, and says it can serve as a weighted assessment.",
       "where": "ML G1 Sec 3 Unit 4 and G2 Sec 3 Unit 4, both planning a social business.",
-      "gap": "CL has inquiry-like integrated tasks, but they carry no such label: the department's own reading found 57 across the four courses. The TL tagged inquiry activities are not linked to assessment in the files that could be read. An SLS read on 4 Nov 2026 found no TL lesson that links inquiry to a WA.",
+      "gap": "CL has inquiry-like integrated tasks, but they carry no such label: the department's own reading found 57 across the four courses. No TL guide mentions a weighted assessment, in the text search of the repaired lesson files (5 Nov 2026), and no TL SLS lesson links inquiry to a WA.",
       "why": "Teachers can see at once which tasks can carry both inquiry and assessment, which saves planning time.",
       "try": "CL: mark up the 57 integrated tasks already identified on the Sec 1–4 progression page, and agree which could count as a WA.",
       "c": {
@@ -60,7 +60,7 @@
        },
        "TL": {
         "s": "p",
-        "t": "Inquiry tagged, not linked to WA"
+        "t": "Inquiry named, no WA link"
        }
       }
      },
@@ -74,8 +74,8 @@
       ],
       "line": "Engage, Explore, then onward through the 5E steps, in a group reading task.",
       "what": "A group works on a text through the named 5E stages instead of answering set comprehension questions.",
-      "where": "TL G3 2B lesson preparation, Units 1 and 2. Separately, an e-pedagogy tag marks inquiry experiences in TL G3 2A Units 2 and 3.",
-      "gap": "The term 5E does not appear in any CL or ML guide. Within TL it was found only in G3, though most TL lesson-preparation PDFs are garbled, so other uses cannot be ruled out. The SLS lessons for these units are single media files: the 5E steps are in the guide only.",
+      "where": "TL G3 2B lesson preparation, Units 1 and 2. Separately, an e-pedagogy tag marks inquiry experiences in TL G3 2A Units 2 and 3, and HTL Sec 3 Units 1 and 3 name inquiry learning as the strategy, without the 5E steps.",
+      "gap": "The term 5E does not appear in any CL or ML guide. Within TL it appears only in these two G3 units. The SLS lessons for these units are single media files: the 5E steps are in the guide only.",
       "why": "It applies inquiry to reading, whereas the ML examples above are mostly discussion or project tasks.",
       "try": "ML: a reading part in G3 Sec 3. CL: the second reading of a core text in G3 Sec 3.",
       "c": {
@@ -138,7 +138,7 @@
       "line": "Choose 2 to 3 competencies a unit can really build, then write one combined goal.",
       "what": "CL's appendix sets out 21CC goals across four developmental levels, then shows how to choose 2 to 3 that suit a unit and combine them with the language goal.",
       "where": "The Sec 1A, 1B and Sec 3 CL guides for G1, G2, G3 and HCL (12 guides). The worked example is Sec 1A Unit 3, Meet in the Lion City.",
-      "gap": "ML's guides have no equivalent. TL's Word overviews name competencies with no level or goal-setting method; TL's garbled PDFs cannot be searched for one.",
+      "gap": "ML's guides have no equivalent. TL names competencies with no goal-setting method in its overviews or lesson files. One G3 1B Unit 3 lesson prints a milestone (CCI 1.1c, by Sec 2) with success criteria.",
       "why": "A tag says a competency is present. A levelled goal says what progress looks like, which is closer to MOE's developmental milestones.",
       "try": "TL: add a level to the tags in one G3 unit. ML: write one combined goal for a unit that already uses STAR.",
       "c": {
@@ -152,7 +152,7 @@
        },
        "TL": {
         "s": "n",
-        "t": "Not in Word overviews"
+        "t": "No method; 1 lesson prints a milestone"
        }
       }
      },
@@ -201,7 +201,7 @@
       "line": "Lesson plans tell the teacher what to observe and check, and when.",
       "what": "ML lesson plans prompt quick checks through questioning, discussion or observation, so that teachers can judge readiness before moving to the next part of the unit.",
       "where": "All 32 ML teacher guides and SOW samples, across every course and year.",
-      "gap": "CL mentions classroom observation in some places, without a named routine in the lesson plan. TL tags some activities as holistic assessment (about 30 overview rows), without saying what to look for.",
+      "gap": "CL mentions classroom observation in some places, without a named routine in the lesson plan. TL tags some activities as holistic assessment (about 30 overview rows), without saying what to look for. G3 lesson files for Sec 2 to 4 (9 files) add a Know, Understand, Do feedback prompt on what the teacher has noticed in a student.",
       "why": "It gives every lesson a low-stakes check on learning without adding marking.",
       "try": "CL: add one observation prompt to each block of one unit. TL: expand the existing holistic assessment tags into look-fors.",
       "c": {
@@ -215,7 +215,7 @@
        },
        "TL": {
         "s": "p",
-        "t": "About 30 tagged rows"
+        "t": "About 30 tagged rows, 9 feedback prompts"
        }
       }
      }
@@ -264,7 +264,7 @@
       "line": "Think-Pair-Share and See-Think-Wonder are written into the lesson steps.",
       "what": "ML lesson plans name the routine to use at each step, and the same routines recur, so students come to know them.",
       "where": "Think-Pair-Share appears in all 32 ML guide and SOW files. Other thinking routines are named in 27.",
-      "gap": "TL uses Think-Pair-Share and KWL in a few lessons. CL uses thinking maps (思维图) but does not name these routines. The SLS read found no routine in use: KWL and Connect-Extend-Challenge appear once, in leftover template notes.",
+      "gap": "TL names routines in 25 of its 97 lesson files, such as KWL, Think-Pair-Share, Connect-Extend-Challenge and What Makes You Say That, but no set recurs across courses. CL uses thinking maps (思维图) but does not name these routines. They stay in the guides: SLS lessons do not use them.",
       "why": "Students taking two languages could meet the same routines in both, which reduces how much has to be taught twice.",
       "try": "All three: agree two or three shared routines for Sec 1.",
       "c": {
@@ -278,7 +278,7 @@
        },
        "TL": {
         "s": "p",
-        "t": "A few lessons"
+        "t": "25 of 97 lesson files"
        }
       }
      },
@@ -293,7 +293,7 @@
       "line": "Oral rehearsal before writing, then a peer check against a checklist.",
       "what": "Students talk through their ideas using word and sentence scaffolds, write, then read to a partner and check against a checklist. The same routine runs for four years, and only the scaffolds thin out.",
       "where": "The CL teacher guides, through the writing blocks of each unit, supported by SLS writing packages.",
-      "gap": "ML discusses a model text and then writes, with no fixed check step. TL has self and peer sheets in the appendices, without a set routine.",
+      "gap": "ML discusses a model text and then writes, with no fixed check step. TL has self or peer assessment in 43 of its 97 lesson files, without a set routine.",
       "why": "It supports weaker writers, and all three languages share the same SEC paper structure.",
       "try": "ML: the response-text tasks in Sec 3. TL: one production task in Sec 1.",
       "c": {
@@ -307,7 +307,7 @@
        },
        "TL": {
         "s": "p",
-        "t": "Sheets in appendices"
+        "t": "Self or peer check in 43 of 97 files"
        }
       }
      },
@@ -322,7 +322,7 @@
       "line": "Suggestions for adjusting a lesson up or down for different learners.",
       "what": "CL guides include a section of differentiation suggestions (差异性处理) for teaching points, not only general advice.",
       "where": "All 60 CL guide files.",
-      "gap": "ML guides offer some enrichment (Pengayaan) and scaffolding notes, about 30 mentions in all. It was not found in TL's Word overviews; the garbled PDFs cannot be searched. SLS gives no advice either, though read-aloud comes in separate versions by course.",
+      "gap": "ML guides offer some enrichment (Pengayaan) and scaffolding notes, about 30 mentions in all. TL's Word overviews do not have it. Three of TL's 97 lesson files name it: G1 1A (sheets for average and high-ability students), G1 2A (grouping by attainment) and G3 1B Unit 3 (mixed pairs). SLS gives no advice either, though read-aloud comes in separate versions by course.",
       "why": "Every language teaches a range of learners, and teachers should not have to work out the adjustments alone each time.",
       "try": "ML: add support and stretch notes to one G2 unit. TL: do the same for one G1 unit.",
       "c": {
@@ -335,8 +335,8 @@
         "t": "About 30 mentions"
        },
        "TL": {
-        "s": "n",
-        "t": "Not in Word overviews"
+        "s": "p",
+        "t": "Named in 3 of 97 lesson files"
        }
       }
      },
@@ -351,7 +351,7 @@
       "line": "Each unit teaches one reading skill by name, tied to the theme.",
       "what": "Each CL unit names the reading skill it teaches and anchors it in the text, so the skills build across the year.",
       "where": "The CL teacher guides, in each unit's learning-content table and reading block.",
-      "gap": "ML reading sits inside each part with no skill named per unit, apart from the Sec 4 Unit 5 critical-reading toolkit. TL has comprehension every unit, with no skill named in the overviews.",
+      "gap": "ML reading sits inside each part with no skill named per unit, apart from the Sec 4 Unit 5 critical-reading toolkit. TL names no skill per unit, but 29 of its 97 lesson files name a reading strategy. Directed Reading Thinking Activity, in 15 of them, is in no CL or ML file under that name.",
       "why": "Students and teachers can see which reading skill they are building, and every language is examined on reading comprehension.",
       "try": "ML: bring the Sec 4 Unit 5 toolkit forward into a Sec 3 unit. TL: name one skill per unit in Sec 3.",
       "c": {
@@ -364,8 +364,8 @@
         "t": "Sec 4 Unit 5 toolkit"
        },
        "TL": {
-        "s": "n",
-        "t": "Not named in overviews"
+        "s": "p",
+        "t": "Strategies in 29 of 97 files, not per unit"
        }
       }
      }
@@ -374,7 +374,7 @@
   ],
   "method": [
    "What counts as found: the term or practice appears in the guide text, searched on 4 Nov 2026 across every CL, ML and TL guide and syllabus on the department's drive. Counts are from that search and are approximate.",
-   "Limits: most TL lesson-preparation PDFs are garbled, so Tamil text in them could not be searched and TL gaps are the least certain. English terms such as STAR and 5E could still be found. A few guide pages are images only.",
+   "Limits: the TL lesson PDFs have a faulty font encoding. Their text was repaired offline and searched in Tamil and English on 5 Nov 2026. A text search finds what a guide names, so unnamed practice can be missed. A few words stay wrong and a few pages are images only.",
    "Not found means not named in the guides. Teachers may well be doing this in class already.",
    "The “First place to try” lines are department suggestions, not CPDD advice. They still need the language teams' judgement."
   ],
@@ -420,7 +420,7 @@
      ],
      [
       "TL has the theory and a few examples",
-      "Syllabus section 4.9 sets out inquiry. The guides tag it in G3 2A Units 2 and 3 and use the 5E steps in G3 2B Units 1 and 2. None of the 282 SLS lessons on the hub's unit cards names inquiry or a method. Most lesson PDFs cannot be searched, so the guides may hold more."
+      "Syllabus section 4.9 sets out inquiry. The guides tag it in G3 2A Units 2 and 3, use the 5E steps in G3 2B Units 1 and 2, and name it as the strategy in HTL Sec 3 Units 1 and 3. That is all a text search of the repaired lesson files found. None of the 282 SLS lessons on the hub's unit cards names inquiry or a method."
      ]
     ],
     "note": "Put together, CL's tasks give the occasions, ML's STAR gives the steps and flags tasks for WA, and TL's 5E shows inquiry applied to reading."
@@ -428,7 +428,7 @@
   ],
   "tlsls": {
    "title": "What the Tamil SLS lessons add",
-   "intro": "The Tamil lesson PDFs cannot be searched, so the department read SLS instead on 4 Nov 2026: all 282 lessons on the hub's unit cards, the 125 other teaching and resource lessons, and a sample of each long series.",
+   "intro": "The department read Tamil SLS on 4 Nov 2026 to see what it adds to the guides: all 282 lessons on the hub's unit cards, the 125 other teaching and resource lessons, and a sample of each long series.",
    "finding": "SLS is mostly a media shelf. In about three in four unit-card lessons, students answer nothing in SLS: the task is in the workbook or textbook. The teaching design, including inquiry and the 21CC tags, stays in the guides.",
    "rows": [
     [
@@ -472,7 +472,7 @@
      "Full papers with passages and marks."
     ]
    ],
-   "limit": "Not opened: the videos, audio and interactive packages, and rubric and discussion wording. A task inside a package would not show here. The lesson PDFs remain unread, so SLS does not settle what the guides hold."
+   "limit": "Not opened: the videos, audio and interactive packages, and rubric and discussion wording. A task inside a package would not show here. The guides are checked separately, in the repaired lesson files."
   }
  },
  "about": {

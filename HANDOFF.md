@@ -316,7 +316,7 @@ The HOD found the first planning layer too much to digest. It was replaced:
 ## 4 Nov 2026 · Learn across languages page
 
 - New Reference page `#share` (`vShare()`, `st.shl`), with its content in `tools/share.json`, embedded by `enrich.py` as `DATA.design.share`. Twelve practices, each with a status per language (Throughout, In places, Not found), guide locations and a department suggestion.
-- Evidence comes from text searches of `CPDD resources (2021 Syllabus)/_Markdown` on 4 Nov 2026. Text is paraphrased. TL gaps are least certain because most lesson-preparation PDFs are garbled.
+- Evidence comes from text searches of `CPDD resources (2021 Syllabus)/_Markdown` on 4 Nov 2026. Text is paraphrased. TL lesson text was repaired offline and searched on 5 Nov 2026; see the note at the end.
 - STAR tags corrected (HOD decision, 4 Nov 2026): six inherited tags were removed in `enrich.py` (G1 Sec 3 Units 2 and 5; G2 Sec 3 Units 1, 2 and 5; HML Sec 3 Unit 1). Their source guides have no STAR in the text, and the image-only pages are covers, blank pages or an answer-key picture. Their department inquiry sketches stay, relabelled as borrowing STAR's stages. Confirmed STAR units: G2 1B U7; G3 1B U7, U8; G3 2B U5; G3 Sec 3 U1.
 
 ## 4 Nov 2026 · IBL summary, E21CC spelled out, glossary, quick search
@@ -343,8 +343,15 @@ The HOD found the first planning layer too much to digest. It was replaced:
 
 - Read through the SLS lesson, question and media-metadata APIs: 282 hub unit-card lessons, 125 other lessons, a sample of 10 series. Output stays offline: `CPDD resources (2021 Syllabus)/_SLS_TL_Catalogue/TL_SLS_Catalogue.xlsx`, with per-group `.jsonl` and `_summary.md`. Media and packages were not opened.
 - Result: no TL claim on Learn across languages was overturned. Added: `S.tlsls` (fold-out `shTl()`), a sentence on five practices' gaps, and the TL lines in both summaries. No E21CC count changed: the only lesson printing codes (bf5ee313) has no unit and its goals are outside the 16 milestones.
-- The real gap remains the garbled TL lesson-preparation PDFs.
+- The TL lesson-preparation PDFs were repaired and searched afterwards; see the note at the end.
 
 ## 5 Nov 2026 · New address
 
 - The HOD renamed the repo and page to `sec-mtl-roadmap`. Live: https://kaixinbuilds.github.io/sec-mtl-roadmap/ . The site's displayed title is unchanged. Earlier entries in this file keep the names in use at the time.
+
+## 5 Nov 2026: home hero, TL lesson files
+
+- Home hero now states the site's purpose: existing curriculum to BVSS DSOs, through IBL and E21CC. Stats boxes removed at the HOD's request. Headline wording is the HOD's.
+- Offline `_Markdown` Tamil text had a second cleanup (`_tools/tamil_cleanup.py`, exact word fixes only). Earlier statements that the TL PDFs cannot be searched were wrong: a 3 Nov repair had already made them searchable.
+- Share practice TL lines were re-tested against 97 lesson files. diff and read moved from n to p. iblwa, fivee, clgoal, anec, think and swc were reworded. star and under stayed n.
+- Not done: tallying E21CC tags in the lesson files. `DATA.ms21` for TL still rests on the Word overviews.
