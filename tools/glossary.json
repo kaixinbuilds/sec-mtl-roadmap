@@ -1,41 +1,57 @@
 {
- "_readme": "Every acronym a reader can meet on the site. c=1 means the sources on hand do not spell it out, so the meaning needs the HOD's confirmation. tools/checkgloss.py lists acronym-like words in the page that are in neither `terms` nor `ignore`; run it after adding content.",
+ "_readme": "Acronyms relevant to MTL, BVSS and MOE work (HOD decision, 4 Nov 2026). General words such as HDB or PDF stay out: list them under `ignore`. c=1 means the sources on hand do not spell it out, so the meaning needs the HOD's confirmation. tools/checkgloss.py lists acronym-like words in the page that are in neither `terms` nor `ignore`; run it after adding content.",
  "ignore": [
-  "DATA",
-  "PAPER",
-  "COMPREHENSION",
-  "LANGUAGE",
-  "APPLICATION",
-  "ORAL",
-  "WRITING",
-  "LISTENING",
-  "ONE",
-  "HIGHER",
-  "MALAY",
-  "BAHASA",
-  "TAJUK",
-  "MAHIR",
-  "PENULISAN",
-  "DERIVE",
-  "HANDOFF",
-  "MrLee",
-  "OK",
-  "PM27",
-  "AM11",
-  "PDFKit",
-  "NEEDS",
-  "FM867",
   "4NA",
-  "K356",
+  "AA",
+  "ABC",
+  "AI",
+  "AM",
+  "AM11",
+  "APPLICATION",
+  "ASEAN",
+  "BAHASA",
+  "COMPREHENSION",
+  "CSV",
+  "DATA",
+  "DERIVE",
+  "FM867",
+  "HANDOFF",
+  "HDB",
+  "HIGHER",
+  "II",
+  "IT",
+  "JSON",
   "K120",
   "K129",
   "K130",
   "K131",
   "K355",
+  "K356",
   "K357",
-  "JSON",
+  "KIV",
+  "LANGUAGE",
+  "LISTENING",
+  "MAHIR",
+  "MALAY",
+  "MrLee",
+  "NEEDS",
+  "NIL",
+  "NParks",
+  "OK",
+  "ONE",
+  "ORAL",
+  "PAPER",
+  "PDF",
+  "PDFKit",
+  "PENULISAN",
+  "PM",
+  "PM27",
+  "PUB",
   "SKD",
-  "II",
+  "TAJUK",
+  "TBC",
+  "USA",
+  "WRITING",
   "XX"
  ],
  "terms": [
@@ -284,36 +300,9 @@
    "g": "Organisations"
   },
   {
-   "t": "ASEAN",
-   "f": "Association of Southeast Asian Nations",
-   "g": "Organisations"
-  },
-  {
-   "t": "HDB",
-   "f": "Housing & Development Board",
-   "g": "Organisations"
-  },
-  {
-   "t": "NParks",
-   "f": "National Parks Board",
-   "g": "Organisations"
-  },
-  {
-   "t": "PUB",
-   "f": "Public Utilities Board",
-   "g": "Organisations",
-   "n": "Singapore's national water agency."
-  },
-  {
    "t": "SCCC",
    "f": "Singapore Chinese Cultural Centre",
    "g": "Organisations"
-  },
-  {
-   "t": "ABC",
-   "f": "American Broadcasting Company",
-   "g": "Organisations",
-   "n": "Named in a source note in a CL guide."
   },
   {
    "t": "PSLE",
@@ -370,18 +359,10 @@
    "n": "The code of a 2027 SEC syllabus document, not an abbreviation."
   },
   {
-   "t": "AA",
-   "f": "Access arrangements",
-   "g": "Exams and assessment",
-   "n": "Inferred from \"Prep 8 min (AA +2 min)\" in the oral format.",
-   "c": 1
-  },
-  {
    "t": "TP",
    "f": "Timed practice",
    "g": "Exams and assessment",
-   "n": "Inferred from a department assessment note.",
-   "c": 1
+   "n": "In the Sec 4 assessment plan: full Paper 1 and Paper 2, Term 2 Weeks 6 to 7."
   },
   {
    "t": "PEEL",
@@ -455,27 +436,6 @@
    "g": "Teaching and learning"
   },
   {
-   "t": "AI",
-   "f": "Artificial intelligence",
-   "g": "Teaching and learning"
-  },
-  {
-   "t": "IT",
-   "f": "Information technology",
-   "g": "Teaching and learning"
-  },
-  {
-   "t": "PDF",
-   "f": "Portable Document Format",
-   "g": "Teaching and learning"
-  },
-  {
-   "t": "CSV",
-   "f": "Comma-separated values",
-   "g": "Teaching and learning",
-   "n": "A spreadsheet-friendly download format."
-  },
-  {
    "t": "DSO",
    "f": "Desired Student Outcomes",
    "g": "School calendar",
@@ -512,52 +472,28 @@
    "g": "School calendar"
   },
   {
-   "t": "PM",
-   "f": "Afternoon (post meridiem)",
-   "g": "School calendar"
-  },
-  {
-   "t": "TBC",
-   "f": "To be confirmed",
-   "g": "School calendar"
-  },
-  {
-   "t": "KIV",
-   "f": "Keep in view",
-   "g": "School calendar"
-  },
-  {
-   "t": "NIL",
-   "f": "Nothing (nil)",
-   "g": "School calendar"
-  },
-  {
    "t": "ACE Week",
-   "f": "ACE Week: meaning to confirm",
+   "f": "A week named after the BVSS vision",
    "g": "School calendar",
-   "n": "Calendar week of 25 to 29 Jan with camps and challenges. The Strategic Plan draft uses ACE for the vision (Adaptive Learners, Caring Leaders, Ethical Changemakers), but nothing on hand confirms the week takes its name from it.",
-   "c": 1
+   "n": "ACE stands for Adaptive Learners, Caring Leaders, Ethical Changemakers. In the 2027 calendar, 25 to 29 Jan."
   },
   {
    "t": "ApLM",
-   "f": "Applied Learning Module",
+   "f": "Applied Learning Modules",
    "g": "School calendar",
-   "n": "Best reading of a calendar entry beside Sec 4 job shadowing.",
-   "c": 1
+   "n": "A school programme, not part of MTL. It is in the calendar because it affects lesson days."
   },
   {
    "t": "CCM",
-   "f": "CCM: meaning to confirm",
+   "f": "Conversational Chinese and Malay",
    "g": "School calendar",
-   "n": "Calendar entry \"Sec 1 MT CCM level 1\" in October.",
-   "c": 1
+   "n": "A programme owned by MTL. Sec 1 level 1 runs on 19, 21 and 26 Oct 2027."
   },
   {
    "t": "SEP",
-   "f": "SEP: meaning to confirm",
+   "f": "Sports Enrichment Programme",
    "g": "School calendar",
-   "n": "Calendar entry for Sec 3, 7 to 8 Jan, beside team building.",
-   "c": 1
+   "n": "In the 2027 calendar for Sec 3, 7 to 8 Jan."
   },
   {
    "t": "SCT",
@@ -576,18 +512,8 @@
    "t": "BI",
    "f": "BI: meaning to confirm",
    "g": "Languages and courses",
-   "n": "Appears in the Malay label \"Kemahiran sukatan BI\".",
+   "n": "Appears only in the Malay heading \"Kemahiran sukatan BI\" on the Syllabus map, which translates \"MTL syllabus skill\". So it likely means Bahasa Ibunda (Mother Tongue), though BI can also mean Bahasa Inggeris.",
    "c": 1
-  },
-  {
-   "t": "USA",
-   "f": "United States of America",
-   "g": "Organisations"
-  },
-  {
-   "t": "AM",
-   "f": "Morning (ante meridiem)",
-   "g": "School calendar"
   }
  ]
 }

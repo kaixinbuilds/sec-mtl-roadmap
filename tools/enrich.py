@@ -253,7 +253,7 @@ D["design"]["dso"] = {k: v for k, v in _dso.items() if k not in ("_readme", "abo
 D["design"]["about"]["dso"] = _dso["about"]
 _gl = json.loads((ROOT / "tools" / "glossary.json").read_text(encoding="utf-8"))
 D["design"]["glossary"] = _gl["terms"]
-D["design"]["about"]["gloss"] = {"what":"What every acronym on this site stands for, including E21CC (Emerging 21st Century Competencies) and IBL (inquiry-based learning).","points":["Search or scroll the list. Terms are in alphabetical order.","Some letters have two meanings, such as SEC and STAR. Each meaning has its own entry.","Terms marked \"To confirm\" are not spelled out in the sources on hand."],"use":"Tap a dotted-underlined acronym anywhere on the site to come to its entry here."}
+D["design"]["about"]["gloss"] = {"what":"What the MTL, BVSS and MOE acronyms on this site stand for, including E21CC (Emerging 21st Century Competencies) and IBL (inquiry-based learning).","points":["Search or scroll the list. Terms are in alphabetical order.","Some letters have two meanings, such as SEC and STAR. Each meaning has its own entry.","Terms marked \"To confirm\" are not spelled out in the sources on hand."],"use":"Tap a dotted-underlined acronym anywhere on the site to come to its entry here."}
 D["ui"]["t_gloss"] = {"en":"Glossary","zh":"词汇表","ms":"Glosari","ta":"சொற்களஞ்சியம்"}
 D["ui"]["t_share"] = {"en":"Learn across languages","zh":"三语互鉴","ms":"Belajar merentas bahasa","ta":"மொழிகளிடையே கற்றல்"}
 

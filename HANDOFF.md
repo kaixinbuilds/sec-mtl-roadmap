@@ -327,7 +327,8 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - Auto-underline: `abbrs()` wraps the first use of each glossary term per section of `#view` in `abbr.glt`. Tapping one opens the glossary filtered to it. Leaving the glossary clears the filter. Add a term to the exclusion list inside `abbrs()` if it is too common to underline.
 - Quick search: `#qs` in the nav row (own row at 761 to 960px, beside the page menu on phones). The index covers pages, Progression lenses, schemes of work, units from `DATA.themes`, practices and glossary terms. Keys: / to focus, arrows, Enter, Esc.
 - After adding content run `python3 tools/checkgloss.py`. It lists acronym-like words in `DATA` that are in neither `terms` nor `ignore`. It reads data only, so also scan rendered text when UI strings change.
-- NEEDS HOD: confirm the eight "To confirm" terms: ACE Week, ApLM, CCM, SEP, SCT, AA, TP, BI. GEM is settled by the Strategic Plan draft. The draft also labels the vision ACE, but that does not confirm the meaning of ACE Week.
+- Glossary scope (HOD decision, 4 Nov 2026): only acronyms relevant to MTL, BVSS and MOE work. General words (HDB, PDF, TBC and so on) go under `ignore`. HOD confirmed ACE Week, ApLM, CCM, SEP and TP.
+- NEEDS HOD: SCT and BI are still marked To confirm. AA was removed from the glossary: it sits in `sow.oralfw.prep`, which no page displays.
 
 ## 4 Nov 2026 · E21CC to DSO page
 
