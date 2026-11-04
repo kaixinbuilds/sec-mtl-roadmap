@@ -12,8 +12,8 @@
  },
  "calendar": {
   "year": 2027,
-  "source": "(Staff) and (Students) Bukit View Secondary 2026 Google calendars, 2027 entries as at 31 Oct 2026. Weeks run Monday to Friday; W1 of each term starts on the Monday shown.",
-  "note": "All new content is taught in Terms 1 to 3 for Sec 1 to 3; Term 4 has no new content: Sec 1 to 3 revise for and sit the EOY exams (30 Sep to 13 Oct). Sec 4 finishes the syllabus by the end of Term 2: Term 3 is the SEC oral (12 to 16 Jul), the MT prelim written papers (29 Jul, Term 3 Week 5) and revision, with the S4/5 National Exam Study Programme from 21 Jul; Term 4 is the SEC MTL written papers (15 to 16 Sep, Week 1) and listening (20 to 21 Sep, Week 2).",
+  "source": "(Staff) and (Students) Bukit View Secondary 2026 Google calendars, 2027 entries as at 4 Nov 2026. Weeks run Monday to Friday; W1 of each term starts on the Monday shown.",
+  "note": "All new content is taught in Terms 1 to 3 for Sec 1 to 3; Term 4 has no new content: Sec 1 to 3 revise for and sit the EOY exams (27 Sep to 11 Oct). Sec 4 finishes the syllabus by the end of Term 2: Term 3 is the SEC oral (12 to 16 Jul), the MT prelim written papers (29 Jul, Term 3 Week 5) and revision, with the S4/5 National Exam Study Programme from 7 Jul; Term 4 is the SEC MTL written papers (15 to 16 Sep, Week 1) and listening (20 to 21 Sep, Week 2).",
   "terms": [
    {
     "t": 1,
@@ -25,29 +25,45 @@
     "events": [
      {
       "w": 1,
-      "d": "4 to 5 Jan",
-      "what": "Sec 1 orientation"
+      "d": "4 to 8 Jan",
+      "what": "No lessons: Sec 1 to 4 on 4 Jan (special timetable); Sec 1 orientation 4 to 5 Jan; Sec 3 SEP, team building and class bonding 7 to 8 Jan",
+      "k": "nol"
+     },
+     {
+      "w": 4,
+      "d": "25 to 29 Jan",
+      "what": "ACE Week: no normal lessons. Sec 1 Outdoor Adventure Camp (25 to 27 Jan) and Scientist for a Day (28 Jan); Sec 2 VIA (28 Jan); Sec 3 MOE-OBS Challenge (25 to 29 Jan); Sec 4 job shadowing / ApLM (25 to 27 Jan)",
+      "k": "nol"
+     },
+     {
+      "w": 4,
+      "d": "29 Jan",
+      "what": "HBL 1 (Sec 1 to 5)",
+      "k": "hbl"
      },
      {
       "w": 5,
       "d": "3 to 5 Feb",
-      "what": "MT CNY cultural booths (3 to 4 Feb) and CNY celebration (5 Feb), Sec 1 to 5",
+      "what": "MT CNY recess cultural booths (3 to 4 Feb) and CNY celebration (5 Feb), Sec 1 to 5",
       "mt": true
      },
      {
       "w": 6,
       "d": "8 to 9 Feb",
-      "what": "CNY public holiday and day off in lieu"
+      "what": "Chinese New Year public holiday (6 to 8 Feb) and day off in lieu (9 Feb)",
+      "k": "ph"
      },
      {
       "w": 7,
       "d": "17 Feb",
-      "what": "HBL 1 (Sec 1 to 5)"
+      "what": "HBL 2 (Sec 1 to 5)",
+      "k": "hbl"
      },
      {
       "w": 9,
       "d": "1 Mar",
-      "what": "HBL 2 · Sec 4 and 5 MT oral exam (school, SEC format)",
+      "what": "HBL 3 · Sec 4 and 5 MT oral exam (school, SEC format)",
+      "k": "hbl",
       "mt": true,
       "sec": [
        4
@@ -56,7 +72,8 @@
      {
       "w": 10,
       "d": "10 Mar",
-      "what": "Hari Raya Puasa public holiday"
+      "what": "Hari Raya Puasa public holiday",
+      "k": "ph"
      }
     ]
    },
@@ -69,15 +86,22 @@
     "teach": 9,
     "events": [
      {
+      "w": 1,
+      "d": "26 Mar",
+      "what": "Good Friday public holiday",
+      "k": "ph"
+     },
+     {
       "w": 2,
       "d": "29 Mar",
-      "what": "MT Hari Raya Puasa showcase, Sec 1 to 3 (rehearsal 25 Mar)",
+      "what": "MT Hari Raya Puasa showcase, Sec 1 to 3 (rehearsal 23 Mar)",
       "mt": true
      },
      {
       "w": 2,
       "d": "2 Apr",
-      "what": "HBL 3 · Sec 3 MT oral exam",
+      "what": "HBL 4 · Sec 3 MT oral exam",
+      "k": "hbl",
       "mt": true,
       "sec": [
        3
@@ -86,16 +110,24 @@
      {
       "w": 4,
       "d": "13 Apr",
-      "what": "HBL 4"
+      "what": "HBL 5 (Sec 1 to 5)",
+      "k": "hbl"
      },
      {
       "w": 5,
       "d": "22 Apr",
-      "what": "HBL 5 · Sec 2 MT oral exam",
+      "what": "HBL 6 · Sec 2 MT oral exam",
+      "k": "hbl",
       "mt": true,
       "sec": [
        2
       ]
+     },
+     {
+      "w": 7,
+      "d": "3 May",
+      "what": "Labour Day day off in lieu (Labour Day is Sat 1 May)",
+      "k": "ph"
      },
      {
       "w": 7,
@@ -110,7 +142,8 @@
      {
       "w": 8,
       "d": "14 May",
-      "what": "HBL 6 · Sec 1 MT oral exam",
+      "what": "HBL 7 · Sec 1 MT oral exam",
+      "k": "hbl",
       "mt": true,
       "sec": [
        1
@@ -119,17 +152,24 @@
      {
       "w": 9,
       "d": "17 and 20 May",
-      "what": "Hari Raya Haji and Vesak Day public holidays"
+      "what": "Hari Raya Haji and Vesak Day public holidays",
+      "k": "ph"
      },
      {
       "w": 10,
-      "d": "28 May",
-      "what": "Sec 1 and 2 MT oral make-up (PM) · STAR meeting",
+      "d": "27 May",
+      "what": "Sec 1 and 2 MT oral make-up · last day of school activities",
       "mt": true,
       "sec": [
        1,
        2
       ]
+     },
+     {
+      "w": 10,
+      "d": "28 May",
+      "what": "STAR meeting (student-teacher-parent conversation): no lessons",
+      "k": "nol"
      }
     ]
    },
@@ -142,43 +182,66 @@
     "teach": 9,
     "events": [
      {
+      "w": 1,
+      "d": "28 to 30 Jun",
+      "what": "Sec 3 G1/G2 ApLM (TBC): no normal lessons for those classes",
+      "k": "nol",
+      "sec": [
+       3
+      ]
+     },
+     {
       "w": 2,
-      "d": "5 to 6 Jul",
-      "what": "Youth Day holiday · HBL 7"
+      "d": "5 Jul",
+      "what": "Youth Day school holiday",
+      "k": "ph"
+     },
+     {
+      "w": 2,
+      "d": "7 Jul onwards",
+      "what": "S4/5 National Exam Study Programme (twice a week to the SEC)",
+      "sec": [
+       4
+      ]
      },
      {
       "w": 3,
       "d": "12 to 16 Jul",
-      "what": "SEC MTL and EL oral examination (HBL 8 for Sec 1 to 5)",
+      "what": "SEC MTL/HMTL and EL oral examination (12 and 16 Jul PM, 13 to 15 Jul full day)",
       "mt": true,
       "sec": [
        4
       ]
      },
      {
-      "w": 4,
-      "d": "19 to 22 Jul",
-      "what": "MT Fortnight programmes: Sec 1 (19 Jul), Sec 2 (20 Jul), Sec 3 (22 Jul), PM",
-      "mt": true
+      "w": 3,
+      "d": "13 to 15 Jul",
+      "what": "HBL 8 (Sec 1 to 5), three days during the SEC oral",
+      "k": "hbl"
      },
      {
       "w": 4,
-      "d": "21 Jul onwards",
-      "what": "S4/5 National Exam Study Programme begins (twice a week to the SEC)",
-      "sec": [
-       4
-      ]
+      "d": "20 and 22 Jul",
+      "what": "MT Fortnight programmes (PM): Sec 2 (20 Jul), Sec 3 (22 Jul)",
+      "mt": true
      },
      {
       "w": 5,
       "d": "26 to 27 Jul",
-      "what": "MT Fortnight recess cultural booths, Sec 1 to 3",
+      "what": "MT Fortnight recess cultural booths, Sec 1 to 3 · Sec 1 MTF programme (27 Jul, PM)",
       "mt": true
      },
      {
       "w": 5,
+      "d": "28 Jul",
+      "what": "HBL 9 · Sec 4 and 5 EL prelim",
+      "k": "hbl"
+     },
+     {
+      "w": 5,
       "d": "29 Jul",
-      "what": "HBL 9 · Sec 4 and 5 MT prelim written papers (HMT, G3, G2, G1) · Sec 3 HMT timed practice on the G3 paper",
+      "what": "HBL 10 · Sec 4 and 5 MT prelim written papers (HMT, G3, G2, G1) · Sec 3 HMT timed practice on the G3 paper",
+      "k": "hbl",
       "mt": true,
       "sec": [
        3,
@@ -186,13 +249,20 @@
       ]
      },
      {
-      "w": 7,
-      "d": "9 to 10 Aug",
-      "what": "National Day holidays"
+      "w": 6,
+      "d": "3 Aug",
+      "what": "HBL 11 · Sec 1 EL oral exam",
+      "k": "hbl"
      },
      {
-      "w": 9,
-      "d": "23 Aug to 2 Sep",
+      "w": 7,
+      "d": "9 to 10 Aug",
+      "what": "National Day public holiday and school holiday",
+      "k": "ph"
+     },
+     {
+      "w": 7,
+      "d": "12 to 23 Aug",
       "what": "Sec 4 and 5 prelim exam II (other subjects)",
       "sec": [
        4
@@ -200,8 +270,9 @@
      },
      {
       "w": 10,
-      "d": "2 to 3 Sep",
-      "what": "Teachers' Day concert and holiday"
+      "d": "3 Sep",
+      "what": "Teachers' Day school holiday (concert 2 Sep)",
+      "k": "ph"
      }
     ]
    },
@@ -225,7 +296,7 @@
      {
       "w": 2,
       "d": "20 to 21 Sep",
-      "what": "HBL 10 · SEC MTL listening comprehension, PM",
+      "what": "SEC MTL listening comprehension, PM",
       "mt": true,
       "sec": [
        4
@@ -233,7 +304,7 @@
      },
      {
       "w": 3,
-      "d": "30 Sep to 13 Oct",
+      "d": "27 Sep to 11 Oct",
       "what": "Sec 1 to 3 EOY exams (MT EOY P1 and P2 standardisation 5 to 7 Oct)",
       "mt": true,
       "sec": [
@@ -243,9 +314,18 @@
       ]
      },
      {
+      "w": 4,
+      "d": "8 Oct",
+      "what": "Sec 4 and 5 last day of school / graduation (TBC)",
+      "sec": [
+       4
+      ]
+     },
+     {
       "w": 5,
-      "d": "14 to 20 Oct",
-      "what": "Marking days and checking of scripts"
+      "d": "12 to 18 Oct",
+      "what": "Marking days (12 to 13 Oct) and checking of scripts (14 to 18 Oct)",
+      "k": "nol"
      },
      {
       "w": 6,
@@ -254,11 +334,46 @@
       "mt": true
      },
      {
+      "w": 6,
+      "d": "20 Oct",
+      "what": "Admin Day (in-school progression meeting): no lessons",
+      "k": "nol"
+     },
+     {
+      "w": 7,
+      "d": "28 Oct",
+      "what": "Deepavali public holiday",
+      "k": "ph"
+     },
+     {
       "w": 7,
       "d": "29 Oct",
-      "what": "Last day of school (Deepavali holiday 28 Oct)"
+      "what": "STAR meeting and last day of school",
+      "k": "nol"
      }
     ]
+   }
+  ],
+  "breaks": [
+   {
+    "after": 1,
+    "what": "March school holidays",
+    "d": "13 to 21 Mar"
+   },
+   {
+    "after": 2,
+    "what": "June school holidays",
+    "d": "29 May to 27 Jun"
+   },
+   {
+    "after": 3,
+    "what": "September school holidays",
+    "d": "4 to 12 Sep"
+   },
+   {
+    "after": 4,
+    "what": "December school holidays",
+    "d": "from 20 Nov"
    }
   ]
  },
@@ -288,7 +403,7 @@
    {
     "t": 2,
     "code": "Oral",
-    "what": "EOY Paper 3 oral on HBL 6",
+    "what": "EOY Paper 3 oral on HBL 7",
     "wk": "W8 · 14 May",
     "wt": "EOY",
     "form": "oral"
@@ -312,7 +427,7 @@
     "t": 4,
     "code": "EOY",
     "what": "Papers 1 and 2 and listening comprehension",
-    "wk": "30 Sep to 13 Oct",
+    "wk": "27 Sep to 11 Oct",
     "wt": "55%",
     "form": "exam",
     "comp": "End-of-Year Exam Format"
@@ -342,7 +457,7 @@
    {
     "t": 2,
     "code": "Oral",
-    "what": "EOY Paper 3 oral on HBL 5",
+    "what": "EOY Paper 3 oral on HBL 6",
     "wk": "W5 · 22 Apr",
     "wt": "EOY",
     "form": "oral"
@@ -361,7 +476,7 @@
     "t": 4,
     "code": "EOY",
     "what": "Papers 1 and 2 and listening comprehension",
-    "wk": "30 Sep to 13 Oct",
+    "wk": "27 Sep to 11 Oct",
     "wt": "55%",
     "form": "exam",
     "comp": "End-of-Year Exam Format"
@@ -391,7 +506,7 @@
    {
     "t": 2,
     "code": "Oral",
-    "what": "EOY Paper 3 oral on HBL 3",
+    "what": "EOY Paper 3 oral on HBL 4",
     "wk": "W2 · 2 Apr",
     "wt": "EOY",
     "form": "oral"
@@ -416,7 +531,7 @@
     "t": 4,
     "code": "EOY",
     "what": "Papers 1 and 2 and listening comprehension",
-    "wk": "30 Sep to 13 Oct",
+    "wk": "27 Sep to 11 Oct",
     "wt": "55%",
     "form": "exam",
     "comp": "End-of-Year Exam Format"
@@ -435,7 +550,7 @@
    {
     "t": 1,
     "code": "Oral",
-    "what": "School MT oral exam in SEC format, on HBL 2",
+    "what": "School MT oral exam in SEC format, on HBL 3",
     "wk": "W9 · 1 Mar",
     "wt": "school",
     "form": "oral",
@@ -461,7 +576,7 @@
    {
     "t": 3,
     "code": "Prelim",
-    "what": "MT prelim written papers (HMT, G3, G2, G1) on HBL 9",
+    "what": "MT prelim written papers (HMT, G3, G2, G1) on HBL 10",
     "wk": "W5 · 29 Jul",
     "wt": "prelim",
     "form": "exam",
@@ -10964,7 +11079,7 @@
     "items": [
      {
       "rule": "No new content in Term 4.",
-      "why": "Term 4 has about two school weeks before the exams: SEC MTL written papers from 15 Sep, Sec 1 to 3 EOY from 30 Sep."
+      "why": "Term 4 has about two school weeks before the exams: SEC MTL written papers from 15 Sep, Sec 1 to 3 EOY from 27 Sep."
      },
      {
       "rule": "Units are taught in textbook order.",
@@ -10986,7 +11101,7 @@
     "items": [
      {
       "rule": "Finish all chapters by the end of Term 3 (3 Sep).",
-      "why": "Term 4 only has time for overall EOY revision before the EOY exams (30 Sep to 13 Oct)."
+      "why": "Term 4 only has time for overall EOY revision before the EOY exams (27 Sep to 11 Oct)."
      },
      {
       "rule": "Plan oral preparation into Term 2.",
@@ -11010,7 +11125,7 @@
      },
      {
       "rule": "Plan oral preparation into Term 1.",
-      "why": "The school MT oral exam in SEC format is on 1 Mar (HBL 2, Term 1 Week 9)."
+      "why": "The school MT oral exam in SEC format is on 1 Mar (HBL 3, Term 1 Week 9)."
      },
      {
       "rule": "Term 3 is for the SEC oral, the prelim and revision.",
