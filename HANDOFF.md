@@ -363,3 +363,8 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - Callouts take full forms from the site glossary, so an acronym means one thing across the site. Her file's CGC full form differs from the glossary; the glossary keeps MOE's wording. The HOD confirmed PEEL as "Point, Elaborate, Example, Link" (5 Nov 2026), and the glossary now uses it.
 - Terms and dates are 2026's. CL (2, 1, 3 units across Terms 1 to 3) and ML (3, 2, 3) differ from the default 2027 pacing (2, 2, 2 and 3, 3, 2); TL matches. The page says so.
 - Glossary: AA and 4P added. Nav now wraps below 1160px to fit the extra tab.
+
+## 5 Nov 2026 · Home hero colours and hill
+
+- The HOD asked to restore the school colours and keep the SVG hill visible. The three hero cards are blue, green and yellow again (commit 164f333 had forced them to ink). On wide screens the hero text and cards keep clear of the hill; at 1100px and below the hill sits under the cards at full strength. Faded hills on other pages are a little stronger.
+
