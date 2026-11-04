@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build tools/cpdd21.json: every 21CC tag the CPDD guides themselves give, unit by unit (31 Oct 2026).
-TL: the MOE-initiatives column (கல்வியமைச்சின் முயற்சிகள்) of each activity row in the 23 unit overviews (கண்ணோட்டம், Word).
+TL: the MOE-initiatives column (கல்வியமைச்சின் முயற்சிகள்) of each activity row in the 23 unit overviews (கண்ணோட்டம், Word), plus the repaired lesson files for the units those leave untagged.
 CL: the 教师手册 appendix (附录三 21世纪技能在教材中的落实) works one unit per Sec 1 and Sec 3 guide; Sec 2 and 4 guides print the goals table only.
 ML: the only 21CC notes in any Panduan Guru are "Penerapan Kemahiran Abad ke-21" boxes in the G1 Sec 4 guide (Units 1-3).
 Run on the department Mac with the drive mounted: python3 tools/cpdd21.py
@@ -53,6 +53,25 @@ for f in sorted(glob.glob(DRIVE + "TL Teachers Guide/*/*.docx")):
             if not MARK.search(c): continue
             for k, pas in classify_tl(c).items():
                 put("TL", crs, sec, book, act.split(".")[0], k, pas, "activity " + act + ": " + " ".join(c.split())[:160])
+# ---- TL lesson files: the units whose Word overview carries no tag (G3 1A Units 2-4; HTL Sec 4 has no Word overview at all) ----
+# Read from the repaired offline Markdown (_Markdown, _tools/tamil_cleanup.py), same wording rules, 5 Nov 2026.
+MD = DRIVE + "_Markdown/TL Teachers Guide/"
+TAG = re.compile(r"21\s*-?\s*ஆம்\s*நூ[^|]{0,100}|சமூக\s*மனவுணர்வு[^|]{0,100}")
+STOP = re.compile(r"\n\s*(?:\d{1,2}\.\d{1,2}\b|பயிற்சி|பாடநூல்|மாணவர்|•|##|த\s*\.\s*தொ|மின்வழி|சொற்பொருள்|படிப்போம்)")
+for fol, crs, sec, book, us in (("1G3 TG","G3",1,"1A",{2,3,4}),("4HTL TG","H",4,"",{1,2,3,4,5,6})):
+    for f in sorted(glob.glob(MD + fol + "/*.pdf.md")):
+        name = N(os.path.basename(f))
+        if name.startswith("._") or (book and book not in name): continue
+        m = re.search(r"தொகுதி\s*(\d{1,2})\s*[–-]\s*பாடத்தயாரிப்பு", name)
+        if not m: continue  # single-unit lesson files only, so the unit is certain
+        u = int(m.group(1))
+        if u not in us: continue
+        for pg in re.split(r"(?=## Page \d+)", N(open(f, encoding="utf8").read())):
+            pn = re.match(r"## Page (\d+)", pg)
+            for t in TAG.finditer(pg):
+                x = t.group(0); st = STOP.search(x); x = x[:st.start()] if st else x
+                for k, pas in classify_tl(x).items():
+                    if k != "DIG": put("TL", crs, sec, book, str(u), k, pas, "lesson file p." + (pn.group(1) if pn else "?") + ": " + " ".join(x.split())[:160])
 # ---- CL: appendix worked examples (codes printed in the guide) ----
 for c, b1 in (("G1","1上"),("G2","1上"),("G3","1A"),("H","1A")):
     for k, pas, code in (("CCIS",["PA_CM"],"CCI 1.3"),("CCIS",[],"CCI 5.3"),("CGC",["PA_CL"],"CGC 1.3")):

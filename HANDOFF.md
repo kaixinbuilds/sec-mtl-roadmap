@@ -354,4 +354,5 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - Home hero now states the site's purpose: existing curriculum to BVSS DSOs, through IBL and E21CC. Stats boxes removed at the HOD's request. Headline wording is the HOD's.
 - Offline `_Markdown` Tamil text had a second cleanup (`_tools/tamil_cleanup.py`, exact word fixes only). Earlier statements that the TL PDFs cannot be searched were wrong: a 3 Nov repair had already made them searchable.
 - Share practice TL lines were re-tested against 97 lesson files. diff and read moved from n to p. iblwa, fivee, clgoal, anec, think and swc were reworded. star and under stayed n.
-- Not done: tallying E21CC tags in the lesson files. `DATA.ms21` for TL still rests on the Word overviews.
+- Lesson-file E21CC tally: `tools/cpdd21.py` now also reads the repaired Markdown, for the 9 units the Word overviews leave untagged (G3 1A Units 2-4, HTL Sec 4 Units 1-6): 30 new unit-domain tags. It changed no existing unit. Other mismatches were false unit numbers from flattened overview PDFs and were not added.
+- DSO page has a year view (`dyView` in `vDso`): terms across, milestones down, DSOs on the right, for any language, course and year. Mapping is by unit from `DATA.ms21`. Exam-term links are not mapped; the SPMC template on 1G3 CL does that from checked 2026 papers.
