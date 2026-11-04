@@ -1,8 +1,8 @@
-# mtl-curriculum-roadmap-2021-syllabus
+# sec-mtl-roadmap
 
 BVSS MTL Curriculum Roadmap 2021 Syllabus: CPDD 2021-syllabus skills for CL, ML and TL, Sec 1 to 4, mapped to SEC 2027 and to the two BVSS school approaches from 2027 (inquiry-based learning, or IBL, and the Emerging 21st Century Competencies, or E21CC, priority areas), with the department's planning layer.
 
-Live: https://kaixinbuilds.github.io/mtl-curriculum-roadmap-2021-syllabus/
+Live: https://kaixinbuilds.github.io/sec-mtl-roadmap/
 
 ## Pages
 

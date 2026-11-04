@@ -344,3 +344,7 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - Read through the SLS lesson, question and media-metadata APIs: 282 hub unit-card lessons, 125 other lessons, a sample of 10 series. Output stays offline: `CPDD resources (2021 Syllabus)/_SLS_TL_Catalogue/TL_SLS_Catalogue.xlsx`, with per-group `.jsonl` and `_summary.md`. Media and packages were not opened.
 - Result: no TL claim on Learn across languages was overturned. Added: `S.tlsls` (fold-out `shTl()`), a sentence on five practices' gaps, and the TL lines in both summaries. No E21CC count changed: the only lesson printing codes (bf5ee313) has no unit and its goals are outside the 16 milestones.
 - The real gap remains the garbled TL lesson-preparation PDFs.
+
+## 5 Nov 2026 · New address
+
+- The HOD renamed the repo and page to `sec-mtl-roadmap`. Live: https://kaixinbuilds.github.io/sec-mtl-roadmap/ . The site's displayed title is unchanged. Earlier entries in this file keep the names in use at the time.
