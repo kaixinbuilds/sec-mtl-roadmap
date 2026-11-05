@@ -11,6 +11,18 @@ A department wall chart of what the CPDD 2021-syllabus teacher guides teach in C
 
 Two comparisons must always be easy: across languages for the same course, and within a language across levels of demand.
 
+## Whole-site review (5 Nov 2026)
+
+No syllabus facts or school policy changed.
+
+- **Routing:** moving between tabs now adds a history entry, so Back and Forward work. Curriculum maps filters sit in the address as `#e21d/<lens>/<sec>/<course>/<lang>`, and that link reopens the same view.
+- **Navigation:** skip link, `aria-current` on the active tab, focus moves to the page on tab change, "On this page" jump buttons on E21CC to DSO, Languages, Syllabus and exams, and Pedagogical design.
+- **Clutter:** a section heading that repeats the page title is hidden; compact page header; the tag method note on Sec 1–4 progression folds into "How these tags are assigned"; the Time constraints open or closed state is remembered.
+- **Labels:** "MTL planner 2027" is now "Scheme of work 2027"; the internal version string is gone from that page; the footer date comes from `document.lastModified`; "Amber" is "Gold" and "AA" wording matches the template.
+- **Phones:** the site title wraps instead of being cut off behind the mode buttons; larger touch targets; the jump bar scrolls on one line.
+- **Maps:** control rows are grouped in `.ctl`; when embedded (`.emb`, set in `maps_tpl.js`) the map lines up with the page edge; a resize refits the iframe.
+- **Also added:** meta description, favicon, print styles.
+
 ## Developmental milestones on the E21CC roadmap (3 Nov 2026, nineteenth update)
 
 - `tools/enrich.py` builds `DATA.ms21`: for each unit and each domain tag (CAIT, CCIS, CGC), the MOE learning goals behind it (CAIT 1-6, CCI 1-6, CGC 1-6) with a source and a reason. Order of evidence: a code printed in the CPDD guide (CL 附录三 worked examples) > a sub-competency the guide names (TL activity rows, ML Panduan Guru boxes), with the goal of the pair read from the task > the department's reading of the task (rules R1-R5 plus text cues).

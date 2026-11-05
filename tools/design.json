@@ -258,7 +258,7 @@
    "points": [
     "The essence section sets out what MOE's Singapore Teaching Practice means by inquiry: five key elements, the inquiry cycle, the 5E model, structured to open approaches, and what makes it work.",
     "CPDD flags inquiry mainly in ML (STAR Team Inquiry in 5 units, and a community business plan in Sec 3 Unit 4), plus two TL G3 Sec 2 units. CL guides tag no unit, but every CL unit ends with a 综合任务; the department read all 92 and marks the 57 where students find out for themselves (interview, research, survey, field work) and then make or present something. These are inferred, not CPDD tags.",
-    "Amber tags mark tasks that look inquiry-shaped (find out, plan, make or present) but are not tagged. The STP card under the roadmap gives the student behaviours to look for."
+    "Gold tags mark tasks that look inquiry-shaped (find out, plan, make or present) but are not tagged. The STP card under the roadmap gives the student behaviours to look for."
    ],
    "use": "Click a unit card to see the task, the guide's note and the STP look-fors."
   },
@@ -3057,7 +3057,7 @@
     "c21": [
      {
       "find": "Only the TL guides tag 21CC activity by activity; CL and ML tags on this page are mostly inferred from task wording.",
-      "impl": "Treat an amber tag as a question for the unit meeting (is this competency really taught here?), not as evidence that it is.",
+      "impl": "Treat a gold tag as a question for the unit meeting (is this competency really taught here?), not as evidence that it is.",
       "next": "Use the Source filter: 'CPDD-tagged only' shows what the guides themselves claim."
      }
     ],
