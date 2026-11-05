@@ -384,3 +384,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - E21CC to DSO, year grid: now the template's table. Each cell is one tile tinted by outcome; each unit in it is still a button that opens the unit pop-up. The left source bars are gone from the grid: the word after each unit (CPDD guide, reading, proposal) carries the same source information. Milestone wording is the same short wording as Curriculum maps (`MS3`, `MS4`), with the MOE wording on hover. The Level 4 wording is still a department reading to confirm. Term headers list the units.
 - Three-hue limit: CL, ML and TL now share navy, green and gold with the DSOs. Inquiry, SEC, digital, STAR and other category tags keep their own colours, because those categories need to stay distinct.
 - The Sec 1-4 film screen is navy. The hill stays, in the new colours. `maps.html` loads the same two fonts.
+
+## 5 Nov 2026 · Tasks tagged with units
+
+- `tools/tag_units.py` adds `u` (tag), `r` (title without its label) and `uid` (unit id, units only) to every year task in `tools/maps_data.json`. `t` is unchanged. Rerun it after editing tasks, then `tools/build_maps.py` and `tools/enrich.py`. It matches "Unit N" and Tamil module names against `DATA.themes` and `DATA.recs`.
+- Curriculum maps shows the bold tag in each cell. Its callout links to the unit pop-up through `postMessage({mapsUnit})` to the parent page; opened on its own, `maps.html` has no link.
+- The E21CC to DSO year grid now reads the same tasks (`DATA.design.dsoT`, embedded by `enrich.py`) and uses the same callout (`edxOpen`). Term headers come from the task data. It also lists a unit the guide prints for that milestone when no task from that unit is mapped (labelled CPDD guide). Inquiry sketch links are off by default behind a "Show" button and are not counted. Unit-level "reading" links with no task were dropped from this grid; they remain in the unit pop-ups, the 16-milestone chart and the progression page.

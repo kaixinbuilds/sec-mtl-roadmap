@@ -251,6 +251,10 @@ D["design"].setdefault("about", {})["share"] = _sh["about"]
 _dso = json.loads((ROOT / "tools" / "dso.json").read_text(encoding="utf-8"))  # E21CC to DSO page
 D["design"]["dso"] = {k: v for k, v in _dso.items() if k not in ("_readme", "about")}
 D["design"]["about"]["dso"] = _dso["about"]
+_maps = json.loads((ROOT / "tools" / "maps_data.json").read_text(encoding="utf-8"))  # DSO year grid: the Curriculum maps E21CC tasks, tagged by tools/tag_units.py
+_tf = ("t", "u", "r", "uid", "w", "y", "aa")
+D["design"]["dsoT"] = {k: {"terms": y.get("terms", {}), "note": y.get("note", ""), "e21": {g: {t: [{f: o[f] for f in _tf if f in o} for o in a] for t, a in ts.items()} for g, ts in (y.get("e21") or {}).items()}} for k, y in _maps["years"].items()}
+D["design"]["dsoTF"] = {k: _maps["foot"][k] for k in ("g31", "e21")}
 _gl = json.loads((ROOT / "tools" / "glossary.json").read_text(encoding="utf-8"))
 D["design"]["glossary"] = _gl["terms"]
 D["design"]["about"]["gloss"] = {"what":"What the MTL, BVSS and MOE acronyms on this site stand for, including E21CC (Emerging 21st Century Competencies) and IBL (inquiry-based learning).","points":["Search or scroll the list. Terms are in alphabetical order.","Some letters have two meanings, such as SEC and STAR. Each meaning has its own entry."],"use":"Tap a dotted-underlined acronym anywhere on the site to come to its entry here."}
