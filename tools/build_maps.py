@@ -8,6 +8,7 @@ css=(R/'maps.css').read_text(encoding='utf-8');pop=(R/'maps_pop.js').read_text(e
 data=(R/'maps_data.json').read_text(encoding='utf-8').replace('</','<\\/')
 js=tpl.replace('__POP__',pop).replace('__DATA__',data)
 html=f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
 <title>How the curriculum develops E21CC and realises our DSOs</title><style>{css}</style></head><body><main>
 <p class="eye" id="eye"></p><h1 id="h1"></h1><div class="rule"></div><p class="sub" id="sub"></p>
 <p class="vm"><b>BVSS DSO (ACE):</b> <b>A</b>daptive Learners · <b>C</b>aring Leaders · <b>E</b>thical Changemakers</p>
