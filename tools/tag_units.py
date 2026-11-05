@@ -78,6 +78,63 @@ for key, Y in D["years"].items():
                         other[head] += 1
                         tally["assessment or other school task"] += 1
 
+
+# Units with no task under a milestone: printed in the guide (k1) or linked only by an inquiry sketch (k3).
+# Terms use the same default pacing as alloc() in index.html. Sec 1 G3 is the department's own map, so it takes proposals only.
+SOW = json.loads((R / "sow.json").read_text(encoding="utf-8"))
+GOALS = ("CAIT 3", "CAIT 4", "CCI 1", "CCI 2", "CCI 3", "CCI 4", "CGC 1", "CGC 2")
+
+
+def alloc(L, c, sec):
+    us = [t for t in DATA["themes"] if t["lang"] == L and t["course"] == c and t["sec"] == sec]
+    us.sort(key=lambda t: (t.get("book_en") or t.get("book") or "", int(t["unit"]) if str(t["unit"]).isdigit() else 0))
+    n = len(us)
+    P = SOW.get("pacing", {}).get("sec12" if sec <= 2 else f"sec{sec}", {})
+    a = -(-n // 3)
+    b = -(-(n - a) // 2)
+    k = P.get(str(n)) or [a, b, n - a - b, 0]
+    T, i = [[], [], [], []], 0
+    for t, x in enumerate(k[:3]):
+        T[t] = us[i:i + x]
+        i += x
+    if i < n:
+        T[2] = T[2] + us[i:]
+    return T
+
+
+def add_ext(key, Y):
+    L, c, sec = key.split("|")
+    sec = int(sec)
+    ext = {}
+    for t, us in enumerate(alloc(L, c, sec), 1):
+        for u in us:
+            if str(u["unit"]) == "all":
+                continue
+            id_ = uid(u)
+            rows = [x for a in (DATA["ms21"].get(id_) or {}).values() for x in a]
+            sk = {m.rsplit(".", 1)[0] for a in (DATA["design"]["iblx"].get(id_) or {}).get("ms", []) for m in a}
+            for g in GOALS:
+                if any(o.get("uid") == id_ for a in (Y["e21"].get(g) or {}).values() for o in a):
+                    continue
+                xs = [x for x in rows if x["g"] == g]
+                printed = next((x for x in xs if x["s"] == "cpdd"), None)
+                if printed and not (c == "G3" and sec == 1):
+                    e = {"k": "k1", "y": "Printed in the CPDD guide: " + printed["b"]}
+                elif not xs and g in sk:
+                    e = {"k": "k3", "y": "Added by a department inquiry sketch, a proposal."}
+                else:
+                    continue
+                e.update(u=label(u), r=u.get("theme_en") or u.get("theme_m") or "", uid=id_)
+                ext.setdefault(g, {}).setdefault(str(t), []).append(e)
+                tally[e["k"]] += 1
+    Y.pop("ext", None)
+    if ext:
+        Y["ext"] = ext
+
+
+for key, Y in D["years"].items():
+    add_ext(key, Y)
+
 (R / "maps_data.json").write_text(json.dumps(D, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 print(dict(tally))
 print("NOT IN UNIT LIST:", dict(missing))

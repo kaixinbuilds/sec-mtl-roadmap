@@ -12,7 +12,7 @@ html=f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="
 <title>How the curriculum develops E21CC and realises our DSOs</title><style>{css}</style></head><body><main>
 <p class="eye" id="eye"></p><h1 id="h1"></h1><div class="rule"></div><p class="sub" id="sub"></p>
 <p class="vm"><b>BVSS DSO (ACE):</b> <b>A</b>daptive Learners · <b>C</b>aring Leaders · <b>E</b>thical Changemakers</p>
-<div class="tabs" id="lens"></div><div class="tabs" id="lvl"></div><div class="tabs" id="crs"></div><div class="tabs" id="tabs"></div><div class="cards" id="cards"></div><p class="sub" id="full"></p><div class="wrap"><table id="hm"></table></div>
+<div class="tabs" id="lens"></div><div class="tabs" id="lvl"></div><div class="tabs" id="crs"></div><div class="tabs" id="tabs"></div><div class="tabs" id="prop"></div><div class="cards" id="cards"></div><p class="sub" id="full"></p><div class="wrap"><table id="hm"></table></div>
 <p class="foot" id="foot"></p><div style="height:12px"></div><p class="brand">BUKIT VIEW SECONDARY SCHOOL · <span>ADAPTIVE LEARNERS · CARING LEADERS · ETHICAL CHANGEMAKERS</span></p></main><div id="pop" role="dialog" aria-label="Why it maps" hidden></div><script>
 {js}</script></body></html>'''
 (R.parent/'maps.html').write_text(html,encoding='utf-8');print('maps.html',len(html))
