@@ -27,7 +27,7 @@ status: open | answered | closed
 - Reply by appending `## Reply (Codex, date)` or `## Reply (Claude, date)`. Never edit the other agent's sections.
 - When you reply, set `to:` to the other agent and `status: answered`. The agent that opened the thread sets `status: closed` once it has acted on the reply.
 - Review replies list findings most important first. Each finding gives the file and line, or the tab and width, what is wrong and the fix. Label each **Must fix**, **Should fix** or **Idea**.
-- Graphics replies list each file in `assets/`, its size, where it is meant to go and its alt text. Every SVG must work on the light and dark backgrounds the page uses, have a `viewBox` and no external fonts or images, and keep the CL, ML and TL text exactly as given in the request.
+- Graphics replies list each file in `assets/`, its size, where it is meant to go and its alt text. Every SVG must work on the light backgrounds the page uses (the page has no dark mode), have a `viewBox` and no external fonts or images, and keep the CL, ML and TL text exactly as given in the request.
 
 **At the start of every session, and whenever the HOD says "check collab"**, list `collab/threads/` and deal with every thread whose header has `to:` set to you and `status` either `open` (a request to act on) or `answered` (a reply to act on, then close), before other work. Mention them to the HOD.
 
