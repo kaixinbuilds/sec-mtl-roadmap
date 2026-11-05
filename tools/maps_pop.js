@@ -1,0 +1,13 @@
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const GLOSSARY={CAIT:'Critical, Adaptive and Inventive Thinking',CCI:'Communication, Collaboration and Information Skills',CGC:'Civic, Global and Cross-Cultural Literacy',PEEL:'Point, Elaborate, Example, Link','4P':'Experience, Feelings, Opinion, Lesson',SLS:'Student Learning Space',CCA:'Co-Curricular Activity',WA:'Weighted Assessment',AA:'Authentic Assessment',CPDD:'Curriculum Planning and Development Division',SOW:'Scheme of Work',IBL:'Inquiry-Based Learning',STAR:'Scenario Analysis, Team Inquiry, Application, Reflection',TP:'Timed Practice',NWA:'Non-Weighted Assessment',SEC:'Secondary Education Certificate',ALP:'Applied Learning Programme',LLP:'Learning for Life Programme'};
+function fullForms(title,ctx,items){const m=title.match(/^(CAIT|CCI|CGC) /),lead=m?m[1]:null,lines=lead?[GLOSSARY[lead]]:[];
+const text=[title,ctx,...items.flatMap(i=>[i.t,i.w,i.y])].filter(Boolean).join(' ');for(const k of Object.keys(GLOSSARY)){if(k!==lead&&new RegExp('(^|[^A-Za-z0-9])'+k+'(?![A-Za-z])').test(text))lines.push(`${k}: ${GLOSSARY[k]}`)}
+return lines.map(l=>`<div class="full">${esc(l)}</div>`).join('')}
+let openBtn=null;
+function closePop(back){const p=$('#pop');p.hidden=true;if(openBtn){openBtn.classList.remove('sel');openBtn.setAttribute('aria-expanded','false');if(back)openBtn.focus()}openBtn=null}
+function openPop(b,title,ctx,items){if(openBtn===b){closePop(true);return}closePop();openBtn=b;b.classList.add('sel');b.setAttribute('aria-expanded','true');const p=$('#pop');
+p.innerHTML=`<button class="x" aria-label="Close">×</button><h2>${esc(title)}</h2>${fullForms(title,ctx,items)}<div class="ctx">${esc(ctx)}</div>`+items.map(i=>`<div class="ev"><b>${esc(i.t)}</b>${i.w?` <em>${esc(i.w)}</em>`:''}<div>${esc(i.y)}</div></div>`).join('');p.hidden=false;p.querySelector('.x').onclick=()=>closePop(true);
+const r=b.getBoundingClientRect(),w=p.offsetWidth,h=p.offsetHeight,vw=document.documentElement.clientWidth,sx=scrollX,sy=scrollY;const right=r.right+14+w<=vw-6;p.className=right?'R':'L';
+let x=right?r.right+12:r.left-w-12;x=Math.max(6,x);let y=r.top+r.height/2-Math.min(h/2,34);y=Math.max(6,Math.min(y,Math.max(6,innerHeight-h-6)));
+p.style.left=(x+sx)+'px';p.style.top=(y+sy)+'px';p.style.setProperty('--ay',Math.max(8,Math.min(h-22,r.top+r.height/2-y-6))+'px')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closePop(true)});document.addEventListener('click',e=>{if(openBtn&&!e.target.closest('#pop')&&!e.target.closest('button.cell'))closePop()});addEventListener('resize',()=>closePop());

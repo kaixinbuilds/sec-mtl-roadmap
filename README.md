@@ -16,6 +16,7 @@ No build step for the pages themselves, but the embedded data is generated:
 - `tools/design.json`: pedagogical design facts, hero text, inquiry sketches, theme-thread and course-comparison summaries.
 - `tools/share.json`: the Learn across languages page, including the E21CC and IBL summary tabs.
 - `tools/e21dash.json`: the E21CC dashboard tab (Sec 1 G3, task by task, with the Authentic Assessment view), copied from the HOD's dashboard file.
+- `maps.html`, built by `python3 tools/build_maps.py`: the Curriculum maps tab (loaded in an iframe), every course and year through E21CC, IBL and Positive Education, in the HOD's SPMC dashboard format. `tools/maps.css` and `tools/maps_pop.js` come from her offline file; keep them unchanged so the look stays identical. Data: `tools/maps_data.json`.
 - `tools/glossary.json`: the Glossary tab and the site's acronym underlines. Run `python3 tools/checkgloss.py` after adding content to list acronyms it does not cover.
 - `tools/sow.json`: the SOW grid data: 2027 school calendar and MT events, assessment pattern and 2026 component formats, oral coaching framework, pacing rules, E21CC moves (with MOE definitions and milestones), VMV and desired-student-outcome mapping, CPDD listening and speaking tasks per unit, the full CL textbook writing prompts, and the SEAB 2027 syllabus links with assessment objectives.
 

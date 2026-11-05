@@ -368,3 +368,12 @@ The HOD found the first planning layer too much to digest. It was replaced:
 
 - The HOD asked to restore the school colours and keep the SVG hill visible. The three hero cards are blue, green and yellow again (commit 164f333 had forced them to ink). On wide screens the hero text and cards keep clear of the hill; at 1100px and below the hill sits under the cards at full strength. Faded hills on other pages are a little stronger.
 
+
+## 5 Nov 2026 · Curriculum maps, all courses and years
+
+- New `maps.html` (tab `#e21d`, renamed Curriculum maps, shows it in an iframe). It uses the HOD's offline SPMC file's CSS and callout code unchanged (`tools/maps.css`, `tools/maps_pop.js`), because she asked for an identical look. Deep links: `maps.html#lens/sec/course/lang`, such as `#ibl/3/G3/ML`.
+- Lenses: E21CC (8 milestones; Level 3 Sec 1-2, Level 4 Sec 3-4), IBL (four STP phases), Positive Education (six domains from bukitviewsec.moe.edu.sg/our-distinctives/pos-education/, plus Learning Mindsets in the callouts).
+- Sec 1 G3 E21CC and terms are her map, unchanged and resynced (CL Unit 4 in Term 2). Everything else: AI mapping from the CPDD guides and 2026 school assessments, a second pass calibrated to her map, every guide entry's evidence string grepped against its source. Evidence with file, page and snippet stays offline (`CPDD resources (2021 Syllabus)/_Mapping_evidence/`, MOE copyright), never in this repo.
+- Department readings to confirm: phase to DSO (from `sow.vmv.phase`), domain to DSO (no school source), Level 4 short milestone wording in `MS4`. Pacing is the 2027 default; ML Sec 1 G3 keeps her 3-2-3.
+- Exam entries name task types only, because the site is public and some papers are cluster papers. Sec 1 G3 still shows the detail from her file.
+- Gaps: ML Sec 4 Units 4-6 and TL G1 Sec 4 Unit 6 have no lesson guide on the drive. Some 2026 papers were encrypted or missing, including TL Cluster West and 4E5N prelims. Not cover-to-cover: agents searched, then read the hit passages.
