@@ -15,7 +15,7 @@ Two comparisons must always be easy: across languages for the same course, and w
 
 - **New tab:** Reference > Compare languages (`compare`, `vCompare()` in `index.html`). Content is in `tools/compare.json`, embedded by `enrich.py`. Sections: what is distinctive per language, How STAR works, what all three share, how it was checked.
 - **Evidence:** read from the offline CPDD Markdown. `c: "m"` shows "Partly checked" (term searches and sampled units). Nothing has been checked by the language teams yet. Page numbers are PDF pages. MTL B is left out.
-- **STAR:** the ML syllabus lists it under activating prior knowledge, as a teaching activity. Lesson plans name it in G2 1B U7, G3 1B U7, G3 2B U5 and G3 Sec 3 U1. The G3 1B U8 tag rests only on an appendix covering Units 5 to 8; the tag is unchanged, pending the HOD's decision.
+- **STAR:** the ML syllabus lists it under activating prior knowledge, as a teaching activity. Lesson plans name it in G2 1B U7, G3 1B U7, G3 2B U5 and G3 Sec 3 U1. The G3 1B U8 tag rested only on an appendix covering Units 5 to 8, so the HOD had it removed on 7 Nov 2026 (`enrich.py`). Its department sketch stays, relabelled as borrowing STAR's stages. Four units carry the STAR tag now.
 - **Corrections to `share.json`:** "Say it, write it, check it" is G1 only; the STAR entry now states four lesson plans.
 - **Calendar:** the Term 4 cell now says EOY exams 27 Sep to 11 Oct. The (Students) calendar shows the first MT Fortnight entry on 20 Jul, while the Time constraints panel says 19 to 27 Jul; left for the HOD. Lesson-day counts were not recounted.
 

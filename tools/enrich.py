@@ -123,13 +123,14 @@ RULES = [  # (id, test(rec)->bool, cats, priority areas, explanation)
 # Attached once per unit (to its first record), so counts mean "units the guide tags", plus the E21CC area where the guide names the competency.
 C21 = json.loads((ROOT / "tools" / "cpdd21.json").read_text(encoding="utf-8"))["units"]
 ukey = lambda r: f'{r["lang"]}|{r["course"]}|{r["sec"]}|{r.get("book","")}|{r["unit"]}'
-# STAR tags checked against the guides, 4 Nov 2026. CPDD names STAR only in G2 1B U7, G3 1B U7 and U8, G3 2B U5 and G3 Sec 3 U1.
-# The inherited tags on these six units have no support in the guide text or the image-only pages, so they are removed.
+# STAR tags checked against the guides, 4 Nov 2026. CPDD lesson plans name STAR only in G2 1B U7, G3 1B U7, G3 2B U5 and G3 Sec 3 U1.
+# The inherited tags on the first six units below have no support in the guide text or the image-only pages, so they are removed.
+# G3 Sec 1 U8 (HOD decision, 7 Nov 2026): only an appendix for Units 5 to 8 prints the steps and no Unit 8 lesson plan names STAR, so it is removed too.
 for r in D["recs"]:
-    if r["lang"] == "ML" and (r["course"], r["sec"], str(r["unit"])) in {("G1",3,"2"),("G1",3,"5"),("G2",3,"1"),("G2",3,"2"),("G2",3,"5"),("H",3,"1")} and "STAR" in r.get("cats", []):
+    if r["lang"] == "ML" and (r["course"], r["sec"], str(r["unit"])) in {("G1",3,"2"),("G1",3,"5"),("G2",3,"1"),("G2",3,"2"),("G2",3,"5"),("H",3,"1"),("G3",1,"8")} and "STAR" in r.get("cats", []):
         r["cats"] = [k for k in r["cats"] if k != "STAR"]
         r["ibl"] = r["ibl_en"] = ""
-_star = lambda x: x.replace("STAR Team Inquiry in about a dozen units", "STAR Team Inquiry in 5 units").replace("STAR in many units", "STAR in 5 units (G2 and G3)")
+_star = lambda x: x.replace("STAR Team Inquiry in about a dozen units", "STAR Team Inquiry in 4 units").replace("STAR in many units", "STAR in 4 units (G2 and G3)")
 for _k in ("iblTg", "iblTgEn"):
     D[_k]["ML"] = _star(D[_k]["ML"])
 for _k in ("diff", "diffEn"):
