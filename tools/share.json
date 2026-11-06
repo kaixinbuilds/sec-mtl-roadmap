@@ -15,8 +15,8 @@
        "TL"
       ],
       "line": "Scenario Analysis, Team Inquiry, Application, Reflection.",
-      "what": "Students unpack a real situation, investigate it in teams, apply what they found, then reflect. It gives teachers a short inquiry they can run inside a normal unit.",
-      "where": "Listed in the ML syllabus (Appendix E, under Singapore Teaching Practice). Used in the ML guides for G2 1B Unit 7, G3 1B Units 7 and 8, G3 2B Unit 5 and G3 Sec 3 Unit 1. G3 Sec 3 Unit 1 (pp. 24 to 26) is the fullest model, with all four stages written out.",
+      "what": "Students unpack a real situation, investigate it in teams, apply what they found, then reflect. It gives teachers a short inquiry they can run inside a normal unit. See How STAR works on the Compare languages page.",
+      "where": "Listed in the ML syllabus (Appendix E, under Singapore Teaching Practice). Used in the ML guides for G2 1B Unit 7, G3 1B Unit 7 (the guide's appendix for Units 5 to 8 also prints the steps), G3 2B Unit 5 and G3 Sec 3 Unit 1. G3 Sec 3 Unit 1 (pp. 24 to 26) is the fullest model, with all four stages written out.",
       "gap": "It appears in no CL or TL guide or syllabus. It has also not spread within ML: the text search found it in neither the G1 nor the HML guides.",
       "why": "The ML syllabus files it under Singapore Teaching Practice, which applies to all three languages, so it is not specific to Malay.",
       "try": "CL: G3 Sec 3 Unit 3, Into the community. TL: G3 2B Unit 3, Youth and society.",
@@ -27,7 +27,7 @@
        },
        "ML": {
         "s": "p",
-        "t": "Syllabus and 5 units, G2 and G3 only"
+        "t": "Syllabus and 4 lesson plans, G2 and G3 only"
        },
        "TL": {
         "s": "n",
@@ -291,15 +291,15 @@
        "TL"
       ],
       "line": "Oral rehearsal before writing, then a peer check against a checklist.",
-      "what": "Students talk through their ideas using word and sentence scaffolds, write, then read to a partner and check against a checklist. The same routine runs for four years, and only the scaffolds thin out.",
-      "where": "The CL teacher guides, through the writing blocks of each unit, supported by SLS writing packages.",
+      "what": "Students talk through their ideas using word and sentence scaffolds, write, then read to a partner and check against a checklist. In G1 the same routine runs for four years, and only the scaffolds thin out.",
+      "where": "The CL G1 teacher guides, through the writing blocks of each unit, supported by SLS writing packages. G2, G3 and Higher use planning, writing and revising with checklists.",
       "gap": "ML discusses a model text and then writes, with no fixed check step. TL has self or peer assessment in 43 of its 97 lesson files, without a set routine.",
       "why": "It supports weaker writers, and all three languages share the same SEC paper structure.",
       "try": "ML: the response-text tasks in Sec 3. TL: one production task in Sec 1.",
       "c": {
        "CL": {
         "s": "y",
-        "t": "Runs all four years"
+        "t": "G1, all four years"
        },
        "ML": {
         "s": "n",

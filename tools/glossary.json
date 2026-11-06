@@ -8,7 +8,10 @@
   "AM11",
   "APPLICATION",
   "ASEAN",
+  "ASSESSMENT",
+  "AUTHENTIC",
   "BAHASA",
+  "BERITAMediacorp",
   "COMPREHENSION",
   "CSV",
   "DATA",
@@ -29,11 +32,14 @@
   "K357",
   "KIV",
   "LANGUAGE",
+  "LANGUAGES",
   "LISTENING",
   "MAHIR",
   "MALAY",
+  "MOTHER",
   "MrLee",
   "NEEDS",
+  "NEWater",
   "NIL",
   "NParks",
   "OK",
@@ -45,23 +51,19 @@
   "PENULISAN",
   "PM",
   "PM27",
+  "PQ4R",
   "PUB",
   "SCT",
   "SKD",
-  "TAJUK",
-  "TBC",
-  "USA",
-  "WRITING",
-  "XX",
-  "NEWater",
   "ST1",
   "ST2",
   "ST3",
-  "MOTHER",
+  "TAJUK",
+  "TBC",
   "TONGUE",
-  "LANGUAGES",
-  "AUTHENTIC",
-  "ASSESSMENT"
+  "USA",
+  "WRITING",
+  "XX"
  ],
  "terms": [
   {
@@ -86,7 +88,7 @@
    "t": "STAR",
    "f": "Scenario Analysis, Team Inquiry, Application, Reflection",
    "g": "E21CC and inquiry",
-   "n": "A four-stage teaching activity listed in the ML syllabus under Singapore Teaching Practice."
+   "n": "A four-stage teaching activity listed in the ML syllabus under Singapore Teaching Practice. Explained on the Compare languages page."
   },
   {
    "t": "STAR meeting",
@@ -521,6 +523,12 @@
    "f": "Experience, Feelings, Opinion, Lesson",
    "g": "Teaching and learning",
    "n": "A way to organise a story or script, used in the Malay Sec 1 G3 authentic assessment."
+  },
+  {
+   "t": "ICT",
+   "f": "Information and communications technology",
+   "g": "Teaching",
+   "n": "The syllabuses' term for using technology in lessons and materials."
   }
  ]
 }

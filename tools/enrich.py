@@ -248,6 +248,9 @@ D["design"] = json.loads((ROOT / "tools" / "design.json").read_text(encoding="ut
 _sh = json.loads((ROOT / "tools" / "share.json").read_text(encoding="utf-8"))  # cross-language practices page
 D["design"]["share"] = _sh["share"]
 D["design"].setdefault("about", {})["share"] = _sh["about"]
+_cmp = json.loads((ROOT / "tools" / "compare.json").read_text(encoding="utf-8"))  # Compare languages page
+D["design"]["compare"] = {k: v for k, v in _cmp.items() if k not in ("_readme", "about")}
+D["design"]["about"]["compare"] = _cmp["about"]
 _dso = json.loads((ROOT / "tools" / "dso.json").read_text(encoding="utf-8"))  # E21CC to DSO page
 D["design"]["dso"] = {k: v for k, v in _dso.items() if k not in ("_readme", "about")}
 D["design"]["about"]["dso"] = _dso["about"]
@@ -261,6 +264,7 @@ D["design"]["e21dash"] = {k: v for k, v in _ed.items() if k != "_readme"}
 D["design"]["about"]["e21d"] = {"what":"How each course's year, Sec 1 to 4, in Chinese, Malay and Tamil, develops the Emerging 21st Century Competencies (E21CC), inquiry-based learning (IBL) and Positive Education, and realises the BVSS Desired Student Outcomes, task by task.","points":["Choose a lens, a level, a course and a language. Terms run across; milestones, inquiry phases or Positive Education domains run down, with the DSOs on the right.","Select a cell to see why the task maps.","The Authentic Assessment tab reads each language's authentic assessment against the same rows, Sec 1 to 3."],"use":""}
 D["ui"]["t_e21d"] = {"en":"Curriculum maps","zh":"Curriculum maps","ms":"Curriculum maps","ta":"Curriculum maps"}
 D["ui"]["t_gloss"] = {"en":"Glossary","zh":"词汇表","ms":"Glosari","ta":"சொற்களஞ்சியம்"}
+D["ui"]["t_compare"] = {"en":"Compare languages","zh":"三语比较","ms":"Perbandingan bahasa","ta":"மொழிகளின் ஒப்பீடு"}
 D["ui"]["t_share"] = {"en":"Learn across languages","zh":"三语互鉴","ms":"Belajar merentas bahasa","ta":"மொழிகளிடையே கற்றல்"}
 
 # ---------- 4. Redesigned SOW frame (tools/sow.json) ----------
