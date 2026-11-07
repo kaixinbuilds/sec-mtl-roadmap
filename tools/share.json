@@ -473,6 +473,12 @@
     ]
    ],
    "limit": "Not opened: the videos, audio and interactive packages, and rubric and discussion wording. A task inside a package would not show here. The guides are checked separately, in the repaired lesson files."
+  },
+  "research": {
+   "before": "For research and practice links on how each exam component is taught, see",
+   "label": "MTL Pedagogy Links",
+   "url": "https://kaixinbuilds.github.io/mtl-pedagogy-links/",
+   "after": "(links only; some sources need a login)."
   }
  },
  "about": {

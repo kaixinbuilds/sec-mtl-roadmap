@@ -11,6 +11,10 @@ A department wall chart of what the CPDD 2021-syllabus teacher guides teach in C
 
 Two comparisons must always be easy: across languages for the same course, and within a language across levels of demand.
 
+## Link to MTL Pedagogy Links (7 Nov 2026)
+
+- Learn across languages now links to the separate links-only site https://kaixinbuilds.github.io/mtl-pedagogy-links/ (repo `kaixinbuilds/mtl-pedagogy-links`). The text is `share.research` in `tools/share.json`; `vShare()` renders it under the lead. HOD chose a separate repo on 7 Nov 2026 so the research links stay apart from this curriculum page.
+
 ## Compare languages page; Term 4 date fixed (6 Nov 2026)
 
 - **New tab:** Reference > Compare languages (`compare`, `vCompare()` in `index.html`). Content is in `tools/compare.json`, embedded by `enrich.py`. Sections: what is distinctive per language, How STAR works, what all three share, how it was checked.
