@@ -1012,7 +1012,7 @@ function controls(){
  sseg("#skL",el?"Courses":"课程比较",st.klay!=="one"?"cmp":"one",[["cmp",el?"Compare the 4 courses":"四个课程对照"],["one",el?"One course":"单一课程"]],"data-klay");
  if(st.tab==="skills"&&Cc){const on=(st.kparts||[]).filter(k=>Cc.some(P=>P.parts.some(x=>x.k===k)));$("#skC").innerHTML=`<span class="lab">${el?"Show":"显示部分"}</span><button data-kpart="__all" aria-pressed="${!on.length}">${el?"All components":"全部"}</button>`+Cc.map(P=>`<span class="sub">${esc(el?P.en:P.zh)}</span>`+P.parts.map(x=>`<button data-kpart="${x.k}" aria-pressed="${on.includes(x.k)}" lang="zh">${hx(x.zh)}</button>`).join("")).join("")}else $("#skC").innerHTML="";
  const skt=st.tab!=="skills";$("#skV").hidden=$("#skP").hidden=$("#skS").hidden=$("#skL").hidden=skt;$("#skC").hidden=skt||!Cc;off("#skP",!sk||["write","map"].includes(st.kv));off("#skS",!sk||["write","map"].includes(st.kv));off("#skL",!sk||!fam);off("#skC",!sk||!cmp_);
- const MX=UX().mode||{};$("#modeSeg").innerHTML=`<span class="lab">${esc(MX.label||Tm("display"))}</span>`+[["mtl",MX.mtl||"MTL",MX.mtlTip],["el",MX.el||"EL",MX.elTip]].map(([m,l,t])=>`<button data-mode="${m}" aria-pressed="${st.mode===m}"${t?` title="${esc(t)}"`:""}>${esc(l)}</button>`).join("");
+ const MX=UX().mode||{};$("#modeSeg").innerHTML=`<span class="lab">${esc(MX.label||Tm("display"))}</span>`+["CL","ML","TL"].map(L=>`<button data-uil="${L}" aria-pressed="${st.mode==="mtl"&&st.lang===L}" title="${esc(DATA.langNameM[L]+" ("+DATA.langName[L]+")")}">${L}</button>`).join("")+`<button data-mode="el" aria-pressed="${st.mode==="el"}" title="${esc("English"+(MX.elTip?": "+MX.elTip:""))}">EL</button>`;/* four language toggles CL ML TL EL (16 Nov 2026): each MTL button sets the page language and the selected MTL together */
  $("#key").hidden=!["lang","syl"].includes(st.tab);
  $("#side").classList.toggle("empty",!document.querySelector("#side .seg:not([hidden]) button, #side .key:not([hidden]) .pill"));$("#key").innerHTML=["P1","P2","P3"].map(p=>`<span class="pill ${p}">${esc(pname(p))}</span>`).join("");
  document.querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>{st.lang=b.dataset.lang;render()});
@@ -1022,6 +1022,7 @@ function controls(){
  document.querySelectorAll("[data-sowc]").forEach(b=>b.onclick=()=>{tg("sowC",b.dataset.sowc,["G1","G2","G3","H"]);st.crs=st.sowC[0];render()});
  document.querySelectorAll("[data-sows]").forEach(b=>b.onclick=()=>{tg("sowS",+b.dataset.sows,[1,2,3,4]);st.ssec=st.sowS[0];render()});
  document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{st.mode=b.dataset.mode;render()});
+ document.querySelectorAll("[data-uil]").forEach(b=>b.onclick=()=>{st.mode="mtl";st.lang=b.dataset.uil;render()});
 }
 const recs=(L,c)=>DATA.recs.filter(r=>r.lang===L&&r.course===c);
 const has=(r,k)=>r.strand===k||r.also===k;
