@@ -291,9 +291,14 @@ D["ui"]["t_psle"] = {"en":"PSLE to SEC","zh":"小六会考到中学","ms":"PSLE 
 D["design"]["about"]["psle"] = D["sow"].get("psle", {}).get("about", {"what":"","points":[],"use":""})
 # Skills at a glance (tools/skills.json, built by tools/skills.py from the CL 教师手册)
 D["skills"] = json.loads((ROOT / "tools" / "skills.json").read_text(encoding="utf-8"))
+# ML and TL (16 Nov 2026): tools/skills_ml.py and tools/skills_ta.py read the Panduan Guru and the TL guides the same way
+for _k, _f in (("skills_ml", "skills_ml.json"), ("skills_ta", "skills_ta.json")):
+    if (ROOT / "tools" / _f).exists():
+        D[_k] = json.loads((ROOT / "tools" / _f).read_text(encoding="utf-8"))
 D["ui"]["t_skills"] = {"en":"Skills at a glance","zh":"技能一览","ms":"Sekilas kemahiran","ta":"திறன்கள் ஒரு பார்வையில்"}
-D["design"]["about"]["skills"] = {"what": "Which skills each unit teaches, sorted by the SEC exam components they serve (Paper 1 text types, Paper 2 comprehension and language use, Paper 3 oral) and laid out by year, term and unit. Built for Higher CL first.",
- "points": ["Source: the 24 CPDD 2021 教师手册 for G1, G2, G3 and Higher CL, Sec 1 to 4, read unit by unit.",
+D["design"]["about"]["skills"] = {"what": "Which skills each unit teaches, sorted by the SEC exam components they serve (Paper 1 writing, Paper 2 comprehension and language use, Paper 3 reading aloud, conversation and listening) and laid out by year, term and unit, for CL, ML and TL.",
+ "points": ["Source: the CPDD 2021 teacher guides for G1, G2, G3 and Higher, Sec 1 to 4, read unit by unit: the 24 CL 教师手册, the ML Panduan Guru and the TL guides. The ML and TL readings are new (16 Nov 2026) and wait for each language team's check.",
+  "Use Go to (top of the table) to jump to Paper 2 comprehension or Paper 3 oral and listening.",
   "Each cell shows where in the unit the skill comes up: 读 reading, 写 writing, 说 listening and speaking, 综 integrated task, 知 language knowledge.",
   "A filled chip is a unit focus (单元主题与语言技能学习点 or the 学习内容一览表); an outlined chip is a lesson objective (教学目标); a dashed chip is the lesson notes only (questions, model answers, teaching steps).",
   "Paper 1 is split into 私人电邮, 公务电邮, 论坛, 情境作文, 议论文, 演讲稿 and 材料作文, each with a row marking the units whose textbook writing task is that text type.",

@@ -155,7 +155,12 @@ FAM = [
   ("caifang", "采访", "Interview", r"采访"),
   ("zhuanshu", "转述", "Reporting what others said", r"转述"),
   ("hudong", "口语互动 · 讨论", "Spoken interaction", r"口语互动|书面互动|[#＃]$|讨论.{0,4}(话题|问题)"),
+  ("kanfa", "说出看法和理由", "Giving a view with reasons", r"(说出|谈谈|发表|表达|说说)[^。]{0,8}(看法|观点|意见|感受|理由)", "S"),
+  ("yudiao", "语音、语调和停顿", "Pronunciation, intonation, pausing", r"语调|停顿|轻重音|抑扬顿挫|吐字|发音|字正腔圆", "S"),
+  ("tl_info", "听出主要信息和细节", "Listening for gist and detail", r"听(懂|出|清楚?)[^。]{0,10}(内容|信息|要点|重点|细节|大意|意思)|听后(回答|说出|概括|复述)", "S"),
+  ("tl_view", "听出说话人的态度和观点", "Hearing the speaker's view and tone", r"听出[^。]{0,10}(态度|语气|情感|心情|观点|看法|立场|目的)", "S"),
  ]),
+# S = count only hits in the unit's listening and speaking section (听说), added 16 Nov 2026 so Paper 3 has its own skills
 ]
 
 # Exam components for Higher CL (SEC 2027 K355). Each part lists groups of skill keys; a part with "task"
@@ -202,8 +207,8 @@ COMP = {"H": [
   {"k": "sum", "zh": "片段缩写", "en": "Summary", "groups": [["概括", "Summarising", ["gaikuo", "zhongxin", "jiegou"]]]},
  ]},
  {"k": "P3", "zh": "试卷三 口试", "en": "Paper 3 Oral", "parts": [
-  {"k": "pres", "zh": "口头报告", "en": "Oral presentation", "groups": [["口头报告", "Presentation", ["koutou", "lichang", "julilz"]]]},
-  {"k": "disc", "zh": "讨论", "en": "Discussion", "groups": [["讨论", "Discussion", ["hudong", "wangyou", "zhuanshu", "bianlun"]]]},
+  {"k": "pres", "zh": "口头报告", "en": "Oral presentation", "groups": [["口头报告", "Presentation", ["koutou", "lichang", "julilz", "kanfa", "yudiao"]]]},
+  {"k": "disc", "zh": "讨论", "en": "Discussion", "groups": [["讨论", "Discussion", ["hudong", "wangyou", "zhuanshu", "bianlun", "kanfa"]]]},
  ]},
 ]}
 
@@ -216,10 +221,10 @@ EXPO = ["sx_time", "sx_space", "sx_logic", "buzhou", "tedian", "shili"]
 ARGM = ["lundian", "julilz", "daolilz", "duibilz", "biyulz"]
 READ = ["ciyi", "juzuo", "gaikuo", "tuiduan", "guandian", "jiegou", "pingjia"]
 FWREQ = ["实用文要求", "Task requirements", ["geshi", "yuqiW", "huiying", "jianyi"]]
-P3G = {"k": "P3", "zh": "试卷三 口试", "en": "Paper 3 Oral", "parts": [
-  {"k": "ld", "zh": "朗读短文", "en": "Reading aloud", "groups": [["朗读", "Reading aloud", ["langdu"]]]},
-  {"k": "hh", "zh": "看录像短片后会话", "en": "Conversation after a video clip", "groups": [["会话", "Conversation", ["koutou", "hudong", "lichang", "zhuanshu"]]]},
-  {"k": "tl", "zh": "听力理解", "en": "Listening comprehension", "groups": [["听力", "Listening", ["tingli", "gaikuo", "tuiduan"]]]}]}
+P3G = {"k": "P3", "zh": "试卷三 口试与听力理解", "en": "Paper 3 Oral and listening comprehension", "parts": [  # SEAB K320 wording
+  {"k": "ld", "zh": "朗读短文", "en": "Reading aloud", "groups": [["朗读", "Reading aloud", ["langdu", "yudiao"]]]},
+  {"k": "hh", "zh": "看录像短片后会话", "en": "Conversation after a video clip", "groups": [["会话", "Conversation", ["koutou", "hudong", "lichang", "zhuanshu", "kanfa"]]]},
+  {"k": "tl", "zh": "听力理解", "en": "Listening comprehension", "groups": [["听力", "Listening", ["tingli", "tl_info", "tl_view", "gaikuo", "tuiduan"]]]}]}
 
 
 def essay(c):
@@ -519,7 +524,7 @@ def main():
                     for tier, lines in (("f", foc), ("o", obl), ("p", [] if "noP" in fl else nts)):
                         rx = rxf if tier == "f" else rx0
                         for sec, x, p in lines:
-                            if not x or VOCAB.match(x) or ("W" in fl.split() and sec != "写") or (tier != "f" and PROC.search(x)):
+                            if not x or VOCAB.match(x) or ("W" in fl.split() and sec != "写") or ("S" in fl.split() and sec != "说") or (tier != "f" and PROC.search(x)):
                                 continue
                             m = rx.search(x)
                             if not m:
