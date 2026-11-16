@@ -270,6 +270,19 @@ D["ui"]["t_share"] = {"en":"Learn across languages","zh":"三语互鉴","ms":"Be
 
 # ---------- 4. Redesigned SOW frame (tools/sow.json) ----------
 D["sow"] = json.loads((ROOT / "tools" / "sow.json").read_text(encoding="utf-8"))
+# Each unit's E21CC milestones, from the same map the By DSO view draws (16 Nov 2026), so By term and By DSO agree
+_md = json.loads((ROOT / "tools" / "maps_data.json").read_text(encoding="utf-8"))
+_um = {}
+for _y in _md["years"].values():
+    for _g, _ts in _y.get("e21", {}).items():
+        for _items in _ts.values():
+            for _it in _items:
+                if _it.get("uid"):
+                    _l = _um.setdefault(_it["uid"], [])
+                    if _g not in _l:
+                        _l.append(_g)
+_ord = lambda g: (["CAIT", "CCI", "CGC"].index(g.split()[0]), g)
+D["sow"]["unitMs"] = {k: sorted(v, key=_ord) for k, v in _um.items()}
 D["design"].setdefault("about", {})["sow"] = D["sow"]["about"]
 D["ui"].pop("t_stock", None)
 D["ui"]["t_write"] = {"en":"Writing task bank","zh":"完整写作题库","ms":"Bank tugasan penulisan","ta":"எழுத்துப் பணித் தொகுப்பு"}
