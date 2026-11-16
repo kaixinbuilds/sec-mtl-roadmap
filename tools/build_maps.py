@@ -12,6 +12,7 @@ if (R/'maps_mt.json').exists():
     D['mt']=M['mt'];D['mtNote']=M['note']
     for k,v in M['terms_m'].items():
         if k in D['years']:D['years'][k]['terms_m']=v
+D['uimt']={l:(json.loads((R/'uimt_maps'/f'{l}.json').read_text(encoding='utf-8')) if (R/'uimt_maps'/f'{l}.json').exists() else {}) for l in ['zh','ms','ta']}
 data=json.dumps(D,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
 js=tpl.replace('__POP__',pop).replace('__DATA__',data)
 html=f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">

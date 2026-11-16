@@ -13,6 +13,14 @@ const LANGS={CL:'Chinese (CL)',ML:'Malay (ML)',TL:'Tamil (TL)'},CN={G1:'G1',G2:'
 const st={lens:'e21',sec:'1',c:'G3',cur:'CL',p:false,m:new URLSearchParams(location.search).get('m')=='mtl'?'mtl':'el'};
 /* Original mode (16 Nov 2026): task names, unit titles and syllabus terms in CL, ML or TL, from tools/maps_mt.json; reasons stay in English, as on the rest of the site. */
 const LC={CL:'zh',ML:'ms',TL:'ta'},isM=()=>st.m=='mtl'&&!!LC[st.cur],MTD=()=>(DATA.mt||{})[st.cur]||{},MT=e=>isM()&&(MTD().items||{})[e]||e,TM=e=>isM()&&((MTD().terms||{})[e])||null,LA=()=>isM()?` lang="${LC[st.cur]}"`:'';const SRC={k1:'CPDD guide',k3:'proposal'};
+/* Whole-page Original mode (16 Nov 2026): leftover English swapped from DATA.uimt[lang], same rule as index.html trMT. */
+const TR_INL=new Set(['B','STRONG','I','EM','SMALL','SPAN','ABBR','CODE','SUP','SUB','BR','A','U','MARK','Q','S']),trN=s=>s.replace(/\s+/g,' ').trim();
+const TX=s=>{if(!isM()||!s)return s;const D=(DATA.uimt||{})[LC[st.cur]]||{};return D[trN(s)]||s};
+function trMT(root){if(!isM()||!root)return;const D=(DATA.uimt||{})[LC[st.cur]];if(!D)return;const ok=new WeakMap(),allInl=e=>{if(ok.has(e))return ok.get(e);const v=[...e.querySelectorAll('*')].every(x=>TR_INL.has(x.tagName));ok.set(e,v);return v};
+ root.querySelectorAll('[title],[aria-label]').forEach(e=>['title','aria-label'].forEach(a=>{const v=e.getAttribute(a);if(v&&D[trN(v)])e.setAttribute(a,D[trN(v)])}));
+ const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),ns=[];let n;while(n=w.nextNode())if(/[A-Za-z]{2,}/.test(n.nodeValue))ns.push(n);const done=new Set();
+ for(const t of ns){if(!t.isConnected)continue;let p=t.parentElement;if(!p||p.closest('script,style'))continue;while(TR_INL.has(p.tagName)&&p.parentElement)p=p.parentElement;if(done.has(p))continue;
+  if(allInl(p)){const m=D[trN(p.innerHTML)];if(m!=null){p.innerHTML=m;done.add(p);continue}}const k=trN(t.nodeValue),m=D[k];if(m!=null)t.nodeValue=t.nodeValue.replace(k,m)}}
 const items=(S,g,t)=>{const a=((S[st.lens]||{})[g]||{})[t]||[],x=st.lens=='e21'?(((S.ext||{})[g]||{})[t]||[]).filter(o=>o.k=='k1'||st.p):[];return a.concat(x)};
 (()=>{const p=location.hash.slice(1).split('/');if(LENS[p[0]])st.lens=p[0];if('1234'.includes(p[1])&&p[1])st.sec=p[1];if(CN[p[2]])st.c=p[2];if(LANGS[p[3]]||p[3]=='AA')st.cur=p[3]})();
 __POP__
@@ -23,8 +31,8 @@ const tw=e=>{const m=TM(e);return m?`<span${LA()}>${esc(m)}</span>`:e};
 const rowHead=g=>{if(st.lens=='e21')return `<b>${g}.${lvl()}</b> <span class="f">${tw(MS()[g][0])}</span><br>${MS()[g][1]}`;if(st.lens=='ibl')return `<b>${tw(g)}</b> <span class="f">${TM(g)?g+', ':''}${PH[g][0]}</span><br>${PH[g][1]}`;return `<b>${tw(PD[g][0])}</b><br>${PD[g][1]}`};
 const defn=g=>st.lens=='e21'?MS()[g][1]:st.lens=='ibl'?PH[g][1]:PD[g][1];
 const ttl=g=>st.lens=='e21'?`${g}.${lvl()}`:st.lens=='ibl'?g:PD[g][0];
-const colHead=()=>st.lens=='e21'?`E21CC milestone →<small>Level ${lvl()}, ${lvl()==3?'Lower Secondary':'Upper Secondary'}</small>`:st.lens=='ibl'?`IBL phase →<small>MOE Singapore Teaching Practice</small>`:`Positive Education domain →<small>BVSS school website</small>`;
-const dec=i=>Object.assign({},i,{t:i.u?`${i.u}: ${MT(i.r)}`:MT(i.t),en:isM()&&MT(i.u?i.r:i.t)!==(i.u?i.r:i.t)?(i.u?i.r:i.t):'',lc:isM()?LC[st.cur]:'',w:i.w||(i.k?SRC[i.k]:''),y:[i.y,i.g?'The guide itself names inquiry here.':'',i.lm?(i.lm.map(n=>`Learning mindset: “${LM[n]}”.`).join(' ')):''].filter(Boolean).join(' ')});
+const colHead=()=>st.lens=='e21'?`E21CC milestone →<small>Level ${lvl()}, ${lvl()==3?'Lower Secondary':'Upper Secondary'}</small>`:st.lens=='ibl'?`IBL phase →<small><a href="https://www.opal2.moe.edu.sg/csl/s/singapore-teaching-practice/wiki/page/view?title=The+Singapore+Teaching+Practice" target="_blank" rel="noopener" style="color:inherit">MOE Singapore Teaching Practice ↗</a></small>`:`Positive Education domain →<small>BVSS school website</small>`;
+const dec=i=>Object.assign({},i,{t:i.u?`${i.u}: ${MT(i.r)}`:MT(i.t),en:isM()&&MT(i.u?i.r:i.t)!==(i.u?i.r:i.t)?(i.u?i.r:i.t):'',lc:isM()?LC[st.cur]:'',w:i.w||(i.k?SRC[i.k]:''),y:[TX(i.y),i.g?TX('The guide itself names inquiry here.'):'',i.lm?(i.lm.map(n=>TX(`Learning mindset: “${LM[n]}”.`)).join(' ')):''].filter(Boolean).join(' ')});
 const thrust=(s,tail,n)=>`<td class="thrust ${s.k}" rowspan="${n}"><div class="n">${s.n}</div><div class="q">${s.q}</div><div class="v">Value: ${s.v}</div><div class="v">BVSS focus: ${s.f}</div><div class="c">${tail}</div></td>`;
 function renderYear(){const S=DATA.years[key()]||{terms:{}},M=S[st.lens]||{},L=LENS[st.lens];
 let h='<thead><tr>'+[1,2,3,4].map(t=>`<th>Term ${t}<small${isM()&&S.terms_m?LA():''}>${esc((isM()&&S.terms_m?S.terms_m[t]:S.terms[t])||'')}</small></th>`).join('')+`<th class="m">${colHead()}</th><th class="o">BVSS DSO<small>Desired Student Outcome</small></th></tr></thead><tbody>`;
@@ -44,5 +52,5 @@ $('#eye').textContent=isAA?lv+' · AUTHENTIC ASSESSMENT':lv;$('#h1').textContent
 isAA?renderAA():renderYear();
 const n=(DATA.years[key()]||{}).full;$('#full').textContent=!isAA&&st.lens=='ibl'&&n&&n.length?`All four phases in one unit: ${n.join(' · ')}.`:'';$('#full').style.display=$('#full').textContent?'':'none';
 $('#foot').textContent=DATA.foot[isAA?'aa':st.c=='G3'&&st.sec=='1'&&st.lens=='e21'?'g31':st.lens]+(!isAA&&st.lens=='e21'&&!(st.c=='G3'&&st.sec=='1')?' A line marked CPDD guide is a unit the guide itself links to this milestone, with no task picked out yet.':'')+(!isAA&&isM()?' '+(DATA.mtNote||''):'')+(!isAA&&(DATA.years[key()]||{}).note?' '+DATA.years[key()].note:'');
-history.replaceState(null,'',`#${st.lens}/${st.sec}/${st.c}/${st.cur}`);fit()}
+trMT(document.querySelector('main'));history.replaceState(null,'',`#${st.lens}/${st.sec}/${st.c}/${st.cur}`);fit()}
 $('.wrap').addEventListener('scroll',()=>closePop());addEventListener('load',fit);addEventListener('resize',fit);render();

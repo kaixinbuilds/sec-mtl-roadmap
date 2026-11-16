@@ -150,7 +150,7 @@
   "pdf": "https://file.go.gov.sg/stp-learning-orientations.pdf",
   "source": "MOE, Singapore Teaching Practice: An Overview of Learning Orientations",
   "ibl": {
-   "kb": "https://go.gov.sg/stp-kb3-chapter14",
+   "kb": "https://www.opal2.moe.edu.sg/csl/content/perma?id=960001",
    "feature": "Learning is guided by a driving question. Students sort through complex issues and problems from several perspectives and draw their own conclusions.",
    "behaviours": [
     "ask authentic questions",
@@ -179,17 +179,17 @@
    [
     "Dialogic Talk",
     "Language structures thinking: students think aloud, ask clarifying questions and build on others' ideas. Already common in MTL lessons (CL's three looks, three talks; ML Think-Pair-Share; TL think and discuss).",
-    "https://go.gov.sg/stp-kb3-chapter20"
+    "https://www.opal2.moe.edu.sg/csl/content/perma?id=1210714"
    ],
    [
     "Embodied Learning",
     "The body's part in making meaning, for example drama-based pedagogy.",
-    "https://go.gov.sg/stp-kb3-chapter18"
+    "https://www.opal2.moe.edu.sg/csl/content/perma?id=1110353"
    ],
    [
     "Experiential Learning",
     "Learning through authentic experience and reflection, for example field-based, place-based or service learning.",
-    "https://go.gov.sg/stp-kb3-chapter17"
+    "https://www.opal2.moe.edu.sg/csl/content/perma?id=1110295"
    ],
    [
     "Disciplinary and Interdisciplinary Learning",
@@ -282,7 +282,7 @@
  },
  "iblsg": {
   "src": "STP Knowledge Base, Chapter 14: Inquiry-based Learning (IBL): Understanding and Enacting the Journey in Learning (Chue Kah Loong and Yvonne Seng)",
-  "kb": "https://go.gov.sg/stp-kb3-chapter14",
+  "kb": "https://www.opal2.moe.edu.sg/csl/content/perma?id=960001",
   "essence": "In MOE's Singapore Teaching Practice, IBL is a constructivist approach: students explore a problem, issue, phenomenon or idea by working to resolve an inquiry question. The teacher shifts from telling to facilitating, so that students build 21CC (above all critical, adaptive and inventive thinking, and communication, collaboration and information skills) while still reaching the intended learning outcomes.",
   "elements": [
    [
