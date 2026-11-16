@@ -295,6 +295,12 @@ D["skills"] = json.loads((ROOT / "tools" / "skills.json").read_text(encoding="ut
 for _k, _f in (("skills_ml", "skills_ml.json"), ("skills_ta", "skills_ta.json")):
     if (ROOT / "tools" / _f).exists():
         D[_k] = json.loads((ROOT / "tools" / _f).read_text(encoding="utf-8"))
+        # lesson-note lines that are SLS how-to steps for the teacher, not skills students practise
+        _sls = re.compile(r"\bSLS\b|fitur|Monitor and Provide|Interaction|\bklik\b|log masuk|pautan")
+        for _u in D[_k]["units"].values():
+            for _s in list(_u):
+                _u[_s] = [h for h in _u[_s] if not (h[0] == "p" and _sls.search(h[2]))]
+                if not _u[_s]: del _u[_s]
 D["ui"]["t_skills"] = {"en":"Skills at a glance","zh":"技能一览","ms":"Sekilas kemahiran","ta":"திறன்கள் ஒரு பார்வையில்"}
 D["design"]["about"]["skills"] = {"what": "Which skills each unit teaches, sorted by the SEC exam components they serve (Paper 1 writing, Paper 2 comprehension and language use, Paper 3 reading aloud, conversation and listening) and laid out by year, term and unit, for CL, ML and TL.",
  "points": ["Source: the CPDD 2021 teacher guides for G1, G2, G3 and Higher, Sec 1 to 4, read unit by unit: the 24 CL 教师手册, the ML Panduan Guru and the TL guides. The ML and TL readings are new (16 Nov 2026) and wait for each language team's check.",
