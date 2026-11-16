@@ -433,6 +433,243 @@
       }
      }
     ]
+   },
+   {
+    "k": "Oral exam preparation",
+    "items": [
+     {
+      "id": "gsce",
+      "name": "GSCE sprint card for the Higher planned presentation",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "Generate, Sort, Connect, Elaborate: from video key words to three PEEL sub-points in 10 minutes.",
+      "what": "HCL Sec 3 and 4 students plan the 2-minute presentation with Harvard Project Zero's Generate-Sort-Connect-Elaborate routine (列举、分类、链接、阐述) on one A4 sheet: topic and stand in the centre, key words from the narration, interviews and visuals in the inner ring while watching, sub-points 1 to 3 in the outer ring, then each sub-point spoken as Point, Evidence, Explain, Link. Worked mind maps on past topics and an opening template come with it.",
+      "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (HCL S3 and S4 GSCE口试冲刺卡, teacher and student versions).",
+      "gap": "Higher ML (K356) and Higher TL (K357) have the same 2027 format, a planned presentation of up to 2 minutes from a video, then discussion. No named planning routine was found in ML or TL files, and the 2026 Sec 3 Higher Tamil mock oral still used the older reading-aloud format.",
+      "why": "Ten minutes is short. A fixed routine turns watching into notes and notes into three supported points every time.",
+      "try": "ML and TL Higher oral booklets 2027: redo the sprint card in Malay and Tamil, keeping the routine's name and credit.",
+      "c": {
+       "CL": {
+        "s": "y",
+        "t": "HCL Sec 3 and 4 sprint cards"
+       },
+       "ML": {
+        "s": "n",
+        "t": "No planning routine found for HML"
+       },
+       "TL": {
+        "s": "n",
+        "t": "No planning routine found for HTL"
+       }
+      }
+     },
+     {
+      "id": "peercard",
+      "name": "Peer-assessment cards for the oral discussion",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "Pairs play examiner and candidate, then tick each step of the answer.",
+      "what": "HCL students practise the discussion in pairs with examiner questions on a past topic. Lower-order questions: define the term, link to the video, give a life example, link back. Higher-order questions: two reasons, each with an example, which the card says is needed for the top band. Each step is marked done, incomplete or missing.",
+      "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (HCL S4 高华口试讨论 - 互评练习卡).",
+      "gap": "No peer-practice card was found for ML or TL orals, or for the CL G1 to G3 conversation.",
+      "why": "Students get many more speaking turns than with the teacher alone, and learn the marking by applying it.",
+      "try": "All oral booklets 2027: one card per question type in the Part C toolkit.",
+      "c": {
+       "CL": {
+        "s": "p",
+        "t": "Higher only"
+       },
+       "ML": {
+        "s": "n",
+        "t": "No peer practice card"
+       },
+       "TL": {
+        "s": "n",
+        "t": "No peer practice card"
+       }
+      }
+     },
+     {
+      "id": "oral4p",
+      "name": "4P planning sheet for the oral conversation",
+      "from": "ML",
+      "to": [
+       "CL",
+       "TL"
+      ],
+      "line": "Experience, feelings, opinion, lesson on one sheet, with word banks for feelings and values.",
+      "what": "ML Sec 4 students fill one sheet in the 10-minute preparation: Pengalaman (experience) with ASiBiDiBaM; Perasaan (feelings) and the setting, with feelings before and after for top marks; Pendapat (opinion) from four levels, self, school, community and nation, each with benefits and harms, developed with IJCK (Isi, Jelaskan, Contoh, Kaitkan: point, explain, example, link); Pengajaran (lesson: the values shown). Positive and negative feeling words, a values list and sentence starters sit on the same sheet.",
+      "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (ML M4n5 2026 4ML1ML2 Lisan Perbualan Templat).",
+      "gap": "CL and TL frames stop at feelings and opinion. Neither has the lesson (values) step or a values word bank on one planning sheet.",
+      "why": "One sheet matches the order the examiner asks in and makes the preparation time productive.",
+      "try": "CL and TL oral booklets 2027: a planning sheet in the language with the four steps.",
+      "c": {
+       "CL": {
+        "s": "p",
+        "t": "Frames per question, no single sheet"
+       },
+       "ML": {
+        "s": "y",
+        "t": "Sec 4 template"
+       },
+       "TL": {
+        "s": "p",
+        "t": "Frames per question, no single sheet"
+       }
+      }
+     },
+     {
+      "id": "exladder",
+      "name": "Example ladder: one to three stars",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "The same video example told in one line, in a few sentences, then in vivid detail.",
+      "what": "CL teaches Q1 examples with a three-star ladder using situation, action and outcome: one sentence, then the sequence of events, then a second action and outcome with detail. Students first spot whether the video shows one example, two big ones or many small ones to sum up, and learn to describe a word they do not know.",
+      "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (CL G2 S1 口语训练 举例与感受; BVSS 中一口语教学 and 举例与感受 slides).",
+      "gap": "ML uses ASiBiDiBaM for what to include but has no graded model of how much to say. No TL equivalent was found.",
+      "why": "Students hear exactly what a fuller answer sounds like, which a rubric line alone does not show.",
+      "try": "ML and TL oral booklets 2027: one ladder per Q1 chapter with a BVSS video.",
+      "c": {
+       "CL": {
+        "s": "y",
+        "t": "Sec 1 and 2 materials"
+       },
+       "ML": {
+        "s": "p",
+        "t": "What to include, no graded model"
+       },
+       "TL": {
+        "s": "n",
+        "t": "No example ladder"
+       }
+      }
+     },
+     {
+      "id": "stw",
+      "name": "See-Think-Wonder with 5W1H while watching the video",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "Who, when, where, what while watching; then how and why to prepare the answers.",
+      "what": "CL G3 Sec 1 and 2 oral booklets use See-Think-Wonder (a Harvard Project Zero routine) with 5W1H during the preparation time: who, when, where, what and the narration's key words, then how (feelings, effects, what to avoid or encourage) and why.",
+      "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (CL G3 中一G3口试训练_2025, 中二G3口试训练_2026).",
+      "gap": "ML uses ASiBiDiBaM for answering Q1 but not as a viewing routine. No TL viewing routine was found.",
+      "why": "Students watch with a purpose, so the video gives them examples for all three questions.",
+      "try": "ML and TL oral booklets 2027: the video chapter (Part B) uses the same routine in the language.",
+      "c": {
+       "CL": {
+        "s": "y",
+        "t": "G3 Sec 1 and 2 booklets"
+       },
+       "ML": {
+        "s": "p",
+        "t": "ASiBiDiBaM for answering"
+       },
+       "TL": {
+        "s": "n",
+        "t": "No viewing routine"
+       }
+      }
+     },
+     {
+      "id": "psb",
+      "name": "Problem-Solution-Benefit and a connectives bank",
+      "from": "TL",
+      "to": [
+       "CL",
+       "ML"
+      ],
+      "line": "A three-part suggestion answer, an opinion frame and connectives sorted by what they do.",
+      "what": "TL oral practice gives a suggestion frame, பிரச்சினை, தீர்வு, பலன் (problem, solution, benefit), and an opinion frame, நிலைப்பாடு, காரணம், அனுபவம் அல்லது சான்று, மீண்டும் நிலைப்பாடு (opinion, reason, experience or evidence, opinion restated). A connectives bank (இணைப்புச் சொற்கள்) groups words for sequence, example, cause and effect, contrast, addition and conclusion.",
+      "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (TL Oracy Skills வாய்மொழித்தேர்வுப் பயிற்சி).",
+      "gap": "CL's suggestion frame (who and what, how, why) has no benefit step. ML has sentence starters but no connectives sorted by function.",
+      "why": "Ending a suggestion with its benefit answers the 'why' the examiner usually asks next.",
+      "try": "CL and ML oral booklets 2027, Q2 chapter and Part C toolkit.",
+      "c": {
+       "CL": {
+        "s": "p",
+        "t": "Who and what, how, why"
+       },
+       "ML": {
+        "s": "p",
+        "t": "Sentence starters only"
+       },
+       "TL": {
+        "s": "y",
+        "t": "Oral practice deck"
+       }
+      }
+     },
+     {
+      "id": "idealadder",
+      "name": "Idea ladders: one move, three names",
+      "from": "TL",
+      "to": [
+       "CL",
+       "ML"
+      ],
+      "line": "Ideas from me, family, school, community, nation and world, so suggestions never run dry.",
+      "what": "All three languages teach students to find ideas at several levels. TL: நான், குடும்பம், பள்ளி, சமூகம், நாடு, உலகம் (me, family, school, community, nation, world), with a grid per topic. ML: Diri, Sekolah, Masyarakat, Negara (self, school, community, nation), each with benefits and harms. CL: PIGSS, Parent (家长), Individual (个人), Government (政府), School (学校), Social media (社交媒体), for suggestions.",
+      "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (TL oral practice deck; ML 4ML1ML2 template; CL 2026 口语训练 提出建议).",
+      "gap": "The same move has three shapes and three names, so students taking two languages learn it twice.",
+      "why": "One shared ladder, said in each language, is learnt once and used in both.",
+      "try": "Agree one ladder shape for all three oral booklets 2027.",
+      "c": {
+       "CL": {
+        "s": "y",
+        "t": "PIGSS for suggestions"
+       },
+       "ML": {
+        "s": "y",
+        "t": "Four levels, two sides"
+       },
+       "TL": {
+        "s": "y",
+        "t": "Six levels, grid per topic"
+       }
+      }
+     },
+     {
+      "id": "todayspeaker",
+      "name": "Today's Speaker: a daily speaking turn",
+      "from": "TL",
+      "to": [
+       "CL",
+       "ML"
+      ],
+      "line": "Lower secondary: one student speaks on a set topic each lesson, with a word bank.",
+      "what": "TL lower secondary uses இன்றைய பேச்சாளர் (Today's Speaker): a list of topics such as healthy living and Tamil heritage, each with a word bank, for a short speaking turn at the start of lessons.",
+      "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (TL Oracy Skills, Lower Sec இன்றைய பேச்சாளர் தலைப்புகள்).",
+      "gap": "No regular speaking routine was found in CL or ML lower secondary files; oral practice clusters before the exams.",
+      "why": "Small, frequent turns build fluency, which is marked in every oral rubric.",
+      "try": "CL and ML Sec 1 and 2 in 2027: a weekly speaker slot using the oral booklet topics.",
+      "c": {
+       "CL": {
+        "s": "n",
+        "t": "No regular speaking slot"
+       },
+       "ML": {
+        "s": "n",
+        "t": "No regular speaking slot"
+       },
+       "TL": {
+        "s": "y",
+        "t": "Lower secondary topics"
+       }
+      }
+     }
+    ]
    }
   ],
   "method": [
