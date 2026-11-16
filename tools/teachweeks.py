@@ -59,23 +59,24 @@ def main():
     item = {
         "key": "teachweeks",
         "rule": f"Plan on about 24 teaching weeks in Terms 1 to 3, not 27. Sec 4 has {round(wk('4', (1, 2)) / 5)} weeks in Terms 1 and 2 to finish the syllabus.",
-        "why": (
-            "Counted from the 2027 calendars with public and school holidays, ACE Week (25 to 29 Jan), HBL days and whole-day no-lesson days taken out. "
-            f"Lesson days in Terms 1, 2 and 3: Sec 1 {res[1]['by']['1']}, {res[2]['by']['1']}, {res[3]['by']['1']}; "
-            f"Sec 2 {res[1]['by']['2']}, {res[2]['by']['2']}, {res[3]['by']['2']}; "
-            f"Sec 3 {res[1]['by']['3']}, {res[2]['by']['3']}, {res[3]['by']['3']} "
-            f"(G1 and G2 {res[3]['by']['3G12']} in Term 3 if the ApLM is confirmed); "
-            f"Sec 4 {res[1]['by']['4']}, {res[2]['by']['4']}. "
-            f"The {sum(r['hbl'] for r in res.values())} HBL days are counted apart, and five of them are also MT oral or prelim days for one level. "
-            "Part days are still counted: Cross Country (21 Apr), Last Day of School Activities (27 May), National Day Celebrations (6 Aug) and the Teachers' Day Concert (2 Sep)."
-        ),
+        "why": [  # bullets, not one paragraph (HOD, 16 Nov 2026)
+            "Taken out: public and school holidays, ACE Week (25 to 29 Jan), HBL days and whole-day no-lesson days.",
+            {"t": "Lesson days in Terms 1, 2 and 3:", "sub": [
+                f"Sec 1: {res[1]['by']['1']}, {res[2]['by']['1']}, {res[3]['by']['1']}",
+                f"Sec 2: {res[1]['by']['2']}, {res[2]['by']['2']}, {res[3]['by']['2']}",
+                f"Sec 3: {res[1]['by']['3']}, {res[2]['by']['3']}, {res[3]['by']['3']} (G1 and G2: {res[3]['by']['3G12']} in Term 3 if the ApLM is confirmed)",
+                f"Sec 4: {res[1]['by']['4']}, {res[2]['by']['4']} (Terms 1 and 2)"]},
+            f"The {sum(r['hbl'] for r in res.values())} HBL days are counted apart. Five of them are also an MT oral or prelim day for one level.",
+            {"t": "Part days still count:", "sub": ["Cross Country (21 Apr)", "Last Day of School Activities (27 May)", "National Day Celebrations (6 Aug)", "Teachers' Day Concert (2 Sep)"]},
+        ],
     }
     items = c["groups"][0]["items"]
     items[:] = [i for i in items if i.get("key") != "teachweeks"]
     items.insert(0, item)
     for g in c["groups"]:
         for i in g["items"]:
-            i["why"] = i["why"].replace("also runs from 21 Jul", "also runs from 7 Jul")
+            if isinstance(i["why"], str):
+                i["why"] = i["why"].replace("also runs from 21 Jul", "also runs from 7 Jul")
     SOW.write_text(json.dumps(data, ensure_ascii=False, indent=_indent(SOW)) + "\n", encoding="utf-8")
 
 
