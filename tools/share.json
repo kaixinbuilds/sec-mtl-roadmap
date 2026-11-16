@@ -370,6 +370,69 @@
       }
      }
     ]
+   },
+   {
+    "k": "Writing and exam preparation",
+    "items": [
+     {
+      "id": "mlframe",
+      "name": "ASiBiDiBaM answer frame for online posts",
+      "from": "ML",
+      "to": [
+       "CL",
+       "TL"
+      ],
+      "line": "One frame for every G1 online post: greeting, the six question words with feelings, then a closing.",
+      "what": "ML G1 teaches one answer frame from Sec 1 to Sec 4: greet the writer, answer with ASiBiDiBaM (Apa, Siapa, Bila, Di mana, Bagaimana, Mengapa: what, who, when, where, how, why) plus Perasaan (feelings), then close. By Sec 4 it adds 4P: Pengalaman, Perasaan, Pendapat, Pengajaran (experience, feelings, opinion, lesson).",
+      "where": "Not in the CPDD guides. It is in the 2026 BVSS ML G1 papers and marking schemes (Sec 1 to 3 WA and EOY, Sec 4 NT), where 5 of the 10 marks are for organisation.",
+      "gap": "CL G1 marking rewards answering each question in the post with reasons, but names no frame. The TL Sec 1 answer key lists when, where, activity and feelings, close to the same idea.",
+      "why": "Weaker writers in G1 lose marks for missing points. A fixed frame they can recite gives every post the same shape.",
+      "try": "CL and TL G1 2027 exam preparation booklets: write the frame in the language on the Part A skill card, then use it in every post chapter.",
+      "c": {
+       "CL": {
+        "s": "n",
+        "t": "No named frame in G1 posts"
+       },
+       "ML": {
+        "s": "y",
+        "t": "Sec 1 to 4 marking schemes"
+       },
+       "TL": {
+        "s": "p",
+        "t": "Sec 1 answer key: when, where, activity, feelings"
+       }
+      }
+     },
+     {
+      "id": "tlladder",
+      "name": "A Sec 1 to 4 ladder for G1 online posts",
+      "from": "TL",
+      "to": [
+       "CL",
+       "ML"
+      ],
+      "line": "Sec 1 feelings, Sec 2 routines and home and school life, Sec 3 and 4 answers in the context of the question.",
+      "what": "TL G1 stages the online post by level. Sec 1: how I feel, with sentence structure and feeling words. Sec 2: routines, home life and school life. Sec 3 and 4: answers built from the context of the question. The 2026 posts follow it: Tamil Language Festival and National Day (Sec 1), first day of school (Sec 2), Friendship Day (Sec 3).",
+      "where": "Not in the CPDD guides. It is the TL team's practice, seen in the 2026 BVSS TL G1 papers and answer keys.",
+      "gap": "CL G1 posts change topic from paper to paper (Teachers' Day, a zoo visit, family, sports day, community events), with no staged content or language. ML has the answer frame but does not stage topics by level.",
+      "why": "Each year builds the language the next year needs, so Sec 4 students meet the exam's open questions already able to write feelings, routines and detail.",
+      "try": "The 2027 G1 exam preparation booklets in all three languages now use this ladder as their Part A chapters (HOD, 16 Nov 2026).",
+      "c": {
+       "CL": {
+        "s": "n",
+        "t": "Topics vary paper to paper"
+       },
+       "ML": {
+        "s": "p",
+        "t": "Frame shared, topics not staged"
+       },
+       "TL": {
+        "s": "y",
+        "t": "Feelings, routines, then context"
+       }
+      }
+     }
+    ]
    }
   ],
   "method": [

@@ -5,6 +5,12 @@ Updated November 3, 2026 by HOD/MTL Mdm Chun Kai Xin
 Repo: `kaixinbuilds/mtl-skills-roadmap`. Live page: https://kaixinbuilds.github.io/mtl-skills-roadmap/
 One page, no build step: `index.html` (single-file app: CSS, the embedded `const DATA={...}` JSON and the JS views). Open it in a browser.
 
+## G1 online posts and the 2027 exam booklets (16 Nov 2026)
+
+- **Learn across languages** has a new group, Writing and exam preparation, with two items from the 2026 BVSS G1 papers (not the CPDD guides): ML's ASiBiDiBaM answer frame (to CL and TL), and TL's Sec 1 to 4 ladder for G1 online posts (Sec 1 feelings, Sec 2 routines and home and school life, Sec 3 and 4 answers in the context of the question; to CL and ML). The 2027 G1 exam preparation booklets in OneDrive use the ladder as their Part A chapters.
+- **Acronyms:** language-specific short forms give the original words, each with its English meaning in brackets (HOD, 16 Nov), e.g. 4P, ASiBiDiBaM, KAK21, BML. Original mode keeps the Malay words and glosses them in CL or TL.
+- Booklet rules for reference: SEAB material at most 10% of each booklet, counted by words; chapters built as show, bite-size, longer (扶、放、收); full timed practice stays in the TYS.
+
 ## Original mode in all three languages; tabs streamlined; STP links (16 Nov 2026)
 
 - **Original mode now means the whole page in CL, ML or TL** (HOD, 16 Nov): labels, explanations and school statements (Vision, DSO names, values). Before, only unit data switched. Mechanism: `trMT()` in `index.html` swaps leftover English after each render, matching a block's whole inner HTML (so sentences translate whole), else the text run, else attributes. Dictionaries: `tools/uimt/{zh,ms,ta}.json` (source) published as `uimt/*.json` by `tools/uimt_embed.py` and fetched only in Original mode. The page language is the site language (`st.lang`). AI translation in 12 batches against a shared term list (CPDD terms from the guides, existing `DATA.ui` labels, draft school-term forms); **to be checked by the language teams**. School name in Chinese set to 武吉景中学 (check).

@@ -522,13 +522,19 @@
    "t": "4P",
    "f": "Pengalaman (Experience), Perasaan (Feelings), Pendapat (Opinion), Pengajaran (Lesson)",
    "g": "Teaching and learning",
-   "n": "A way to organise a story or script, used in the Malay Sec 1 G3 authentic assessment."
+   "n": "A way to organise a story, script or online post. Used in the Malay Sec 1 G3 authentic assessment and the Sec 4 NT paper."
   },
   {
    "t": "ICT",
    "f": "Information and communications technology",
    "g": "Teaching",
    "n": "The syllabuses' term for using technology in lessons and materials."
+  },
+  {
+   "t": "ASiBiDiBaM",
+   "f": "Apa (What), Siapa (Who), Bila (When), Di mana (Where), Bagaimana (How), Mengapa (Why)",
+   "g": "Teaching and learning",
+   "n": "The ML answer frame for G1 online posts and stories, used with Perasaan (feelings). Also written AsiBiDiBaM."
   }
  ]
 }
