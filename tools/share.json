@@ -741,6 +741,195 @@
       ]
      }
     ]
+   },
+   {
+    "k": "Tried in other schools (SCCL research)",
+    "items": [
+     {
+      "id": "scclvideo",
+      "name": "Talking about a video: SCCL's iMTL interaction kit",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "Short clips, PEEL talk, sample answers and a rubric for the video conversation.",
+      "what": "SCCL built the iMTL interaction toolkit (iMTL快捷课程互动策略) for Sec 3 Express CL from an MOE research project on task-based oral and written interaction. It has ten short teaching videos, seven matched to Sec 3 texts, with lesson plans, slides, activity sheets, recorded oral samples and rubrics. A 2015 paper by the same team uses PEEL as the frame for speaking about a video.",
+      "where": "SCCL secondary teaching toolkits (download needs an SCCL account); the videos are on the iMTL portal. Team: Dr Liu Mei, SCCL master teachers.",
+      "gap": "From 2027 the G1 to G3 oral in all three languages is a conversation on a video. BVSS has See-Think-Wonder cards in CL and answer frames in ML (4P, IJCK) and TL (Problem-Solution-Benefit), but no bank of short clips with sample answers and a rubric.",
+      "why": "Every candidate meets a video in the exam. Short, frequent clip practice with a model answer and a rubric builds the habit before Sec 4.",
+      "try": "CL G3 oral booklet: adapt the kit's video tasks and rubric for Sec 3. ML and TL: same pattern with their own clips (short clip, PEEL or IJCK talk, peer rubric).",
+      "c": {
+       "CL": {
+        "s": "p",
+        "t": "See-Think-Wonder cards; no clip bank or rubric"
+       },
+       "ML": {
+        "s": "p",
+        "t": "4P and IJCK frames; no clip bank"
+       },
+       "TL": {
+        "s": "p",
+        "t": "Problem-Solution-Benefit frame; no clip bank"
+       }
+      },
+      "basis": "Task-based language teaching (Ellis, 2003) with PEEL as the speaking frame. The kit came out of an MOE-funded SCCL project with Express classes.",
+      "links": [
+       {
+        "t": "SCCL: secondary teaching toolkits",
+        "u": "https://www.sccl.sg/zh/publication-and-jcle-ch/teaching-toolkit/second-school-teaching-toolkit",
+        "login": 1
+       },
+       {
+        "t": "SCCL paper: video teaching for oral interaction (PEEL)",
+        "u": "https://www.sccl.sg/zh/research/conference-papers/468-2015-11-11-13-57-45"
+       }
+      ]
+     },
+     {
+      "id": "scclchunk",
+      "name": "Chunk teaching for oral fluency (语块教学)",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "Notice, drill, use: ready-made phrases practised until students say them without pausing.",
+      "what": "SCCL's 2012 school-based study with CHIJ Secondary (Toa Payoh) taught spoken chunks in three steps: find the chunk in a text, drill it until it is automatic, then use it in a speaking task. The kit has the framework, the teaching sequence and ten lesson plans tied to the textbook.",
+      "where": "SCCL secondary toolkit 基于语块教学提高华文第二语言学习者口语的流利度 (Dr Sun Xiaoxi, Dr Fan Jinghua, Zhou Fenger).",
+      "gap": "BVSS oral notes list connectives (TL's bank) and model sentences, but no language drills them to fluency. Reading aloud has no teaching material in any language.",
+      "why": "Pauses and fillers cost fluency marks. Phrases that come out whole leave the student free to think about ideas.",
+      "try": "All three oral booklets: a one-page chunk bank per oral part with a 5-minute drill (say it, swap a word, use it). Reading-aloud practice can use the same idea: phrase by chunk, not word by word.",
+      "c": {
+       "CL": {
+        "s": "n",
+        "t": "No chunk drills"
+       },
+       "ML": {
+        "s": "p",
+        "t": "IJCK phrases, not drilled"
+       },
+       "TL": {
+        "s": "p",
+        "t": "Connectives bank, not drilled"
+       }
+      },
+      "basis": "Formulaic sequences (Wray, 2002) and the Lexical Approach (Lewis, 1993). Boers and colleagues (2006) found that students taught chunks were rated more fluent. SCCL's Dr Fan Jinghua (2016) applies the same idea to essays.",
+      "links": [
+       {
+        "t": "SCCL: secondary teaching toolkits",
+        "u": "https://www.sccl.sg/zh/publication-and-jcle-ch/teaching-toolkit/second-school-teaching-toolkit",
+        "login": 1
+       },
+       {
+        "t": "SCCL project: chunks and oral fluency",
+        "u": "https://www.sccl.sg/zh/research/sccl-school-based-research/1191-基于语块教学提高华文第二语言口语的流利度"
+       },
+       {
+        "t": "SCCL paper: formulaic language in essays",
+        "u": "https://www.sccl.sg/zh/research/conference-papers/761-2016-10-24-09-16-55"
+       },
+       {
+        "t": "Boers et al. (2006), Language Teaching Research",
+        "u": "https://doi.org/10.1191/1362168806lr195oa"
+       }
+      ]
+     },
+     {
+      "id": "scclpeer",
+      "name": "Peer review of essays (同伴作文互评)",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "A two-year Sec 1 Express study: rounds of peer feedback raised essay scores.",
+      "what": "In a government secondary school, a Sec 1 Express class learned a writing skill, wrote, reviewed a partner's draft against criteria and revised, for two years. Its essay scores rose significantly more than a control class's, and peer comments tracked post-test scores closely (Zheng Wenpei, SCCL, 2016). A related SCCL kit with Hwa Yi Secondary teaches 43 writing skills and has students build their own marking criteria.",
+      "where": "SCCL conference paper (full text on request) and the toolkit 基于自主学习的中学华文过程式写作教学.",
+      "gap": "The Paper 1 booklets follow 扶放收 (show, guided practice, independent task) with exemplars and drills, but no language has a set peer-review step.",
+      "why": "Students learn the marking criteria by using them, and the teacher's marking load does not grow.",
+      "try": "Paper 1 booklets in all three languages: a peer-review card with the criteria in student language after each longer task.",
+      "c": {
+       "CL": {
+        "s": "n",
+        "t": "No peer-review step in Paper 1"
+       },
+       "ML": {
+        "s": "n",
+        "t": "No peer-review step in Paper 1"
+       },
+       "TL": {
+        "s": "n",
+        "t": "No peer-review step in Paper 1"
+       }
+      },
+      "basis": "Peer assessment (Topping, 1998). Writing Next (Graham and Perin, 2007) found that students writing and revising together improved their writing quality.",
+      "links": [
+       {
+        "t": "SCCL paper: peer review of essays",
+        "u": "https://www.sccl.sg/zh/research/conference-papers/747-2016-10-24-06-55-02"
+       },
+       {
+        "t": "SCCL: secondary teaching toolkits",
+        "u": "https://www.sccl.sg/zh/publication-and-jcle-ch/teaching-toolkit/second-school-teaching-toolkit",
+        "login": 1
+       },
+       {
+        "t": "Writing Next (Carnegie, 2007)",
+        "u": "https://www.carnegie.org/publications/writing-next-effective-strategies-to-improve-writing-of-adolescents-in-middle-and-high-schools/"
+       }
+      ]
+     },
+     {
+      "id": "scclread",
+      "name": "PEEL from reading to writing (以读促写)",
+      "from": "CL",
+      "to": [
+       "ML",
+       "TL"
+      ],
+      "line": "One frame to read a passage, answer about it, then write: Paper 2 and Paper 1 together.",
+      "what": "SCCL master teachers' kit for Express and Higher CL texts uses three strategies: PEEL for reading and writing (what each sentence does and how sentences go together), deep reading that leads into writing, and imitation and continuation writing that train judging and creating. It has 13 lesson plans, slides, 12 text-structure maps and activity sheets. Related SCCL work: reading questions and creative thinking in lower secondary (Manjusri Secondary) and teaching evaluative reading in H1 CL.",
+      "where": "SCCL toolkit 乐学善用理念下的阅读到写作：策略与实践 (Hong Ruichun, Guo Xiufen, Mao Zhaohui).",
+      "gap": "Paper 2 gaps: CL explaining words and sentences, ML Section B and Level 5 (evaluate), TL Level 4 (infer). Every bank is short of evaluate and create items.",
+      "why": "Students answer Level 4 to 6 questions better when they have practised saying what a sentence does and judging it.",
+      "try": "Paper 2 booklets: a PEEL reading card for each of Levels 3 to 5. ML and TL teams write Level 4 and 5 items modelled on the kit's evaluation and continuation tasks.",
+      "c": {
+       "CL": {
+        "s": "p",
+        "t": "PEEL in the oral only"
+       },
+       "ML": {
+        "s": "p",
+        "t": "IJCK in writing, not in reading"
+       },
+       "TL": {
+        "s": "n",
+        "t": "No reading frame found"
+       }
+      },
+      "basis": "Writing to Read (Graham and Hebert, 2010): writing about texts improves reading comprehension. PEEL is a common paragraph frame in UK and Singapore schools.",
+      "links": [
+       {
+        "t": "SCCL: secondary teaching toolkits",
+        "u": "https://www.sccl.sg/zh/publication-and-jcle-ch/teaching-toolkit/second-school-teaching-toolkit",
+        "login": 1
+       },
+       {
+        "t": "SCCL project: reading questions and creative thinking",
+        "u": "https://www.sccl.sg/zh/research/sccl-school-based-research/1175-初中阅读提问与创造性思维能力发展-2"
+       },
+       {
+        "t": "SCCL paper: evaluative reading in H1 CL",
+        "u": "https://www.sccl.sg/zh/research/conference-papers/437-h1"
+       },
+       {
+        "t": "Writing to Read (Carnegie, 2010)",
+        "u": "https://www.carnegie.org/publications/writing-to-read-evidence-for-how-writing-can-improve-reading/"
+       }
+      ]
+     }
+    ]
    }
   ],
   "method": [
