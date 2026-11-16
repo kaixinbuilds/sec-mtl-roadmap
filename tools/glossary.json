@@ -1,5 +1,5 @@
 {
- "_readme": "Acronyms relevant to MTL, BVSS and MOE work (HOD decision, 4 Nov 2026). General words such as HDB or PDF stay out: list them under `ignore`. c=1 means the sources on hand do not spell it out, so the meaning needs the HOD's confirmation. tools/checkgloss.py lists acronym-like words in the page that are in neither `terms` nor `ignore`; run it after adding content.",
+ "_readme": "Acronyms relevant to MTL, BVSS and MOE work (HOD decision, 4 Nov 2026). General words such as HDB or PDF stay out: list them under `ignore`. c=1 means the sources on hand do not spell it out, so the meaning needs the HOD's confirmation. tools/checkgloss.py lists acronym-like words in the page that are in neither `terms` nor `ignore`; run it after adding content. Acronyms of words in one language (such as the Malay 4P) give the original words, each followed by its English meaning in brackets (HOD, 16 Nov 2026).",
  "ignore": [
   "4NA",
   "ABC",
@@ -140,7 +140,7 @@
   },
   {
    "t": "KAK21",
-   "f": "Kecekapan Abad ke-21",
+   "f": "Kecekapan (Competencies) Abad ke-21 (21st Century)",
    "g": "E21CC and inquiry",
    "n": "Malay for 21st Century Competencies."
   },
@@ -231,13 +231,13 @@
   },
   {
    "t": "BML",
-   "f": "Bahasa Melayu Lanjutan",
+   "f": "Bahasa Melayu (Malay Language) Lanjutan (Higher)",
    "g": "Languages and courses",
    "n": "Malay for Higher Malay Language. It appears in ML guide file names."
   },
   {
    "t": "BC, BM, BT",
-   "f": "Bahasa Cina, Bahasa Melayu, Bahasa Tamil",
+   "f": "Bahasa Cina (Chinese Language), Bahasa Melayu (Malay Language), Bahasa Tamil (Tamil Language)",
    "g": "Languages and courses",
    "n": "Malay names for CL, ML and TL, used on the chart in Malay."
   },
@@ -520,7 +520,7 @@
   },
   {
    "t": "4P",
-   "f": "Experience, Feelings, Opinion, Lesson",
+   "f": "Pengalaman (Experience), Perasaan (Feelings), Pendapat (Opinion), Pengajaran (Lesson)",
    "g": "Teaching and learning",
    "n": "A way to organise a story or script, used in the Malay Sec 1 G3 authentic assessment."
   },
