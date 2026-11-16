@@ -41,7 +41,7 @@ for L in ['CL','ML','TL']:
     f=R/'maps_mt_src'/f'{L}.json'
     src=json.loads(f.read_text(encoding='utf-8')) if f.exists() else {'items':{},'terms':{}}
     mt[L]={'items':src['items'],'terms':{e:x['mt'] for e,x in src.get('terms',{}).items() if x and x.get('mt')}}
-note='Task names and unit titles are in the language of the CPDD guides; the reasons stay in English.'
+note={'CL':'原文模式：任务名称与单元标题依照CPDD教师手册的用语，其余文字由部门借助AI翻译，有待语文组审阅。','ML':'Mod Asal: nama tugasan dan tajuk unit mengikut istilah Panduan Guru CPDD; teks lain diterjemahkan oleh jabatan dengan bantuan AI dan akan disemak oleh panitia bahasa.','TL':'மூல மொழி முறை: பணிகளின் பெயர்களும் தொகுதித் தலைப்புகளும் CPDD ஆசிரியர் கையேட்டின் சொற்களைப் பின்பற்றுகின்றன; பிற உரைகள் துறையால் AI உதவியுடன் மொழிபெயர்க்கப்பட்டவை, மொழிக் குழுக்கள் சரிபார்க்க வேண்டும்.'}
 (R/'maps_mt.json').write_text(json.dumps({'note':note,'mt':mt,'terms_m':terms_m},ensure_ascii=False,indent=0),encoding='utf-8')
 miss=[x for k,v in terms_m.items() for x in ' · '.join(v.values()).split(' · ') if re.search(r'[A-Za-z]{4,}',x) and not x.startswith(('Unit','SEC','WA','NWA','AA'))]
 print('maps_mt.json',{L:len(mt[L]['items']) for L in mt},'untranslated header parts:',sorted(set(miss)))
