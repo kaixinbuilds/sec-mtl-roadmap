@@ -74,13 +74,29 @@
    "t": "E21CC",
    "f": "Emerging 21st Century Competencies",
    "g": "E21CC and inquiry",
-   "n": "MOE's term in its Learning Goals and Developmental Milestones (20 Oct 2023). The BVSS 2027 focus areas are Adaptive Thinking, Inventive Thinking, Civic Literacy and Communication."
+   "n": "MOE's term in its Learning Goals and Developmental Milestones (20 Oct 2023). The BVSS 2027 focus areas are Adaptive Thinking, Inventive Thinking, Civic Literacy and Communication.",
+   "s": [
+    [
+     "MOE: 21st Century Competencies",
+     "https://www.moe.gov.sg/education-in-sg/21st-century-competencies"
+    ]
+   ]
   },
   {
    "t": "21CC",
    "f": "21st Century Competencies",
    "g": "E21CC and inquiry",
-   "n": "MOE's competency framework. The 2021 CPDD teacher guides use this term."
+   "n": "MOE's competency framework. The 2021 CPDD teacher guides use this term.",
+   "s": [
+    [
+     "MOE: 21st Century Competencies",
+     "https://www.moe.gov.sg/education-in-sg/21st-century-competencies"
+    ],
+    [
+     "CPDD, Secondary CL Syllabus 2021 (中学华文课程标准), Appendix: 21世纪技能框架",
+     null
+    ]
+   ]
   },
   {
    "t": "IBL",
@@ -104,43 +120,117 @@
    "t": "5E",
    "f": "Engage, Explore, Explain, Elaborate, Evaluate",
    "g": "E21CC and inquiry",
-   "n": "An inquiry sequence. TL G3 2B Units 1 and 2 use it."
+   "n": "An inquiry sequence. TL G3 2B Units 1 and 2 use it.",
+   "s": [
+    [
+     "CPDD TL G3 teacher guide 2B, Units 1 and 2: Inquiry Based Learning – 5E Method",
+     null
+    ],
+    [
+     "BSCS: the 5E Instructional Model",
+     "https://bscs.org/reports/the-bscs-5e-instructional-model-origins-and-effectiveness"
+    ]
+   ]
   },
   {
    "t": "CAIT",
    "f": "Critical, Adaptive and Inventive Thinking",
    "g": "E21CC and inquiry",
-   "n": "An MOE 21CC domain. Codes such as CAIT 3.4 point to a learning goal and developmental level."
+   "n": "An MOE 21CC domain. Codes such as CAIT 3.4 point to a learning goal and developmental level.",
+   "s": [
+    [
+     "MOE: 21st Century Competencies",
+     "https://www.moe.gov.sg/education-in-sg/21st-century-competencies"
+    ]
+   ]
   },
   {
    "t": "CCI",
-   "f": "Communication, Collaboration and Information",
+   "f": "Communication, Collaboration and Information Skills",
    "g": "E21CC and inquiry",
-   "n": "An MOE 21CC domain, also written CCIS. Codes such as CCI 1.3 point to a learning goal and level."
+   "n": "An MOE E21CC domain, also written CCIS. Codes such as CCI 1.3 point to a learning goal and level.",
+   "s": [
+    [
+     "MOE: 21st Century Competencies",
+     "https://www.moe.gov.sg/education-in-sg/21st-century-competencies"
+    ],
+    [
+     "CPDD, Secondary CL Syllabus 2021 (中学华文课程标准), Appendix: 21世纪技能框架",
+     null
+    ],
+    [
+     "CPDD TL teacher guides (2021 syllabus)",
+     null
+    ]
+   ]
   },
   {
    "t": "CCIS",
    "f": "Communication, Collaboration and Information Skills",
    "g": "E21CC and inquiry",
-   "n": "An MOE 21CC domain, also written CCI."
+   "n": "An MOE 21CC domain, also written CCI.",
+   "s": [
+    [
+     "MOE: 21st Century Competencies",
+     "https://www.moe.gov.sg/education-in-sg/21st-century-competencies"
+    ],
+    [
+     "CPDD, Secondary CL Syllabus 2021 (中学华文课程标准), Appendix: 21世纪技能框架",
+     null
+    ],
+    [
+     "CPDD TL teacher guides (2021 syllabus)",
+     null
+    ]
+   ]
   },
   {
    "t": "CGC",
    "f": "Civic Literacy, Global Awareness and Cross-Cultural Skills",
    "g": "E21CC and inquiry",
-   "n": "An MOE 21CC domain."
+   "n": "An MOE 21CC domain.",
+   "s": [
+    [
+     "MOE: 21st Century Competencies",
+     "https://www.moe.gov.sg/education-in-sg/21st-century-competencies"
+    ],
+    [
+     "CPDD, Secondary CL Syllabus 2021 (中学华文课程标准), Appendix: 21世纪技能框架",
+     null
+    ],
+    [
+     "CPDD TL teacher guides (2021 syllabus)",
+     null
+    ]
+   ]
   },
   {
    "t": "SEC",
-   "f": "Social-emotional competencies",
+   "f": "Social and emotional competencies",
    "g": "E21CC and inquiry",
-   "n": "As a tag on this site. For the exam with the same letters, see the other SEC entry."
+   "n": "As a tag on this site. For the exam with the same letters, see the other SEC entry.",
+   "s": [
+    [
+     "MOE: 21st Century Competencies",
+     "https://www.moe.gov.sg/education-in-sg/21st-century-competencies"
+    ],
+    [
+     "CPDD TL teacher guides (2021 syllabus)",
+     null
+    ]
+   ]
   },
   {
    "t": "LG&M",
    "f": "Learning Goals and Developmental Milestones",
    "g": "E21CC and inquiry",
-   "n": "MOE's E21CC document, dated 20 Oct 2023. The site tags against it."
+   "n": "MOE's E21CC document, dated 20 Oct 2023. The site tags against it.",
+   "s": [
+    [
+     "MOE, Learning Goals and Developmental Milestones (20 Oct 2023)",
+     null
+    ]
+   ]
   },
   {
    "t": "KAK21",
@@ -226,7 +316,13 @@
   {
    "t": "HML",
    "f": "Higher Malay Language",
-   "g": "Languages and courses"
+   "g": "Languages and courses",
+   "s": [
+    [
+     "SEAB SEC 2027 syllabus K356: Higher Malay Language / Bahasa Melayu Lanjutan",
+     null
+    ]
+   ]
   },
   {
    "t": "HTL",
@@ -235,9 +331,31 @@
   },
   {
    "t": "BML",
+   "f": "Basic Malay Language",
+   "g": "Languages and courses",
+   "n": "SEAB's Basic Malay (Bahasa Melayu Asas), syllabus 1203 at N(T) Level; SEAB files its exam information booklet as 1203_NT BML. For the other BML, see Bahasa Melayu Lanjutan.",
+   "s": [
+    [
+     "SEAB N(T)-Level 2026 syllabus 1203: Basic Malay / Bahasa Melayu Asas",
+     null
+    ],
+    [
+     "SEAB 2024 Exam Information Booklet_1203_NT BML",
+     null
+    ]
+   ]
+  },
+  {
+   "t": "BML",
    "f": "Bahasa Melayu (Malay Language) Lanjutan (Higher)",
    "g": "Languages and courses",
-   "n": "Malay for Higher Malay Language. It appears in ML guide file names."
+   "n": "Higher Malay Language, as BML is used in the CPDD ML teacher guide file names, e.g. M1_Panduan Guru BML 1B. Not the SEAB BML, which is Basic Malay.",
+   "s": [
+    [
+     "CPDD ML teacher guides (HML folder), e.g. Panduan Guru JATi Bahasa Melayu Lanjutan 2B",
+     null
+    ]
+   ]
   },
   {
    "t": "BC, BM, BT",
@@ -249,7 +367,13 @@
    "t": "G1, G2, G3",
    "f": "Subject levels 1, 2 and 3",
    "g": "Languages and courses",
-   "n": "Subject levels under Full Subject-Based Banding."
+   "n": "Subject levels under Full Subject-Based Banding.",
+   "s": [
+    [
+     "MOE: Full Subject-Based Banding",
+     "https://www.moe.gov.sg/microsites/secondary-school-education-booklet/full-subject-based-banding.html"
+    ]
+   ]
   },
   {
    "t": "NA",
@@ -317,7 +441,13 @@
   {
    "t": "SCCC",
    "f": "Singapore Chinese Cultural Centre",
-   "g": "Organisations"
+   "g": "Organisations",
+   "s": [
+    [
+     "SCCC (中文)",
+     "https://www.singaporeccc.org.sg/zh-hans/"
+    ]
+   ]
   },
   {
    "t": "PSLE",
@@ -328,7 +458,13 @@
    "t": "SEC",
    "f": "Singapore-Cambridge Secondary Education Certificate",
    "g": "Exams and assessment",
-   "n": "The national exam from 2027. For the tag with the same letters, see the other SEC entry."
+   "n": "The national exam from 2027. For the tag with the same letters, see the other SEC entry.",
+   "s": [
+    [
+     "SEAB SEC 2027 syllabuses, e.g. K121 cover",
+     null
+    ]
+   ]
   },
   {
    "t": "WA",
@@ -377,7 +513,13 @@
    "t": "TP",
    "f": "Timed practice",
    "g": "Exams and assessment",
-   "n": "In the Sec 4 assessment plan: full Paper 1 and Paper 2, Term 2 Weeks 6 to 7."
+   "n": "In the Sec 4 assessment plan: full Paper 1 and Paper 2, Term 2 Weeks 6 to 7.",
+   "s": [
+    [
+     "Confirmed by HOD/MTL, 4 Nov 2026",
+     null
+    ]
+   ]
   },
   {
    "t": "PEEL",
@@ -394,7 +536,21 @@
   {
    "t": "STP",
    "f": "Singapore Teaching Practice",
-   "g": "Teaching and learning"
+   "g": "Teaching and learning",
+   "s": [
+    [
+     "CPDD CL Syllabus 2021: 新加坡课堂教学实践要领",
+     null
+    ],
+    [
+     "CPDD ML Syllabus 2021, 3.3: Amalan Pengajaran Singapura (STP)",
+     null
+    ],
+    [
+     "CPDD TL Syllabus 2021, 4.2: சிங்கப்பூர்க் கற்பித்தல் முறைமை",
+     null
+    ]
+   ]
   },
   {
    "t": "T&L",
@@ -415,7 +571,17 @@
    "t": "SLS",
    "f": "Student Learning Space",
    "g": "Teaching and learning",
-   "n": "MOE's online learning platform."
+   "n": "MOE's online learning platform.",
+   "s": [
+    [
+     "CPDD CL Syllabus 2021: 新加坡学生学习平台",
+     null
+    ],
+    [
+     "CPDD TL teacher guides (2021 syllabus)",
+     null
+    ]
+   ]
   },
   {
    "t": "OPAL2",
@@ -448,13 +614,25 @@
   {
    "t": "RCU",
    "f": "Repeat, Clarify, Understand",
-   "g": "Teaching and learning"
+   "g": "Teaching and learning",
+   "s": [
+    [
+     "CPDD G2 CL teacher guide 二上 (G2华文教师手册), p. 36",
+     null
+    ]
+   ]
   },
   {
    "t": "DSO",
    "f": "Desired Student Outcomes",
    "g": "School calendar",
-   "n": "From the BVSS Strategic Plan 2027 to 2031."
+   "n": "From the BVSS Strategic Plan 2027 to 2031.",
+   "s": [
+    [
+     "BVSS Strategic Plan 2027–2031 (draft)",
+     null
+    ]
+   ]
   },
   {
    "t": "VMV",
@@ -490,31 +668,65 @@
    "t": "ACE Week",
    "f": "A week named after the BVSS vision",
    "g": "School calendar",
-   "n": "ACE stands for Adaptive Learners, Caring Leaders, Ethical Changemakers. In the 2027 calendar, 25 to 29 Jan."
+   "n": "ACE stands for Adaptive Learners, Caring Leaders, Ethical Changemakers. In the 2027 calendar, 25 to 29 Jan.",
+   "s": [
+    [
+     "Confirmed by HOD/MTL, 4 Nov 2026",
+     null
+    ]
+   ]
   },
   {
    "t": "ApLM",
    "f": "Applied Learning Modules",
    "g": "School calendar",
-   "n": "A school programme, not part of MTL. It is in the calendar because it affects lesson days."
+   "n": "A school programme, not part of MTL. It is in the calendar because it affects lesson days.",
+   "s": [
+    [
+     "Confirmed by HOD/MTL, 4 Nov 2026",
+     null
+    ]
+   ]
   },
   {
    "t": "CCM",
    "f": "Conversational Chinese and Malay",
    "g": "School calendar",
-   "n": "A programme owned by MTL. Sec 1 level 1 runs on 19, 21 and 26 Oct 2027."
+   "n": "A programme owned by MTL. Sec 1 level 1 runs on 19, 21 and 26 Oct 2027.",
+   "s": [
+    [
+     "MOE parliamentary reply, 15 Oct 2024",
+     "https://www.moe.gov.sg/news/parliamentary-replies/20241015-plans-to-offer-second-or-third-language-subjects"
+    ],
+    [
+     "联合早报 editorial, 24 Sep 2020: 华语和马来语会话课（CCM）",
+     "https://www.zaobao.com.sg/zopinions/editorial/story20200924-1087409"
+    ]
+   ]
   },
   {
    "t": "SEP",
    "f": "Sports Enrichment Programme",
    "g": "School calendar",
-   "n": "In the 2027 calendar for Sec 3, 7 to 8 Jan."
+   "n": "In the 2027 calendar for Sec 3, 7 to 8 Jan.",
+   "s": [
+    [
+     "Confirmed by HOD/MTL, 4 Nov 2026",
+     null
+    ]
+   ]
   },
   {
    "t": "GEM",
    "f": "Grit, Empathy, Moral Courage",
    "g": "School calendar",
-   "n": "The BVSS school values, from the Strategic Plan 2027 to 2031 draft. The site's inquiry sketches close with a GEM reflection."
+   "n": "The BVSS school values, from the Strategic Plan 2027 to 2031 draft. The site's inquiry sketches close with a GEM reflection.",
+   "s": [
+    [
+     "BVSS Strategic Plan 2027–2031 (draft)",
+     null
+    ]
+   ]
   },
   {
    "t": "AA",
@@ -544,13 +756,25 @@
    "t": "GSCE",
    "f": "Generate, Sort, Connect, Elaborate",
    "g": "Teaching and learning",
-   "n": "A Harvard Project Zero thinking routine. HCL uses it, in Chinese 列举、分类、链接、阐述, to plan the Higher oral presentation."
+   "n": "A Harvard Project Zero thinking routine. HCL uses it, in Chinese 列举、分类、链接、阐述, to plan the Higher oral presentation.",
+   "s": [
+    [
+     "Harvard Project Zero: Generate-Sort-Connect-Elaborate",
+     "https://pz.harvard.edu/resources/generate-sort-connect-elaborate"
+    ]
+   ]
   },
   {
    "t": "PZ",
    "f": "Project Zero",
    "g": "Teaching and learning",
-   "n": "The Harvard Graduate School of Education research centre behind thinking routines such as See-Think-Wonder."
+   "n": "The Harvard Graduate School of Education research centre behind thinking routines such as See-Think-Wonder.",
+   "s": [
+    [
+     "Harvard Project Zero",
+     "https://pz.harvard.edu/"
+    ]
+   ]
   },
   {
    "t": "IJCK",
@@ -592,20 +816,37 @@
    "t": "SCCL",
    "f": "Singapore Centre for Chinese Language (新加坡华文教研中心)",
    "g": "Organisations",
-   "n": "Trains CL teachers and publishes CL teaching toolkits and research. Most toolkits need an MOE login."
+   "n": "Trains CL teachers and publishes CL teaching toolkits and research. Most toolkits need an MOE login.",
+   "s": [
+    [
+     "SCCL",
+     "https://www.sccl.sg/"
+    ]
+   ]
   },
   {
    "t": "MLCS",
    "f": "Malay Language Centre of Singapore (Pusat Bahasa Melayu Singapura)",
    "g": "Organisations",
-   "n": "Trains ML teachers and publishes seminar papers on ML teaching, including oral interaction."
+   "n": "Trains ML teachers and publishes seminar papers on ML teaching, including oral interaction.",
+   "s": [
+    [
+     "MLCS",
+     "https://mlcs.moe.edu.sg/"
+    ]
+   ]
   },
   {
    "t": "PDTL",
    "f": "Professional Development of Tamil Language",
    "g": "Organisations",
    "n": "MOE site for Tamil teachers' professional development and teaching resources, such as the secondary spoken-interaction model.",
-   "c": 1
+   "s": [
+    [
+     "PDTL (MOE)",
+     "https://pdtl.moe.edu.sg/"
+    ]
+   ]
   },
   {
    "t": "OPAL",
