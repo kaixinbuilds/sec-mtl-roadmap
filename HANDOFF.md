@@ -5,6 +5,16 @@ Updated November 3, 2026 by HOD/MTL Mdm Chun Kai Xin
 Repo: `kaixinbuilds/mtl-skills-roadmap`. Live page: https://kaixinbuilds.github.io/mtl-skills-roadmap/
 One page, no build step: `index.html` (single-file app: CSS, the embedded `const DATA={...}` JSON and the JS views). Open it in a browser.
 
+## Original mode in all three languages; tabs streamlined; STP links (16 Nov 2026)
+
+- **Original mode now means the whole page in CL, ML or TL** (HOD, 16 Nov): labels, explanations and school statements (Vision, DSO names, values). Before, only unit data switched. Mechanism: `trMT()` in `index.html` swaps leftover English after each render, matching a block's whole inner HTML (so sentences translate whole), else the text run, else attributes. Dictionaries: `tools/uimt/{zh,ms,ta}.json` (source) published as `uimt/*.json` by `tools/uimt_embed.py` and fetched only in Original mode. The page language is the site language (`st.lang`). AI translation in 12 batches against a shared term list (CPDD terms from the guides, existing `DATA.ui` labels, draft school-term forms); **to be checked by the language teams**. School name in Chinese set to 武吉景中学 (check).
+- **Curriculum maps** (`maps.html`): Original mode via `?m=mtl` from the parent. Task names in MT from the CPDD guides (`tools/maps_mt_src/*.json`, built into `tools/maps_mt.json` by `tools/maps_mt.py` with unit titles from DATA.themes); chrome and reasons via `tools/uimt_maps/*.json` (subset of uimt). Rebuild: `python3 tools/maps_mt.py && python3 tools/build_maps.py`.
+- **Empty IBL years filled** from the guides: ML G1 Sec 1 (19 entries) and CL G1 Sec 4 (8 entries; Units 1 and 5 have none). Four ML entries are judgement calls (U2, U3, U6, U7).
+- **Tabs streamlined** (HOD): E21CC to DSO is the "Unit by unit" view of Curriculum maps (`st.e21v`); Compare languages is merged into Learn across languages (distinctive → borrow grid → STAR → shared); Syllabus and exams is the second half of Languages. Old hashes `#dso`, `#compare`, `#syl` still land.
+- **STP links** go straight to OPAL2 (the go.gov.sg links were redirects); the main STP page is linked in the footer, the IBL essence, the STP card and the maps' IBL column.
+- Reference menu: the current page was white text on a pale tint; now navy on lavender.
+- To rescan for English: load a page in Original mode and walk text nodes; anything left is a dictionary gap.
+
 ## What the pages are for
 
 A department wall chart of what the CPDD 2021-syllabus teacher guides teach in CL, ML and TL, Sec 1 to 4, G1 to HMT, mapped to SEC 2027 and to two BVSS school approaches from 2027: inquiry-based learning (IBL) and the E21CC priority areas (Adaptive Thinking, Inventive Thinking, Civic Literacy, Communication). From 31 Oct it also carries the department's planning layer: a scheme of work (SOW) for 2027 laid out as four term columns for every language, course and year.
