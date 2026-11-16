@@ -464,7 +464,19 @@
         "s": "n",
         "t": "No planning routine found for HTL"
        }
-      }
+      },
+      "basis": "Generate-Sort-Connect-Elaborate is a published Harvard Project Zero thinking routine from its Visible Thinking work (Ritchhart, Church and Morrison, 2011). Using it to plan the oral presentation is BVSS's own adaptation.",
+      "links": [
+       {
+        "t": "Project Zero: Generate-Sort-Connect-Elaborate",
+        "u": "https://pz.harvard.edu/resources/generate-sort-connect-elaborate-concept-maps"
+       },
+       {
+        "t": "SCCL: Applying Thinking Strategies to Enhance Higher CL Oral Teaching (OPAL course CLI-000275)",
+        "u": "https://www.sccl.sg/en/training-programmes/opal2-0-courses/item/341-applying-thinking-strategies-to-enhance-higher-cl-oral-teaching",
+        "login": 1
+       }
+      ]
      },
      {
       "id": "peercard",
@@ -493,7 +505,14 @@
         "s": "n",
         "t": "No peer practice card"
        }
-      }
+      },
+      "basis": "Peer assessment has a strong research base: a 2020 meta-analysis of 54 studies found it improves performance at every school level. Evidence for speaking alone is thinner, so treat the cards as promising rather than proven.",
+      "links": [
+       {
+        "t": "Double, McGrane and Hopfenbeck (2020): peer assessment meta-analysis, Educational Psychology Review",
+        "u": "https://link.springer.com/article/10.1007/s10648-019-09510-3"
+       }
+      ]
      },
      {
       "id": "oral4p",
@@ -522,22 +541,39 @@
         "s": "p",
         "t": "Frames per question, no single sheet"
        }
-      }
+      },
+      "basis": "4P is common in Singapore ML schools, but each school's four Ps differ and MOE gives no definition (MLCS seminar papers). Its order follows Gibbs' reflective cycle (1988): description, feelings, evaluation, conclusion. Naming that parallel gives CL and TL a tried and tested frame to borrow.",
+      "links": [
+       {
+        "t": "University of Edinburgh: Gibbs' Reflective Cycle",
+        "u": "https://reflection.ed.ac.uk/reflectors-toolkit/reflecting-on-experience/gibbs-reflective-cycle"
+       },
+       {
+        "t": "MLCS professional learning (seminar papers and courses on Interaksi Lisan)",
+        "u": "https://mlcs.moe.edu.sg/professional-learning/",
+        "login": 1
+       },
+       {
+        "t": "OPAL2.0: search 'Interaksi Lisan Dinamik' (ML oral interaction course)",
+        "u": "https://www.opal2.moe.edu.sg/",
+        "login": 1
+       }
+      ]
      },
      {
       "id": "exladder",
-      "name": "Example ladder: one to three stars",
+      "name": "Example ladder: cause, events, result",
       "from": "CL",
       "to": [
        "ML",
        "TL"
       ],
       "line": "The same video example told in one line, in a few sentences, then in vivid detail.",
-      "what": "CL teaches Q1 examples with a three-star ladder using situation, action and outcome: one sentence, then the sequence of events, then a second action and outcome with detail. Students first spot whether the video shows one example, two big ones or many small ones to sum up, and learn to describe a word they do not know.",
+      "what": "CL teaches Q1 examples with a three-star ladder built on 起因、经过、结果 (cause, what happened, result), the structure the CPDD CL guides teach for telling an event: one sentence, then the sequence of events, then a second event and its result with detail. Students first spot whether the video shows one example, two big ones or many small ones to sum up, and learn to describe a word they do not know.",
       "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (CL G2 S1 口语训练 举例与感受; BVSS 中一口语教学 and 举例与感受 slides).",
-      "gap": "ML uses ASiBiDiBaM for what to include but has no graded model of how much to say. No TL equivalent was found.",
+      "gap": "ML uses 5W1H (ASiBiDiBaM) for what to include but has no graded model of how much to say. No TL ladder was found, though the TL guides teach தொடக்கம், நிகழ்வு, முடிவு (beginning, event, ending) for stories.",
       "why": "Students hear exactly what a fuller answer sounds like, which a rubric line alone does not show.",
-      "try": "ML and TL oral booklets 2027: one ladder per Q1 chapter with a BVSS video.",
+      "try": "ML and TL oral booklets 2027: one ladder per Q1 chapter with a BVSS video, each told in the language's own CPDD words.",
       "c": {
        "CL": {
         "s": "y",
@@ -551,7 +587,9 @@
         "s": "n",
         "t": "No example ladder"
        }
-      }
+      },
+      "basis": "Each language already has CPDD words for telling an event: CL 起因、经过、结果 (cause, what happened, result), ML 5W1H with urutan peristiwa (sequence of events), TL தொடக்கம், நிகழ்வு, முடிவு (beginning, event, ending). All three match the classic narrative structure of Labov and Waletzky (1967): orientation, complicating action, resolution, evaluation.",
+      "links": []
      },
      {
       "id": "stw",
@@ -564,7 +602,7 @@
       "line": "Who, when, where, what while watching; then how and why to prepare the answers.",
       "what": "CL G3 Sec 1 and 2 oral booklets use See-Think-Wonder (a Harvard Project Zero routine) with 5W1H during the preparation time: who, when, where, what and the narration's key words, then how (feelings, effects, what to avoid or encourage) and why.",
       "where": "Not in the CPDD guides. It is BVSS teachers' own material on the 2026 drive (CL G3 中一G3口试训练_2025, 中二G3口试训练_2026).",
-      "gap": "ML uses ASiBiDiBaM for answering Q1 but not as a viewing routine. No TL viewing routine was found.",
+      "gap": "ML uses 5W1H (ASiBiDiBaM) for answering Q1 but not as a viewing routine. No TL viewing routine was found.",
       "why": "Students watch with a purpose, so the video gives them examples for all three questions.",
       "try": "ML and TL oral booklets 2027: the video chapter (Part B) uses the same routine in the language.",
       "c": {
@@ -580,7 +618,19 @@
         "s": "n",
         "t": "No viewing routine"
        }
-      }
+      },
+      "basis": "See-Think-Wonder is a published Harvard Project Zero routine. 5W1H is the standard set of journalistic questions and the term the CPDD ML guides use. ASiBiDiBaM, the Malay form BVSS ML teachers use, was found online only in Malaysian sources, and for writing, so 5W1H is the safer shared name.",
+      "links": [
+       {
+        "t": "Project Zero: See, Think, Wonder",
+        "u": "https://pz.harvard.edu/resources/see-think-wonder"
+       },
+       {
+        "t": "SCCL: Teaching and Learning Interaction Strategies via iMTL Portal (Sec 3 CL toolkit)",
+        "u": "https://sccl.sg/en/teaching-toolkit-en-new/secondary-school-teaching-toolkit-en-new/1481-teaching-and-learning-interaction-strategies-via-imtl-portal-for-secondary-3-chinese-language-express",
+        "login": 1
+       }
+      ]
      },
      {
       "id": "psb",
@@ -609,7 +659,14 @@
         "s": "y",
         "t": "Oral practice deck"
        }
-      }
+      },
+      "basis": "The opinion frame is the widely taught PREP pattern (point, reason, example, point), close to CL's OREO. Problem-Solution-Benefit follows the problem-solution pattern of persuasive speaking, as in Monroe's motivated sequence; the one experiment on Monroe found listeners judged it better organised, not more persuasive. No official Tamil source names either frame.",
+      "links": [
+       {
+        "t": "Organizing persuasive speeches: Monroe's motivated sequence (Kirkwood, open textbook)",
+        "u": "https://kirkwood.pressbooks.pub/emcworthy/chapter/organizing-persuasive-speeches-monroe/"
+       }
+      ]
      },
      {
       "id": "idealadder",
@@ -638,7 +695,14 @@
         "s": "y",
         "t": "Six levels, grid per topic"
        }
-      }
+      },
+      "basis": "Project Zero's Circle of Viewpoints routine does the same job: list the people a topic touches, then speak from each viewpoint. Naming it gives the three ladders one tried and tested routine to share.",
+      "links": [
+       {
+        "t": "Project Zero: Circle of Viewpoints",
+        "u": "https://pz.harvard.edu/resources/circle-of-viewpoints"
+       }
+      ]
      },
      {
       "id": "todayspeaker",
@@ -667,7 +731,14 @@
         "s": "y",
         "t": "Lower secondary topics"
        }
-      }
+      },
+      "basis": "Regular low-stakes talk is a core idea of the oracy work by Voice 21 and Oracy Cambridge. No Singapore source names a Today's Speaker routine. MOE's PDTL site has a secondary Tamil spoken-interaction model, tested in four volumes of teachers' action research.",
+      "links": [
+       {
+        "t": "PDTL (MOE): Spoken Interaction for Secondary, பேச்சுவழிக் கருத்துப்பரிமாற்றம்",
+        "u": "https://pdtl.moe.edu.sg/teaching-resources/secondary/peeccuvali-karuttupparimaatram/"
+       }
+      ]
      }
     ]
    }

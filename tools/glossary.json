@@ -12,6 +12,7 @@
   "AUTHENTIC",
   "BAHASA",
   "BERITAMediacorp",
+  "CLI",
   "COMPREHENSION",
   "CSV",
   "DATA",
@@ -37,6 +38,7 @@
   "MAHIR",
   "MALAY",
   "MOTHER",
+  "McGrane",
   "MrLee",
   "NEEDS",
   "NEWater",
@@ -534,7 +536,7 @@
    "t": "ASiBiDiBaM",
    "f": "Apa (What), Siapa (Who), Bila (When), Di mana (Where), Bagaimana (How), Mengapa (Why)",
    "g": "Teaching and learning",
-   "n": "The ML answer frame for G1 online posts and stories, used with Perasaan (feelings). Also written AsiBiDiBaM."
+   "n": "The ML answer frame for G1 online posts and stories, used with Perasaan (feelings). Also written AsiBiDiBaM. Found online only in Malaysian sources, for writing; the CPDD ML guides say 5W1H."
   },
   {
    "t": "GSCE",
@@ -579,17 +581,41 @@
    "n": "In the oral framework: explain and elaborate questions."
   },
   {
-   "t": "SAO",
-   "f": "Situation, Action, Outcome",
-   "g": "Teaching and learning",
-   "n": "Letters on the CL example ladder for oral Q1. The CL materials do not spell them out.",
-   "c": 1
-  },
-  {
    "t": "AA",
    "f": "Access arrangements",
    "g": "Exams and assessment",
    "n": "Extra time and other exam arrangements, e.g. 'AA +2 min' in the oral framework. For the other AA, see Authentic assessment."
+  },
+  {
+   "t": "SCCL",
+   "f": "Singapore Centre for Chinese Language (新加坡华文教研中心)",
+   "g": "Organisations",
+   "n": "Trains CL teachers and publishes CL teaching toolkits and research. Most toolkits need an MOE login."
+  },
+  {
+   "t": "MLCS",
+   "f": "Malay Language Centre of Singapore (Pusat Bahasa Melayu Singapura)",
+   "g": "Organisations",
+   "n": "Trains ML teachers and publishes seminar papers on ML teaching, including oral interaction."
+  },
+  {
+   "t": "PDTL",
+   "f": "Professional Development of Tamil Language",
+   "g": "Organisations",
+   "n": "MOE site for Tamil teachers' professional development and teaching resources, such as the secondary spoken-interaction model.",
+   "c": 1
+  },
+  {
+   "t": "OPAL",
+   "f": "One Portal All Learners (OPAL2.0)",
+   "g": "Organisations",
+   "n": "MOE's portal for teachers' professional development courses. Needs an MOE login."
+  },
+  {
+   "t": "PREP",
+   "f": "Point, Reason, Example, Point",
+   "g": "Exams and assessment",
+   "n": "A widely taught way to structure a spoken opinion, close to OREO."
   }
  ]
 }
