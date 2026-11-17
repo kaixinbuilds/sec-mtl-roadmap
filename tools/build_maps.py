@@ -17,7 +17,8 @@ data=json.dumps(D,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
 js=tpl.replace('__POP__',pop).replace('__DATA__',data)
 html=f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
-<title>How the curriculum develops E21CC and realises our DSOs</title><style>{css}</style></head><body><main>
+<title>How the curriculum develops E21CC and realises our DSOs</title><style>{css}
+.bare #lens,.bare #lvl,.bare #crs,.bare #prop{{display:none}}</style></head><body><main>
 <p class="eye" id="eye"></p><h1 id="h1"></h1><div class="rule"></div><p class="sub" id="sub"></p>
 <p class="vm"><b>BVSS DSO (ACE):</b> <b>A</b>daptive Learners · <b>C</b>aring Leaders · <b>E</b>thical Changemakers</p>
 <div class="ctl"><div class="tabs" id="lens"></div><div class="tabs" id="lvl"></div><div class="tabs" id="crs"></div><div class="tabs" id="tabs"></div><div class="tabs" id="prop"></div></div><div class="cards" id="cards"></div><p class="sub" id="full"></p><div class="wrap"><table id="hm"></table></div>
