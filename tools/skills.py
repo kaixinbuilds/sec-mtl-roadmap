@@ -235,7 +235,7 @@ def essay(c):
     ["说明方法", "Methods", EXPM], ["说明顺序与内容", "Order and content", EXPO]]},
   {"k": "arg", "zh": "作文：议论文", "en": "Essay: argumentative", "task": "arg", "groups": [
     ["三要素与论证方法", "Elements and methods", ARGM], ["论证结构", "Developing the argument", ["duofang", "zhengfan", "lichang"]]]}] + (
-  [{"k": "forum", "zh": "论坛（课本练习）", "en": "Forum post (textbook practice)", "task": "forum", "nx": True, "groups": [
+  [{"k": "forum", "zh": "论坛（拓展任务 · 高华考试题型）", "en": "Forum post (stretch task; a Higher CL exam format, not in the G3 exam)", "task": "forum", "nx": True, "groups": [
     ["回应与立场", "Responding and taking a stand", ["wangyou", "lichang", "huiying"]]]}] if c == "G3" else [])
 
 
