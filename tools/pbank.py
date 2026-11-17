@@ -7,6 +7,7 @@ teacher guide; tools/sow.json wbank) and the school's 2026 tasks (tools/pbank_sr
 
 Run: python3 tools/pbank.py && python3 tools/enrich.py
 """
+import hashlib
 import json, re
 from pathlib import Path
 
@@ -278,6 +279,27 @@ def public(x, task_en):
     return {**x, "task": "", "gist_en": ty, "notes": "", "ref": ""}
 
 
+def one_blueprint(its):
+    """HOD, 17 Nov 2026: one blueprint card per year. Keep the fullest line that gives the paper's shape (choose 1 of N);
+    drop team planning notes that follow it."""
+    out, seen = [], {}
+    for x in its:
+        if x["kind"] != "blueprint":
+            out.append(x); continue
+        t = re.sub(r"[；;]\s*团队定案.*$|\s*\*目的.*$", "", x["task"]).strip()
+        y = {**x, "task": t, "q": "", "qt": "", "qen": ""}
+        k = x["sec"]
+        if k in seen:
+            o = seen[k]
+            if ("选" in t and "选" not in o["task"]) or ("选" in t) == ("选" in o["task"]) and len(t) > len(o["task"]):
+                o.update(task=t)
+            continue
+        seen[k] = y; out.append(y)
+    for y in seen.values():
+        y["gist_en"] = re.match(r"(S\d \w+)", y["gist_en"]).group(1) if re.match(r"S\d \w+", y["gist_en"]) else y["gist_en"]
+    return out
+
+
 def main():
     banks = {}
     for L in ("CL", "ML", "TL"):
@@ -297,9 +319,15 @@ def main():
                                QNOTE[L],
                                "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."]}
     names = {t["k"]: t["en"] for v in TASKS.values() for ts in v.values() for t in ts}
+    gist = json.loads((R / "pbank_gist.json").read_text(encoding="utf-8"))  # short summaries in each language (HOD, 17 Nov 2026)
     for k, v in banks.items():
-        for b in v.values():
-            b["items"] = [public(x, names[k.split("|")[2]]) for x in b["items"]]
+        for L, b in v.items():
+            its = []
+            for x in b["items"]:
+                if x["source"] != "BVSS 2026":
+                    x["gist_m"] = gist[L].get(hashlib.md5((x["task"] or x["gist_en"]).encode()).hexdigest()[:10], "")
+                its.append(public(x, names[k.split("|")[2]]))
+            b["items"] = one_blueprint(its)
     out = {"tasks": TASKS, "qtypes": QT, "banks": banks, "compare": CMP, "compareNote": CMPNOTE}
     (R / "p1bank.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     for k, v in banks.items():

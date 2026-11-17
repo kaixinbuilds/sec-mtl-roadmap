@@ -307,11 +307,24 @@ for _k, _f in (("skills_ml", "skills_ml.json"), ("skills_ta", "skills_ta.json"))
                 if not _u[_s]: del _u[_s]
 D["ui"]["t_skills"] = {"en":"Skills at a glance","zh":"技能一览","ms":"Sekilas kemahiran","ta":"திறன்கள் ஒரு பார்வையில்"}
 D["design"]["about"]["skills"] = {"what": "Each SEC exam task, course by course: pick a course, a paper and a task to see the Sec 1 to 4 tasks that lead up to it, from the CPDD materials and our own 2026 resources. Paper 1 first; Papers 2 and 3 follow (HOD, 17 Nov 2026).",
- "points": ["Pick the language, then the course (G1, G2, G3, HMT), the paper and the task.",
-  "Each year column lists the syllabus outcome, then every task found: Exam format means the task is the Paper 1 kind itself; Builds toward means a nearby kind of written interaction that leads to it.",
-  "CPDD tasks come from the 2021 syllabus, textbooks and teacher guides; BVSS 2026 tasks come from our worksheets and assessments in the 2026 department folder.",
-  "Built so far: G1 Paper 1, responding to an online post, in CL, ML and TL."],
- "use": "Start with G1, Paper 1, online post. Read across Sec 1 to 4 to see how the task builds up, and check the source line under each task before quoting it."}
+ "points": ["Pick the course (G1, G2, G3, HMT), then the paper, the task and the language. Only the choices that apply appear.",
+  "Each year column starts with our exam blueprint, then every task found. Click a task for its wording, length and source.",
+  "Exam format means the task is the exam's own kind; Builds toward means a nearby kind that leads to it. Question tags (Q1 to Q5) follow the national paper.",
+  "CPDD tasks come from the 2021 syllabus, textbooks and teacher guides. Our own 2026 papers and worksheets are listed by question type only.",
+  "Compare 3 languages sets CL, ML and TL side by side for Papers 1, 2 and 3."],
+ "use": "Read across Sec 1 to 4 to see how a task builds up to the exam question.",
+ # same intro in the page language (HOD, 17 Nov 2026: the CL page fully in Chinese)
+ "m": {"zh": {"what": "按课程查看SEC各项考试任务：选课程、试卷和题型，就能看到中一至中四通向这项考题的任务，来源包括CPDD教材和本校2026年的资源。先做试卷一，试卷二、三随后推出。",
+              "points": ["依次选课程（G1、G2、G3、HMT）、试卷、题型和语文，只显示适用的选项。", "每个年级先列本校考试蓝图，再列找到的任务。点击任务可看题目、字数和出处。", "考试题型：与考题同类的任务；铺垫：通向考题的相近任务。Q1至Q5标签依照全国考试。", "CPDD任务出自2021年课程标准、课本和教师手册；本校2026年试卷和工作纸只列题型。", "三语比较：并列华文、马来文和淡米尔文的试卷一、二、三。"],
+              "use": "从中一看到中四，了解任务如何一步步通向考题。"},
+       "ms": {"what": "Setiap tugasan peperiksaan SEC mengikut kursus: pilih kursus, kertas dan tugasan untuk melihat tugasan Menengah 1 hingga 4 yang membawa ke arahnya, daripada bahan CPDD dan sumber sekolah 2026. Kertas 1 dahulu; Kertas 2 dan 3 menyusul.",
+              "points": ["Pilih kursus (G1, G2, G3, HMT), kemudian kertas, tugasan dan bahasa. Hanya pilihan yang berkaitan dipaparkan.", "Setiap lajur tahun bermula dengan rangka peperiksaan sekolah, kemudian semua tugasan yang ditemui. Klik tugasan untuk butirannya.", "Format peperiksaan: jenis tugasan peperiksaan itu sendiri; Persediaan: tugasan hampir serupa yang membawa ke arahnya. Label Q1 hingga Q5 mengikut kertas kebangsaan.", "Tugasan CPDD daripada sukatan pelajaran 2021, buku teks dan panduan guru. Kertas dan lembaran kerja sekolah 2026 disenaraikan mengikut jenis soalan sahaja.", "Bandingkan 3 bahasa: BC, BM dan BT bersebelahan untuk Kertas 1, 2 dan 3."],
+              "use": "Baca dari Menengah 1 hingga 4 untuk melihat bagaimana tugasan berkembang ke arah soalan peperiksaan."},
+       "ta": {"what": "பாடநெறி வாரியாக ஒவ்வொரு SEC தேர்வுப் பணியும்: பாடநெறி, தாள், பணி ஆகியவற்றைத் தேர்ந்தெடுத்து, உயர்நிலை 1 முதல் 4 வரை அதை நோக்கிச் செல்லும் பணிகளைக் காணுங்கள். CPDD பாடப்பொருள்களும் நம் பள்ளியின் 2026 வளங்களும் இதில் அடங்கும். முதலில் தாள் 1; தாள் 2, 3 பின்னர் வரும்.",
+              "points": ["பாடநெறி (G1, G2, G3, HMT), தாள், பணி, மொழி என வரிசையாகத் தேர்ந்தெடுக்கவும். பொருந்தும் தேர்வுகள் மட்டுமே தோன்றும்.", "ஒவ்வோர் ஆண்டும் பள்ளித் தேர்வு வரைவுடன் தொடங்கி, கண்டறிந்த பணிகளைப் பட்டியலிடுகிறது. விவரங்களுக்குப் பணியைச் சொடுக்கவும்.", "தேர்வு வடிவம்: தேர்வில் வரும் அதே வகைப் பணி; ஆயத்தம்: அதற்கு வழிவகுக்கும் ஒத்த பணி. Q1 முதல் Q5 குறிகள் தேசியத் தாளைப் பின்பற்றுகின்றன.", "CPDD பணிகள் 2021 பாடத்திட்டம், பாடநூல்கள், ஆசிரியர் கையேடுகளிலிருந்து. நம் பள்ளியின் 2026 தாள்கள் கேள்வி வகை மட்டும் காட்டப்படுகின்றன.", "மூன்று மொழி ஒப்பீடு: தாள் 1, 2, 3-க்கு மூன்று மொழிகளையும் அருகருகே காட்டுகிறது."],
+              "use": "உயர்நிலை 1 முதல் 4 வரை படித்து, பணி தேர்வுக் கேள்வியை நோக்கி எவ்வாறு வளர்கிறது என்பதைக் காணுங்கள்."}}}
+D["ui"]["t_onpage"] = {"en":"What is on this page","zh":"本页内容","ms":"Kandungan halaman ini","ta":"இந்தப் பக்கத்தில்"}
+D["ui"]["t_howuse"] = {"en":"How to use:","zh":"使用方法：","ms":"Cara menggunakan:","ta":"பயன்படுத்தும் முறை:"}
 D["ui"]["t_sow"] = {"en":"Scheme of work 2027","zh":"2027教学进度表","ms":"Skema Pengajaran 2027","ta":"2027 பாடத்திட்டம்"}
 
 # ---------- 5. CL inquiry wording (recheck of all 44 CL 教师手册 PDFs, 31 Oct 2026) ----------
