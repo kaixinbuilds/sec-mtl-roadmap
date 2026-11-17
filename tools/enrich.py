@@ -270,6 +270,10 @@ D["ui"]["t_share"] = {"en":"Learn across languages","zh":"三语互鉴","ms":"Be
 
 # ---------- 4. Redesigned SOW frame (tools/sow.json) ----------
 D["sow"] = json.loads((ROOT / "tools" / "sow.json").read_text(encoding="utf-8"))
+# Paper 1 task banks by course and task type (HOD, 17 Nov 2026): CPDD and BVSS 2026 tasks, Sec 1 to 4 (tools/p1bank.json)
+_pb = ROOT / "tools" / "p1bank.json"
+if _pb.exists():
+    D["p1bank"] = json.loads(_pb.read_text(encoding="utf-8"))
 # Each unit's E21CC milestones, from the same map the By DSO view draws (16 Nov 2026), so By term and By DSO agree
 _md = json.loads((ROOT / "tools" / "maps_data.json").read_text(encoding="utf-8"))
 _um = {}
@@ -302,14 +306,12 @@ for _k, _f in (("skills_ml", "skills_ml.json"), ("skills_ta", "skills_ta.json"))
                 _u[_s] = [h for h in _u[_s] if not (h[0] == "p" and _sls.search(h[2]))]
                 if not _u[_s]: del _u[_s]
 D["ui"]["t_skills"] = {"en":"Skills at a glance","zh":"技能一览","ms":"Sekilas kemahiran","ta":"திறன்கள் ஒரு பார்வையில்"}
-D["design"]["about"]["skills"] = {"what": "Which skills each unit teaches, sorted by the SEC exam components they serve (Paper 1 writing, Paper 2 comprehension and language use, Paper 3 reading aloud, conversation and listening) and laid out by year, term and unit, for CL, ML and TL.",
- "points": ["Source: the CPDD 2021 teacher guides for G1, G2, G3 and Higher, Sec 1 to 4, read unit by unit: the 24 CL 教师手册, the ML Panduan Guru and the TL guides. The ML and TL readings are new (16 Nov 2026) and wait for each language team's check.",
-  "Use Go to (top of the table) to jump to Paper 2 comprehension or Paper 3 oral and listening.",
-  "Each cell shows where in the unit the skill comes up: 读 reading, 写 writing, 说 listening and speaking, 综 integrated task, 知 language knowledge.",
-  "A filled chip is a unit focus (单元主题与语言技能学习点 or the 学习内容一览表); an outlined chip is a lesson objective (教学目标); a dashed chip is the lesson notes only (questions, model answers, teaching steps).",
-  "Paper 1 is split into 私人电邮, 公务电邮, 论坛, 情境作文, 议论文, 演讲稿 and 材料作文, each with a row marking the units whose textbook writing task is that text type.",
-  "Terms follow the scheme-of-work pacing: Sec 1 to 3 over Terms 1 to 3, Sec 4 over Terms 1 and 2."],
- "use": "Start with the exam component view (Higher CL first): pick the components to show, and narrow to writing or reading instances. Hover over a cell for the guide's wording; click it for every instance with its page. Skills were matched by keyword, so check a surprising cell against the page given."}
+D["design"]["about"]["skills"] = {"what": "Each SEC exam task, course by course: pick a course, a paper and a task to see the Sec 1 to 4 tasks that lead up to it, from the CPDD materials and our own 2026 resources. Paper 1 first; Papers 2 and 3 follow (HOD, 17 Nov 2026).",
+ "points": ["Pick the language, then the course (G1, G2, G3, HMT), the paper and the task.",
+  "Each year column lists the syllabus outcome, then every task found: Exam format means the task is the Paper 1 kind itself; Builds toward means a nearby kind of written interaction that leads to it.",
+  "CPDD tasks come from the 2021 syllabus, textbooks and teacher guides; BVSS 2026 tasks come from our worksheets and assessments in the 2026 department folder.",
+  "Built so far: G1 Paper 1, responding to an online post, in CL, ML and TL."],
+ "use": "Start with G1, Paper 1, online post. Read across Sec 1 to 4 to see how the task builds up, and check the source line under each task before quoting it."}
 D["ui"]["t_sow"] = {"en":"Scheme of work 2027","zh":"2027教学进度表","ms":"Skema Pengajaran 2027","ta":"2027 பாடத்திட்டம்"}
 
 # ---------- 5. CL inquiry wording (recheck of all 44 CL 教师手册 PDFs, 31 Oct 2026) ----------
