@@ -1004,7 +1004,7 @@ function controls(){
  $("#navSel").onchange=e=>{const v=e.target.value;if(v.startsWith("url:"))location.href=v.slice(4);else{st.tab=v;render();scrollTo({top:0})}};
  const sw_=st.tab==="sow"&&!(st.sowv==="dso"&&st.e21v==="span");/* compact toggles (3 Nov 2026); multi-select on the SOW tab */
  $("#langSeg").innerHTML=`<span class="lab">${esc(Tm("language"))}</span>`+["CL","ML","TL"].map(L=>`<button class="lgb ${L}" ${sw_?"data-sowl":"data-lang"}="${L}" aria-pressed="${sw_?st.sowL.includes(L):st.lang===L}" title="${esc(DATA.langName[L])}">${L}</button>`).join("");
- $("#crsSeg").innerHTML=`<span class="lab">${esc(Tm("course"))}</span>`+["G1","G2","G3","H"].map(c=>`<button ${sw_?"data-sowc":"data-crs"}="${c}" aria-pressed="${sw_?st.sowC.includes(c):st.crs===c}" title="${esc(c==="H"?"Higher MTL":DATA.courseEn[c])}">${c==="H"?"HMT":c}</button>`).join("");
+ $("#crsSeg").innerHTML=`<span class="lab">${esc(Tm("course"))}</span>`+["G1","G2","G3","H"].map(c=>`<button ${sw_?"data-sowc":"data-crs"}="${c}" aria-pressed="${sw_?st.sowC.includes(c):st.crs===c}" title="${esc(c==="H"?"Higher MTL":DATA.courseEn[c])}" style="box-shadow:inset 0 -4px 0 ${LODC[c]}">${c==="H"?"HMT":c}</button>`).join("");
  /* steady panel (3 Nov 2026): a page's groups stay put; one that doesn't apply to the current view is greyed out, not removed */
  const off=(id,c)=>{$(id).classList.toggle("off",!!c);$(id).setAttribute("aria-disabled",c?"true":"false")},mside=st.tab==="skills"&&st.kv==="map"&&st.mlay==="side";
  const spn=st.tab==="sow"&&st.sowv==="dso"&&st.e21v==="span";$("#crsSeg").hidden=spn||!["sow","skills"].includes(st.tab);off("#crsSeg",mside||(st.tab==="skills"&&st.kv==="fam"&&st.klay!=="one"));$("#langSeg").hidden=spn||["prog","design","home","share","compare","gloss","dso","e21d"].includes(st.tab);off("#langSeg",mside);
@@ -1547,14 +1547,15 @@ function vSow(){if(st.sowv==="dso")return vSowDso();const Ls=st.sowL,Cs=st.sowC,
  if(!on.length)h+=`<p class="note">All rows are switched off. Pick a lens or preset in the side panel.</p>`;
  for(const L of Ls)for(const c of Cs){const E=DATA.exam[L][c];
   h+=`<div class="sowg lg-${L}">`;
-  if(!one)h+=`<h3 class="sowh">${esc(DATA.langName[L])} · ${esc(cn(c))} · ${esc(yl)} <small>${esc(E.code)}</small> ${prov(L,c)}</h3>`;
+  if(!one)h+=`<h3 class="sowh" style="border-left:6px solid ${LODC[c]};padding-left:8px">${esc(DATA.langName[L])} · ${esc(cn(c))} · ${esc(yl)} <small>${esc(E.code)}</small> ${prov(L,c)}</h3>`;
   if(ys.length===1&&(on.includes("e21")||on.includes("dso")))h+=`<details class="vmvd"><summary>BVSS vision, mission, DSOs and values in full</summary>${vmvBand(L,c,ys[0])}</details>`;
   h+=`<div class="scroll"><table class="tgrid"><thead><tr><th class="rh">Planning layer</th>${[0,1,2,3].map(t=>{const x=cal[t]||{};return `<th class="tm t${t+1}">${esc(x.label||"Term "+(t+1))}<small>${esc(x.start||"")} to ${esc(x.end||"")} · ${x.weeks||10} calendar weeks</small></th>`}).join("")}</tr></thead><tbody>${plannerBody(L,c,ys)}</tbody></table></div></div>`}
  h+=`<p class="note">${esc((SOW.assess||{}).note||"")}</p><p class="note">${esc((SOW.pacing||{}).note||"")}</p><p class="note">Listening and speaking sources: ${esc((SOW.listen||{}).note||"")}</p></section>`;
  return h}
 /* SOW E21CC lens (HOD, 17 Nov 2026): the E21CC Dashboard Template layout, one dashboard per language, course and year, DSOs on the right */
+const LODC={G1:"#40b0e0",G2:"#98d088",G3:"#18c0d0",H:"#a078c0"};/* course colours from the CPDD CL textbook covers, all languages (HOD, 17 Nov 2026) */
 function vSowE21(Ls,Cs,ys){const q=`maps.html?sow=1${st.mode==="mtl"?"&m=mtl":""}`;let h="";
- for(const L of Ls)for(const c of Cs)for(const s of ys)h+=`<div class="sowg sowe lg-${L}"><iframe data-maps loading="${h?"lazy":"eager"}" src="${q}#e21/${s}/${c}/${L}" title="E21CC and DSO dashboard: ${esc(DATA.langName[L])}, ${c==="H"?"HMT":esc(DATA.courseEn[c])}, Sec ${s}" style="display:block;width:100%;height:1200px;border:0"></iframe></div>`;
+ for(const L of Ls)for(const c of Cs)for(const s of ys)h+=`<div class="sowg sowe lg-${L}" style="border-left:6px solid ${LODC[c]};padding-left:10px"><iframe data-maps loading="${h?"lazy":"eager"}" src="${q}#e21/${s}/${c}/${L}" title="E21CC and DSO dashboard: ${esc(DATA.langName[L])}, ${c==="H"?"HMT":esc(DATA.courseEn[c])}, Sec ${s}" style="display:block;width:100%;height:1200px;border:0"></iframe></div>`;
  return h}
 /* Unit dialog labels in the unit's own language when the page is in MTL mode (2 Nov 2026) */
 const UDX={close:["Close","关闭","Tutup","மூடு"],term:["Term ","第$学期","Penggal ","பருவம் "],
