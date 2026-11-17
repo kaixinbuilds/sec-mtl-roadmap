@@ -73,8 +73,8 @@ for t in D["themes"]:
     elif c.get("reach"):
         t["dom"] = [d for d in DOM if d in c["reach"]]
         t["domSrc"] = "guide"
-D["domains"] = {"keys": DOM, "en": {"self":"Self","family":"Family","school":"School","community":"Community & culture","nation":"Nation (Singapore)","world":"World & region"},
- "note": "ML domains are the Domain row of each JATi Panduan Guru (CPDD); where the department's reading of the unit adds a scope (often Singapore as a nation, which CPDD's ML scheme has no domain for) it is shown separately. CL and TL domains are read from each unit's overview in the teacher guide (CL 单元内容概要, TL கண்ணோட்டம்), with the quote and page kept in tools/unitcodes.json. The TL Syllabus 2021 (p. 17) names the same six domains: self, family, school, community, nation, world. A unit can carry several."}
+D["domains"] = {"keys": DOM, "en": {"self":"Self","family":"Family","school":"School","community":"Community","nation":"Nation","world":"World"},
+ "note": "One shared language for all three MTLs: the six domains named in the 2021 syllabuses. CL: 个人、家庭、学校、社区、国家和世界六个范畴 (CL T&L Syllabus 2021). TL: நான், குடும்பம், பள்ளி, சமூகம், நாடு, உலகம் என்னும் ஆறு களங்கள் (TL T&L Syllabus 2021). ML: the syllabus groups these into three broader domains (domain peribadi; domain masyarakat dan negara; domain serantau dan dunia), and each JATi Panduan Guru tags its units with Diri, Keluarga, Sekolah, Masyarakat or Dunia, so ML units map onto the same six. CL and TL unit domains are read from each unit overview in the teacher guide (CL 单元内容概要, TL கண்ணோட்டம்), with the quote and page kept in tools/unitcodes.json. A unit can carry several."}
 
 # ---------- 2. Provenance-tagged 21CC / IBL / E21CC priority tags ----------
 D["cat"].update({
