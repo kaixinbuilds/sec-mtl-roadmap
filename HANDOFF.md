@@ -441,3 +441,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 
 - The HOD asked that picking several courses (G1, G2, G3, HMT) show their tasks together so levels of demand compare at a glance. `maps.html` now takes several courses in the hash (`#e21/1/G1+G2+G3+H/CL`); `st.cs` holds them, `st.c` is the first. Each cell stacks one block per course under its colour tag (`.lodg`), term headers list each course's units, the pop-up prefixes each task with its course, and the DSO count reads "across these courses". One course looks exactly as before.
 - On its own, `maps.html`'s course buttons are now multi-select (at least one stays on). In the SOW E21CC lens, `vSowE21` builds one iframe per language and year with all chosen courses, not one per course.
+
+## 18 Nov 2026 · SOW considerations page; Inquiry lens leads to the DSOs
+
+- The time constraints left the SOW grid. New Plan tab `#cons` "SOW considerations" (`vCons`) shows `SOW.constraints` once for all languages; the SOW grid keeps a one-line link to it. `consBand` stays in the code, unused.
+- The SOW Inquiry lens now uses the maps dashboard on the IBL lens (`vSowE21(..., "ibl")`): four phases in the middle, DSOs on the right, several courses in one grid. Department inquiry sketches and the "act" row stay in All rows. Row chips are hidden on this lens, as on E21CC.
+- `maps.html`: the DSO name in the right column shrinks on narrow frames (`clamp`).
