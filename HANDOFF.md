@@ -500,3 +500,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - HOD decision: WA, NWA, EOY and Prelim are not translated in any language; the running text uses the acronym (zh/ms/ta in tools/uimt*, maps_mt.py FIX, pbank_gist, PBT strings). Key-aware pass: only entries whose English source mentions the term were changed. The glossary (tools/glossary.json) explains each one per language; Prelim was added; EOY and NWA got notes.
 - Narrow laptops (a colleague at 100% zoom on a scaled Windows screen, about 1100-1280 CSS px, saw the maps cut off; their scrollbar sat at the bottom of a 1500px iframe): maps table min-width 1000px -> 720px, long words wrap in cells (th,td overflow-wrap), and the filter panel narrows to 220px between 901 and 1240px. Checked all SOW lenses, e21d and prog at 1100/1280/1366: no clipped grids.
 - maps: "... seen this year across these courses" now translated (zh/ms/ta).
+
+### 18 Nov 2026: 阅读理解 in Skills at a glance
+- New third option under the Paper 1 task types (实用文 · 作文 · 阅读理解, marked 试卷二). `vRC()` in index.html: rows are the reading skills from the SEC 2027 Paper 2 reading parts in `DATA.skills*.comp[course].P2` (parts rc/rc1/rc2/sum/open/mcq, groups merged, each skill once), columns Sec 1-4, cells from `skEntries()` (unit chip with term; click opens the guide's wording and page via `skPop`). All three languages.
+- `SKRD()` limits `skHits` to reading (读) and language-knowledge (知) mentions while this view is open, so writing practice of the same device does not count as "learning to identify" it.
+- `SKSN` now gives M1-M4 for ML and உ1-உ4 for TL instead of 中一.
+- ML/TL skill maps were read from the CPDD guides by AI and are flagged on the page for the language teams to check.
