@@ -506,3 +506,4 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - `SKRD()` limits `skHits` to reading (读) and language-knowledge (知) mentions while this view is open, so writing practice of the same device does not count as "learning to identify" it.
 - `SKSN` now gives M1-M4 for ML and உ1-உ4 for TL instead of 中一.
 - ML/TL skill maps were read from the CPDD guides by AI and are flagged on the page for the language teams to check.
+- Later (HOD): the task choice is now a drawer under the paper. 试卷一 opens 实用文 | 作文; 试卷二 opens 语文应用 | 阅读理解 (`P2T=[LUT,RCT]`); 试卷三 still goes to the three-language comparison. `vRC(m)`: m="rc" uses the reading parts (rc/rc1/rc2/sum/open/mcq), m="lu" the other Paper 2 parts (cloze, 词语替换, 病句, golongan kata, மரபுத்தொடர் …). Paper 2 now has its own language buttons; only Paper 3 forces compare mode. ML G1 and TL G1 Paper 2 is one MCQ part, so their 语文应用 view says there is no separate map.
