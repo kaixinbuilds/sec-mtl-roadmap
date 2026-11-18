@@ -459,3 +459,7 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - `epCell`: Sec 1–3 Paper blocks list these items with "2026 Sec n EOY as set", the CL reference's own SEAB-alignment note, and the source. Sec 4 keeps the SEC 2027 parts. Where 2026 detail is missing (CL and TL Paper 3, ML HML Sec 2) the block says so and shows the SEC parts. Sec 1–3 omit paper weights; the assessment block labels its weights as SEC 2027.
 - NEEDS HOD: the ML and TL rows are a draft for the 19 Nov meeting (CHECK items: ML word counts, 2G3 weights, TL 1G3 essay word count). Update `eoy2026.json` after the meeting.
 - Same day, later: ML and TL Papers 1 and 2 in `eoy2026.json` now come from the HOD's 2027 ML and TL S1-4 Item Progression drafts v1 (16 Nov 2026, OneDrive › BVSS MTL › 2027 › 03 › MTL S1-4 Test Item Progression), which were read from the 2026 papers and are more exact than the workbook (e.g. ML G2 Paper 2 has a dialogue-completion section; ML G1 S2 reverses the C1/C2 split). Each entry carries the draft's own SEC-alignment note. Paper topics are left out. ML oral and listening still come from the workbook; CL and TL Paper 3 detail is not compiled.
+
+## 18 Nov 2026 · Chinese for "Term" is 学段
+
+- HOD: Term = 学段; 学期 = semester. Every zh entry whose English says "term(s)" and not "semester" now uses 学段 (191 in `tools/uimt/zh.json`, 99 in `tools/uimt_maps/zh.json`), plus `UDX.term` and `UDX.r7` in `index.html`. The 12 entries that translate "semester" keep 学期. Rebuilt with `uimt_embed.py`, `enrich.py`, `build_maps.py`. Use 学段 for any new Term string.

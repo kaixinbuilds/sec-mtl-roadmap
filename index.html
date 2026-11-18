@@ -1596,7 +1596,7 @@ function vSowE21(Ls,Cs,ys,lens="e21"){const q=`maps.html?sow=1${st.mode==="mtl"?
  for(const L of Ls)for(const s of ys)h+=`<div class="sowg sowe lg-${L}"${co.length==1?` style="border-left:6px solid ${LODC[co[0]]};padding-left:10px"`:""}><iframe data-maps loading="${h?"lazy":"eager"}" src="${q}#${lens}/${s}/${co.join("+")}/${L}" title="${lens==="ibl"?"Inquiry":"E21CC"} and DSO dashboard: ${esc(DATA.langName[L])}, ${esc(cl)}, Sec ${s}" style="display:block;width:100%;height:1200px;border:0"></iframe></div>`;
  return h}
 /* Unit dialog labels in the unit's own language when the page is in MTL mode (2 Nov 2026) */
-const UDX={close:["Close","关闭","Tutup","மூடு"],term:["Term ","第$学期","Penggal ","பருவம் "],
+const UDX={close:["Close","关闭","Tutup","மூடு"],term:["Term ","第$学段","Penggal ","பருவம் "],
  r1:["Theme, domain and periods","主题、范畴与课时","Tema, domain dan waktu","கருப்பொருள், களம், பாடவேளைகள்"],
  r2:["Learning outcomes and tasks (CPDD)","学习点与任务（CPDD）","Hasil pembelajaran dan tugasan (CPDD)","கற்றல் விளைவுகளும் பணிகளும் (CPDD)"],
  r3tl:["Listening and viewing (கண்ணோட்டம்)","聆听与视听","Mendengar dan menonton","கேட்டலும் காணுதலும் (கண்ணோட்டம்)"],
@@ -1604,7 +1604,7 @@ const UDX={close:["Close","关闭","Tutup","மூடு"],term:["Term ","第$�
  r4:["CPDD 21CC tags","CPDD 21世纪技能标注","Tag KAK21 CPDD","CPDD 21ஆம் நூற்றாண்டுத் திறன் குறிப்புகள்"],
  r5:["BVSS E21CC focus","BVSS 21世纪新兴技能重点","Fokus E21CC BVSS","BVSS E21CC கவனம்"],
  r6:["Inquiry","探究","Inkuiri","ஆய்வு"],r65:["Textbook writing tasks (课本原题)","课本写作任务（原题）","Tugasan penulisan buku teks","பாடநூல் எழுத்துப் பணிகள்"],
- r7:["Assessment this term","本学期评估","Pentaksiran penggal ini","இப்பருவ மதிப்பீடு"],
+ r7:["Assessment this term","本学段评估","Pentaksiran penggal ini","இப்பருவ மதிப்பீடு"],
  hs:["Skill","技能","Kemahiran","திறன்"],hl:["Learning point","学习点","Hasil pembelajaran","கற்றல் கூறு"],ht:["Task","任务","Tugasan","பணி"],he:["Exam","考试","Peperiksaan","தேர்வு"],
  Direct:["Direct","直接考查","Diuji terus","நேரடியாகத் தேர்வு"],"Builds toward":["Builds toward","为考试打基础","Persediaan ke arah","தேர்வுக்கு அடித்தளம்"],
  per:[" periods in the CPDD overview"," 课时（CPDD概览）"," waktu (gambaran CPDD)"," பாடவேளைகள் (CPDD கண்ணோட்டம்)"],
