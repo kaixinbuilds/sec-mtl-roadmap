@@ -436,3 +436,8 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - The HOD asked to merge the overlap between E21CC to DSO and Curriculum maps. The term-by-term grid now lives only on Curriculum maps; the E21CC to DSO page keeps the pathway, inquiry thread, 16-milestone chart, gaps, climb and caveats, with a button to the maps. This replaces the DSO year grid in the two entries above, and `DATA.design.dsoT` is gone.
 - `tools/tag_units.py` also writes `years[key].ext` in `maps_data.json`: units with no task under a milestone, as `k1` (printed in the guide, shown as CPDD guide) or `k3` (inquiry sketch only, shown as proposal). Terms use the same pacing as `alloc()`. Sec 1 G3 is the department's own map, so it takes `k3` only. On the E21CC lens, `k1` lines show and count; `k3` lines sit behind "Show inquiry sketch proposals" and never count.
 - The Curriculum maps tab now opens on the site's current language and course (`#e21/1/<course>/<lang>` in the iframe).
+
+## 18 Nov 2026 · E21CC lens: several courses in one grid
+
+- The HOD asked that picking several courses (G1, G2, G3, HMT) show their tasks together so levels of demand compare at a glance. `maps.html` now takes several courses in the hash (`#e21/1/G1+G2+G3+H/CL`); `st.cs` holds them, `st.c` is the first. Each cell stacks one block per course under its colour tag (`.lodg`), term headers list each course's units, the pop-up prefixes each task with its course, and the DSO count reads "across these courses". One course looks exactly as before.
+- On its own, `maps.html`'s course buttons are now multi-select (at least one stays on). In the SOW E21CC lens, `vSowE21` builds one iframe per language and year with all chosen courses, not one per course.
