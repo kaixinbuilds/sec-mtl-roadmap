@@ -486,3 +486,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - HOD decision: every ML and TL BVSS paper shows its full question wording, including Sec 1-3 EOY (Cluster West included), WA, worksheets and timed practice. `pubok()` in `tools/pbank.py` now holds back only SEAB past papers and other schools' material (`NOPUB`); the cluster rule (`CLUSTER`) still applies to CL only. Result: ML 76/76, TL 109/110 (the one left is a 2018 O-Level HTL question used in lesson slides).
 - A BVSS card with no full wording still opens and says why (`pt("nof")`), so no click is a dead end.
 - Clickable tiles light up and lift on hover/focus (navy border and shadow, 3px rise): Skills at a glance cards, unit cards, home cards, task buttons, unit chips, E21CC cells, and `button.cell` in maps (`tools/maps.css`). Open cards keep the navy border. Reduced-motion users get no lift.
+
+### 18 Nov 2026: translation terms (HOD)
+- Chinese: weighted assessment = 测验 (was 加权评估; NWA = 非加权测验); exam = 考试 (会考 now only in 小六会考 for PSLE; SEC会考 → SEC考试, 国家会考 → 全国考试). Applied to index.html, maps.html, tools/uimt/zh.json, uimt/zh.json, tools/uimt_maps/zh.json, tools/eoy2026.json.
+- Tamil: Skills at a glance used எடைமதிப்பீடு for WA; now மதிப்பெண் சார் மதிப்பீடு like the rest of the site. Fixed பருவம்கள் → பருவங்கள் (15). Exam key now names the noun (… அரையாண்டுத் தேர்வுகள்).
+- Malay: exam key no longer mixes English (akhir tahun, percubaan, pertengahan tahun).
+- NEEDS HOD / language teams: TL uses பருவம் for "term" throughout; check whether the TL team prefers தவணை. Malay "Pentaksiran Berwajaran" and "lembaran kerja" left as is for the ML team to confirm.
