@@ -452,3 +452,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 
 - On the Core skills lens only, the SOW grid has a sixth column, "End point", like the DSO column on the E21CC and Inquiry dashboards (`EPK`, `epCell`, `plannerBody`). Rows run into the paper that assesses them: skills and learning outcomes → Paper 2; functional writing and composition → Paper 1; oral and listening → Paper 3; units and themes → all three papers; assessment rows → the exam with its weights. Paper parts and weights come from `DATA.exam` (SEC 2027 syllabuses).
 - Sec 4 reads "SEC 2027 national exam (code)"; Sec 1 to 3 read "EOY exam · parts as in the SEC 2027 format", and Paper 3 says oral is the Term 2 school oral and listening is in the EOY. NEEDS HOD: confirm Sec 1 to 3 EOY papers follow the SEC parts.
+
+## 18 Nov 2026 · End point shows the 2026 Sec 1–3 EOY items
+
+- New `tools/eoy2026.json` (embedded as `DATA.eoy26` by `enrich.py`): item types and marks for Sec 1–3, by `lang|course|sec`, taken from the HOD's `20261119 MTL S1-4 EOY Item Progression.xlsx` (OneDrive › BVSS MTL › 2026 › Meetings & Reviews › 20261119 MTL Dept Meeting), a draft pre-read. CL comes from the CL Test Item Progression references (20 and 22 Jul 2026), ML from the 2026 EOY TOS sheets and mark templates, TL from the 2026 EOY papers. No questions, item types only (the site is public).
+- `epCell`: Sec 1–3 Paper blocks list these items with "2026 Sec n EOY as set", the CL reference's own SEAB-alignment note, and the source. Sec 4 keeps the SEC 2027 parts. Where 2026 detail is missing (CL and TL Paper 3, ML HML Sec 2) the block says so and shows the SEC parts. Sec 1–3 omit paper weights; the assessment block labels its weights as SEC 2027.
+- NEEDS HOD: the ML and TL rows are a draft for the 19 Nov meeting (CHECK items: ML word counts, 2G3 weights, TL 1G3 essay word count). Update `eoy2026.json` after the meeting.
