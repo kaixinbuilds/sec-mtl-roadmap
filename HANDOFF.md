@@ -471,3 +471,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - `index.html` card(): BVSS items now take `gist_en`/`gist_m` like CPDD items; the legend `bvd` says "with a one-line summary of each question".
 - Later the same day (HOD): clicking a BVSS card shows the full question wording where BVSS set the paper (`pubok()` in `pbank.py`: not cluster papers, SEAB past papers or other schools' material; all ML and TL Sec 1-3 EOY papers count as cluster papers, per the saving tracker). Result: full wording for 113 CL, 39 ML and 54 TL tasks; the rest keep the summary only. Every WA card also shows `pt("wan")`: 2027 WA papers will not reuse past-year questions; all will be newly set.
 - Chinese for "worksheet" is 活动纸, not 工作纸 (HOD, 18 Nov 2026). Also fixed the Skills page "how to read" point that still said our tasks were listed by type only (en/zh/ms/ta in `enrich.py`).
+
+## 18 Nov 2026 · Skills at a glance by term, with a year count
+
+- `vPB` grid is now terms down the left (Term 1–4, then "Term not known" only if needed) × Sec 1–4. `pbTerm()`: BVSS items by WA number, "Term n" in `when`, date (2026 term dates), else EOY→T4, MYE→T2, Prelim→T3, else a unit named in `when`; CPDD items by their unit through `alloc()` (the same unit-to-term plan as the SOW page). Within a cell, `pbOrd()` sorts by date, then unit order. Blueprints sit in T4 (EOY) or T3 (Prelim).
+- BVSS source tags are coloured by kind (`pbBK`): exam (EOY/Prelim/MYE) gold, WA green, worksheets and timed practice grey. Legend line added.
+- Each Sec header shows "In the year: n functional writing · n compositions" (G1: written replies) from `pbYear()`: one per paper section for WA, EOY, Prelim, MYE and timed practice (students attempt 1 of the questions offered), each worksheet and CPDD task once. Note under the grid says worksheets from different classes are all counted, so it is an upper bound.
