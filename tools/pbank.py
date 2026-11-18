@@ -336,12 +336,39 @@ def main():
     names = {t["k"]: t["en"] for v in TASKS.values() for ts in v.values() for t in ts}
     gist = json.loads((R / "pbank_gist.json").read_text(encoding="utf-8"))  # short summaries in each language (HOD, 17 Nov 2026)
     byen = {L: {x["gist_en"]: hashlib.md5((x["task"] or x["gist_en"]).encode()).hexdigest()[:10] for f in ("p1", "g1") if (SRC / f"{f}_{L}.json").exists() for x in json.loads((SRC / f"{f}_{L}.json").read_text(encoding="utf-8")) if x.get("gist_en")} for L in ("CL", "ML", "TL")}  # fallback when an item's wording was already cleared
+    # HOD, 18 Nov 2026: CL teachers often adapt a CPDD textbook task into a worksheet. Pair them (same course, year and
+    # paper part; character-bigram overlap of the full wording >= 0.45, checked by hand on 18 Nov), show the CPDD task
+    # inside the BVSS card and hide its own card, so the year count does not count the same piece of writing twice.
+    def grams(t):
+        t = re.sub(r"[\s，。、：；！？“”‘’（）()《》\[\]【】0-9a-zA-Z…—.,:;!?/-]", "", t or "")
+        return {t[i:i + 2] for i in range(len(t) - 1)}
+    for k, v in banks.items():
+        b = v.get("CL")
+        if not b:
+            continue
+        cp = [x for x in b["items"] if x["source"] != "BVSS 2026" and x["kind"] != "blueprint"]
+        for y in b["items"]:
+            if y["source"] != "BVSS 2026" or y["kind"] == "blueprint":
+                continue
+            gy, best = grams(y["task"]), None
+            for x in cp:
+                gx = grams(x["task"])
+                if x["sec"] == y["sec"] and gx and gy:
+                    j = len(gx & gy) / min(len(gx), len(gy))
+                    if j >= 0.45 and (not best or j > best[0]):
+                        best = (j, x)
+            if best:
+                x = best[1]
+                x["adapted"] = True
+                y["from"] = {"source": x["source"], "when": x["when"], "gist_en": x["gist_en"], "key": hashlib.md5((x["task"] or x["gist_en"]).encode()).hexdigest()[:10]}
     for k, v in banks.items():
         for L, b in v.items():
             its = []
             for x in b["items"]:
                 if x["kind"] != "blueprint":
                     x["gist_m"] = gist[L].get(hashlib.md5((x["task"] or x["gist_en"]).encode()).hexdigest()[:10], "") or gist[L].get(byen.get(L, {}).get(x["gist_en"], ""), "")
+                if x.get("from"):
+                    x["from"]["gist_m"] = gist[L].get(x["from"].pop("key"), "")
                 its.append(public(x, names[k.split("|")[2]]))
             b["items"] = one_blueprint(its)
     out = {"tasks": TASKS, "qtypes": QT, "banks": banks, "compare": CMP, "compareNote": CMPNOTE}

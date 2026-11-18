@@ -1607,6 +1607,7 @@
       "gist_en": "Email recommending sights and food",
       "ref": "p. 46-47",
       "ord": 3,
+      "adapted": true,
       "gist_m": "给法国朋友推荐景点和美食"
      },
      {
@@ -1849,6 +1850,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "1上 U3",
+       "gist_en": "Email recommending sights and food",
+       "gist_m": "给法国朋友推荐景点和美食"
+      },
       "gist_m": "回复电邮：一日游推荐两个景点和两种本地美食"
      },
      {
@@ -2959,6 +2966,7 @@
       "gist_en": "Recount a New Year quarrel with Dad",
       "ref": "p. 30",
       "ord": 2,
+      "adapted": true,
       "gist_m": "过年与爸爸闹得不愉快"
      },
      {
@@ -2987,6 +2995,7 @@
       "gist_en": "Recount a trip to Future City",
       "ref": "p. 35-36",
       "ord": 55,
+      "adapted": true,
       "gist_m": "搭时光机游览未来市"
      },
      {
@@ -3001,6 +3010,7 @@
       "gist_en": "Persuading Dad to allow camping",
       "ref": "p. 15-16",
       "ord": 1,
+      "adapted": true,
       "gist_m": "说服爸爸让我去露营"
      },
      {
@@ -3298,6 +3308,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "1上 U2",
+       "gist_en": "Recount a New Year quarrel with Dad",
+       "gist_m": "过年与爸爸闹得不愉快"
+      },
       "gist_m": "记叙文：与爸爸因过年习俗起冲突，妈妈帮忙化解"
      },
      {
@@ -3336,6 +3352,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "1下 U5",
+       "gist_en": "Recount a trip to Future City",
+       "gist_m": "搭时光机游览未来市"
+      },
       "gist_m": "记叙文：乘时光机到未来城市"
      },
      {
@@ -3393,6 +3415,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "2上 U1",
+       "gist_en": "Persuading Dad to allow camping",
+       "gist_m": "说服爸爸让我去露营"
+      },
       "gist_m": "记叙文（人物描写）：说服爸爸让你去露营"
      },
      {
@@ -4674,6 +4702,7 @@
       "gist_en": "Email recommending sights and food",
       "ref": "p. 65-66",
       "ord": 3,
+      "adapted": true,
       "gist_m": "给法国朋友推荐景点和美食"
      },
      {
@@ -4911,6 +4940,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "1A U3",
+       "gist_en": "Email recommending sights and food",
+       "gist_m": "给法国朋友推荐景点和美食"
+      },
       "gist_m": "回复电邮：半日游推荐两个景点和两种美食"
      },
      {
@@ -6059,6 +6094,7 @@
       "gist_en": "Recount making a new friend",
       "ref": "p. 18-19",
       "ord": 1,
+      "adapted": true,
       "gist_m": "升上中学后结识新朋友"
      },
      {
@@ -6073,6 +6109,7 @@
       "gist_en": "Recount preparing Mum's birthday gift",
       "ref": "p. 42-43",
       "ord": 2,
+      "adapted": true,
       "gist_m": "悄悄为妈妈准备生日礼物"
      },
      {
@@ -6143,6 +6180,7 @@
       "gist_en": "Recount overcoming feeling inferior",
       "ref": "p. 19",
       "ord": 54,
+      "adapted": true,
       "gist_m": "改变觉得自己不如人的看法"
      },
      {
@@ -6398,6 +6436,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "1A U1",
+       "gist_en": "Recount making a new friend",
+       "gist_m": "升上中学后结识新朋友"
+      },
       "gist_m": "记叙文（人物描写）：在中学交到好朋友"
      },
      {
@@ -6417,6 +6461,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "1A U2",
+       "gist_en": "Recount preparing Mum's birthday gift",
+       "gist_m": "悄悄为妈妈准备生日礼物"
+      },
       "gist_m": "记叙文：偷偷为妈妈准备生日礼物（中心思想与线索）"
      },
      {
@@ -6493,6 +6543,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "2B U4",
+       "gist_en": "Recount overcoming feeling inferior",
+       "gist_m": "改变觉得自己不如人的看法"
+      },
       "gist_m": "记叙文（含感悟）：曾经自卑，后来改变了想法"
      },
      {
@@ -7755,6 +7811,7 @@
       "gist_en": "Email recommending sights and food",
       "ref": "p. 81-82",
       "ord": 3,
+      "adapted": true,
       "gist_m": "给法国朋友推荐景点和美食"
      },
      {
@@ -7992,6 +8049,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "1A U3",
+       "gist_en": "Email recommending sights and food",
+       "gist_m": "给法国朋友推荐景点和美食"
+      },
       "gist_m": "回复电邮：推荐一个景点和一种美食"
      },
      {
@@ -8921,6 +8984,7 @@
       "gist_en": "Recount breaking a bad habit",
       "ref": "p. 19-20",
       "ord": 54,
+      "adapted": true,
       "gist_m": "华明决心改掉坏习惯"
      },
      {
@@ -9218,6 +9282,12 @@
       "notes": "",
       "ord": 0,
       "pub": true,
+      "from": {
+       "source": "CPDD textbook",
+       "when": "1B U4",
+       "gist_en": "Recount breaking a bad habit",
+       "gist_m": "华明决心改掉坏习惯"
+      },
       "gist_m": "记叙文（第三人称）：华明决心改掉坏习惯"
      },
      {
