@@ -475,12 +475,20 @@
   {
    "t": "NWA",
    "f": "Non-weighted assessment",
-   "g": "Exams and assessment"
+   "g": "Exams and assessment",
+   "n": "Sec 4 practice papers in SEC format; they do not count towards the year result."
   },
   {
    "t": "EOY",
-   "f": "End-of-year",
-   "g": "Exams and assessment"
+   "f": "End-of-year examination",
+   "g": "Exams and assessment",
+   "n": "Sec 1 to 3, Term 4."
+  },
+  {
+   "t": "Prelim",
+   "f": "Preliminary examination",
+   "g": "Exams and assessment",
+   "n": "Sec 4 school examination before the SEC national papers."
   },
   {
    "t": "P1, P2, P3",

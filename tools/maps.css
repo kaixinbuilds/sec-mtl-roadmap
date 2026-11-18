@@ -5,7 +5,7 @@ main{max-width:1240px;margin:0 auto;padding:20px 20px 16px}
 h1{font:700 34px/1.1 "Barlow Condensed","Arial Narrow",Arial,sans-serif;text-transform:uppercase;color:var(--navy);margin:3px 0 6px}.rule{width:60px;height:4px;background:var(--gold);margin-bottom:9px}
 .sub{color:var(--mut);margin:0 0 10px;font-size:14px}.wrap{overflow-x:auto}
 .tabs{display:flex;gap:4px;margin:0 0 10px;flex-wrap:wrap}.tabs button{font:700 13px Archivo,Arial,sans-serif;padding:7px 16px;border:1px solid var(--navy);background:#fff;color:var(--navy);border-radius:4px;cursor:pointer;min-height:32px}.tabs button[aria-pressed=true]{background:var(--navy);color:#fff}.tabs button:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
-table{border-collapse:separate;border-spacing:3px;width:100%;min-width:1000px;table-layout:fixed}
+table{border-collapse:separate;border-spacing:3px;width:100%;min-width:720px;table-layout:fixed}
 th{background:var(--navy);color:#fff;font-size:13px;text-align:left;vertical-align:top;padding:6px 8px;font-weight:700;border-radius:3px}th small{display:block;font-weight:400;font-size:11px;line-height:1.3;margin-top:2px}
 .m{width:24%}.i{width:18%}.o{width:14%}td{vertical-align:middle;padding:0}
 .cell{display:flex;flex-direction:column;justify-content:center;width:100%;min-height:40px;height:100%;border:0;border-radius:4px;font:inherit;font-size:12.5px;line-height:1.3;color:var(--ink);padding:4px 7px;text-align:left}
@@ -33,3 +33,5 @@ td.nm{padding:3px 8px;color:var(--mut);font-size:12px;background:var(--none);bor
 button.cell{transition:transform .16s ease,box-shadow .16s ease}
 button.cell:hover,button.cell:focus-visible{box-shadow:inset 0 0 0 2px var(--ink),0 8px 18px -10px rgba(19,5,123,.5);transform:translateY(-2px);position:relative;z-index:1}
 @media (prefers-reduced-motion:reduce){button.cell{transition:none}button.cell:hover{transform:none}}
+/* long words (e.g. "Changemakers") wrap instead of pushing the table wider */
+th,td{overflow-wrap:break-word;hyphens:auto}
