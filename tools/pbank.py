@@ -146,6 +146,19 @@ def short(f):
     return re.sub(r"\.(pdf|docx|pptx|md|png|jpg)(\.md)?$", "", n)
 
 
+# HOD, 18 Nov 2026: the full wording of BVSS-set questions may be shown. Cluster papers (set with other schools: ML W4,
+# TL Cluster West), SEAB past-paper questions and other schools' material keep the summary only. The saving tracker lists
+# cluster papers for ML at every Sec 1-3 EOY level and for most TL levels, so all ML and TL Sec 1-3 EOY papers are treated
+# as cluster papers.
+NOPUB = re.compile(r"cluster|\bCW\b|_CW_|\bW4\b|Hillgrove|O-Level|SEAB|national paper", re.I)
+
+
+def pubok(L, x):
+    if NOPUB.search(" ".join(str(x.get(k) or "") for k in ("source", "file", "notes", "gist_en"))):
+        return False
+    return not (L in ("ML", "TL") and (x.get("source") or "").startswith("BVSS 2026 EOY"))
+
+
 def g1_items(L):
     f = SRC / f"g1_{L}.json"
     if not f.exists():
@@ -163,7 +176,7 @@ def g1_items(L):
                    "what": re.sub(r"^BVSS 2026\s*", "", x["source"]) if bv else "", "when": x.get("when") or "",
                    "task": (x.get("task") or "")[:420], "gist_en": x.get("gist_en", ""), "length": x.get("length") or "",
                    "ref": (short(x.get("file")) + (f", p. {x['page']}" if x.get("page") else "")) if not bv else "",
-                   "notes": "" if bv else (x.get("notes") or "")[:240], "ord": 0})
+                   "notes": "" if bv else (x.get("notes") or "")[:240], "ord": 0, "pub": bv and pubok(L, x)})
     return xs, outs
 
 
@@ -221,7 +234,7 @@ def p1_items(L, c, part):
                    "q": qq[0] if qq else (m.group(1) if m else ""), "qt": qq[1] if qq else (m.group(2) if m else qt), "qen": qq[2] if qq else ((m.group(3) or "") if m else ""),
                    "source": "BVSS 2026" if bv else x.get("source", ""), "what": re.sub(r"^BVSS 2026\s*", "", x.get("source", "")) if bv else "",
                    "when": x.get("when") or "", "legacy": x.get("legacy") or "", "task": (x.get("task") or "")[:420], "gist_en": x.get("gist_en", ""),
-                   "length": x.get("length") or "", "ref": "" if bv else short(x.get("file")), "notes": "" if bv else (x.get("notes") or "")[:240], "ord": 0})
+                   "length": x.get("length") or "", "ref": "" if bv else short(x.get("file")), "notes": "" if bv else (x.get("notes") or "")[:240], "ord": 0, "pub": bv and pubok(L, x)})
     return xs
 
 # ---- Compare 3 languages (HOD, 17 Nov 2026): from the SEC 2027 formats in DATA.exam (SEAB syllabuses K120-K357) ----
@@ -278,7 +291,7 @@ def public(x, task_en):
     # HOD, 18 Nov 2026: show what each question was about. The card keeps our one-line summary (gist_en, and gist_m in
     # the language from pbank_gist.json); the question wording itself still stays off the public site.
     ty = x.get("qen") or re.sub(r"^other:\s*", "", x.get("qt") or "") or task_en
-    return {**x, "task": "", "gist_en": x.get("gist_en") or ty, "notes": "", "ref": ""}
+    return {**x, "task": x["task"] if x.get("pub") else "", "gist_en": x.get("gist_en") or ty, "notes": "", "ref": ""}
 
 
 def one_blueprint(its):
@@ -308,7 +321,7 @@ def main():
         xs, outs = g1_items(L)
         banks.setdefault("G1|P1|post", {})[L] = {"items": xs, "outcomes": outs,
             "method": ["CPDD: the 2021 syllabus, the G1 textbooks and teacher guides, read for any written-interaction task (exam format or a nearby kind).",
-                       "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Files under a sensitivity label could not be opened and are not listed.",
+                       "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, each with a one-line summary; click a BVSS-set question for its full wording (cluster papers and SEAB questions show the summary only). WA questions will not be reused in 2027. Files under a sensitivity label could not be opened and are not listed.",
                        "Sec 4 in 2026 is the older Normal (Technical) course (4NT); its tasks are listed as the nearest model of the G1 exam."]}
         for c in ("G2", "G3", "H"):
             for part in ("fw", "comp"):
@@ -319,7 +332,7 @@ def main():
                 banks.setdefault(f"{c}|P1|{part}", {})[L] = {"items": its, "outcomes": [],
                     "method": ["CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
                                QNOTE[L],
-                               "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."]}
+                               "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary; click a BVSS-set question for its full wording (cluster papers and SEAB questions show the summary only). WA questions will not be reused in 2027. Sec 4 in 2026 is the older course (4NA, 4E, Higher)."]}
     names = {t["k"]: t["en"] for v in TASKS.values() for ts in v.values() for t in ts}
     gist = json.loads((R / "pbank_gist.json").read_text(encoding="utf-8"))  # short summaries in each language (HOD, 17 Nov 2026)
     byen = {L: {x["gist_en"]: hashlib.md5((x["task"] or x["gist_en"]).encode()).hexdigest()[:10] for f in ("p1", "g1") if (SRC / f"{f}_{L}.json").exists() for x in json.loads((SRC / f"{f}_{L}.json").read_text(encoding="utf-8")) if x.get("gist_en")} for L in ("CL", "ML", "TL")}  # fallback when an item's wording was already cleared
