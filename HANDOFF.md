@@ -447,3 +447,8 @@ The HOD found the first planning layer too much to digest. It was replaced:
 - The time constraints left the SOW grid. New Plan tab `#cons` "SOW considerations" (`vCons`) shows `SOW.constraints` once for all languages; the SOW grid keeps a one-line link to it. `consBand` stays in the code, unused.
 - The SOW Inquiry lens now uses the maps dashboard on the IBL lens (`vSowE21(..., "ibl")`): four phases in the middle, DSOs on the right, several courses in one grid. Department inquiry sketches and the "act" row stay in All rows. Row chips are hidden on this lens, as on E21CC.
 - `maps.html`: the DSO name in the right column shrinks on narrow frames (`clamp`).
+
+## 18 Nov 2026 · Core skills lens: exam papers as the end point
+
+- On the Core skills lens only, the SOW grid has a sixth column, "End point", like the DSO column on the E21CC and Inquiry dashboards (`EPK`, `epCell`, `plannerBody`). Rows run into the paper that assesses them: skills and learning outcomes → Paper 2; functional writing and composition → Paper 1; oral and listening → Paper 3; units and themes → all three papers; assessment rows → the exam with its weights. Paper parts and weights come from `DATA.exam` (SEC 2027 syllabuses).
+- Sec 4 reads "SEC 2027 national exam (code)"; Sec 1 to 3 read "EOY exam · parts as in the SEC 2027 format", and Paper 3 says oral is the Term 2 school oral and listening is in the EOY. NEEDS HOD: confirm Sec 1 to 3 EOY papers follow the SEC parts.
