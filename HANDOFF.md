@@ -463,3 +463,9 @@ The HOD found the first planning layer too much to digest. It was replaced:
 ## 18 Nov 2026 · Chinese for "Term" is 学段
 
 - HOD: Term = 学段; 学期 = semester. Every zh entry whose English says "term(s)" and not "semester" now uses 学段 (191 in `tools/uimt/zh.json`, 99 in `tools/uimt_maps/zh.json`), plus `UDX.term` and `UDX.r7` in `index.html`. The 12 entries that translate "semester" keep 学期. Rebuilt with `uimt_embed.py`, `enrich.py`, `build_maps.py`. Use 学段 for any new Term string.
+
+## 18 Nov 2026 · Skills at a glance: BVSS 2026 cards show what each question asked
+
+- HOD reversed part of the 17 Nov rule: our 2026 school tasks now show a one-line summary of the question on the card (title line), in English and in CL/ML/TL. The question wording itself still stays off the site (`public()` blanks `task`, `notes`, `ref`).
+- Summaries: `gist_en` from `tools/pbank_src` (still gitignored; copied from the Mac on 18 Nov). CL, ML and TL versions written into `tools/pbank_gist.json` (306 entries, keyed like the CPDD ones); **to be checked by the language teams**, like the rest of the MT text. `pbank.py` also falls back to a lookup by `gist_en` when an item's wording was already cleared.
+- `index.html` card(): BVSS items now take `gist_en`/`gist_m` like CPDD items; the legend `bvd` says "with a one-line summary of each question".

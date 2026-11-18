@@ -275,8 +275,10 @@ def public(x, task_en):
     give the paper's shape (e.g. functional writing, choose 1 of 2) and no question wording."""
     if x["source"] != "BVSS 2026" or x["kind"] == "blueprint":
         return x
+    # HOD, 18 Nov 2026: show what each question was about. The card keeps our one-line summary (gist_en, and gist_m in
+    # the language from pbank_gist.json); the question wording itself still stays off the public site.
     ty = x.get("qen") or re.sub(r"^other:\s*", "", x.get("qt") or "") or task_en
-    return {**x, "task": "", "gist_en": ty, "notes": "", "ref": ""}
+    return {**x, "task": "", "gist_en": x.get("gist_en") or ty, "notes": "", "ref": ""}
 
 
 def one_blueprint(its):
@@ -306,7 +308,7 @@ def main():
         xs, outs = g1_items(L)
         banks.setdefault("G1|P1|post", {})[L] = {"items": xs, "outcomes": outs,
             "method": ["CPDD: the 2021 syllabus, the G1 textbooks and teacher guides, read for any written-interaction task (exam format or a nearby kind).",
-                       "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, shown by question type only (our question wording stays off the public site). Files under a sensitivity label could not be opened and are not listed.",
+                       "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Files under a sensitivity label could not be opened and are not listed.",
                        "Sec 4 in 2026 is the older Normal (Technical) course (4NT); its tasks are listed as the nearest model of the G1 exam."]}
         for c in ("G2", "G3", "H"):
             for part in ("fw", "comp"):
@@ -317,15 +319,16 @@ def main():
                 banks.setdefault(f"{c}|P1|{part}", {})[L] = {"items": its, "outcomes": [],
                     "method": ["CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
                                QNOTE[L],
-                               "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."]}
+                               "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."]}
     names = {t["k"]: t["en"] for v in TASKS.values() for ts in v.values() for t in ts}
     gist = json.loads((R / "pbank_gist.json").read_text(encoding="utf-8"))  # short summaries in each language (HOD, 17 Nov 2026)
+    byen = {L: {x["gist_en"]: hashlib.md5((x["task"] or x["gist_en"]).encode()).hexdigest()[:10] for f in ("p1", "g1") if (SRC / f"{f}_{L}.json").exists() for x in json.loads((SRC / f"{f}_{L}.json").read_text(encoding="utf-8")) if x.get("gist_en")} for L in ("CL", "ML", "TL")}  # fallback when an item's wording was already cleared
     for k, v in banks.items():
         for L, b in v.items():
             its = []
             for x in b["items"]:
-                if x["source"] != "BVSS 2026":
-                    x["gist_m"] = gist[L].get(hashlib.md5((x["task"] or x["gist_en"]).encode()).hexdigest()[:10], "")
+                if x["kind"] != "blueprint":
+                    x["gist_m"] = gist[L].get(hashlib.md5((x["task"] or x["gist_en"]).encode()).hexdigest()[:10], "") or gist[L].get(byen.get(L, {}).get(x["gist_en"], ""), "")
                 its.append(public(x, names[k.split("|")[2]]))
             b["items"] = one_blueprint(its)
     out = {"tasks": TASKS, "qtypes": QT, "banks": banks, "compare": CMP, "compareNote": CMPNOTE}

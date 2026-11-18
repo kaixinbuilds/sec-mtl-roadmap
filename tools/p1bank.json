@@ -556,11 +556,12 @@
       "what": "posting model answer",
       "when": "2026 Sec 1 (date in filename 20 Apr 2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Model answer (with hanyu pinyin over every character) for a 1G1 'posting' task on how the school celebrates Teachers' Day.",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "范文（每字注汉语拼音）：1G1 贴文，学校如何庆祝教师节"
      },
      {
       "sec": 4,
@@ -572,11 +573,12 @@
       "what": "practice paper",
       "when": "2026 4NT P1 TP Practice 1 (10 Apr 2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Practice: reply to a post on disrespectful peer behaviour (why, and how to improve).",
       "length": "字数在75以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "练习：回应同学不礼貌行为的贴文（原因及如何改善）"
      },
      {
       "sec": 4,
@@ -588,11 +590,12 @@
       "what": "WA2 (TP) scope",
       "when": "2026 4NT WA2/TP 24 Apr 2026 (T2W5)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Scope sheet: 4NT WA2 Paper 1 is 'Reply to a post'.",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "范围说明：4NT WA2 试卷一为“回应贴文”"
      },
      {
       "sec": 4,
@@ -604,11 +607,12 @@
       "what": "WA2/TP paper image",
       "when": "2026 4NT TP (E-exam) Picture 1",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a post about poor canteen manners (queue-cutting, not clearing trays, food waste).",
       "length": "字数在75以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回应贴文：食堂里插队、不收餐盘、浪费食物"
      },
      {
       "sec": 4,
@@ -620,11 +624,12 @@
       "what": "Prelim paper image",
       "when": "2026 4NT Prelim P1",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Prelim: reply to a post about a Future Education & Career Fair (share your school's activities and views).",
       "length": "字数在75以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "预考：回应未来教育与职业展的贴文（分享学校活动和看法）"
      },
      {
       "sec": 1,
@@ -735,7 +740,7 @@
     ],
     "method": [
      "CPDD: the 2021 syllabus, the G1 textbooks and teacher guides, read for any written-interaction task (exam format or a nearby kind).",
-     "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, shown by question type only (our question wording stays off the public site). Files under a sensitivity label could not be opened and are not listed.",
+     "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Files under a sensitivity label could not be opened and are not listed.",
      "Sec 4 in 2026 is the older Normal (Technical) course (4NT); its tasks are listed as the nearest model of the G1 exam."
     ]
    },
@@ -1023,11 +1028,12 @@
       "what": "WA2 1G1 (K121/1)",
       "when": "Term 2 WA2 (12 May 2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a friend's post about a new laptop: what you use yours for and how you feel.",
       "length": "not less than 60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: kegunaan komputer riba baharu kamu dan perasaan kamu"
      },
      {
       "sec": 1,
@@ -1039,11 +1045,12 @@
       "what": "EOY 1G1 Paper 1 (K121/1)",
       "when": "Term 4 EOY P1 (30 Sep 2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a post about a family potluck: your feelings and how eating together strengthens bonds.",
       "length": "not less than 60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: makan potluck keluarga dan cara makan bersama mengeratkan hubungan"
      },
      {
       "sec": 2,
@@ -1055,11 +1062,12 @@
       "what": "WA1 2G1 Paper 1",
       "when": "Term 1 WA1 P1 (13 Feb 2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a friend's post sharing your recess-time experience, with ASiBiDiBa, feelings and the five senses.",
       "length": "not less than 60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: pengalaman waktu rehat (ASiBiDiBa, perasaan, pancaindera)"
      },
      {
       "sec": 2,
@@ -1071,11 +1079,12 @@
       "what": "EOY 2G1 Paper 1 (K121/1)",
       "when": "Term 4 EOY P1 (2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a post about a school National Day celebration: how your school celebrated and how you felt.",
       "length": "not less than 60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: sambutan Hari Kebangsaan di sekolah kamu"
      },
      {
       "sec": 3,
@@ -1087,11 +1096,12 @@
       "what": "WA2 3G1 (K121/1)",
       "when": "Term 2 WA2 (20 Apr 2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a post asking for suggestions for a Hari Raya concert item (dikir barat, Malay dance).",
       "length": "not less than 60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: cadangan persembahan konsert Hari Raya (dikir barat, tarian Melayu)"
      },
      {
       "sec": 3,
@@ -1103,11 +1113,12 @@
       "what": "EOY 3G1 Paper 1 (K121/1)",
       "when": "Term 4 EOY P1 (2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a post about preparing for the OBS camp: your school's preparations and your feelings.",
       "length": "not less than 60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: persediaan sekolah untuk perkhemahan OBS dan perasaan kamu"
      },
      {
       "sec": 4,
@@ -1119,11 +1130,12 @@
       "what": "Prelim 4NT Paper 1 (1203/1)",
       "when": "Term 3 Prelim P1 (29 Jul 2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a post on mental-health habits: what exercise you do and how you spend time with friends and family.",
       "length": "not less than 60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: tabiat kesihatan mental, senaman dan masa bersama rakan dan keluarga"
      },
      {
       "sec": 4,
@@ -1135,11 +1147,12 @@
       "what": "Timed Practice 4NT Paper 1",
       "when": "Timed Practice P1 (SLS, printed 27 Oct 2026)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Timed practice: reply to an online post as Adli Mansor (post text not readable).",
       "length": "not less than 60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Latihan bermasa: respons hantaran dalam talian sebagai Adli Mansor (teks hantaran tidak terbaca)"
      }
     ],
     "outcomes": [
@@ -1161,7 +1174,7 @@
     ],
     "method": [
      "CPDD: the 2021 syllabus, the G1 textbooks and teacher guides, read for any written-interaction task (exam format or a nearby kind).",
-     "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, shown by question type only (our question wording stays off the public site). Files under a sensitivity label could not be opened and are not listed.",
+     "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Files under a sensitivity label could not be opened and are not listed.",
      "Sec 4 in 2026 is the older Normal (Technical) course (4NT); its tasks are listed as the nearest model of the G1 exam."
     ]
    },
@@ -1364,11 +1377,12 @@
       "what": "WA2 Paper 1",
       "when": "Term 2 WA2 (12 May 2026), Paper 1",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a social-media post about the Tamil Language Festival: which activities you joined and how you felt.",
       "length": "at least 30 words; 10 marks (content 5, language 5)",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சமூக ஊடகப் பதிவுக்குப் பதில்: தமிழ்மொழி விழாவில் கலந்துகொண்ட நடவடிக்கைகளும் உணர்வுகளும்"
      },
      {
       "sec": 1,
@@ -1380,11 +1394,12 @@
       "what": "EOY Paper 1",
       "when": "EOY 2026, Paper 1 (SLS e-paper)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Typed reply to a social-media post about school National Day celebrations: what you did and your experience.",
       "length": "at least 30 words; 10 marks",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சமூக ஊடகப் பதிவுக்குப் பதில்: பள்ளியின் தேசிய தினக் கொண்டாட்டத்தில் செய்தவையும் அனுபவமும்"
      },
      {
       "sec": 1,
@@ -1396,11 +1411,12 @@
       "what": "P1 answer key",
       "when": "unknown (answer key only)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Model reply (about 55 words) about a school sports day, apparently for a 1G1 Paper 1 post task.",
       "length": "model about 55 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "மாதிரிப் பதில் (சுமார் 55 சொற்கள்): பள்ளி விளையாட்டு தினம் (1G1 தாள் 1)"
      },
      {
       "sec": 2,
@@ -1412,11 +1428,12 @@
       "what": "WA1 Paper 1",
       "when": "Term 1 WA1 (13 Feb 2026), Paper 1",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a post about the first day of school: how your first day went and how you felt.",
       "length": "at least 40 words; 10 marks",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "பதிவுக்குப் பதில்: பள்ளியின் முதல் நாள் அனுபவமும் உணர்வுகளும்"
      },
      {
       "sec": 2,
@@ -1428,11 +1445,12 @@
       "what": "EOY Paper 1 (Cluster West)",
       "when": "EOY 2026 (28 Sep 2026), Paper 1 – Cluster West e-paper",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Typed reply to a post about CCA (NPCC): which CCA you are in and what you learn.",
       "length": "at least 40 words; 10 marks",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "பதிவுக்குப் பதில்: இணைப்பாட நடவடிக்கை (தேசிய போலீஸ் மாணவர் படை) பற்றியும் கற்றவை பற்றியும்"
      },
      {
       "sec": 3,
@@ -1444,11 +1462,12 @@
       "what": "WA2 Paper 1",
       "when": "Term 2 WA2 (20 Apr 2026), Paper 1 (நடைமுறை சார்ந்த எழுத்துப் படைப்பு)",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Reply to a post about International Friendship Day at school: which activity you joined and how you felt.",
       "length": "at least 50 words; 10 marks",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "பதிவுக்குப் பதில்: பள்ளியின் அனைத்துலக நட்பு தினத்தில் கலந்துகொண்ட நடவடிக்கையும் உணர்வுகளும்"
      },
      {
       "sec": 3,
@@ -1460,11 +1479,12 @@
       "what": "EOY Paper 1",
       "when": "EOY 2026 (28 Sep 2026), Paper 1 – SLS e-paper",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Typed reply to a post about volunteering at a community-centre Pongal event: what you did and your experience.",
       "length": "at least 50 words; 10 marks; recommended 30 min",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "பதிவுக்குப் பதில்: சமூக மன்றப் பொங்கல் நிகழ்ச்சியில் தொண்டூழியம் செய்த அனுபவம்"
      },
      {
       "sec": 4,
@@ -1476,11 +1496,12 @@
       "what": "TP Paper 1",
       "when": "Sec 4 NT Trial/Prelim (24 Apr 2026), Paper 1 – SLS e-paper",
       "task": "",
-      "gist_en": "Respond to an online post",
+      "gist_en": "Typed reply to a social-media post (topic unknown).",
       "length": "at least 50 words; 10 marks; 30 min",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சமூக ஊடகப் பதிவுக்குப் பதில் (தலைப்பு தெரியவில்லை)"
      }
     ],
     "outcomes": [
@@ -1502,7 +1523,7 @@
     ],
     "method": [
      "CPDD: the 2021 syllabus, the G1 textbooks and teacher guides, read for any written-interaction task (exam format or a nearby kind).",
-     "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, shown by question type only (our question wording stays off the public site). Files under a sensitivity label could not be opened and are not listed.",
+     "BVSS 2026: WA, EOY and Prelim Paper 1 and practice papers in the 7 Nov 2026 copy of the department folder, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Files under a sensitivity label could not be opened and are not listed.",
      "Sec 4 in 2026 is the older Normal (Technical) course (4NT); its tasks are listed as the nearest model of the G1 exam."
     ]
    }
@@ -1659,11 +1680,12 @@
       "when": "Term 2 WA2 (12 May 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply to a friend: how your school celebrated CNY and other CNY customs",
       "length": "100字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复朋友：学校如何庆祝农历新年及其他习俗"
      },
      {
       "sec": 1,
@@ -1676,11 +1698,12 @@
       "when": "Term 2 WA2 (12 May 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: how you worked with group-mates; recommend two attractions",
       "length": "100字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：如何与组员合作，推荐两个景点"
      },
      {
       "sec": 1,
@@ -1693,11 +1716,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: share what you did at a school volunteering activity and what you learnt",
       "length": "100字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：分享参加学校义工活动的经历与收获"
      },
      {
       "sec": 1,
@@ -1710,11 +1734,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: how you built an exercise habit and how life changed",
       "length": "100字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：如何养成运动习惯及生活的改变"
      },
      {
       "sec": 1,
@@ -1727,11 +1752,12 @@
       "when": "Term 1 worksheet (email dated 28 Jan 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: activities and feelings at your secondary-school orientation",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：中学迎新活动的经历与感受"
      },
      {
       "sec": 1,
@@ -1744,11 +1770,12 @@
       "when": "Term 2 worksheet (email dated 15 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: recommend two attractions and two local foods for a one-day visit",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：一日游推荐两个景点和两种本地美食"
      },
      {
       "sec": 1,
@@ -1761,11 +1788,12 @@
       "when": "Term 3 worksheet (email dated 20 Aug 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: what school cleaners do and how to thank them",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：学校清洁工友的工作及如何感谢他们"
      },
      {
       "sec": 2,
@@ -1778,11 +1806,12 @@
       "when": "Term 1 WA1 (16 Feb 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: views and advice on being bullied by a group-mate",
       "length": "100字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对被组员欺负的看法和建议"
      },
      {
       "sec": 2,
@@ -1795,11 +1824,12 @@
       "when": "Term 1 WA1 (16 Feb 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: views on classmates' lack of sleep and how to improve it",
       "length": "100字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对同学睡眠不足的看法及改善方法"
      },
      {
       "sec": 2,
@@ -1812,11 +1842,12 @@
       "when": "Term 2 WA2 (collaborative project)",
       "legacy": "",
       "task": "",
-      "gist_en": "新闻报道",
+      "gist_en": "Group project: interview someone linked to BVSS and write a news report (plus video and reflection)",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "小组专题：采访与百德中学有关的人，写新闻报道（附视频和反思）"
      },
      {
       "sec": 2,
@@ -1829,11 +1860,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: views on misuse of class recycling bins and how to encourage proper use",
       "length": "100字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对误用班级回收箱的看法及如何鼓励正确使用"
      },
      {
       "sec": 2,
@@ -1846,11 +1878,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: views on children vandalising a playground and how to persuade them",
       "length": "100字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对孩子破坏游乐场的看法及如何劝导"
      },
      {
       "sec": 2,
@@ -1863,11 +1896,12 @@
       "when": "Term 1 worksheet (email dated 30 Jan 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: views on Dad scolding you and how to reconcile",
       "length": "至少120字",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对爸爸责骂的看法及如何和好"
      },
      {
       "sec": 3,
@@ -1880,11 +1914,12 @@
       "when": "Term 2 WA2 (20 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "WA2 on informal email (sharing experience / giving advice); question paper not found",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "WA2 私人电邮（分享经验／提供建议）；未找到试卷"
      },
      {
       "sec": 3,
@@ -1897,11 +1932,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: was I right to tell a friend's parents about his gaming, and how to save the friendship",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：告诉朋友父母他沉迷游戏是否对，如何挽回友谊"
      },
      {
       "sec": 3,
@@ -1914,11 +1950,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to town council manager: dog owners not cleaning up; impact and suggestions",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给市镇会经理：狗主不清理狗粪的影响与建议"
      },
      {
       "sec": 3,
@@ -1931,11 +1968,12 @@
       "when": "Term 2 worksheet (email dated 16 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: quarrel with best friend over World Cup teams; whose fault, how to make up",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：和好友因世界杯球队吵架，谁对谁错，如何和好"
      },
      {
       "sec": 3,
@@ -1948,11 +1986,12 @@
       "when": "worksheet (unit 4, undated)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to principal: students posting inappropriate remarks online; suggest measures",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给校长：学生在网上发表不当言论，建议措施"
      },
      {
       "sec": 3,
@@ -1965,11 +2004,12 @@
       "when": "worksheet (公务电邮教学)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to principal: classmates drinking and spilling in class",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给校长：同学在课室喝饮料、打翻饮料"
      },
      {
       "sec": 4,
@@ -1982,11 +2022,12 @@
       "when": "Timed Practice (24 Apr 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: benefits of celebrating festivals with neighbours; tips for decorating the corridor",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：和邻居一起过节的好处及布置走廊的建议"
      },
      {
       "sec": 4,
@@ -1999,11 +2040,12 @@
       "when": "Timed Practice (24 Apr 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to town council: noisy new neighbour; impact and suggestions",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给市镇会：新邻居制造噪音的影响与建议"
      },
      {
       "sec": 4,
@@ -2016,11 +2058,12 @@
       "when": "Prelim (29 Jul 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: benefits of volunteering as a family and how to plan it",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：全家一起当义工的好处及如何安排"
      },
      {
       "sec": 4,
@@ -2033,11 +2076,12 @@
       "when": "Prelim (29 Jul 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to principal: canteen problems and renovation suggestions",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给校长：食堂的问题和翻新建议"
      },
      {
       "sec": 4,
@@ -2050,18 +2094,19 @@
       "when": "worksheet (4N 反映类公务电邮)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to RC chairman: misuse of HDB common spaces; suggestions",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给居委会主席：组屋公共空间被滥用，提出建议"
      }
     ],
     "outcomes": [],
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question types follow the BVSS CL Test Item Progression references (CL Whitespace, 20 and 22 July 2026). SEAB's own wording: a reply email or an email from given material, then 1 of 3 compositions (narrative, expository, argumentative; Higher CL adds speeches).",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "ML": {
@@ -2077,11 +2122,12 @@
       "when": "EOY (Sec 1 G2, K221/1 format)",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a social-media post about classmates who misbehave or give up under exam stress: what would you do and why.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: rakan sekelas berkelakuan buruk atau berputus asa kerana tekanan peperiksaan"
      },
      {
       "sec": 2,
@@ -2094,11 +2140,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a post about a best friend obsessed with social-media trends: how would you advise them and why.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: menasihati sahabat yang taksub dengan trend media sosial"
      },
      {
       "sec": 2,
@@ -2111,11 +2158,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to the principal suggesting post-exam life-skills workshops: example activities and benefits.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "E-mel rasmi kepada pengetua: mencadangkan bengkel kemahiran hidup selepas peperiksaan"
      },
      {
       "sec": 3,
@@ -2128,11 +2176,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a post: how to stop impulse online shopping, and the benefits of doing so.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: menghentikan tabiat membeli-belah dalam talian secara impulsif"
      },
      {
       "sec": 3,
@@ -2145,11 +2194,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to the Town Council praising cleaners and suggesting ways to raise residents' awareness of cleanliness.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "E-mel rasmi kepada Majlis Bandaran: memuji pekerja pembersihan dan mencadangkan cara meningkatkan kesedaran"
      },
      {
       "sec": 4,
@@ -2162,11 +2212,12 @@
       "when": "Prelim (4NA, 1197-style paper)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a post: parents oppose your wish to study Media & Communication; what would you do and why.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: ibu bapa menentang hasrat kamu belajar Media dan Komunikasi"
      },
      {
       "sec": 4,
@@ -2179,11 +2230,12 @@
       "when": "Prelim (4NA)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to the principal reporting rude behaviour by uniformed students at a mall, with measures.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "E-mel rasmi kepada pengetua: kelakuan biadab pelajar beruniform di pusat beli-belah"
      },
      {
       "sec": 4,
@@ -2196,11 +2248,12 @@
       "when": "Timed Practice (TP) 4NA",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a post: broke your phone, father says get a part-time job but N-levels are near; what would you do and why.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: telefon rosak, bapa suruh bekerja sambilan walaupun peperiksaan N hampir"
      },
      {
       "sec": 4,
@@ -2213,11 +2266,12 @@
       "when": "Timed Practice (TP) 4NA",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to the principal suggesting Mother Tongue Fortnight activities and their objectives.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "E-mel rasmi kepada pengetua: mencadangkan aktiviti Dwiminggu Bahasa Ibunda"
      },
      {
       "sec": 1,
@@ -2230,11 +2284,12 @@
       "when": "Term 2 WA2 (P1 Bahagian A only)",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a post: staying focused in class with a new school laptop and caring for it.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: fokus dalam kelas dengan komputer riba sekolah dan menjaganya"
      },
      {
       "sec": 3,
@@ -2247,11 +2302,12 @@
       "when": "Term 2 WA2 (P1 Bahagian A)",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a friend's message: two activities you did at the Sec 3 camp and tips to prepare.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Membalas mesej rakan: dua aktiviti perkhemahan Menengah 3 dan tip persediaan"
      },
      {
       "sec": 3,
@@ -2264,11 +2320,12 @@
       "when": "Term 2 WA2 (P1 Bahagian A)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal complaint email to the Town Council about teens disturbing residents at a playground, with measures.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "E-mel aduan kepada Majlis Bandaran: remaja mengganggu penduduk di taman permainan"
      },
      {
       "sec": 3,
@@ -2347,7 +2404,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 ML papers and answer schemes: G2 and G3 Q1 reply to a post (Respons tidak rasmi), Q2 formal email; Higher ML Q1 formal email, Q2 forum. Q3 to Q5 are essays, narrative or expository, in varying order (SEAB K221, K321, K356). Speech texts set in Higher ML papers are not one of the SEC essay types and show as Builds toward.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "TL": {
@@ -2363,11 +2420,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Kathiravan advising how to excel in all subjects and improve in CCA.",
       "length": "≥70 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் கதிரவனுக்குப் பதில்: எல்லாப் பாடங்களிலும் சிறக்கவும் இணைப்பாட நடவடிக்கையில் மேம்படவும் ஆலோசனை"
      },
      {
       "sec": 1,
@@ -2380,11 +2438,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "As Mala, email a friend overseas about favourite school facilities, how you use them and how they help learning.",
       "length": "≥70 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "வெளிநாட்டு நண்பருக்கு மின்னஞ்சல்: விருப்பமான பள்ளி வசதிகளும் அவை கற்றலுக்கு உதவும் விதமும்"
      },
      {
       "sec": 2,
@@ -2397,11 +2456,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Kala on what to note when organising a group walk/hike and the experience of hiking with friends.",
       "length": "≥80 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் கலாவுக்குப் பதில்: நடைப்பயணம் ஏற்பாடு செய்யும்போது கவனிக்க வேண்டியவையும் அனுபவமும்"
      },
      {
       "sec": 2,
@@ -2414,11 +2474,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As Ravi, email the principal on making classmates see why Mother Tongue matters and activities to raise interest.",
       "length": "≥80 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "தலைமையாசிரியருக்கு மின்னஞ்சல்: தாய்மொழியின் முக்கியத்துவத்தை உணர்த்தவும் ஆர்வம் வளர்க்கவும் நடவடிக்கைகள்"
      },
      {
       "sec": 3,
@@ -2431,11 +2492,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Vani on post-exam activities your school organised for Sec 3 and their benefits.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் வாணிக்குப் பதில்: தேர்வுக்குப் பின் உயர்நிலை மூன்றுக்குப் பள்ளி ஏற்பாடு செய்த நடவடிக்கைகள்"
      },
      {
       "sec": 3,
@@ -2448,11 +2510,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As Murali, email shop owner Mr Mani praising a salesperson's service and why good service matters.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கடை உரிமையாளருக்கு மின்னஞ்சல்: விற்பனையாளரின் சேவையைப் பாராட்டுதல்"
      },
      {
       "sec": 2,
@@ -2465,11 +2528,12 @@
       "when": "Term 1 WA1 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Sudha advising how to get her playful friend to focus in class and do homework.",
       "length": "≥80 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் சுதாவுக்குப் பதில்: விளையாட்டுத்தனமான தோழியை வகுப்பில் கவனம் செலுத்த வைக்கும் வழிகள்"
      },
      {
       "sec": 1,
@@ -2482,11 +2546,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Selva sharing your own secondary-school experiences (his CCA talk on phone use).",
       "length": "≥60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் செல்வாவுக்குப் பதில்: உயர்நிலைப் பள்ளி அனுபவங்கள் (கைப்பேசிப் பயன்பாடு பற்றிய உரை)"
      },
      {
       "sec": 1,
@@ -2499,11 +2564,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Arun on the benefits and experience of your CCA in your new school.",
       "length": "≥60 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் அருணுக்குப் பதில்: புதிய பள்ளியில் இணைப்பாட நடவடிக்கையின் நன்மைகளும் அனுபவமும்"
      },
      {
       "sec": 3,
@@ -2516,11 +2582,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Kapil on exam preparation and handling stress.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் கபிலுக்குப் பதில்: தேர்வுக்குத் தயாராதலும் மன அழுத்தத்தைக் கையாளுதலும்"
      },
      {
       "sec": 3,
@@ -2533,11 +2600,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As Mullai, email police officer Mr Sekar about night-time noise and littering at the playground and solutions.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "காவல் அதிகாரிக்கு மின்னஞ்சல்: விளையாட்டுத் திடலில் இரவு நேரச் சத்தமும் குப்பையும், தீர்வுகள்"
      },
      {
       "sec": 4,
@@ -2550,11 +2618,12 @@
       "when": "Term 1 WA1 / Timed Practice 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Kala on helping her brother cut social-media time, study better and get along with family.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் கலாவுக்குப் பதில்: தம்பியின் சமூக ஊடக நேரத்தைக் குறைத்துப் படிப்பிலும் குடும்பத்திலும் கவனம் செலுத்த உதவுதல்"
      },
      {
       "sec": 4,
@@ -2567,11 +2636,12 @@
       "when": "Term 1 WA1 / Timed Practice 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As Kumaran, email a town council officer to raise residents' awareness about littering and keeping the estate clean.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நகர மன்ற அதிகாரிக்கு மின்னஞ்சல்: குப்பை போடுதல் பற்றிய விழிப்புணர்வும் பேட்டையைத் தூய்மையாக வைத்தலும்"
      },
      {
       "sec": 4,
@@ -2584,11 +2654,12 @@
       "when": "Prelim 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Kala advising which community-service activities to choose for low-income families and how they help.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் கலாவுக்குப் பதில்: குறைந்த வருமானக் குடும்பங்களுக்கான சமூக சேவை நடவடிக்கைகளைத் தேர்ந்தெடுத்தல்"
      },
      {
       "sec": 4,
@@ -2601,11 +2672,12 @@
       "when": "Prelim 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As Visu, email police officer Mr Vimalan praising police service at a crowded arts event.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "காவல் அதிகாரிக்கு மின்னஞ்சல்: நெரிசலான கலை நிகழ்ச்சியில் காவல்துறையின் சேவையைப் பாராட்டுதல்"
      },
      {
       "sec": 1,
@@ -2738,7 +2810,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 TL papers, the same in every course and year: part அ Q1-Q2 (G2 and G3: reply to a friend's email, then a formal email; Higher TL: formal email, then a forum post), part ஆ Q3-Q5 (G2 and G3: incident essay, expository or opinion essay, story; Higher TL: incident essay, speech, opinion essay). SEAB K222, K322 and K357 say only email (Higher TL: formal email or forum) and essay or story.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    }
   },
@@ -3048,11 +3120,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: hurting a friend with words and seeking forgiveness",
       "length": "200字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：说话伤了朋友后请求原谅"
      },
      {
       "sec": 1,
@@ -3065,11 +3138,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative continuation: teacher's important announcement after school",
       "length": "200字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "续写：放学后老师宣布一件重要的事"
      },
      {
       "sec": 1,
@@ -3082,11 +3156,12 @@
       "when": "worksheet (作文一)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: conflict with Dad over a CNY custom, resolved with Mum's help",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：与爸爸因过年习俗起冲突，妈妈帮忙化解"
      },
      {
       "sec": 1,
@@ -3099,11 +3174,12 @@
       "when": "worksheet (作文二 完成文章)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative continuation: a teen with a big bag rushing past on the MRT",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "续写：地铁上一名背着大包的少年匆匆跑过"
      },
      {
       "sec": 1,
@@ -3116,11 +3192,12 @@
       "when": "worksheet (undated)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: a time-machine trip to a future city",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：乘时光机到未来城市"
      },
      {
       "sec": 2,
@@ -3133,11 +3210,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: finally owning up to a mistake after a talk",
       "length": "200字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：一次谈话后终于承认错误"
      },
      {
       "sec": 2,
@@ -3150,11 +3228,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative continuation: an anxious elderly woman at the bus stop",
       "length": "200字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "续写：巴士站一位焦急的老婆婆"
      },
      {
       "sec": 2,
@@ -3167,11 +3246,12 @@
       "when": "Term 1 worksheet (作文一)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative with character description: persuading Dad to let you go camping",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文（人物描写）：说服爸爸让你去露营"
      },
      {
       "sec": 3,
@@ -3184,11 +3264,12 @@
       "when": "Term 3 WA3 (authentic assessment, due 11 Aug 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "Group AA: written argumentative essay on regulating student AI use, then a 3-minute video",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "小组真实性评估：议论文《规范学生使用人工智能》，再录三分钟视频"
      },
      {
       "sec": 3,
@@ -3201,11 +3282,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "Argumentative: face-to-face talk brings people closer than texting",
       "length": "240以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "议论文：面对面交谈比发短信更拉近距离"
      },
      {
       "sec": 3,
@@ -3218,11 +3300,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: overcoming a setback with encouragement",
       "length": "240以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：在鼓励下克服挫折"
      },
      {
       "sec": 3,
@@ -3235,11 +3318,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative continuation: a pale, shivering old man on a void-deck bench",
       "length": "240以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "续写：组屋楼下长椅上一位脸色苍白、发抖的老伯"
      },
      {
       "sec": 4,
@@ -3252,11 +3336,12 @@
       "when": "Timed Practice (24 Apr 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "'How to' essay: encouraging young people to make better use of libraries",
       "length": "240字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "论说文（如何类）：鼓励年轻人善用图书馆"
      },
      {
       "sec": 4,
@@ -3269,11 +3354,12 @@
       "when": "Timed Practice (24 Apr 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: reluctantly joining an activity and changing your mind",
       "length": "240字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：勉强参加一项活动后改变了想法"
      },
      {
       "sec": 4,
@@ -3286,11 +3372,12 @@
       "when": "Timed Practice (24 Apr 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative continuation: someone filming in a crowded fast-food outlet",
       "length": "240字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "续写：拥挤的快餐店里有人在拍视频"
      },
      {
       "sec": 4,
@@ -3303,11 +3390,12 @@
       "when": "Prelim (29 Jul 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "'How to' essay: encouraging healthy eating among students",
       "length": "240字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "论说文（如何类）：鼓励学生健康饮食"
      },
      {
       "sec": 4,
@@ -3320,11 +3408,12 @@
       "when": "Prelim (29 Jul 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: a careless student working with a meticulous partner",
       "length": "240字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：粗心的学生与细心的搭档合作"
      },
      {
       "sec": 4,
@@ -3337,18 +3426,19 @@
       "when": "Prelim (29 Jul 2026)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative continuation: a teen with a big bag rushing past on the MRT",
       "length": "240字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "续写：地铁上一名背着大包的少年匆匆跑过"
      }
     ],
     "outcomes": [],
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question types follow the BVSS CL Test Item Progression references (CL Whitespace, 20 and 22 July 2026). SEAB's own wording: a reply email or an email from given material, then 1 of 3 compositions (narrative, expository, argumentative; Higher CL adds speeches).",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "ML": {
@@ -3364,11 +3454,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Jogging in a park you hear a scream; describe the incident and the lesson learnt.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: terdengar jeritan semasa berjoging di taman, peristiwa dan pengajaran"
      },
      {
       "sec": 1,
@@ -3381,11 +3472,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Describe your experience and feelings at a school camp.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: pengalaman dan perasaan semasa perkhemahan sekolah"
      },
      {
       "sec": 2,
@@ -3398,11 +3490,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository essay",
+      "gist_en": "Ways students can practise a healthy lifestyle.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: cara pelajar mengamalkan gaya hidup sihat"
      },
      {
       "sec": 2,
@@ -3415,11 +3508,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "At a fast-food counter someone scolds the worker; describe the incident and lesson.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: pekerja dimarahi di kaunter restoran makanan segera, peristiwa dan pengajaran"
      },
      {
       "sec": 2,
@@ -3432,11 +3526,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Continue a story: a blackout at night and a noise from the kitchen.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Sambung cerita: bekalan elektrik terputus pada waktu malam dan bunyi dari dapur"
      },
      {
       "sec": 3,
@@ -3449,11 +3544,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository essay",
+      "gist_en": "How can students respect their peers' rights at school?",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: bagaimana pelajar menghormati hak rakan di sekolah"
      },
      {
       "sec": 3,
@@ -3466,11 +3562,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Racial Harmony Day performance: the music stops and you improvise successfully; describe and give the lesson.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: muzik terhenti semasa persembahan Hari Keharmonian Kaum, kamu berimprovisasi"
      },
      {
       "sec": 3,
@@ -3483,11 +3580,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Continue a story: a video damaging your reputation goes viral.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Sambung cerita: video yang menjejaskan nama baik tular"
      },
      {
       "sec": 4,
@@ -3500,11 +3598,12 @@
       "when": "Prelim (4NA)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Expository essay",
+      "gist_en": "Benefits of community activities for youths.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: faedah aktiviti kemasyarakatan kepada belia"
      },
      {
       "sec": 4,
@@ -3517,11 +3616,12 @@
       "when": "Prelim (4NA)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Representing school in a competition with an unexpected result; describe and give your feelings.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: mewakili sekolah dalam pertandingan dengan keputusan yang tidak dijangka"
      },
      {
       "sec": 4,
@@ -3534,11 +3634,12 @@
       "when": "Prelim (4NA)",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Continue: a friendly new student suddenly changed a week ago.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Sambung cerita: pelajar baharu yang ramah tiba-tiba berubah"
      },
      {
       "sec": 4,
@@ -3551,11 +3652,12 @@
       "when": "Timed Practice (TP) 4NA",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Expository essay",
+      "gist_en": "Discuss: technology and digitalisation benefit people.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Perbincangan: teknologi dan pendigitalan memberi manfaat kepada manusia"
      },
      {
       "sec": 4,
@@ -3568,11 +3670,12 @@
       "when": "Timed Practice (TP) 4NA",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Persuading a reluctant relative to join a seaside family chalet stay, and how it made it meaningful.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: memujuk saudara menyertai percutian keluarga di casa tepi pantai"
      },
      {
       "sec": 4,
@@ -3585,11 +3688,12 @@
       "when": "Timed Practice (TP) 4NA",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Continue: waiting for the MRT to meet someone you have not seen for long.",
       "length": "≥200",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Sambung cerita: menunggu MRT untuk bertemu seseorang yang lama tidak berjumpa"
      },
      {
       "sec": 2,
@@ -3602,11 +3706,12 @@
       "when": "Term 1 WA1 (P1, single karangan)",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Describe leisure activities with friends at East Coast Park, starting from a given intro paragraph.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: aktiviti riadah bersama rakan di East Coast Park (perenggan pengenalan diberi)"
      },
      {
       "sec": 1,
@@ -3901,7 +4006,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 ML papers and answer schemes: G2 and G3 Q1 reply to a post (Respons tidak rasmi), Q2 formal email; Higher ML Q1 formal email, Q2 forum. Q3 to Q5 are essays, narrative or expository, in varying order (SEAB K221, K321, K356). Speech texts set in Higher ML papers are not one of the SEC essay types and show as Builds toward.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "TL": {
@@ -3917,11 +4022,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An incident that taught you the harm of fast food, and the lesson learnt.",
       "length": "≥150 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: விரைவு உணவின் தீமையை உணர்த்திய சம்பவமும் படிப்பினையும்"
      },
      {
       "sec": 1,
@@ -3934,11 +4040,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An unexpected incident where your saving habit helped your family, and the lesson learnt.",
       "length": "≥150 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: சேமிப்புப் பழக்கம் குடும்பத்துக்கு உதவிய எதிர்பாராத சம்பவம்"
      },
      {
       "sec": 1,
@@ -3951,11 +4058,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Complete a story: home alone after school, you hear the neighbour scream.",
       "length": "≥150 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதையை நிறைவுசெய்க: பள்ளி முடிந்து வீட்டில் தனியாக இருக்கும்போது அண்டை வீட்டார் அலறல்"
      },
      {
       "sec": 2,
@@ -3968,11 +4076,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "Something you did recently that made your parents and teachers proud, and the lesson learnt.",
       "length": "≥160 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: பெற்றோரும் ஆசிரியரும் பெருமைப்படும்படி அண்மையில் செய்த செயல்"
      },
      {
       "sec": 2,
@@ -3985,11 +4094,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Explain ways to improve the reading habit.",
       "length": "≥160 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "விளக்கக் கட்டுரை: வாசிப்புப் பழக்கத்தை மேம்படுத்தும் வழிகள்"
      },
      {
       "sec": 2,
@@ -4002,11 +4112,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Complete a story: shopping with grandmother at a supermarket, a cry of ‘Amma!’ is heard.",
       "length": "≥160 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதையை நிறைவுசெய்க: பாட்டியுடன் பேரங்காடியில் இருக்கும்போது ‘அம்மா!’ என்ற அலறல்"
      },
      {
       "sec": 3,
@@ -4019,11 +4130,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "Wrongly blamed during a volunteer activity; the incident and how you recovered.",
       "length": "≥170 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: தொண்டூழியத்தின்போது தவறாகக் குற்றம் சாட்டப்பட்டு மீண்ட விதம்"
      },
      {
       "sec": 3,
@@ -4036,11 +4148,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Ways for students to use social media responsibly.",
       "length": "≥170 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "விளக்கக் கட்டுரை: சமூக ஊடகங்களைப் பொறுப்புடன் பயன்படுத்தும் வழிகள்"
      },
      {
       "sec": 3,
@@ -4053,11 +4166,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Complete a story: walking home after CCA, a stranger near your block waves you over urgently.",
       "length": "≥170 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதையை நிறைவுசெய்க: இணைப்பாட நடவடிக்கை முடிந்து வீடு திரும்பும்போது அந்நியர் அவசரமாக அழைக்கிறார்"
      },
      {
       "sec": 4,
@@ -4070,11 +4184,12 @@
       "when": "Term 1 WA1 / Timed Practice 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "You rebuked an honest friend who acted dishonestly; the disagreement that followed.",
       "length": "≥170 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: நேர்மையற்ற செயலுக்காக நண்பனைக் கண்டித்ததும் அதன்பின் ஏற்பட்ட கருத்து வேறுபாடும்"
      },
      {
       "sec": 4,
@@ -4087,11 +4202,12 @@
       "when": "Term 1 WA1 / Timed Practice 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Ways to protect our environment.",
       "length": "≥170 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "விளக்கக் கட்டுரை: சுற்றுச்சூழலைப் பாதுகாக்கும் வழிகள்"
      },
      {
       "sec": 4,
@@ -4104,11 +4220,12 @@
       "when": "Term 1 WA1 / Timed Practice 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Complete a story: waiting at a crowded bus stop after CCA, a sudden noise from the crowd.",
       "length": "≥170 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதையை நிறைவுசெய்க: இணைப்பாட நடவடிக்கைக்குப் பின் நெரிசலான பேருந்து நிறுத்தத்தில் திடீர்ச் சத்தம்"
      },
      {
       "sec": 4,
@@ -4121,11 +4238,12 @@
       "when": "Prelim 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An unexpected incident on a park walk frightened your friends; how you eased their fear.",
       "length": "≥170 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: பூங்கா நடைப்பயணத்தில் நண்பர்களைப் பயமுறுத்திய சம்பவமும் அவர்களின் பயத்தைப் போக்கிய விதமும்"
      },
      {
       "sec": 4,
@@ -4138,11 +4256,12 @@
       "when": "Prelim 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Explain ways students can develop useful skills.",
       "length": "≥170 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "விளக்கக் கட்டுரை: மாணவர்கள் பயனுள்ள திறன்களை வளர்க்கும் வழிகள்"
      },
      {
       "sec": 4,
@@ -4155,11 +4274,12 @@
       "when": "Prelim 2026",
       "legacy": "4NA",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Complete a story: en route to the airport for your sister's wedding in India, mother's phone rings.",
       "length": "≥170 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதையை நிறைவுசெய்க: அக்காவின் திருமணத்துக்காக விமான நிலையம் செல்லும் வழியில் அம்மாவின் கைப்பேசி ஒலிக்கிறது"
      },
      {
       "sec": 1,
@@ -4328,7 +4448,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 TL papers, the same in every course and year: part அ Q1-Q2 (G2 and G3: reply to a friend's email, then a formal email; Higher TL: formal email, then a forum post), part ஆ Q3-Q5 (G2 and G3: incident essay, expository or opinion essay, story; Higher TL: incident essay, speech, opinion essay). SEAB K222, K322 and K357 say only email (Higher TL: formal email or forum) and essay or story.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    }
   },
@@ -4498,11 +4618,12 @@
       "when": "Term 2 WA2 (12 May 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: share how you revise and good places to study",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：分享复习方法和适合温习的地方"
      },
      {
       "sec": 1,
@@ -4515,11 +4636,12 @@
       "when": "Term 2 WA2 (12 May 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: benefits of exercise and your healthy eating habits",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：运动的好处和你的健康饮食习惯"
      },
      {
       "sec": 1,
@@ -4532,11 +4654,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: do you browse other sites in class, and how you use your PLD to learn",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：上课时会不会浏览其他网站，如何用个人学习电脑学习"
      },
      {
       "sec": 1,
@@ -4549,11 +4672,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: help you got from class committee and how to thank them",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：班委给你的帮助及如何感谢他们"
      },
      {
       "sec": 1,
@@ -4566,11 +4690,12 @@
       "when": "Term 2 worksheet (email dated 15 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: recommend two attractions and two foods for a half-day visit",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：半日游推荐两个景点和两种美食"
      },
      {
       "sec": 1,
@@ -4583,11 +4708,12 @@
       "when": "Term 2 worksheet (email dated 30 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply to Dad: your CCA and difficulties in secondary school",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复爸爸：你的课外活动和中学生活的困难"
      },
      {
       "sec": 1,
@@ -4600,11 +4726,12 @@
       "when": "EOY revision worksheet",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: impact of rude behaviour and how to persuade classmates to change",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：不礼貌行为的影响及如何劝同学改正"
      },
      {
       "sec": 1,
@@ -4617,11 +4744,12 @@
       "when": "EOY revision worksheet",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: what school cleaners do and how to thank them",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：学校清洁工友的工作及如何感谢他们"
      },
      {
       "sec": 2,
@@ -4634,11 +4762,12 @@
       "when": "Term 1 WA1 (13 Feb 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: your pet-care experience and how to persuade parents",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：照顾宠物的经验及如何说服父母"
      },
      {
       "sec": 2,
@@ -4651,11 +4780,12 @@
       "when": "Term 1 WA1 (13 Feb 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: keep learning guitar or obey parents, and how to communicate",
       "length": "120以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：继续学吉他还是听父母的话，如何沟通"
      },
      {
       "sec": 2,
@@ -4668,11 +4798,12 @@
       "when": "Term 2 WA2 (collaborative project)",
       "legacy": "",
       "task": "",
-      "gist_en": "新闻报道",
+      "gist_en": "Group project 'BVSS 40 Stories': interview and write a news report",
       "length": "350字 (G3)",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "小组专题《百德40个故事》：采访并写新闻报道"
      },
      {
       "sec": 2,
@@ -4685,11 +4816,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: is asking for my own computer reasonable; advice on sharing",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：要求有自己的电脑是否合理，分享电脑的建议"
      },
      {
       "sec": 2,
@@ -4702,11 +4834,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to town council chairman: bottled-water waste at a Mid-Autumn event",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给市镇会主席：中秋活动浪费瓶装水"
      },
      {
       "sec": 2,
@@ -4719,11 +4852,12 @@
       "when": "Term 1 worksheet (email dated 21 Jan 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: views on Mum's care during late-night homework and how to tell her",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：妈妈在你深夜做功课时的关心，如何告诉她你的想法"
      },
      {
       "sec": 2,
@@ -4736,11 +4870,12 @@
       "when": "Term 1 worksheet (email dated 21 Jan 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: how you get along with younger siblings and bonding activities",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：如何与弟妹相处及增进感情的活动"
      },
      {
       "sec": 2,
@@ -4753,11 +4888,12 @@
       "when": "Term 2 worksheet (公务电邮讲义)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to town council: frequent lift breakdowns",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给市镇会：电梯经常故障"
      },
      {
       "sec": 2,
@@ -4770,11 +4906,12 @@
       "when": "Term 2 worksheet (公务电邮)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to principal: unreturned trays and litter in the canteen",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给校长：食堂不归还餐盘、乱丢垃圾"
      },
      {
       "sec": 2,
@@ -4787,11 +4924,12 @@
       "when": "EOY revision worksheet",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: views on cyberbullying and what to do",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对网络欺凌的看法及应对方法"
      },
      {
       "sec": 2,
@@ -4804,11 +4942,12 @@
       "when": "EOY revision worksheet",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to town council: abandoned supermarket trolleys",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给市镇会：超市手推车被随处丢弃"
      },
      {
       "sec": 3,
@@ -4821,11 +4960,12 @@
       "when": "Term 2 WA2 (20 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to library head: seat-hogging and noise",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给图书馆馆长：霸占座位和喧哗"
      },
      {
       "sec": 3,
@@ -4838,11 +4978,12 @@
       "when": "Term 2 WA2 (20 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to parks chief: pet waste and bicycles on footpaths",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给公园负责人：宠物粪便和行人道上的脚踏车"
      },
      {
       "sec": 3,
@@ -4855,11 +4996,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: views on tuition and other ways to improve results",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对补习的看法及其他提高成绩的方法"
      },
      {
       "sec": 3,
@@ -4872,11 +5014,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to fast-food manager: dirty tables and poor service",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给快餐店经理：桌子脏、服务差"
      },
      {
       "sec": 3,
@@ -4889,11 +5032,12 @@
       "when": "worksheet (3G3 公务电邮资料)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to RC chairman: misuse of HDB common spaces",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给居委会主席：组屋公共空间被滥用"
      },
      {
       "sec": 4,
@@ -4906,11 +5050,12 @@
       "when": "Prelim (24 Apr 2026)",
       "legacy": "4E (also 5N)",
       "task": "",
-      "gist_en": "Informal email",
+      "gist_en": "Reply: was telling the teacher a friend's secret right, and how to repair the friendship",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：把朋友的秘密告诉老师是否对，如何修补友谊"
      },
      {
       "sec": 4,
@@ -4923,18 +5068,19 @@
       "when": "Prelim (24 Apr 2026)",
       "legacy": "4E (also 5N)",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email inviting police chief to give an anti-scam talk (request type)",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮（请求类）：邀请警长到校主讲防诈骗讲座"
      }
     ],
     "outcomes": [],
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question types follow the BVSS CL Test Item Progression references (CL Whitespace, 20 and 22 July 2026). SEAB's own wording: a reply email or an email from given material, then 1 of 3 compositions (narrative, expository, argumentative; Higher CL adds speeches).",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "ML": {
@@ -4950,11 +5096,12 @@
       "when": "EOY (Sec 1 G3, K321/1 format)",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Forum reply: how to choose suitable Malay advice-songs to play before assembly for Bulan Bahasa, and why.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons forum: memilih lagu nasihat Melayu untuk perhimpunan Bulan Bahasa"
      },
      {
       "sec": 2,
@@ -4967,11 +5114,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a post: is it suitable for a student to become a content creator, and what to consider first.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: wajarkah pelajar menjadi pencipta kandungan"
      },
      {
       "sec": 3,
@@ -4984,11 +5132,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Forum reply: how to resolve friction with a clingy best friend and win them back.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons forum: menyelesaikan geseran dengan sahabat yang terlalu bergantung"
      },
      {
       "sec": 3,
@@ -5001,11 +5150,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to the discipline master about rising truancy, with measures the school can take.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "E-mel rasmi kepada guru disiplin: masalah ponteng yang meningkat dan langkah sekolah"
      },
      {
       "sec": 4,
@@ -5018,11 +5168,12 @@
       "when": "Prelim (4E5N, 1148)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Blog reply to a new Cyber Wellness Ambassador: the role, why cyberbullying persists, how to tackle it.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons blog kepada Duta Kesejahteraan Siber: peranan dan cara menangani buli siber"
      },
      {
       "sec": 4,
@@ -5035,11 +5186,12 @@
       "when": "Prelim (4E5N)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to HDB nominating a kind neighbour for a 'Model Neighbour Award'.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "E-mel rasmi kepada HDB: mencalonkan jiran yang baik hati untuk Anugerah Jiran Contoh"
      },
      {
       "sec": 1,
@@ -5052,11 +5204,12 @@
       "when": "Term 2 WA2 (P1 Bahagian A only)",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a post: using the school laptop responsibly and getting enough sleep.",
       "length": "≥100",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: menggunakan komputer riba sekolah secara bertanggungjawab dan tidur yang cukup"
      },
      {
       "sec": 3,
@@ -5069,11 +5222,12 @@
       "when": "Term 2 WA2 (P1 Bahagian A)",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Reply to a post: building self-confidence and healthier social-media use.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: membina keyakinan diri dan penggunaan media sosial yang lebih sihat"
      },
      {
       "sec": 3,
@@ -5086,11 +5240,12 @@
       "when": "Term 2 WA2 (P1 Bahagian A)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to the principal requesting permission for a Hari Raya concert: performances and benefits.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "E-mel rasmi kepada pengetua: memohon kebenaran mengadakan konsert Hari Raya"
      },
      {
       "sec": 1,
@@ -5103,11 +5258,12 @@
       "when": "Practice paper (2025 BVSS Sec 1 G3 EOY P1 reused in 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Blog reply: how to get peers to speak Malay in class and the benefits.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons blog: menggalakkan rakan bertutur dalam bahasa Melayu dalam kelas"
      },
      {
       "sec": 4,
@@ -5120,11 +5276,12 @@
       "when": "worksheet: 4E5N Bengkel Respons Tidak Rasmi",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Post reply: convincing parents to let grandmother attend a day-care centre, and other options.",
       "length": "not stated",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: meyakinkan ibu bapa supaya nenek ke pusat jagaan harian"
      },
      {
       "sec": 4,
@@ -5137,11 +5294,12 @@
       "when": "worksheet: 4E5N Bengkel Respons Tidak Rasmi",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Forum or blog post reply",
+      "gist_en": "Post reply: helping a withdrawn younger brother understand friends' feelings and value friendships.",
       "length": "not stated",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: membantu adik yang pendiam memahami perasaan kawan"
      },
      {
       "sec": 2,
@@ -5184,7 +5342,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 ML papers and answer schemes: G2 and G3 Q1 reply to a post (Respons tidak rasmi), Q2 formal email; Higher ML Q1 formal email, Q2 forum. Q3 to Q5 are essays, narrative or expository, in varying order (SEAB K221, K321, K356). Speech texts set in Higher ML papers are not one of the SEC essay types and show as Builds toward.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "TL": {
@@ -5200,11 +5358,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Rathi on useful activities you did last holiday and their benefits.",
       "length": "≥70 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் ரதிக்குப் பதில்: கடந்த விடுமுறையில் செய்த பயனுள்ள நடவடிக்கைகளும் நன்மைகளும்"
      },
      {
       "sec": 1,
@@ -5217,11 +5376,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "As Kannan, email a close friend with an unhealthy lifestyle on why and how to stay healthy.",
       "length": "≥70 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நெருங்கிய நண்பருக்கு மின்னஞ்சல்: ஆரோக்கியமாக வாழ வேண்டியதன் காரணமும் வழிகளும்"
      },
      {
       "sec": 1,
@@ -5234,11 +5394,12 @@
       "when": "EOY 2026 (Cluster West final version)",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Rathi on classes you attended last holiday and their benefits.",
       "length": "≥70 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் ரதிக்குப் பதில்: கடந்த விடுமுறையில் கலந்துகொண்ட வகுப்புகளும் அவற்றின் நன்மைகளும்"
      },
      {
       "sec": 2,
@@ -5251,11 +5412,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Kala on the efforts you made to learn a new skill (photography) and advice for her.",
       "length": "≥100 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் கலாவுக்குப் பதில்: புதிய திறனை (புகைப்படக்கலை) கற்க எடுத்த முயற்சிகளும் ஆலோசனையும்"
      },
      {
       "sec": 2,
@@ -5268,11 +5430,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As Cheran, email town council chairman Mr Pandian on problems caused by pigeons and what officers can do to ensure public responsibility.",
       "length": "≥100 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நகர மன்றத் தலைவருக்கு மின்னஞ்சல்: புறாக்களால் ஏற்படும் பிரச்சினைகளும் அதிகாரிகள் செய்யக்கூடியவையும்"
      },
      {
       "sec": 3,
@@ -5285,11 +5448,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Ravi with ideas for his seminar talk on students' role in protecting the environment (reducing plastic).",
       "length": "≥110 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் ரவிக்குப் பதில்: சுற்றுச்சூழல் பாதுகாப்பில் மாணவர்களின் பங்கு (நெகிழிப் பயன்பாட்டைக் குறைத்தல்)"
      },
      {
       "sec": 3,
@@ -5302,11 +5466,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As a resident, email the town council chairman about the missing sheltered walkway and poor lighting to the bus stop and measures needed.",
       "length": "≥110 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நகர மன்றத் தலைவருக்கு மின்னஞ்சல்: பேருந்து நிறுத்தத்துக்குக் கூரையிட்ட நடைபாதையும் விளக்கும் இல்லாமை"
      },
      {
       "sec": 2,
@@ -5319,11 +5484,12 @@
       "when": "Term 1 WA1 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Email teacher-in-charge Mr Velan nominating your friend for the ‘Best Student’ award and how such awards motivate others.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "பொறுப்பாசிரியருக்கு மின்னஞ்சல்: நண்பரைச் ‘சிறந்த மாணவர்’ விருதுக்குப் பரிந்துரைத்தல்"
      },
      {
       "sec": 1,
@@ -5336,11 +5502,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Arun on how you use free time well and its benefits.",
       "length": "≥70 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் அருணுக்குப் பதில்: ஓய்வு நேரத்தைப் பயனுள்ள வகையில் செலவிடும் விதமும் நன்மைகளும்"
      },
      {
       "sec": 3,
@@ -5353,11 +5520,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Ravi on benefits of environmental-protection events and how to draw more participants.",
       "length": "≥110 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் ரவிக்குப் பதில்: சுற்றுச்சூழல் பாதுகாப்பு நிகழ்ச்சிகளின் நன்மைகளும் அதிகமானோரை ஈர்க்கும் வழிகளும்"
      },
      {
       "sec": 3,
@@ -5370,11 +5538,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As Kanthan, complaint email to a restaurant manager about poor service at your brother's graduation dinner.",
       "length": "≥110 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "உணவக மேலாளருக்குப் புகார் மின்னஞ்சல்: அண்ணனின் பட்டமளிப்பு விருந்தில் மோசமான சேவை"
      },
      {
       "sec": 4,
@@ -5387,11 +5556,12 @@
       "when": "Timed Practice 2026 (4E MYE 2025 paper)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Amaravathi, scammed buying a watch online, with advice.",
       "length": "≥110 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் அமராவதிக்குப் பதில்: இணையத்தில் கைக்கடிகாரம் வாங்கி ஏமாந்ததற்கு ஆலோசனை"
      },
      {
       "sec": 4,
@@ -5404,11 +5574,12 @@
       "when": "Timed Practice 2026 (4E MYE 2025 paper)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As Thenmozhi, email water-agency officer Mr Valavan on a water-saving exhibition's usefulness and drawing more visitors.",
       "length": "≥110 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நீர் நிறுவன அதிகாரிக்கு மின்னஞ்சல்: நீர் சேமிப்புக் கண்காட்சியின் பயனும் அதிகமானோரை ஈர்க்கும் வழிகளும்"
      },
      {
       "sec": 4,
@@ -5421,11 +5592,12 @@
       "when": "MYE 2026 (Cluster West 2–7 paper, filed under Prelim 2026)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Informal email (reply to a friend)",
+      "gist_en": "Reply to friend Ezhil (father retrenched) on easing money problems and persuading her sister to continue studies.",
       "length": "≥110 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் எழிலுக்குப் பதில்: தந்தை வேலையிழந்ததால் பணச் சிக்கலைச் சமாளித்தலும் தங்கையைப் படிப்பைத் தொடரச் செய்தலும்"
      },
      {
       "sec": 4,
@@ -5438,11 +5610,12 @@
       "when": "MYE 2026 (Cluster West 2–7 paper, filed under Prelim 2026)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As Mala, email the library head about volunteer activities you and friends plan at the library in the holidays.",
       "length": "≥110 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நூலகத் தலைவருக்கு மின்னஞ்சல்: விடுமுறையில் நூலகத்தில் நடத்தத் திட்டமிட்ட தொண்டூழிய நடவடிக்கைகள்"
      },
      {
       "sec": 2,
@@ -5455,11 +5628,12 @@
       "when": "worksheet (2EXP)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Recommendation email to the principal nominating an honest schoolmate for the best-student award (planning template).",
       "length": "not stated",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "தலைமையாசிரியருக்குப் பரிந்துரை மின்னஞ்சல்: நேர்மையான சக மாணவரைச் சிறந்த மாணவர் விருதுக்கு (திட்டமிடல் படிவம்)"
      },
      {
       "sec": 2,
@@ -5472,11 +5646,12 @@
       "when": "Unit 1 class test (2G3)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Recommend your friend (elderly-home volunteer) for the ‘Best Community Volunteer’ award.",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "முதியோர் இல்லத் தொண்டூழியரான நண்பரைச் ‘சிறந்த சமூகத் தொண்டூழியர்’ விருதுக்குப் பரிந்துரைத்தல்"
      },
      {
       "sec": 3,
@@ -5489,11 +5664,12 @@
       "when": "lesson slides (உயர்நிலை மூன்று விரைவு – புகார் மின்னஞ்சல்)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Complaint email to the principal about students chatting in the library at recess, with solutions.",
       "length": "not stated",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "தலைமையாசிரியருக்குப் புகார் மின்னஞ்சல்: இடைவேளையில் நூலகத்தில் அரட்டையடிக்கும் மாணவர்கள், தீர்வுகள்"
      },
      {
       "sec": 1,
@@ -5590,7 +5766,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 TL papers, the same in every course and year: part அ Q1-Q2 (G2 and G3: reply to a friend's email, then a formal email; Higher TL: formal email, then a forum post), part ஆ Q3-Q5 (G2 and G3: incident essay, expository or opinion essay, story; Higher TL: incident essay, speech, opinion essay). SEAB K222, K322 and K357 say only email (Higher TL: formal email or forum) and essay or story.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    }
   },
@@ -5900,11 +6076,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: changing your view of a difficult classmate",
       "length": "250以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：对一位难相处的同学改观"
      },
      {
       "sec": 1,
@@ -5917,11 +6094,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: discovering your parents' quiet care",
       "length": "250以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：发现父母默默的关爱"
      },
      {
       "sec": 1,
@@ -5934,11 +6112,12 @@
       "when": "Term 1 worksheet (作文一)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative with character description: finding a good friend in secondary school",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文（人物描写）：在中学交到好朋友"
      },
      {
       "sec": 1,
@@ -5951,11 +6130,12 @@
       "when": "Term 1 worksheet (作文二)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: secretly preparing a birthday gift for Mum (theme and narrative thread)",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：偷偷为妈妈准备生日礼物（中心思想与线索）"
      },
      {
       "sec": 2,
@@ -5968,11 +6148,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: losing and finding your little brother at an amusement park",
       "length": "300字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：在游乐园走失又找回弟弟"
      },
      {
       "sec": 2,
@@ -5985,11 +6166,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "'How to' essay: building students' reading habits",
       "length": "300字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "论说文（如何类）：培养学生的阅读习惯"
      },
      {
       "sec": 2,
@@ -6002,11 +6184,12 @@
       "when": "Term 2 worksheet (作文二 说明类议论文)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "'How to' essay lesson: reducing youth food waste / doing one's part for the environment",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "论说文（如何类）课：减少青少年浪费食物／为环保尽一份力"
      },
      {
       "sec": 2,
@@ -6019,11 +6202,12 @@
       "when": "Term 3 worksheet (作文三 单元四)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative with reflection: once feeling inferior, then changing your view",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文（含感悟）：曾经自卑，后来改变了想法"
      },
      {
       "sec": 3,
@@ -6036,11 +6220,12 @@
       "when": "Term 3 WA3 (formative AA: 校园视频站)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "Group argumentative piece + video ('校园视频站'); task sheet not found",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "小组议论文＋视频（校园视频站）；未找到任务单"
      },
      {
       "sec": 3,
@@ -6053,11 +6238,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: mediating a parking-lot quarrel",
       "length": "300以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：调解停车场里的一场争吵"
      },
      {
       "sec": 3,
@@ -6070,11 +6256,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "Argumentative: will digital payment eliminate cash?",
       "length": "300以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "议论文：电子支付会取代现金吗？"
      },
      {
       "sec": 3,
@@ -6087,11 +6274,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Material composition",
+      "gist_en": "Material composition (narrative): resolving a family conflict",
       "length": "300以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "材料作文（记叙）：化解一场家庭冲突"
      },
      {
       "sec": 3,
@@ -6104,11 +6292,12 @@
       "when": "Term 3 worksheet (作文二：议论文)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "Argumentative: is online shopping the best way to shop?",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "议论文：网购是最好的购物方式吗？"
      },
      {
       "sec": 4,
@@ -6121,11 +6310,12 @@
       "when": "Prelim (24 Apr 2026)",
       "legacy": "4E (also 5N)",
       "task": "",
-      "gist_en": "Context narrative",
+      "gist_en": "Narrative: responding to an emergency below your block",
       "length": "300字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：在组屋楼下应对一起紧急事件"
      },
      {
       "sec": 4,
@@ -6138,11 +6328,12 @@
       "when": "Prelim (24 Apr 2026)",
       "legacy": "4E (also 5N)",
       "task": "",
-      "gist_en": "Argumentative",
+      "gist_en": "Argumentative: does holiday work give students an edge?",
       "length": "300字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "议论文：假期打工让学生更有优势吗？"
      },
      {
       "sec": 4,
@@ -6155,18 +6346,19 @@
       "when": "Prelim (24 Apr 2026)",
       "legacy": "4E (also 5N)",
       "task": "",
-      "gist_en": "Material composition",
+      "gist_en": "Material composition: how students should use home-based learning days",
       "length": "300字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "材料作文：学生应如何善用居家学习日"
      }
     ],
     "outcomes": [],
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question types follow the BVSS CL Test Item Progression references (CL Whitespace, 20 and 22 July 2026). SEAB's own wording: a reply email or an email from given material, then 1 of 3 compositions (narrative, expository, argumentative; Higher CL adds speeches).",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "ML": {
@@ -6182,11 +6374,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Sec 1 camp: afraid of an activity, friends encourage you, you do it; describe and give the lesson.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: takut melakukan aktiviti perkhemahan Menengah 1, rakan memberi semangat"
      },
      {
       "sec": 1,
@@ -6199,11 +6392,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "A story about sadness that ends in happiness.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Cerita: kesedihan yang berakhir dengan kegembiraan"
      },
      {
       "sec": 2,
@@ -6216,11 +6410,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository essay",
+      "gist_en": "Skills a student needs to excel in school.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: kemahiran yang diperlukan pelajar untuk cemerlang di sekolah"
      },
      {
       "sec": 2,
@@ -6233,11 +6428,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Story: a strong interest led to a hasty decision with bad consequences.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Cerita: minat yang mendalam membawa kepada keputusan terburu-buru"
      },
      {
       "sec": 3,
@@ -6250,11 +6446,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "You help a lost child at a mall and miss your film; describe and explain your feelings.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: membantu kanak-kanak sesat di pusat beli-belah sehingga terlepas wayang"
      },
      {
       "sec": 3,
@@ -6267,11 +6464,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository essay",
+      "gist_en": "Discuss: AI in learning is useful for students today.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Perbincangan: kecerdasan buatan berguna dalam pembelajaran pelajar hari ini"
      },
      {
       "sec": 3,
@@ -6284,11 +6482,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Story: a good friend's support helps someone rise after failure.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Cerita: sokongan sahabat membantu seseorang bangkit selepas gagal"
      },
      {
       "sec": 4,
@@ -6301,11 +6500,12 @@
       "when": "Prelim (4E5N)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "A cheerful friend becomes withdrawn; an incident reveals why and you act; describe the outcome.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: rakan yang ceria menjadi pendiam, kamu mengetahui puncanya dan bertindak"
      },
      {
       "sec": 4,
@@ -6318,11 +6518,12 @@
       "when": "Prelim (4E5N)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Expository essay",
+      "gist_en": "Discuss: social media strengthens ties between users.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Perbincangan: media sosial mengeratkan hubungan antara pengguna"
      },
      {
       "sec": 4,
@@ -6335,11 +6536,12 @@
       "when": "Prelim (4E5N)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Story about someone's bravery that harmed them.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Cerita: keberanian seseorang yang memudaratkan dirinya"
      },
      {
       "sec": 2,
@@ -6352,11 +6554,12 @@
       "when": "Term 1 WA1 (P1, single karangan)",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Describe recess at the school canteen with friends, from a given opening paragraph.",
       "length": "≥160",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: waktu rehat di kantin sekolah bersama rakan (perenggan pembukaan diberi)"
      },
      {
       "sec": 1,
@@ -6369,11 +6572,12 @@
       "when": "Practice paper (2025 BVSS Sec 1 G3 EOY P1)",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "A naughty student is changed by an incident; describe and give the lesson.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: pelajar nakal berubah selepas satu peristiwa"
      },
      {
       "sec": 1,
@@ -6386,11 +6590,12 @@
       "when": "Practice paper (2025 BVSS Sec 1 G3 EOY P1)",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay (incl. descriptive-narrative)",
+      "gist_en": "Story: anger leads someone to act and suffer.",
       "length": "≥240",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Cerita: kemarahan mendorong seseorang bertindak lalu menanggung akibat"
      },
      {
       "sec": 1,
@@ -6523,7 +6728,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 ML papers and answer schemes: G2 and G3 Q1 reply to a post (Respons tidak rasmi), Q2 formal email; Higher ML Q1 formal email, Q2 forum. Q3 to Q5 are essays, narrative or expository, in varying order (SEAB K221, K321, K356). Speech texts set in Higher ML papers are not one of the SEC essay types and show as Builds toward.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "TL": {
@@ -6539,11 +6744,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An unexpected upsetting incident at the beach with friends and lessons learnt.",
       "length": "≥180 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: நண்பர்களுடன் கடற்கரையில் நடந்த எதிர்பாராத சம்பவமும் படிப்பினையும்"
      },
      {
       "sec": 1,
@@ -6556,11 +6762,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "Describe your school's Mother Tongue festival activities and how you benefited.",
       "length": "≥180 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கட்டுரை: பள்ளியின் தாய்மொழி விழா நடவடிக்கைகளும் அவற்றால் பெற்ற பயனும்"
      },
      {
       "sec": 1,
@@ -6573,11 +6780,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Write a story showing that those who give way to others succeed in life.",
       "length": "≥180 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதை: விட்டுக்கொடுப்பவர் வாழ்வில் வெற்றி பெறுவர்"
      },
      {
       "sec": 1,
@@ -6590,11 +6798,12 @@
       "when": "EOY 2026 (Cluster West final version)",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An unexpected incident at a beach park with friends and what you experienced.",
       "length": "≥160 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: நண்பர்களுடன் கடற்கரைப் பூங்காவில் நடந்த எதிர்பாராத சம்பவம்"
      },
      {
       "sec": 1,
@@ -6607,11 +6816,12 @@
       "when": "EOY 2026 (Cluster West final version)",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "Describe the two-week Mother Tongue festival activities and how taking part benefited you.",
       "length": "≥160 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கட்டுரை: இரு வாரத் தாய்மொழி விழா நடவடிக்கைகளும் பங்கேற்றதால் பெற்ற பயனும்"
      },
      {
       "sec": 1,
@@ -6624,11 +6834,12 @@
       "when": "EOY 2026 (Cluster West final version)",
       "legacy": "",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Write a story showing that with patience anything can be achieved.",
       "length": "≥160 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதை: பொறுமையால் எதையும் சாதிக்கலாம்"
      },
      {
       "sec": 2,
@@ -6641,11 +6852,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "A recent incident caused a problem between your family and close neighbours; how you resolved it.",
       "length": "≥180 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: குடும்பத்துக்கும் அண்டை வீட்டாருக்கும் இடையே ஏற்பட்ட பிரச்சினையைத் தீர்த்த விதம்"
      },
      {
       "sec": 2,
@@ -6658,11 +6870,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Do you agree schools must involve students in community service? Why?",
       "length": "≥180 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: பள்ளிகள் மாணவர்களைச் சமூக சேவையில் ஈடுபடுத்த வேண்டுமா?"
      },
      {
       "sec": 2,
@@ -6675,11 +6888,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Write a story showing that small efforts lead to great achievements.",
       "length": "≥180 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதை: சிறு முயற்சிகள் பெரும் சாதனைகளுக்கு வழிவகுக்கும்"
      },
      {
       "sec": 3,
@@ -6692,11 +6906,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "A hasty decision on a learning journey led to a problem; how you recovered.",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: கற்றல் பயணத்தில் அவசர முடிவால் ஏற்பட்ட பிரச்சினையிலிருந்து மீண்ட விதம்"
      },
      {
       "sec": 3,
@@ -6709,11 +6924,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Do you agree schools play the main role in improving student discipline? Why?",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: மாணவர் ஒழுக்கத்தை மேம்படுத்துவதில் பள்ளிகளுக்கே முக்கியப் பங்கு உண்டா?"
      },
      {
       "sec": 3,
@@ -6726,11 +6942,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Write a story showing that only honesty in every situation earns others' respect.",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதை: எல்லாச் சூழலிலும் நேர்மையாக இருப்பவரே மதிப்பைப் பெறுவர்"
      },
      {
       "sec": 3,
@@ -6743,11 +6960,12 @@
       "when": "EOY 2026 (Cluster West folder copy)",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "A big problem caused by a hasty decision, and how you recovered after realising your mistake.",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: அவசர முடிவால் பெரும் பிரச்சினையும் தவறை உணர்ந்து மீண்ட விதமும்"
      },
      {
       "sec": 3,
@@ -6760,11 +6978,12 @@
       "when": "EOY 2026 (Cluster West folder copy)",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Explain what schools should do to improve students' reading habit.",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "விளக்கக் கட்டுரை: மாணவர்களின் வாசிப்புப் பழக்கத்தை மேம்படுத்தப் பள்ளிகள் செய்ய வேண்டியவை"
      },
      {
       "sec": 4,
@@ -6777,11 +6996,12 @@
       "when": "Timed Practice 2026 (4E MYE 2025 paper)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "You organised an activity without consulting the teacher and it went wrong; the incident and lesson.",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: ஆசிரியரைக் கலந்தாலோசிக்காமல் நடத்திய நடவடிக்கை தோல்வியடைந்ததும் படிப்பினையும்"
      },
      {
       "sec": 4,
@@ -6794,11 +7014,12 @@
       "when": "Timed Practice 2026 (4E MYE 2025 paper)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Do you agree family matters more than friends in making a person good? Why?",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: ஒருவரை நல்லவராக்குவதில் நண்பர்களைவிடக் குடும்பமே முக்கியமா?"
      },
      {
       "sec": 4,
@@ -6811,11 +7032,12 @@
       "when": "Timed Practice 2026 (4E MYE 2025 paper)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Write a story showing the world praises those who give way for others.",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதை: பிறருக்காக விட்டுக்கொடுப்பவரை உலகம் போற்றும்"
      },
      {
       "sec": 4,
@@ -6828,11 +7050,12 @@
       "when": "MYE 2026 (Cluster West 2–7 paper, filed under Prelim 2026)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "At a Tamil Language Month camp you confronted noisy students and an argument followed.",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: தமிழ்மொழி மாத முகாமில் சத்தமிட்ட மாணவர்களைக் கண்டித்ததும் ஏற்பட்ட வாக்குவாதமும்"
      },
      {
       "sec": 4,
@@ -6845,11 +7068,12 @@
       "when": "MYE 2026 (Cluster West 2–7 paper, filed under Prelim 2026)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Do you agree only the government can ensure environmental protection? Why?",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: சுற்றுச்சூழல் பாதுகாப்பை அரசாங்கத்தால் மட்டுமே உறுதிசெய்ய முடியுமா?"
      },
      {
       "sec": 4,
@@ -6862,11 +7086,12 @@
       "when": "MYE 2026 (Cluster West 2–7 paper, filed under Prelim 2026)",
       "legacy": "4E",
       "task": "",
-      "gist_en": "Story",
+      "gist_en": "Write a story showing that only patient thinking and action achieve anything.",
       "length": "≥200 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கதை: பொறுமையாகச் சிந்தித்துச் செயல்பட்டால் மட்டுமே எதையும் சாதிக்கலாம்"
      },
      {
       "sec": 3,
@@ -6879,11 +7104,12 @@
       "when": "worksheet / model essay (S3–S4)",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Do you agree school holidays are essential for students? Why?",
       "length": "not stated",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: பள்ளி விடுமுறை மாணவர்களுக்கு அவசியமா?"
      },
      {
       "sec": 3,
@@ -6896,11 +7122,12 @@
       "when": "worksheet / body paragraphs (S3–S4)",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "Comment: Singaporeans' sense of responsibility has not yet fully developed.",
       "length": "not stated",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: சிங்கப்பூரர்களின் பொறுப்புணர்வு இன்னும் முழுமையாக வளரவில்லை"
      },
      {
       "sec": 4,
@@ -6913,11 +7140,12 @@
       "when": "model essay (S4)",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "You thought competitions make people selfish, until an incident changed your view; describe it and the lesson.",
       "length": "not stated",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: போட்டிகள் சுயநலத்தை வளர்க்கும் என்ற எண்ணத்தை மாற்றிய சம்பவம்"
      },
      {
       "sec": null,
@@ -6930,11 +7158,12 @@
       "when": "lesson worksheet (கட்டுரை பாடம் 1)",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository or opinion essay",
+      "gist_en": "What consequences do students face if they neglect their duties?",
       "length": "not stated",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "விளக்கக் கட்டுரை: கடமையைப் புறக்கணிக்கும் மாணவர்கள் எதிர்கொள்ளும் விளைவுகள்"
      },
      {
       "sec": 1,
@@ -7157,7 +7386,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 TL papers, the same in every course and year: part அ Q1-Q2 (G2 and G3: reply to a friend's email, then a formal email; Higher TL: formal email, then a forum post), part ஆ Q3-Q5 (G2 and G3: incident essay, expository or opinion essay, story; Higher TL: incident essay, speech, opinion essay). SEAB K222, K322 and K357 say only email (Higher TL: formal email or forum) and essay or story.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    }
   },
@@ -7327,11 +7556,12 @@
       "when": "Term 2 WA2 (12 May 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: coping with a CCA you dislike",
       "length": "180以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：如何面对不喜欢的课外活动"
      },
      {
       "sec": 1,
@@ -7344,11 +7574,12 @@
       "when": "Term 2 WA2 (12 May 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: views on not helping parents prepare a family celebration",
       "length": "180以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对不帮父母准备家庭庆祝活动的看法"
      },
      {
       "sec": 1,
@@ -7361,11 +7592,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: keeping your own interest (dance) while staying close to friends",
       "length": "180以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：坚持自己的兴趣（舞蹈）又不疏远朋友"
      },
      {
       "sec": 1,
@@ -7378,11 +7610,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: views on daily phone use and how to manage it",
       "length": "180以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对每天用手机的看法及如何管理"
      },
      {
       "sec": 1,
@@ -7395,11 +7628,12 @@
       "when": "Term 2 worksheet (email dated 1 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: recommend one attraction and one food",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：推荐一个景点和一种美食"
      },
      {
       "sec": 1,
@@ -7412,11 +7646,12 @@
       "when": "Term 2 worksheet (email dated 20 Jun 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: effects of phone addiction and how you overcame it",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：沉迷手机的影响及你如何克服"
      },
      {
       "sec": 2,
@@ -7429,11 +7664,12 @@
       "when": "Term 1 WA1 (13 Feb 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: views on a school reading period and how to help students focus",
       "length": "180以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对学校阅读时段的看法及如何帮助学生专注"
      },
      {
       "sec": 2,
@@ -7446,11 +7682,12 @@
       "when": "Term 1 WA1 (13 Feb 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: views on students posting meal-box complaints online; proper feedback channels",
       "length": "180以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对学生在网上抱怨餐盒的看法，正确的反馈渠道"
      },
      {
       "sec": 2,
@@ -7463,11 +7700,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: views on using AI for homework and precautions",
       "length": "180以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：对用人工智能做功课的看法及注意事项"
      },
      {
       "sec": 2,
@@ -7480,11 +7718,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to SMRT chairman: late, overheated buses",
       "length": "180以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给地铁公司主席：巴士误点、车厢闷热"
      },
      {
       "sec": 3,
@@ -7497,11 +7736,12 @@
       "when": "Term 2 WA2 (20 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email inviting an alumnus to a career talk (request type)",
       "length": "220以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮（请求类）：邀请校友主讲职业讲座"
      },
      {
       "sec": 3,
@@ -7514,11 +7754,12 @@
       "when": "Term 2 WA2 (20 Apr 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to newspaper editor praising a cafe that hires persons with disabilities (praise type)",
       "length": "220以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮（表扬类）给报馆编辑：表扬雇用残障人士的咖啡馆"
      },
      {
       "sec": 3,
@@ -7531,11 +7772,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Online forum post",
+      "gist_en": "Forum reply: importance of green habits and two suggestions",
       "length": "220以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "论坛回帖：环保习惯的重要性及两个建议"
      },
      {
       "sec": 3,
@@ -7548,11 +7790,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Online forum post",
+      "gist_en": "Forum reply: importance of parental companionship and how to support parents",
       "length": "220以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "论坛回帖：父母陪伴的重要性及如何支持父母"
      },
      {
       "sec": 3,
@@ -7565,11 +7808,12 @@
       "when": "CL Prelim FW (8 Jul 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "私人电邮",
+      "gist_en": "Reply: persuading parents to support skills beyond academics while keeping grades",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "回复电邮：说服父母支持学业以外的技能，同时保持成绩"
      },
      {
       "sec": 3,
@@ -7582,11 +7826,12 @@
       "when": "CL Prelim FW (8 Jul 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to RC chairman: give teen graffiti artists a proper platform",
       "length": "150以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务电邮给居委会主席：给涂鸦少年一个正当的发挥平台"
      },
      {
       "sec": 4,
@@ -7599,11 +7844,12 @@
       "when": "Prelim (27 Aug 2026)",
       "legacy": "4HCL",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal reply (as CC manager): why keep the seniors' digital-learning corner and fixes",
       "length": "220以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "公务回邮（以民众俱乐部经理身份）：为何保留乐龄数码学习角及改善方法"
      },
      {
       "sec": 4,
@@ -7616,18 +7862,19 @@
       "when": "Prelim (27 Aug 2026)",
       "legacy": "4HCL",
       "task": "",
-      "gist_en": "Online forum post",
+      "gist_en": "Forum reply: importance of student volunteering and how to encourage it",
       "length": "220以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "论坛回帖：学生当义工的重要性及如何鼓励"
      }
     ],
     "outcomes": [],
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question types follow the BVSS CL Test Item Progression references (CL Whitespace, 20 and 22 July 2026). SEAB's own wording: a reply email or an email from given material, then 1 of 3 compositions (narrative, expository, argumentative; Higher CL adds speeches).",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "ML": {
@@ -7643,11 +7890,12 @@
       "when": "EOY (Sec 1 HML, K356/1 format)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Formal email to the principal seeking approval for a 'Malay Music Appreciation Week': purpose, two genres and why, interactive activities.",
       "length": "≥140",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "E-mel rasmi kepada pengetua: memohon kelulusan Minggu Apresiasi Muzik Melayu"
      },
      {
       "sec": 3,
@@ -7660,11 +7908,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As a teacher, reply to the head prefect's email on misuse of free self-study time: how to use it well and joint measures.",
       "length": "≥140",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Sebagai guru, membalas e-mel ketua pengawas tentang masa belajar kendiri yang disalahgunakan"
      },
      {
       "sec": 3,
@@ -7677,11 +7926,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum post reply",
+      "gist_en": "Forum thread on building housing near nature reserves: reassure netizens and suggest how Singaporeans can protect the reserves.",
       "length": "≥140",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons forum: perumahan dekat kawasan cagar alam dan cara melindunginya"
      },
      {
       "sec": 4,
@@ -7694,11 +7944,12 @@
       "when": "Timed Practice (TP) 4HML",
       "legacy": "4HML",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As RC chairman, email all residents about inconsiderate behaviour (corridor clutter, misuse of recycling bins) and steps to take.",
       "length": "≥140",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Sebagai pengerusi RC, e-mel kepada penduduk tentang kelakuan tidak bertimbang rasa"
      },
      {
       "sec": 4,
@@ -7711,11 +7962,12 @@
       "when": "Timed Practice (TP) 4HML",
       "legacy": "4HML",
       "task": "",
-      "gist_en": "Forum post reply",
+      "gist_en": "Forum response as head prefect on ways to tackle peers' mental-health issues, considering the thread.",
       "length": "≥140",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons forum ketua pengawas: menangani isu kesihatan mental rakan sebaya"
      },
      {
       "sec": 1,
@@ -7728,11 +7980,12 @@
       "when": "Term 2 WA2 (P1 Bahagian A only)",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum post reply",
+      "gist_en": "Reply to a post: share your new-laptop experience, responsible use, and enough sleep.",
       "length": "≥120",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons hantaran: pengalaman komputer riba baharu, penggunaan bertanggungjawab dan tidur yang cukup"
      },
      {
       "sec": 3,
@@ -7745,11 +7998,12 @@
       "when": "Term 2 WA2 (P1 Bahagian A)",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As CCA committee chair, reply to a student's email opposing compulsory weekly fitness activity: why it's needed, benefits, support measures.",
       "length": "≥140",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Sebagai pengerusi jawatankuasa KK, membalas e-mel pelajar yang menentang aktiviti kecergasan mingguan"
      },
      {
       "sec": 3,
@@ -7762,11 +8016,12 @@
       "when": "Term 2 WA2 (P1 Bahagian A)",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum post reply",
+      "gist_en": "Forum reply on motorcycles parked on footpaths: importance of tolerance and how neighbours can cooperate.",
       "length": "≥140",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Respons forum: motosikal diletakkan di laluan pejalan kaki, toleransi dan kerjasama jiran"
      },
      {
       "sec": 4,
@@ -7845,7 +8100,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 ML papers and answer schemes: G2 and G3 Q1 reply to a post (Respons tidak rasmi), Q2 formal email; Higher ML Q1 formal email, Q2 forum. Q3 to Q5 are essays, narrative or expository, in varying order (SEAB K221, K321, K356). Speech texts set in Higher ML papers are not one of the SEC essay types and show as Builds toward.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "TL": {
@@ -7861,11 +8116,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As town council chairman, email resident Mr Siva on facilities for seniors in HDB estates and their benefits.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நகர மன்றத் தலைவராக மின்னஞ்சல்: வீவக பேட்டைகளில் முதியோருக்கான வசதிகளும் நன்மைகளும்"
      },
      {
       "sec": 2,
@@ -7878,11 +8134,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum post",
+      "gist_en": "As student council president, post on the school forum on activities to bring out hidden talents and their benefits, using the three posts.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துக்களப் பதிவு: மறைந்துள்ள திறமைகளை வெளிக்கொணரும் நடவடிக்கைகளும் நன்மைகளும்"
      },
      {
       "sec": 3,
@@ -7895,11 +8152,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As an NEA officer, reply to Mr Velan on rising dengue cases in Bukit Batok and the board's planned measures.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "தேசியச் சுற்றுப்புற வாரிய அதிகாரியாகப் பதில்: புக்கிட் பாத்தோக்கில் டெங்கி அதிகரிப்பும் நடவடிக்கைகளும்"
      },
      {
       "sec": 3,
@@ -7912,11 +8170,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum post",
+      "gist_en": "Forum post on preserving culture and increasing Mother Tongue use among youth, using three posts.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துக்களப் பதிவு: பண்பாட்டைக் காத்தலும் இளையர்களிடையே தாய்மொழிப் பயன்பாட்டை அதிகரித்தலும்"
      },
      {
       "sec": 1,
@@ -7929,11 +8188,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As a residents' committee member, email on raising awareness of exercise and making better use of void-deck fitness equipment.",
       "length": "≥120 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "குடியிருப்பாளர் குழு உறுப்பினராக மின்னஞ்சல்: உடற்பயிற்சி விழிப்புணர்வும் கீழ்த்தள உடற்பயிற்சிக் கருவிகளின் பயன்பாடும்"
      },
      {
       "sec": 1,
@@ -7946,11 +8206,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum post",
+      "gist_en": "Forum post: why students avoid outdoor play vs computer games and reasons to promote outdoor activity, using three posts.",
       "length": "≥120 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துக்களப் பதிவு: வெளிப்புற விளையாட்டைத் தவிர்த்துக் கணினி விளையாட்டை நாடுவதும் வெளிப்புற நடவடிக்கையை ஊக்குவித்தலும்"
      },
      {
       "sec": 2,
@@ -7963,11 +8224,12 @@
       "when": "Term 1 WA1 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "Email the principal nominating your friend (elderly-home volunteer) for the ‘Best Community Volunteer’ award.",
       "length": "≥110 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "தலைமையாசிரியருக்கு மின்னஞ்சல்: முதியோர் இல்லத் தொண்டூழியரான நண்பரைச் ‘சிறந்த சமூகத் தொண்டூழியர்’ விருதுக்குப் பரிந்துரைத்தல்"
      },
      {
       "sec": 1,
@@ -7980,11 +8242,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "informal email",
+      "gist_en": "Reply to friend Mithun who wants to be class monitor (advice on the role).",
       "length": "≥90 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் மிதுனுக்குப் பதில்: வகுப்புத் தலைவர் பொறுப்பு பற்றிய ஆலோசனை"
      },
      {
       "sec": 3,
@@ -7997,11 +8260,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "informal email",
+      "gist_en": "Reply to friend Balu with advice on starting a community garden and involving residents.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "நண்பர் பாலுவுக்குப் பதில்: சமூகத் தோட்டம் தொடங்கவும் குடியிருப்பாளர்களை ஈடுபடுத்தவும் ஆலோசனை"
      },
      {
       "sec": 3,
@@ -8014,11 +8278,12 @@
       "when": "Term 2 WA2 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Forum post",
+      "gist_en": "Forum post on preserving traditional arts and building youth interest, using all posts.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துக்களப் பதிவு: பாரம்பரியக் கலைகளைக் காத்தலும் இளையர்களிடையே ஆர்வம் வளர்த்தலும்"
      },
      {
       "sec": 4,
@@ -8031,11 +8296,12 @@
       "when": "Timed Practice 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As RC chairman Mr Bharathan, reply to Mrs Thamarai on the void-deck community library's importance and plans to raise usage.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "குடியிருப்பாளர் குழுத் தலைவராகப் பதில்: கீழ்த்தளச் சமூக நூலகத்தின் முக்கியத்துவமும் பயன்பாட்டை அதிகரிக்கும் திட்டங்களும்"
      },
      {
       "sec": 4,
@@ -8048,11 +8314,12 @@
       "when": "Timed Practice 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Forum post",
+      "gist_en": "Forum post on living with otters, monkeys and chickens in estates, using all posts.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துக்களப் பதிவு: பேட்டைகளில் நீர்நாய், குரங்கு, கோழிகளுடன் வாழ்தல்"
      },
      {
       "sec": 4,
@@ -8065,11 +8332,12 @@
       "when": "Prelim 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Formal email",
+      "gist_en": "As canteen manager, reply to student Nakulan on the need for healthy food and plans for tastier variety.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "உணவகக் கடை மேலாளராகப் பதில்: ஆரோக்கிய உணவின் தேவையும் சுவையான பல்வகை உணவுக்கான திட்டங்களும்"
      },
      {
       "sec": 4,
@@ -8082,11 +8350,12 @@
       "when": "Prelim 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Forum post",
+      "gist_en": "Forum post on why programmes on multicultural values are needed and how to get youth to take part.",
       "length": "≥130 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துக்களப் பதிவு: பல்லினப் பண்புகள் பற்றிய திட்டங்களின் தேவையும் இளையர்களை ஈடுபடுத்தும் வழிகளும்"
      },
      {
       "sec": 4,
@@ -8099,11 +8368,12 @@
       "when": "lesson slides (4HTL forum writing)",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Forum post",
+      "gist_en": "Forum post on why lifelong learning is needed in today's knowledge-driven world, using three posts (2018 O-Level HTL question).",
       "length": "not stated (slides: 30 min, 20 marks)",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துக்களப் பதிவு: அறிவுசார் உலகில் வாழ்நாள் கற்றலின் தேவை (2018 சாதாரண நிலை உயர்தமிழ் வினா)"
      },
      {
       "sec": 1,
@@ -8200,7 +8470,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 TL papers, the same in every course and year: part அ Q1-Q2 (G2 and G3: reply to a friend's email, then a formal email; Higher TL: formal email, then a forum post), part ஆ Q3-Q5 (G2 and G3: incident essay, expository or opinion essay, story; Higher TL: incident essay, speech, opinion essay). SEAB K222, K322 and K357 say only email (Higher TL: formal email or forum) and essay or story.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    }
   },
@@ -8496,11 +8766,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative",
+      "gist_en": "Narrative: a cancelled activity that led to an unexpected gain",
       "length": "400字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：一项活动取消了，却有意外的收获"
      },
      {
       "sec": 1,
@@ -8513,11 +8784,12 @@
       "when": "EOY (30 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative",
+      "gist_en": "Narrative: realising strict parents care",
       "length": "400字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：体会到严格的父母是关心自己"
      },
      {
       "sec": 1,
@@ -8530,11 +8802,12 @@
       "when": "Term 3 worksheet (作文二 转变)",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative",
+      "gist_en": "Narrative (third person): Huaming resolves to drop a bad habit",
       "length": "",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文（第三人称）：华明决心改掉坏习惯"
      },
      {
       "sec": 2,
@@ -8547,11 +8820,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative",
+      "gist_en": "Narrative: a disliked classmate becomes a close friend",
       "length": "400字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：讨厌的同学成了好朋友"
      },
      {
       "sec": 2,
@@ -8564,11 +8838,12 @@
       "when": "EOY (29 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative (incl. speech)",
+      "gist_en": "'How to' 论说文: improving parent-child relationships",
       "length": "400字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "论说文（如何类）：改善亲子关系"
      },
      {
       "sec": 3,
@@ -8581,11 +8856,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative",
+      "gist_en": "Narrative: recognising behind-the-scenes contributors",
       "length": "500以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：看见幕后默默付出的人"
      },
      {
       "sec": 3,
@@ -8598,11 +8874,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative (incl. speech)",
+      "gist_en": "Argumentative: young people should step out of their comfort zone",
       "length": "500以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "议论文：年轻人应该走出舒适圈"
      },
      {
       "sec": 3,
@@ -8615,11 +8892,12 @@
       "when": "EOY (28 Sep 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Material composition",
+      "gist_en": "Material composition: raising road-safety awareness",
       "length": "500以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "材料作文：提高道路安全意识"
      },
      {
       "sec": 3,
@@ -8632,11 +8910,12 @@
       "when": "CL Prelim Essay (28 Jul 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "情境作文",
+      "gist_en": "Narrative: tracking down a lost friend to return a treasured book",
       "length": "300字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：找回失联的朋友"
      },
      {
       "sec": 3,
@@ -8649,11 +8928,12 @@
       "when": "CL Prelim Essay (28 Jul 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Argumentative (incl. speech)",
+      "gist_en": "Argumentative: Singapore is clean and green because of rules",
       "length": "300字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "议论文：新加坡干净翠绿是因为有条例"
      },
      {
       "sec": 3,
@@ -8666,11 +8946,12 @@
       "when": "CL Prelim Essay (28 Jul 2026)",
       "legacy": "",
       "task": "",
-      "gist_en": "Material composition",
+      "gist_en": "Material composition: impact of AI on students",
       "length": "300字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "材料作文：人工智能对学生的影响"
      },
      {
       "sec": 4,
@@ -8683,11 +8964,12 @@
       "when": "Prelim (27 Aug 2026)",
       "legacy": "4HCL",
       "task": "",
-      "gist_en": "Narrative",
+      "gist_en": "Narrative: reaching out to others brings people closer",
       "length": "500字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "记叙文：主动关心他人拉近彼此距离"
      },
      {
       "sec": 4,
@@ -8700,11 +8982,12 @@
       "when": "Prelim (27 Aug 2026)",
       "legacy": "4HCL",
       "task": "",
-      "gist_en": "Argumentative (incl. speech)",
+      "gist_en": "Speech: protecting the Earth is more than one hour's effort",
       "length": "500字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "演讲稿：保护地球不只是一小时的努力"
      },
      {
       "sec": 4,
@@ -8717,18 +9000,19 @@
       "when": "Prelim (27 Aug 2026)",
       "legacy": "4HCL",
       "task": "",
-      "gist_en": "Material composition",
+      "gist_en": "Material composition: healthy-meal options vs personal discipline",
       "length": "500字以上",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "材料作文：健康餐选择与个人自律"
      }
     ],
     "outcomes": [],
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question types follow the BVSS CL Test Item Progression references (CL Whitespace, 20 and 22 July 2026). SEAB's own wording: a reply email or an email from given material, then 1 of 3 compositions (narrative, expository, argumentative; Higher CL adds speeches).",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "ML": {
@@ -8744,11 +9028,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay",
+      "gist_en": "Story: giving way does not mean losing.",
       "length": "≥380",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Cerita: mengalah tidak bererti kalah"
      },
      {
       "sec": 1,
@@ -8761,11 +9046,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository essay",
+      "gist_en": "Comment: youths do not conserve their environment.",
       "length": "≥380",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Ulasan: belia tidak memelihara alam sekitar"
      },
      {
       "sec": 3,
@@ -8778,11 +9064,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Narrative essay",
+      "gist_en": "Story: only through responsibility is excellence achieved.",
       "length": "≥380",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Cerita: kecemerlangan hanya dicapai melalui tanggungjawab"
      },
      {
       "sec": 3,
@@ -8795,11 +9082,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "speech text",
+      "gist_en": "Write a speech for a Youth Forum oratory contest: 'Visionary youths speak up'.",
       "length": "≥380",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Teks pidato Forum Belia: 'Belia berwawasan bersuara'"
      },
      {
       "sec": 3,
@@ -8812,11 +9100,12 @@
       "when": "EOY",
       "legacy": "",
       "task": "",
-      "gist_en": "Expository essay",
+      "gist_en": "Comment: the government is a catalyst of change.",
       "length": "≥380",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Ulasan: kerajaan pemangkin perubahan"
      },
      {
       "sec": 4,
@@ -8829,11 +9118,12 @@
       "when": "Timed Practice (TP) 4HML",
       "legacy": "4HML",
       "task": "",
-      "gist_en": "Narrative essay",
+      "gist_en": "Canteen fight by a long-bullied student; describe and how you helped those involved.",
       "length": "≥380",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Karangan: pergaduhan di kantin oleh pelajar yang lama dibuli, cara kamu membantu"
      },
      {
       "sec": 4,
@@ -8846,11 +9136,12 @@
       "when": "Timed Practice (TP) 4HML",
       "legacy": "4HML",
       "task": "",
-      "gist_en": "speech text",
+      "gist_en": "Speech 'Integrity, a noble value' on widespread plagiarism in student work.",
       "length": "≥380",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Teks pidato 'Integriti, nilai yang murni': plagiarisme dalam kerja pelajar"
      },
      {
       "sec": 4,
@@ -8863,11 +9154,12 @@
       "when": "Timed Practice (TP) 4HML",
       "legacy": "4HML",
       "task": "",
-      "gist_en": "Narrative essay",
+      "gist_en": "Story: communication opens understanding, but careless words bring trouble.",
       "length": "≥380",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "Cerita: komunikasi membuka kefahaman, kata-kata cuai membawa masalah"
      },
      {
       "sec": 1,
@@ -9054,7 +9346,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 ML papers and answer schemes: G2 and G3 Q1 reply to a post (Respons tidak rasmi), Q2 formal email; Higher ML Q1 formal email, Q2 forum. Q3 to Q5 are essays, narrative or expository, in varying order (SEAB K221, K321, K356). Speech texts set in Higher ML papers are not one of the SEC essay types and show as Builds toward.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    },
    "TL": {
@@ -9070,11 +9362,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An incident that taught you to speak carefully even with those close to you.",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: நெருங்கியவர்களிடமும் கவனமாகப் பேச வேண்டும் என்று உணர்த்திய சம்பவம்"
      },
      {
       "sec": 2,
@@ -9087,11 +9380,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Speech",
+      "gist_en": "Speech: why good relations with neighbours matter and how to build them.",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சிற்றுரை: அண்டை வீட்டாருடன் நல்லுறவின் முக்கியத்துவமும் அதை வளர்க்கும் வழிகளும்"
      },
      {
       "sec": 2,
@@ -9104,11 +9398,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Opinion essay",
+      "gist_en": "Do you agree that holiday homework benefits students? Why?",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: விடுமுறை வீட்டுப்பாடம் மாணவர்களுக்கு நன்மை தருமா?"
      },
      {
       "sec": 3,
@@ -9121,11 +9416,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An incident that taught you carelessness can cost a chance of success; lessons learnt.",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: கவனக்குறைவால் வெற்றி வாய்ப்பை இழந்த சம்பவமும் படிப்பினையும்"
      },
      {
       "sec": 3,
@@ -9138,11 +9434,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Speech",
+      "gist_en": "Speech at a book fair: reading habit is essential in the IT age.",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சிற்றுரை (புத்தகக் காட்சி): தகவல் தொழில்நுட்ப யுகத்தில் வாசிப்புப் பழக்கம் அவசியம்"
      },
      {
       "sec": 3,
@@ -9155,11 +9452,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Opinion essay",
+      "gist_en": "Do you agree learning journeys greatly help students' knowledge? Why?",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: கற்றல் பயணங்கள் மாணவர்களின் அறிவுக்குப் பெரிதும் உதவுமா?"
      },
      {
       "sec": 1,
@@ -9172,11 +9470,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An incident showing persistence brings success, and the lesson learnt.",
       "length": "≥250 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: விடாமுயற்சி வெற்றி தரும் என்று காட்டிய சம்பவம்"
      },
      {
       "sec": 1,
@@ -9189,11 +9488,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Speech",
+      "gist_en": "Speech at a school contest: mobile phone use should be banned in schools.",
       "length": "≥250 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சிற்றுரை (பள்ளிப் போட்டி): பள்ளிகளில் கைப்பேசிப் பயன்பாட்டைத் தடை செய்ய வேண்டும்"
      },
      {
       "sec": 1,
@@ -9206,11 +9506,12 @@
       "when": "EOY 2026",
       "legacy": "",
       "task": "",
-      "gist_en": "Opinion essay",
+      "gist_en": "Comment: students develop good values through learning journeys.",
       "length": "≥250 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: கற்றல் பயணங்கள் மூலம் மாணவர்கள் நற்பண்புகளை வளர்க்கின்றனர்"
      },
      {
       "sec": 4,
@@ -9223,11 +9524,12 @@
       "when": "Timed Practice 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An incident that taught you not to judge someone by others' opinions.",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: பிறர் கருத்தை வைத்து ஒருவரை மதிப்பிடக் கூடாது என்று உணர்த்திய சம்பவம்"
      },
      {
       "sec": 4,
@@ -9240,11 +9542,12 @@
       "when": "Timed Practice 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Speech",
+      "gist_en": "Speech: social media plays a big role in bringing volunteering to people.",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சிற்றுரை: தொண்டூழியத்தை மக்களிடம் கொண்டுசெல்வதில் சமூக ஊடகங்களின் பங்கு"
      },
      {
       "sec": 4,
@@ -9257,11 +9560,12 @@
       "when": "Timed Practice 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Opinion essay",
+      "gist_en": "Comment: leisure activities can become a burden.",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: பொழுதுபோக்கு நடவடிக்கைகள் சுமையாக மாறலாம்"
      },
      {
       "sec": 4,
@@ -9274,11 +9578,12 @@
       "when": "Prelim 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Incident essay",
+      "gist_en": "An incident that taught you people of character prefer honest failure to dishonest success.",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சம்பவக் கட்டுரை: நேர்மையற்ற வெற்றியைவிட நேர்மையான தோல்வியே மேல் என்று உணர்த்திய சம்பவம்"
      },
      {
       "sec": 4,
@@ -9291,11 +9596,12 @@
       "when": "Prelim 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Speech",
+      "gist_en": "Speech at national inter-school games: schools keep giving students enough chances to show talent.",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "சிற்றுரை (தேசியப் பள்ளிகளிடை விளையாட்டு): மாணவர்கள் திறமையைக் காட்டப் பள்ளிகள் தொடர்ந்து வாய்ப்பளிக்கின்றன"
      },
      {
       "sec": 4,
@@ -9308,11 +9614,12 @@
       "when": "Prelim 2026",
       "legacy": "4HTL",
       "task": "",
-      "gist_en": "Opinion essay",
+      "gist_en": "Do you agree only the government is responsible for cyber safety? Why?",
       "length": "≥300 words",
       "ref": "",
       "notes": "",
-      "ord": 0
+      "ord": 0,
+      "gist_m": "கருத்துரைக் கட்டுரை: இணையப் பாதுகாப்புக்கு அரசாங்கம் மட்டுமே பொறுப்பா?"
      },
      {
       "sec": 1,
@@ -9463,7 +9770,7 @@
     "method": [
      "CPDD: every writing task in the 2021 textbooks and teacher guides for this course (the site's writing task bank), sorted by the exam question it leads to. A task that matches no exam question is marked Builds toward.",
      "Question numbers follow our 2026 TL papers, the same in every course and year: part அ Q1-Q2 (G2 and G3: reply to a friend's email, then a formal email; Higher TL: formal email, then a forum post), part ஆ Q3-Q5 (G2 and G3: incident essay, expository or opinion essay, story; Higher TL: incident essay, speech, opinion essay). SEAB K222, K322 and K357 say only email (Higher TL: formal email or forum) and essay or story.",
-     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, shown by question type only (our question wording stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
+     "BVSS 2026: tasks from our WA, EOY and Prelim papers and worksheets, each with a one-line summary of what the question asked (the question wording itself stays off the public site). Sec 4 in 2026 is the older course (4NA, 4E, Higher)."
     ]
    }
   }
