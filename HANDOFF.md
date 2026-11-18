@@ -481,3 +481,8 @@ The HOD found the first planning layer too much to digest. It was replaced:
 
 ### 18 Nov 2026: Skills at a glance term labels
 - The left term labels (`.pbtl`) were rotated 180°, so Chinese read upside down and the digit lay sideways. Now `writing-mode:vertical-rl; text-orientation:mixed` with no rotation: Chinese stands upright top to bottom, English reads top to bottom, and the term number sits in `<span class="n">` with `text-combine-upright:all` so it stays upright. Labels sit at the top of each term row.
+
+### 18 Nov 2026: ML/TL full wording, clickable tiles
+- HOD decision: every ML and TL BVSS paper shows its full question wording, including Sec 1-3 EOY (Cluster West included), WA, worksheets and timed practice. `pubok()` in `tools/pbank.py` now holds back only SEAB past papers and other schools' material (`NOPUB`); the cluster rule (`CLUSTER`) still applies to CL only. Result: ML 76/76, TL 109/110 (the one left is a 2018 O-Level HTL question used in lesson slides).
+- A BVSS card with no full wording still opens and says why (`pt("nof")`), so no click is a dead end.
+- Clickable tiles light up and lift on hover/focus (navy border and shadow, 3px rise): Skills at a glance cards, unit cards, home cards, task buttons, unit chips, E21CC cells, and `button.cell` in maps (`tools/maps.css`). Open cards keep the navy border. Reduced-motion users get no lift.

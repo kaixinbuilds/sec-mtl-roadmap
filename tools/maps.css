@@ -28,3 +28,8 @@ td.nm{padding:3px 8px;color:var(--mut);font-size:12px;background:var(--none);bor
 .emb main{max-width:none;padding:6px 0 16px}
 
 #pop .ev .enl{font-size:11.5px;color:var(--mut);font-style:italic}
+
+/* HOD, 18 Nov 2026: clickable cells light up and lift */
+button.cell{transition:transform .16s ease,box-shadow .16s ease}
+button.cell:hover,button.cell:focus-visible{box-shadow:inset 0 0 0 2px var(--ink),0 8px 18px -10px rgba(19,5,123,.5);transform:translateY(-2px);position:relative;z-index:1}
+@media (prefers-reduced-motion:reduce){button.cell{transition:none}button.cell:hover{transform:none}}

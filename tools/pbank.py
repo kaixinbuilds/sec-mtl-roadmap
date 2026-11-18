@@ -150,13 +150,18 @@ def short(f):
 # TL Cluster West), SEAB past-paper questions and other schools' material keep the summary only. The saving tracker lists
 # cluster papers for ML at every Sec 1-3 EOY level and for most TL levels, so all ML and TL Sec 1-3 EOY papers are treated
 # as cluster papers.
-NOPUB = re.compile(r"cluster|\bCW\b|_CW_|\bW4\b|Hillgrove|O-Level|SEAB|national paper", re.I)
+NOPUB = re.compile(r"Hillgrove|O-Level|national paper|SEAB \d{4}|GCE N\(T\)-Level|Actual For Copyright", re.I)
+# HOD, 18 Nov 2026: every BVSS-run ML and TL paper (EOY incl. Cluster West, WA,
+# worksheets, timed practice) shows its full wording. Only SEAB past papers and
+# other schools' material stay summary only.
+
+
+CLUSTER = re.compile(r"cluster|\bCW\b|_CW_|\bW4\b", re.I)
 
 
 def pubok(L, x):
-    if NOPUB.search(" ".join(str(x.get(k) or "") for k in ("source", "file", "notes", "gist_en"))):
-        return False
-    return not (L in ("ML", "TL") and (x.get("source") or "").startswith("BVSS 2026 EOY"))
+    t = " ".join(str(x.get(k) or "") for k in ("source", "file", "notes", "gist_en"))
+    return not NOPUB.search(t) and not (L == "CL" and CLUSTER.search(t))
 
 
 def g1_items(L):

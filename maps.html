@@ -31,6 +31,11 @@ td.nm{padding:3px 8px;color:var(--mut);font-size:12px;background:var(--none);bor
 
 #pop .ev .enl{font-size:11.5px;color:var(--mut);font-style:italic}
 
+/* HOD, 18 Nov 2026: clickable cells light up and lift */
+button.cell{transition:transform .16s ease,box-shadow .16s ease}
+button.cell:hover,button.cell:focus-visible{box-shadow:inset 0 0 0 2px var(--ink),0 8px 18px -10px rgba(19,5,123,.5);transform:translateY(-2px);position:relative;z-index:1}
+@media (prefers-reduced-motion:reduce){button.cell{transition:none}button.cell:hover{transform:none}}
+
 .bare #lens,.bare #lvl,.bare #crs,.bare #prop{display:none}
 .lod{display:inline-block;background:var(--lod);color:#13057b;font-weight:700;font-size:10.5px;line-height:1;letter-spacing:.02em;padding:2px 5px;border-radius:3px;margin-right:5px;vertical-align:1px}.eye .lod{font-size:12px;padding:3px 7px}.cell.lodc{box-shadow:inset 4px 0 0 var(--lod)}.lodg{box-shadow:inset 4px 0 0 var(--lod);padding-left:8px;margin-left:-7px}button.cell .lodg+.lodg{margin-top:6px;padding-top:5px;border-top:1px dashed rgba(58,63,76,.25)}th small .lod{font-size:9.5px;padding:1px 4px;margin-right:4px}th small+small{margin-top:4px}.thrust .n{font-size:clamp(14px,1.55vw,19px)}</style></head><body><main>
 <p class="eye" id="eye"></p><h1 id="h1"></h1><div class="rule"></div><p class="sub" id="sub"></p>
